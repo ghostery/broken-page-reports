@@ -1,0 +1,4 @@
+! Homepage: https://github.com/ghostery/broken-page-reports
+! Title: @Ghostery — cookies
+! Expires: 2 days
+! Version: 0
