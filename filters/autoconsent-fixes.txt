@@ -2,3 +2,11 @@
 ! Title: @Ghostery — autoconsent fixes
 ! Expires: 2 days
 ! Version: 0
+
+! https://github.com/ghostery/broken-page-reports/issues/416
+! https://github.com/duckduckgo/autoconsent/pull/319
+hema.com#@#.modal-overlay
+hema.com#@#.cookie-img
+hema.com#@#.cookie-box
+hema.com#@#.cookie-wrap-content
+hema.com#@#body,html:style(overflow: auto !important; position: initial !important;)
