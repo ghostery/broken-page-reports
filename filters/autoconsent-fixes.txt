@@ -10,3 +10,10 @@ hema.com#@#.cookie-img
 hema.com#@#.cookie-box
 hema.com#@#.cookie-wrap-content
 hema.com#@#body,html:style(overflow: auto !important; position: initial !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/318
+! https://github.com/duckduckgo/autoconsent/pull/320
+ohga.it###cp-gdpr-choices
+lexplain.it###cp-gdpr-choices
+wamily.it###cp-gdpr-choices
+fanpage.it###cp-gdpr-choices
