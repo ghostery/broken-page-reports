@@ -2,7 +2,7 @@
 ! Homepage: https://github.com/ghostery/broken-page-reports
 ! Title: @Ghostery — autoconsent fixes
 ! Expires: 2 days
-! Version: 0
+! Version: {{version}}
 
 ! https://github.com/ghostery/broken-page-reports/issues/416
 ! https://github.com/duckduckgo/autoconsent/pull/319

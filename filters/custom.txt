@@ -2,4 +2,4 @@
 ! Homepage: https://github.com/ghostery/broken-page-reports
 ! Title: @Ghostery — custom
 ! Expires: 2 days
-! Version: 0
+! Version: {{version}}
