@@ -22,7 +22,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: '.tool-versions'
       - run: node './scripts/compile.mjs'
       - name: Setup Pages
         id: pages
