@@ -19,7 +19,7 @@ const headerLines = `[Adblock Plus 2.0]
 const versionLine = '! Version: {{version}}'
 
 /**
- * Extraft filter header and body from filter file content
+ * Extract filter header and body from filter file content
  * @param {string} filter 
  */
 const parseFilter = async (filter) => {
