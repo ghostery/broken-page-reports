@@ -1,5 +1,4 @@
 [Adblock Plus 2.0]
-! Homepage: https://github.com/ghostery/broken-page-reports
 ! Title: @Ghostery — custom
 ! Expires: 1 day
 ! Version: {{version}}
