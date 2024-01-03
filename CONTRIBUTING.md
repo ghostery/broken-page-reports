@@ -4,7 +4,7 @@
 
 We categorize filters by their purpose.
 
-### `autoconsent-fixes`, exclusion rules for `autoconsent` coverage
+### `autoconsent-compatibility`, exclusion rules for `autoconsent` coverage
 
 In Ghostery, we try to minimize the trackers you potentially load from the website.
 One of our approaches to better privacy is to reject consents using `autoconsent` embedded in Never Consent and send your decision to block trackers to involved companies.
@@ -20,7 +20,7 @@ As stated in `autoconsent-fixes`, we prioritize Never Consent over hiding consen
 However, it may take some time case by case and if we need time to fix the issue on Never Consent, we'll put the fix in this filter.
 Therefore, all of this filter is planned to be moved to Never Consent coverage.
 
-### `custom`
+### `fixes`
 
 Some filters may not categorized.
 We fix general filter problems in Ghostery.
