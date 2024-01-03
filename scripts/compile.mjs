@@ -62,6 +62,8 @@ const main = async () => {
   await fs.writeFile(outFiles.standard, headerLines.replace('{{title}}', '@Ghostery filters'), 'utf8')
   await fs.writeFile(outFiles.extended, headerLines.replace('{{title}}', '@Ghostery filters — extended'), 'utf8')
 
+  await fs.copyFile(path.join(process.cwd(), 'scripts/index.html'), path.join(env.outDir, 'index.html'))
+
   // Read filters
   const root = path.join(process.cwd(), env.sourceDir)
   const files = await fs.readdir(root)
