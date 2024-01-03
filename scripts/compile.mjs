@@ -13,7 +13,7 @@ const now = Date.now()
 const headerLines = `[Adblock Plus 2.0]
 ! Homepage: https://github.com/ghostery/broken-page-reports
 ! Title: {{title}}
-! Expires: 2 days
+! Expires: 1 day
 ! Version: ${now}
 `
 const versionLine = '! Version: {{version}}'

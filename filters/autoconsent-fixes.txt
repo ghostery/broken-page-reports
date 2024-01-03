@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Homepage: https://github.com/ghostery/broken-page-reports
 ! Title: @Ghostery — autoconsent fixes
-! Expires: 2 days
+! Expires: 1 day
 ! Version: {{version}}
 
 ! https://github.com/ghostery/broken-page-reports/issues/416
