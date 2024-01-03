@@ -1,7 +1,6 @@
 #!/bin/node
 import path from 'node:path'
-import fs from 'node:fs/promises'
-import { existsSync } from 'node:fs'
+import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 
 const env = {
   sourceDir: process.env.SOURCEDIR ?? 'filters',
@@ -22,7 +21,7 @@ const versionLine = '! Version: {{version}}'
  * Extract filter header and body from filter file content
  * @param {string} filter 
  */
-const parseFilter = async (filter) => {
+const parseFilter = (filter) => {
   const versionLineStart = filter.indexOf(versionLine)
 
   if (versionLineStart < 0) {
@@ -43,33 +42,33 @@ const parseFilter = async (filter) => {
  * Create a dist directory unless exists
  * @param {string} location 
  */
-const createDirectory = async (location) => {
-  if (!existsSync(location) || !(await fs.stat(location)).isDirectory()) {
-    await fs.mkdir(location, { recursive: true })
+const createDirectory = (location) => {
+  if (!existsSync(location) || !statSync(location).isDirectory()) {
+    mkdirSync(location, { recursive: true })
   }
 }
 
-const main = async () => {
+const main = () => {
   // Create output directory and files
-  await createDirectory(env.outDir)
-  await createDirectory(path.join(env.outDir, 'filters'))
+  createDirectory(env.outDir)
+  createDirectory(path.join(env.outDir, 'filters'))
 
   const outFiles = {
     standard: path.join(env.outDir, 'filters.txt'),
     extended: path.join(env.outDir, 'filters-extended.txt')
   }
 
-  await fs.writeFile(outFiles.standard, headerLines.replace('{{title}}', '@Ghostery filters'), 'utf8')
-  await fs.writeFile(outFiles.extended, headerLines.replace('{{title}}', '@Ghostery filters — extended'), 'utf8')
+  writeFileSync(outFiles.standard, headerLines.replace('{{title}}', '@Ghostery filters'), 'utf8')
+  writeFileSync(outFiles.extended, headerLines.replace('{{title}}', '@Ghostery filters — extended'), 'utf8')
 
-  await fs.copyFile(path.join(process.cwd(), 'scripts/index.html'), path.join(env.outDir, 'index.html'))
+  copyFileSync(path.join(process.cwd(), 'scripts/index.html'), path.join(env.outDir, 'index.html'))
 
   // Read filters
   const root = path.join(process.cwd(), env.sourceDir)
-  const files = await fs.readdir(root)
+  const files = readdirSync(root)
 
   for (const file of files) {
-    const {header, body} = await parseFilter(await fs.readFile(path.join(root, file), 'utf8'))
+    const {header, body} = parseFilter(readFileSync(path.join(root, file), 'utf8'))
 
     let outFile = outFiles.standard
 
@@ -77,9 +76,9 @@ const main = async () => {
       outFile = outFiles.extended
     }
 
-    await fs.appendFile(outFile, body, 'utf8')
-    await fs.writeFile(path.join(env.outDir, 'filters', file), header.replace('{{version}}', now) + '\n' + body, 'utf8')
+    appendFileSync(outFile, body, 'utf8')
+    writeFileSync(path.join(env.outDir, 'filters', file), header.replace('{{version}}', now) + '\n' + body, 'utf8')
   }
 }
 
-void main()
+main()
