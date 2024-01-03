@@ -1,4 +1,4 @@
 [Adblock Plus 2.0]
-! Title: @Ghostery — custom
+! Title: @Ghostery — fixes
 ! Expires: 1 day
 ! Version: {{version}}
