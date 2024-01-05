@@ -1,6 +1,4 @@
-import {
-	type RequestType,
-} from '@cliqz/adblocker';
+import { type RequestType } from '@cliqz/adblocker';
 
 export type Assertion = {
 	match: boolean;

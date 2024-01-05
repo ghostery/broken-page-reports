@@ -1,8 +1,8 @@
 import { NetworkFilter, Request, parseFilter } from '@cliqz/adblocker';
 import { expect, test } from 'bun:test';
-import { readFileSync } from 'fs';
-import path from 'path';
-import { parse } from '../src/modules/assert';
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
+import { parse } from '../src/assert';
 
 const cwd = process.cwd();
 

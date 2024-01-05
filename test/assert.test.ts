@@ -1,6 +1,6 @@
-import { test, expect } from 'bun:test';
-import { type Assertion, parse } from './assert';
 import { type RequestType } from '@cliqz/adblocker';
+import { test, expect } from 'bun:test';
+import { type Assertion, parse } from '../src/assert';
 
 const check = (
 	content: string,
