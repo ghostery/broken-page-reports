@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: '.tool-versions'
-      - run: node './scripts/compile.mjs'
+      - run: npm run 'ci:compile'
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
