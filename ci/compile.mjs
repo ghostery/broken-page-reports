@@ -34,7 +34,7 @@ const parseFilter = filter => {
 		header: filter.slice(0, versionLineEnd),
 		body: filter
 			.slice(versionLineEnd)
-			.replace(/\n\n/g, ''),
+			.replace(/^\n/gm, ''),
 	};
 };
 
@@ -76,7 +76,7 @@ const main = () => {
 			outFile = outFiles.extended;
 		}
 
-		appendFileSync(outFile, body + '\n', 'utf8');
+		appendFileSync(outFile, body, 'utf8');
 		writeFileSync(path.join(env.outDir, 'filters', file), header.replace('{{version}}', now) + '\n' + body, 'utf8');
 	}
 };
