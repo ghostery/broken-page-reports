@@ -1,10 +1,10 @@
-import {test, expect} from 'bun:test';
-import {type Assertion, parse} from './assert';
-import {type RequestType} from '@cliqz/adblocker';
+import { test, expect } from 'bun:test';
+import { type Assertion, parse } from './assert';
+import { type RequestType } from '@cliqz/adblocker';
 
 const check = (
 	content: string,
-	expected: Array<{filter: string; assertions: Assertion[]}>,
+	expected: Array<{ filter: string; assertions: Assertion[] }>,
 ) => {
 	expect([...parse(content)]).toStrictEqual(expected);
 };
@@ -133,8 +133,8 @@ filter3
 		{
 			filter: 'filter3',
 			assertions: [
-				{match: true, type: 'css' as RequestType},
-				{match: true, type: 'script' as RequestType},
+				{ match: true, type: 'css' as RequestType },
+				{ match: true, type: 'script' as RequestType },
 				{
 					match: false,
 					type: 'main_frame' as RequestType,
@@ -145,7 +145,7 @@ filter3
 		},
 		{
 			filter: '',
-			assertions: [{match: true, type: 'css' as RequestType}],
+			assertions: [{ match: true, type: 'css' as RequestType }],
 		},
 	],
 	);

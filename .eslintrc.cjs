@@ -24,12 +24,15 @@ module.exports = {
 				'*.ts',
 				'*.tsx',
 			],
+			rules: {
+				'object-curly-spacing': ['error', 'always'],
+				'@typescript-eslint/object-curly-spacing': ['error', 'always'],
+			},
 		},
 	],
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	rules: {
-	},
+	rules: {},
 };
