@@ -3,7 +3,7 @@
   "description": "Ghostery filter lists for broken pages.",
   "type": "module",
   "scripts": {
-    "compile": "node ./ci/compile.mjs"
+    "compile": "node ./ci/compile.js"
   },
   "ava": {
     "extensions": {
