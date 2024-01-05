@@ -1,0 +1,49 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/**
+      - src/**
+      - test/**
+      - filters/**
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: "tests"
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.tool-versions'
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
+      - run: pnpm 'ci:compile' && pnpm 'ci:test'
