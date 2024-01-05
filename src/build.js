@@ -1,4 +1,3 @@
-#!/bin/node
 import path from 'node:path';
 import {appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync} from 'node:fs';
 
@@ -49,6 +48,8 @@ const createDirectory = location => {
 };
 
 const main = () => {
+	const cwd = process.cwd();
+
 	// Create output directory and files
 	createDirectory(env.outDir);
 	createDirectory(path.join(env.outDir, 'filters'));
@@ -61,10 +62,10 @@ const main = () => {
 	writeFileSync(outFiles.standard, headerLines.replace('{{title}}', '@Ghostery filters'), 'utf8');
 	writeFileSync(outFiles.extended, headerLines.replace('{{title}}', '@Ghostery filters — extended'), 'utf8');
 
-	copyFileSync(path.join(process.cwd(), 'ci/index.html'), path.join(env.outDir, 'index.html'));
+	copyFileSync(path.join(cwd, 'assets/index.html'), path.join(env.outDir, 'index.html'));
 
 	// Read filters
-	const root = path.join(process.cwd(), env.sourceDir);
+	const root = path.join(cwd, env.sourceDir);
 	const files = readdirSync(root);
 
 	for (const file of files) {

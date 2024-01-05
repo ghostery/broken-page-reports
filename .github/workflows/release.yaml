@@ -21,9 +21,7 @@ jobs:
     name: Build
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: 1.0.21
+      - uses: jdx/mise-action@v1
       - run: bun run build
       - name: Setup Pages
         id: pages
