@@ -76,7 +76,7 @@ const main = () => {
 			outFile = outFiles.extended;
 		}
 
-		appendFileSync(outFile, body, 'utf8');
+		appendFileSync(outFile, body + '\n', 'utf8');
 		writeFileSync(path.join(env.outDir, 'filters', file), header.replace('{{version}}', now) + '\n' + body, 'utf8');
 	}
 };
