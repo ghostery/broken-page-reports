@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/workflows/**
-      - ci/**
-      - filters/**
   workflow_dispatch:
 
 permissions:
@@ -25,11 +21,10 @@ jobs:
     name: Build
     steps:
       - uses: actions/checkout@v4
-      - name: Setup node
-        uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version-file: '.tool-versions'
-      - run: npm run 'ci:compile'
+          bun-version: 1.0.21
+      - run: bun run compile
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

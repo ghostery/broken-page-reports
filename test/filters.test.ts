@@ -1,18 +1,18 @@
-import test from 'ava';
+import {NetworkFilter, Request, parseFilter} from '@cliqz/adblocker';
+import {expect, test} from 'bun:test';
 import {readFileSync} from 'fs';
 import path from 'path';
 import {parse} from '../src/modules/assert';
-import {NetworkFilter, Request, parseFilter} from '@cliqz/adblocker';
 
 const cwd = process.cwd();
 
-const doTest = (location: string) => {
-	for (const {filter, assertions} of parse(readFileSync(path.join(cwd, location), 'utf8'))) {
+const doTest = (filePath: string) => {
+	for (const {filter, assertions} of parse(readFileSync(path.join(cwd, filePath), 'utf8'))) {
 		if (filter.startsWith('[') || filter.startsWith('!')) {
 			continue;
 		}
 
-		test(filter, t => {
+		test(filter, () => {
 			const parsed = parseFilter(filter);
 
 			if (
@@ -20,24 +20,21 @@ const doTest = (location: string) => {
         && parsed.isNetworkFilter()
         && !(parsed instanceof NetworkFilter && parsed.isBadFilter())
 			) {
-				t.true(assertions.length > 0, 'has at least one test');
+				expect(assertions.length).toBeGreaterThan(0);
 			}
 
-			t.not(parsed, null, 'can be parsed');
+			expect(parsed).not.toBe(null);
 
-			for (const {url, type, source, match} of assertions) {
-				t.is(
-					(NetworkFilter.parse(filter)!).match(
-						Request.fromRawDetails({url, type, sourceUrl: url}),
-					),
-					match,
-					`type=${type} url=${url}, source=${source}`,
-				);
+			for (const {url, type, match} of assertions) {
+				expect((NetworkFilter.parse(filter)!).match(
+					Request.fromRawDetails({url, type, sourceUrl: url}),
+				)).toBe(match);
 			}
 		});
 	}
 };
 
-// We expect files are already created by $pnpm 'ci:compile'
-doTest('dist/filters.txt');
-doTest('dist/filters-extended.txt');
+doTest('filters/autoconsent-compatibility.txt');
+doTest('filters/cookies.txt');
+doTest('filters/fixes.txt');
+doTest('filters/privacy.txt');

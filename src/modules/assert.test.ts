@@ -1,21 +1,20 @@
-import test, {type ExecutionContext} from 'ava';
+import {test, expect} from 'bun:test';
 import {type Assertion, parse} from './assert';
 import {type RequestType} from '@cliqz/adblocker';
 
 const check = (
-	t: ExecutionContext,
 	content: string,
 	expected: Array<{filter: string; assertions: Assertion[]}>,
 ) => {
-	t.deepEqual([...parse(content)], expected);
+	expect([...parse(content)]).toStrictEqual(expected);
 };
 
-test('empty string', t => {
-	check(t, '', []);
+test('empty string', () => {
+	check('', []);
 });
 
-test('filter without assertion', t => {
-	check(t, '/ads/', [
+test('filter without assertion', () => {
+	check('/ads/', [
 		{
 			filter: '/ads/',
 			assertions: [],
@@ -23,9 +22,8 @@ test('filter without assertion', t => {
 	]);
 });
 
-test('multiple assertions for a filter', t => {
+test('multiple assertions for a filter', () => {
 	check(
-		t,
 		`
 ! >>> url=https://example.com type=script source=https://source.com
 ! >>> url=https://example.com type=css source=https://source.com
@@ -53,9 +51,8 @@ test('multiple assertions for a filter', t => {
 	);
 });
 
-test('parses compound assertion', t => {
+test('parses compound assertion', () => {
 	check(
-		t,
 		`
 ! >>> url=https://example.com
 ! ...
@@ -79,8 +76,8 @@ test('parses compound assertion', t => {
 	);
 });
 
-test('handle orphan assertion', t => {
-	check(t, '! >>> url=URL', [
+test('handle orphan assertion', () => {
+	check('! >>> url=URL', [
 		{
 			filter: '',
 			assertions: [
@@ -93,8 +90,8 @@ test('handle orphan assertion', t => {
 	]);
 });
 
-test('handles complex case', t => {
-	check(t, `
+test('handles complex case', () => {
+	check(`
 ! Some top-level comments
 
 ! This is a filter
