@@ -1,4 +1,4 @@
-[![Ghostery](doc/images/ghostery-logo.svg)](https://www.ghostery.com)
+[![Ghostery](assets/images/ghostery-logo.svg)](https://www.ghostery.com)
 
 # Broken Page Reports
 
