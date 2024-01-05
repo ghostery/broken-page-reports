@@ -1,15 +1,14 @@
-name: Test
+name: Lint
 
 on:
   push:
     branches:
       - main
   pull_request:
+    path:
+      - 'src/**'
+      - 'test/**'
   workflow_dispatch:
-
-concurrency:
-  group: "tests"
-  cancel-in-progress: false
 
 jobs:
   test:
@@ -21,5 +20,5 @@ jobs:
         with:
           bun-version: 1.0.21
       - name: Install dependencies
-        run: bun install --production --frozen-lockfile
-      - run: bun test
+        run: bun install --frozen-lockfile
+      - run: bun run lint

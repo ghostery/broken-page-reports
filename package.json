@@ -3,16 +3,8 @@
   "description": "Ghostery filter lists for broken pages.",
   "type": "module",
   "scripts": {
-    "build": "node ./ci/build.js"
-  },
-  "ava": {
-    "extensions": {
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--import=tsx"
-    ],
-    "workerThreads": false
+    "build": "bun ./ci/build.js",
+    "lint": "eslint './src/**' './test/**'"
   },
   "keywords": [],
   "author": "Ghostery GmbH.",
