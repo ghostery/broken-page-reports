@@ -39,9 +39,15 @@
 #@#.pea_cook_more_info_popover
 
 ! adblocker-filters#767: consentmanager.ts
+! >>> url=https://cdn.consentmanager.net/delivery/cmp.min.css
+! ... source=https://www.dastelefonbuch.de/
+! ... type=xhr
 @@||consentmanager.net^$3p
 
 ! adblocker-filters#767: conversant.ts
+! >>> url=https://cdn.conversant.mgr.consensu.org/gdpr/cmp/gdpr-cmp-stub.js
+! ... source=https://www.irishcentral.com/
+! ... type=xhr
 @@||consensu.org/gdpr/$3p
 
 ! adblocker-filters#767: gov-uk.json
