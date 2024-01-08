@@ -2,3 +2,24 @@
 ! Title: @Ghostery — privacy
 ! Expires: 1 day
 ! Version: {{version}}
+
+! privacy: zoom.us
+! Block zoom.us and localhost as third party
+! >>> url=http://sub.zoom.us/test.js type=script source=https://example.com
+! >>> url=https://sub.zoom.us/test.js type=stylesheet source=https://example.com
+||zoom.us$3p
+! >>> url=http://localhost:19421/test.js type=script source=https://example.com
+||localhost:19421$3p,domain=~zoom.us
+
+! https://github.com/uBlockOrigin/uAssets/commit/462fa7e73299210dbaedd450caaafab31c255b3b
+! Add filter to block CNAMEd affex.org
+! >>> url=https://lb1.affex.org/scripts/ts/i4861472contC.js
+! ... source=https://brillen.de
+! ... type=script
+||affex.org$3p,script
+
+! https://github.com/ghostery/ghostery-extension/issues/766
+! >>> url=https://api.transcend.io/privacy/graphql
+! ... source=https://privacy.patreon.com/
+! ... type=xhr
+@@||transcend.io^$third-party

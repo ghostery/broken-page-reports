@@ -2,3 +2,28 @@
 ! Title: @Ghostery — cookies
 ! Expires: 1 day
 ! Version: {{version}}
+
+! --- Cookie notices
+fnac.com##.consent-notice
+
+! https://github.com/ghostery/broken-page-reports/issues/1
+nsg.com##.sitecookiepolicy
+
+! https://github.com/ghostery/broken-page-reports/issues/154
+verbundvolksbank-owl.de##body:style(overflow: auto !important)
+verbundvolksbank-owl.de##body:style(position: inherit !important)
+verbundvolksbank-owl.de##div#lightbox--cookie-consent
+verbundvolksbank-owl.de##div.lightbox__content
+verbundvolksbank-owl.de##div.darken-layer.open
+
+! https://github.com/ghostery/broken-page-reports/issues/318
+! https://github.com/duckduckgo/autoconsent/pull/320
+ohga.it###cp-gdpr-choices
+lexplain.it###cp-gdpr-choices
+wamily.it###cp-gdpr-choices
+fanpage.it###cp-gdpr-choices
+
+! https://github.com/ghostery/broken-page-reports/issues/335
+actiage.es###overbox3
+actiage.es##.capaFondoCookies
+actiage.es##body:style(overflow: auto !important;)

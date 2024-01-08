@@ -2,3 +2,525 @@
 ! Title: @Ghostery — fixes
 ! Expires: 1 day
 ! Version: {{version}}
+
+! ad: wiwo.de
+wiwo.de##.c-sticky-footer
+
+! Unbreak images on meridian-audio.com
+! The following filter from easylist: 160x600.jpg| breaks first-party images
+! This filter seems fairly aggressive but we make an exception only for this
+! particular domain for now.
+! >>> url=https://www.meridian-audio.com/media/4743/808-1160x600.jpg
+! ... source=https://www.meridian-audio.com/products/cd-players
+! ... type=image
+@@||meridian-audio.com^$1p,image
+
+! Defuse adblocker detection on https://www.abcbourse.com
+abcbourse.com##+js(aopw, doc)
+
+! There is a filter blocking this particular request on dailymotion.com from
+! 'easylist' and this breaks the mobile experience. Weirdly enough, this filter
+! is whitelisted in 'easyprivacy'. So we're adding the whitelist here for all
+! users instead.
+! >>> url=https://sb.scorecardresearch.com/beacon.js
+! ... source=https://www.dailymotion.com/video/x7matha?playlist=x610xb
+! ... type=script
+@@||scorecardresearch.com/beacon.js$domain=dailymotion.com
+
+! This particular filter from RU list is very aggressive because it matches an
+! URL containing '/teaser/' and only excludes a few domains. Let's just disable
+! this rule for first-party requests.
+! >>> url=https://www.condor.com/tcibe/faces/javax.faces.resource/bg/teasers/seat.jpg
+! ... source=https://www.condor.com/tcibe/de/mybooking/dashboard
+! ... type=image
+@@/teasers/$image,1p
+
+! Fix images on boston.com website. Issue: https://cliqztix.atlassian.net/browse/DB-2202
+! Caused by filter: ||o0bc.com^ from adserver list
+! Transformed into: ||o0bc.com^$3p by postprocessing
+! Missed by: ||o0bc.com^$badfilter from ublock-unbreak
+! Solution is to create a specific filter to whitelist this filter on boston.com
+! >>> url=https://c.o0bc.com/wp-content/uploads/2019/10/stellaboots-850x638$medium.jpg
+! ... source=https://boston.com
+! ... type=image
+@@||o0bc.com$domain=boston.com
+
+! https://github.com/cliqz-oss/adblocker/issues/455
+! Issue is the first filter aggressively prevents any inline script from
+! running. This prevents infi-scroll from working. Once fixed, some first-party
+! ads are shown (served from 9to5mac.com). They can be hidden with a simple
+! cosmetic filter.
+! >>> url=https://9to5mac.com/
+! ... source=https://9to5mac.com/
+! ... type=document
+@@||9to5mac.com^$csp=script-src 'self' *.ytimg.com *.youtube.com *.google.com *.disqus.com *.disquscdn.com
+! >>> url=https://9to5mac.com/
+! ... source=https://9to5mac.com/
+! ... type=document
+||9to5mac.com^$csp=script-src 'self' 'unsafe-inline' *.ytimg.com *.youtube.com *.google.com *.disqus.com *.disquscdn.com
+
+! https://github.com/cliqz-oss/adblocker/issues/456
+! Spinners keep turning forever. They are usually populated using content
+! served from cxense.com, which is rightfully blocked by Peter Lowe's server
+! list. As a solution we apply cosmetics to hide these spinners.
+tn.com.ar##.article__related-articles
+tn.com.ar##.article__unread-articles
+tn.com.ar##div.tablet-hidden:first-child
+
+! Spiegel deployed a new wall which cannot be closed with the following rule.
+! uBlock Origin maintainers will probably find a better fix eventually but in the
+! meanwhile, this exception seems to do the trick.
+spiegel.de#@#+js(aopr, _sp_.mms.startMsg)
+
+! Fix breakage of https://reklama1.su
+! The following filter from Easylist breaks reklama1.su so we mark it as
+! badfilter and create a new one which should only apply when requests are
+! third-party.
+! >>> url=https://reklama1.su/wp-content/uploads/2019/07/32-sm.jpg
+! ... source=https://reklama1.su/
+! ... type=script
+! ... match=true
+/reklama1.$badfilter
+! >>> url=https://reklama1.su/wp-content/uploads/2019/07/32-sm.jpg
+! ... source=https://reklama1.su/
+! ... type=script
+! ... match=false
+! >>> url=https://reklama1.su/wp-content/uploads/2019/07/32-sm.jpg
+! ... source=https://reklama2.su/
+! ... type=script
+! ... match=true
+/reklama1.$3p
+
+! https://cliqztix.atlassian.net/browse/GH-1888
+! Ads are shown on the right: https://www.limetorrents.info/home/
+limetorrents.info##[href^="https://track.ultravpn.com/"]
+
+! https://github.com/ghostery/browser-ios/pull/477
+! Domain `simply.com` used to belong to an advertising company which was then
+! bought recently by https://www.unoeuro.com/dk/ It is blocked by this filter
+! which was introduced in this commit:
+! https://github.com/easylist/easylist/commit/e07930a8c6a67efad35e3b74a72d433191ee91b7
+! After checking, both `data.net` and `data.it` do not exist anymore so I am
+! removing the other filter as well.
+||simply.com^$third-party,badfilter
+||dada.net^*/nedstat_sitestat.js$badfilter
+
+! Issue is that in preset ads-only we block googletagmanager.com but do not
+! inject the polyfill, which requires the trackers preset. This breaks the
+! following website (button cannot be clicked).
+! https://freetrial.finalfantasyxiv.com/de/
+! >>> url=https://googletagmanager.com/gtm.js
+! ... source=https://freetrial.finalfantasyxiv.com/
+! ... type=script
+||googletagmanager.com/gtm.js$3p,script,redirect-rule=googletagmanager.com/gtm.js
+
+! https://cliqztix.atlassian.net/browse/GH-2016
+! Requests of types css, image or scripts are blocked by ||en25.com^ from Pete Lowe's.
+! >>> url=https://img.en25.com/Web/DocuSign/%7B9b7319a7-a3a6-4eb2-afd0-f31fd6888ff3%7D_internal-tools.css
+! ... source=https://get.docusign.com/colors
+! ... type=stylesheet
+@@||en25.com^$css,image,script,domain=get.docusign.com
+
+! https://cliqztix.atlassian.net/browse/GH-1984
+! There is a filter blocking the entire dovewallet.com domain from 'easylist'
+! >>> url=https://dovewallet.com/cdn-cgi/bm/cv/2172558837/api.js
+! ... source=https://dovewallet.com
+! ... type=script
+@@||dovewallet.com$1p
+
+! Prevent community lists from blocking Ghostery own Private Sponsored Links
+glowstery.com#@##ghostery-highlights
+
+! Prevent blank page on Twitter
+! Background: https://twitter.com/jackplatt1000/status/1490433150467678209
+! >>> url=https://twitter.com/1.1/jot/client_event.json
+! ... source=https://twitter.com
+! ... type=xhr
+@@||twitter.com/1.1/jot/client_event.json
+
+! >>> url=https://github.com/whotracksme/event-log/pull/24/partials/merging
+! ... source=https://github.com/whotracksme/event-log/
+! ... type=xhr
+@@/event-log/$domain=github.com
+
+! >>> url=https://github.com/ghostery/adserver/test
+! ... source=https://github.com/ghostery/adserver
+! ... type=xhr
+@@/adserver/$domain=github.com
+
+! Fix broken page: forbes.com
+! This is a temporal solution - the problem of Never-Consent having a broken interaction is not solved'
+! https://github.com/ghostery/broken-page-reports/issues/119
+forbes.com##.truste_overlay:not(body):not(html)
+
+! Blocking piano.io (Peter Lowe's Ad and tracking server list) breaks the
+! paywall for augsburger-allgemeine.de.
+! Note: uBlock Origin unblocks piano (aka tinypass) on all domains
+! To find examples of other pages that might be broken, see https://whotracks.me/trackers/tinypass.html
+! >>> url=https://c2.piano.io/xbuilder/experience/execute?aid=qn2o6MSfpu
+! ... source=https://www.augsburger-allgemeine.de/augsburg/Augsburg-Zehn-Punkte-Plan-soll-die-Augsburger-Innenstadt-fit-fuer-die-Zukunft-machen-id60086356.html
+! ... type=xhr
+@@||piano.io^$domain=augsburger-allgemeine.de,xhr
+
+! https://github.com/ghostery/broken-page-reports/issues/7
+! >>> url=https://www.cdn-national-lottery.co.uk/c/js/cuk_core.min.js~1f97
+! ... source=https://www.national-lottery.co.uk
+! ... type=script
+@@/cuk_core.min.js$domain=national-lottery.co.uk
+
+! Fix broken page uptodate.com/login
+! https://github.com/ghostery/broken-page-reports/issues/73
+uptodate.com#@#.gdprBanner
+
+! Disable "Allow ads on FOX News" anti-adblocker dialog.
+! https://github.com/ghostery/broken-page-reports/issues/128
+foxnews.com##.fc-ab-root
+! Fix scrolling problem. Note: this problem is only reproducible with a
+! US IP address; at some point, a popup will be shown that makes the screen
+! unscrollable. Since thepopup gets hidden by cosmetics, it's not obvious.
+! https://github.com/ghostery/broken-page-reports/issues/181
+foxnews.com##body:style(overflow: auto !important;)
+
+! Unbreak winfuture.de.
+! (Hiding the popup leaves the page non-interactive since it will lack a scrollbar)
+! https://github.com/ghostery/broken-page-reports/issues/133
+! Update 2023-01-27: Unbreak also cyberport.de
+! https://github.com/ghostery/broken-page-reports/issues/236
+winfuture.de,cyberport.de#@#.cmpwrapper
+
+! Unbreak qatarairways.com
+! https://github.com/ghostery/broken-page-reports/issues/120
+! Currently, the site is unusable; these changes here restore the
+! cookie banner, so cookies can be confirmed and the site can be used.
+qatarairways.com#@##cookiebarNew
+qatarairways.com#@##cookieContainer
+qatarairways.com#@##cookie-notification
+qatarairways.com#@#div.cookie-details
+qatarairways.com#@#div.cookie-content
+qatarairways.com#@#.cookiewrap
+qatarairways.com#@#.cookie-inner-container
+
+! Unbreak infranken.de
+! (Hiding the initial dialog makes the site unusable)
+! https://github.com/ghostery/broken-page-reports/issues/134
+#@#.cmpboxWelcomeGDPR
+
+! Fix broken page https://noyb.eu/en/where-did-all-reject-buttons-come
+! https://github.com/ghostery/broken-page-reports/issues/174
+! Easylist cookie patterns: /cookie_banner_ and /cookie-banner$domain=~github.com blocked some images
+! >>> url=https://noyb.eu/en/where-did-all-reject-buttons-come
+! ... source=https://noyb.eu/sites/default/files/styles/media_large/public/2022-10/cookie-banners_improvement_pie-chart_0.png?itok=hqHizjf-
+! ... type=image
+! >>> url=https://noyb.eu/en/where-did-all-reject-buttons-come
+! ... source=https://noyb.eu/sites/default/files/styles/media_large/public/2022-10/cookie_banner_header_1.png?itok=z2Jfi5eJ
+! ... type=image
+@@||noyb.eu^$1p,image
+
+! Fix broken page https://my.sevdesk.de/#/login
+! https://github.com/ghostery/broken-page-reports/issues/173
+! >>> url=https://my.sevdesk.de/shared/components/CookieConsent/CookieConsentModal.html
+! ... source=https://my.sevdesk.de/
+! ... type=xhr
+@@/cookieconsent/*$domain=my.sevdesk.de
+my.sevdesk.de#@#.cookie-footer
+my.sevdesk.de#@#div.cookie-consent-modal
+
+! Fix broken page digital.aireuropa.com
+! https://github.com/ghostery/broken-page-reports/issues/167
+digital.aireuropa.com#@#.gdpr-consent-form
+
+! Fix broken page: atombank.co.uk
+! https://github.com/ghostery/broken-page-reports/issues/164
+! >>> url=https://www.atombank.co.uk/components-molecules-cookie-banner-ad9c84eba446f32ac1ac.js
+! ... source=https://www.atombank.co.uk/
+! ... type=xhr
+@@-cookie-banner-$domain=atombank.co.uk
+
+! Fix broken page: eboo.lu
+! https://github.com/ghostery/broken-page-reports/issues/155
+eboo.lu#@##cookiesDialog
+eboo.lu#@#.cookies-dialog
+eboo.lu#@#app-cookies-consent
+
+! Fix broken page: fabrykawafelkow.pl
+! https://github.com/ghostery/broken-page-reports/issues/146
+fabrykawafelkow.pl#@#div.privacy-notice
+fabrykawafelkow.pl#@#.privacy-notice:not(body):not(html):not([class*="-input"])
+
+! Allow consent dialogs for Never Consent
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/cookiebot.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/144
+! >>> url=https://consent.cookiebot.com/03b1ec0e-d445-4ba1-ae2a-43259c94a903/cc.js?renew=false&referer=www.healthshield.co.uk&dnt=false&init=false
+! ... source=https://www.healthshield.co.uk/
+! ... type=script
+@@||cookiebot.com^$3p
+#@##cookiebanner
+! Fix broken page: expert.de
+! https://github.com/ghostery/broken-page-reports/issues/137
+#@##CybotCookiebotDialogBodyUnderlay
+
+! Fix broken page: tafel.de
+! https://github.com/ghostery/broken-page-reports/issues/143
+tafel.de#@#.cookieModal__background
+tafel.de#@#.cookieModal
+
+! Fix broken page: readly.com
+! https://github.com/ghostery/broken-page-reports/issues/138
+readly.com##.DialogHandlerContainer
+
+! Fix broken page: hbr.org
+! https://github.com/ghostery/broken-page-reports/issues/178
+hbr.org#@#.tp-container-inner
+
+! Fix broken page: faz.net
+! https://github.com/ghostery/broken-page-reports/issues/126
+! >>> url=https://consent.faz.net/wrapperMessagingWithoutDetection.js
+! ... source=https://www.faz.net/aktuell/
+! ... type=script
+@@||consent.faz.net
+
+! Fix broken page: wral.com
+! https://github.com/ghostery/broken-page-reports/issues/175
+legacy.wral.com##+js(set, wral_ga, true)
+
+! Removing the "Heise+" widget has the unintended side-effect it changes the layout
+! that gives the wrong impression that the article ended.
+! https://github.com/ghostery/broken-page-reports/issues/188
+! >>> url=https://cmp.heise.de/unified/wrapperMessagingWithoutDetection.js
+! ... source=https://www.heise.de/ratgeber/Welche-oeffentliche-APIs-es-gibt-und-was-man-damit-machen-kann-7371749.html?wt_mc=intern.red.plus.developer.startseite.teaser.teaser
+! ... type=script
+@@/wrappermessagingwithoutdetection.js$domain=heise.de
+heise.de#@#div[id^="sp_message_container_"]
+
+! Unbreak wildewesten.be (non-interactable cookie dialog).
+! With this change, the site becomes usable. Never-Consent does not cover it,
+! the user has to answer the consent dialog.
+! https://github.com/ghostery/broken-page-reports/issues/179
+wildewesten.be#@##cookie-consent-dialog
+
+! Unbreak brightinventions.pl:
+! https://github.com/ghostery/broken-page-reports/issues/184
+brightinventions.pl##section[class^=cookies-notice]
+
+! Unbreak postbank.de
+! https://github.com/ghostery/broken-page-reports/issues/189
+! >>> url=https://meine.postbank.de/iob5/translations/de-iob5Frame-cookieDisclaimer-IRBo-E8QG1ocUOAZdcX.json
+! ... source=https://banking.postbank.de/#/login
+! ... type=script
+@@-cookiedisclaimer-$domain=postbank.de
+
+! 2023-01-18: Temporarily unbreak pages like praxis.nl, but
+! we should later look into it again, since it will be likely
+! fixed in the community lists.
+! https://github.com/ghostery/broken-page-reports/issues/228
+lepermislibre.fr,thetrainline.com,brico.be,praxis.nl#@#.chakra-slide
+lepermislibre.fr,thetrainline.com,brico.be,praxis.nl#@#.chakra-modal__content-container
+lepermislibre.fr,thetrainline.com,brico.be,praxis.nl#@#.chakra-modal__overlay
+lepermislibre.fr,thetrainline.com,brico.be,praxis.nl#@#body,html:style(overflow: auto !important; position: initial !important;)
+
+! 2023-01-18: Temporarily unbreak opmaatzagen.nl, but we should later look
+! into it again, since it will be likely fixed in the community lists.
+! https://github.com/ghostery/broken-page-reports/issues/229
+opmaatzagen.nl#@#.bottom-0.fixed
+
+! Unbreak frankfurt-school.de
+! https://github.com/ghostery/broken-page-reports/issues/226
+frankfurt-school.de##body:style(overflow: auto !important;)
+
+! Attempt at unbreaking computerbase.de
+! (unclear if this will work, since "dialog" elements are special)
+! Currently, we don't implement "dialog:remove()", which would be what community lists are doing.
+! https://github.com/ghostery/broken-page-reports/issues/232
+computerbase.de##dialog.consent
+
+! Attempt at unbreaking atu.de on Firefox
+! https://github.com/ghostery/broken-page-reports/issues/185
+atu.de##+js(remove-class, tc-modal-open, body, stay)
+
+! Unbreak polizeitest.de on Chrome
+! https://github.com/ghostery/broken-page-reports/issues/165
+polizeitest.de##+js(remove-class, cli-barmodal-open, body, stay)
+polizeitest.de##div.cli-show
+
+! Unbreak tu-darmstadt.de
+! https://github.com/ghostery/broken-page-reports/issues/244
+tu-darmstadt.de##div.modal-backdrop
+tu-darmstadt.de##+js(remove-class, modal-open, body, stay)
+
+! Unbreak epidemicsound.com
+! https://github.com/ghostery/broken-page-reports/issues/245
+epidemicsound.com#@##es-consent
+
+! Never Consent needs to see the consent dialog:
+! https://github.com/ghostery/broken-page-reports/issues/281
+volksbank-eg.de#@#div.cookie-consent
+
+! Never Consent needs to see the consent dialog:
+! https://github.com/ghostery/broken-page-reports/issues/297
+scheersalon.nl,shavingpoint.com#@#div.privacy-notice
+scheersalon.nl,shavingpoint.com#@#.privacy-notice:not(body):not(html):not([class*="-input"])
+scheersalon.nl,shavingpoint.com#@#.cookie-permission-container
+
+! Unbreak bordgaisenergy.ie by blocking googletagmanger, so that it
+! cannot issue another request to
+! cdn.cookielaw.org/consent/3ed1c724-0d5d-451b-a89a-764aed9f0a66/OtAutoBlock.js
+! Because if that request is blocked, the site will break.
+! https://github.com/ghostery/broken-page-reports/issues/293
+! >>> url=www.googletagmanager.com/gtm.js?id=GTM-MSJX8Q5&gtm_auth=bg0O5VQHNzr-aLf8w0SOhg&gtm_preview=env-5&gtm_cookies_win=x
+! ... source=https://www.bordgaisenergy.ie/home/residential-smart-meters
+! ... type=script
+||googletagmanager.com/gtm.js$domain=bordgaisenergy.ie
+
+! Unbreak https://www.firstinarchitecture.co.uk/
+! https://github.com/ghostery/broken-page-reports/issues/270
+firstinarchitecture.co.uk##.cli-popupbar-overlay
+firstinarchitecture.co.uk##body:style(overflow: auto !important;)
+
+! Unbreak https://theprotocol.it/
+! https://github.com/ghostery/broken-page-reports/issues/300
+theprotocol.it#@#body,html:style(height: auto !important; overflow: auto !important)
+theprotocol.it##body:style(overflow-y: visible !important;)
+
+! Unbreak https://www.webtoons.com/
+! https://github.com/ghostery/broken-page-reports/issues/291
+webtoons.com#@#+js(set, ccsrv, '')
+webtoons.com#@#+js(set, lcs_SerName, '')
+webtoons.com#@#.cmpwrapper
+
+! Unbreak portal.zentrale-pruefstelle-praevention.de
+! https://github.com/ghostery/broken-page-reports/issues/310
+portal.zentrale-pruefstelle-praevention.de##.v-modal
+portal.zentrale-pruefstelle-praevention.de##.el-drawer__wrapper
+
+! Unbreak google.com
+! https://github.com/ghostery/ghostery-extension/issues/1206
+youtube.com#@#+js(trusted-set-cookie, SOCS, CAESEwgDEgk1MjE4NjcxMTIaAmVuIAEaBgiAl7ihBg, 1year, , reload, 1)
+youtube.com#@#+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/328
+www.pistonheads.com###leaderBoard
+
+! Unbreak Bing scrolling if the consent dialog is hidden
+! https://github.com/ghostery/broken-page-reports/issues/331
+bing.com##html:style(overflow: auto !important;)
+
+! Unbreak regenwald-schuetzen.org (unable to scroll)
+! https://github.com/ghostery/broken-page-reports/issues/334
+! Update: site navigation was broken, but seem so work when the
+! "body" element is used instead of "html" (see
+! https://github.com/ghostery/broken-page-reports/issues/351)
+regenwald-schuetzen.org##body:style(overflow: auto !important;)
+
+! Unbreak bankenverband.de (https://github.com/ghostery/broken-page-reports/issues/280)
+! With this fix, the page will no longer be blank. There will be a cookie dialog, which
+! Never Consent will not be able to deal with though.
+bankenverband.de#@##cookiebot
+
+! Unbreak stap.opleiding.nl
+! https://github.com/ghostery/broken-page-reports/issues/276
+stap.opleiding.nl###cookiebotwrapper:style(display: none !important)
+
+! Unbreak ns.nl
+! https://github.com/ghostery/broken-page-reports/issues/279
+ns.nl##html:style(overflow: auto !important;)
+
+! Unbreak csu-landtag.de
+! https://github.com/ghostery/broken-page-reports/issues/337
+csu-landtag.de#@##cookie-disclaimer
+csu-landtag.de#@##cookie-content
+
+! Unbreak united-internet.de
+! https://github.com/ghostery/broken-page-reports/issues/338
+united-internet.de##.page-overlay
+
+! Unbreak www.bayernportal.de/
+! https://github.com/ghostery/broken-page-reports/issues/343
+bayernportal.de##.bg-modal-overlay
+bayernportal.de##html:style(overflow: auto !important;)
+
+! Unbreak roofingmegastore.co.uk
+! https://github.com/ghostery/broken-page-reports/issues/344
+roofingmegastore.co.uk#@##m-cookienotice
+roofingmegastore.co.uk#@##accept-cookies
+
+! Unbreak zichtadviseurs.nl
+! https://github.com/ghostery/broken-page-reports/issues/358
+! (Note: adding [name=cookiebanner] is a hack, see ticket for details)
+zichtadviseurs.nl###cookiebanner[name=cookiebanner]
+
+! Unbreak blank page after login on New York Times
+! https://github.com/ghostery/broken-page-reports/issues/196
+nytimes.com#@#.CookieBanner
+
+! Unbreak vr-immoprofis.de
+! https://github.com/ghostery/broken-page-reports/issues/360
+vr-immoprofis.de#@#div.cookie-consent
+
+! Unbreak www.umweltberatung.at
+! Declining the cookie consent did not work and the dialog stayed open.
+! https://github.com/ghostery/broken-page-reports/issues/363
+! >>> url=https://www.umweltberatung.at/cookieaccept.php
+! ... source=https://www.umweltberatung.at/
+! ... type=script
+@@/cookieaccept.
+
+! Unbreak stabilo.com
+! Note: ccm19.de has been previously added to trackerdb
+! (https://github.com/ghostery/trackerdb/issues/148),
+! but the site is still broken (maybe it would work after an
+! extension release). For now, adding it here as an exclusion as well.
+! https://github.com/ghostery/broken-page-reports/issues/353
+! >>> url=https://5f3c395.ccm19.de/app.js?apiKey=b8eed85a1010dd0ec0d47e0d360327617b8060f62fe8315b&domain=63ff90281f297556f30f5d5e
+! ... source=https://www.stabilo.com/de/
+! ... type=script
+@@||ccm19.de^$3p
+#@#.privacy-notice:not(body):not(html):not([class*="-input"])
+#@#div.privacy-notice
+
+! Unbreak stuttgarter-nachrichten.de, stuttgarter-zeitung.de
+! https://github.com/ghostery/broken-page-reports/issues/371
+! >>> url=https://cdn.piano.io/id/1.26.0/runtime-es2015.js
+! ... source=https://www.stuttgarter-zeitung.de/
+! ... type=script
+@@||cdn.piano.io^$3p,domain=stuttgarter-nachrichten.de|stuttgarter-zeitung.de|sueddeutsche.de|schwarzwaelder-bote.de
+
+! Fix https://github.com/ghostery/ghostery-extension/issues/1381
+! >>> url=https://app.panobi.com/api/v1/metrics/test
+! ... source=https://app.panobi.com
+! ... type=script
+@@/api/v1/metrics$1p
+! >>> url=https://app.test.com/api/v1/metrics/test
+! ... source=https://app.panobi.com
+! ... type=script
+/api/v1/metrics$3p
+
+! Unbreak digitalroute.com
+! https://github.com/ghostery/broken-page-reports/issues/384
+digitalroute.com###myModal
+
+! https://github.com/ghostery/broken-page-reports/issues/355
+aftonbladet.se##.page-layout-supertop
+aftonbladet.se##.hyperion-css-bo82k8 > .hyperion-css-1diufuh
+aftonbladet.se##aside>div.hyperion-css-fdjmqp
+
+! https://github.com/ghostery/broken-page-reports/issues/364
+otvet.mail.ru##div[style="top: 76px;"]+div
+
+! https://github.com/ghostery/broken-page-reports/issues/381
+stocktwits.com#@#+js(aopr, Date.prototype.toUTCString)
+
+! https://github.com/ghostery/broken-page-reports/issues/376
+abc.es##.voc-advertising__item
+
+! https://github.com/ghostery/broken-page-reports/issues/324
+creativebloq.com#@#.sponsored-article:style(display: none !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/380
+sport-point-giessen.de##+js(aopw, tarteaucitron)
+
+! https://github.com/ghostery/broken-page-reports/issues/288
+routerdefaults.org##html:style(overflow: auto;)
+
+! https://github.com/ghostery/broken-page-reports/issues/389
+20min.ch##div.fc-ab-root
+20min.ch##body:style(overflow: auto !important)
