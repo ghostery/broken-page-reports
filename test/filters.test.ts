@@ -25,9 +25,9 @@ const doTest = (filePath: string) => {
 
 			expect(parsed).not.toBe(null);
 
-			for (const { url, type, match } of assertions) {
+			for (const { url, type, source, match } of assertions) {
 				expect((NetworkFilter.parse(filter)!).match(
-					Request.fromRawDetails({ url, type, sourceUrl: url }),
+					Request.fromRawDetails({ url, type, sourceUrl: source }),
 				)).toBe(match);
 			}
 		});

@@ -3,17 +3,682 @@
 ! Expires: 1 day
 ! Version: {{version}}
 
+! https://github.com/ghostery/adblocker-filters/issues/780
+#@#.cc-container
+
+! https://github.com/ghostery/adblocker-filters/issues/768
+#@#.adroll_consent_container
+
+! https://github.com/ghostery/adblocker-filters/issues/770
+#@#.c-cookie-banner
+
+! https://github.com/ghostery/adblocker-filters/issues/774
+#@##awsccc-sb-ux-c
+
+! https://github.com/ghostery/adblocker-filters/issues/777
+#@##cl-consent
+
+! https://github.com/ghostery/adblocker-filters/issues/778
+#@##cmplz-cookiebanner-container
+
+! https://github.com/ghostery/adblocker-filters/issues/779
+! >>> url=https://www.expatica.com/app/plugins/complianz-gdpr-premium-multisite/assets/js/cookieconsent.min.js?ver=5.5.2.1
+! ... source=https://www.expatica.com/de/
+! ... type=xhr
+! >>> url=https://www.hetzner.com/_resources/themes/hetzner/dist/cookieconsent.js?m=1669376974
+! ... source=https://www.hetzner.com/dedicated-rootserver
+! ... type=xhr
+@@/cookieconsent.$~stylesheet
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+! adblocker-filters#767: deepl.json
+#@#.dl_cookieBanner_container
+
+! adblocker-filters#767: eu-cookie-law.json
+#@#.pea_cook_wrapper
+#@#.pea_cook_more_info_popover
+
+! adblocker-filters#767: consentmanager.ts
+! >>> url=https://cdn.consentmanager.net/delivery/cmp.min.css
+! ... source=https://www.dastelefonbuch.de/
+! ... type=xhr
+@@||consentmanager.net^$3p
+
+! adblocker-filters#767: conversant.ts
+! >>> url=https://cdn.conversant.mgr.consensu.org/gdpr/cmp/gdpr-cmp-stub.js
+! ... source=https://www.irishcentral.com/
+! ... type=xhr
+@@||consensu.org/gdpr/$3p
+
+! adblocker-filters#767: gov-uk.json
+#@##global-cookie-message
+! >>> url=https://consentcdn.cookiebot.com/sdk/bc-v4.min.html
+! ... source=https://tfl.gov.uk/
+! ... type=xhr
+@@||cookiebot.com^$3p
+#@##cookiebanner
+
+! adblocker-filters#767: cookiebot.ts
+#@##cb-cookieoverlay
+
+! adblocker-filters#767: evidon.ts
+#@##_evidon_banner
+#@##_evidon_banner
+#@##_evidon-barrier-wrapper
+#@#.evidon-banner
+
+! adblocker-filters#767: klaro.ts
+! https://github.com/ghostery/adblocker-filters/issues/767
+! >>> url=https://www.innogames.com/typo3conf/ext/dkd_gdpr/Resources/Public/JavaScript/Vendor/klaro/klaro-no-css.js?1658844759
+! ... source=https://www.innogames.com/
+! ... type=xhr
+@@/klaro-no-css.
+
+! adblocker-filters#767: trustarc-top.ts
+! >>> url=https://consent.trustarc.com/notice?domain=samsung.com.ie&c=teconsent&pn=2&gtm=1&js=nj&noticeType=bb
+! ... source=https://www.samsung.com/uk/smartphones/all-smartphones/
+! ... type=script
+@@||consent.trustarc.com/notice$script
+! Allow to load the Trustarc banner frame.
+! It will break pages like forbes.com (https://github.com/ghostery/broken-page-reports/issues/119)
+! Note: on forbes.com, the banner might take a few second to show up. If it
+! is then prevented from loading, only a non-interactive overlay is left, which
+! renders the page unusable.
+! >>> url=https://trustarc.mgr.consensu.org/asset/cmpcookie.v2.html
+! ... source=https://www.forbes.com
+! ... type=frame
+@@||trustarc.mgr.consensu.org
+#@##truste-consent-track
+
+! adblocker-filters#767: tealium.json
+#@##__tealiumGDPRecModal
+#@##__tealiumGDPRcpPrefs
+#@#div.privacy_prompt
+! >>> url=https://tags.tiqcdn.com/utag/camelot/main/prod/utag.sync.js
+! ... source=https://www.national-lottery.co.uk
+! ... type=script
+@@||tags.tiqcdn.com/utag/*/utag.sync.js$script
+! >>> url=https://tags.tiqcdn.com/utag/santander/pl-santander.pl/prod/utag.js
+! ... source=https://santander.pl
+! ... type=script
+@@||tags.tiqcdn.com/utag/*/utag.js$script
+! >>> url=https://visitor-service.tealiumiq.com/camelot/main/018341981bae0018cc47b4dbfb0705054002300f0127a?callback=utag.ut%5B%22writevamain%22%5D&rnd=1663267692756
+! ... source=https://www.national-lottery.co.uk
+! ... type=script
+@@||tealiumiq.com^
+
+! adblocker-filters#767: eu-cookie-compliance.json
+! https://github.com/ghostery/adblocker-filters/issues/767
+#@#div.eu-cookie-compliance-banner
+#@#div.eu-cookie-compliance-banner-info
+! >>> url=https://publichealth.jhu.edu/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.js?v=1.9
+! ... source=https://publichealth.jhu.edu/
+! ... type=script
+@@/eu_cookie_compliance.js$script
+
+! adblocker-filters#767: paypal.com
+#@#.gdprCookieBanner_container
+#@##gdprCookieBanner
+
+! adblocker-filters#767: mediamarkt.de
+#@##mms-consent-portal-container
+
+! adblocker-filters#767: thalia.de
+! >>> url=https://assets.thalia.media/ocsassets/heimdall/consent-banner-bootstrap/main-nomodule.97cb3f03ff46b9c82fd4.js
+! ... source=https://www.thalia.de/
+! ... type=script
+@@||thalia.media/*/consent-banner-$script
+
+! adblocker-filters#767: xing.com
+! >>> url=https://static.xingcdn.com/userconsent/cookie-consent-informal.en.json
+! ... source=https://www.xing.com/start/signup
+! ... type=xhr
+@@||xingcdn.com/*/cookie-consent-$xhr
+
+! adblocker-filters#767: mediavine.json
+! >>> url=https://scripts.mediavine.com/tags/passion-for-savings.js?ver=5.9.3
+! ... source=https://www.passionforsavings.com/
+! ... type=script
+@@||mediavine.com$domain=passionforsavings.com,3p,script
+! >>> url=https://www.googletagmanager.com/gtm.js?id=GTM-WM9M2G6&gtm_auth=VZJbukA8zjH0K5zZyRMuJA&gtm_preview=env-2&gtm_cookies_win=x
+! ... source=https://www.passionforsavings.com/
+! ... type=script
+@@||googletagmanager.com$domain=passionforsavings.com,3p,script
+! >>> url=https://a.omappapi.com/app/js/api.min.js
+! ... source=https://www.passionforsavings.com/
+! ... type=script
+@@||omappapi.com/app/js/api.min.js$domain=passionforsavings.com,3p,script
+! >>> url=https://scripts.mediavine.com/tags/gdprModalLocale44/eba9e44e5268b9f887a0.min.js
+! ... source=https://europeupclose.com/
+! ... type=script
+! >>> url=https://scripts.mediavine.com/tags/europe-up-close.js?ver=6.0.2
+! ... source=https://europeupclose.com/
+! ... type=script
+@@scripts.mediavine.com/tags/*.js$script,domain=europeupclose.com
+
+! adblocker-filters#767: onetrust
+! Do not hide OneTrust links ("Do Not Sell Or Share My Information", "Privacy Policy").
+! Test page: https://www.petsmart.com/
+! https://github.com/ghostery/broken-page-reports/issues/357
+!
+! Note: other rules should be covered by trackerdb now (https://github.com/ghostery/trackerdb/pull/137).
+! Leaving that one here now, since it is a global rule and the name is not directly linked to OneTrust
+#@#.js-consent-banner
+! Github: https://github.com/ghostery/broken-page-reports/issues/362
+#@##privacy-statement:not(.checkbox)
+#@##onetrust-consent-sdk
+#@#.onetrust-pc-dark-filter
+! >>> url=https://cdn.cookielaw.org/scripttemplates/202305.1.0/otBannerSdk.js
+! ... source=https://2u.com/
+! ... type=script
+@@||cdn.cookielaw.org/scripttemplates/202305.1.0/otBannerSdk.js$script
+
+! adblocker-filters#767: met-office
+! >>> url=https://www.metoffice.gov.uk/public/gdpr-consent/cookieControl-config.js
+! ... source=https://www.metoffice.gov.uk/
+! ... type=script
+@@||metoffice.gov.uk^*/gdpr-consent/$script
+! >>> url=https://cc.cdn.civiccomputing.com/9/cookieControl-9.6.1.min.js
+! ... source=https://www.metoffice.gov.uk/
+! ... type=script
+@@/cookiecontrol-/$script,domain=metoffice.gov.uk
+! >>> url=https://apikeys.civiccomputing.com/c/v?d=www.metoffice.gov.uk&p=CookieControl%20Multi-Site&v=9&k=0144bb529edfc11085639c504ecae11c033749c5&format=json
+! ... source=https://www.metoffice.gov.uk/
+! ... type=xhr
+@@||civiccomputing.com^*=cookie$3p
+
+! adblocker-filters#767: wordpress
+! Allow WordPress Cookie Notice dialogs
+! Auto-consent rule: https://github.com/duckduckgo/autoconsent/blob/b29c9e7658a2a62eda9d16855357661760657ff7/rules/autoconsent/wp-cookie-notice.json
+! >>> url=https://veryceleb.com/wp-content/rome/gdpr-cookie-consent/public/js/gdpr-cookie-consent-public.js
+! ... source=https://veryceleb.com/
+! ... type=script
+! >>> url=https://veryceleb.com/wp-content/rome/gdpr-cookie-consent/public/js/gdpr-cookie-consent-public.min.js
+! ... source=https://veryceleb.com/
+! ... type=script
+! >>> url=https://nysba.org/app/plugins/gdpr-cookie-consent/public/js/gdpr-cookie-consent-public.min.js?ver=2.2.1
+! ... source=https://nysba.org/
+! ... type=script
+@@/gdpr-cookie-consent$script
+#@##gdpr-cookie-consent-bar
+#@#.gdpr-banner
+#@#div.gdpr
+
+! adblocker-filters#767: iubenda.json
+! >>> url=https://cdn.iubenda.com/cs/iubenda_cs.js
+! ... source=https://www.rossignol.com/us/
+! ... type=script
+@@||iubenda.com^$3p
+
+! adblocker-filters#767: johnlewis.json
+! >>> url=https://tags.johnlewis.com/johnlewis/browseprod/Bootstrap.js
+! ... source=https://www.johnlewis.com/
+! ... type=script
+@@||tags.johnlewis.com^
+johnlewis.com#@#[data-test="cookie-banner"]
+johnlewis.com#@##pecr-cookie-banner-wrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/359
+! https://github.com/ghostery/broken-page-reports/issues/221
+#@#div.c-cookies
+#@##CybotCookiebotDialogBodyUnderlay
+#@##CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll
+#@##cookies-content
+#@#div.c-settings
+
+! adblocker-filters#767: jquery-cookiebar.json
+! https://github.com/ghostery/adblocker-filters/issues/767
+! >>> url=https://www.minotstateu.edu/_flint/_files/js/jquery.cookieBar.js
+! ... source=https://www.minotstateu.edu/
+! ... type=script
+@@/jquery.cookiebar.
+#@##cookie-bar
+#@#.cookie-bar--bottom
+#@#.cookie-bar__inner
+#@#div.cookie-bar
+
+! adblocker-filters#767: nhs.json
+! >>> url=https://www.nhs.uk/our-policies/cookies-policy/?policy-action=seen
+! ... source=https://www.nhs.uk/
+! ... type=xhr
+@@||nhs.uk/*/cookies-policy/*$xhr
+! >>> url=https://assets.nhs.uk/scripts/cookie-consent.js
+! ... source=https://www.nhs.uk/
+! ... type=script
+@@||nhs.uk/*/cookie-consent.$script
+
+! adblocker-filters#767: osano.json
+! >>> url=https://cmp.osano.com/
+! ... source=https://www.weathertech.com/
+! ... type=frame
+@@||cmp.osano.com^
+#@#.osano-cm-window
+
+! adblocker-filters#767: quantcast.json
+! >>> url=https://quantcast.mgr.consensu.org/choice/uer8ZPXHG8WDU/www.cyclingnews.com/choice.js
+! ... source=https://www.cyclingnews.com/
+! ... type=script
+@@||quantcast.mgr.consensu.org^$3p
+! >>> url=https://script.wikia.nocookie.net/fandom-ae-assets/tracking-opt-in/v9.4.1/tracking-opt-in.min.js
+! ... source=https://www.fandom.com/
+! ... type=script
+@@/tracking-opt-in.
+
+! adblocker-filters#767: sirdata.json
+! >>> url=https://choices.consentframework.com/api/v1/public/user-action
+! ... source=https://www.futura-sciences.com/
+! ... type=script
+@@||consentframework.com^$3p
+
+! adblocker-filters#767: snigel.json
+! >>> url=https://cdn.snigelweb.com/adconsent/70/views/adconsent__tcfapi_en.js
+! ... source=https://www.w3schools.com/
+! ... type=script
+@@||snigelweb.com^$3p
+#@#.snigel-cmp-framework
+
+! adblocker-filters#767: tarteaucitron.json
+#@#.tarteaucitronBeforeVisible
+#@#.tarteaucitronAlertBigBottom
+#@##tarteaucitronRoot.tarteaucitronBeforeVisible
+#@##tarteaucitronAlertBig
+
+! adblocker-filters#767: termly.json
+! >>> url=https://app.termly.io/677.embed.min.js
+! ... source=https://www.iccsafe.org/
+! ... type=script
+@@||termly.io^$3p
+
+! adblocker-filters#767: steampowered.json
+#@#div.cookieMessage
+#@#.cookiepreferences_popup
+
+! adblocker-filters#767: thefreedictionary.json
+! >>> url=https://www.thefreedictionary.com/_/tr.ashx?r=0.48944645757865224&andr=0&IE=0&IE11=false&Edge=false&sw=3008&sh=1692&loc=https%3A%2F%2Fwww.thefreedictionary.com%2F&ref=https%3A%2F%2Fwww.thefreedictionary.com%2F&dw=1485&dh=3310&ww=1485&wh=267&IsApp=0&word=&Domain=thefreedictionary.com&PageLang=en&canonical=https%3A%2F%2Fwww.thefreedictionary.com&tab=1&isLogin=false&a=rm&isExtDomain=false&mobw=775&l=2+479+2547+0+382,6+137+2969+0+1210
+! ... source=https://www.thefreedictionary.com/
+! ... type=script
+@@||thefreedictionary.com/_/tr.ashx?
+thefreedictionary.com#@##Content_CA_AD_1_BC
+thefreedictionary.com#@##Content_CA_AD_0_BC
+thefreedictionary.com#@##cmpBanner
+
+! adblocker-filters#767: uk-cookie-consent.json
+! >>> url=https://london.msg.com/wp-content/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js?ver=2.3.0
+! ... source=https://london.msg.com/
+! ... type=script
+@@/uk-cookie-
+#@##catapult-cookie-bar
+#@#.cookie-class
+
+! adblocker-filters#767: dsgvo.json
+! >>> url=https://www.trs-staufen.de/wp-content/plugins/shapepress-dsgvo/public/js/simplebar.min.js
+! ... source=https://rlalpbsl.web.belwue.de/
+! ... type=script
+@@/shapepress-dsgvo/*
+#@#.cookie-notice-container
+#@#.sp-dsgvo-popup-overlay
+
+! adblocker-filters#767: ezoic.json
+! >>> url=https://g.ezodn.com/cmp/v2/cmp.js?v=55
+! ... source=https://www.diyphotography.net/
+! ... type=script
+@@||ezodn.com/cmp^$script
+#@##ez-cookie-dialog-wrapper
+! https://github.com/ghostery/broken-page-reports/issues/213
+! >>> url=https://go.ezodn.com/hb/dall.js?b=adyoulike,amx,ix,medianet,oftmedia,onemobile,onetag,openx,sovrn,yieldmo&cb=195-0-50
+! ... source=https://www.linuxuprising.com/2020/09/how-to-find-files-modified-in-last-n.html
+! ... type=script
+@@||ezodn.com^
+
+! adblocker-filters#767: fundingchoices.json
+! >>> url=https://fundingchoicesmessages.google.com/el/AGSKWxUsmwHGFjuyYV70fXL8hOaoBbdcKbJyowX8oYQ_T_BxgpK5c81L-AKTWgWsP0RmZzQBzbHgxXR66GOHi-OGusVbtLIPc_QfXMO486UA6RD_Qc6t3Xcokt4JnlKtNB5XJ-Luje9-_A==?dmid=918d3362c27d1c16
+! ... source=https://www.bbc.com
+! ... type=script
+@@||fundingchoicesmessages.google.com^
+bbc.com#@#.fc-consent-root
+accuweather.com#@#.privacy-policy-banner
+accuweather.com#@##privacy-policy-banner
+
+! adblocker-filters#767: hubspot.json
+! >>> url=https://js.hs-banner.com/cookie-banner-public/v1/activity/view
+! ... source=https://www.hubspot.de/
+! ... type=script
+@@||hs-banner.com^
+#@##hs-eu-cookie-confirmation
+
+! adblocker-filters#767: usercentrics-api.json
+! https://github.com/ghostery/broken-page-reports/issues/87
+! >>> url=https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js
+! ... source=https://usercentrics.com/
+! ... type=script
+! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
+! ... source=https://www.nubert.de/
+! ... type=script
+@@||usercentrics.eu^$3p
+
+! adblocker-filters#767: usercentrics-button.json
+#@##uc-banner-modal
+#@##uc-central-banner-modal
+#@##uc-privacy-chip
+#@##uc-btn-outside-click-banner-modal
+
+! adblocker-filters#767: vodafone.json
+! >>> url=https://fc.vodafone.de/op/vfde-web/info?attributes&notifications&permissions&out=json
+! ... source=https://www.vodafone.de/
+! ... type=xhr
+@@||fc.vodafone.de^
+! >>> url=https://at.vodafone.de/rest/v1/delivery?client=vodafonegroupservice&sessionId=a1bb752c89ec480085bd07947fa66102&version=2.6.1
+! ... source=https://www.vodafone.de/
+! ... type=xhr
+@@||at.vodafone.de^
+
+! adblocker-filters#767: motor-talk.json
+! https://github.com/ghostery/adblocker-filters/issues/767
+! >>> url=https://www.motor-talk.de/akam/13/37cdd99a
+! ... source=https://www.motor-talk.de/consent
+! ... type=script
+@@/akam/13/*$domain=motor-talk.de
+#@#.mt-cc-bnnr
+
+! https://github.com/ghostery/adblocker-filters/issues/782
+#@##cookie-law-info-bar ~ .cli-modal-backdrop
+#@##cookie-law-info-again
+#@##cliSettingsPopup
+#@##cookie_hdr_showagain
+#@##cookie-law-info-bar[style*="border-box; display:"]
+yubico.com#@#.wt-cli-cookie-bar-container
+
+! https://github.com/ghostery/adblocker-filters/issues/776
+! >>> url=https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js
+! ... source=https://www.w3resource.com/
+! ... type=script
+@@/cookieconsent.$~stylesheet
+! >>> url=https://bitcoin.org/js/cookieconsent/light-floating.css
+! ... source=https://bitcoin.org/en/
+! ... type=stylesheet
+@@/cookieconsent/*$stylesheet
+#@#.cc_banner
+#@#.cc_banner-wrapper
+#@#.cc_container
+#@#.cc_container--open.cc_banner
+
+! Allow moove consent dialogs for Never Consent
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/moove.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/87
+! https://github.com/ghostery/broken-page-reports/issues/88
+! https://github.com/ghostery/broken-page-reports/issues/89
+! https://github.com/ghostery/broken-page-reports/issues/90
+! >>> url=https://impact.parkinson.org/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=4.8.7
+! ... source=https://impact.parkinson.org/
+! ... type=script
+! >>> url=https://wamu.org/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=4.8.2
+! ... source=https://wamu.org/
+! ... type=script
+! >>> url=https://d2dfxqxblmblx4.cloudfront.net/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=4.8.9
+! ... source=https://www.phorest.com/
+! ... type=script
+! >>> url=https://www.yourcloudlibrary.com/wp-content/plugins/gdpr-cookie-compliance-addon/assets/js/gdpr_cc_addon.js?ver=3.0.5
+! ... source=https://www.yourcloudlibrary.com/
+! ... type=script
+@@/gdpr-cookie-compliance$script
+#@#.cookie-slider
+#@##moove_gdpr_cookie_info_bar
+#@##moove_gdpr_cookie_modal
+#@##moove_gdpr_save_popup_settings_button
+#@#.moove-gdpr-align-center
+#@#.moove-gdpr-dark-scheme
+#@#.moove-gdpr-light-scheme
+#@#.moove_gdpr_cookie_info_bar
+#@#.moove_gdpr_cookie_modal_open
+#@#.gdpr_infobar_postion_bottom
+#@##cookie_policy_modal
+! >>> url=https://d2dfxqxblmblx4.cloudfront.net/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=4.8.12
+! ... source=https://www.phorest.com/
+! ... type=script
+@@/gdpr-cookie-
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/iubenda.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/97
+! https://github.com/ghostery/broken-page-reports/issues/96
+! >>> url=https://cdn.iubenda.com/iubenda_i_badge.js
+! ... source=https://www.lofficielusa.com/
+! ... type=script
+@@||iubenda.com^$3p
+! https://github.com/ghostery/broken-page-reports/issues/98
+3bmeteo.com#@#.iubenda-cs-visible
+! https://github.com/ghostery/broken-page-reports/issues/84
+! >>> url=https://assets.staticroot.com/cookie-consent-manager-ui/3/cookie-consent-manager.js
+! ... source=https://www.lastminute.com/
+! ... type=script
+@@/cookie-consent-$domain=~cookielaw.org|~github.com|~gitlab.com
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/mediavine.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/93
+! https://github.com/ghostery/broken-page-reports/issues/94
+! >>> url=https://scripts.mediavine.com/tags/passion-for-savings.js?ver=6.0.2
+! ... source=https://www.lofficielusa.com/
+! ... type=script
+@@||mediavine.com^
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/pubtech.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/67
+! https://github.com/ghostery/broken-page-reports/issues/69
+! https://github.com/ghostery/broken-page-reports/issues/70
+! https://github.com/ghostery/broken-page-reports/issues/75
+! https://github.com/ghostery/broken-page-reports/issues/76
+! https://github.com/ghostery/broken-page-reports/issues/77
+! https://github.com/ghostery/broken-page-reports/issues/78
+! >>> url=https://cmp.pubtech.ai/189/cookie/1/publisher-cookie.json
+! ... source=https://www.leccenews24.it/
+! ... type=script
+@@||pubtech.ai^$3p
+! https://github.com/ghostery/broken-page-reports/issues/68
+! >>> url=https://ads.talkscreativity.com/assets/publisher/ittelefoninonet/init.js
+! ... source=https://www.telefonino.net/?refresh-ce
+! ... type=script
+@@://ads.$domain=telefonino.net
+! https://github.com/ghostery/broken-page-reports/issues/66
+! >>> url=https://www.heymatic.com/assets/vendorList/107/google-vendor-list.json
+! ... source=https://www.telefonino.net/?refresh-c
+! ... type=script
+@@||heymatic.com^$3p
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/snigel.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/65
+! >>> url=https://cdn.snigelweb.com/adconsent/71/adconsent__tcfapi.js
+! ... source=https://www.w3schools.com/
+! ... type=script
+@@||snigelweb.com^$3p
+#@#.snigel-cmp-framework
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/quantcast.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/64
+! https://github.com/ghostery/broken-page-reports/issues/63
+! https://github.com/ghostery/broken-page-reports/issues/62
+! https://github.com/ghostery/broken-page-reports/issues/61
+! https://github.com/ghostery/broken-page-reports/issues/60
+! >>> url=https://quantcast.mgr.consensu.org/tcfv2/google-atp-list.json
+! ... source=https://www.gamesradar.com/uk/
+! ... type=script
+@@||quantcast.mgr.consensu.org^$3p
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/sirdata.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/58
+! https://github.com/ghostery/broken-page-reports/issues/59
+! >>> url=https://choices.consentframework.com/api/v1/public/user-action
+! ... source=https://www.futura-sciences.com/
+! ... type=script
+@@||consentframework.com^$3p
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/springer.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/44
+! https://github.com/ghostery/broken-page-reports/issues/45
+! https://github.com/ghostery/broken-page-reports/issues/46
+! >>> url=https://cmp.dreamlab.pl/vendor-list/5469564/vendor-list.json?v=3
+! ... source=https://onet.pl
+! ... type=script
+@@||cmp.dreamlab.pl^
+! >>> url=https://csr.onet.pl/5469564/me?domain=www.blick.ch&ver=1
+! ... source=https://onet.pl
+! ... type=script
+@@||csr.onet.pl^
+#@#.cmp-app_gdpr
+
+! https://github.com/ghostery/broken-page-reports/issues/38
+! >>> url=https://cms.static-bahn.de/cms/consent-layer/js/consent-layer-loader.js
+! ... source=https://bahn.de
+! ... type=script
+@@/consent-layer-loader.
+
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/termly.spec.ts)
+! https://github.com/ghostery/broken-page-reports/issues/35
+! https://github.com/ghostery/broken-page-reports/issues/36
+! https://github.com/ghostery/broken-page-reports/issues/37
+! >>> url=https://app.termly.io/837.embed.min.js
+! ... source=https://itsalovelylife.com/
+! ... type=script
+@@||termly.io^$3p
+
+! Unbreak pages that are using Eolia
+! (GPDR popups were hidden, resulting in a non-interactive page)
+! https://github.com/ghostery/broken-page-reports/issues/125
+#@#.gdpr-content
+
+! https://github.com/ghostery/broken-page-reports/issues/2
+192.com#@#.ont-cookies
+
+! https://github.com/ghostery/adblocker-filters/issues/771
+arzt-auskunft.de#@##cookiescript_injected
+
+! https://github.com/ghostery/adblocker-filters/issues/773
+asus.com#@##cookie-policy-info
+
+! https://github.com/ghostery/adblocker-filters/issues/775
+bundesregierung.de#@#.bpa-cookie-banner
+
+! https://github.com/ghostery/adblocker-filters/issues/784
+corona-in-zahlen.de#@#.cookiealert
+
+! https://github.com/ghostery/adblocker-filters/issues/786
+!
+! TODO: there are still uniconsent dialogs being blocked by cosmetics.
+!
+! >>> url=https://cmp.uniconsent.com/t/69a3449348.cmp.js
+! ... source=https://sport-stimme.de/
+! ... type=xhr
+@@||uniconsent.com^$third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/168
+! https://github.com/ghostery/broken-page-reports/issues/142
+hetzner.com#@##CookieConsent
+
+! https://github.com/ghostery/adblocker-filters/issues/783
+! >>> url=https://policy.app.cookieinformation.com/cookie-data/water.org/cabl.json
+! ... source=https://water.org/
+! ... type=xhr
+@@||cookieinformation.com/*/*.js
+
+! https://github.com/ghostery/broken-page-reports/issues/71
+kerastase.fr#@#.cookie-label
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+otto.de#@#.cookieBanner__wrapper
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+netflix.com#@##cookie-disclosure
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+! >>> url=https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js
+! ... source=https://docs.microsoft.com/en-us/
+! ... type=script
+@@||microsoft.com/mscc/lib/v2/wcp-consent.js$script
+microsoft.com#@##cookie-consent-holder
+microsoft.com#@##wcpConsentBannerCtrl
+microsoft.com#@##uhfCookieAlert
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+marksandspencer.com#@#.navigation-cookiebbanner
+
+! https://github.com/ghostery/broken-page-reports/issues/4
+! >>> url=https://static.files.bbci.co.uk/cookies/23436b7d4f578004a5aa4cae68638f84/cookie-banner/cookie-banners.bundle.js
+! ... source=https://www.bbc.co.uk
+! ... type=script
+@@/cookie-banner$domain=bbc.com|bbc.co.uk
+bbc.com,bbc.co.uk#@#.fc-consent-root
+! Suppress a popup that would otherwise be unclosable, since event listener are not added.
+! https://github.com/ghostery/broken-page-reports/issues/187
+bbc.com,bbc.co.uk###zephr-message
+bbc.com,bbc.co.uk###zephr-overlay
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+! >>> url=https://www.moneysavingexpert.com/cookie-consent-v2/msmCookieConsent.js
+! ... source=https://www.moneysavingexpert.com/
+! ... type=script
+@@||moneysavingexpert.com/cookie-consent-v2$script
+moneysavingexpert.com#@#div.cookie-consent
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+! >>> url=https://monzo.com/static/scripts/cookie-policy.js?1663259829990718415
+! ... source=https://monzo.com/us/
+! ... type=script
+@@||monzo.com/static/scripts/cookie-policy.js
+! >>> url=https://monzo.com/static/css/cookie-banner.css?1663259829990718415
+! ... source=https://monzo.com/us/
+! ... type=css
+@@||monzo.com/static/css/cookie-banner.css
+monzo.com#@#div.cookie-alert
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+hl.co.uk#@#div.cookieBanner
+hl.co.uk#@##cookie-banner-overlay
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+ionos.de#@#.privacy-consent--modal
+ionos.de#@#.privacy-consent--backdrop
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+dunelm.com#@#.e13q590n1
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+etsy.com#@#div[data-gdpr-consent-prompt]
+etsy.com#@##gdpr-single-choice-overlay
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+uswitch.com#@##cookie-banner-wrapper
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+waitrose.com#@#.closeOnClick___2g2S3
+
+! https://github.com/ghostery/adblocker-filters/issues/767
+forum.proxmox.com#@#.u-bottomFixer
+
+! https://github.com/ghostery/broken-page-reports/issues/405
+! Note: If the cookie with name of `cookieconsent_status` is `allowed`, the site will render correctly.
+divelogs.org#@#div.cc-revoke
+divelogs.org#@#.cc-bottom.cc-banner
+divelogs.org#@#.cc-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/166
+combi.de#@#.cookie-notice__content
+
 ! https://github.com/ghostery/broken-page-reports/issues/416
 ! https://github.com/duckduckgo/autoconsent/pull/319
-hema.com#@#.modal-overlay
-hema.com#@#.cookie-img
-hema.com#@#.cookie-box
-hema.com#@#.cookie-wrap-content
-hema.com#@#body,html:style(overflow: auto !important; position: initial !important;)
+! Enables the use of autoconsent
+www.hema.com#@#.modal-overlay
+www.hema.com#@#.cookie-img
+www.hema.com#@#.cookie-box
+www.hema.com#@#.cookie-wrap-content
+www.hema.com#@#body,html:style(overflow: auto !important; position: initial !important;)
 
-! https://github.com/ghostery/broken-page-reports/issues/318
-! https://github.com/duckduckgo/autoconsent/pull/320
-ohga.it###cp-gdpr-choices
-lexplain.it###cp-gdpr-choices
-wamily.it###cp-gdpr-choices
-fanpage.it###cp-gdpr-choices
+! https://github.com/ghostery/broken-page-reports/issues/337
+csu-landtag.de#@##cookie-disclaimer
+csu-landtag.de#@##cookie-content
+
+! https://github.com/ghostery/broken-page-reports/issues/327
+vr.gama.tech#@#cookie-policy
+
+! https://github.com/ghostery/broken-page-reports/issues/322
+tekna.no##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/420
+voba-rhein-erft-koeln.de#@#div.cookie-consent
