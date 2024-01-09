@@ -682,3 +682,7 @@ tekna.no##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/420
 voba-rhein-erft-koeln.de#@#div.cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/426
+propertynews.pl##body:style(overflow: auto !important)
+propertynews.pl#@#.cmpwrapper
