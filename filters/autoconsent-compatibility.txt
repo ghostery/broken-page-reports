@@ -670,10 +670,6 @@ www.hema.com#@#.cookie-box
 www.hema.com#@#.cookie-wrap-content
 www.hema.com#@#body,html:style(overflow: auto !important; position: initial !important;)
 
-! https://github.com/ghostery/broken-page-reports/issues/337
-csu-landtag.de#@##cookie-disclaimer
-csu-landtag.de#@##cookie-content
-
 ! https://github.com/ghostery/broken-page-reports/issues/327
 vr.gama.tech#@#cookie-policy
 
