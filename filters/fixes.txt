@@ -524,3 +524,6 @@ routerdefaults.org##html:style(overflow: auto;)
 ! https://github.com/ghostery/broken-page-reports/issues/389
 20min.ch##div.fc-ab-root
 20min.ch##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/203
+readly.com#@#.DialogHandlerContainer
