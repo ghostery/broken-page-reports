@@ -128,9 +128,6 @@ limetorrents.info##[href^="https://track.ultravpn.com/"]
 ! ... type=script
 @@||dovewallet.com$1p
 
-! Prevent community lists from blocking Ghostery own Private Sponsored Links
-glowstery.com#@##ghostery-highlights
-
 ! Prevent blank page on Twitter
 ! Background: https://twitter.com/jackplatt1000/status/1490433150467678209
 ! >>> url=https://twitter.com/1.1/jot/client_event.json
