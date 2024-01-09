@@ -59,14 +59,6 @@ abcbourse.com##+js(aopw, doc)
 ! ... type=document
 ||9to5mac.com^$csp=script-src 'self' 'unsafe-inline' *.ytimg.com *.youtube.com *.google.com *.disqus.com *.disquscdn.com
 
-! https://github.com/cliqz-oss/adblocker/issues/456
-! Spinners keep turning forever. They are usually populated using content
-! served from cxense.com, which is rightfully blocked by Peter Lowe's server
-! list. As a solution we apply cosmetics to hide these spinners.
-tn.com.ar##.article__related-articles
-tn.com.ar##.article__unread-articles
-tn.com.ar##div.tablet-hidden:first-child
-
 ! Spiegel deployed a new wall which cannot be closed with the following rule.
 ! uBlock Origin maintainers will probably find a better fix eventually but in the
 ! meanwhile, this exception seems to do the trick.
