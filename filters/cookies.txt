@@ -27,3 +27,6 @@ fanpage.it###cp-gdpr-choices
 actiage.es###overbox3
 actiage.es##.capaFondoCookies
 actiage.es##body:style(overflow: auto !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/52
+insider.com##body.cm-dialog-open>div.osano-cm-window
