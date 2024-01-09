@@ -33,3 +33,7 @@ insider.com##body.cm-dialog-open>div.osano-cm-window
 
 ! https://github.com/ghostery/broken-page-reports/issues/269
 abconcerts.be##dialog.cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/193
+sizzlingpubs.co.uk##body.body--cookie-modal-open:style(overflow: auto !important)
+sizzlingpubs.co.uk##.ce-banner
