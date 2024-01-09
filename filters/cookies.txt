@@ -30,3 +30,6 @@ actiage.es##body:style(overflow: auto !important;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/52
 insider.com##body.cm-dialog-open>div.osano-cm-window
+
+! https://github.com/ghostery/broken-page-reports/issues/269
+abconcerts.be##dialog.cookie-consent
