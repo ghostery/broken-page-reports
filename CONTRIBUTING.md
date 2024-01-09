@@ -48,12 +48,12 @@ Without special reasons for grouping filters, new filters should be appended to 
 
 ```adblock
 !! DO
-! https://lnk/to/reference
+! https://link/to/reference
 domain.tld##filter$old
 domain.tld##filter$new
 
 !! DO NOT
-! https://lnk/to/reference
+! https://link/to/reference
 domain.tld##filter$new
 domain.tld##filter$old
 ```
@@ -65,18 +65,17 @@ In most cases, you should not use generic filters.
 
 ```adblock
 !! DO
-! https://lnk/to/reference
+! https://link/to/reference
 domain.tld##element
 
 !! DO NOT
-! https://lnk/to/reference
+! https://link/to/reference
 ##element
 ```
 
-### SHOULD avoid complex filters
+### SHOULD prioritize Manifest V3 compatible filters
 
-Complex filters mean that they're not working on Manifest V3.
-We'll prioritize Manifest V3 filters over Manifest V2 filters for compatibility and performance.
-If you can solve the problem with Manifest V3 compatible filter, you should use Manifest V3 filter instead of Manifest V2 filter.
+Some filters may not compatible with Manifest V3.
+You should prioritize Manifest V3 compatible format over Manifest V2 only filter if available.
 
 Also, see [Ghostery adblocker engine compatibility matrix](https://github.com/ghostery/adblocker/wiki/Compatibility-Matrix).
