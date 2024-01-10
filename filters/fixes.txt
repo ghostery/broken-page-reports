@@ -518,5 +518,6 @@ routerdefaults.org##html:style(overflow: auto;)
 readly.com#@#.DialogHandlerContainer
 
 ! https://github.com/ghostery/broken-page-reports/issues/171
-savvyrevenue.com##.noScroll:style(overflow: auto !important)
-savvyrevenue.com##.noScroll body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/284
+savvyrevenue.com,elektroimportoren.no##.noScroll:style(overflow: auto !important)
+savvyrevenue.com,elektroimportoren.no##.noScroll body:style(overflow: auto !important)
