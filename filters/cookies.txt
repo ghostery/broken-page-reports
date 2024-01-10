@@ -37,3 +37,6 @@ abconcerts.be##dialog.cookie-consent
 ! https://github.com/ghostery/broken-page-reports/issues/193
 sizzlingpubs.co.uk##body.body--cookie-modal-open:style(overflow: auto !important)
 sizzlingpubs.co.uk##.ce-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/277
+canyon.com##.modal.is-open[data-triggerclass="js-modalCookiesTrigger"]
