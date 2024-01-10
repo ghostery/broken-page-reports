@@ -524,3 +524,7 @@ savvyrevenue.com,elektroimportoren.no##.noScroll body:style(overflow: auto !impo
 
 ! https://github.com/ghostery/broken-page-reports/issues/299
 transip.nl##html.html-with-one-modal body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/309
+@@||kontostand.at/WebportalAPK/js/cookie-banner.js$1p
+kontostand.at##body.cb-body-no-scroll:style(overflow: auto !important)
