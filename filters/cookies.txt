@@ -40,3 +40,8 @@ sizzlingpubs.co.uk##.ce-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/277
 canyon.com##.modal.is-open[data-triggerclass="js-modalCookiesTrigger"]
+
+! https://github.com/ghostery/broken-page-reports/issues/295
+hetzner.com##body.modal-open:style(overflow: auto !important)
+hetzner.com###CookieConsent
+hetzner.com##.modal-backdrop
