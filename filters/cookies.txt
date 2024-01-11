@@ -51,3 +51,8 @@ hetzner.com##.modal-backdrop
 
 ! https://github.com/ghostery/broken-page-reports/issues/305
 corporatefinanceinstitute.com###iubenda-cs-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/274
+strato.de##body:style(overflow: auto !important)
+strato.de###cookie_initial_modal
+strato.de##.modal-backdrop
