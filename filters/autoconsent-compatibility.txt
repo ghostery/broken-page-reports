@@ -568,10 +568,6 @@ corona-in-zahlen.de#@#.cookiealert
 ! ... type=xhr
 @@||uniconsent.com^$third-party
 
-! https://github.com/ghostery/broken-page-reports/issues/168
-! https://github.com/ghostery/broken-page-reports/issues/142
-hetzner.com#@##CookieConsent
-
 ! https://github.com/ghostery/adblocker-filters/issues/783
 ! >>> url=https://policy.app.cookieinformation.com/cookie-data/water.org/cabl.json
 ! ... source=https://water.org/
