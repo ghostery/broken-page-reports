@@ -48,3 +48,6 @@ canyon.com##.modal.is-open[data-triggerclass="js-modalCookiesTrigger"]
 hetzner.com##body.modal-open:style(overflow: auto !important)
 hetzner.com###CookieConsent
 hetzner.com##.modal-backdrop
+
+! https://github.com/ghostery/broken-page-reports/issues/305
+corporatefinanceinstitute.com###iubenda-cs-banner
