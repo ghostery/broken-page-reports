@@ -56,3 +56,6 @@ corporatefinanceinstitute.com###iubenda-cs-banner
 strato.de##body:style(overflow: auto !important)
 strato.de###cookie_initial_modal
 strato.de##.modal-backdrop
+
+! https://github.com/ghostery/broken-page-reports/issues/287
+map-viewer-plus.app.landgate.wa.gov.au##.jimu-widget-splash-desktop
