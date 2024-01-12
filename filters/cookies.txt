@@ -59,3 +59,8 @@ strato.de##.modal-backdrop
 
 ! https://github.com/ghostery/broken-page-reports/issues/287
 map-viewer-plus.app.landgate.wa.gov.au##.jimu-widget-splash-desktop
+
+! https://github.com/ghostery/broken-page-reports/issues/382
+! Applying `display: none` to `[class^="cookieBanner_overlay"]` caused the complete website breakage
+dashboard-deutschland.de##[class^="cookieBanner_overlay"]:style(background: transparent !important; height: 0px !important; z-index: 0 !important;)
+dashboard-deutschland.de#@#[class^="cookieBanner"]
