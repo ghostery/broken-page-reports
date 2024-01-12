@@ -64,3 +64,8 @@ map-viewer-plus.app.landgate.wa.gov.au##.jimu-widget-splash-desktop
 ! Applying `display: none` to `[class^="cookieBanner_overlay"]` caused the complete website breakage
 dashboard-deutschland.de##[class^="cookieBanner_overlay"]:style(background: transparent !important; height: 0px !important; z-index: 0 !important;)
 dashboard-deutschland.de#@#[class^="cookieBanner"]
+
+! https://github.com/ghostery/broken-page-reports/issues/294
+augengeradeaus.net###moove_gdpr_cookie_info_bar
+augengeradeaus.net##.gdpr_lightbox-opened
+augengeradeaus.net##body,.gdpr_lightbox-active,.gdpr_lightbox-active body:style(overflow: auto !important)
