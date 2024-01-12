@@ -78,3 +78,6 @@ psdbank-ht.de##.darken-layer.open
 
 ! https://github.com/ghostery/broken-page-reports/issues/249
 new.nortic.se##.flex.justify-center.fixed.bottom-0.-inset-x-0.z-90
+
+! https://github.com/ghostery/broken-page-reports/issues/247
+nsandi.com###__tealiumGDPRecModal
