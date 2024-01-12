@@ -72,3 +72,6 @@ augengeradeaus.net##body,.gdpr_lightbox-active,.gdpr_lightbox-active body:style(
 
 ! https://github.com/ghostery/broken-page-reports/issues/256
 order.maxburgers.com##consent-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/253
+psdbank-ht.de##.darken-layer.open
