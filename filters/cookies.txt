@@ -69,3 +69,6 @@ dashboard-deutschland.de#@#[class^="cookieBanner"]
 augengeradeaus.net###moove_gdpr_cookie_info_bar
 augengeradeaus.net##.gdpr_lightbox-opened
 augengeradeaus.net##body,.gdpr_lightbox-active,.gdpr_lightbox-active body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/256
+order.maxburgers.com##consent-banner
