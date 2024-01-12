@@ -535,3 +535,6 @@ kontostand.at##body.cb-body-no-scroll:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/431
 correctiv.org##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/271
+diroots.com##.cli-modal-backdrop.cli-show
