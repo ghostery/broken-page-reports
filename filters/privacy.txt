@@ -23,3 +23,17 @@
 ! ... source=https://privacy.patreon.com/
 ! ... type=xhr
 @@||transcend.io^$third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/434
+! >>> url=https://static.wertpapiere.ing.de/js/gcoconfig/production/webtrekk-production_dr.js?v=3500120220323
+! ... source=https://wertpapiere.ing.de/Investieren/Fonds/IE00B4X9L533
+! ... type=script
+||static.wertpapiere.ing.de/js/gcoconfig/production/webtrekk-production_dr.js
+! >>> url=https://static.wertpapiere.ing.de/lib/smarthouse/frameworks/webtrekk.min.js?v=3500120220323
+! ... source=https://wertpapiere.ing.de/Investieren/Fonds/IE00B4X9L533
+! ... type=script
+||static.wertpapiere.ing.de/lib/smarthouse/frameworks/webtrekk.min.js
+! >>> url=https://static.wertpapiere.ing.de/lib/smarthouse/frameworks/webtrekk-safetag.js
+! ... source=https://wertpapiere.ing.de/Investieren/Fonds/IE00B4X9L533
+! ... type=script
+||static.wertpapiere.ing.de/lib/smarthouse/frameworks/webtrekk-safetag.js
