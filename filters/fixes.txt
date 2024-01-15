@@ -542,3 +542,6 @@ diroots.com##.cli-modal-backdrop.cli-show
 ! https://github.com/ghostery/broken-page-reports/issues/262
 vav.at##.cookies-hoverlay
 vav.at##body:style(overflow-y: auto !important; position: static !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/435, safari
+imusic.de##html.force--consent.show--consent:style(overflow-y: auto !important;)
