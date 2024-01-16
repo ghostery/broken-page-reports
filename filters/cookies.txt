@@ -90,5 +90,4 @@ epidemicsound.com###onetrust-consent-sdk
 fxhome.com##.cookie-container
 
 ! https://github.com/ghostery/broken-page-reports/issues/273
-flip.bg###__BVID__17___BV_modal_outer_
-flip.bg###__BVID__39___BV_modal_outer_
+flip.bg##[id$="_BV_modal_outer_"]
