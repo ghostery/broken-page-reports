@@ -548,3 +548,6 @@ imusic.de##html.force--consent.show--consent:style(overflow-y: auto !important;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/437
 mrowka.com.pl##.cookies-glass
+
+! https://github.com/ghostery/broken-page-reports/issues/243, safari
+klinik-am-ring.de##body.cookiebanner-body::after:style(background: transparent !important;)
