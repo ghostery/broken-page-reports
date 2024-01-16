@@ -545,3 +545,6 @@ vav.at##body:style(overflow-y: auto !important; position: static !important;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/435, safari
 imusic.de##html.force--consent.show--consent:style(overflow-y: auto !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/437
+mrowka.com.pl##.cookies-glass
