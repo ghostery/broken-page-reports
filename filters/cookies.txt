@@ -85,3 +85,6 @@ nsandi.com###__tealiumGDPRecModal
 ! https://github.com/ghostery/broken-page-reports/issues/245
 epidemicsound.com###es-consent
 epidemicsound.com###onetrust-consent-sdk
+
+! https://github.com/ghostery/broken-page-reports/issues/264
+fxhome.com##.cookie-container
