@@ -560,3 +560,6 @@ toyokeizai.net###tpModal.pi_modal
 toyokeizai.net###adexchange
 toyokeizai.net###trend-library
 toyokeizai.net###information
+
+! https://github.com/ghostery/broken-page-reports/issues/446
+consentmanager.net##body:style(overflow: auto !important;)
