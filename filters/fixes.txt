@@ -552,3 +552,11 @@ mrowka.com.pl##.cookies-glass
 
 ! https://github.com/ghostery/broken-page-reports/issues/243, safari
 klinik-am-ring.de##body.cookiebanner-body::after:style(background: transparent !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/442
+! anti-adblock warning
+toyokeizai.net###tpModal.pi_modal
+! leftovers
+toyokeizai.net###adexchange
+toyokeizai.net###trend-library
+toyokeizai.net###information
