@@ -563,3 +563,6 @@ toyokeizai.net###information
 
 ! https://github.com/ghostery/broken-page-reports/issues/446
 consentmanager.net##body:style(overflow: auto !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/444
+gate.gsi.de#@##gdpr_agree
