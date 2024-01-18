@@ -142,15 +142,6 @@ limetorrents.info##[href^="https://track.ultravpn.com/"]
 ! https://github.com/ghostery/broken-page-reports/issues/119
 forbes.com##.truste_overlay:not(body):not(html)
 
-! Blocking piano.io (Peter Lowe's Ad and tracking server list) breaks the
-! paywall for augsburger-allgemeine.de.
-! Note: uBlock Origin unblocks piano (aka tinypass) on all domains
-! To find examples of other pages that might be broken, see https://whotracks.me/trackers/tinypass.html
-! >>> url=https://c2.piano.io/xbuilder/experience/execute?aid=qn2o6MSfpu
-! ... source=https://www.augsburger-allgemeine.de/augsburg/Augsburg-Zehn-Punkte-Plan-soll-die-Augsburger-Innenstadt-fit-fuer-die-Zukunft-machen-id60086356.html
-! ... type=xhr
-@@||piano.io^$domain=augsburger-allgemeine.de,xhr
-
 ! https://github.com/ghostery/broken-page-reports/issues/7
 ! >>> url=https://www.cdn-national-lottery.co.uk/c/js/cuk_core.min.js~1f97
 ! ... source=https://www.national-lottery.co.uk
@@ -466,12 +457,28 @@ vr-immoprofis.de#@#div.cookie-consent
 #@#.privacy-notice:not(body):not(html):not([class*="-input"])
 #@#div.privacy-notice
 
+! Blocking piano.io (Peter Lowe's Ad and tracking server list) breaks the
+! paywall for augsburger-allgemeine.de.
+! Note: uBlock Origin unblocks piano (aka tinypass) on all domains
+! To find examples of other pages that might be broken, see https://whotracks.me/trackers/tinypass.html
+! >>> url=https://c2.piano.io/xbuilder/experience/execute?aid=qn2o6MSfpu
+! ... source=https://www.augsburger-allgemeine.de/augsburg/Augsburg-Zehn-Punkte-Plan-soll-die-Augsburger-Innenstadt-fit-fuer-die-Zukunft-machen-id60086356.html
+! ... type=xhr
+@@||piano.io^$domain=augsburger-allgemeine.de,xhr
+
 ! Unbreak stuttgarter-nachrichten.de, stuttgarter-zeitung.de
 ! https://github.com/ghostery/broken-page-reports/issues/371
 ! >>> url=https://cdn.piano.io/id/1.26.0/runtime-es2015.js
 ! ... source=https://www.stuttgarter-zeitung.de/
 ! ... type=script
 @@||cdn.piano.io^$3p,domain=stuttgarter-nachrichten.de|stuttgarter-zeitung.de|sueddeutsche.de|schwarzwaelder-bote.de
+
+! Unbreak the login on toyokeizai.net
+! refs https://github.com/ghostery/broken-page-reports/issues/442
+! >>> url=https://experience-ap.piano.io/xbuilder/experience/load?aid=1oC7cgjMpj
+! ... source=https://toyokeizai.net/
+! ... type=script
+@@||piano.io^$3p,domain=toyokeizai.net
 
 ! Fix https://github.com/ghostery/ghostery-extension/issues/1381
 ! >>> url=https://app.panobi.com/api/v1/metrics/test
