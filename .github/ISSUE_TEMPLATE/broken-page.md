@@ -31,7 +31,7 @@ Describe your issue simple as possible.
 You'll need to describe how to reproduce the issue later.
 
 ```
-<The image in the website doesn't load.>
+
 ```
 
 <details>
