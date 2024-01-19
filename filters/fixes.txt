@@ -576,3 +576,6 @@ gate.gsi.de#@##gdpr_agree
 
 ! https://github.com/ghostery/broken-page-reports/issues/361
 plex.tv##.remodal-is-opened
+
+! https://github.com/ghostery/broken-page-reports/issues/377
+ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
