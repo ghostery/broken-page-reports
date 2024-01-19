@@ -97,3 +97,7 @@ simply-connect.net##.cc-window[aria-label="cookieconsent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/445
 vinicola.eu###js-cc-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/452
+cleanenergyrevolution.co##.gdpr_infobar_postion_bottom
+cleanenergyrevolution.co##.gdpr_lightbox-opened
