@@ -579,3 +579,7 @@ plex.tv##.remodal-is-opened
 
 ! https://github.com/ghostery/broken-page-reports/issues/377
 ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
+
+! Unbreak YouTube consent dialog on Firefox
+! https://github.com/ghostery/broken-page-reports/issues/457
+consent.youtube.com#@#[data-p*="/consent.youtube.com"]
