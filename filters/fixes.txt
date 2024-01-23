@@ -574,6 +574,16 @@ consentmanager.net##body:style(overflow: auto !important;)
 ! https://github.com/ghostery/broken-page-reports/issues/444
 gate.gsi.de#@##gdpr_agree
 
+! https://github.com/ghostery/broken-page-reports/issues/361
+plex.tv##.remodal-is-opened
+
+! https://github.com/ghostery/broken-page-reports/issues/377
+ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
+
+! Unbreak YouTube consent dialog on Firefox
+! https://github.com/ghostery/broken-page-reports/issues/457
+consent.youtube.com#@#[data-p*="/consent.youtube.com"]
+
 ! https://github.com/ghostery/broken-page-reports/issues/454
 vb-halle.de##body.no-scroll:style(overflow: auto !important; position: inherit !important;)
 vb-halle.de##body.no-scroll::before:style(overflow: auto !important;)
