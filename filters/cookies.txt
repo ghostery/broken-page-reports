@@ -105,3 +105,6 @@ cleanenergyrevolution.co,iliaoikonomia.gr##.gdpr_lightbox-opened
 
 ! https://github.com/ghostery/broken-page-reports/issues/465
 dmarcian.com##.cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/469
+mi.com###consent_blackbar
