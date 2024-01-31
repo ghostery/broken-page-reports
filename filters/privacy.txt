@@ -23,3 +23,9 @@
 ! ... source=https://privacy.patreon.com/
 ! ... type=xhr
 @@||transcend.io^$third-party
+
+! https://github.com/easylist/easylist/issues/18406
+! >>> url=https://api.channel.io/front/v6/channels/101280/events
+! ... source=https://www.rocket-tools.io/
+! ... type=xhr
+||api.channel.io/*/events
