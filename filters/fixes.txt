@@ -590,3 +590,10 @@ vb-halle.de##body.no-scroll:style(overflow: auto !important; position: inherit !
 vb-halle.de##body.no-scroll::before:style(overflow: auto !important;)
 vb-halle.de##body.no-scroll::after:style(overflow: auto !important;)
 vb-halle.de##.darken-layer.open
+
+! Unbreak the login on bearingarms.com
+! refs https://github.com/ghostery/broken-page-reports/issues/479
+! >>> url=https://cdn.piano.io/id/1.32.4/runtime-es2015.js
+! ... source=https://bearingarms.com/
+! ... type=script
+@@||piano.io^$3p,domain=bearingarms.com
