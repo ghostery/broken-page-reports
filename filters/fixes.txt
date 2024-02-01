@@ -588,3 +588,7 @@ vb-halle.de##body.no-scroll:style(overflow: auto !important; position: inherit !
 vb-halle.de##body.no-scroll::before:style(overflow: auto !important;)
 vb-halle.de##body.no-scroll::after:style(overflow: auto !important;)
 vb-halle.de##.darken-layer.open
+
+! https://github.com/ghostery/broken-page-reports/issues/475
+modal-media.com##+js(set, tarteaucitron, {})
+modal-media.com##+js(set, tarteaucitron.init, trueFunc)
