@@ -592,3 +592,9 @@ vb-halle.de##.darken-layer.open
 ! https://github.com/ghostery/broken-page-reports/issues/475
 modal-media.com##+js(set, tarteaucitron, {})
 modal-media.com##+js(set, tarteaucitron.init, trueFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/481
+! >>> url=https://cdn.optimizely.com/datafiles/So4Vz9KQQQaQPBjVsPLfH.json
+! ... source=https://www2.hm.com/de_de/productpage.1087261001.html
+! ... type=xhr
+@@||cdn.optimizely.com/datafiles$domain=hm.com
