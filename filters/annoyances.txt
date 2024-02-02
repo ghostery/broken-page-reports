@@ -1,0 +1,4 @@
+[Adblock Plus 2.0]
+! Title: @Ghostery — annoyances
+! Expires: 1 day
+! Version: {{version}}
