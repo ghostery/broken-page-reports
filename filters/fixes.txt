@@ -599,5 +599,8 @@ modal-media.com##+js(set, tarteaucitron.init, trueFunc)
 ! ... type=xhr
 @@||cdn.optimizely.com/datafiles$domain=hm.com
 
+! https://github.com/ghostery/broken-page-reports/issues/488
+mlive.com##div[class]>style+div
+
 ! https://github.com/ghostery/broken-page-reports/issues/402
 united-domains.de##+js(nosiif, cookieLayerDecoy)
