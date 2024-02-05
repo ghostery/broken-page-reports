@@ -598,3 +598,12 @@ modal-media.com##+js(set, tarteaucitron.init, trueFunc)
 ! ... source=https://www2.hm.com/de_de/productpage.1087261001.html
 ! ... type=xhr
 @@||cdn.optimizely.com/datafiles$domain=hm.com
+
+! https://github.com/ghostery/broken-page-reports/issues/483
+meeco.kr##+js(set, adsBlocked, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/488
+mlive.com##div[class]>style+div
+
+! https://github.com/ghostery/broken-page-reports/issues/402
+united-domains.de##+js(nosiif, cookieLayerDecoy)
