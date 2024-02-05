@@ -108,3 +108,6 @@ dmarcian.com##.cookies
 
 ! https://github.com/ghostery/broken-page-reports/issues/469
 mi.com###consent_blackbar
+
+! https://github.com/ghostery/broken-page-reports/issues/486
+monsoonchocolate.com###shopify-section-cookies-banner
