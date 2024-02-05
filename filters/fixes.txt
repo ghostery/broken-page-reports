@@ -599,6 +599,9 @@ modal-media.com##+js(set, tarteaucitron.init, trueFunc)
 ! ... type=xhr
 @@||cdn.optimizely.com/datafiles$domain=hm.com
 
+! https://github.com/ghostery/broken-page-reports/issues/483
+meeco.kr##+js(set, adsBlocked, noopFunc)
+
 ! https://github.com/ghostery/broken-page-reports/issues/488
 mlive.com##div[class]>style+div
 
