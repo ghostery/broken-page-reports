@@ -610,3 +610,6 @@ united-domains.de##+js(nosiif, cookieLayerDecoy)
 
 ! https://github.com/ghostery/broken-page-reports/issues/491
 usnews.com##+js(set, __googlefc, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/493
+thestate.com##.ca-pcu-inline[data-pcu-render-at-]
