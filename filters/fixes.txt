@@ -622,4 +622,7 @@ thestate.com##.ca-pcu-inline[data-pcu-render-at-]
 myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/497
+! >>> url=https://www.theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil?query=%7B%22campaignCode%22%3A%22digital%22%2C%22env%22%3A%22production%22%7D&d=487&_website=tgam
+! ... source=https://www.theglobeandmail.com/
+! ... type=xhr
 ||theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil
