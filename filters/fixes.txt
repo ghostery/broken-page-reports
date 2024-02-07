@@ -620,3 +620,6 @@ thestate.com##.ca-pcu-inline[data-pcu-render-at-]
 
 ! https://github.com/ghostery/broken-page-reports/issues/492
 myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
+
+! https://github.com/ghostery/broken-page-reports/issues/497
+||theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil
