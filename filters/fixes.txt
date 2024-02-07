@@ -152,9 +152,14 @@ forbes.com##.truste_overlay:not(body):not(html)
 ! https://github.com/ghostery/broken-page-reports/issues/73
 uptodate.com#@#.gdprBanner
 
-! Disable "Allow ads on FOX News" anti-adblocker dialog.
+! Disable "Allow ads on X" anti-adblocker dialog.
 ! https://github.com/ghostery/broken-page-reports/issues/128
-foxnews.com##.fc-ab-root
+! https://github.com/ghostery/broken-page-reports/issues/389
+! https://github.com/ghostery/broken-page-reports/issues/495
+! https://github.com/ghostery/broken-page-reports/issues/499
+20min.ch,foxbusiness.com,foxnews.com,quicktransportsolutions.com##.fc-ab-root
+foxbusiness.com##body:style(overflow: auto !important)
+
 ! Fix scrolling problem. Note: this problem is only reproducible with a
 ! US IP address; at some point, a popup will be shown that makes the screen
 ! unscrollable. Since thepopup gets hidden by cosmetics, it's not obvious.
@@ -516,7 +521,6 @@ sport-point-giessen.de##+js(aopw, tarteaucitron)
 routerdefaults.org##html:style(overflow: auto;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/389
-20min.ch##div.fc-ab-root
 20min.ch##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/203
@@ -613,3 +617,12 @@ usnews.com##+js(set, __googlefc, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/493
 thestate.com##.ca-pcu-inline[data-pcu-render-at-]
+
+! https://github.com/ghostery/broken-page-reports/issues/492
+myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
+
+! https://github.com/ghostery/broken-page-reports/issues/497
+! >>> url=https://www.theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil?query=%7B%22campaignCode%22%3A%22digital%22%2C%22env%22%3A%22production%22%7D&d=487&_website=tgam
+! ... source=https://www.theglobeandmail.com/
+! ... type=xhr
+||theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil
