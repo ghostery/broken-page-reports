@@ -613,3 +613,6 @@ usnews.com##+js(set, __googlefc, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/493
 thestate.com##.ca-pcu-inline[data-pcu-render-at-]
+
+! https://github.com/ghostery/broken-page-reports/issues/492
+myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
