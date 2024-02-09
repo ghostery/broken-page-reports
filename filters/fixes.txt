@@ -613,3 +613,6 @@ usnews.com##+js(set, __googlefc, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/493
 thestate.com##.ca-pcu-inline[data-pcu-render-at-]
+
+! https://github.com/ghostery/broken-page-reports/issues/501
+aparts.pl#@##cookie-transparency-modal-main
