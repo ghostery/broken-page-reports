@@ -2,3 +2,6 @@
 ! Title: @Ghostery — annoyances
 ! Expires: 1 day
 ! Version: {{version}}
+
+! https://github.com/ghostery/broken-page-reports/issues/443#issue-2085727117
+tomsguide.com##.slice-container-newsletterForm
