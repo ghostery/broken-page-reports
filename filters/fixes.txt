@@ -157,8 +157,9 @@ uptodate.com#@#.gdprBanner
 ! https://github.com/ghostery/broken-page-reports/issues/389
 ! https://github.com/ghostery/broken-page-reports/issues/495
 ! https://github.com/ghostery/broken-page-reports/issues/499
-20min.ch,foxbusiness.com,foxnews.com,quicktransportsolutions.com##.fc-ab-root
-foxbusiness.com##body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/506
+20min.ch,foxbusiness.com,foxnews.com,quicktransportsolutions.com,dailymail.co.uk##.fc-ab-root
+foxbusiness.com,dailymail.co.uk##body:style(overflow: auto !important)
 
 ! Fix scrolling problem. Note: this problem is only reproducible with a
 ! US IP address; at some point, a popup will be shown that makes the screen
