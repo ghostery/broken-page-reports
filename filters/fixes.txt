@@ -217,12 +217,16 @@ my.sevdesk.de#@#div.cookie-consent-modal
 ! https://github.com/ghostery/broken-page-reports/issues/167
 digital.aireuropa.com#@#.gdpr-consent-form
 
-! Fix broken page: atombank.co.uk
+! Disable -cookie-banner- globally as it can cause too many breaks
 ! https://github.com/ghostery/broken-page-reports/issues/164
+! https://github.com/ghostery/broken-page-reports/issues/516
 ! >>> url=https://www.atombank.co.uk/components-molecules-cookie-banner-ad9c84eba446f32ac1ac.js
 ! ... source=https://www.atombank.co.uk/
 ! ... type=xhr
-@@-cookie-banner-$domain=atombank.co.uk
+! >>> url=https://netzpolitik.org/2024/bayern-ueberprueft-cookie-banner-vieler-seiten-weiterhin-rechtswidrig/
+! ... source=https://netzpolitik.org/2024/bayern-ueberprueft-cookie-banner-vieler-seiten-weiterhin-rechtswidrig/
+! ... type=document
+@@-cookie-banner-$~image
 
 ! Fix broken page: eboo.lu
 ! https://github.com/ghostery/broken-page-reports/issues/155
