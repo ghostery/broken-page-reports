@@ -226,7 +226,7 @@ digital.aireuropa.com#@#.gdpr-consent-form
 ! >>> url=https://netzpolitik.org/2024/bayern-ueberprueft-cookie-banner-vieler-seiten-weiterhin-rechtswidrig/
 ! ... source=https://netzpolitik.org/2024/bayern-ueberprueft-cookie-banner-vieler-seiten-weiterhin-rechtswidrig/
 ! ... type=document
-@@-cookie-banner-
+@@-cookie-banner-$~image
 
 ! Fix broken page: eboo.lu
 ! https://github.com/ghostery/broken-page-reports/issues/155
