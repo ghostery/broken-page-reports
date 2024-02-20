@@ -643,3 +643,8 @@ aparts.pl#@##cookie-transparency-modal-main
 
 ! https://github.com/ghostery/broken-page-reports/issues/502
 dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
+
+! Admiral
+! https://github.com/ghostery/broken-page-reports/issues/513
+||whimsicalcanyon.com^$3p,script,xhr
+@@whimsicalcanyon.com/bundles$3p,script
