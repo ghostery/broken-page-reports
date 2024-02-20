@@ -646,5 +646,11 @@ dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 
 ! Admiral
 ! https://github.com/ghostery/broken-page-reports/issues/513
+! >>> url=https://whimsicalcanyon.com/create/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.pocket-lint.com/
+! ... type=script
 ||whimsicalcanyon.com^$3p,script,xhr
+! >>> url=https://whimsicalcanyon.com/bundles/9e159fa762/a4762666f05f1c0d1b8c44d62a443494.js
+! ... source=https://www.pocket-lint.com/
+! ... type=script
 @@whimsicalcanyon.com/bundles$3p,script
