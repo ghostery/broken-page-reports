@@ -111,3 +111,6 @@ mi.com###consent_blackbar
 
 ! https://github.com/ghostery/broken-page-reports/issues/486
 monsoonchocolate.com###shopify-section-cookies-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/513
+||whimsicalcanyon.com/*/Sticky2,ConsentManager^$3p,script
