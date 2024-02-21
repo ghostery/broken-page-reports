@@ -681,3 +681,6 @@ propertynews.pl#@#.cmpwrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/306
 rog-forum.asus.com#@#.cookie-policy-wrap
+
+! https://github.com/ghostery/broken-page-reports/issues/529
+arctic.de#@#.acris-cookie-consent
