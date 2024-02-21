@@ -650,3 +650,6 @@ dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 ! ... source=https://www.pocket-lint.com/
 ! ... type=script
 @@whimsicalcanyon.com/bundles$3p,script
+
+! Fix youtube.com - filter was applied due to missing preprocessor functionality
+youtube.com#@#+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
