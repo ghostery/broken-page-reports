@@ -79,3 +79,32 @@ Some filters may not compatible with Manifest V3.
 You should prioritize Manifest V3 compatible format over Manifest V2 only filter if available.
 
 Also, see [Ghostery adblocker engine compatibility matrix](https://github.com/ghostery/adblocker/wiki/Compatibility-Matrix).
+
+### SHOULD have tests for network filters
+
+We enforce our contributors to write a test for network filters.
+
+```adblock
+!! One-liner
+! https://link/to/reference
+! >>> url=https://example.com/ad.js type=script source=https://domain.tld
+||example.com/ad.js^
+
+!! Multi-liner
+! https://link/to/reference
+! >>> url=https://example.com/ad.js
+! ... type=script
+! ... source=https://domain.tld
+||example.com/ad.js^
+```
+
+Test definitions are basically embedded in the comments.
+Start a line with `! >>>` to define a test, and append a line with `! ...` to use multiple lines.
+
+You need to set three variables to the test.
+
+- `url`: The URL of the request.
+- `type`: The type of the request.
+- `source`: The source URL of the request, this is often set to the frame URL sending the request.
+
+In the above example, we can interpret the test as: `||example.com/ad.js` should match a request type of `script` having url of `https://example.com/ad.js` originated from the frame with url of `https://domain.tld`.
