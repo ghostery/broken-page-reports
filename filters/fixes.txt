@@ -656,3 +656,6 @@ youtube.com#@#+js(json-prune, playerResponse.adPlacements playerResponse.playerA
 
 ! https://github.com/ghostery/broken-page-reports/issues/533
 #@#.cookie-statement
+
+! https://github.com/ghostery/broken-page-reports/issues/532
+southeastasiapilot.com##.gdprmodal-open:style(overflow: auto !important)
