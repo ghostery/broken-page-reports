@@ -21,7 +21,15 @@ jobs:
     name: Build
     steps:
       - uses: actions/checkout@v4
-      - uses: jdx/mise-action@v1
+      - name: Read parameters
+        id: read
+        run: |
+          echo "tool_versions="$(cat ./.tool_versions)"" >> "$GITHUB_OUTPUT"
+      - uses: jdx/mise-action@v2
+        with:
+          install: true
+          cache: true
+          tool_versions: ${{ steps.read.outputs.tool_versions }}
       - run: bun run build
       - name: Setup Pages
         id: pages
