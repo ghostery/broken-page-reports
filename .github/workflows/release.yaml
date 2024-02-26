@@ -21,7 +21,7 @@ jobs:
     name: Build
     steps:
       - uses: actions/checkout@v4
-      - uses: jdx/mise-action@v1
+      - uses: jdx/mise-action@v2
       - run: bun run build
       - name: Setup Pages
         id: pages
