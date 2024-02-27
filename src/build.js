@@ -1,12 +1,11 @@
 import path from 'node:path';
 import {appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync} from 'node:fs';
 
-const env = {
-	sourceDir: process.env.SOURCEDIR ?? 'filters',
-	outDir: process.env.OUTDIR ?? 'dist',
-};
-
+const cwd = process.cwd();
 const now = Date.now();
+
+const sourcesDir = path.join(cwd, 'filters');
+const outDir = path.join(cwd, 'dist');
 
 const headerLines = `[Adblock Plus 2.0]
 ! Homepage: https://github.com/ghostery/broken-page-reports
@@ -47,29 +46,30 @@ const createDirectory = location => {
 	}
 };
 
-const main = () => {
-	const cwd = process.cwd();
+// Create directories
+createDirectory(outDir);
+createDirectory(path.join(outDir, 'filters'));
 
-	// Create output directory and files
-	createDirectory(env.outDir);
-	createDirectory(path.join(env.outDir, 'filters'));
+// Copy main page
+copyFileSync(path.join(cwd, 'assets/index.html'), path.join(outDir, 'index.html'));
 
-	const outFile = path.join(env.outDir, 'filters.txt');
+// Create merged filter
+const outFile = path.join(outDir, 'filters.txt');
 
-	writeFileSync(outFile, headerLines, 'utf8');
+writeFileSync(outFile, headerLines, 'utf8');
 
-	copyFileSync(path.join(cwd, 'assets/index.html'), path.join(env.outDir, 'index.html'));
+// Iterate over separate filters
+for (const filename of readdirSync(sourcesDir)) {
+	const {header, body} = parseFilter(readFileSync(path.join(sourcesDir, filename), 'utf8'));
 
-	// Read filters
-	const root = path.join(cwd, env.sourceDir);
-	const files = readdirSync(root);
+	// Append merged filter
+	appendFileSync(outFile, body, 'utf8');
 
-	for (const file of files) {
-		const {header, body} = parseFilter(readFileSync(path.join(root, file), 'utf8'));
-
-		appendFileSync(outFile, body, 'utf8');
-		writeFileSync(path.join(env.outDir, 'filters', file), header.replace('{{version}}', now) + '\n' + body, 'utf8');
-	}
-};
-
-main();
+	// Compile separate filter
+	writeFileSync(
+		path.join(outDir, 'filters', filename),
+		`${header.replace('{{version}}', now)}
+${body}`,
+		'utf8',
+	);
+}
