@@ -5,3 +5,6 @@
 
 ! https://github.com/ghostery/broken-page-reports/issues/443#issue-2085727117
 tomsguide.com##.slice-container-newsletterForm
+
+! https://github.com/ghostery/broken-page-reports/issues/443#issuecomment-1962724107
+kansascity.com##.ab-in-app-message.ab-slideup
