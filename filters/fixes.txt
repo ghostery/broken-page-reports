@@ -655,5 +655,8 @@ dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 ! Fix youtube.com - filter was applied due to missing preprocessor functionality
 youtube.com#@#+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
 
+! Fix google consent - https://github.com/ghostery/broken-page-reports/issues/538
+consent.google.*#@#[data-p*="/consent.google."]
+
 ! https://github.com/ghostery/broken-page-reports/issues/532
 southeastasiapilot.com##.gdprmodal-open:style(overflow: auto !important)
