@@ -122,3 +122,4 @@ bifa.org##.wt-cli-cookie-bar-container
 ! - UserCentrics
 ! https://github.com/ghostery/broken-page-reports/issues/545
 ###usercentrics-root
+##.cc-overlay
