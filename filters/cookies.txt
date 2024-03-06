@@ -131,3 +131,8 @@ bifa.org##.wt-cli-cookie-bar-container
 oeaw.ac.at##.modal-open:style(overflow: auto !important)
 oeaw.ac.at##.modal-backdrop.fade.show
 oeaw.ac.at###cookieman-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/548
+elektroniknet.de###cmpbox
+elektroniknet.de###cmpbox2
+elektroniknet.de##body[style^="overflow"]:style(overflow: auto !important)
