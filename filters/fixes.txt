@@ -660,3 +660,6 @@ consent.google.*#@#[data-p*="/consent.google."]
 
 ! https://github.com/ghostery/broken-page-reports/issues/532
 southeastasiapilot.com##.gdprmodal-open:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/550
+fnacspectacles.com##body:style(overflow: auto !important)
