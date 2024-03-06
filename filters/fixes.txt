@@ -165,8 +165,9 @@ uptodate.com#@#.gdprBanner
 ! https://github.com/ghostery/broken-page-reports/issues/521
 ! https://github.com/ghostery/broken-page-reports/issues/527
 ! https://github.com/ghostery/broken-page-reports/issues/539
-20min.ch,foxbusiness.com,foxnews.com,quicktransportsolutions.com,dailymail.co.uk,salon.com,internewscast.com,definitions.net,synonyms.com,compsmag.com,repubblica.it,legacy.com##.fc-ab-root
-foxbusiness.com,dailymail.co.uk,internewscast.com,definitions.net,synonyms.com,compsmag.com,repubblica.it,legacy.com##body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/553
+20min.ch,foxbusiness.com,foxnews.com,quicktransportsolutions.com,dailymail.co.uk,salon.com,internewscast.com,definitions.net,synonyms.com,compsmag.com,repubblica.it,legacy.com,manilatimes.net##.fc-ab-root
+foxbusiness.com,dailymail.co.uk,internewscast.com,definitions.net,synonyms.com,compsmag.com,repubblica.it,legacy.com,manilatimes.net##body:style(overflow: auto !important)
 
 ! Fix scrolling problem. Note: this problem is only reproducible with a
 ! US IP address; at some point, a popup will be shown that makes the screen
@@ -510,7 +511,9 @@ aftonbladet.se##.hyperion-css-bo82k8 > .hyperion-css-1diufuh
 aftonbladet.se##aside>div.hyperion-css-fdjmqp
 
 ! https://github.com/ghostery/broken-page-reports/issues/364
+! https://github.com/ghostery/broken-page-reports/issues/554
 otvet.mail.ru##div[style="top: 76px;"]+div
+otvet.mail.ru##div[class*="adv-slot-"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/381
 stocktwits.com#@#+js(aopr, Date.prototype.toUTCString)
@@ -660,3 +663,15 @@ consent.google.*#@#[data-p*="/consent.google."]
 
 ! https://github.com/ghostery/broken-page-reports/issues/532
 southeastasiapilot.com##.gdprmodal-open:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/550
+fnacspectacles.com##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/555
+check24-partnerprogramm.de#@#.modal
+
+! https://github.com/ghostery/broken-page-reports/issues/556
+gnu.org#@##Cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/565
+volkshochschule.at##body.overflow-hidden:style(overflow: auto !important)

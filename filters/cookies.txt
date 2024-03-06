@@ -114,3 +114,25 @@ monsoonchocolate.com###shopify-section-cookies-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/519
 bifa.org##.wt-cli-cookie-bar-container
+
+! == Hotfix for outdated autoconsent
+! Please, remove this section after the autoconsent update
+! Some of these can trigger breakage on websites including non-scrollable content
+! In that case, please manually add a fix in fixes.txt
+! - UserCentrics: originally unblocked by `@@||usercentrics.eu^$3p`
+! https://github.com/ghostery/broken-page-reports/issues/545
+! https://github.com/ghostery/broken-page-reports/issues/549
+! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
+! ... type=script
+! ... source=https://www.bauhaus.info/
+||usercentrics.eu^$3p,script,important
+
+! https://github.com/ghostery/broken-page-reports/issues/547
+oeaw.ac.at##.modal-open:style(overflow: auto !important)
+oeaw.ac.at##.modal-backdrop.fade.show
+oeaw.ac.at###cookieman-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/548
+elektroniknet.de###cmpbox
+elektroniknet.de###cmpbox2
+elektroniknet.de##body[style^="overflow"]:style(overflow: auto !important)
