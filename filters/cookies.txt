@@ -114,3 +114,8 @@ monsoonchocolate.com###shopify-section-cookies-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/519
 bifa.org##.wt-cli-cookie-bar-container
+
+! https://github.com/ghostery/broken-page-reports/issues/547
+oeaw.ac.at##.modal-open:style(overflow: auto !important)
+oeaw.ac.at##.modal-backdrop.fade.show
+oeaw.ac.at###cookieman-modal
