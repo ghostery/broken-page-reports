@@ -119,10 +119,12 @@ bifa.org##.wt-cli-cookie-bar-container
 ! Please, remove this section after the autoconsent update
 ! Some of these can trigger breakage on websites including non-scrollable content
 ! In that case, please manually add a fix in fixes.txt
-! - UserCentrics
+! - UserCentrics: originally unblocked by `@@||usercentrics.eu^$3p`
 ! https://github.com/ghostery/broken-page-reports/issues/545
-###usercentrics-root
-##.cc-overlay
+! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
+! ... type=script
+! ... source=https://www.bauhaus.info/
+||usercentrics.eu^$3p,script,important
 
 ! https://github.com/ghostery/broken-page-reports/issues/547
 oeaw.ac.at##.modal-open:style(overflow: auto !important)

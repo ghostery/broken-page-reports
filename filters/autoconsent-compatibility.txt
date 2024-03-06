@@ -346,16 +346,6 @@ accuweather.com#@##privacy-policy-banner
 @@||hs-banner.com^
 #@##hs-eu-cookie-confirmation
 
-! adblocker-filters#767: usercentrics-api.json
-! https://github.com/ghostery/broken-page-reports/issues/87
-! >>> url=https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js
-! ... source=https://usercentrics.com/
-! ... type=script
-! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
-! ... source=https://www.nubert.de/
-! ... type=script
-@@||usercentrics.eu^$3p
-
 ! adblocker-filters#767: usercentrics-button.json
 #@##uc-banner-modal
 #@##uc-central-banner-modal
