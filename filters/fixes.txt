@@ -672,3 +672,6 @@ check24-partnerprogramm.de#@#.modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/556
 gnu.org#@##Cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/565
+volkshochschule.at##body.overflow-hidden:style(overflow: auto !important)
