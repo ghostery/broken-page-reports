@@ -511,7 +511,9 @@ aftonbladet.se##.hyperion-css-bo82k8 > .hyperion-css-1diufuh
 aftonbladet.se##aside>div.hyperion-css-fdjmqp
 
 ! https://github.com/ghostery/broken-page-reports/issues/364
+! https://github.com/ghostery/broken-page-reports/issues/554
 otvet.mail.ru##div[style="top: 76px;"]+div
+otvet.mail.ru##div[class*="adv-slot-"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/381
 stocktwits.com#@#+js(aopr, Date.prototype.toUTCString)
