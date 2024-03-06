@@ -121,6 +121,7 @@ bifa.org##.wt-cli-cookie-bar-container
 ! In that case, please manually add a fix in fixes.txt
 ! - UserCentrics: originally unblocked by `@@||usercentrics.eu^$3p`
 ! https://github.com/ghostery/broken-page-reports/issues/545
+! https://github.com/ghostery/broken-page-reports/issues/549
 ! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
 ! ... type=script
 ! ... source=https://www.bauhaus.info/
