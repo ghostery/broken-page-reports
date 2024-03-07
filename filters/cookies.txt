@@ -136,3 +136,7 @@ oeaw.ac.at###cookieman-modal
 elektroniknet.de###cmpbox
 elektroniknet.de###cmpbox2
 elektroniknet.de##body[style^="overflow"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/571
+medimops.de###cmpwrapper
+medimops.de##body[style^="overflow"]:style(overflow: auto !important)
