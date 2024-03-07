@@ -675,3 +675,6 @@ gnu.org#@##Cookies
 
 ! https://github.com/ghostery/broken-page-reports/issues/565
 volkshochschule.at##body.overflow-hidden:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/569
+onleihe.de##.modal-backdrop.fade.show
