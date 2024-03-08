@@ -677,3 +677,6 @@ onleihe.de##.modal-backdrop.fade.show
 
 ! https://github.com/ghostery/broken-page-reports/issues/570
 squaretrade.com##+js(aeld, click, segment)
+
+! https://github.com/ghostery/broken-page-reports/issues/574
+portalsamorzadowy.pl###read_page:style(overflow: auto !important)
