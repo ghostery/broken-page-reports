@@ -334,7 +334,7 @@ thefreedictionary.com#@##cmpBanner
 ! >>> url=https://fundingchoicesmessages.google.com/el/AGSKWxUsmwHGFjuyYV70fXL8hOaoBbdcKbJyowX8oYQ_T_BxgpK5c81L-AKTWgWsP0RmZzQBzbHgxXR66GOHi-OGusVbtLIPc_QfXMO486UA6RD_Qc6t3Xcokt4JnlKtNB5XJ-Luje9-_A==?dmid=918d3362c27d1c16
 ! ... source=https://www.bbc.com
 ! ... type=script
-@@||fundingchoicesmessages.google.com^
+@@||fundingchoicesmessages.google.com^$domain=bbc.com
 bbc.com#@#.fc-consent-root
 accuweather.com#@#.privacy-policy-banner
 accuweather.com#@##privacy-policy-banner
