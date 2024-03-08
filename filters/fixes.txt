@@ -166,14 +166,10 @@ uptodate.com#@#.gdprBanner
 ! https://github.com/ghostery/broken-page-reports/issues/527
 ! https://github.com/ghostery/broken-page-reports/issues/539
 ! https://github.com/ghostery/broken-page-reports/issues/553
-20min.ch,foxbusiness.com,foxnews.com,quicktransportsolutions.com,dailymail.co.uk,salon.com,internewscast.com,definitions.net,synonyms.com,compsmag.com,repubblica.it,legacy.com,manilatimes.net##.fc-ab-root
-foxbusiness.com,dailymail.co.uk,internewscast.com,definitions.net,synonyms.com,compsmag.com,repubblica.it,legacy.com,manilatimes.net##body:style(overflow: auto !important)
-
-! Fix scrolling problem. Note: this problem is only reproducible with a
-! US IP address; at some point, a popup will be shown that makes the screen
-! unscrollable. Since thepopup gets hidden by cosmetics, it's not obvious.
-! https://github.com/ghostery/broken-page-reports/issues/181
-foxnews.com##body:style(overflow: auto !important;)
+! >>> url=fundingchoicesmessages.google.com/f/AGSKWxXJ8v_tvjZL0DoRpGiDmv-3XIRHqEvJnuY1NKEdRxJ50dHJW-MsEXBCf6cgHXQthZv3Q0dRN-vCuSZrAWyN
+! ... source=https://www.foxnews.com/
+! ... type=script
+||fundingchoicesmessages.google.com^
 
 ! Unbreak winfuture.de.
 ! (Hiding the popup leaves the page non-interactive since it will lack a scrollbar)
