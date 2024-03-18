@@ -680,3 +680,6 @@ squaretrade.com##+js(aeld, click, segment)
 
 ! https://github.com/ghostery/broken-page-reports/issues/574
 portalsamorzadowy.pl###read_page:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/580
+@@||conversationalsdevelopment.nl^$domain=hollandsnieuwe.nl
