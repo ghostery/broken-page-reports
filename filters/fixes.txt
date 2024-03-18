@@ -682,4 +682,7 @@ squaretrade.com##+js(aeld, click, segment)
 portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/580
+! >>> url=https://cdn.conversationalsdevelopment.nl/hollandsnieuwe/client/v2/index.js
+! ... source=https://www.hollandsnieuwe.nl/klantenservice
+! ... type=script
 @@||conversationalsdevelopment.nl^$domain=hollandsnieuwe.nl
