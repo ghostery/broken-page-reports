@@ -681,6 +681,16 @@ squaretrade.com##+js(aeld, click, segment)
 ! https://github.com/ghostery/broken-page-reports/issues/574
 portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 
+! https://github.com/ghostery/broken-page-reports/issues/580
+! >>> url=https://cdn.conversationalsdevelopment.nl/hollandsnieuwe/client/v2/index.js
+! ... source=https://www.hollandsnieuwe.nl/klantenservice
+! ... type=script
+@@||conversationalsdevelopment.nl^$domain=hollandsnieuwe.nl
+
+! https://github.com/ghostery/broken-page-reports/issues/588
+nordbayern.de##body[style^="overflow"]:style(overflow: auto !important)
+nordbayern.de###cmpbox2
+
 ! https://github.com/ghostery/broken-page-reports/issues/584
 ! https://github.com/ghostery/broken-page-reports/issues/579
 gitlab.com,habitica.com##[id$="BV_modal_outer_"]:style(z-index: 1040 !important)
