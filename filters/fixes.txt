@@ -686,3 +686,7 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! ... source=https://www.hollandsnieuwe.nl/klantenservice
 ! ... type=script
 @@||conversationalsdevelopment.nl^$domain=hollandsnieuwe.nl
+
+! https://github.com/ghostery/broken-page-reports/issues/588
+nordbayern.de##body[style^="overflow"]:style(overflow: auto !important)
+nordbayern.de###cmpbox2
