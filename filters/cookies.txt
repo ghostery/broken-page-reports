@@ -145,3 +145,7 @@ medimops.de##body[style^="overflow"]:style(overflow: auto !important)
 ! For future autoconsent compatibility, use befundpost.at#@##privacyConsent
 befundpost.at###cboxOverlay
 befundpost.at###colorbox
+
+! https://github.com/ghostery/broken-page-reports/issues/578
+! For future autoconsent compatibility, use centraalbeheer.nl#@##r42CookieBar
+centraalbeheer.nl##.r42CookieBar-container
