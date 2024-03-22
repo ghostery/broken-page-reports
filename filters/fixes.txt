@@ -697,3 +697,7 @@ gitlab.com,habitica.com##[id$="BV_modal_outer_"]:style(z-index: 1040 !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
+
+! https://github.com/ghostery/broken-page-reports/issues/559
+webtekno.com##.ads.hide-mobile
+webtekno.com##.ads.hide-mobile + div + div.visible-mobile[style*="min-height"]
