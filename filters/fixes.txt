@@ -701,3 +701,6 @@ photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
 ! https://github.com/ghostery/broken-page-reports/issues/559
 webtekno.com##.ads.hide-mobile
 webtekno.com##.ads.hide-mobile + div + div.visible-mobile[style*="min-height"]
+
+! https://github.com/ghostery/broken-page-reports/issues/568
+dzen.ru##div[class^="dzen-mobile__widgetContainer"] + div[class^="dzen-mobile__topContentBackgroundBottom"]
