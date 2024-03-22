@@ -140,3 +140,8 @@ elektroniknet.de##body[style^="overflow"]:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/571
 medimops.de###cmpwrapper
 medimops.de##body[style^="overflow"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/589
+! For future autoconsent compatibility, use befundpost.at#@##privacyConsent
+befundpost.at###cboxOverlay
+befundpost.at###colorbox
