@@ -704,3 +704,8 @@ webtekno.com##.ads.hide-mobile + div + div.visible-mobile[style*="min-height"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/568
 dzen.ru##div[class^="dzen-mobile__widgetContainer"] + div[class^="dzen-mobile__topContentBackgroundBottom"]
+
+! https://github.com/ghostery/broken-page-reports/issues/596
+futurezone.at##.adFreeOffer
+futurezone.at##html.scroll-block:style(overflow: auto !important)
+futurezone.at##html.scroll-block body:style(overflow: auto !important)
