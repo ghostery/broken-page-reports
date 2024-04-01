@@ -709,3 +709,8 @@ dzen.ru##div[class^="dzen-mobile__widgetContainer"] + div[class^="dzen-mobile__t
 futurezone.at##.adFreeOffer
 futurezone.at##html.scroll-block:style(overflow: auto !important)
 futurezone.at##html.scroll-block body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/583
+mail.ee##body.modal-open:style(overflow: auto !important)
+mail.ee##.modal-backdrop.fade.show
+mail.ee##[id^="adBlock-modal"]
