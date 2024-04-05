@@ -538,8 +538,9 @@ readly.com#@#.DialogHandlerContainer
 ! https://github.com/ghostery/broken-page-reports/issues/190
 ! https://github.com/ghostery/broken-page-reports/issues/460
 ! https://github.com/ghostery/broken-page-reports/issues/514
-savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu##.noScroll:style(overflow: auto !important)
-savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu##.noScroll body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/602
+savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu,proshop.no##.noScroll:style(overflow: auto !important)
+savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu,proshop.no##.noScroll body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/299
 transip.nl##html.html-with-one-modal body:style(overflow: auto !important)
@@ -688,8 +689,9 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 @@||conversationalsdevelopment.nl^$domain=hollandsnieuwe.nl
 
 ! https://github.com/ghostery/broken-page-reports/issues/588
-nordbayern.de##body[style^="overflow"]:style(overflow: auto !important)
-nordbayern.de###cmpbox2
+! https://github.com/ghostery/broken-page-reports/issues/601
+nordbayern.de,next-mobility.de##body[style^="overflow"]:style(overflow: auto !important)
+nordbayern.de,next-mobility.de###cmpbox2
 
 ! https://github.com/ghostery/broken-page-reports/issues/584
 ! https://github.com/ghostery/broken-page-reports/issues/579
@@ -714,3 +716,6 @@ futurezone.at##html.scroll-block body:style(overflow: auto !important)
 mail.ee##body.modal-open:style(overflow: auto !important)
 mail.ee##.modal-backdrop.fade.show
 mail.ee##[id^="adBlock-modal"]
+
+! https://github.com/ghostery/broken-page-reports/issues/600
+bricodepot.ro##.greyed-content:style(opacity: 1 !important; pointer-events: auto !important)
