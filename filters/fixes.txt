@@ -538,8 +538,9 @@ readly.com#@#.DialogHandlerContainer
 ! https://github.com/ghostery/broken-page-reports/issues/190
 ! https://github.com/ghostery/broken-page-reports/issues/460
 ! https://github.com/ghostery/broken-page-reports/issues/514
-savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu##.noScroll:style(overflow: auto !important)
-savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu##.noScroll body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/602
+savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu,proshop.no##.noScroll:style(overflow: auto !important)
+savvyrevenue.com,elektroimportoren.no,moraarmatur.com,hoved.talgo.no,elgiganten.se,cremashop.eu,proshop.no##.noScroll body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/299
 transip.nl##html.html-with-one-modal body:style(overflow: auto !important)
