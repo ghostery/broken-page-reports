@@ -714,3 +714,6 @@ futurezone.at##html.scroll-block body:style(overflow: auto !important)
 mail.ee##body.modal-open:style(overflow: auto !important)
 mail.ee##.modal-backdrop.fade.show
 mail.ee##[id^="adBlock-modal"]
+
+! https://github.com/ghostery/broken-page-reports/issues/600
+bricodepot.ro##.greyed-content:style(opacity: 1 !important; pointer-events: auto !important)
