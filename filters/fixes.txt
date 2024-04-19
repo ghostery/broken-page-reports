@@ -719,3 +719,6 @@ mail.ee##[id^="adBlock-modal"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/600
 bricodepot.ro##.greyed-content:style(opacity: 1 !important; pointer-events: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/610
+vr-werdenfels.de##body.cookie-consent-is-active > div.darken-layer.open
