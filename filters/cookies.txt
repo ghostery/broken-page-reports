@@ -149,3 +149,8 @@ befundpost.at###colorbox
 ! https://github.com/ghostery/broken-page-reports/issues/578
 ! For future autoconsent compatibility, use centraalbeheer.nl#@##r42CookieBar
 centraalbeheer.nl##.r42CookieBar-container
+
+! https://github.com/ghostery/broken-page-reports/issues/608
+kontiolahdenseurakunta.fi##div.site-overlay.is-active
+kontiolahdenseurakunta.fi##article#cookie-modal
+kontiolahdenseurakunta.fi##body.has-active-overlay:style(overflow: auto !important)
