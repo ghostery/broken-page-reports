@@ -682,3 +682,8 @@ wideroe.no#@#.cookie-footer
 
 ! https://github.com/ghostery/broken-page-reports/issues/533
 #@#.cookie-statement
+
+! https://github.com/ghostery/broken-page-reports/issues/609
+mazda-od-reki.pl#@##cookie-widget
+mazda-od-reki.pl#@#.cookie-widget
+mazda-od-reki.pl#@#.cookieWidget
