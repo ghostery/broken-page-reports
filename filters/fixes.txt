@@ -727,3 +727,6 @@ vr-werdenfels.de##body.cookie-consent-is-active > div.darken-layer.open
 ! https://github.com/easylist/easylist/blob/7def03bd71fb8bcfdf974b860ce71f8932b8cb87/easylist_cookie/easylist_cookie_thirdparty.txt#L206-L207
 @@||webcache-eu.datareporter.eu^
 @@||webcache.datareporter.eu^
+
+! https://github.com/ghostery/broken-page-reports/issues/613
+fernsehserien.de##ins[id^="werbemittel"]
