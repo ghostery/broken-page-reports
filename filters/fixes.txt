@@ -736,3 +736,6 @@ vr-werdenfels.de##body.cookie-consent-is-active > div.darken-layer.open
 
 ! https://github.com/ghostery/broken-page-reports/issues/613
 fernsehserien.de##ins[id^="werbemittel"]
+
+! https://github.com/ghostery/broken-page-reports/issues/614
+anwbcamping.nl##[style^="overflow: hidden"]:style(overflow: auto !important)
