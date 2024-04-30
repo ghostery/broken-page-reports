@@ -154,3 +154,9 @@ centraalbeheer.nl##.r42CookieBar-container
 kontiolahdenseurakunta.fi##div.site-overlay.is-active
 kontiolahdenseurakunta.fi##article#cookie-modal
 kontiolahdenseurakunta.fi##body.has-active-overlay:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/619
+! >>> url=https://dv-vb.de/media/com_kickconsentmanager/js/kcm.0.0.8.min.js
+! ... type=script
+! ... source=https://dv-vb.de/
+||dv-vb.de/media/com_kickconsentmanager$script
