@@ -739,3 +739,9 @@ fernsehserien.de##ins[id^="werbemittel"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/614
 anwbcamping.nl##[style^="overflow: hidden"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/622
+! >>> url=https://www.recaptcha.net/recaptcha/api2/anchor
+! ... source=https://id.workable.com/
+! ... type=xhr
+@@||recaptcha.net/recaptcha/
