@@ -485,7 +485,7 @@ vr-immoprofis.de#@#div.cookie-consent
 ! >>> url=https://cdn.piano.io/id/1.32.4/runtime-es2015.js
 ! ... source=https://bearingarms.com/
 ! ... type=script
-@@||piano.io^$3p,domain=augsburger-allgemeine.de|stuttgarter-nachrichten.de|stuttgarter-zeitung.de|sueddeutsche.de|schwarzwaelder-bote.de|toyokeizai.net|bearingarms.com
+@@||piano.io^$3p
 
 ! Fix https://github.com/ghostery/ghostery-extension/issues/1381
 ! >>> url=https://app.panobi.com/api/v1/metrics/test
