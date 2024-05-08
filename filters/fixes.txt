@@ -748,3 +748,6 @@ anwbcamping.nl##[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/625
 instagram.com###fb-root ~ div[style] .x78zum5.xdt5ytf.xg6iff7.x1n2onr6:style(opacity: 1 !important; z-index: auto !important; pointer-events: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/631
+l-iz.de##[style^="overflow: hidden"]:style(overflow: auto !important)
