@@ -160,3 +160,7 @@ kontiolahdenseurakunta.fi##body.has-active-overlay:style(overflow: auto !importa
 ! ... type=script
 ! ... source=https://dv-vb.de/
 ||dv-vb.de/media/com_kickconsentmanager$script
+
+! https://github.com/ghostery/broken-page-reports/issues/627
+! Blocking this element globally may cause additional breakages.
+globalwindsafety.org###CybotCookiebotDialog
