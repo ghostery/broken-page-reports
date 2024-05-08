@@ -751,3 +751,6 @@ instagram.com###fb-root ~ div[style] .x78zum5.xdt5ytf.xg6iff7.x1n2onr6:style(opa
 
 ! https://github.com/ghostery/broken-page-reports/issues/631
 l-iz.de##[style^="overflow: hidden"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/632
+makezine.com###elementor-popup-modal-567105
