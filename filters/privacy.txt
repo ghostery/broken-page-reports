@@ -23,3 +23,9 @@
 ! ... source=https://privacy.patreon.com/
 ! ... type=xhr
 @@||transcend.io^$third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/630
+! >>> url=https://mm.osmatecosh.com/rcCQ8T6hfr9/QlXMq
+! ... source=https://1tamilblasters.pm/index.php?/forums/topic
+! ... type=script
+||mm.osmatecosh.com^
