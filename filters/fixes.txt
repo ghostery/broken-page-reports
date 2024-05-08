@@ -754,3 +754,6 @@ l-iz.de##[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/632
 makezine.com###elementor-popup-modal-567105
+
+! https://github.com/ghostery/broken-page-reports/issues/635
+uswitch.com#@#+js(trusted-set-cookie, cookie-preferences, %7B%22performance%22%3Afalse%2C%22marketing%22%3Afalse%2C%22functionality%22%3Atrue%2C%22social%22%3Atrue%2C%22essential%22%3Atrue%7D)
