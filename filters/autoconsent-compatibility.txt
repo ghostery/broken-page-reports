@@ -687,3 +687,6 @@ wideroe.no#@#.cookie-footer
 mazda-od-reki.pl#@##cookie-widget
 mazda-od-reki.pl#@#.cookie-widget
 mazda-od-reki.pl#@#.cookieWidget
+
+! https://github.com/ghostery/broken-page-reports/issues/623
+americanexpress.ch#@#.m-cookie-layer
