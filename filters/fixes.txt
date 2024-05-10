@@ -690,8 +690,9 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/588
 ! https://github.com/ghostery/broken-page-reports/issues/601
-nordbayern.de,next-mobility.de##body[style^="overflow"]:style(overflow: auto !important)
-nordbayern.de,next-mobility.de###cmpbox2
+! https://github.com/ghostery/broken-page-reports/issues/639
+nordbayern.de,next-mobility.de,morgenpost.de##body[style^="overflow"]:style(overflow: auto !important)
+nordbayern.de,next-mobility.de,morgenpost.de###cmpbox2
 
 ! https://github.com/ghostery/broken-page-reports/issues/584
 ! https://github.com/ghostery/broken-page-reports/issues/579
