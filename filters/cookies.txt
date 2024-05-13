@@ -164,3 +164,9 @@ kontiolahdenseurakunta.fi##body.has-active-overlay:style(overflow: auto !importa
 ! https://github.com/ghostery/broken-page-reports/issues/627
 ! Blocking this element globally may cause additional breakages.
 globalwindsafety.org###CybotCookiebotDialog
+
+! https://github.com/ghostery/broken-page-reports/issues/644
+! >>> url=https://cdn.trustcommander.net/privacy/5030/privacy_v2_6.js
+! ... type=script
+! ... source=https://www.edeka.de/
+||cdn.trustcommander.net/privacy$3p,script,domain=edeka.de
