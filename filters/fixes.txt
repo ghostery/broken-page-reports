@@ -771,3 +771,13 @@ html5.gamedistribution.com##+js(json-prune, result.game.dbglg)
 ! ... type=script
 ||dugout.com/v3.1/fussballdaten.js
 fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > div.rectangle
+
+! https://github.com/ghostery/broken-page-reports/issues/643
+! >>> url=https://kaluste10.activehosted.com/f/embed.php?id=3
+! ... source=https://www.kaluste10.fi/category/15/sangyt
+! ... type=script
+||kaluste10.activehosted.com/f/embed.php
+! >>> url=https://www.kaluste10.fi/interface/Banners?name=popups&helper=helpers/modals/popupbanner&sort=random&limit=1
+! ... source=https://www.kaluste10.fi/category/15/sangyt
+! ... type=xhr
+||kaluste10.fi/interface/Banners
