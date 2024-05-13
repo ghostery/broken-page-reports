@@ -764,3 +764,10 @@ html5.gamedistribution.com##+js(json-prune, result.game.ad_blcks)
 html5.gamedistribution.com##+js(json-prune, result.game.ad_flw)
 html5.gamedistribution.com##+js(json-prune, result.game.adflw)
 html5.gamedistribution.com##+js(json-prune, result.game.dbglg)
+
+! https://github.com/ghostery/broken-page-reports/issues/642
+! >>> url=https://embed.dugout.com/v3.1/fussballdaten.js
+! ... source=https://www.fussballdaten.de/bundesliga/2024/34/
+! ... type=script
+||dugout.com/v3.1/fussballdaten.js
+fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > div.rectangle
