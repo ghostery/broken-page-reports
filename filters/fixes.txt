@@ -782,3 +782,9 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://www.kaluste10.fi/category/15/sangyt
 ! ... type=xhr
 ||kaluste10.fi/interface/Banners
+
+! https://github.com/ghostery/broken-page-reports/issues/650
+! >>> url=https://pandectes.myshopify.com/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js
+! ... source=https://pandectes.myshopify.com/
+! ... type=script
+@@/consent-tracking-api.js
