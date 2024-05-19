@@ -170,3 +170,9 @@ globalwindsafety.org###CybotCookiebotDialog
 ! ... type=script
 ! ... source=https://www.edeka.de/
 ||cdn.trustcommander.net/privacy$3p,script,domain=edeka.de
+
+! https://github.com/ghostery/broken-page-reports/issues/653
+! >>> url=cs3.wettercomassets.com/wcomv5/assets/wcom-cmp.78509081.js
+! ... type=script
+! ... source=https://www.wetter.com/deutschland/ebensfeld/DE0002307.html
+||wettercomassets.com/wcomv5/assets/wcom-cmp$script
