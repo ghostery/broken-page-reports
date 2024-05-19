@@ -690,3 +690,6 @@ mazda-od-reki.pl#@#.cookieWidget
 
 ! https://github.com/ghostery/broken-page-reports/issues/623
 americanexpress.ch#@#.m-cookie-layer
+
+! https://github.com/ghostery/broken-page-reports/issues/652
+tibber.com#@#div[class*="CookieConsent"]
