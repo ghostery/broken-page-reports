@@ -693,3 +693,9 @@ americanexpress.ch#@#.m-cookie-layer
 
 ! https://github.com/ghostery/broken-page-reports/issues/652
 tibber.com#@#div[class*="CookieConsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/656
+#@#.cc-window-wrapper
+#@#.cc-overlay-wrapper
+#@#.cc-theme-classic.cc-window
+#@##pandectes-banner
