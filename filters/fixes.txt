@@ -788,3 +788,7 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://pandectes.myshopify.com/
 ! ... type=script
 @@/consent-tracking-api.js
+
+! https://github.com/ghostery/broken-page-reports/issues/659
+@@.com/track?$~object
+.com/track?$domain=~ups.com
