@@ -695,7 +695,13 @@ americanexpress.ch#@#.m-cookie-layer
 tibber.com#@#div[class*="CookieConsent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/656
+! https://github.com/ghostery/broken-page-reports/issues/650
 #@#.cc-window-wrapper
 #@#.cc-overlay-wrapper
 #@#.cc-theme-classic.cc-window
 #@##pandectes-banner
+#@#gdpr-blocking-page-overlay
+! >>> url=https://pandectes.myshopify.com/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js
+! ... source=https://pandectes.myshopify.com/
+! ... type=script
+@@/consent-tracking-api.js
