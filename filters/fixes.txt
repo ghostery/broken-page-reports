@@ -790,5 +790,11 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 @@/consent-tracking-api.js
 
 ! https://github.com/ghostery/broken-page-reports/issues/659
+! >>> url=https://www.ups.com/track?loc=en_US&requester=QUIC&tracknum=1Z54F78A0450293517/trackdetails
+! ... source=https://www.ups.com/track?loc=en_US&requester=QUIC&tracknum=1Z54F78A0450293517/trackdetails
+! ... type=document
 @@.com/track?$~object
+! >>> url=https://example.com/track?
+! ... source=https://example.com/track?
+! ... type=document
 .com/track?$domain=~ups.com
