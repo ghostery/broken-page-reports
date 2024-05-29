@@ -693,7 +693,8 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/639
 ! https://github.com/ghostery/broken-page-reports/issues/647
 ! https://github.com/ghostery/broken-page-reports/issues/667
-nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de,interspar.at##body[style^="overflow"]:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/666
+nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de,interspar.at,azerty.nl##body[style^="overflow"]:style(overflow: auto !important)
 nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de###cmpbox2
 
 ! https://github.com/ghostery/broken-page-reports/issues/584
@@ -793,3 +794,7 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://example.com/track?
 ! ... type=document
 .com/track?$domain=~ups.com
+
+! https://github.com/ghostery/broken-page-reports/issues/666
+azerty.nl###CybotCookiebotDialog
+azerty.nl###CybotCookiebotDialogBodyUnderlay
