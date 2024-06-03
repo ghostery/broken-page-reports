@@ -798,3 +798,9 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! https://github.com/ghostery/broken-page-reports/issues/666
 azerty.nl###CybotCookiebotDialog
 azerty.nl###CybotCookiebotDialogBodyUnderlay
+
+! Unbreak the Pushbullet extension: https://github.com/ghostery/trackerdb/issues/343
+! >>> url=https://api.pushbullet.com/v3/set-app-state
+! ... source=https://example.com/
+! ... type=xhr
+@@||pushbullet.com^$third-party
