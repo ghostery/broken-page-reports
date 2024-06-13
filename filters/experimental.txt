@@ -1,4 +1,3 @@
-[Adblock Plus 2.0]
 ! Title: @Ghostery — experimental
 ! Expires: 4 hours
 ! Version: {{version}}
