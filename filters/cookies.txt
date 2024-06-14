@@ -197,3 +197,8 @@ tgcom24.mediaset.it###rti-privacy-banner-id
 ! ... source=https://www.portalsamorzadowy.pl/
 ! ... type=script
 ||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl|dev-insider.de|reiseland-brandenburg.de
+
+! A temporal cosmetic fix for privacy-mgmt.com
+! autoconsent rule update is required to fix this
+heute.at##[id^="sp_message_container_"]
+heute.at##body[style^="overflow"]:style(overflow: auto !important)
