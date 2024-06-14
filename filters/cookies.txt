@@ -182,3 +182,18 @@ fidelity.co.uk##.ensModal[aria-label="Consent Configuration"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/661
 tgcom24.mediaset.it###rti-privacy-banner-id
+
+! https://github.com/ghostery/broken-page-reports/issues/588
+! https://github.com/ghostery/broken-page-reports/issues/601
+! https://github.com/ghostery/broken-page-reports/issues/639
+! https://github.com/ghostery/broken-page-reports/issues/647
+! https://github.com/ghostery/broken-page-reports/issues/667
+! https://github.com/ghostery/broken-page-reports/issues/666
+! https://github.com/ghostery/broken-page-reports/issues/631
+! https://github.com/ghostery/broken-page-reports/issues/574
+! https://github.com/ghostery/broken-page-reports/issues/681
+! https://github.com/ghostery/broken-page-reports/issues/682
+! >>> url=https://delivery.consentmanager.net/delivery/customcmp/42020.js
+! ... source=https://www.portalsamorzadowy.pl/
+! ... type=script
+||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl|dev-insider.de|reiseland-brandenburg.de
