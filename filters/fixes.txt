@@ -681,10 +681,11 @@ squaretrade.com##+js(aeld, click, segment)
 ! https://github.com/ghostery/broken-page-reports/issues/666
 ! https://github.com/ghostery/broken-page-reports/issues/631
 ! https://github.com/ghostery/broken-page-reports/issues/574
+! https://github.com/ghostery/broken-page-reports/issues/681
 ! >>> url=https://delivery.consentmanager.net/delivery/customcmp/42020.js
 ! ... source=https://www.portalsamorzadowy.pl/
 ! ... type=script
-||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl
+||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl|dev-insider.de
 
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
