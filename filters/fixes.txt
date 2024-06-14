@@ -684,10 +684,6 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/666
 ||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl
 
-! https://github.com/ghostery/broken-page-reports/issues/584
-! https://github.com/ghostery/broken-page-reports/issues/579
-gitlab.com,habitica.com##[id$="BV_modal_outer_"]:style(z-index: 1040 !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
 
