@@ -804,3 +804,8 @@ azerty.nl###CybotCookiebotDialogBodyUnderlay
 ! ... source=https://example.com/
 ! ... type=xhr
 @@||pushbullet.com^$third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/161
+tfl.gov.uk##div#cb-cookieoverlay
+tfl.gov.uk##body:style(overflow:auto !important)
+tfl.gov.uk##html:style(overflow:auto !important)
