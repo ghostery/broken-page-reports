@@ -178,18 +178,6 @@ uptodate.com#@#.gdprBanner
 ! https://github.com/ghostery/broken-page-reports/issues/236
 winfuture.de,cyberport.de#@#.cmpwrapper
 
-! Unbreak qatarairways.com
-! https://github.com/ghostery/broken-page-reports/issues/120
-! Currently, the site is unusable; these changes here restore the
-! cookie banner, so cookies can be confirmed and the site can be used.
-qatarairways.com#@##cookiebarNew
-qatarairways.com#@##cookieContainer
-qatarairways.com#@##cookie-notification
-qatarairways.com#@#div.cookie-details
-qatarairways.com#@#div.cookie-content
-qatarairways.com#@#.cookiewrap
-qatarairways.com#@#.cookie-inner-container
-
 ! Unbreak infranken.de
 ! (Hiding the initial dialog makes the site unusable)
 ! https://github.com/ghostery/broken-page-reports/issues/134
