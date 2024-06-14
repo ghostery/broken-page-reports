@@ -792,3 +792,9 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://example.com/
 ! ... type=xhr
 @@||pushbullet.com^$third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/683
+! >>> url=https://www.poste.it/cerca-app/js/app/webtrends_service.js
+! ... source=https://www.poste.it/cerca/index.html
+! ... type=script
+@@||poste.it/cerca-app/js/app/webtrends_service.js^$domain=poste.it
