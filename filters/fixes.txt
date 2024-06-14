@@ -178,18 +178,6 @@ uptodate.com#@#.gdprBanner
 ! https://github.com/ghostery/broken-page-reports/issues/236
 winfuture.de,cyberport.de#@#.cmpwrapper
 
-! Unbreak qatarairways.com
-! https://github.com/ghostery/broken-page-reports/issues/120
-! Currently, the site is unusable; these changes here restore the
-! cookie banner, so cookies can be confirmed and the site can be used.
-qatarairways.com#@##cookiebarNew
-qatarairways.com#@##cookieContainer
-qatarairways.com#@##cookie-notification
-qatarairways.com#@#div.cookie-details
-qatarairways.com#@#div.cookie-content
-qatarairways.com#@#.cookiewrap
-qatarairways.com#@#.cookie-inner-container
-
 ! Unbreak infranken.de
 ! (Hiding the initial dialog makes the site unusable)
 ! https://github.com/ghostery/broken-page-reports/issues/134
@@ -679,9 +667,6 @@ onleihe.de##.modal-backdrop.fade.show
 ! https://github.com/ghostery/broken-page-reports/issues/570
 squaretrade.com##+js(aeld, click, segment)
 
-! https://github.com/ghostery/broken-page-reports/issues/574
-portalsamorzadowy.pl###read_page:style(overflow: auto !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/580
 ! >>> url=https://cdn.conversationalsdevelopment.nl/hollandsnieuwe/client/v2/index.js
 ! ... source=https://www.hollandsnieuwe.nl/klantenservice
@@ -694,12 +679,12 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/647
 ! https://github.com/ghostery/broken-page-reports/issues/667
 ! https://github.com/ghostery/broken-page-reports/issues/666
-nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de,interspar.at,azerty.nl##body[style^="overflow"]:style(overflow: auto !important)
-nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de###cmpbox2
-
-! https://github.com/ghostery/broken-page-reports/issues/584
-! https://github.com/ghostery/broken-page-reports/issues/579
-gitlab.com,habitica.com##[id$="BV_modal_outer_"]:style(z-index: 1040 !important)
+! https://github.com/ghostery/broken-page-reports/issues/631
+! https://github.com/ghostery/broken-page-reports/issues/574
+! >>> url=https://delivery.consentmanager.net/delivery/customcmp/42020.js
+! ... source=https://www.portalsamorzadowy.pl/
+! ... type=script
+||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl
 
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
@@ -726,6 +711,7 @@ bricodepot.ro##.greyed-content:style(opacity: 1 !important; pointer-events: auto
 
 ! https://github.com/ghostery/broken-page-reports/issues/610
 vr-werdenfels.de##body.cookie-consent-is-active > div.darken-layer.open
+vr-werdenfels.de###lightbox--cookie-consent
 
 ! https://github.com/ghostery/broken-page-reports/issues/606
 ! https://github.com/easylist/easylist/blob/7def03bd71fb8bcfdf974b860ce71f8932b8cb87/easylist_cookie/easylist_cookie_thirdparty.txt#L206-L207
@@ -752,9 +738,6 @@ anwbcamping.nl##[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/625
 instagram.com###fb-root ~ div[style] .x78zum5.xdt5ytf.xg6iff7.x1n2onr6:style(opacity: 1 !important; z-index: auto !important; pointer-events: auto !important)
-
-! https://github.com/ghostery/broken-page-reports/issues/631
-l-iz.de##[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/632
 makezine.com###elementor-popup-modal-567105
@@ -796,8 +779,11 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 .com/track?$domain=~ups.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/666
-azerty.nl###CybotCookiebotDialog
-azerty.nl###CybotCookiebotDialogBodyUnderlay
+! https://github.com/ghostery/broken-page-reports/issues/161
+! >>> url=https://consent.cookiebot.com/uc.js
+! ... source=https://tfl.gov.uk/
+! ... type=script
+||cookiebot.com^$important,domain=azerty.nl|tfl.gov.uk
 
 ! Unbreak the Pushbullet extension: https://github.com/ghostery/trackerdb/issues/343
 ! >>> url=https://api.pushbullet.com/v3/set-app-state
