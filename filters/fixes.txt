@@ -673,19 +673,6 @@ squaretrade.com##+js(aeld, click, segment)
 ! ... type=script
 @@||conversationalsdevelopment.nl^$domain=hollandsnieuwe.nl
 
-! https://github.com/ghostery/broken-page-reports/issues/588
-! https://github.com/ghostery/broken-page-reports/issues/601
-! https://github.com/ghostery/broken-page-reports/issues/639
-! https://github.com/ghostery/broken-page-reports/issues/647
-! https://github.com/ghostery/broken-page-reports/issues/667
-! https://github.com/ghostery/broken-page-reports/issues/666
-! https://github.com/ghostery/broken-page-reports/issues/631
-! https://github.com/ghostery/broken-page-reports/issues/574
-! >>> url=https://delivery.consentmanager.net/delivery/customcmp/42020.js
-! ... source=https://www.portalsamorzadowy.pl/
-! ... type=script
-||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl
-
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
 
@@ -790,3 +777,9 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://example.com/
 ! ... type=xhr
 @@||pushbullet.com^$third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/683
+! >>> url=https://www.poste.it/cerca-app/js/app/webtrends_service.js
+! ... source=https://www.poste.it/cerca/index.html
+! ... type=script
+@@||poste.it/cerca-app/js/app/webtrends_service.js^$domain=poste.it
