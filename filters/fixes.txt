@@ -694,8 +694,7 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/647
 ! https://github.com/ghostery/broken-page-reports/issues/667
 ! https://github.com/ghostery/broken-page-reports/issues/666
-nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de,interspar.at,azerty.nl##body[style^="overflow"]:style(overflow: auto !important)
-nordbayern.de,next-mobility.de,morgenpost.de,derwesten.de###cmpbox2
+||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl
 
 ! https://github.com/ghostery/broken-page-reports/issues/584
 ! https://github.com/ghostery/broken-page-reports/issues/579
