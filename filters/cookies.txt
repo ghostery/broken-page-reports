@@ -202,3 +202,9 @@ tgcom24.mediaset.it###rti-privacy-banner-id
 ! autoconsent rule update is required to fix this
 heute.at##[id^="sp_message_container_"]
 heute.at##body[style^="overflow"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/685
+! >>> url=https://cmp.nature.com/production_live/en/consent-bundle-8-67.js
+! ... source=https://www.nature.com/articles/s43588-023-00467-6
+! ... type=script
+||cmp.nature.com
