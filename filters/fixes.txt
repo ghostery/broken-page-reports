@@ -667,9 +667,6 @@ onleihe.de##.modal-backdrop.fade.show
 ! https://github.com/ghostery/broken-page-reports/issues/570
 squaretrade.com##+js(aeld, click, segment)
 
-! https://github.com/ghostery/broken-page-reports/issues/574
-portalsamorzadowy.pl###read_page:style(overflow: auto !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/580
 ! >>> url=https://cdn.conversationalsdevelopment.nl/hollandsnieuwe/client/v2/index.js
 ! ... source=https://www.hollandsnieuwe.nl/klantenservice
@@ -683,7 +680,8 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/667
 ! https://github.com/ghostery/broken-page-reports/issues/666
 ! https://github.com/ghostery/broken-page-reports/issues/631
-||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de
+! https://github.com/ghostery/broken-page-reports/issues/574
+||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl
 
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
