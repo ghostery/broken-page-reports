@@ -3,7 +3,8 @@
 ! Version: {{version}}
 
 !#if env_experimental
-!www.youtube.com,music.youtube.com,m.youtube.com##+js(trusted-rpnt, script, (function() {window.ytplayer=, (()=>{let t=document.location.href\,e=[]\,o=!1;const r=Array.prototype.push\,n={apply:(t\,n\,a)=>{a[0]!==window&&"number"==typeof a[0]?.start&&a[0]?.end&&"ssap"===a[0]?.namespace&&(o||0!==a[0]?.start||(e.length=0\,o=!0\,r.call(e\,a[0]))\,0!==a[0]?.start&&r.call(e\,a[0]));return Reflect.apply(t\,n\,a)}};window.Array.prototype.push=new Proxy(window.Array.prototype.push\,n)\,document.addEventListener("DOMContentLoaded"\,(function(){let r=!1;const n=()=>{const t=document.querySelector("video");t&&!r&&e.length>0&&(r=!0\,t.currentTime=Math.ceil(e.at(-1).start/1e3))};n()\,new MutationObserver((()=>{t!==document.location.href?(t=document.location.href\,e=[]\,r=!1\,o=!1\,n()):n()})).observe(document.body\,{childList:!0\,subtree:!0})}))})();(function() {window.ytplayer=, sedCount, 1)
-!www.youtube.com,music.youtube.com,m.youtube.com##+js(nano-stb, [native code], 17000, 0.001)
-!www.ghostery.com###ds-home-header-animation
+www.youtube.com,music.youtube.com,m.youtube.com##+js(trusted-rpnt, script, (function() {window.ytplayer=, (()=>{let t=document.location.href\,e=[]\,o=!1;const r=Array.prototype.push\,n={apply:(t\,n\,a)=>{a[0]!==window&&"number"==typeof a[0]?.start&&a[0]?.end&&"ssap"===a[0]?.namespace&&(o||0!==a[0]?.start||(e.length=0\,o=!0\,r.call(e\,a[0]))\,0!==a[0]?.start&&r.call(e\,a[0]));return Reflect.apply(t\,n\,a)}};window.Array.prototype.push=new Proxy(window.Array.prototype.push\,n)\,document.addEventListener("DOMContentLoaded"\,(function(){let r=!1;const n=()=>{const t=document.querySelector("video");t&&!r&&e.length>0&&(r=!0\,t.currentTime=Math.ceil(e.at(-1).start/1e3))};n()\,new MutationObserver((()=>{t!==document.location.href?(t=document.location.href\,e=[]\,r=!1\,o=!1\,n()):n()})).observe(document.body\,{childList:!0\,subtree:!0})}))})();(function() {window.ytplayer=, sedCount, 1)
+www.youtube.com,music.youtube.com,m.youtube.com##+js(nano-stb, [native code], 17000, 0.001)
+! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com
+www.ghostery.com##.ds-footer-copyrights
 !#endif
