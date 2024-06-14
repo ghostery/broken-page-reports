@@ -682,7 +682,8 @@ portalsamorzadowy.pl###read_page:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/647
 ! https://github.com/ghostery/broken-page-reports/issues/667
 ! https://github.com/ghostery/broken-page-reports/issues/666
-||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl
+! https://github.com/ghostery/broken-page-reports/issues/631
+||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de
 
 ! https://github.com/ghostery/broken-page-reports/issues/590
 photopea.com##+js(no-fetch-if, adsbygoogle.js method:HEAD)
@@ -735,9 +736,6 @@ anwbcamping.nl##[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/625
 instagram.com###fb-root ~ div[style] .x78zum5.xdt5ytf.xg6iff7.x1n2onr6:style(opacity: 1 !important; z-index: auto !important; pointer-events: auto !important)
-
-! https://github.com/ghostery/broken-page-reports/issues/631
-l-iz.de##[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/632
 makezine.com###elementor-popup-modal-567105
