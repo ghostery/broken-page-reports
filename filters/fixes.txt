@@ -776,7 +776,8 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 .com/track?$domain=~ups.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/666
-||cookiebot.com^$important,domain=azerty.nl
+! https://github.com/ghostery/broken-page-reports/issues/161
+||cookiebot.com^$important,domain=azerty.nl|tfl.gov.uk
 
 ! Unbreak the Pushbullet extension: https://github.com/ghostery/trackerdb/issues/343
 ! >>> url=https://api.pushbullet.com/v3/set-app-state
