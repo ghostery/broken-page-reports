@@ -710,6 +710,7 @@ bricodepot.ro##.greyed-content:style(opacity: 1 !important; pointer-events: auto
 
 ! https://github.com/ghostery/broken-page-reports/issues/610
 vr-werdenfels.de##body.cookie-consent-is-active > div.darken-layer.open
+vr-werdenfels.de###lightbox--cookie-consent
 
 ! https://github.com/ghostery/broken-page-reports/issues/606
 ! https://github.com/easylist/easylist/blob/7def03bd71fb8bcfdf974b860ce71f8932b8cb87/easylist_cookie/easylist_cookie_thirdparty.txt#L206-L207
