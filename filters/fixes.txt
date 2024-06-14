@@ -681,6 +681,9 @@ squaretrade.com##+js(aeld, click, segment)
 ! https://github.com/ghostery/broken-page-reports/issues/666
 ! https://github.com/ghostery/broken-page-reports/issues/631
 ! https://github.com/ghostery/broken-page-reports/issues/574
+! >>> url=https://delivery.consentmanager.net/delivery/customcmp/42020.js
+! ... source=https://www.portalsamorzadowy.pl/
+! ... type=script
 ||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl
 
 ! https://github.com/ghostery/broken-page-reports/issues/590
@@ -777,6 +780,9 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 
 ! https://github.com/ghostery/broken-page-reports/issues/666
 ! https://github.com/ghostery/broken-page-reports/issues/161
+! >>> url=https://consent.cookiebot.com/uc.js
+! ... source=https://tfl.gov.uk/
+! ... type=script
 ||cookiebot.com^$important,domain=azerty.nl|tfl.gov.uk
 
 ! Unbreak the Pushbullet extension: https://github.com/ghostery/trackerdb/issues/343
