@@ -783,3 +783,14 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://www.poste.it/cerca/index.html
 ! ... type=script
 @@||poste.it/cerca-app/js/app/webtrends_service.js^$domain=poste.it
+
+! https://github.com/easylist/easylist/pull/19348
+! >>> url=https://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&loc=en_US&Requester=UPSHome&WBPM_lid=homepage%2Fct1.html_pnl_trk&track.x=Track&trackNums=1ZGJ77070316723440
+! ... source=https://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&loc=en_US&Requester=UPSHome&WBPM_lid=homepage%2Fct1.html_pnl_trk&track.x=Track&trackNums=1ZGJ77070316723440
+! ... type=main_frame
+@@/webtracking/*$~subdocument,domain=~wwwapps.ups.com
+! >>> url=https://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&loc=en_US&Requester=UPSHome&WBPM_lid=homepage%2Fct1.html_pnl_trk&track.x=Track&trackNums=1ZGJ77070316723440
+! ... source=https://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&loc=en_US&Requester=UPSHome&WBPM_lid=homepage%2Fct1.html_pnl_trk&track.x=Track&trackNums=1ZGJ77070316723440
+! ... type=main_frame
+! ... match=false
+/webtracking/*$~subdocument,~document,domain=~wwwapps.ups.com
