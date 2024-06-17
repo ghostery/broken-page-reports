@@ -21,3 +21,9 @@
 ! ... source=https://1tamilblasters.pm/index.php?/forums/topic
 ! ... type=script
 ||mm.osmatecosh.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/688
+! >>> url=api.bilibili.com/x/vip/ads/materials?position=52&position=53&platform=pc&buvid=infoc&code=pc-coupon&mid=
+! ... source=https://www.bilibili.com/
+! ... type=xhr
+||api.bilibili.com/x/vip/ads/materials^$domain=bilibili.com
