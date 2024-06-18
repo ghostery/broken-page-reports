@@ -794,3 +794,20 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... type=main_frame
 ! ... match=false
 /webtracking/*$~subdocument,~document,domain=~wwwapps.ups.com
+
+! https://github.com/easylist/easylist/blob/7ed4f9cf77a8aab284ca703b7b9ccee909d88803/easyprivacy/easyprivacy_trackingservers_thirdparty.txt#L686
+! https://login.eloqua.com/
+! https://secure.p01.eloqua.com
+! https://secure.p02.eloqua.com
+! https://secure.p03.eloqua.com
+! https://secure.p04.eloqua.com
+! https://secure.p06.eloqua.com
+! https://secure.p07.eloqua.com
+! https://secure.p08.eloqua.com
+! >>> url=https://login.eloqua.com/
+! ... source=https://example.com/
+! ... type=document
+! >>> url=https://secure.p02.eloqua.com/
+! ... source=https://example.com/
+! ... type=xhr
+@@||eloqua.com^$~stylesheet,third-party
