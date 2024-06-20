@@ -220,3 +220,9 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 ! ... source=https://www.wexphotovideo.com/
 ! ... type=script
 ||cdn.iubenda.com/cookie_solution$domain=wexphotovideo.com
+
+! https://github.com/ghostery/broken-page-reports/issues/695
+! >>> url=https://consent.wko.at/consent.js?d=20240620
+! ... source=https://vama.wkw.at/login.aspx?VANR=14056094
+! ... type=script
+||consent.wko.at/consent.js^$domain=wkw.at
