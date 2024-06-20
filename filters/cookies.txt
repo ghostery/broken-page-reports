@@ -219,4 +219,4 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 ! >>> url=https://cdn.iubenda.com/cookie_solution/iubenda_cs/1.60.3/core-en.js
 ! ... source=https://www.wexphotovideo.com/
 ! ... type=script
-||cdn.iubenda.com/cookie_solution/iubenda_cs/1.60.3/core-en.js^domain=wexphotovideo.com
+||cdn.iubenda.com/cookie_solution$domain=wexphotovideo.com
