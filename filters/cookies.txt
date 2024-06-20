@@ -208,3 +208,21 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 ! ... source=https://www.nature.com/articles/s43588-023-00467-6
 ! ... type=script
 ||cmp.nature.com
+
+! https://github.com/ghostery/broken-page-reports/issues/691
+! >>> url=https://polityka-prywatnosci.tvp.pl/shared/consent_api.php?consent=getPublicVendorList&consentApiVersion=v2
+! ... source=https://tvpworld.com/
+! ... type=xhr
+||polityka-prywatnosci.tvp.pl/shared/consent_api.php^$domain=tvpworld.com
+
+! https://github.com/ghostery/broken-page-reports/issues/693
+! >>> url=https://cdn.iubenda.com/cookie_solution/iubenda_cs/1.60.3/core-en.js
+! ... source=https://www.wexphotovideo.com/
+! ... type=script
+||cdn.iubenda.com/cookie_solution$domain=wexphotovideo.com
+
+! https://github.com/ghostery/broken-page-reports/issues/695
+! >>> url=https://consent.wko.at/consent.js?d=20240620
+! ... source=https://vama.wkw.at/login.aspx?VANR=14056094
+! ... type=script
+||consent.wko.at/consent.js^$domain=wkw.at
