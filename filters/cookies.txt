@@ -208,3 +208,9 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 ! ... source=https://www.nature.com/articles/s43588-023-00467-6
 ! ... type=script
 ||cmp.nature.com
+
+! https://github.com/ghostery/broken-page-reports/issues/691
+! >>> url=https://polityka-prywatnosci.tvp.pl/shared/consent_api.php?consent=getPublicVendorList&consentApiVersion=v2
+! ... source=https://tvpworld.com/
+! ... type=xhr
+||polityka-prywatnosci.tvp.pl/shared/consent_api.php^$domain=tvpworld.com
