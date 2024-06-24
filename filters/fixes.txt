@@ -824,3 +824,7 @@ instapundit.com#@#.ad-space:not(.textads):not(.adbox)
 
 ! https://github.com/ghostery/broken-page-reports/issues/672
 koreanair.com#@##noticePopup
+
+! https://github.com/ghostery/broken-page-reports/issues/670
+newser.com##nav[role="navigation"]>ul:style(max-height: 49px !important)
+newser.com###divEntireNav:style(height: 49px !important)
