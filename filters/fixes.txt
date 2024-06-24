@@ -818,3 +818,6 @@ myrealtrip.com##+js(set, sendPageViewLog_custom, trueFunc)
 ! ... type=script
 @@||naver.net/wcslog.js^$domain=ybtour.co.kr|air.lottetour.com
 ybtour.co.kr##+js(set, wcs, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/699
+instapundit.com#@#.ad-space:not(.textads):not(.adbox)
