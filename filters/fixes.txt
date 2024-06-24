@@ -800,3 +800,10 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://example.com/
 ! ... type=xhr
 @@||eloqua.com^$~stylesheet,third-party
+
+! https://github.com/ghostery/broken-page-reports/issues/701
+! >>> url=https://flights.myrealtrip.com/air/js/AIR/WEBLOG.js?20240618171206
+! ... source=https://flights.myrealtrip.com/air/b2c/AIR/INT/AIRINTSCH0100100210.k1?KSESID=air:b2c:SELK138RB:SELK138RB:N00001:00&tripbean=B2C%5E250%5EI%5ERT%5EICN%2CTYO%2C%2C%5E2024-08-03%2C2024-08-12%2C%2C%5ETYO%2CICN%2C%2C%5EN%2CN%2CN%5E%2C%2C%5E2%5E0%5E0%5EY%5E%5E%5EY%5E%5E%5E%5E%5EFARE%5ED&farebean=KE%5ERP%5EADT%5ERP%5E382700%5E247700%5E63300%5E64400%5E10000%5E0%5E120167%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E0%5E%5EY%5EY%5ED%5ER%5E2.88%5E%5E%5E0.0%5E%5E%5E0.0%5E%5E%5E0.0%5E%5E0%5E%5EM003%5E20240625%5E%5E%5E%5E%5EA01&itno=1,2&sno=1,1&air=KE,KE&fgtno=711,714&dctcd=ICN,NRT&ddt=20240803,20240812&dtm=1300,2055&actcd=NRT,ICN&adt=20240803,20240812&atm=1525,2325&cdshare=,&stopovercd=,&stopovertm=,&deptml=2,1&arrtml=1,2&isFreeSameDayRefundable=,&exposeyn=&exposeday=&exposecolor=&grpdetailseqno=&saleFormCd=B2C&cabincls=M,M&bkgcls=Q,T&seatcnt=9,9&seatstus=HK,HK&baginfo=1%EA%B0%9C%2C1%EA%B0%9C&segfarets=RP,RP&fcno=1,2&fabasis=QHETZFKJ,THETZFKJ&fabasischd=QHETZFKJ,THETZFKJ&fabasisinf=QHETZFKJ,THETZFKJ&PromotionCode=2141%5ENRT%5E%5ENRT%5E%5EMRT023&PromotionName=promo_240617_B&PromotionAmt=5000&PromotionAdtInd=Y&PromotionChdInd=N&PromotionInfInd=N
+! ... type=script
+@@/weblog.js?$domain=myrealtrip.com
+myrealtrip.com##+js(set, sendPageViewLog_custom, trueFunc)
