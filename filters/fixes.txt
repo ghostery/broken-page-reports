@@ -807,3 +807,10 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... type=script
 @@/weblog.js?$domain=myrealtrip.com
 myrealtrip.com##+js(set, sendPageViewLog_custom, trueFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/702
+! >>> url=https://wcs.naver.net/wcslog.js
+! ... source=https://air.ybtour.co.kr/air/b2c/AIR/INT/AIRINTSCH0100100210.k1;jsessionid=9D159326F0B99599D2B3E4F9FAAA880F.ibeair2?KSESID=air:b2c:SELK138AN:AA024:N00001:00&dtm=1300,2055&actcd=NRT,ICN&segfarets=RP,RP&cabincls=M,M&fcno=1,2&baginfo=1%EA%B0%9C%2C1%EA%B0%9C&fabasis=QHETZFKJ,THETZFKJ&PromotionAdtInd=Y&itno=1,2&cdshare=,&air=KE,KE&PromotionCode=2141%5ENRT%5E%5ENRT%5E%5EYEL009&stopovercd=,&PromotionInfInd=N&bkgcls=Q,T&sno=1,1&tripbean=B2C%5E4000%5EI%5ERT%5EICN%2CTYO%2C%2C%5E2024-08-03%2C2024-08-12%2C%2C%5ETYO%2CICN%2C%2C%5EN%2CN%2CN%5E%2C%2C%5E2%5E0%5E0%5EY%5E%5E%5EY%5E%5E%5E%5E%5EFARE%5ED&seatcnt=9,9&fgtno=711,714&atm=1525,2325&isFreeSameDayRefundable=,&fabasisinf=QHETZFKJ,THETZFKJ&ddt=20240803,20240812&fabasischd=QHETZFKJ,THETZFKJ&adt=20240803,20240812&PromotionChdInd=N&PromotionName=promo_240617_B&farebean=KE%5ERP%5EADT%5ERP%5E382700%5E249400%5E63300%5E64400%5E10000%5E0%5E47457%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E%5E0%5ER%5EY%5EY%5ED%5ER%5E2.2%5E%5E%5E0.0%5E%5E%5E0.0%5E%5E%5E0.0%5E%5E0%5E%5EM003%5E20240625%5E%5E%5E%5E%5EA01&seatstus=HK,HK&PromotionAmt=5000&dctcd=ICN,NRT
+! ... type=script
+@@||naver.net/wcslog.js^$domain=ybtour.co.kr
+ybtour.co.kr##+js(set, wcs, {})
