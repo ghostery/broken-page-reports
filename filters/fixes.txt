@@ -821,3 +821,6 @@ ybtour.co.kr##+js(set, wcs, {})
 
 ! https://github.com/ghostery/broken-page-reports/issues/699
 instapundit.com#@#.ad-space:not(.textads):not(.adbox)
+
+! https://github.com/ghostery/broken-page-reports/issues/672
+koreanair.com#@##noticePopup
