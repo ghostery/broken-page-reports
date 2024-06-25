@@ -828,3 +828,8 @@ koreanair.com#@##noticePopup
 ! https://github.com/ghostery/broken-page-reports/issues/670
 newser.com##nav[role="navigation"]>ul:style(max-height: 49px !important)
 newser.com###divEntireNav:style(height: 49px !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/705
+! Regional filters are not working on Ghostery Browser Extension v10
+! Imports for the most popular websites
+naver.com##[class^="Layout-module__banner_area_"][target]
