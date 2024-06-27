@@ -839,3 +839,6 @@ naver.com##[class^="Layout-module__banner_area_"][target]
 ! ... source=https://aws.amazon.com/ko/ec2/instance-types/
 ! ... type=script
 @@||a0.awsstatic.com/libra/*/vendor/web-vitals.attribution.iife.js
+
+! https://github.com/ghostery/broken-page-reports/issues/710
+waldnet.nl##a#klikbareLink
