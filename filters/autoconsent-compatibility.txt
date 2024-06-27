@@ -717,3 +717,6 @@ qatarairways.com#@#div.cookie-details
 qatarairways.com#@#div.cookie-content
 qatarairways.com#@#.cookiewrap
 qatarairways.com#@#.cookie-inner-container
+
+! https://github.com/ghostery/broken-page-reports/issues/709
+zentralruf.de#@##cookie_modal_wrapper
