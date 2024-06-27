@@ -123,9 +123,9 @@ bifa.org##.wt-cli-cookie-bar-container
 ! == Update: This rule was unblocked again temporarily until the internal dicussion is done.
 ! https://github.com/ghostery/broken-page-reports/issues/545
 ! https://github.com/ghostery/broken-page-reports/issues/549
-! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
-! ... type=script
-! ... source=https://www.bauhaus.info/
+!! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
+!! ... type=script
+!! ... source=https://www.bauhaus.info/
 ! ||usercentrics.eu^$3p,script,important
 
 ! https://github.com/ghostery/broken-page-reports/issues/547
