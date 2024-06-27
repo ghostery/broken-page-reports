@@ -833,3 +833,9 @@ newser.com###divEntireNav:style(height: 49px !important)
 ! Regional filters are not working on Ghostery Browser Extension v10
 ! Imports for the most popular websites
 naver.com##[class^="Layout-module__banner_area_"][target]
+
+! https://github.com/ghostery/broken-page-reports/issues/707
+! >>> url=https://a0.awsstatic.com/libra/1.0.582/vendor/web-vitals.attribution.iife.js
+! ... source=https://aws.amazon.com/ko/ec2/instance-types/
+! ... type=script
+@@||a0.awsstatic.com/libra/*/vendor/web-vitals.attribution.iife.js
