@@ -227,3 +227,6 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 ! ... source=https://vama.wkw.at/login.aspx?VANR=14056094
 ! ... type=script
 ||consent.wko.at/consent.js^$domain=wkw.at
+
+! https://github.com/ghostery/ghostery-extension/issues/1702
+kabel24.nl##.adwise-cb-overlay
