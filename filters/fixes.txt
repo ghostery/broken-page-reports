@@ -268,6 +268,12 @@ legacy.wral.com##+js(set, wral_ga, true)
 ! ... type=script
 @@/wrappermessagingwithoutdetection.js$domain=heise.de
 heise.de#@#div[id^="sp_message_container_"]
+! Also breaks the graphs on handelsblatt.com: https://github.com/ghostery/broken-page-reports/issues/716
+! >>> url=https://cmp-sp.handelsblatt.com/unified/wrapperMessagingWithoutDetection.js
+! ... source=https://www.handelsblatt.com/politik/deutschland/afd-parteitag-in-essen-afd-waehlt-fuehrung-droht-ein-weiterer-rechtsruck/100047897.html
+! ... type=script
+@@/wrappermessagingwithoutdetection.js$domain=handelsblatt.com
+handelsblatt.com#@#div[id^="sp_message_container_"]
 
 ! Unbreak wildewesten.be (non-interactable cookie dialog).
 ! With this change, the site becomes usable. Never-Consent does not cover it,
