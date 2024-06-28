@@ -842,3 +842,7 @@ naver.com##[class^="Layout-module__banner_area_"][target]
 
 ! https://github.com/ghostery/broken-page-reports/issues/710
 waldnet.nl##a#klikbareLink
+
+! https://github.com/ghostery/broken-page-reports/issues/711
+tescobank.com###ensPrivacyBlock
+tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
