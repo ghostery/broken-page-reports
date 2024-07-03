@@ -852,3 +852,9 @@ waldnet.nl##a#klikbareLink
 ! https://github.com/ghostery/broken-page-reports/issues/711
 tescobank.com###ensPrivacyBlock
 tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/677
+! >>> url=https://mc.exacttarget.com
+! ... source=about:blank
+! ... type=main_frame
+@@||exacttarget.com^$document,subdocument
