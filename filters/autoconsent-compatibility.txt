@@ -720,3 +720,6 @@ qatarairways.com#@#.cookie-inner-container
 
 ! https://github.com/ghostery/broken-page-reports/issues/709
 zentralruf.de#@##cookie_modal_wrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/726
+myprivacy.dpgmedia.nl#@##pg-modal
