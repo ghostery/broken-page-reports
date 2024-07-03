@@ -858,3 +858,8 @@ tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
 ! ... source=about:blank
 ! ... type=main_frame
 @@||exacttarget.com^$document,subdocument
+
+! https://github.com/ghostery/broken-page-reports/issues/725
+! The cookie consent is available but blocked.
+! This needs to be handled by autoconsent later: mycompany-mycar.de#@#.kick-kcm-settings
+mycompany-mycar.de##.kick-kcm-overlay
