@@ -721,4 +721,8 @@ qatarairways.com#@#.cookie-inner-container
 ! https://github.com/ghostery/broken-page-reports/issues/709
 zentralruf.de#@##cookie_modal_wrapper
 
+! https://github.com/ghostery/broken-page-reports/issues/726
+myprivacy.dpgmedia.nl#@##pg-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/438
 weather.com#@#+js(trusted-set-cookie, consentUUID, de9ed9d6-0a43-4074-9349-e5fe71fd3610_32)
