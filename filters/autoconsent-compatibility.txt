@@ -701,6 +701,7 @@ tibber.com#@#div[class*="CookieConsent"]
 #@#.cc-theme-classic.cc-window
 #@##pandectes-banner
 #@#gdpr-blocking-page-overlay
+#@#div.cc-revoke
 ! >>> url=https://pandectes.myshopify.com/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js
 ! ... source=https://pandectes.myshopify.com/
 ! ... type=script
