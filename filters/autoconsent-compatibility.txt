@@ -352,6 +352,14 @@ accuweather.com#@##privacy-policy-banner
 #@##uc-privacy-chip
 #@##uc-btn-outside-click-banner-modal
 
+! autoconsent: usercentrics-api
+! Allow moove consent dialogs for Never Consent
+! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/usercentrics-api.spec.ts)
+! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
+! ... source=https://www.hornbach.de/
+! ... type=xhr
+@@||usercentrics.eu^$3p
+
 ! adblocker-filters#767: vodafone.json
 ! >>> url=https://fc.vodafone.de/op/vfde-web/info?attributes&notifications&permissions&out=json
 ! ... source=https://www.vodafone.de/
