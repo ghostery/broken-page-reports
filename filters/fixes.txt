@@ -863,3 +863,9 @@ tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
 ! The cookie consent is available but blocked.
 ! This needs to be handled by autoconsent later: mycompany-mycar.de#@#.kick-kcm-settings
 mycompany-mycar.de##.kick-kcm-overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/743
+! >>> url=https://configchain.com/v2scxPhRp4mQHfqfTo2MflbnNYJsoKW7ps8kA3ft2iIfl3QdMy-7sHTDzI5XxiuPgOg
+! ... source=https://www.usatoday.com/
+! ... type=script
+||configchain.com^$3p
