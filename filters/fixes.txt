@@ -629,9 +629,6 @@ myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
 ! ... type=xhr
 ||theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil
 
-! https://github.com/ghostery/broken-page-reports/issues/501
-aparts.pl#@##cookie-transparency-modal-main
-
 ! https://github.com/ghostery/broken-page-reports/issues/502
 dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 

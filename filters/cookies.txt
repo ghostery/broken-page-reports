@@ -236,3 +236,6 @@ kabel24.nl##.adwise-cb-overlay
 ! ... source=https://nanoconvergencejournal.springeropen.com/articles/10.1186/s40580-018-0157-y
 ! ... type=script
 ||cmp.springernature.com
+
+! https://github.com/ghostery/broken-page-reports/issues/501
+aparts.pl###cookie-transparency-modal-main
