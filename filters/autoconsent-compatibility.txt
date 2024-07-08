@@ -735,3 +735,8 @@ myprivacy.dpgmedia.nl#@##pg-modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/438
 weather.com#@#+js(trusted-set-cookie, consentUUID, de9ed9d6-0a43-4074-9349-e5fe71fd3610_32)
+
+! https://github.com/ghostery/broken-page-reports/issues/739
+! https://github.com/ghostery/broken-page-reports/issues/685
+! https://github.com/duckduckgo/autoconsent/blob/main/rules/autoconsent/cc-banner-springer.json
+#@#.cc-banner

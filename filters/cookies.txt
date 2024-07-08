@@ -204,12 +204,6 @@ tgcom24.mediaset.it###rti-privacy-banner-id
 heute.at##[id^="sp_message_container_"]
 heute.at##body[style^="overflow"]:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/685
-! >>> url=https://cmp.nature.com/production_live/en/consent-bundle-8-67.js
-! ... source=https://www.nature.com/articles/s43588-023-00467-6
-! ... type=script
-||cmp.nature.com
-
 ! https://github.com/ghostery/broken-page-reports/issues/691
 ! >>> url=https://polityka-prywatnosci.tvp.pl/shared/consent_api.php?consent=getPublicVendorList&consentApiVersion=v2
 ! ... source=https://tvpworld.com/
@@ -230,12 +224,6 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/ghostery-extension/issues/1702
 kabel24.nl##.adwise-cb-overlay
-
-! https://github.com/ghostery/broken-page-reports/issues/739
-! >>> url=https://cmp.springernature.com/production_live/en/consent-bundle-16-33.js
-! ... source=https://nanoconvergencejournal.springeropen.com/articles/10.1186/s40580-018-0157-y
-! ... type=script
-||cmp.springernature.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/501
 aparts.pl###cookie-transparency-modal-main
