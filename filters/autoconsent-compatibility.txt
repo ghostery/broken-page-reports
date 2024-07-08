@@ -740,3 +740,4 @@ weather.com#@#+js(trusted-set-cookie, consentUUID, de9ed9d6-0a43-4074-9349-e5fe7
 ! https://github.com/ghostery/broken-page-reports/issues/685
 ! https://github.com/duckduckgo/autoconsent/blob/main/rules/autoconsent/cc-banner-springer.json
 #@#.cc-banner
+#@#[data-cc-banner]
