@@ -876,3 +876,7 @@ mycompany-mycar.de##.kick-kcm-overlay
 ! autoconsent was injecting some styles that are not able to disable with user styles
 ! further investigation required
 wifiwien.at,stmk.wifi.at,wifi-ooe.at##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/731
+harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
+harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
