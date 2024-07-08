@@ -869,3 +869,10 @@ mycompany-mycar.de##.kick-kcm-overlay
 ! ... source=https://www.usatoday.com/
 ! ... type=script
 ||configchain.com^$3p
+
+! https://github.com/ghostery/broken-page-reports/issues/742
+! https://github.com/ghostery/broken-page-reports/issues/741
+! https://github.com/ghostery/broken-page-reports/issues/740
+! autoconsent was injecting some styles that are not able to disable with user styles
+! further investigation required
+wifiwien.at,stmk.wifi.at,wifi-ooe.at##body:style(overflow: auto !important)
