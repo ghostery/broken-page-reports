@@ -230,3 +230,9 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/ghostery-extension/issues/1702
 kabel24.nl##.adwise-cb-overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/739
+! >>> url=https://cmp.springernature.com/production_live/en/consent-bundle-16-33.js
+! ... source=https://nanoconvergencejournal.springeropen.com/articles/10.1186/s40580-018-0157-y
+! ... type=script
+||cmp.springernature.com
