@@ -870,9 +870,15 @@ mycompany-mycar.de##.kick-kcm-overlay
 ! https://github.com/ghostery/broken-page-reports/issues/742
 ! https://github.com/ghostery/broken-page-reports/issues/741
 ! https://github.com/ghostery/broken-page-reports/issues/740
-! autoconsent was injecting some styles that are not able to disable with user styles
+! https://github.com/ghostery/broken-page-reports/issues/745
+! https://github.com/ghostery/broken-page-reports/issues/746
+! https://github.com/ghostery/broken-page-reports/issues/747
+! https://github.com/ghostery/broken-page-reports/issues/748
+! https://github.com/ghostery/broken-page-reports/issues/749
+! https://github.com/ghostery/broken-page-reports/issues/750
+! autoconsent was injecting some styles that are not able to be disabled with user styles
 ! further investigation required
-wifiwien.at,stmk.wifi.at,wifi-ooe.at##body:style(overflow: auto !important)
+wifiwien.at,wifi.at,wifi-ooe.at,wifisalzburg.at,wifikaernten.at##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/731
 harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
