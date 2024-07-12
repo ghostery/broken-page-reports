@@ -37,20 +37,42 @@
 ! https://sansec.io/research/polyfill-supply-chain-attack
 ! https://www.bleepingcomputer.com/news/security/polyfillio-javascript-supply-chain-attack-impacts-over-100k-sites/
 ! https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/
+! >>> url=https://googie-anaiytics.com
+! ... type=script
 ||googie-anaiytics.com^$all
+! >>> url=https://bootcdn.net
+! ... type=script
 ||bootcdn.net^$all
+! >>> url=https://bootcss.com
+! ... type=script
 ||bootcss.com^$all
+! >>> url=https://staticfile.net
+! ... type=script
 ||staticfile.net^$all
+! >>> url=https://staticfile.org
+! ... type=script
 ||staticfile.org^$all
+! >>> url=https://unionadjs.com
+! ... type=script
 ||unionadjs.com^$all
+! >>> url=https://xhsbpza.com
+! ... type=script
 ||xhsbpza.com^$all
+! >>> url=https://union.macoms.la
+! ... type=script
 ||union.macoms.la^$all
+! >>> url=https://newcrbpc.com
+! ... type=script
 ||newcrbpc.com^$all
 
 ! https://github.com/uBlockOrigin/uAssets/pull/24272
 ! https://www.bleepingcomputer.com/news/security/polyfill-claims-it-has-been-defamed-returns-after-domain-shut-down/
+! >>> url=https://polyfill.com
+! ... type=script
 ||polyfill.com^$all
 ! https://x.com/Polyfill_Global/status/1809122842145141114
 ! https://github.com/uBlockOrigin/uAssets/pull/24434
+! >>> url=https://polyfill.top
+! ... type=script
 ||polyfill.top^$all
 ! --- end ongoing supply chain attacks ---
