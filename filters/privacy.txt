@@ -27,30 +27,3 @@
 ! ... source=https://www.bilibili.com/
 ! ... type=xhr
 ||api.bilibili.com/x/vip/ads/materials^$domain=bilibili.com
-
-! --- ongoing supply chain attacks ---
-!
-! Eventually, we can remove it when domains gets shut down like it happened for polyfill.io.
-! This taken from https://github.com/uBlockOrigin/uAssets/blob/91e028a778e6d435e790595c382387bc804ccdd5/filters/badware.txt#L4347
-!
-! https://github.com/uBlockOrigin/uAssets/pull/24255
-! https://sansec.io/research/polyfill-supply-chain-attack
-! https://www.bleepingcomputer.com/news/security/polyfillio-javascript-supply-chain-attack-impacts-over-100k-sites/
-! https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/
-||googie-anaiytics.com^$all
-||bootcdn.net^$all
-||bootcss.com^$all
-||staticfile.net^$all
-||staticfile.org^$all
-||unionadjs.com^$all
-||xhsbpza.com^$all
-||union.macoms.la^$all
-||newcrbpc.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/pull/24272
-! https://www.bleepingcomputer.com/news/security/polyfill-claims-it-has-been-defamed-returns-after-domain-shut-down/
-||polyfill.com^$all
-! https://x.com/Polyfill_Global/status/1809122842145141114
-! https://github.com/uBlockOrigin/uAssets/pull/24434
-||polyfill.top^$all
-! --- end ongoing supply chain attacks ---
