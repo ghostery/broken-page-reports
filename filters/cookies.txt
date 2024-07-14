@@ -227,3 +227,6 @@ kabel24.nl##.adwise-cb-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/501
 aparts.pl###cookie-transparency-modal-main
+
+! https://github.com/ghostery/broken-page-reports/issues/528
+wideroe.no##.cookie-modal-wrapper
