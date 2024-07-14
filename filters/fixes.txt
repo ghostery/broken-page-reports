@@ -899,3 +899,13 @@ titantv.com##+js(set, googletag, {})
 ! ... source=https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/b2c_1a_trvl_auth_susi_20/oauth2/v2.0/authorize?client_id=aad71e30-b56c-49b5-b5e0-69f7920245ef&scope=profile%20openid%20offline_access&redirect_uri=https%3A%2F%2Fwww.costcotravel.ca%2FOAuthLogonCmd&client-request-id=69cdac99-f3cc-40ca-bcbd-7485d3c1908e&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.35.0&client_info=1&code_challenge=ZLxlD4LNrY6FX11sU-E29D8q44CLIH_T-KGdvbUUKvY&code_challenge_method=S256&nonce=d7962201-7345-4683-8bd5-364ea65154f9&state=eyJpZCI6IjFmYzM1MzhhLTcyMzgtNDM0Zi04ZDlkLTY2ZTI2OGY2ZmZmMCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7C%5Burl%3Dhttps%3A%2F%2Fwww.costcotravel.ca%2F%2Clocale%3Den_ca%5D&ui_locales=en_CA&TC=0&env=prod&guest_login=false&vertical=member&uniqueId=lygs29638wjdm
 ! ... type=script
 @@||signin-ui.costcotravel.com/sso/prod/ui/BuildDefinition/common/analytics.js^$domain=signin.costco.com
+
+! https://github.com/ghostery/broken-page-reports/issues/751
+! autoconsent is unable to handle this website due to the tracker script in the buttons
+! this filter should be removed after the implementation of the redirect filter
+! >>> url=https://cdn.cookielaw.org/scripttemplates/202406.1.0/otBannerSdk.js
+! ... source=https://www.realsimple.com/
+! ... type=script
+||cdn.cookielaw.org^$domain=realsimple.com
+realsimple.com###onetrust-consent-sdk
+realsimple.com##html:style(overflow-y: auto !important)
