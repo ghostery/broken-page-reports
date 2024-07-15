@@ -909,3 +909,10 @@ titantv.com##+js(set, googletag, {})
 ||cdn.cookielaw.org^$domain=realsimple.com
 realsimple.com###onetrust-consent-sdk
 realsimple.com##html:style(overflow-y: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/669
+! >>> url=https://mindfulgem.com/j/a56326dfc720/ab34f2ba8db4c14721c8dedc.index.js
+! ... source=https://www.cbsnews.com/news/trump-shot-rally-assassination-attempt/
+! ... type=script
+||mindfulgem.com^$3p
+cbsnews.com##style+div:not([id]):not([class])>div[class]
