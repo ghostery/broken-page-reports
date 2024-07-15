@@ -829,8 +829,11 @@ instapundit.com#@#.ad-space:not(.textads):not(.adbox)
 koreanair.com#@##noticePopup
 
 ! https://github.com/ghostery/broken-page-reports/issues/670
+! https://github.com/ghostery/broken-page-reports/issues/720
 newser.com##nav[role="navigation"]>ul:style(max-height: 49px !important)
 newser.com###divEntireNav:style(height: 49px !important)
+newser.com#@#+js(aost, Math, onerror)
+newser.com#@#+js(aeld, load, Object)
 
 ! https://github.com/ghostery/broken-page-reports/issues/705
 ! Regional filters are not working on Ghostery Browser Extension v10
