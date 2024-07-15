@@ -683,11 +683,6 @@ rog-forum.asus.com#@#.cookie-policy-wrap
 ! https://github.com/ghostery/broken-page-reports/issues/529
 arctic.de#@#.acris-cookie-consent
 
-! https://github.com/ghostery/broken-page-reports/issues/528
-wideroe.no#@#.cookie-modal-wrapper
-wideroe.no#@#.cookie-body
-wideroe.no#@#.cookie-footer
-
 ! https://github.com/ghostery/broken-page-reports/issues/533
 #@#.cookie-statement
 
