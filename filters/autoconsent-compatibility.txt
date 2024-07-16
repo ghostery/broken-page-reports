@@ -164,14 +164,15 @@
 ! Note: other rules should be covered by trackerdb now (https://github.com/ghostery/trackerdb/pull/137).
 ! Leaving that one here now, since it is a global rule and the name is not directly linked to OneTrust
 #@#.js-consent-banner
-! Github: https://github.com/ghostery/broken-page-reports/issues/362
+! https://github.com/ghostery/broken-page-reports/issues/362
 #@##privacy-statement:not(.checkbox)
 #@##onetrust-consent-sdk
 #@#.onetrust-pc-dark-filter
-! >>> url=https://cdn.cookielaw.org/scripttemplates/202305.1.0/otBannerSdk.js
-! ... source=https://2u.com/
+! https://github.com/ghostery/broken-page-reports/issues/763
+! >>> url=https://cdn.cookielaw.org/scripttemplates/202406.1.0/otBannerSdk.js
+! ... source=https://www.thespruceeats.com/
 ! ... type=script
-@@||cdn.cookielaw.org/scripttemplates/202305.1.0/otBannerSdk.js$script
+@@||cdn.cookielaw.org/scripttemplates/*/otBannerSdk.js^
 
 ! adblocker-filters#767: met-office
 ! >>> url=https://www.metoffice.gov.uk/public/gdpr-consent/cookieControl-config.js

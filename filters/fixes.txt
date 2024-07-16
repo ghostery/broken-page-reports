@@ -900,7 +900,7 @@ titantv.com##+js(set, googletag, {})
 ! >>> url=https://cdn.cookielaw.org/scripttemplates/202406.1.0/otBannerSdk.js
 ! ... source=https://www.realsimple.com/
 ! ... type=script
-||cdn.cookielaw.org^$domain=realsimple.com
+||cdn.cookielaw.org^$important,domain=realsimple.com
 realsimple.com###onetrust-consent-sdk
 realsimple.com##html:style(overflow-y: auto !important)
 
