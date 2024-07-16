@@ -230,9 +230,3 @@ aparts.pl###cookie-transparency-modal-main
 
 ! https://github.com/ghostery/broken-page-reports/issues/528
 wideroe.no##.cookie-modal-wrapper
-
-! https://github.com/ghostery/broken-page-reports/issues/743
-! >>> url=https://defensevest.com/v2scxPhRp4mQHfqfTo2MflbnNYJsoKW7ps8kA3ft2iIfl3QdMy-7sHTDzI5XxiuPgOg
-! ... source=https://www.usatoday.com/
-! ... type=script
-||defensevest.com^
