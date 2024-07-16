@@ -825,9 +825,6 @@ ybtour.co.kr##+js(set, wcs, {})
 ! https://github.com/ghostery/broken-page-reports/issues/699
 instapundit.com#@#.ad-space:not(.textads):not(.adbox)
 
-! https://github.com/ghostery/broken-page-reports/issues/672
-koreanair.com#@##noticePopup
-
 ! https://github.com/ghostery/broken-page-reports/issues/670
 ! https://github.com/ghostery/broken-page-reports/issues/720
 newser.com##nav[role="navigation"]>ul:style(max-height: 49px !important)
@@ -863,12 +860,6 @@ tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
 ! The cookie consent is available but blocked.
 ! This needs to be handled by autoconsent later: mycompany-mycar.de#@#.kick-kcm-settings
 mycompany-mycar.de##.kick-kcm-overlay
-
-! https://github.com/ghostery/broken-page-reports/issues/743
-! >>> url=https://configchain.com/v2scxPhRp4mQHfqfTo2MflbnNYJsoKW7ps8kA3ft2iIfl3QdMy-7sHTDzI5XxiuPgOg
-! ... source=https://www.usatoday.com/
-! ... type=script
-||configchain.com^$3p
 
 ! https://github.com/ghostery/broken-page-reports/issues/742
 ! https://github.com/ghostery/broken-page-reports/issues/741
@@ -909,13 +900,9 @@ titantv.com##+js(set, googletag, {})
 ! >>> url=https://cdn.cookielaw.org/scripttemplates/202406.1.0/otBannerSdk.js
 ! ... source=https://www.realsimple.com/
 ! ... type=script
-||cdn.cookielaw.org^$domain=realsimple.com
+||cdn.cookielaw.org^$important,domain=realsimple.com
 realsimple.com###onetrust-consent-sdk
 realsimple.com##html:style(overflow-y: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/669
-! >>> url=https://mindfulgem.com/j/a56326dfc720/ab34f2ba8db4c14721c8dedc.index.js
-! ... source=https://www.cbsnews.com/news/trump-shot-rally-assassination-attempt/
-! ... type=script
-||mindfulgem.com^$3p
 cbsnews.com##style+div:not([id]):not([class])>div[class]
