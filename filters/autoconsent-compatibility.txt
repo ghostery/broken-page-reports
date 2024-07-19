@@ -738,8 +738,3 @@ weather.com#@#+js(trusted-set-cookie, consentUUID, de9ed9d6-0a43-4074-9349-e5fe7
 #@#.cc-banner
 #@#[data-cc-banner]
 
-! https://github.com/ghostery/broken-page-reports/issues/769
-! >>> url=https://www.charities.pa.gov/vendor/analytics/appinsights.js?v=202462013214
-! ... source=https://www.charities.pa.gov/#/page/default
-! ... type=script
-@@||charities.pa.gov/vendor/analytics/appinsights.js
