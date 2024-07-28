@@ -907,7 +907,7 @@ realsimple.com##html:style(overflow-y: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/669
 cbsnews.com##style+div:not([id]):not([class])>div[class]
 
-! https://github.com/ghostery/broken-page-reports/issues/769
+! https://github.com/ghostery/broken-page-reports/issues/768
 ! >>> url=https://www.charities.pa.gov/vendor/analytics/appinsights.js?v=202462013214
 ! ... source=https://www.charities.pa.gov/#/page/default
 ! ... type=script
