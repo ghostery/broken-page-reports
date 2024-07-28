@@ -233,3 +233,7 @@ wideroe.no##.cookie-modal-wrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/762
 wp.pl##body > .advertisement +div[class]:not([id])
+
+! https://github.com/ghostery/broken-page-reports/issues/775
+! The cookie modal is not rendered even if the modal was unblock by `sklavenitis.gr#@#.nvcookies-outer`.
+sklavenitis.gr###required-cc
