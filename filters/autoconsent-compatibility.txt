@@ -740,3 +740,13 @@ weather.com#@#+js(trusted-set-cookie, consentUUID, de9ed9d6-0a43-4074-9349-e5fe7
 
 ! https://github.com/ghostery/broken-page-reports/issues/771
 netbeat.de#@##cookieWarning
+
+! https://github.com/ghostery/broken-page-reports/issues/706
+! Fix trustarc-frame rule
+! Make the overlay element on the main frame visible to allow autoconsent to detect popup
+#@#.truste_box_overlay
+! Always allow the elements required for autoconsent to detect popup
+#@##defaultpreferencemanager
+#@#.mainContent
+! Disable possible scripts from any other filter lists that tries to override the autoconsent action
+consent-pref.trustarc.com#@#+js()
