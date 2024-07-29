@@ -742,6 +742,7 @@ weather.com#@#+js(trusted-set-cookie, consentUUID, de9ed9d6-0a43-4074-9349-e5fe7
 netbeat.de#@##cookieWarning
 
 ! https://github.com/ghostery/broken-page-reports/issues/706
+! https://github.com/ghostery/broken-page-reports/issues/770
 ! Fix trustarc-frame rule
 ! Make the overlay element on the main frame visible to allow autoconsent to detect popup
 #@#.truste_box_overlay
