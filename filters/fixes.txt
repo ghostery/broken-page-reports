@@ -642,6 +642,32 @@ dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 ! ... source=https://www.pocket-lint.com/
 ! ... type=script
 @@whimsicalcanyon.com/bundles$3p,script
+! Temporary filters to take an effect before extension gets an update
+! https://github.com/ghostery/broken-page-reports/issues/743
+! >>> url=https://mindfulgem.com/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.usatoday.com/
+! ... type=script
+||mindfulgem.com^
+! >>> url=https://configchain.com/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.usatoday.com/
+! ... type=script
+||configchain.com^
+! >>> url=https://defensevest.com/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.usatoday.com/
+! ... type=script
+||defensevest.com^
+! >>> url=https://worldlever.com/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.usatoday.com/
+! ... type=script
+||worldlever.com^
+! >>> url=https://teacupbooks.com/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.usatoday.com/
+! ... type=script
+||teacupbooks.com^
+! >>> url=https://frogator.com/b759d7bb001cba76ca8b69c79e0586be7db79ce3d9d59ac34648e7610c90
+! ... source=https://www.usatoday.com/
+! ... type=script
+||frogator.com^
 
 ! Fix youtube.com - filter was applied due to missing preprocessor functionality
 youtube.com#@#+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
