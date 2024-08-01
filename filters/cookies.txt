@@ -243,3 +243,9 @@ sklavenitis.gr###required-cc
 ! chaletsplus.com#@#.cookie-consent__wrapper
 ! chaletsplus.com#@#.cookie-consent__container
 chaletsplus.com##.cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/780
+! >>> url=https://consent.wko.at/consentsd_en.js
+! ... source=https://www.schloss-hernstein.at/
+! ... type=script
+||consent.wko.at/consentsd_en.js^
