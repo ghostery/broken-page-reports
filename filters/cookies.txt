@@ -238,12 +238,6 @@ wp.pl##body > .advertisement +div[class]:not([id])
 ! The cookie modal is not rendered even if the modal was unblock by `sklavenitis.gr#@#.nvcookies-outer`.
 sklavenitis.gr###required-cc
 
-! https://github.com/ghostery/broken-page-reports/issues/777
-! Change to the following filters after autoconsent gets an update
-! chaletsplus.com#@#.cookie-consent__wrapper
-! chaletsplus.com#@#.cookie-consent__container
-chaletsplus.com##.cookie-consent
-
 ! https://github.com/ghostery/broken-page-reports/issues/780
 ! >>> url=https://consent.wko.at/consentsd_en.js
 ! ... source=https://www.schloss-hernstein.at/

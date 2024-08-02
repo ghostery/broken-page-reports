@@ -751,3 +751,7 @@ netbeat.de#@##cookieWarning
 #@#.mainContent
 ! Disable possible scripts from any other filter lists that tries to override the autoconsent action
 consent-pref.trustarc.com#@#+js()
+
+! https://github.com/ghostery/broken-page-reports/issues/777
+chaletsplus.com#@#.cookie-consent__wrapper
+chaletsplus.com#@#.cookie-consent__container
