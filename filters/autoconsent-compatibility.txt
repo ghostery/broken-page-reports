@@ -89,6 +89,8 @@
 ! ... type=frame
 @@||trustarc.mgr.consensu.org
 #@##truste-consent-track
+! Show TrustArc Cookie Preference link on oracle.com (https://github.com/ghostery/broken-page-reports/issues/806)
+#@##teconsent
 
 ! adblocker-filters#767: tealium.json
 #@##__tealiumGDPRecModal
