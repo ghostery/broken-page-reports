@@ -913,3 +913,8 @@ cbsnews.com##style+div:not([id]):not([class])>div[class]
 ! ... source=https://www.pasazer.com/news/465793/air,france,klm,poprawa,w,ii,kw,2024,r.html
 ! ... type=script
 ||pasazer.com/_assets/js/ad-connect.js
+
+! https://github.com/ghostery/broken-page-reports/issues/816
+senderscore.org##+js(set, MktoForms2, {})
+senderscore.org##+js(set, MktoForms2.loadForm, trueFunc)
+senderscore.org##+js(set, MktoForms2.whenRendered, trueFunc)
