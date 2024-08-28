@@ -927,3 +927,6 @@ kijk.nl#@#.adContent
 kijk.nl#@#.adBlock
 kijk.nl#@#.adSense
 kijk.nl#@#.ad-text
+
+! https://github.com/ghostery/broken-page-reports/issues/814
+filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
