@@ -930,3 +930,13 @@ kijk.nl#@#.ad-text
 
 ! https://github.com/ghostery/broken-page-reports/issues/814
 filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
+
+! https://github.com/ghostery/broken-page-reports/issues/809
+! >>> url=https://contact.keiseruniversity.edu/lp/48162/tracker
+! ... source=https://contact.keiseruniversity.edu/48162/accountancy
+! ... type=script
+||keiseruniversity.edu/lp/*/tracker^$domain=keiseruniversity.edu
+! >>> url=https://assets.vbt.io/public/files/18415/Keiser_Seal_and_Stacked_Logo_4.jpg
+! ... source=https://contact.keiseruniversity.edu/48162/accountancy
+! ... type=image
+@@||assets.vbt.io
