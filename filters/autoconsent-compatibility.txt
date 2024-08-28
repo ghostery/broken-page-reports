@@ -757,3 +757,6 @@ consent-pref.trustarc.com#@#+js()
 ! https://github.com/ghostery/broken-page-reports/issues/777
 chaletsplus.com#@#.cookie-consent__wrapper
 chaletsplus.com#@#.cookie-consent__container
+
+! https://github.com/ghostery/broken-page-reports/issues/813
+aptelia.pl#@#.popup-cookies
