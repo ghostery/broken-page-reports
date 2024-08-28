@@ -940,3 +940,9 @@ filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 ! ... source=https://contact.keiseruniversity.edu/48162/accountancy
 ! ... type=image
 @@||assets.vbt.io
+
+! https://github.com/ghostery/broken-page-reports/issues/808
+! >>> url=https://cdn11.bigcommerce.com/shared/js/storefront/consent-manager-config-0205627cb0b5544a157ee56e3da54f6932db237e.js
+! ... source=https://stores.bensonsforbeds.co.uk/search
+! ... type=script
+@@||bigcommerce.com^$3p,script
