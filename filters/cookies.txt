@@ -243,3 +243,8 @@ sklavenitis.gr###required-cc
 ! ... source=https://www.schloss-hernstein.at/
 ! ... type=script
 ||consent.wko.at/consentsd_en.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/803
+onmeda.de###cmpbox
+onmeda.de###cmpbox2
+onmeda.de##body[style*="overflow"]:style(overflow: auto !important)

@@ -913,3 +913,45 @@ cbsnews.com##style+div:not([id]):not([class])>div[class]
 ! ... source=https://www.pasazer.com/news/465793/air,france,klm,poprawa,w,ii,kw,2024,r.html
 ! ... type=script
 ||pasazer.com/_assets/js/ad-connect.js
+
+! https://github.com/ghostery/broken-page-reports/issues/816
+senderscore.org##+js(set, MktoForms2, {})
+senderscore.org##+js(set, MktoForms2.loadForm, trueFunc)
+senderscore.org##+js(set, MktoForms2.whenRendered, trueFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/815
+! Add the following filter after redirect fully fixed:
+! ||d3hxtvexlru8r9.cloudfront.net$xhr,redirect=32x32.png,domain=kijk.nl
+kijk.nl#@#body > img[id].pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.ad-text.adSense.adBlock.adContent.adBanner
+kijk.nl#@#.adContent
+kijk.nl#@#.adBlock
+kijk.nl#@#.adSense
+kijk.nl#@#.ad-text
+
+! https://github.com/ghostery/broken-page-reports/issues/814
+filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
+
+! https://github.com/ghostery/broken-page-reports/issues/809
+! >>> url=https://contact.keiseruniversity.edu/lp/48162/tracker
+! ... source=https://contact.keiseruniversity.edu/48162/accountancy
+! ... type=script
+||keiseruniversity.edu/lp/*/tracker^$domain=keiseruniversity.edu
+! >>> url=https://assets.vbt.io/public/files/18415/Keiser_Seal_and_Stacked_Logo_4.jpg
+! ... source=https://contact.keiseruniversity.edu/48162/accountancy
+! ... type=image
+@@||assets.vbt.io
+
+! https://github.com/ghostery/broken-page-reports/issues/808
+! >>> url=https://cdn11.bigcommerce.com/shared/js/storefront/consent-manager-config-0205627cb0b5544a157ee56e3da54f6932db237e.js
+! ... source=https://stores.bensonsforbeds.co.uk/search
+! ... type=script
+@@||bigcommerce.com^$3p,script
+
+! https://github.com/ghostery/broken-page-reports/issues/819
+webcatalog-free.circle.ms###map-ads
+
+! https://github.com/ghostery/broken-page-reports/issues/760
+athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com##+js(set, Sentry, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/796
+geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
