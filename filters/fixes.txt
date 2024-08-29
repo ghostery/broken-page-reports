@@ -949,3 +949,6 @@ filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/819
 webcatalog-free.circle.ms###map-ads
+
+! https://github.com/ghostery/broken-page-reports/issues/760
+athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com##+js(set, Sentry, {})
