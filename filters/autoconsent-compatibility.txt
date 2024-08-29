@@ -760,3 +760,6 @@ chaletsplus.com#@#.cookie-consent__container
 
 ! https://github.com/ghostery/broken-page-reports/issues/813
 aptelia.pl#@#.popup-cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/795
+lnmm.lv#@##cookie-consent
