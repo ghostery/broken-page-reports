@@ -946,3 +946,10 @@ filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 ! ... source=https://stores.bensonsforbeds.co.uk/search
 ! ... type=script
 @@||bigcommerce.com^$3p,script
+
+! https://github.com/ghostery/broken-page-reports/issues/819
+! >>> url=https://emesadvertlogj07.blob.core.windows.net/advert-banner/10c03964-5acd-4d48-aa8b-84673d872dfe.png
+! ... source=https://webcatalog-free.circle.ms/Map#/day=Day1/hall=w12/genreCode=222
+! ... type=image
+||emesadvertlogj07.blob.core.windows.net/advert-banner$image
+webcatalog-free.circle.ms###map-ads
