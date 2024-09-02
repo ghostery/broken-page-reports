@@ -579,9 +579,6 @@ consentmanager.net##body:style(overflow: auto !important;)
 ! https://github.com/ghostery/broken-page-reports/issues/444
 gate.gsi.de#@##gdpr_agree
 
-! https://github.com/ghostery/broken-page-reports/issues/361
-plex.tv##.remodal-is-opened
-
 ! https://github.com/ghostery/broken-page-reports/issues/377
 ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
 
@@ -957,5 +954,4 @@ athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com##+js(set, 
 geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/800
-#@#.remodal-is-opened
 plex.tv#@#.remodal-is-opened
