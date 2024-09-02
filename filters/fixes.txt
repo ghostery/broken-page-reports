@@ -955,3 +955,7 @@ athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com##+js(set, 
 
 ! https://github.com/ghostery/broken-page-reports/issues/796
 geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/800
+#@#.remodal-is-opened
+plex.tv#@#.remodal-is-opened
