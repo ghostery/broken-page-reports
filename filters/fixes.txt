@@ -955,3 +955,6 @@ geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/800
 plex.tv#@#.remodal-is-opened
+
+! https://github.com/ghostery/broken-page-reports/issues/820
+mega.be#@#.modal
