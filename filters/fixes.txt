@@ -579,9 +579,6 @@ consentmanager.net##body:style(overflow: auto !important;)
 ! https://github.com/ghostery/broken-page-reports/issues/444
 gate.gsi.de#@##gdpr_agree
 
-! https://github.com/ghostery/broken-page-reports/issues/361
-plex.tv##.remodal-is-opened
-
 ! https://github.com/ghostery/broken-page-reports/issues/377
 ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
 
@@ -769,6 +766,8 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://tfl.gov.uk/
 ! ... type=script
 ||cookiebot.com^$important,domain=azerty.nl|tfl.gov.uk
+tfl.gov.uk##+js(set, Cookiebot, {})
+tfl.gov.uk##+js(set, Cookiebot.consent, {})
 
 ! Unbreak the Pushbullet extension: https://github.com/ghostery/trackerdb/issues/343
 ! >>> url=https://api.pushbullet.com/v3/set-app-state
@@ -955,3 +954,9 @@ athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com##+js(set, 
 
 ! https://github.com/ghostery/broken-page-reports/issues/796
 geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/800
+plex.tv#@#.remodal-is-opened
+
+! https://github.com/ghostery/broken-page-reports/issues/820
+mega.be#@#.modal

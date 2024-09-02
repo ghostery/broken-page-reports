@@ -248,3 +248,6 @@ sklavenitis.gr###required-cc
 onmeda.de###cmpbox
 onmeda.de###cmpbox2
 onmeda.de##body[style*="overflow"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/195
+elfa.se##.cookie-modal
