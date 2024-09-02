@@ -766,6 +766,8 @@ fussballdaten.de###spiele > div > div > div.col-md-4.content-md-4.hidden-xs > di
 ! ... source=https://tfl.gov.uk/
 ! ... type=script
 ||cookiebot.com^$important,domain=azerty.nl|tfl.gov.uk
+tfl.gov.uk##+js(set, Cookiebot, {})
+tfl.gov.uk##+js(set, Cookiebot.consent, {})
 
 ! Unbreak the Pushbullet extension: https://github.com/ghostery/trackerdb/issues/343
 ! >>> url=https://api.pushbullet.com/v3/set-app-state
