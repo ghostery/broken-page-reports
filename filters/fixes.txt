@@ -960,3 +960,13 @@ plex.tv#@#.remodal-is-opened
 
 ! https://github.com/ghostery/broken-page-reports/issues/820
 mega.be#@#.modal
+
+! https://github.com/ghostery/broken-page-reports/issues/823
+! >>> url=https://www.kleinanzeigen.de/liberty/advertising-web-renderer/umd/advertisingWebRenderer.min.js
+! ... source=https://www.kleinanzeigen.de/
+! ... type=script
+||kleinanzeigen.de/liberty/advertising-web-renderer
+! >>> url=https://www.kleinanzeigen.de/static/js/belen/tracking/adblock-detection/advertising-detection.o6vsfdxitnq.js
+! ... source=https://www.kleinanzeigen.de/
+! ... type=script
+||kleinanzeigen.de/static/js/belen/tracking/adblock-detection
