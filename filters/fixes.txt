@@ -970,3 +970,9 @@ mega.be#@#.modal
 ! ... source=https://www.kleinanzeigen.de/
 ! ... type=script
 ||kleinanzeigen.de/static/js/belen/tracking/adblock-detection
+
+! https://github.com/ghostery/broken-page-reports/issues/805
+! >>> url=https://www.bing.com/rewardsapp/reportActivity?IG=1&IID=SERP.1&q=test&form=A&sp=-1&ghc=1&lq=0&pq=test&sc=1-1&qs=n&sk=&cvid=1&ghsh=0&ghacc=0&ghpl=
+! ... source=https://www.bing.com/search?q=test&form=A&sp=-1&ghc=1&lq=0&pq=test&sc=1-1&qs=n&sk=&cvid=1&ghsh=0&ghacc=0&ghpl=
+! ... type=xhr
+@@||bing.com/rewardsapp/reportActivity^$xhr,domain=bing.com
