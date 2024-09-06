@@ -976,3 +976,6 @@ mega.be#@#.modal
 ! ... source=https://www.bing.com/search?q=test&form=A&sp=-1&ghc=1&lq=0&pq=test&sc=1-1&qs=n&sk=&cvid=1&ghsh=0&ghacc=0&ghpl=
 ! ... type=xhr
 @@||bing.com/rewardsapp/reportActivity^$xhr,domain=bing.com
+
+! https://github.com/ghostery/broken-page-reports/issues/826
+docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-index: 999 !important; pointer-events: auto !important)
