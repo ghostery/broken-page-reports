@@ -233,6 +233,9 @@ wideroe.no##.cookie-modal-wrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/762
 wp.pl##body > .advertisement +div[class]:not([id])
+wp.pl##body > *:style(filter: inherit !important)
+wp.pl##html:style(overflow: auto !important)
+wp.pl##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/775
 ! The cookie modal is not rendered even if the modal was unblock by `sklavenitis.gr#@#.nvcookies-outer`.
