@@ -985,3 +985,6 @@ docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-in
 ! ... source=https://usatoday.com/
 ! ... type=xhr
 ||justconfig.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/828
+wifishop.nl#@#body,html:style(overflow: auto !important; position: initial !important;)
