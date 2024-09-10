@@ -260,3 +260,6 @@ elfa.se##.cookie-modal
 ! ... source=https://welt.de/
 ! ... type=script
 ||consent.up.welt.de^
+
+! https://github.com/ghostery/broken-page-reports/issues/832
+memodo.nl##.datamints-ccm
