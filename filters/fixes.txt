@@ -950,7 +950,8 @@ filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 webcatalog-free.circle.ms###map-ads
 
 ! https://github.com/ghostery/broken-page-reports/issues/760
-athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com##+js(set, Sentry, {})
+! https://github.com/ghostery/broken-page-reports/issues/830
+athom.tech,bassistik-live.com,badgertrust.org.uk,thesignatureedge.com,blackmountainhoney.co.uk##+js(set, Sentry, {})
 
 ! https://github.com/ghostery/broken-page-reports/issues/796
 geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
