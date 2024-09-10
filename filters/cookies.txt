@@ -254,3 +254,12 @@ onmeda.de##body[style*="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/195
 elfa.se##.cookie-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/410
+! >>> url=https://consent.up.welt.de/unified/wrapperMessagingWithoutDetection.js
+! ... source=https://welt.de/
+! ... type=script
+||consent.up.welt.de^
+
+! https://github.com/ghostery/broken-page-reports/issues/832
+memodo.nl##.datamints-ccm
