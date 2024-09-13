@@ -989,3 +989,6 @@ docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-in
 
 ! https://github.com/ghostery/broken-page-reports/issues/828
 wifishop.nl#@#body,html:style(overflow: auto !important; position: initial !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/843
+appleid.apple.com#@##consent.consent
