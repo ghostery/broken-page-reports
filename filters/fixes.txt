@@ -994,3 +994,9 @@ wifishop.nl#@#body,html:style(overflow: auto !important; position: initial !impo
 ! https://github.com/ghostery/broken-page-reports/issues/843
 ! can be removed after https://github.com/easylist/easylist/pull/20020 is merged
 appleid.apple.com#@##consent.consent
+
+! https://github.com/ghostery/broken-page-reports/issues/842
+! https://github.com/ghostery/broken-page-reports/issues/840
+! A possible safe workaround for Safari specific issues
+pravda.com.ua##iframe[src="about:blank"]
+motorradonline.de##iframe[src="about:blank"]
