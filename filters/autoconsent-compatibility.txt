@@ -767,3 +767,6 @@ lnmm.lv#@##cookie-consent
 ! https://github.com/ghostery/broken-page-reports/issues/847
 powercuts.nationalgrid.co.uk#@#div.cookie-notice
 powercuts.nationalgrid.co.uk#@#.cookie-notice__inner
+
+! https://github.com/ghostery/broken-page-reports/issues/851
+mediapart.fr#@##js-cc-modal
