@@ -770,3 +770,7 @@ powercuts.nationalgrid.co.uk#@#.cookie-notice__inner
 
 ! https://github.com/ghostery/broken-page-reports/issues/851
 mediapart.fr#@##js-cc-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/848
+muji.eu#@##cookies-banner-overlay
+muji.eu#@##consent-manager
