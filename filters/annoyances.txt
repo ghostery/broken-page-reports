@@ -8,3 +8,7 @@ tomsguide.com##.slice-container-newsletterForm
 
 ! https://github.com/ghostery/broken-page-reports/issues/443#issuecomment-1962724107
 kansascity.com,miamiherald.com##.ab-in-app-message.ab-slideup
+
+! https://github.com/ghostery/broken-page-reports/issues/849
+titantv.com###vertad
+titantv.com##div.sc-EROOM:style(width: 100% !important)
