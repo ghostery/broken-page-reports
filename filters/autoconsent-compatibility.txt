@@ -763,3 +763,7 @@ aptelia.pl#@#.popup-cookies
 
 ! https://github.com/ghostery/broken-page-reports/issues/795
 lnmm.lv#@##cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/847
+powercuts.nationalgrid.co.uk#@#div.cookie-notice
+powercuts.nationalgrid.co.uk#@#.cookie-notice__inner
