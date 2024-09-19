@@ -1000,3 +1000,13 @@ appleid.apple.com#@##consent.consent
 ! A possible safe workaround for Safari specific issues
 pravda.com.ua##iframe[src="about:blank"]
 motorradonline.de##iframe[src="about:blank"]
+
+! can be removed after https://github.com/easylist/easylist/pull/20051 is merged
+! >>> url=https://static.adsafeprotected.com/iasPET.1.js
+! ... source=https://www.wjs.com
+! ... type=script
+@@||adsafeprotected.com/iasPET.$script,domain=independent.co.uk|reuters.com|wjs.com
+! >>> url=https://static.adsafeprotected.com/vans-adapter-google-ima.js
+! ... source=https://www.wjs.com
+! ... type=script
+@@||adsafeprotected.com/vans-adapter-google-ima.js$script,domain=gamingbible.co.uk|ladbible.com|reuters.com|wjs.com
