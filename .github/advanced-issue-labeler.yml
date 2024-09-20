@@ -1,0 +1,56 @@
+policy:
+  - section:
+    - id:
+        - type
+      block-list:
+        - None of the above
+      label:
+        - name: type/ad-blocking
+          keys:
+            - ⛔️ type/ad-blocking
+            - Advertisement is visible
+            - Advertisement leftovers are visible
+            - Parts of the website fail to render
+            - Parts of the website do not function properly (incl. interactions)
+            - The website refreshes or navigates infinitely
+        - name: type/ad-wall
+          keys:
+            - ⚠️ type/ad-wall
+            - Website asks ad-blocker uninstallment or disablement
+            - Website detects ad-blocker
+        - name: type/annoyance
+          keys:
+            - 🕸️ type/annoyance
+            - Annoying elements are visible
+        - name: never-consent/unsupported
+          keys:
+            - ❌ never-consent/unsupported
+            - Consent popup is visible
+            - Consent popup is randomly handled
+        - name: never-consent/broken-interaction
+          keys:
+            - 🛠️ never-consent/broken-interaction
+            - Page is dimmed or unresponsive (incl. scrolling and text selection)
+            - Consent popup is partially handled
+  - section:
+    - id:
+        - browsers
+      block-list:
+        - Other
+      label:
+        - name: browser/firefox
+          keys:
+            - Ghostery Private Browser
+            - Firefox (incl. variants)
+        - name: browser/chrome
+          keys:
+            - Chrome (incl. Chromium variants)
+        - name: browser/safari
+          keys:
+            - Safari
+        - name: browser/edge
+          keys:
+            - Microsoft Edge
+        - name: browser/opera
+          keys:
+            - Opera

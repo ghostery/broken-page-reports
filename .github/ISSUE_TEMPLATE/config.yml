@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contact Ghostery Support
+    url: https://www.ghostery.com/support
+    about: If you're unsure how to proceed, please feel free to reach out to our support channel, which is always available to assist you.
+  - name: Submit a new tracker
+    url: https://github.com/ghostery/trackerdb/issues/new/choose
+    about: If you'd like to submit a report to identify a tracker, please visit TrackerDB—our central source for tracker data and transparency.
