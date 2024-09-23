@@ -28,6 +28,7 @@ body:
         - None of the above
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: Problematic URL(s).
@@ -38,6 +39,7 @@ body:
       render: yaml
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: Description
@@ -45,6 +47,7 @@ body:
         A concise description of what you're experiencing and how to reproduce.
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: Other extensions used with Ghostery
@@ -52,6 +55,7 @@ body:
         Please list any other browser extensions you are using alongside Ghostery.
         While we will do our best to identify the issue, certain complex interactions across multiple browser extensions may require further investigation.
       render: yaml
+
   - type: textarea
     attributes:
       label: Screenshot(s)
@@ -65,6 +69,7 @@ body:
 
         <!-- END OF SCREENSHOTS -->
         </details>
+
   - type: input
     attributes:
       label: Version
@@ -74,6 +79,7 @@ body:
         Please open the extension popup from your browser, then click the menu button (three horizontal lines) in the top-right corner to access the "Privacy Protection" settings.
         You can find the extension version at the bottom of the page.
         If you're unable to determine the version but believe you have the latest one, you can find the most recent version at https://github.com/ghostery/ghostery-extension/releases/latest.
+
   - type: dropdown
     id: browsers
     attributes:
@@ -89,18 +95,21 @@ body:
         - Microsoft Edge
         - Opera
         - Other
+
   - type: input
     attributes:
       label: Browser version(s)
       description: |
         Although it's uncommon, issues may arise with specific combination of browser and operating system.
         Please, also specify the browser name if you selected "Other" in the dropdown above.
+
   - type: input
     attributes:
       label: Geolocation
       description: |
         We kindly request that you provide an approximate location of your internet connection, as some services may restrict our access based on location.
         We don't need a precise location—just the name of your country or continent will suffice.
+
   - type: textarea
     attributes:
       label: Regional filters
@@ -108,6 +117,7 @@ body:
         If you have any regional filters enabled, please list them here.
         If no filters are specified, we will assume all regional filters are enabled and proceed accordingly.
       render: yaml
+
   - type: textarea
     attributes:
       label: Custom filters
@@ -115,6 +125,7 @@ body:
         If you have any custom filters applied, please list them here.
         If you have custom filters applied that are not listed, we may have difficulty reproducing the problem.
       render: adblock
+
   - type: checkboxes
     attributes:
       label: Your privacy
@@ -125,3 +136,13 @@ body:
       options:
         - label: I confirm that this issue does not contain any personal information and understand that Ghostery is not responsible for the issue content.
           required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Additional checks
+      description: |
+        The checkboxes below will help us better categorize and attribute this issue.
+      options:
+        - label: '**IMPORTANT** Please check this box if your submission contains any adult or NSFW content. Additionally, prefix the issue title with "[NSFW]" to alert others that the content may be sensitive.'
+        - label: 'I have a Zendesk ticket number. Please **refrain from sharing your ticket number** in public forums, as it helps us identify your case and personal details.'
