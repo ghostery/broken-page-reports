@@ -1,0 +1,148 @@
+name: Report a broken page
+description: Use this form to report any issues with a webpage, including instances where ads are not blocked or parts of the website fail to render or function properly.
+labels: ["reproduction/required"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: What's happening?
+      multiple: true
+      options:
+        - ⛔️ type/ad-blocking
+        - Advertisement is visible
+        - Advertisement leftovers are visible
+        - Parts of the website fail to render
+        - Parts of the website do not function properly (incl. interactions)
+        - The website refreshes or navigates infinitely
+        - ⚠️ type/ad-wall
+        - Website asks ad-blocker uninstallment or disablement
+        - Website detects ad-blocker
+        - 🕸️ type/annoyance
+        - Annoying elements are visible
+        - ❌ never-consent/unsupported
+        - Consent popup is visible
+        - Consent popup is randomly handled
+        - 🛠️ never-consent/broken-interaction
+        - Page is dimmed or unresponsive (incl. scrolling and text selection)
+        - Consent popup is partially handled
+        - None of the above
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Problematic URL(s).
+      description: |
+        Please provide the URL(s) where the issue occurs, as this information is essential for us to identify and resolve the problem.
+      placeholder: |
+        https://domain.tld
+      render: yaml
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: |
+        A concise description of what you're experiencing and how to reproduce.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Other extensions used with Ghostery
+      description: |
+        Please list any other browser extensions you are using alongside Ghostery.
+        While we will do our best to identify the issue, certain complex interactions across multiple browser extensions may require further investigation.
+      render: yaml
+
+  - type: textarea
+    attributes:
+      label: Screenshot(s)
+      description: |
+        Screenshots provide valuable insights for our team in identifying the exact issue. If possible, kindly include a screenshot to assist in our investigation.
+        Please note that any files uploaded to GitHub are publicly accessible without requiring permission or authentication: see https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files
+      value: |
+        <details>
+        <summary>Screenshot(s)</summary>
+        <!-- PUT YOUR SCREENSHOTS BELOW -->
+
+        <!-- END OF SCREENSHOTS -->
+        </details>
+
+  - type: input
+    attributes:
+      label: Version
+      description: |
+        Which version of our product are you currently using?
+        If the issue affects multiple versions, please specify the most recent version where the problem occurs or the range of affected versions.
+        Please open the extension popup from your browser, then click the menu button (three horizontal lines) in the top-right corner to access the "Privacy Protection" settings.
+        You can find the extension version at the bottom of the page.
+        If you're unable to determine the version but believe you have the latest one, you can find the most recent version at https://github.com/ghostery/ghostery-extension/releases/latest.
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser(s)
+      description: |
+        If you do not select an option from the dropdown below, we will assume the issue occurs across all browsers.
+      multiple: true
+      options:
+        - Ghostery Private Browser
+        - Firefox (incl. variants)
+        - Chrome (incl. Chromium variants)
+        - Safari
+        - Microsoft Edge
+        - Opera
+        - Other
+
+  - type: input
+    attributes:
+      label: Browser version(s)
+      description: |
+        Although it's uncommon, issues may arise with specific combination of browser and operating system.
+        Please, also specify the browser name if you selected "Other" in the dropdown above.
+
+  - type: input
+    attributes:
+      label: Geolocation
+      description: |
+        We kindly request that you provide an approximate location of your internet connection, as some services may restrict our access based on location.
+        We don't need a precise location—just the name of your country or continent will suffice.
+
+  - type: textarea
+    attributes:
+      label: Regional filters
+      description: |
+        If you have any regional filters enabled, please list them here.
+        If no filters are specified, we will assume all regional filters are enabled and proceed accordingly.
+      render: yaml
+
+  - type: textarea
+    attributes:
+      label: Custom filters
+      description: |
+        If you have any custom filters applied, please list them here.
+        If you have custom filters applied that are not listed, we may have difficulty reproducing the problem.
+      render: adblock
+
+  - type: checkboxes
+    attributes:
+      label: Your privacy
+      description: |
+        By submitting this issue, you confirm that no personal information is included in any of the fields.
+        If you're unsure whether your responses contain any personal information, we recommend [contacting our support channel to submit the issue](https://www.ghostery.com/support) instead.
+        If personal information is found in the submission, we can assist with its removal, but please note that we cannot take responsibility for any data leaks.
+      options:
+        - label: I confirm that this issue does not contain any personal information and understand that Ghostery is not responsible for the issue content.
+          required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Additional checks
+      description: |
+        The checkboxes below will help us better categorize and attribute this issue.
+      options:
+        - label: '**IMPORTANT** Please check this box if your submission contains any adult or NSFW content. Additionally, prefix the issue title with "[NSFW]" to alert others that the content may be sensitive.'
+        - label: 'I have a Zendesk ticket number. Please **refrain from sharing your ticket number** in public forums, as it helps us identify your case and personal details.'
