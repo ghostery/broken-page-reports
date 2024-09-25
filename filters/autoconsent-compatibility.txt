@@ -780,3 +780,6 @@ volksbank-dr.de#@#div.cookie-consent
 
 ! https://github.com/ghostery/broken-page-reports/issues/203
 readly.com#@#.cookie-dialog
+
+! https://github.com/ghostery/broken-page-reports/issues/250
+psd-nuernberg.de#@#div.cookie-consent
