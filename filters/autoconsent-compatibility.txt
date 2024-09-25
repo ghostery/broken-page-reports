@@ -774,3 +774,6 @@ mediapart.fr#@##js-cc-modal
 ! https://github.com/ghostery/broken-page-reports/issues/848
 muji.eu#@##cookies-banner-overlay
 muji.eu#@##consent-manager
+
+! https://github.com/ghostery/broken-page-reports/issues/194
+volksbank-dr.de#@#div.cookie-consent
