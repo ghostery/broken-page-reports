@@ -982,12 +982,6 @@ mega.be#@#.modal
 ! https://github.com/ghostery/broken-page-reports/issues/826
 docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-index: 999 !important; pointer-events: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/743
-! >>> url=https://justconfig.com/a
-! ... source=https://usatoday.com/
-! ... type=xhr
-||justconfig.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/828
 wifishop.nl#@#body,html:style(overflow: auto !important; position: initial !important;)
 
