@@ -263,3 +263,13 @@ memodo.nl##.datamints-ccm
 
 ! https://github.com/ghostery/broken-page-reports/issues/249
 new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
+
+! https://github.com/ghostery/broken-page-reports/issues/743
+! >>> url=https://justconfig.com/a
+! ... source=https://usatoday.com/
+! ... type=xhr
+||justconfig.com^
+! >>> url=https://nevitable.com/a
+! ... source=https://usatoday.com/
+! ... type=xhr
+||nevitable.com^
