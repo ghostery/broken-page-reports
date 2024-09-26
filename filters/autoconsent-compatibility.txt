@@ -783,3 +783,7 @@ readly.com#@#.cookie-dialog
 
 ! https://github.com/ghostery/broken-page-reports/issues/250
 psd-nuernberg.de#@#div.cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/863
+cormarcarpets.co.uk#@#.cc-bottom.cc-floating.cc-window
+cormarcarpets.co.uk#@#.cc-type-opt-in.cc-floating
