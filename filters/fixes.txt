@@ -1001,3 +1001,6 @@ motorradonline.de##iframe[src="about:blank"]
 ! ... source=https://www.wjs.com
 ! ... type=script
 @@||adsafeprotected.com/vans-adapter-google-ima.js$script,domain=gamingbible.co.uk|ladbible.com|reuters.com|wjs.com
+
+! https://github.com/ghostery/broken-page-reports/issues/290
+firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
