@@ -265,6 +265,7 @@ memodo.nl##.datamints-ccm
 new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 
 ! https://github.com/ghostery/broken-page-reports/issues/743
+! https://github.com/ghostery/broken-page-reports/issues/265
 ! >>> url=https://justconfig.com/a
 ! ... source=https://usatoday.com/
 ! ... type=xhr
@@ -273,3 +274,7 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://usatoday.com/
 ! ... type=xhr
 ||nevitable.com^
+! >>> url=https://adorableanger.com/a
+! ... source=https://popculture.com/celebrity/news/austin-butler-tears-up-remembering-lisa-marie-presley/
+! ... type=xhr
+||adorableanger.com^
