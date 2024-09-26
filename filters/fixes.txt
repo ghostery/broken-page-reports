@@ -982,9 +982,6 @@ mega.be#@#.modal
 ! https://github.com/ghostery/broken-page-reports/issues/826
 docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-index: 999 !important; pointer-events: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/828
-wifishop.nl#@#body,html:style(overflow: auto !important; position: initial !important;)
-
 ! https://github.com/ghostery/broken-page-reports/issues/843
 ! can be removed after https://github.com/easylist/easylist/pull/20020 is merged
 appleid.apple.com#@##consent.consent
