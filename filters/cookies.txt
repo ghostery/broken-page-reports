@@ -278,3 +278,6 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://popculture.com/celebrity/news/austin-butler-tears-up-remembering-lisa-marie-presley/
 ! ... type=xhr
 ||adorableanger.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/264
+fxhome.com##[class^="style_cookiesContainer"]
