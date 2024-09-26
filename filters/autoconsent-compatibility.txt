@@ -93,8 +93,11 @@
 #@##teconsent
 
 ! adblocker-filters#767: tealium.json
+! https://github.com/ghostery/broken-page-reports/issues/290
 #@##__tealiumGDPRecModal
+#@#div#__tealiumGDPRecModal
 #@##__tealiumGDPRcpPrefs
+#@##__tealiumImplicitmodal
 #@#div.privacy_prompt
 ! >>> url=https://tags.tiqcdn.com/utag/camelot/main/prod/utag.sync.js
 ! ... source=https://www.national-lottery.co.uk
