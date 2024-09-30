@@ -1004,3 +1004,7 @@ motorradonline.de##iframe[src="about:blank"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/290
 firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
+
+! can be removed after firefox release 10.4.6+
+! https://github.com/ghostery/broken-page-reports/issues/866
+notebooksbilliger.de##body.overflowHidden:style(overflow: auto !important)
