@@ -790,3 +790,7 @@ psd-nuernberg.de#@#div.cookie-consent
 ! https://github.com/ghostery/broken-page-reports/issues/863
 cormarcarpets.co.uk#@#.cc-bottom.cc-floating.cc-window
 cormarcarpets.co.uk#@#.cc-type-opt-in.cc-floating
+
+! https://github.com/ghostery/broken-page-reports/issues/868
+#@#.truste_cm_outerdiv:not(body):not(html)
+#@#.truste_overlay:not(body):not(html)
