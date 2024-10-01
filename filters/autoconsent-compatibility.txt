@@ -797,3 +797,7 @@ cormarcarpets.co.uk#@#.cc-type-opt-in.cc-floating
 
 ! https://github.com/ghostery/broken-page-reports/issues/857
 visaton.de#@#.eu-cookie-compliance-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/870
+alma.be#@#div.cookiebanner
+alma.be#@##cookiebanner-overlay
