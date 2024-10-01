@@ -801,3 +801,9 @@ visaton.de#@#.eu-cookie-compliance-banner
 ! https://github.com/ghostery/broken-page-reports/issues/870
 alma.be#@#div.cookiebanner
 alma.be#@##cookiebanner-overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/841
+! >>> url=https://privacy-portal-mvwc-cdn.my.onetrust.com/privacy-notice-scripts/otnotice-1.0.min.js
+! ... source=https://www.leisuretimepassport.com/app/lookup/privacyPolicy
+! ... type=script
+@@||privacy-portal-mvwc-cdn.my.onetrust.com^
