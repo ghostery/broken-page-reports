@@ -994,6 +994,8 @@ firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
 ! can be removed after firefox release 10.4.6+
 ! https://github.com/ghostery/broken-page-reports/issues/866
 notebooksbilliger.de##body.overflowHidden:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/404
+musiktreff.info##.cookie-modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/320
 illy.com##body:style(overflow: auto !important)
