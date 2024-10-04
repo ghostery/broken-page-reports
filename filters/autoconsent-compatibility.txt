@@ -807,3 +807,6 @@ alma.be#@##cookiebanner-overlay
 ! ... source=https://www.leisuretimepassport.com/app/lookup/privacyPolicy
 ! ... type=script
 @@||privacy-portal-mvwc-cdn.my.onetrust.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/878
+ellisaromen.de#@#.cmpwrapper
