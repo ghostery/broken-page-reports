@@ -1010,3 +1010,8 @@ illy.com##body:style(overflow: auto !important)
 ! ... source=https://synonyme.woxikon.de/
 ! ... type=script
 ||html-load.com^$domain=woxikon.de
+
+! https://github.com/ghostery/broken-page-reports/issues/881
+omni.se##[class^="TopPanoramaAd"]
+omni.se##[class^="StickySideAd"]
+omni.se##[class^="DesktopFeedPanoramaAd"]
