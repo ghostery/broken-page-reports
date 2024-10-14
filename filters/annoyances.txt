@@ -10,5 +10,6 @@ tomsguide.com##.slice-container-newsletterForm
 kansascity.com,miamiherald.com##.ab-in-app-message.ab-slideup
 
 ! https://github.com/ghostery/broken-page-reports/issues/849
+! https://github.com/ghostery/broken-page-reports/issues/892
 titantv.com###vertad
 titantv.com##.sc-dNsUpz:style(width: 100% !important)
