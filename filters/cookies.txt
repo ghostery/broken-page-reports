@@ -266,6 +266,14 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://cbsnews.com/
 ! ... type=xhr
 ||regexmail.com^
+! >>> url=https://marrowleaves.com/a
+! ... source=https://usatoday.com/
+! ... type=xhr
+||marrowleaves.com^
+! >>> url=https://rarestcandy.com/a
+! ... source=https://usatoday.com/
+! ... type=xhr
+||rarestcandy.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
