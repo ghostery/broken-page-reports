@@ -1001,6 +1001,8 @@ musiktreff.info##.cookie-modal
 ! https://github.com/ghostery/broken-page-reports/issues/898
 juraforum.de,hroneandliberty.4fansites.de###cmpbox2
 juraforum.de,hroneandliberty.4fansites.de##body[style^="overflow"]:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/897
+geckota.com##.SOYR0oPj0Q6UOw2AemzM
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/320
