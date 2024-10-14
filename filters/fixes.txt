@@ -998,8 +998,9 @@ notebooksbilliger.de##body.overflowHidden:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/404
 musiktreff.info##.cookie-modal
 ! https://github.com/ghostery/broken-page-reports/issues/874
-juraforum.de###cmpbox2
-juraforum.de##body[style^="overflow"]:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/898
+juraforum.de,hroneandliberty.4fansites.de###cmpbox2
+juraforum.de,hroneandliberty.4fansites.de##body[style^="overflow"]:style(overflow: auto !important)
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/320
