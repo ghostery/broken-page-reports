@@ -54,11 +54,28 @@ policy:
             keys:
               - Opera
       - id:
+          - platforms
+        block-list:
+          - Other
+        label:
+          - name: platform/android
+            keys:
+              - Android
+          - name: platform/ios
+            keys:
+              - iOS and iPadOS
+          - name: platform/linux
+            keys:
+              - Linux
+          - name: platform/macos
+            keys:
+              - macOS
+          - name: platform/windows
+            keys:
+              - Windows
+      - id:
           - checks
         label:
           - name: nsfw
             keys:
               - '**IMPORTANT** Please check this box if your submission contains any adult or NSFW content. Additionally, prefix the issue title with "[NSFW]" to alert others that the content may be sensitive.'
-          - name: source/zendesk
-            keys:
-              - 'I have a Zendesk ticket number. Please **refrain from sharing your ticket number** in public forums, as it helps us identify your case and personal details.'
