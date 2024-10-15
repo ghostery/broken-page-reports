@@ -1018,3 +1018,6 @@ illy.com##body:style(overflow: auto !important)
 omni.se##[class^="TopPanoramaAd"]
 omni.se##[class^="StickySideAd"]
 omni.se##[class^="DesktopFeedPanoramaAd"]
+
+! https://github.com/ghostery/broken-page-reports/issues/889
+#@#.ajs-message
