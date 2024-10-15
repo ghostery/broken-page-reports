@@ -31,7 +31,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Problematic URL(s).
+      label: Problematic URL(s)
       description: |
         Please provide the URL(s) where the issue occurs, as this information is essential for us to identify and resolve the problem.
       placeholder: |
@@ -79,6 +79,27 @@ body:
         Please open the extension popup from your browser, then click the menu button (three horizontal lines) in the top-right corner to access the "Privacy Protection" settings.
         You can find the extension version at the bottom of the page.
         If you're unable to determine the version but believe you have the latest one, you can find the most recent version at https://github.com/ghostery/ghostery-extension/releases/latest.
+
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Platform(s)
+      description: |
+        If you do not select an option from the dropdown below, we will assume the issue occurs across all platforms.
+      multiple: true
+      options:
+        - Windows
+        - Android
+        - macOS
+        - iOS and iPadOS
+        - Linux
+        - Other
+
+  - type: input
+    attributes:
+      label: Platform version
+      description: |
+        Please, also specify the operating system name if you selected "Other" in the dropdown above.
 
   - type: dropdown
     id: browsers
@@ -145,4 +166,3 @@ body:
         The checkboxes below will help us better categorize and attribute this issue.
       options:
         - label: '**IMPORTANT** Please check this box if your submission contains any adult or NSFW content. Additionally, prefix the issue title with "[NSFW]" to alert others that the content may be sensitive.'
-        - label: 'I have a Zendesk ticket number. Please **refrain from sharing your ticket number** in public forums, as it helps us identify your case and personal details.'
