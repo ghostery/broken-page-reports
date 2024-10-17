@@ -277,3 +277,6 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
+
+! https://github.com/ghostery/broken-page-reports/issues/906
+shop.wolterskluwer.nl###udtDark
