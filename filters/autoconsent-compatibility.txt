@@ -810,3 +810,6 @@ alma.be#@##cookiebanner-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/878
 ellisaromen.de#@#.cmpwrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/899
+citibank.pl,citibankonline.pl#@#+js(set-cookie, cookieConsent, 1)
