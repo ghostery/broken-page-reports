@@ -1030,3 +1030,6 @@ citi.com#@#+js(no-xhr-if, cls_report?)
 
 ! https://github.com/ghostery/broken-page-reports/issues/913
 app.viralsweep.com#@#.promotion
+
+! https://github.com/ghostery/broken-page-reports/issues/907
+bankerandtradesman.com##article:style(display: block !important)
