@@ -1015,9 +1015,12 @@ illy.com##body:style(overflow: auto !important)
 ||html-load.com^$domain=woxikon.de
 
 ! https://github.com/ghostery/broken-page-reports/issues/881
+! https://github.com/ghostery/broken-page-reports/issues/905
 omni.se##[class^="TopPanoramaAd"]
 omni.se##[class^="StickySideAd"]
 omni.se##[class^="DesktopFeedPanoramaAd"]
+omni.se##[class^="Ad_placement"]
+omni.se##[class^="Feed"] > [class^="TeaserCluster_clusterContainer"][class^="TeaserCluster_native"][class^="TeaserCluster_smallCluster"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/889
 #@#.ajs-message
@@ -1027,3 +1030,9 @@ ultimedia.com##+js(nano-stb, clearTimeout, 0.01)
 
 ! https://github.com/ghostery/broken-page-reports/issues/899
 citi.com#@#+js(no-xhr-if, cls_report?)
+
+! https://github.com/ghostery/broken-page-reports/issues/913
+app.viralsweep.com#@#.promotion
+
+! https://github.com/ghostery/broken-page-reports/issues/907
+bankerandtradesman.com##article:style(display: block !important)
