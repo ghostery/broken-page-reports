@@ -27,3 +27,9 @@
 ! ... source=https://www.bilibili.com/
 ! ... type=xhr
 ||api.bilibili.com/x/vip/ads/materials^$domain=bilibili.com
+
+! https://github.com/ghostery/broken-page-reports/issues/910
+! >>> url=https://yk.nobledtenuous.com/rxnIbsRJdiE8/wQLrB
+! ... source=https://www.braflix.is/
+! ... type=script
+||nobledtenuous.com^
