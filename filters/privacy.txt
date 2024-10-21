@@ -43,3 +43,9 @@
 ! ... source=https://1337x.to/torrent/6244307/Twisters-2024-2160p-BluRay-x265-10bit-DV-HDR-TrueHD-Atmos-7-1-English-German-Spanish-Chinese-Czech-Polish-r00t-QxR/
 ! ... type=document
 ||izeeto.com^
+
+! (nsfw) https://github.com/ghostery/broken-page-reports/issues/886
+! >>> url=https://lanky-bar.com/
+! ... source=https://www.toongod.org/home/
+! ... type=document
+||lanky-bar.com^
