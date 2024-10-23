@@ -49,3 +49,9 @@
 ! ... source=https://www.toongod.org/home/
 ! ... type=document
 ||lanky-bar.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/929
+! >>> url=https://vauloops.net/weqyf.json
+! ... source=https://www.samapkstore.com/
+! ... type=xhr
+||vauloops.net^
