@@ -1041,3 +1041,6 @@ app.viralsweep.com#@#.promotion
 
 ! https://github.com/ghostery/broken-page-reports/issues/907
 bankerandtradesman.com##article:style(display: block !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/924
+nytimes.com#@##complianceOverlay
