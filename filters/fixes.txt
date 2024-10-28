@@ -991,25 +991,6 @@ motorradonline.de##iframe[src="about:blank"]
 ! https://github.com/ghostery/broken-page-reports/issues/290
 firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
 
-!#if env_firefox
-! can be removed after firefox release 10.4.6+
-! https://github.com/ghostery/broken-page-reports/issues/866
-notebooksbilliger.de##body.overflowHidden:style(overflow: auto !important)
-! https://github.com/ghostery/broken-page-reports/issues/404
-musiktreff.info##.cookie-modal
-! https://github.com/ghostery/broken-page-reports/issues/874
-! https://github.com/ghostery/broken-page-reports/issues/898
-juraforum.de,hroneandliberty.4fansites.de###cmpbox2
-juraforum.de,hroneandliberty.4fansites.de##body[style^="overflow"]:style(overflow: auto !important)
-! https://github.com/ghostery/broken-page-reports/issues/897
-geckota.com##.SOYR0oPj0Q6UOw2AemzM
-! https://github.com/ghostery/broken-page-reports/issues/926
-! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
-! ... source=https://www.dehner.de/de/
-! ... type=script
-||usercentrics.eu^$domain=dehner.de
-!#endif
-
 ! https://github.com/ghostery/broken-page-reports/issues/320
 illy.com##body:style(overflow: auto !important)
 
