@@ -280,3 +280,15 @@ fxhome.com##[class^="style_cookiesContainer"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/906
 shop.wolterskluwer.nl###udtDark
+
+! https://github.com/ghostery/broken-page-reports/issues/918
+! >>> url=https://www.beverunger-rundschau.de/api/content/public/cookie/managerSettings
+! ... source=https://www.beverunger-rundschau.de/weserberglandplan-wird-bis-2026-weitergefuehrt/cnt-id-ps-7417cb8c-39a0-4a55-aedb-0b8ba43e9595
+! ... type=xhr
+||beverunger-rundschau.de/api/content/public/cookie
+
+! https://github.com/ghostery/broken-page-reports/issues/917
+! >>> url=https://cdn.cookiehub.eu/c2/19e0b052.js
+! ... source=https://www.scheldeland.be/
+! ... type=script
+||cdn.cookiehub.eu^

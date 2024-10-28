@@ -1003,6 +1003,11 @@ juraforum.de,hroneandliberty.4fansites.de###cmpbox2
 juraforum.de,hroneandliberty.4fansites.de##body[style^="overflow"]:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/897
 geckota.com##.SOYR0oPj0Q6UOw2AemzM
+! https://github.com/ghostery/broken-page-reports/issues/926
+! >>> url=https://app.usercentrics.eu/browser-ui/latest/loader.js
+! ... source=https://www.dehner.de/de/
+! ... type=script
+||usercentrics.eu^$domain=dehner.de
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/320
