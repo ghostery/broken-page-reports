@@ -813,3 +813,6 @@ ellisaromen.de#@#.cmpwrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/899
 citibank.pl,citibankonline.pl#@#+js(set-cookie, cookieConsent, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/938
+patentamt.at#@##CookieBox
