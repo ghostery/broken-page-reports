@@ -994,12 +994,6 @@ firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/320
 illy.com##body:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/871
-! >>> url=https://html-load.com/loader.min.js
-! ... source=https://synonyme.woxikon.de/
-! ... type=script
-||html-load.com^$domain=woxikon.de
-
 ! https://github.com/ghostery/broken-page-reports/issues/881
 ! https://github.com/ghostery/broken-page-reports/issues/905
 omni.se##[class^="TopPanoramaAd"]
