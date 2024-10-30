@@ -816,3 +816,6 @@ citibank.pl,citibankonline.pl#@#+js(set-cookie, cookieConsent, 1)
 
 ! https://github.com/ghostery/broken-page-reports/issues/938
 patentamt.at#@##CookieBox
+
+! https://github.com/ghostery/broken-page-reports/issues/935
+koreanair.com#@#div.cookie-banner
