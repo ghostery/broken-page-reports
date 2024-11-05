@@ -55,3 +55,10 @@
 ! ... source=https://www.samapkstore.com/
 ! ... type=xhr
 ||vauloops.net^
+
+! https://github.com/ghostery/broken-page-reports/issues/949
+! This is a duplicate entry from EasyList but shipping manually as it was not included in the final DNR sets
+! >>> url=https://phidaukrauvo.net/a
+! ... source=https://www.sflix.to/home
+! ... type=xhr
+||phidaukrauvo.net^
