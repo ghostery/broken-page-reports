@@ -166,6 +166,7 @@ uptodate.com#@#.gdprBanner
 ! https://github.com/ghostery/broken-page-reports/issues/527
 ! https://github.com/ghostery/broken-page-reports/issues/539
 ! https://github.com/ghostery/broken-page-reports/issues/553
+! https://github.com/ghostery/broken-page-reports/issues/951
 ! >>> url=fundingchoicesmessages.google.com/f/AGSKWxXJ8v_tvjZL0DoRpGiDmv-3XIRHqEvJnuY1NKEdRxJ50dHJW-MsEXBCf6cgHXQthZv3Q0dRN-vCuSZrAWyN
 ! ... source=https://www.foxnews.com/
 ! ... type=script
