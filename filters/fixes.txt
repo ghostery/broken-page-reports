@@ -1023,3 +1023,6 @@ nytimes.com#@##complianceOverlay
 ! https://github.com/ghostery/broken-page-reports/issues/953
 speedtest.net##+js(set, window.pbjs, {})
 speedtest.net##+js(set, window.pbjs.que, [])
+
+! https://github.com/ghostery/broken-page-reports/issues/952
+clicrbs.com.br##+js(aeld, click, a)
