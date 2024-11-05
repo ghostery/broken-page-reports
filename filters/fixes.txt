@@ -1019,3 +1019,7 @@ bankerandtradesman.com##article:style(display: block !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/924
 nytimes.com#@##complianceOverlay
+
+! https://github.com/ghostery/broken-page-reports/issues/953
+speedtest.net##+js(set, window.pbjs, {})
+speedtest.net##+js(set, window.pbjs.que, [])
