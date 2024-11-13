@@ -296,3 +296,6 @@ shop.wolterskluwer.nl###udtDark
 ! ... source=https://www.scheldeland.be/
 ! ... type=script
 ||cdn.cookiehub.eu^
+
+! https://github.com/ghostery/broken-page-reports/issues/958
+clarisvirot.com##.axeptio_mount
