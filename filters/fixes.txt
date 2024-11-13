@@ -1026,7 +1026,8 @@ speedtest.net##+js(set, window.pbjs, {})
 speedtest.net##+js(set, window.pbjs.que, [])
 
 ! https://github.com/ghostery/broken-page-reports/issues/952
-clicrbs.com.br##+js(aeld, click, a)
+! https://github.com/ghostery/broken-page-reports/issues/957
+clicrbs.com.br,drakecomic.org##+js(aeld, click, a)
 
 ! https://github.com/ghostery/broken-page-reports/issues/963
 chemist-4-u.com#@#.inset-0.fixed
