@@ -1031,3 +1031,7 @@ clicrbs.com.br,drakecomic.org##+js(aeld, click, a)
 
 ! https://github.com/ghostery/broken-page-reports/issues/963
 chemist-4-u.com#@#.inset-0.fixed
+
+! https://github.com/ghostery/broken-page-reports/issues/954
+bunjang.co.kr##[class^="Productsstyle__RelatedProductsWrapper"]
+bunjang.co.kr##[class^="ProductExternalAdsstyle__Cotainer"]
