@@ -254,6 +254,7 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! https://github.com/ghostery/broken-page-reports/issues/743
 ! https://github.com/ghostery/broken-page-reports/issues/265
 ! https://github.com/ghostery/broken-page-reports/issues/761
+! https://github.com/ghostery/broken-page-reports/issues/956
 ! >>> url=https://nevitable.com/a
 ! ... source=https://usatoday.com/
 ! ... type=xhr
@@ -278,6 +279,10 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://usatoday.com/
 ! ... type=xhr
 ||phonicsblitz.com^
+! >>> url=https://rehabilitatereason.com/a
+! ... source=https://15min.lt/
+! ... type=xhr
+||rehabilitatereason.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
