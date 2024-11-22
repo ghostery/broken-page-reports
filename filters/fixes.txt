@@ -1035,3 +1035,6 @@ chemist-4-u.com#@#.inset-0.fixed
 ! https://github.com/ghostery/broken-page-reports/issues/954
 bunjang.co.kr##[class^="Productsstyle__RelatedProductsWrapper"]
 bunjang.co.kr##[class^="ProductExternalAdsstyle__Cotainer"]
+
+! https://github.com/ghostery/broken-page-reports/issues/893
+spiegel.de##[data-advertisement]
