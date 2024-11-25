@@ -1049,3 +1049,12 @@ benq.eu##body[style*="overflow"]:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/983
 sellpy.se#@#.bERasM
 sellpy.se#@#.gUbXEK
+
+! https://github.com/ghostery/broken-page-reports/issues/981
+!#if env_mobile
+! >>> url=https://live.primis.tech/
+! ... source=https://www.canonrumors.com/
+! ... type=xhr
+||primis.tech$domain=canonrumors.com
+canonrumors.com###sn_gg_ad_wrapper
+!#endif
