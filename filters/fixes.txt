@@ -1038,3 +1038,6 @@ bunjang.co.kr##[class^="ProductExternalAdsstyle__Cotainer"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/893
 spiegel.de##[data-advertisement]
+
+! https://github.com/ghostery/broken-page-reports/issues/991
+repubblica.it###adv-TopLeft
