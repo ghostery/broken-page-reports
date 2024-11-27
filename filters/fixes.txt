@@ -1058,3 +1058,8 @@ sellpy.se#@#.gUbXEK
 ||primis.tech$domain=canonrumors.com
 canonrumors.com###sn_gg_ad_wrapper
 !#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/996
+!#if !env_firefox
+download.megaup.net##a[id][href^="https://download.megaup.net/"][target="_blank"]:style(width: 1px !important; height: 1px !important; display: block !important;)
+!#endif
