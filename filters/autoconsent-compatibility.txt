@@ -829,3 +829,7 @@ inmobi.com#@#div.accept-cookie
 
 ! https://github.com/ghostery/broken-page-reports/issues/994
 consent.google.fr#@#[data-p*="/consent.google."]:has(button[jsname="tWT92d"])
+
+! https://github.com/ghostery/broken-page-reports/issues/990
+skandia.se#@#.dimmer
+skandia.se#@#.CookieBanner
