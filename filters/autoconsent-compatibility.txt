@@ -822,3 +822,7 @@ koreanair.com#@#div.cookie-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/961
 testdriveunlimited.com#@#.cookieControl
+
+! https://github.com/ghostery/broken-page-reports/issues/997
+inmobi.com#@#.cookieModal
+inmobi.com#@#div.accept-cookie
