@@ -1028,7 +1028,7 @@ speedtest.net##+js(set, window.pbjs.que, [])
 ! https://github.com/ghostery/broken-page-reports/issues/952
 ! https://github.com/ghostery/broken-page-reports/issues/957
 ! https://github.com/ghostery/broken-page-reports/issues/984
-clicrbs.com.br,drakecomic.org,1337x.to##+js(aeld, click, a)
+clicrbs.com.br,drakecomic.org
 
 ! https://github.com/ghostery/broken-page-reports/issues/963
 chemist-4-u.com#@#.inset-0.fixed
@@ -1063,3 +1063,6 @@ canonrumors.com###sn_gg_ad_wrapper
 !#if !env_firefox
 download.megaup.net##a[id][href^="https://download.megaup.net/"][target="_blank"]:style(width: 1px !important; height: 1px !important; display: block !important;)
 !#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/998
+1337x.to##+js(aeld, click, , elements, a[id])
