@@ -307,3 +307,8 @@ clarisvirot.com##.axeptio_mount
 
 ! https://github.com/ghostery/broken-page-reports/issues/1002
 connect.airfrance.com##obp-cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/1001
+! only regards www-prefixed website
+www.flender.com###colorbox
+www.flender.com###cboxOverlay
