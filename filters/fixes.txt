@@ -1071,3 +1071,6 @@ download.megaup.net##a[id][href^="https://download.megaup.net/"][target="_blank"
 ! ... source=https://embed.viaplay.com/
 ! ... type=xhr
 ||fwmrm.net$redirect=noopjs,domain=viaplay.com
+
+! https://github.com/ghostery/broken-page-reports/issues/973
+version2.dk##.tmk-block__zone-top
