@@ -1077,3 +1077,6 @@ version2.dk##.tmk-block__zone-top
 
 ! https://github.com/ghostery/broken-page-reports/issues/970
 bk.com##+js(set, isErrorEventCalled, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1004
+latimes.com##.google-dfp-ad-wrapper
