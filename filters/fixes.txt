@@ -1074,3 +1074,6 @@ download.megaup.net##a[id][href^="https://download.megaup.net/"][target="_blank"
 
 ! https://github.com/ghostery/broken-page-reports/issues/973
 version2.dk##.tmk-block__zone-top
+
+! https://github.com/ghostery/broken-page-reports/issues/970
+bk.com##+js(set, isErrorEventCalled, false)
