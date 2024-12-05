@@ -827,9 +827,6 @@ testdriveunlimited.com#@#.cookieControl
 inmobi.com#@#.cookieModal
 inmobi.com#@#div.accept-cookie
 
-! https://github.com/ghostery/broken-page-reports/issues/994
-consent.google.fr#@#[data-p*="/consent.google."]:has(button[jsname="tWT92d"])
-
 ! https://github.com/ghostery/broken-page-reports/issues/990
 skandia.se#@#.dimmer
 skandia.se#@#.CookieBanner
@@ -837,6 +834,7 @@ skandia.se#@#.CookieBanner
 ! https://github.com/ghostery/broken-page-reports/issues/1000
 citibank.pl#@#.CookieStyle
 
+! https://github.com/ghostery/broken-page-reports/issues/994
 ! https://github.com/uBlockOrigin/uAssets/blob/1411b1e79452142eea8249c6d522e8ebc9547f47/filters/annoyances-cookies.txt#L51C1-L53C76
 consent.google.*#@#+js(trusted-click-element, form[action] button[jsname="tWT92d"])
 consent.google.*#@#[data-p*="/consent.google."]:has(button[jsname="tWT92d"])
