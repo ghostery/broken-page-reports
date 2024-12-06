@@ -835,6 +835,7 @@ skandia.se#@#.CookieBanner
 citibank.pl#@#.CookieStyle
 
 ! https://github.com/ghostery/broken-page-reports/issues/994
+! https://github.com/ghostery/broken-page-reports/issues/1007
 ! https://github.com/uBlockOrigin/uAssets/blob/1411b1e79452142eea8249c6d522e8ebc9547f47/filters/annoyances-cookies.txt#L51C1-L53C76
 consent.google.*#@#+js(trusted-click-element, form[action] button[jsname="tWT92d"])
 consent.google.*#@#[data-p*="/consent.google."]:has(button[jsname="tWT92d"])
