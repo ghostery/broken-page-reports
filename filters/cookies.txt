@@ -312,3 +312,6 @@ connect.airfrance.com##obp-cookie-consent
 ! only regards www-prefixed website
 www.flender.com###colorbox
 www.flender.com###cboxOverlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1013
+petvalu.ca##body>div[class^="sc-"].show
