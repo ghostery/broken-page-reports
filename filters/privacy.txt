@@ -62,3 +62,9 @@
 ! ... source=https://www.sflix.to/home
 ! ... type=xhr
 ||phidaukrauvo.net^
+
+! https://github.com/ghostery/broken-page-reports/issues/1019
+! >>> url=https://tracker.remp-beam.golem.de/track/event
+! ... source=https://golem.de/
+! ... type=xhr
+||tracker.remp-beam.golem.de^
