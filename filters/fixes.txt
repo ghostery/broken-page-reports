@@ -1097,3 +1097,8 @@ latimes.com##.google-dfp-ad-wrapper
 ! ... source=https://golem.de/
 ! ... type=sub_frame
 ||golem.de/*/sp_*_rc$image,subdocument,1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1000
+! autoconsent-compat; citibank.pl#@#.CookieStyle
+citibank.pl##body.ScrollLock:style(overflow: auto !important)
+citibank.pl##.CookieStyle
