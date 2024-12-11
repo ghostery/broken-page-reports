@@ -1098,3 +1098,7 @@ latimes.com##.google-dfp-ad-wrapper
 ! autoconsent-compat; citibank.pl#@#.CookieStyle
 citibank.pl##body.ScrollLock:style(overflow: auto !important)
 citibank.pl##.CookieStyle
+
+! https://github.com/easylist/easylist/issues/20825
+! https://github.com/ghostery/broken-page-reports/issues/1022
+filen.io#@#.z-50
