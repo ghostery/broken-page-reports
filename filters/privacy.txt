@@ -68,3 +68,9 @@
 ! ... source=https://golem.de/
 ! ... type=xhr
 ||tracker.remp-beam.golem.de^
+
+! https://github.com/ghostery/broken-page-reports/issues/990
+! >>> url=https://static.skandia.se/appdynamics/adrum/adrum-xd.89188edf1c7df38b8e63edb7368e911e.html
+! ... source=https://www.skandia.se/
+! ... type=sub_frame
+||static.skandia.se/appdynamics/adrum
