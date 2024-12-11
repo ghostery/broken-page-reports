@@ -1080,3 +1080,20 @@ bk.com##+js(set, isErrorEventCalled, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1004
 latimes.com##.google-dfp-ad-wrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/1019
+! >>> url=https://ads.golem.de/track.ads/gx-ads.js?ord=3237179074356173&adsize=300x250&adunit=11
+! ... source=https://golem.de/
+! ... type=xhr
+||ads.golem.de^
+! >>> url=https://tracker.remp-beam.golem.de/track/event
+! ... source=https://golem.de/
+! ... type=xhr
+||tracker.remp-beam.golem.de^
+! >>> url=https://www.golem.de/7640/sp_iStE-232796_rc.jpg
+! ... source=https://golem.de/
+! ... type=image
+! >>> url=https://www.golem.de/9413/sp_Ye9y-938669_rc.jpg
+! ... source=https://golem.de/
+! ... type=sub_frame
+||golem.de/*/sp_*_rc$image,subdocument,1p
