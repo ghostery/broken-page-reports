@@ -1,7 +1,7 @@
 name: Issue labeler
 on:
   issues:
-    types: [ opened ]
+    types: [opened]
 
 permissions:
   contents: read

@@ -1,39 +1,39 @@
-import { type RequestType } from '@cliqz/adblocker';
+import { type RequestType } from "npm:@ghostery/adblocker";
 
 export type Assertion = {
-	match: boolean;
-	source?: string;
-	type?: RequestType;
-	url?: string;
+  match: boolean;
+  source?: string;
+  type?: RequestType;
+  url?: string;
 };
 
 const enum Token {
-	AssertionStart,
-	AssertionContinue,
-	Comment,
-	Filter,
-	Empty,
+  AssertionStart,
+  AssertionContinue,
+  Comment,
+  Filter,
+  Empty,
 }
 
-function * lex(content: string): IterableIterator<[Token, string]> {
-	for (const line of content.split(/[\n\r]/g).map(l => l.trim())) {
-		if (line.startsWith('! >>>')) {
-			yield [Token.AssertionStart, line];
-		} else if (line.startsWith('! ...')) {
-			yield [Token.AssertionContinue, line];
-		} else if (line.startsWith('!')) {
-			yield [Token.Comment, line];
-		} else if (line.length === 0) {
-			yield [Token.Empty, line];
-		} else {
-			yield [Token.Filter, line];
-		}
-	}
+function* lex(content: string): IterableIterator<[Token, string]> {
+  for (const line of content.split(/[\n\r]/g).map((l) => l.trim())) {
+    if (line.startsWith("! >>>")) {
+      yield [Token.AssertionStart, line];
+    } else if (line.startsWith("! ...")) {
+      yield [Token.AssertionContinue, line];
+    } else if (line.startsWith("!")) {
+      yield [Token.Comment, line];
+    } else if (line.length === 0) {
+      yield [Token.Empty, line];
+    } else {
+      yield [Token.Filter, line];
+    }
+  }
 }
 
 const enum State {
-	Init,
-	Assertion,
+  Init,
+  Assertion,
 }
 
 /**
@@ -57,109 +57,109 @@ const enum State {
  *
  * At the moment, each filter needs to have its own tests.
  */
-export function * parse(content: string): IterableIterator<{
-	filter: string;
-	assertions: Assertion[];
+export function* parse(content: string): IterableIterator<{
+  filter: string;
+  assertions: Assertion[];
 }> {
-	// Used to know if we are currently parsing an assertion
-	let state: State = State.Init;
+  // Used to know if we are currently parsing an assertion
+  let state: State = State.Init;
 
-	// Current assertions (will be attached to next filter encountered)
-	let assertions: Assertion[] = [];
+  // Current assertions (will be attached to next filter encountered)
+  let assertions: Assertion[] = [];
 
-	// Current assertion being parsed (needed because can span multiple lines)
-	let match = true;
-	let source: string | undefined;
-	let type: RequestType | undefined;
-	let url: string | undefined;
+  // Current assertion being parsed (needed because can span multiple lines)
+  let match = true;
+  let source: string | undefined;
+  let type: RequestType | undefined;
+  let url: string | undefined;
 
-	// Flush current assertion (if any) into `assertions`
-	const flush = () => {
-		if (state === State.Assertion) {
-			const assertion: Assertion = {
-				match: match ?? true,
-			};
+  // Flush current assertion (if any) into `assertions`
+  const flush = () => {
+    if (state === State.Assertion) {
+      const assertion: Assertion = {
+        match: match ?? true,
+      };
 
-			if (source !== undefined) {
-				assertion.source = source;
-			}
+      if (source !== undefined) {
+        assertion.source = source;
+      }
 
-			if (url !== undefined) {
-				assertion.url = url;
-			}
+      if (url !== undefined) {
+        assertion.url = url;
+      }
 
-			if (type !== undefined) {
-				assertion.type = type;
-			}
+      if (type !== undefined) {
+        assertion.type = type;
+      }
 
-			assertions.push(assertion);
+      assertions.push(assertion);
 
-			// Reset state
-			match = true;
-			source = undefined;
-			type = undefined;
-			url = undefined;
+      // Reset state
+      match = true;
+      source = undefined;
+      type = undefined;
+      url = undefined;
 
-			state = State.Init;
-		}
-	};
+      state = State.Init;
+    }
+  };
 
-	// Start parsing
-	for (const [token, line] of lex(content)) {
-		if (token !== Token.AssertionContinue) {
-			flush(); // Flush assertion if any
-		}
+  // Start parsing
+  for (const [token, line] of lex(content)) {
+    if (token !== Token.AssertionContinue) {
+      flush(); // Flush assertion if any
+    }
 
-		// If we have assertions followed by a normal comment or empty line, we
-		// flush them anyways (probably a bug) so that they trigger some tests
-		// (probably will fail).
-		if (
-			(token === Token.Empty || token === Token.Comment)
-			&& assertions.length !== 0
-		) {
-			yield {
-				filter: '',
-				assertions,
-			};
-			assertions = [];
-		}
+    // If we have assertions followed by a normal comment or empty line, we
+    // flush them anyways (probably a bug) so that they trigger some tests
+    // (probably will fail).
+    if (
+      (token === Token.Empty || token === Token.Comment) &&
+      assertions.length !== 0
+    ) {
+      yield {
+        filter: "",
+        assertions,
+      };
+      assertions = [];
+    }
 
-		// If we have a filter, then flush it alongside accumulated assertions.
-		if (token === Token.Filter) {
-			yield {
-				filter: line,
-				assertions,
-			};
-			assertions = [];
-		}
+    // If we have a filter, then flush it alongside accumulated assertions.
+    if (token === Token.Filter) {
+      yield {
+        filter: line,
+        assertions,
+      };
+      assertions = [];
+    }
 
-		// Update current assertion (new or continuing)
-		if (token === Token.AssertionStart || token === Token.AssertionContinue) {
-			state = State.Assertion;
-			line
-				.slice(5)
-				.split(/\s+/g)
-				// eslint-disable-next-line @typescript-eslint/no-loop-func
-				.forEach(part => {
-					if (part.startsWith('url=')) {
-						url = part.slice(4);
-					} else if (part.startsWith('source=')) {
-						source = part.slice(7);
-					} else if (part.startsWith('type=')) {
-						type = part.slice(5) as RequestType;
-					} else if (part.startsWith('match=')) {
-						match = part.slice(6) === 'true';
-					}
-				});
-		}
-	}
+    // Update current assertion (new or continuing)
+    if (token === Token.AssertionStart || token === Token.AssertionContinue) {
+      state = State.Assertion;
+      line
+        .slice(5)
+        .split(/\s+/g)
+        // eslint-disable-next-line @typescript-eslint/no-loop-func
+        .forEach((part) => {
+          if (part.startsWith("url=")) {
+            url = part.slice(4);
+          } else if (part.startsWith("source=")) {
+            source = part.slice(7);
+          } else if (part.startsWith("type=")) {
+            type = part.slice(5) as RequestType;
+          } else if (part.startsWith("match=")) {
+            match = part.slice(6) === "true";
+          }
+        });
+    }
+  }
 
-	// Handle case where there are assertions at the end of the file, without a filter.
-	flush();
-	if (assertions.length !== 0) {
-		yield {
-			filter: '',
-			assertions,
-		};
-	}
+  // Handle case where there are assertions at the end of the file, without a filter.
+  flush();
+  if (assertions.length !== 0) {
+    yield {
+      filter: "",
+      assertions,
+    };
+  }
 }
