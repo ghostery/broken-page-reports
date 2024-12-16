@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-      - run: bun run build
+      - run: deno run build
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

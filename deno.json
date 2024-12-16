@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "build": "deno run -R -W ./src/build.js",
+    "lint": "deno fmt --check ./src ./test",
+    "tests": "deno test --allow-read"
+  }
+}
