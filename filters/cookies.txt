@@ -315,3 +315,7 @@ www.flender.com###cboxOverlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/1013
 petvalu.ca##body>div[class^="sc-"].show
+
+! https://github.com/ghostery/broken-page-reports/issues/1035
+suburbanjunglegroup.com##body>div[consent-skip-blocker]
+suburbanjunglegroup.com##body[style^="overflow"]:style(overflow: auto !important)
