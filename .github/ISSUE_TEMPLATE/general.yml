@@ -22,7 +22,7 @@ body:
         - ❌ never-consent/unsupported
         - Consent popup is visible
         - Consent popup is randomly handled
-        - 🛠️ never-consent/broken-interaction
+        - 🛠️ never-consent/broken
         - Page is dimmed or unresponsive (incl. scrolling and text selection)
         - Consent popup is partially handled
         - None of the above
@@ -46,7 +46,6 @@ body:
       description: |
         A concise description of what you're experiencing and how to reproduce.
     validations:
-      required: true
 
   - type: textarea
     attributes:
@@ -63,11 +62,10 @@ body:
         Screenshots provide valuable insights for our team in identifying the exact issue. If possible, kindly include a screenshot to assist in our investigation.
         Please note that any files uploaded to GitHub are publicly accessible without requiring permission or authentication: see https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files
       value: |
+        <!-- PUT YOUR SCREENSHOTS INSIDE OF SUMMARY -->
         <details>
         <summary>Screenshot(s)</summary>
-        <!-- PUT YOUR SCREENSHOTS BELOW -->
 
-        <!-- END OF SCREENSHOTS -->
         </details>
 
   - type: input
