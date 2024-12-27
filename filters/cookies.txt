@@ -334,3 +334,6 @@ derstandard.at##body[data-pur]>[id^="sp_message_container_"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/166
 combi.de##.modal--cookie-notice.open
+
+! https://github.com/ghostery/broken-page-reports/issues/172
+lvz.de##[id^="sp_message_container_"]
