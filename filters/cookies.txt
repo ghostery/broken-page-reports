@@ -322,3 +322,6 @@ suburbanjunglegroup.com##body[style^="overflow"]:style(overflow: auto !important
 
 ! https://github.com/ghostery/broken-page-reports/issues/361
 plex.tv##.cookie-consent.container-standard
+
+! https://github.com/ghostery/broken-page-reports/issues/147
+sat1.de##cmp-banner
