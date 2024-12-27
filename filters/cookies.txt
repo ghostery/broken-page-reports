@@ -318,7 +318,12 @@ suburbanjunglegroup.com##body>div[consent-skip-blocker]
 suburbanjunglegroup.com##html[style^="overflow"],body[style^="overflow"]:style(overflow: auto !important;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/361
+! desktop
 plex.tv##.cookie-consent.container-standard
+! mobile
+plex.tv##html.remodal-is-locked:style(overflow: auto !important)
+plex.tv##.remodal-wrapper.remodal-is-opened:has(.cookie-consent)
+plex.tv##.remodal-overlay.remodal-is-opened:has(~.remodal-wrapper.remodal-is-opened>.cookie-consent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/147
 sat1.de##cmp-banner
