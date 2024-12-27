@@ -328,3 +328,6 @@ sat1.de##cmp-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/318
 ohga.it##.gdpr-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/151
+derstandard.at##body[data-pur]>[id^="sp_message_container_"]
