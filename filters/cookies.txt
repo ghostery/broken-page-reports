@@ -89,9 +89,6 @@ fxhome.com##.cookie-container
 ! https://github.com/ghostery/broken-page-reports/issues/273
 flip.bg##[id$="_BV_modal_outer_"]
 
-! https://github.com/ghostery/broken-page-reports/issues/441
-simply-connect.net##.cc-window[aria-label="cookieconsent"]
-
 ! https://github.com/ghostery/broken-page-reports/issues/445
 vinicola.eu###js-cc-banner
 
