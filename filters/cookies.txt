@@ -319,3 +319,6 @@ petvalu.ca##body>div[class^="sc-"].show
 ! https://github.com/ghostery/broken-page-reports/issues/1035
 suburbanjunglegroup.com##body>div[consent-skip-blocker]
 suburbanjunglegroup.com##body[style^="overflow"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/361
+plex.tv##.cookie-consent.container-standard
