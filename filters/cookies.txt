@@ -325,3 +325,6 @@ plex.tv##.cookie-consent.container-standard
 
 ! https://github.com/ghostery/broken-page-reports/issues/147
 sat1.de##cmp-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/318
+ohga.it##.gdpr-modal
