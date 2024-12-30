@@ -89,9 +89,6 @@ fxhome.com##.cookie-container
 ! https://github.com/ghostery/broken-page-reports/issues/273
 flip.bg##[id$="_BV_modal_outer_"]
 
-! https://github.com/ghostery/broken-page-reports/issues/441
-simply-connect.net##.cc-window[aria-label="cookieconsent"]
-
 ! https://github.com/ghostery/broken-page-reports/issues/445
 vinicola.eu###js-cc-banner
 
@@ -315,3 +312,30 @@ www.flender.com###cboxOverlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/1013
 petvalu.ca##body>div[class^="sc-"].show
+
+! https://github.com/ghostery/broken-page-reports/issues/1035
+suburbanjunglegroup.com##body>div[consent-skip-blocker]
+suburbanjunglegroup.com##html[style^="overflow"],body[style^="overflow"]:style(overflow: auto !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/361
+! desktop
+plex.tv##.cookie-consent.container-standard
+! mobile
+plex.tv##html.remodal-is-locked:style(overflow: auto !important)
+plex.tv##.remodal-wrapper.remodal-is-opened:has(.cookie-consent)
+plex.tv##.remodal-overlay.remodal-is-opened:has(~.remodal-wrapper.remodal-is-opened>.cookie-consent)
+
+! https://github.com/ghostery/broken-page-reports/issues/147
+sat1.de##cmp-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/318
+ohga.it##.gdpr-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/151
+derstandard.at##body[data-pur]>[id^="sp_message_container_"]
+
+! https://github.com/ghostery/broken-page-reports/issues/166
+combi.de##.modal--cookie-notice.open
+
+! https://github.com/ghostery/broken-page-reports/issues/172
+lvz.de##[id^="sp_message_container_"]

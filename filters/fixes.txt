@@ -519,7 +519,7 @@ creativebloq.com#@#.sponsored-article:style(display: none !important)
 sport-point-giessen.de##+js(aopw, tarteaucitron)
 
 ! https://github.com/ghostery/broken-page-reports/issues/288
-routerdefaults.org##html:style(overflow: auto;)
+routerdefaults.org##html[style*="overflow"]:style(overflow: auto;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/389
 20min.ch##body:style(overflow: auto !important)

@@ -658,9 +658,6 @@ divelogs.org#@#div.cc-revoke
 divelogs.org#@#.cc-bottom.cc-banner
 divelogs.org#@#.cc-banner
 
-! https://github.com/ghostery/broken-page-reports/issues/166
-combi.de#@#.cookie-notice__content
-
 ! https://github.com/ghostery/broken-page-reports/issues/416
 ! https://github.com/duckduckgo/autoconsent/pull/319
 ! Enables the use of autoconsent
