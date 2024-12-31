@@ -280,6 +280,10 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://15min.lt/
 ! ... type=xhr
 ||rehabilitatereason.com^
+! >>> url=https://gigkarma.com/a
+! ... source=https://usatoday.com/
+! ... type=xhr
+||gigkarma.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
