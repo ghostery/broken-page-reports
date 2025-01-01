@@ -343,3 +343,6 @@ combi.de##.modal--cookie-notice.open
 
 ! https://github.com/ghostery/broken-page-reports/issues/172
 lvz.de##[id^="sp_message_container_"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1053
+coastcapitalsavings.com##div.cookies-disclaimer
