@@ -343,3 +343,8 @@ combi.de##.modal--cookie-notice.open
 
 ! https://github.com/ghostery/broken-page-reports/issues/172
 lvz.de##[id^="sp_message_container_"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1051
+!#if env_firefox
+bestbuy.ca###onetrust-consent-sdk
+!#endif
