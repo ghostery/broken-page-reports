@@ -352,3 +352,6 @@ lvz.de##[id^="sp_message_container_"]
 !#if env_firefox
 bestbuy.ca###onetrust-consent-sdk
 !#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/1053
+coastcapitalsavings.com##div.cookies-disclaimer
