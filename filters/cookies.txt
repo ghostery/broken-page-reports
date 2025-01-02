@@ -284,6 +284,10 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://usatoday.com/
 ! ... type=xhr
 ||gigkarma.com^
+! >>> url=https://sayinnovation.com/a
+! ... source=https://usatoday.com/
+! ... type=xhr
+||sayinnovation.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
@@ -343,6 +347,11 @@ combi.de##.modal--cookie-notice.open
 
 ! https://github.com/ghostery/broken-page-reports/issues/172
 lvz.de##[id^="sp_message_container_"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1051
+!#if env_firefox
+bestbuy.ca###onetrust-consent-sdk
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1053
 coastcapitalsavings.com##div.cookies-disclaimer
