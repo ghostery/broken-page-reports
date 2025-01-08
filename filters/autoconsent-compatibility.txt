@@ -800,10 +800,19 @@ alma.be#@#div.cookiebanner
 alma.be#@##cookiebanner-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/841
+! https://github.com/ghostery/broken-page-reports/issues/1065
 ! >>> url=https://privacy-portal-mvwc-cdn.my.onetrust.com/privacy-notice-scripts/otnotice-1.0.min.js
 ! ... source=https://www.leisuretimepassport.com/app/lookup/privacyPolicy
 ! ... type=script
 @@||privacy-portal-mvwc-cdn.my.onetrust.com^
+! >>> url=https://privacyportaltrial-cdn.onetrust.com/privacy-notice-scripts/otnotice-1.0.min.js
+! ... source=https://onetoso.com/SE/otkicks/privacy-policy.html
+! ... type=script
+@@||privacyportaltrial-cdn.onetrust.com^
+! >>> url=https://privacyportaltrial.onetrust.com/consent-embedded-forms/consent-receipt-scripts/OtFormStub.js
+! ... source=https://onetoso.com/SE/otkicks/privacy-policy.html
+! ... type=script
+@@||privacyportaltrial.onetrust.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/878
 ellisaromen.de#@#.cmpwrapper
