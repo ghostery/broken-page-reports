@@ -1102,3 +1102,8 @@ citibank.pl##.CookieStyle
 ! https://github.com/easylist/easylist/issues/20825
 ! https://github.com/ghostery/broken-page-reports/issues/1022
 filen.io#@#.z-50
+
+! https://github.com/ghostery/broken-page-reports/issues/1058
+smsonline.cloud##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
+smsonline.cloud##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
+smsonline.cloud##+js(trusted-suppress-native-method, String.prototype.concat, '"html-load.com"', abort)
