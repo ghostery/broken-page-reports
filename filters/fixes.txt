@@ -1118,7 +1118,7 @@ orange.fr##+js(set, consent.digiteka, 1)
 
 ! https://github.com/ghostery/broken-page-reports/issues/877
 ! https://github.com/ghostery/broken-page-reports/issues/1061
-!#if env_chromium || env_firefox
+!#if env_experimental
 dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
 dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
 dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', abort)
