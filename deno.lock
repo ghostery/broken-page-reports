@@ -5,7 +5,9 @@
     "jsr:@std/expect@*": "1.0.9",
     "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:@ghostery/adblocker@*": "2.3.1",
-    "npm:@types/node@*": "22.5.4"
+    "npm:@types/node@*": "22.5.4",
+    "npm:tldts@*": "6.1.71",
+    "npm:tldts@^6.1.71": "6.1.71"
   },
   "jsr": {
     "@std/assert@1.0.9": {
@@ -80,14 +82,28 @@
     "tldts-core@6.1.67": {
       "integrity": "sha512-12K5O4m3uUW6YM5v45Z7wc6NTSmAYj4Tq3de7eXghZkp879IlfPJrUWeWFwu1FS94U5t2vwETgJ1asu8UGNKVQ=="
     },
+    "tldts-core@6.1.71": {
+      "integrity": "sha512-LRbChn2YRpic1KxY+ldL1pGXN/oVvKfCVufwfVzEQdFYNo39uF7AJa/WXdo+gYO7PTvdfkCPCed6Hkvz/kR7jg=="
+    },
     "tldts-experimental@6.1.67": {
       "integrity": "sha512-M5HZFMmtfxXcTQSTHu4Pn51CJdOK4hFw+y9KCj6bRRNaJRffNJIpTqSLixol+P+0v3NkXYxb1Mm90goJksCSrw==",
       "dependencies": [
-        "tldts-core"
+        "tldts-core@6.1.67"
+      ]
+    },
+    "tldts@6.1.71": {
+      "integrity": "sha512-LQIHmHnuzfZgZWAf2HzL83TIIrD8NhhI0DVxqo9/FdOd4ilec+NTNZOlDZf7EwrTNoutccbsHjvWHYXLAtvxjw==",
+      "dependencies": [
+        "tldts-core@6.1.71"
       ]
     },
     "undici-types@6.19.8": {
       "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
     }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:tldts@^6.1.71"
+    ]
   }
 }
