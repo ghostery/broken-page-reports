@@ -1115,3 +1115,10 @@ filen.io#@#.z-50
 orange.fr##+js(set, consent, {})
 orange.fr##+js(trusted-set, consent.dmpublic, '{"value":"optin"}')
 orange.fr##+js(set, consent.digiteka, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/877
+dogdrip.net##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
+dogdrip.net##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
+dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', prevent)
+dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"style"', prevent)
+dogdrip.net##+js(trusted-suppress-native-method, String.prototype.concat, '"css-load.com"|"undefined"', abort)
