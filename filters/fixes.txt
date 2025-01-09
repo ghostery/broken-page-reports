@@ -1103,19 +1103,6 @@ citibank.pl##.CookieStyle
 ! https://github.com/ghostery/broken-page-reports/issues/1022
 filen.io#@#.z-50
 
-! https://github.com/ghostery/broken-page-reports/issues/1060
-! >>> url=https://sdk.privacy-center.org/sdk/326c6bd191c11b5e1333a693feb3a6027adc6492/modern/sdk.326c6bd191c11b5e1333a693feb3a6027adc6492.js
-! ... source=https://cinema-series.orange.fr/series/toutes-les-actus/une-fille-m-a-tout-a-coup-traite-de-l-interprete-de-nellie-oleson-la-petite-maison-dans-la-prairie-etait-prise-a-partie-par-le-public-de-la-serie-CNT000002gSIq2.html
-! ... type=script
-@@||sdk.privacy-center.org^$script,domain=orange.fr
-! >>> url=https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202408060909
-! ... source=https://cinema-series.orange.fr/series/toutes-les-actus/une-fille-m-a-tout-a-coup-traite-de-l-interprete-de-nellie-oleson-la-petite-maison-dans-la-prairie-etait-prise-a-partie-par-le-public-de-la-serie-CNT000002gSIq2.html
-! ... type=script
-@@||tags.tiqcdn.com/utag/orange/dnu/prod$script,domain=orange.fr
-orange.fr##+js(set, consent, {})
-orange.fr##+js(trusted-set, consent.dmpublic, '{"value":"optin"}')
-orange.fr##+js(set, consent.digiteka, 1)
-
 ! https://github.com/ghostery/broken-page-reports/issues/877
 ! https://github.com/ghostery/broken-page-reports/issues/1061
 !#if env_experimental
