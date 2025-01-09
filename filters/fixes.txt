@@ -1122,5 +1122,8 @@ dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"애드블록
 dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
 dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', abort)
 dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"style"', abort)
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
+! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
+! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 dogdrip.net##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 tvtv.us##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
