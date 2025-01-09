@@ -1129,3 +1129,7 @@ dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"st
 dogdrip.net##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 tvtv.us##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/1069
+utwente.nl#@#+js(trusted-set-cookie, utwente__avgconsent, {"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}, , , domain, utwente.nl)
+utwente.nl##+js(set, utwenteCookies._consent, true)
