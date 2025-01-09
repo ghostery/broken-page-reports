@@ -3,7 +3,10 @@ import { parse } from "npm:tldts";
 
 // Convert decimal notation of ip address into 32 bit unsigned integer
 function addr(decimalNotation: string): number {
-  return decimalNotation.split(".").reduce((state, part, index) => state | (parseInt(part, 10) << ((3 - index) * 8)), 0) >>> 0;
+  return decimalNotation.split(".").reduce(
+    (state, part, index) => state | (parseInt(part, 10) << ((3 - index) * 8)),
+    0,
+  ) >>> 0;
 }
 
 const title = process.argv.slice(2)[0];

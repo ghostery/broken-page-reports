@@ -35,7 +35,7 @@ jobs:
           gh issue comment "${NUMBER}" --body "$(cat <<EOF
           ❌ The issue title is not properly formatted:
           \`\`\`
-          ${VALERR}]
+          ${VALERR}
           \`\`\`
           EOF
           )"
