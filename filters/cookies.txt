@@ -180,11 +180,6 @@ tgcom24.mediaset.it###rti-privacy-banner-id
 ! ... type=script
 ||consentmanager.net^$important,domain=nordbayern.de|next-mobility.de|morgenpost.de|derwesten.de|interspar.at|azerty.nl|l-iz.de|portalsamorzadowy.pl|dev-insider.de|reiseland-brandenburg.de
 
-! A temporal cosmetic fix for privacy-mgmt.com
-! autoconsent rule update is required to fix this
-heute.at##[id^="sp_message_container_"]
-heute.at##body[style^="overflow"]:style(overflow: auto !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/691
 ! >>> url=https://polityka-prywatnosci.tvp.pl/shared/consent_api.php?consent=getPublicVendorList&consentApiVersion=v2
 ! ... source=https://tvpworld.com/
@@ -350,10 +345,13 @@ bestbuy.ca###onetrust-consent-sdk
 ! https://github.com/ghostery/broken-page-reports/issues/1053
 coastcapitalsavings.com##div.cookies-disclaimer
 
+! https://github.com/ghostery/broken-page-reports/issues/684
 ! https://github.com/ghostery/broken-page-reports/issues/151
 ! https://github.com/ghostery/broken-page-reports/issues/172
 derstandard.at##body[data-pur]>[id^="sp_message_container_"]
-lvz.de##[id^="sp_message_container_"]
+heute.at,lvz.de,chip.de##[id^="sp_message_container_"]
+lvz.de,chip.de,derstandard.at##html.sp-message-open>body:style(overflow: auto !important)
+heute.at##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1060
 ! >>> url=https://sdk.privacy-center.org/sdk/326c6bd191c11b5e1333a693feb3a6027adc6492/modern/sdk.326c6bd191c11b5e1333a693feb3a6027adc6492.js
