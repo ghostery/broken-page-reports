@@ -21,7 +21,7 @@ jobs:
           deno install
           {
             echo 'VALERR<<EOF'
-            echo "$(deno run './src/validate-issue-title.ts' "${name}" 2>&1 >/dev/null)"
+            echo "$(deno run './src/validate-issue-title.ts' "${NAME}" 2>&1 >/dev/null)"
             echo EOF
           } >> "$GITHUB_ENV"
       - name: In case of an invalid issue title, comment about the error and label the issue
