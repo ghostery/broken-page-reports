@@ -1126,3 +1126,9 @@ utwente.nl##+js(set, utwenteCookies._consent, true)
 ! ... source=https://www.applovin.com/
 ! ... type=style
 @@||applovin.com^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1074
+! Sponsored search results includes keyword highlights
+!#if env_experimental
+bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
+!#endif
