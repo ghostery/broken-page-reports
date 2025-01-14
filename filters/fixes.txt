@@ -3,9 +3,6 @@
 ! Expires: 1 day
 ! Version: {{version}}
 
-! ad: wiwo.de
-wiwo.de##.c-sticky-footer
-
 ! Unbreak images on meridian-audio.com
 ! The following filter from easylist: 160x600.jpg| breaks first-party images
 ! This filter seems fairly aggressive but we make an exception only for this
