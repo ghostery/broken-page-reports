@@ -1115,6 +1115,7 @@ dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"st
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 dogdrip.net##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 tvtv.us##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+tvtv.us##+js(aopr, eval)
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1069
