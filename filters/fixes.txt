@@ -554,14 +554,18 @@ diroots.com##.cli-modal-backdrop.cli-show
 vav.at##.cookies-hoverlay
 vav.at##body:style(overflow-y: auto !important; position: static !important;)
 
-! https://github.com/ghostery/broken-page-reports/issues/435, safari
+! https://github.com/ghostery/broken-page-reports/issues/435
+!#if env_safari
 imusic.de##html.force--consent.show--consent:style(overflow-y: auto !important;)
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/437
 mrowka.com.pl##.cookies-glass
 
-! https://github.com/ghostery/broken-page-reports/issues/243, safari
+! https://github.com/ghostery/broken-page-reports/issues/243
+!#if env_safari
 klinik-am-ring.de##body.cookiebanner-body::after:style(background: transparent !important;)
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/442
 ! anti-adblock warning
@@ -982,9 +986,9 @@ docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-in
 
 ! https://github.com/ghostery/broken-page-reports/issues/842
 ! https://github.com/ghostery/broken-page-reports/issues/840
-! A possible safe workaround for Safari specific issues
-pravda.com.ua##iframe[src="about:blank"]
-motorradonline.de##iframe[src="about:blank"]
+!#if env_safari
+motorradonline.de,pravda.com.ua##iframe[src="about:blank"]
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/290
 firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
@@ -1103,16 +1107,18 @@ filen.io#@#.z-50
 ! https://github.com/ghostery/broken-page-reports/issues/877
 ! https://github.com/ghostery/broken-page-reports/issues/1061
 !#if env_experimental
-dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
-dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
-dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', abort)
-dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"style"', abort)
+!#if env_safari
+dogdrip.net,tvtv.us#@#+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
+dogdrip.net,tvtv.us#@#+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
+dogdrip.net#@#+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', abort)
+dogdrip.net#@#+js(trusted-suppress-native-method, document.querySelectorAll, '"style"', abort)
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
-dogdrip.net##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
-tvtv.us##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-tvtv.us##+js(aopr, eval)
+dogdrip.net#@#+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
+tvtv.us#@#+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+!#endif
+tvtv.us#@#+js(aopr, eval)
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1069
