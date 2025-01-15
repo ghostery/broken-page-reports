@@ -1136,3 +1136,7 @@ utwente.nl##+js(set, utwenteCookies._consent, true)
 !#if env_experimental
 bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
 !#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/1081
+wnd.com#@#.code-block
+wnd.com##.code-block:not(.code-block-14)
