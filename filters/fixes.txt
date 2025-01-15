@@ -1159,3 +1159,9 @@ pinayflix.gg,dood.sh##+js(nostif, console.clear)
 ! ... source=https://sitecore.marcelgruber.ca/posts/onetrust-gtm-tag-custom-cookie-settings-button
 ! ... type=xhr
 @@/onetrust
+
+! https://github.com/ghostery/broken-page-reports/issues/968
+lk1.supremejav.com##+js(nosiif, clearInterval(intv))
+emturbovid.com##+js(aopr, frameElement.hasAttribute)
+emturbovid.com##+js(nostif, parentNode.removeChild, 100)
+emturbovid.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, 'repl:/sandbox/\~/')
