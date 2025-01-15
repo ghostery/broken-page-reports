@@ -1141,7 +1141,7 @@ bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
 wnd.com#@#.code-block
 wnd.com##.code-block:not(.code-block-14)
 
-! https://github.com/ghostery/broken-page-reports/issues/1048
+! https://github.com/ghostery/broken-page-reports/issues/1048 nsfw
 ! >>> url=https://regardviolas.shop/a
 ! ... source=https://pinayflix.gg/
 ! ... type=script
