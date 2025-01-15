@@ -801,18 +801,30 @@ alma.be#@##cookiebanner-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/841
 ! https://github.com/ghostery/broken-page-reports/issues/1065
-! >>> url=https://privacy-portal-mvwc-cdn.my.onetrust.com/privacy-notice-scripts/otnotice-1.0.min.js
-! ... source=https://www.leisuretimepassport.com/app/lookup/privacyPolicy
+! -- Watchlist for OneTrust:
+! * privacy-portal-mvwc-cdn.my.onetrust.com
+! * privacyportaltrial-cdn.onetrust.com
+! * privacyportaltrial.onetrust.com
+! * privacyportal-cdn.onetrust.com
+! * privacyportalde-cdn.onetrust.com
+! * privacyportal-eu-cdn.onetrust.com
+! * privacyportal-uk-cdn.onetrust.com
+! * privacyportal-in-cdn.onetrust.com
+! * privacyportal-br-cdn.onetrust.com
+! -- refs https://cli.shodan.io/ `shodan domain onetrust.com`
+! -- refs https://publicwww.com/websites/%22-cdn.onetrust.com%22
+! >>> url=https://privacyportal-cdn.onetrust.com/79ba7c84-ebc2-4740-8d11-bf1cc4501e59/privacy-notices/dc0acc4b-90a8-44dc-b1ec-bd9b0d0068e1.json
+! ... source=https://www.redventures.com/legal/cookie-policy
+! ... type=xhr
+@@||onetrust.com/*/*.json$3p,xhr
+! >>> url=https://privacyportalde-cdn.onetrust.com/privacy-notice-scripts/otnotice-1.0.min.js
+! ... source=https://www.mondelezinternational.com/privacy-policy/
 ! ... type=script
-@@||privacy-portal-mvwc-cdn.my.onetrust.com^
-! >>> url=https://privacyportaltrial-cdn.onetrust.com/privacy-notice-scripts/otnotice-1.0.min.js
-! ... source=https://onetoso.com/SE/otkicks/privacy-policy.html
-! ... type=script
-@@||privacyportaltrial-cdn.onetrust.com^
-! >>> url=https://privacyportaltrial.onetrust.com/consent-embedded-forms/consent-receipt-scripts/OtFormStub.js
-! ... source=https://onetoso.com/SE/otkicks/privacy-policy.html
-! ... type=script
-@@||privacyportaltrial.onetrust.com^
+@@||onetrust.com/privacy-notice-scripts/otnotice$3p,script
+! >>> url=https://privacyportalde-cdn.onetrust.com/privacy-notice-scripts/css/otnotice-core.css
+! ... source=https://www.mondelezinternational.com/privacy-policy/
+! ... type=css
+@@||onetrust.com/privacy-notice-scripts/css/otnotice$3p,css
 
 ! https://github.com/ghostery/broken-page-reports/issues/878
 ellisaromen.de#@#.cmpwrapper
