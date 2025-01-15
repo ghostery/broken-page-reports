@@ -369,3 +369,6 @@ heute.at##body[style^="overflow"]:style(overflow: auto !important)
 orange.fr##+js(set, consent, {})
 orange.fr##+js(trusted-set, consent.dmpublic, '{"value":"optin"}')
 orange.fr##+js(set, consent.digiteka, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1077
+changiairport.com##.cmp-experiencefragment--cookie
