@@ -1140,3 +1140,16 @@ bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
 ! https://github.com/ghostery/broken-page-reports/issues/1081
 wnd.com#@#.code-block
 wnd.com##.code-block:not(.code-block-14)
+
+! https://github.com/ghostery/broken-page-reports/issues/1048
+! >>> url=https://regardviolas.shop/a
+! ... source=https://pinayflix.gg/
+! ... type=script
+||regardviolas.shop^$redirect=empty
+! >>> url=https://blearspellaea.shop/a
+! ... source=https://pinayflix.gg/
+! ... type=script
+||blearspellaea.shop^$redirect=empty
+dood.sh##+js(trusted-supress-native-method, document.getElementsByClassName, '"adsbox"', abort)
+pinayflix.gg,dood.sh##+js(set, console.clear, noopFunc)
+pinayflix.gg,dood.sh##+js(nostif, console.clear)
