@@ -286,7 +286,7 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! >>> url=https://feedten.com/a
 ! ... source=https://usatoday.com/
 ! ... type=xhr
-||sayinnovation.com^
+||feedten.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
