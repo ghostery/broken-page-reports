@@ -3,9 +3,6 @@
 ! Expires: 1 day
 ! Version: {{version}}
 
-! ad: wiwo.de
-wiwo.de##.c-sticky-footer
-
 ! Unbreak images on meridian-audio.com
 ! The following filter from easylist: 160x600.jpg| breaks first-party images
 ! This filter seems fairly aggressive but we make an exception only for this
@@ -557,14 +554,18 @@ diroots.com##.cli-modal-backdrop.cli-show
 vav.at##.cookies-hoverlay
 vav.at##body:style(overflow-y: auto !important; position: static !important;)
 
-! https://github.com/ghostery/broken-page-reports/issues/435, safari
+! https://github.com/ghostery/broken-page-reports/issues/435
+!#if env_safari
 imusic.de##html.force--consent.show--consent:style(overflow-y: auto !important;)
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/437
 mrowka.com.pl##.cookies-glass
 
-! https://github.com/ghostery/broken-page-reports/issues/243, safari
+! https://github.com/ghostery/broken-page-reports/issues/243
+!#if env_safari
 klinik-am-ring.de##body.cookiebanner-body::after:style(background: transparent !important;)
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/442
 ! anti-adblock warning
@@ -985,9 +986,9 @@ docs.spring.io##div[data-micromodal-close]:style(display: block !important; z-in
 
 ! https://github.com/ghostery/broken-page-reports/issues/842
 ! https://github.com/ghostery/broken-page-reports/issues/840
-! A possible safe workaround for Safari specific issues
-pravda.com.ua##iframe[src="about:blank"]
-motorradonline.de##iframe[src="about:blank"]
+!#if env_safari
+motorradonline.de,pravda.com.ua##iframe[src="about:blank"]
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/290
 firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
@@ -1106,6 +1107,7 @@ filen.io#@#.z-50
 ! https://github.com/ghostery/broken-page-reports/issues/877
 ! https://github.com/ghostery/broken-page-reports/issues/1061
 !#if env_experimental
+!#if env_safari
 dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
 dogdrip.net,tvtv.us##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
 dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', abort)
@@ -1116,7 +1118,21 @@ dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"st
 dogdrip.net##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 tvtv.us##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
+tvtv.us##+js(aopr, eval)
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1069
 utwente.nl#@#+js(trusted-set-cookie, utwente__avgconsent, {"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}, , , domain, utwente.nl)
 utwente.nl##+js(set, utwenteCookies._consent, true)
+
+! https://github.com/ghostery/broken-page-reports/issues/1079
+! >>> url=https://www.applovin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2
+! ... source=https://www.applovin.com/
+! ... type=style
+@@||applovin.com^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1074
+! Sponsored search results includes keyword highlights
+!#if env_experimental
+bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
+!#endif
