@@ -1104,22 +1104,6 @@ citibank.pl##.CookieStyle
 ! https://github.com/ghostery/broken-page-reports/issues/1022
 filen.io#@#.z-50
 
-! https://github.com/ghostery/broken-page-reports/issues/877
-! https://github.com/ghostery/broken-page-reports/issues/1061
-!#if env_experimental
-!#if env_safari
-dogdrip.net,tvtv.us,motscroises.fr##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
-dogdrip.net,tvtv.us,motscroises.fr##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
-dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"link"', abort)
-dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"style"', abort)
-! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
-! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
-! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
-dogdrip.net,tvtv.us,motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^(css-load.com|html-load.com)$/"|"undefined"', abort)
-!#endif
-tvtv.us##+js(aopr, eval)
-!#endif
-
 ! https://github.com/ghostery/broken-page-reports/issues/1069
 utwente.nl#@#+js(trusted-set-cookie, utwente__avgconsent, {"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}, , , domain, utwente.nl)
 utwente.nl##+js(set, utwenteCookies._consent, true)
@@ -1129,12 +1113,6 @@ utwente.nl##+js(set, utwenteCookies._consent, true)
 ! ... source=https://www.applovin.com/
 ! ... type=style
 @@||applovin.com^$1p
-
-! https://github.com/ghostery/broken-page-reports/issues/1074
-! Sponsored search results includes keyword highlights
-!#if env_experimental
-bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
-!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1081
 wnd.com#@#.code-block
@@ -1168,12 +1146,3 @@ emturbovid.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, 'repl
 ! https://github.com/ghostery/broken-page-reports/issues/1044
 roaringapps.com##+js(set, Sentry, {})
 roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
-
-! https://github.com/ghostery/broken-page-reports/issues/941
-!#if env_experimental
-twitch.tv##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-maf-ad|X-TTV-MAF-AD)/ghostery/i')
-! >>> url=https://www.twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js?bid=x
-! ... source=https://www.twitch.tv/
-! ... type=script
-||twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js^
-!#endif
