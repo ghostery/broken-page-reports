@@ -23,7 +23,8 @@ dogdrip.net##+js(trusted-suppress-native-method, document.querySelectorAll, '"st
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
-dogdrip.net,tvtv.us,motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^(css-load.com|html-load.com)$/"|"undefined"', abort)
+dogdrip.net,tvtv.us,motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^(css-load.com)$/"|"undefined"', abort)
+dogdrip.net,tvtv.us,motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^(html-load.com)$/"|"undefined"', abort)
 !#endif
 tvtv.us##+js(aopr, eval)
 
