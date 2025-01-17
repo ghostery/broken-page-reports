@@ -1168,3 +1168,12 @@ emturbovid.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, 'repl
 ! https://github.com/ghostery/broken-page-reports/issues/1044
 roaringapps.com##+js(set, Sentry, {})
 roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/941
+!#if env_experimental
+twitch.tv##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-maf-ad|X-TTV-MAF-AD)/ghostery/i')
+! >>> url=https://www.twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js?bid=x
+! ... source=https://www.twitch.tv/
+! ... type=script
+||twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js^
+!#endif
