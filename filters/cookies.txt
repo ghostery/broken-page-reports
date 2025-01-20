@@ -372,3 +372,6 @@ orange.fr##+js(set, consent.digiteka, 1)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1077
 changiairport.com##.cmp-experiencefragment--cookie
+
+! https://github.com/ghostery/broken-page-reports/issues/1087
+bandcamp.com###cookie-control
