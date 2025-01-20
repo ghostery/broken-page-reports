@@ -94,3 +94,9 @@
 ! ... source=about:blank
 ! ... type=script
 ||popunderjs.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/664
+! >>> url=http://www.solopornoitaliani.it/
+! ... source=about:blank
+! ... type=script
+||solopornoitaliani.it^
