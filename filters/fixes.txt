@@ -1152,3 +1152,7 @@ frame.work##html[style^="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/408
 wp.pl##+js(trusted-suppress-native-method, Object.entries, '"impression"', abort)
+
+! https://github.com/ghostery/broken-page-reports/issues/1078
+manhuatop.com##+js(nostif, log, 500)
+manhuatop.com##+js(aopr, console.log)
