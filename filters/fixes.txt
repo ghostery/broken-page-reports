@@ -1149,3 +1149,6 @@ roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1032
 frame.work##html[style^="overflow: hidden"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/408
+wp.pl##+js(trusted-suppress-native-method, Object.entries, '"impression"', abort)
