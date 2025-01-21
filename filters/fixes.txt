@@ -1163,3 +1163,14 @@ barmer.de##body.body-no-scroll:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/811
 vidmoly.to##.custom-overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/941
+twitch.tv##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-maf-ad|X-TTV-MAF-AD)/ghostery/i')
+! >>> url=https://www.twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js?bid=x
+! ... source=https://www.twitch.tv/
+! ... type=script
+||twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1074
+! Sponsored search results includes keyword highlights
+bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
