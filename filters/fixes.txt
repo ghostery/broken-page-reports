@@ -1178,3 +1178,12 @@ bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
 ! https://github.com/ghostery/broken-page-reports/issues/1090
 ! https://github.com/yous/YousList/issues/584
 acmicpc.net##.main-slider-ad
+
+! https://github.com/ghostery/broken-page-reports/issues/1073
+! Investigate why the following filters are not effective:
+! - wnyc.org##+js(trusted-replace-fetch-response, '/awCollectionId=[a-zA-Z0-9-]+&?/', '', api.wnyc.org)
+! - wnyc.org##+js(trusted-replace-xhr-response, '/awCollectionId=[a-zA-Z0-9-]+&?/', '', api.wnyc.org)
+! >>> url=https://mgln.ai/e/14/pdst.fm/e/dts.podtrac.com/pts/redirect.mp3/waaa.wnyc.org/9ad3f75f-0bb4-4437-bf95-5e4140741c91/episodes/609ce540-4976-4dfe-bbb6-461387247b26/audio/128/default.mp3?aid=rss_feed&awCollectionId=9ad3f75f-0bb4-4437-bf95-5e4140741c91&awEpisodeId=609ce540-4976-4dfe-bbb6-461387247b26&feed=C8a1jmw4&nyprBrowserId=73cd5d73a08a440
+! ... source=https://www.wnyc.org/story/meta-prepares-for-trump-20/
+! ... type=media
+@@||mgln.ai$media,domain=wnyc.org
