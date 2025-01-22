@@ -369,3 +369,6 @@ changiairport.com##.cmp-experiencefragment--cookie
 
 ! https://github.com/ghostery/broken-page-reports/issues/1087
 bandcamp.com###cookie-control
+
+! https://github.com/ghostery/broken-page-reports/issues/1072
+account.msi.com###ccc
