@@ -372,3 +372,10 @@ bandcamp.com###cookie-control
 
 ! https://github.com/ghostery/broken-page-reports/issues/1072
 account.msi.com###ccc
+
+! https://github.com/ghostery/broken-page-reports/issues/1091
+! >>> url=https://consent.up.welt.de/
+! ... source=https://welt.de/
+! ... type=script
+@@||consent.up.welt.de^
+consent.up.welt.de##+js(trusted-click-element, .sp_choice_type_11, 500)
