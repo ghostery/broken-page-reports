@@ -1187,3 +1187,7 @@ acmicpc.net##.main-slider-ad
 ! ... source=https://www.wnyc.org/story/meta-prepares-for-trump-20/
 ! ... type=media
 @@||mgln.ai$media,domain=wnyc.org
+
+! https://github.com/ghostery/broken-page-reports/issues/865
+! There's a little time gap until the cookie consent completely being handled
+independent.co.uk##html.sp-message-open:style(overflow: auto !important)
