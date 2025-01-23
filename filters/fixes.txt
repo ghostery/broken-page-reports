@@ -1191,3 +1191,9 @@ acmicpc.net##.main-slider-ad
 ! https://github.com/ghostery/broken-page-reports/issues/865
 ! There's a little time gap until the cookie consent completely being handled
 independent.co.uk##html.sp-message-open:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1098
+! >>> url=https://console.fyber.com/assets/index-3bf28eb7.js
+! ... source=https://console.fyber.com/login
+! ... type=script
+@@||console.fyber.com^$1p
