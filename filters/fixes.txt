@@ -1194,3 +1194,9 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://console.fyber.com/login
 ! ... type=script
 @@||console.fyber.com^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1100
+! >>> url=https://cdn.rollbar.com/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1
+! ... source=https://rollbar.com/
+! ... type=css
+@@||cdn.rollbar.com^$domain=rollbar.com
