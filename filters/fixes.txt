@@ -1007,9 +1007,6 @@ omni.se##[class^="Feed"] > [class^="TeaserCluster_clusterContainer"][class^="Tea
 ! https://github.com/ghostery/broken-page-reports/issues/889
 #@#.ajs-message
 
-! https://github.com/ghostery/broken-page-reports/issues/904
-ultimedia.com##+js(nano-stb, clearTimeout, 0.01)
-
 ! https://github.com/ghostery/broken-page-reports/issues/899
 citi.com#@#+js(no-xhr-if, cls_report?)
 
