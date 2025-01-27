@@ -116,3 +116,15 @@
 ! ... source=https://app.amplitude.com/login/ORG_ID
 ! ... type=xhr
 ||api-sr.amplitude.com/sessions/v2/track^
+
+! https://github.com/ghostery/broken-page-reports/issues/1111
+! >>> url=https://sl.augurycrampit.com/tbiwFlGtxPNMB/114909
+! ... source=https://footybite.to/
+! ... type=script
+||augurycrampit.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1110
+! >>> url=https://ry.bardeearmsize.com/r3MwFXec8qjRxLISY/93431
+! ... source=https://altadefinizionegratis.info/
+! ... type=script
+||bardeearmsize.com^
