@@ -241,10 +241,6 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! https://github.com/ghostery/broken-page-reports/issues/265
 ! https://github.com/ghostery/broken-page-reports/issues/761
 ! https://github.com/ghostery/broken-page-reports/issues/956
-! >>> url=https://lonelybulb.com/a
-! ... source=https://usatoday.com/
-! ... type=xhr
-||lonelybulb.com^
 ! >>> url=https://regexmail.com/a
 ! ... source=https://cbsnews.com/
 ! ... type=xhr
