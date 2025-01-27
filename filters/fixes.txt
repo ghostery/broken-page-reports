@@ -1200,3 +1200,9 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://rollbar.com/
 ! ... type=css
 @@||cdn.rollbar.com^$domain=rollbar.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1111
+! >>> url=https://sl.augurycrampit.com/tbiwFlGtxPNMB/114909
+! ... source=https://footybite.to/
+! ... type=script
+||augurycrampit.com^
