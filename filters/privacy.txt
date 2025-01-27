@@ -128,3 +128,9 @@
 ! ... source=https://altadefinizionegratis.info/
 ! ... type=script
 ||bardeearmsize.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1109
+! >>> url=https://unsloghpouffes.shop/txILNqU1uCj/10876
+! ... source=https://it.vipleague.im/tennis-schedule-streaming-links
+! ... type=script
+||unsloghpouffes.shop^
