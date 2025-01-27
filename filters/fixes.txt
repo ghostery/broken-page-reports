@@ -1206,3 +1206,9 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://footybite.to/
 ! ... type=script
 ||augurycrampit.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1110
+! >>> url=https://ry.bardeearmsize.com/r3MwFXec8qjRxLISY/93431
+! ... source=https://altadefinizionegratis.info/
+! ... type=script
+||bardeearmsize.com^
