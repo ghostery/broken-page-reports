@@ -245,10 +245,6 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! ... source=https://usatoday.com/
 ! ... type=xhr
 ||gigkarma.com^
-! >>> url=https://sayinnovation.com/a
-! ... source=https://usatoday.com/
-! ... type=xhr
-||sayinnovation.com^
 ! >>> url=https://feedten.com/a
 ! ... source=https://usatoday.com/
 ! ... type=xhr
