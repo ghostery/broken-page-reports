@@ -22,12 +22,6 @@
 ! ... type=xhr
 ||api.bilibili.com/x/vip/ads/materials^$domain=bilibili.com
 
-! https://github.com/ghostery/broken-page-reports/issues/910
-! >>> url=https://yk.nobledtenuous.com/rxnIbsRJdiE8/wQLrB
-! ... source=https://www.braflix.is/
-! ... type=script
-||nobledtenuous.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/918
 ! >>> url=https://srbtztegq.today/245d0b678298d
 ! ... source=https://1337x.to/torrent/6244307/Twisters-2024-2160p-BluRay-x265-10bit-DV-HDR-TrueHD-Atmos-7-1-English-German-Spanish-Chinese-Czech-Polish-r00t-QxR/
