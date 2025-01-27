@@ -382,3 +382,6 @@ consent.up.welt.de##+js(trusted-click-element, .sp_choice_type_11, 500)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1113
 krsystem.pl###cook_cover
+
+! https://github.com/ghostery/broken-page-reports/issues/1105
+mujkaktus.cz##iframe.cocos-gdpr-dialog
