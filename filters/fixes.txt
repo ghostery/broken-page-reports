@@ -80,10 +80,6 @@ spiegel.de#@#+js(aopr, _sp_.mms.startMsg)
 ! ... match=true
 /reklama1.$3p
 
-! https://cliqztix.atlassian.net/browse/GH-1888
-! Ads are shown on the right: https://www.limetorrents.info/home/
-limetorrents.info##[href^="https://track.ultravpn.com/"]
-
 ! https://github.com/ghostery/browser-ios/pull/477
 ! Domain `simply.com` used to belong to an advertising company which was then
 ! bought recently by https://www.unoeuro.com/dk/ It is blocked by this filter
