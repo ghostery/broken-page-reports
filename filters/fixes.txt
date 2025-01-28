@@ -1202,6 +1202,3 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://help.virginatlantic.com/gb/en/ways-to-contact-us.html
 ! ... type=script
 @@||nexus.ensighten.com/vaa/Bootstrap.js^$script,3p
-
-! https://github.com/ghostery/broken-page-reports/issues/1119
-namu.wiki##div[class][style=""]>div>div:has(div:has(div:nth-child(2))):not(:empty):not(:has(a[href="#rfn-1"]))

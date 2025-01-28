@@ -15,4 +15,7 @@ motscroises.fr##+js(trusted-suppress-native-method, confirm, '"adblocker"', abor
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 tvtv.us##+js(aopr, eval)
+
+! https://github.com/ghostery/broken-page-reports/issues/1119
+namu.wiki##div[class][style=""]>div>div:has(div:has(div:nth-child(2))):not(:empty):not(:has(a[href="#rfn-1"]))
 !#endif
