@@ -1196,3 +1196,9 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://rollbar.com/
 ! ... type=css
 @@||cdn.rollbar.com^$domain=rollbar.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1115
+! >>> url=https://nexus.ensighten.com/vaa/Bootstrap.js
+! ... source=https://help.virginatlantic.com/gb/en/ways-to-contact-us.html
+! ... type=script
+@@||nexus.ensighten.com/vaa/Bootstrap.js^$script,3p
