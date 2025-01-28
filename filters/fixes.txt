@@ -1202,3 +1202,13 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://help.virginatlantic.com/gb/en/ways-to-contact-us.html
 ! ... type=script
 @@||nexus.ensighten.com/vaa/Bootstrap.js^$script,3p
+
+! https://github.com/ghostery/broken-page-reports/issues/1121
+! >>> url=https://ipv6.icanhazip.com/
+! ... source=https://www.dnscheck.tools/
+! ... type=xhr
+@@||ipv6.icanhazip.com^$domain=dnscheck.tools
+! >>> url=https://ipv4.icanhazip.com/
+! ... source=https://www.dnscheck.tools/
+! ... type=xhr
+@@||ipv4.icanhazip.com^$domain=dnscheck.tools
