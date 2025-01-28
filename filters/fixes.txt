@@ -1104,7 +1104,7 @@ utwente.nl##+js(set, utwenteCookies._consent, true)
 ! https://github.com/ghostery/broken-page-reports/issues/1079
 ! >>> url=https://www.applovin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2
 ! ... source=https://www.applovin.com/
-! ... type=style
+! ... type=stylesheet
 @@||applovin.com^$1p
 
 ! https://github.com/ghostery/broken-page-reports/issues/1081
