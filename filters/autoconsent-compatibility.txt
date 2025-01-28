@@ -863,3 +863,9 @@ consent.youtube.com#@#[data-p*="/consent.youtube.com"]:has(button[jsname="tWT92d
 ! https://github.com/ghostery/broken-page-reports/issues/1040
 mediamarkt.*#@##mms-consent-portal-container:style(visibility: hidden !important;)
 mediamarkt.*#@#body:has(#mms-consent-portal-container):style(overflow: auto !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/1118
+! >>> url=https://wordpress.com/calypso/evergreen/async-load-calypso-blocks-cookie-banner.3984dfe221d012aa9487.min.css
+! ... source=https://wordpress.com/setup/onboarding/user/goals
+! ... type=css
+@@||wordpress.com/calypso/evergreen/async-load-calypso-blocks-cookie-banner$script,css,1p
