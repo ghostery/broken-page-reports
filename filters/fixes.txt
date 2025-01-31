@@ -369,11 +369,6 @@ webtoons.com#@#.cmpwrapper
 portal.zentrale-pruefstelle-praevention.de##.v-modal
 portal.zentrale-pruefstelle-praevention.de##.el-drawer__wrapper
 
-! Unbreak google.com
-! https://github.com/ghostery/ghostery-extension/issues/1206
-youtube.com#@#+js(trusted-set-cookie, SOCS, CAESEwgDEgk1MjE4NjcxMTIaAmVuIAEaBgiAl7ihBg, 1year, , reload, 1)
-youtube.com#@#+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1)
-
 ! https://github.com/ghostery/broken-page-reports/issues/328
 www.pistonheads.com###leaderBoard
 
@@ -632,9 +627,6 @@ dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 ! ... source=https://www.pocket-lint.com/
 ! ... type=script
 @@whimsicalcanyon.com/bundles$3p,script
-
-! Fix youtube.com - filter was applied due to missing preprocessor functionality
-youtube.com#@#+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
 
 ! Fix google consent - https://github.com/ghostery/broken-page-reports/issues/538
 consent.google.*#@#[data-p*="/consent.google."]
