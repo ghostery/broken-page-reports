@@ -318,9 +318,10 @@ coastcapitalsavings.com##div.cookies-disclaimer
 ! https://github.com/ghostery/broken-page-reports/issues/684
 ! https://github.com/ghostery/broken-page-reports/issues/151
 ! https://github.com/ghostery/broken-page-reports/issues/172
+! https://github.com/ghostery/broken-page-reports/issues/1127
 derstandard.at##body[data-pur]>[id^="sp_message_container_"]
 heute.at,lvz.de,chip.de##[id^="sp_message_container_"]
-lvz.de,chip.de,derstandard.at##html.sp-message-open>body:style(overflow: auto !important)
+lvz.de,chip.de,derstandard.at,vg.no,e24.no##html.sp-message-open>body:style(overflow: auto !important)
 heute.at##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1060
