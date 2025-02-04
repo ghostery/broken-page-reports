@@ -1204,3 +1204,6 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://www.dnscheck.tools/
 ! ... type=xhr
 @@||ipv4.icanhazip.com^$domain=dnscheck.tools
+
+! https://github.com/ghostery/broken-page-reports/issues/1137
+aniwatchtv.to##.pizza.pizza-x
