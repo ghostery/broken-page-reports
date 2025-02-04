@@ -1207,3 +1207,9 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1137
 aniwatchtv.to##.pizza.pizza-x
+
+! https://github.com/ghostery/broken-page-reports/issues/1134
+! >>> url=https://cam.start.canon/en/js/gtag.js
+! ... source=https://cam.start.canon/en/C013/manual/html/UG-04_Shooting-1_0160.html
+! ... type=script
+||cam.start.canon/en/js/gtag.js^$1p,redirect=noopjs
