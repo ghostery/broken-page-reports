@@ -369,11 +369,6 @@ webtoons.com#@#.cmpwrapper
 portal.zentrale-pruefstelle-praevention.de##.v-modal
 portal.zentrale-pruefstelle-praevention.de##.el-drawer__wrapper
 
-! Unbreak google.com
-! https://github.com/ghostery/ghostery-extension/issues/1206
-youtube.com#@#+js(trusted-set-cookie, SOCS, CAESEwgDEgk1MjE4NjcxMTIaAmVuIAEaBgiAl7ihBg, 1year, , reload, 1)
-youtube.com#@#+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1)
-
 ! https://github.com/ghostery/broken-page-reports/issues/328
 www.pistonheads.com###leaderBoard
 
@@ -632,9 +627,6 @@ dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 ! ... source=https://www.pocket-lint.com/
 ! ... type=script
 @@whimsicalcanyon.com/bundles$3p,script
-
-! Fix youtube.com - filter was applied due to missing preprocessor functionality
-youtube.com#@#+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
 
 ! Fix google consent - https://github.com/ghostery/broken-page-reports/issues/538
 consent.google.*#@#[data-p*="/consent.google."]
@@ -1214,3 +1206,12 @@ independent.co.uk##html.sp-message-open:style(overflow: auto !important)
 ! ... source=https://www.dnscheck.tools/
 ! ... type=xhr
 @@||ipv4.icanhazip.com^$domain=dnscheck.tools
+
+! https://github.com/ghostery/broken-page-reports/issues/1137
+aniwatchtv.to##.pizza.pizza-x
+
+! https://github.com/ghostery/broken-page-reports/issues/1134
+! >>> url=https://cam.start.canon/en/js/gtag.js
+! ... source=https://cam.start.canon/en/C013/manual/html/UG-04_Shooting-1_0160.html
+! ... type=script
+||cam.start.canon/en/js/gtag.js^$1p,redirect=noopjs
