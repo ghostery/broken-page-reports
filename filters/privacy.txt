@@ -115,3 +115,17 @@
 ! ... source=https://it.vipleague.im/tennis-schedule-streaming-links
 ! ... type=script
 ||unsloghpouffes.shop^
+
+! https://github.com/ghostery/broken-page-reports/issues/1137
+! >>> url=https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb&url=https%3A%2F%2Faniwatchtv.to%2Fhome
+! ... source=https://aniwatchtv.to/home
+! ... type=script
+||sharethis.com^$3p
+! >>> url=https://nabauxou.net/
+! ... source=https://aniwatchtv.to/home
+! ... type=xhr
+||nabauxou.net^
+! >>> url=https://sapsobughoatch.net/5/6534229
+! ... source=https://aniwatchtv.to/home
+! ... type=script
+||sapsobughoatch.net^
