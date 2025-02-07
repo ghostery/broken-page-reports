@@ -1218,3 +1218,9 @@ aniwatchtv.to##.pizza.pizza-x
 
 ! https://github.com/ghostery/broken-page-reports/issues/1143
 www.yahoo.com##div:has(>div.mb-4[id]>div+style)
+
+! https://github.com/ghostery/broken-page-reports/issues/1133
+! >>> url=https://ams.cdn.arkadiumhosted.com/advertisement/video/4.0/video-ads.js
+! ... source=https://www.dictionary.com/e/crossword/
+! ... type=script
+||ams.cdn.arkadiumhosted.com/advertisement/video/4.0/video-ads.js^$domain=dictionary.com
