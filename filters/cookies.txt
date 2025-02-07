@@ -358,3 +358,6 @@ krsystem.pl###cook_cover
 
 ! https://github.com/ghostery/broken-page-reports/issues/1105
 mujkaktus.cz##iframe.cocos-gdpr-dialog
+
+! https://github.com/ghostery/broken-page-reports/issues/1139
+just-eat.co.uk##pie-cookie-banner
