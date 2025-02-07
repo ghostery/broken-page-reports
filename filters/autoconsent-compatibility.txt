@@ -869,3 +869,6 @@ mediamarkt.*#@#body:has(#mms-consent-portal-container):style(overflow: auto !imp
 ! ... source=https://wordpress.com/setup/onboarding/user/goals
 ! ... type=stylesheet
 @@||wordpress.com/calypso/evergreen/async-load-calypso-blocks-cookie-banner$script,css,1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1146
+pdg.lbl.gov#@##cookiescript_wrapper
