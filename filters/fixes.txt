@@ -1215,3 +1215,22 @@ aniwatchtv.to##.pizza.pizza-x
 ! ... source=https://cam.start.canon/en/C013/manual/html/UG-04_Shooting-1_0160.html
 ! ... type=script
 ||cam.start.canon/en/js/gtag.js^$1p,redirect=noopjs
+
+! https://github.com/ghostery/broken-page-reports/issues/1143
+www.yahoo.com##div:has(>div.mb-4[id]>div+style)
+
+! https://github.com/ghostery/broken-page-reports/issues/1133
+! >>> url=https://ams.cdn.arkadiumhosted.com/advertisement/video/4.0/video-ads.js
+! ... source=https://www.dictionary.com/e/crossword/
+! ... type=script
+||ams.cdn.arkadiumhosted.com/advertisement/video/4.0/video-ads.js^$domain=dictionary.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1149
+! >>> url=https://htlbid.com/v3/alphamediausa.com/opscobid.js
+! ... source=https://alphamediaplayer.com/kxl
+! ... type=script
+||htlbid.com/v3/alphamediausa.com/opscobid.js^$redirect=noopjs,domain=alphamediaplayer.com
+! >>> url=https://imasdk.googleapis.com/js/sdkloader/ima3.js
+! ... source=https://alphamediaplayer.com/kxl
+! ... type=script
+||imasdk.googleapis.com/js/sdkloader/ima3.js^$redirect=noopjs,domain=alphamediaplayer.com

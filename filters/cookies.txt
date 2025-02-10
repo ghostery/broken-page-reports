@@ -321,7 +321,8 @@ coastcapitalsavings.com##div.cookies-disclaimer
 ! https://github.com/ghostery/broken-page-reports/issues/1127
 derstandard.at##body[data-pur]>[id^="sp_message_container_"]
 heute.at,lvz.de,chip.de##[id^="sp_message_container_"]
-lvz.de,chip.de,derstandard.at,vg.no,e24.no##html.sp-message-open>body:style(overflow: auto !important)
+vg.no,e24.no##html.sp-message-open:style(height: 100% !important)
+lvz.de,chip.de,derstandard.at,vg.no,e24.no##html.sp-message-open>body:style(overflow: auto !important; position: static !important)
 heute.at##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1060
@@ -358,3 +359,6 @@ krsystem.pl###cook_cover
 
 ! https://github.com/ghostery/broken-page-reports/issues/1105
 mujkaktus.cz##iframe.cocos-gdpr-dialog
+
+! https://github.com/ghostery/broken-page-reports/issues/1139
+just-eat.co.uk##pie-cookie-banner
