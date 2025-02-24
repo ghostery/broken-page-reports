@@ -1241,3 +1241,7 @@ www.yahoo.com##div:has(>div.mb-4[id]>div+style)
 ! ... source=https://digitalsso.unfcu.org/Apps/#/AppAccessPasscodeSignin/UsernameVerify
 ! ... type=script
 ||googletagmanager.com/gtag/js$script,domain=digitalsso.unfcu.org,important
+
+! https://github.com/ghostery/broken-page-reports/issues/1171
+! detects `#Ad-Topper-Unit > #google_ads_iframe` but solvable without spoofing
+sfchronicle.com###mod-target-div:has(.marketingHeader6)
