@@ -373,3 +373,10 @@ pressandjournal.co.uk##.tp-backdrop
 
 ! https://github.com/ghostery/broken-page-reports/issues/1183
 swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essential":["borlabs-cookie","google-tag-manager"]},"domainPath":"www.swingkitchen.com/en/","expires":"$currentDate$","uid":"anonymous","version":"1"}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1172
+! fixes infinite reload caused by autoconsent by force blocking the cmp
+! >>> url=https://web.cmp.usercentrics.eu/ui/loader.js
+! ... source=https://snyk.io/articles/open-source-security/software-composition-analysis-sca/
+! ... type=script
+||usercentrics.eu^$domain=snyk.io,important
