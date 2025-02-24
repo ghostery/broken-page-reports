@@ -370,3 +370,6 @@ just-eat.co.uk##pie-cookie-banner
 ||buy-eu.piano.io^$domain=pressandjournal.co.uk
 pressandjournal.co.uk##.tp-modal
 pressandjournal.co.uk##.tp-backdrop
+
+! https://github.com/ghostery/broken-page-reports/issues/1183
+swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essential":["borlabs-cookie","google-tag-manager"]},"domainPath":"www.swingkitchen.com/en/","expires":"$currentDate$","uid":"anonymous","version":"1"}')
