@@ -362,3 +362,11 @@ mujkaktus.cz##iframe.cocos-gdpr-dialog
 
 ! https://github.com/ghostery/broken-page-reports/issues/1139
 just-eat.co.uk##pie-cookie-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/1176
+! >>> url=https://buy-eu.piano.io/checkout
+! ... source=https://www.pressandjournal.co.uk/fp/news/aberdeen-aberdeenshire/6696034/dyce-academy-closed-after-overnight-fire/
+! ... type=script
+||buy-eu.piano.io^$domain=pressandjournal.co.uk
+pressandjournal.co.uk##.tp-modal
+pressandjournal.co.uk##.tp-backdrop
