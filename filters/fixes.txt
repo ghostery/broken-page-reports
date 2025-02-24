@@ -1245,3 +1245,13 @@ www.yahoo.com##div:has(>div.mb-4[id]>div+style)
 ! https://github.com/ghostery/broken-page-reports/issues/1171
 ! detects `#Ad-Topper-Unit > #google_ads_iframe` but solvable without spoofing
 sfchronicle.com###mod-target-div:has(.marketingHeader6)
+
+! https://github.com/ghostery/broken-page-reports/issues/1170
+! >>> url=https://verifi.podscribe.com/rss/p/pfx.vpixl.com/2jSe3/prfx.byspotify.com/e/dts.podtrac.com/redirect.mp3/mgln.ai/e/121/injector.simplecastaudio.com/01514e65-f508-4e0c-99d9-aad07cea61ff/episodes/5f0a09a3-e020-4eda-acfa-44f467850929/audio/128/default.mp3?aid=rss_feed&awCollectionId=01514e65-f508-4e0c-99d9-aad07cea61ff&awEpisodeId=5f0a09a3-e020-4eda-acfa-44f467850929&feed=C0fPpQ64
+! ... source=https://podcasts.apple.com/us/podcast/daily-wire-backstage-live-at-cpac-the-fight-the/id1047335260?i=1000694564564
+! ... type=media
+@@||verifi.podscribe.com^$media,domain=podcasts.apple.com
+! >>> url=https://mgln.ai/e/121/injector.simplecastaudio.com/01514e65-f508-4e0c-99d9-aad07cea61ff/episodes/9d38019a-b3fc-4a0d-9e02-c14012ef3fde/audio/128/default.mp3?aid=rss_feed&awCollectionId=01514e65-f508-4e0c-99d9-aad07cea61ff&awEpisodeId=9d38019a-b3fc-4a0d-9e02-c14012ef3fde&feed=C0fPpQ64
+! ... source=https://podcasts.apple.com/us/podcast/daily-wire-backstage-live-at-cpac-the-fight-the/id1047335260?i=1000694564564
+! ... type=media
+@@||mgln.ai^$media,domain=podcasts.apple.com
