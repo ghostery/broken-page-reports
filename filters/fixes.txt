@@ -1255,3 +1255,7 @@ sfchronicle.com###mod-target-div:has(.marketingHeader6)
 ! ... source=https://podcasts.apple.com/us/podcast/daily-wire-backstage-live-at-cpac-the-fight-the/id1047335260?i=1000694564564
 ! ... type=media
 @@||mgln.ai^$media,domain=podcasts.apple.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1187
+www.espn.com.au##.Ad
+www.espn.com.au##.sponsored-content
