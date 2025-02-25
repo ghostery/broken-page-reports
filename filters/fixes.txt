@@ -1259,3 +1259,13 @@ sfchronicle.com###mod-target-div:has(.marketingHeader6)
 ! https://github.com/ghostery/broken-page-reports/issues/1187
 www.espn.com.au##.Ad
 www.espn.com.au##.sponsored-content
+
+! https://github.com/ghostery/broken-page-reports/issues/1186
+! >>> url=https://tweakers.net/i/zombie_KnYdtD_14fzphbnamlajpig=/1280x400/filters:max_bytes(102400):strip_icc()/i/1451981068
+! ... source=https://tweakers.net/
+! ... type=media
+||tweakers.net/i/*/i/*
+! >>> url=https://tweakers.net/i/sovwJzzbFLpyCmf3akEwJR9yzpU=/704x216/filters:max_bytes(102400):strip_icc():strip_exif()/i/2007273506.jpeg?f=fpa_thumb
+! ... source=https://tweakers.net/
+! ... type=media
+@@||tweakers.net/i/*/i/*.*
