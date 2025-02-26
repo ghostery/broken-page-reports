@@ -9,6 +9,7 @@ ghostery.com##.ds-footer-copyrights
 ! https://github.com/ghostery/broken-page-reports/issues/1047
 ! https://github.com/ghostery/broken-page-reports/issues/1180
 ! https://github.com/ghostery/broken-page-reports/issues/1184
+! https://github.com/ghostery/broken-page-reports/issues/1188
 motscroises.fr,slashdot.org,winfuture.de##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
 motscroises.fr,slashdot.org,winfuture.de##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
@@ -24,6 +25,9 @@ tvtv.us##+js(aopr, eval)
 ! ... source=https://slashdot.org/
 ! ... type=script
 ||as.slashdot.org^$script
+!#if env_safari
+onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1119
 namu.wiki##div[class][style=""]>div>div:has(div>div:nth-child(2)):not(:empty):not(:has(a[href="#rfn-1"]))
