@@ -385,3 +385,6 @@ swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essenti
 ! https://github.com/ghostery/broken-page-reports/issues/1192
 reflecta.network##.cookies-js
 reflecta.network##.cookieNotice
+
+! https://github.com/ghostery/broken-page-reports/issues/1190
+freepikdownloader.com##div#gdpr-cookie-message
