@@ -1269,3 +1269,9 @@ www.espn.com.au##.sponsored-content
 ! ... source=https://tweakers.net/
 ! ... type=media
 @@||tweakers.net/i/*/i/*.*
+
+! https://github.com/ghostery/broken-page-reports/issues/1166
+! >>> url=https://appsha-pnd.ctengine.io/js/script.js
+! ... source=https://yannik.biz/index.php
+! ... type=script
+||appsha-pnd.ctengine.io/js/script.js^$redirect=noopjs,domain=yannik.biz
