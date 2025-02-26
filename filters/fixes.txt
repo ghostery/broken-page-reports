@@ -1255,3 +1255,35 @@ sfchronicle.com###mod-target-div:has(.marketingHeader6)
 ! ... source=https://podcasts.apple.com/us/podcast/daily-wire-backstage-live-at-cpac-the-fight-the/id1047335260?i=1000694564564
 ! ... type=media
 @@||mgln.ai^$media,domain=podcasts.apple.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1187
+www.espn.com.au##.Ad
+www.espn.com.au##.sponsored-content
+
+! https://github.com/ghostery/broken-page-reports/issues/1186
+! >>> url=https://tweakers.net/i/zombie_KnYdtD_14fzphbnamlajpig=/1280x400/filters:max_bytes(102400):strip_icc()/i/1451981068
+! ... source=https://tweakers.net/
+! ... type=media
+||tweakers.net/i/*/i/*
+! >>> url=https://tweakers.net/i/sovwJzzbFLpyCmf3akEwJR9yzpU=/704x216/filters:max_bytes(102400):strip_icc():strip_exif()/i/2007273506.jpeg?f=fpa_thumb
+! ... source=https://tweakers.net/
+! ... type=media
+@@||tweakers.net/i/*/i/*.*
+
+! https://github.com/ghostery/broken-page-reports/issues/1166
+! >>> url=https://appsha-pnd.ctengine.io/js/script.js
+! ... source=https://yannik.biz/index.php
+! ... type=script
+||appsha-pnd.ctengine.io/js/script.js^$redirect=noopjs,domain=yannik.biz
+
+! https://github.com/ghostery/broken-page-reports/issues/1162
+! >>> url=https://v1.audience.io/api/v3/user/emailLogin/
+! ... source=https://campaign.aptivada.com/instant/1738829?embed=true&parent=https%253A%252F%252Fnews.iheart.com%252Fpromotions%252Fstella-rosa-100k-grocery-giveaway-1738829%252F
+! ... type=xhr
+@@||v1.audience.io/api/v3/user$xhr,domain=campaign.aptivada.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1158
+! >>> url=https://api.parsely.com/v2/related?apikey=theverge.com&uuid=parsely-default&limit=6&respect_empty_results=1&pub_date_start=2025-02-23T05%3A07%3A35.172Z
+! ... source=https://www.theverge.com/
+! ... type=xhr
+@@||api.parsely.com/v2/related^

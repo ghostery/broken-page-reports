@@ -801,6 +801,7 @@ alma.be#@##cookiebanner-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/841
 ! https://github.com/ghostery/broken-page-reports/issues/1065
+! https://github.com/ghostery/broken-page-reports/issues/1193
 ! -- Watchlist for OneTrust:
 ! * privacy-portal-mvwc-cdn.my.onetrust.com
 ! * privacyportaltrial-cdn.onetrust.com
@@ -826,6 +827,10 @@ alma.be#@##cookiebanner-overlay
 ! ... type=css
 ! ... match=false
 @@||onetrust.com/privacy-notice-scripts/css/otnotice$3p,css
+! >>> url=https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
+! ... source=https://www.globalblue.com/en/refund-points-map
+! ... type=xhr
+@@||geolocation.onetrust.com/cookieconsentpub/v1/geo/location^$3p,xhr
 
 ! https://github.com/ghostery/broken-page-reports/issues/878
 ellisaromen.de#@#.cmpwrapper
