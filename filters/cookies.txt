@@ -381,3 +381,7 @@ swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essenti
 ! ... source=https://snyk.io/articles/open-source-security/software-composition-analysis-sca/
 ! ... type=script
 ||usercentrics.eu^$domain=snyk.io|app.spendesk.com,important
+
+! https://github.com/ghostery/broken-page-reports/issues/1192
+reflecta.network##.cookies-js
+reflecta.network##.cookieNotice
