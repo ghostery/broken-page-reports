@@ -388,3 +388,6 @@ reflecta.network##.cookieNotice
 
 ! https://github.com/ghostery/broken-page-reports/issues/1190
 freepikdownloader.com##div#gdpr-cookie-message
+
+! https://github.com/ghostery/broken-page-reports/issues/1160
+techdirt.com###eu-cookie-law
