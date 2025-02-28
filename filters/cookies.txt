@@ -391,3 +391,9 @@ freepikdownloader.com##div#gdpr-cookie-message
 
 ! https://github.com/ghostery/broken-page-reports/issues/1160
 techdirt.com###eu-cookie-law
+
+! https://github.com/ghostery/broken-page-reports/issues/1198
+! >>> url=https://consorsbank.de/web-analytics/v.18.0.2/tag-managment-system/retail/privacy_v2_6.js
+! ... source=https://www.consorsbank.de/web/Mein-Konto-und-Depot/Konto/Umsaetze-und-Zahlungsverkehr/Umsaetze
+! ... type=script
+||consorsbank.de/web-analytics/v.18.0.2/tag-managment-system/retail/privacy_v2_6.js^
