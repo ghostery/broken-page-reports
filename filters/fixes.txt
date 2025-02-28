@@ -1287,3 +1287,6 @@ www.espn.com.au##.sponsored-content
 ! ... source=https://www.theverge.com/
 ! ... type=xhr
 @@||api.parsely.com/v2/related^
+
+! https://github.com/ghostery/broken-page-reports/issues/1177
+allocine.fr##+js(set-local-storage-item, free4ever, true)
