@@ -125,10 +125,6 @@
 ! ... source=https://aniwatchtv.to/home
 ! ... type=xhr
 ||nabauxou.net^
-! >>> url=https://sapsobughoatch.net/5/6534229
-! ... source=https://aniwatchtv.to/home
-! ... type=script
-||sapsobughoatch.net^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1200
 ! >>> url=https://esputnik.com.ua/repository/applications/commons/hidden.png
