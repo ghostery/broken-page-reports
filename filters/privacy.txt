@@ -104,12 +104,6 @@
 ! ... type=script
 ||augurycrampit.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1110
-! >>> url=https://ry.bardeearmsize.com/r3MwFXec8qjRxLISY/93431
-! ... source=https://altadefinizionegratis.info/
-! ... type=script
-||bardeearmsize.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1137
 ! >>> url=https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb&url=https%3A%2F%2Faniwatchtv.to%2Fhome
 ! ... source=https://aniwatchtv.to/home
