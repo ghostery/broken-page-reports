@@ -121,10 +121,6 @@
 ! ... source=https://aniwatchtv.to/home
 ! ... type=script
 ||sharethis.com^$3p
-! >>> url=https://nabauxou.net/
-! ... source=https://aniwatchtv.to/home
-! ... type=xhr
-||nabauxou.net^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1200
 ! >>> url=https://esputnik.com.ua/repository/applications/commons/hidden.png
