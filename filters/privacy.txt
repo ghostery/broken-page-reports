@@ -27,10 +27,6 @@
 ! ... source=https://1337x.to/torrent/6244307/Twisters-2024-2160p-BluRay-x265-10bit-DV-HDR-TrueHD-Atmos-7-1-English-German-Spanish-Chinese-Czech-Polish-r00t-QxR/
 ! ... type=xhr
 ||srbtztegq.today^
-! >>> url=https://r.izeeto.com/nPp-q5A7OQqUOCwUL5LkTMpeq5A8ScNkIuUFuZNZYhpPYhq8TMpQq5A80g1kfgLohMBfTDLbIt7rItWbIc7rYhHmfZNQfPU5_tJfTtNfTJB4YCYLNJNLvtRZvS16ylwJ05x2L2rWIPYwfCkPL5HZIQ35ISHZyCI7LcNZylqQO5-5OZqmLC1-yCuJI5O-LtukOZRHOSq8~iEE
-! ... source=https://1337x.to/torrent/6244307/Twisters-2024-2160p-BluRay-x265-10bit-DV-HDR-TrueHD-Atmos-7-1-English-German-Spanish-Chinese-Czech-Polish-r00t-QxR/
-! ... type=document
-||izeeto.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1019
 ! >>> url=https://tracker.remp-beam.golem.de/track/event
