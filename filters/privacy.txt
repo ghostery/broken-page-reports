@@ -75,3 +75,13 @@
 ! ... source=https://intertop.esclick.me/1WluazZad9Iu46FROj
 ! ... type=image
 ||esputnik.com.ua/repository/applications/commons/hidden.png^
+
+! https://github.com/ghostery/broken-page-reports/issues/1141
+! >>> url=https://cdn.vidsrc.stream/disable-devtool@0.3.6/disable-devtool.min.js#/misdir.js
+! ... source=https://flixbaba.com/tv/1429/attack-on-titan/season/1?e=1&p=1
+! ... type=script
+||cdn.vidsrc.stream/disable-devtool
+! >>> url=https://www.clarity.ms/tag/plmvvqrxwc
+! ... source=https://flixbaba.com/tv/1429/attack-on-titan/season/1?e=1&p=1
+! ... type=script
+||clarity.ms^
