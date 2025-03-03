@@ -32,12 +32,6 @@
 ! ... type=document
 ||izeeto.com^
 
-! (nsfw) https://github.com/ghostery/broken-page-reports/issues/886
-! >>> url=https://lanky-bar.com/
-! ... source=https://www.toongod.org/home/
-! ... type=document
-||lanky-bar.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1019
 ! >>> url=https://tracker.remp-beam.golem.de/track/event
 ! ... source=https://golem.de/
