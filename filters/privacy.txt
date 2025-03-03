@@ -98,12 +98,6 @@
 ! ... type=xhr
 ||api-sr.amplitude.com/sessions/v2/track^
 
-! https://github.com/ghostery/broken-page-reports/issues/1111
-! >>> url=https://sl.augurycrampit.com/tbiwFlGtxPNMB/114909
-! ... source=https://footybite.to/
-! ... type=script
-||augurycrampit.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1137
 ! >>> url=https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb&url=https%3A%2F%2Faniwatchtv.to%2Fhome
 ! ... source=https://aniwatchtv.to/home
