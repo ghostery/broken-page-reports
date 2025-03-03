@@ -1293,3 +1293,6 @@ allocine.fr##+js(set-local-storage-item, free4ever, true)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1206
 bigcharts.marketwatch.com###trading-center>.list--broker
+
+! https://github.com/ghostery/broken-page-reports/issues/1205
+smh.com.au##header>div:has([id^="adspot"])
