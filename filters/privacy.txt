@@ -87,10 +87,6 @@
 ! ... source=https://vidmoly.to/embed-m09sop18m5or.html
 ! ... type=script
 ||organicextentbounds.com^
-! >>> url=https://diagramjawlineunhappy.com/t/9/fret/meow4/2034450/53502250.js
-! ... source=https://vidmoly.to/embed-m09sop18m5or.html
-! ... type=script
-||diagramjawlineunhappy.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1096
 ! >>> url=https://api-sr.amplitude.com/sessions/v2/track?deviceId=
