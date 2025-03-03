@@ -63,10 +63,6 @@
 ||allthekingz.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1078
-! >>> url=https://shameful-leader.com/c.DH9O6gbW2_5ulQSlW/QP9/N/TzMT5lNhDsUyzoOAC/0/1OM_z/kn0/NVT/M/5B
-! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
-! ... type=script
-||shameful-leader.com^
 ! >>> url=https://popunderjs.com/
 ! ... source=about:blank
 ! ... type=script
