@@ -135,3 +135,9 @@
 ! ... source=about:blank
 ! ... type=main_frame
 ||cbe852f4c99aef9d3b7fd.z13.web.core.windows.net^
+
+! https://github.com/ghostery/broken-page-reports/issues/1200
+! >>> url=https://esputnik.com.ua/repository/applications/commons/hidden.png
+! ... source=https://intertop.esclick.me/1WluazZad9Iu46FROj
+! ... type=image
+||esputnik.com.ua/repository/applications/commons/hidden.png^

@@ -1296,3 +1296,9 @@ bigcharts.marketwatch.com###trading-center>.list--broker
 
 ! https://github.com/ghostery/broken-page-reports/issues/1205
 smh.com.au##header>div:has([id^="adspot"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1200
+! >>> url=https://pics.esputnik.com/repository/home/10897/images/msg/2512552/1690804759911.png
+! ... source=https://intertop.esclick.me/1WluazZad9Iu46FROj
+! ... type=image
+@@||pics.esputnik.com^$image,domain=intertop.esclick.me
