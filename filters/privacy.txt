@@ -110,12 +110,6 @@
 ! ... type=script
 ||bardeearmsize.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1109
-! >>> url=https://unsloghpouffes.shop/txILNqU1uCj/10876
-! ... source=https://it.vipleague.im/tennis-schedule-streaming-links
-! ... type=script
-||unsloghpouffes.shop^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1137
 ! >>> url=https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb&url=https%3A%2F%2Faniwatchtv.to%2Fhome
 ! ... source=https://aniwatchtv.to/home
