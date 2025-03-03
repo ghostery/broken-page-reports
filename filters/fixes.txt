@@ -1290,3 +1290,6 @@ www.espn.com.au##.sponsored-content
 
 ! https://github.com/ghostery/broken-page-reports/issues/1177
 allocine.fr##+js(set-local-storage-item, free4ever, true)
+
+! https://github.com/ghostery/broken-page-reports/issues/1206
+bigcharts.marketwatch.com###trading-center>.list--broker
