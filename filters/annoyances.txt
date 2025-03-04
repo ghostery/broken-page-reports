@@ -19,3 +19,6 @@ substack.com#@#+js(trusted-set-cookie, intro_popup_last_hidden_at, $currentDate$
 
 ! https://github.com/ghostery/broken-page-reports/issues/1008
 repubblica.it##gdwc-video-component
+
+! https://github.com/ghostery/broken-page-reports/issues/1218
+wcostream.tv##+js(aopr, Notification.requestPermission)

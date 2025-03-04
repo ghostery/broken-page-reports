@@ -1312,3 +1312,9 @@ $image,redirect-rule=1x1.gif,domain=web.de
 
 ! https://github.com/ghostery/broken-page-reports/issues/1221
 swingkitchen.com##html,body:style(overflow: initial !important; overflow-x: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1218
+! >>> url=https://embed.watchanimesub.net/inc/embed/suv4.js
+! ... source=https://www.wcostream.tv/common-side-effects-episode-1-pilot
+! ... type=script
+@@||embed.watchanimesub.net/inc/embed/suv4.js^
