@@ -91,3 +91,9 @@
 ! ... source=https://xprime.tv/
 ! ... type=script
 ||sorosehottie.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1219
+! >>> url=https://hl.koumyscampana.com/rcoho54CFPkn9/aOkqJ
+! ... source=https://www.bitcine.app/
+! ... type=script
+||koumyscampana.com^
