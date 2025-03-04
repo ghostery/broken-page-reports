@@ -1302,3 +1302,10 @@ smh.com.au##header>div:has([id^="adspot"])
 ! ... source=https://intertop.esclick.me/1WluazZad9Iu46FROj
 ! ... type=image
 @@||pics.esputnik.com^$image,domain=intertop.esclick.me
+
+! https://github.com/ghostery/broken-page-reports/issues/1222
+! problematic: *$image,redirect-rule=1x1.gif,from=web.de
+! >>> url=https://wa.web.de/webde/webde/s?brand=webde&portal=webde&referrer=&pageurl=https%3A%2F%2Fweb.de%2Ffairplay%2F&title=WEB.DE%20fairplay&country=de&ts=1741081618642&screenresolution=2560x1440&viewport=1188x1250&mc=03962207&name=initial
+! ... source=https://web.de/fairplay/
+! ... type=image
+$image,redirect-rule=1x1.gif,domain=web.de
