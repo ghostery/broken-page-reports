@@ -97,3 +97,19 @@
 ! ... source=https://www.bitcine.app/
 ! ... type=script
 ||koumyscampana.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1217
+! Request type of `json` checked but not supported by adblocker yet as of library version 2.5.0
+! Falling back to `script`
+! >>> url=https://mskpwqlppxham.life/a
+! ... source=https://boxingstream.me/showtime-tv-boxing-streams
+! ... type=script
+||mskpwqlppxham.life^
+! >>> url=https://asadirectrestof.com/a
+! ... source=https://boxingstream.me/showtime-tv-boxing-streams
+! ... type=script
+||asadirectrestof.com^
+! >>> url=https://poeuktureukwo.com/popunder.gif
+! ... source=https://boxingstream.me/showtime-tv-boxing-streams
+! ... type=image
+||poeuktureukwo.com^
