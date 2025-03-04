@@ -85,3 +85,37 @@
 ! ... source=https://flixbaba.com/tv/1429/attack-on-titan/season/1?e=1&p=1
 ! ... type=script
 ||clarity.ms^
+
+! https://github.com/ghostery/broken-page-reports/issues/1220
+! >>> url=https://nt.sorosehottie.com/rsqn6y5DN4n/BqXXR
+! ... source=https://xprime.tv/
+! ... type=script
+||sorosehottie.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1219
+! >>> url=https://hl.koumyscampana.com/rcoho54CFPkn9/aOkqJ
+! ... source=https://www.bitcine.app/
+! ... type=script
+||koumyscampana.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1217
+! Request type of `json` checked but not supported by adblocker yet as of library version 2.5.0
+! Falling back to `script`
+! >>> url=https://mskpwqlppxham.life/a
+! ... source=https://boxingstream.me/showtime-tv-boxing-streams
+! ... type=script
+||mskpwqlppxham.life^
+! >>> url=https://asadirectrestof.com/a
+! ... source=https://boxingstream.me/showtime-tv-boxing-streams
+! ... type=script
+||asadirectrestof.com^
+! >>> url=https://poeuktureukwo.com/popunder.gif
+! ... source=https://boxingstream.me/showtime-tv-boxing-streams
+! ... type=image
+||poeuktureukwo.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1214
+! >>> url=https://pix2.services.tvn.pl//_pix2/action/pix?h=player.pl&p=%2Fseriale-online%2C1%2Fdetektywi-odcinki%2C8199614%2Fodcinek-161%2CS01E161%2C11139579&n=stats_not_loaded&ap=device_type%3Ddesktop%26os_browser%3Dchrome%26os_browser_version%3D133_0_0_0%26platform%3Dbrowsers%2Cdesktop%26adbl%3D0%26stats_system%3Dpermutive&l1=no
+! ... source=https://player.pl/seriale-online,1/detektywi-odcinki,8199614/odcinek-161,S01E161,11139579
+! ... type=image
+||pix2.services.tvn.pl^
