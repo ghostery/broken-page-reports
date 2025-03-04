@@ -113,3 +113,9 @@
 ! ... source=https://boxingstream.me/showtime-tv-boxing-streams
 ! ... type=image
 ||poeuktureukwo.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1214
+! >>> url=https://pix2.services.tvn.pl//_pix2/action/pix?h=player.pl&p=%2Fseriale-online%2C1%2Fdetektywi-odcinki%2C8199614%2Fodcinek-161%2CS01E161%2C11139579&n=stats_not_loaded&ap=device_type%3Ddesktop%26os_browser%3Dchrome%26os_browser_version%3D133_0_0_0%26platform%3Dbrowsers%2Cdesktop%26adbl%3D0%26stats_system%3Dpermutive&l1=no
+! ... source=https://player.pl/seriale-online,1/detektywi-odcinki,8199614/odcinek-161,S01E161,11139579
+! ... type=image
+||pix2.services.tvn.pl^
