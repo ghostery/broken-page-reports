@@ -403,3 +403,6 @@ meta.com##div[class]:has(div>div>div[tabindex]>div[style*="--secondary-button-ba
 
 ! https://github.com/ghostery/broken-page-reports/issues/1215
 fable.com##.csm-cookie-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/1233
+beterbed.be##.overlay.cookie-consent__overlay.is-visible

@@ -1318,3 +1318,27 @@ swingkitchen.com##html,body:style(overflow: initial !important; overflow-x: init
 ! ... source=https://www.wcostream.tv/common-side-effects-episode-1-pilot
 ! ... type=script
 @@||embed.watchanimesub.net/inc/embed/suv4.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1235
+sololevelingmangafree.com###sticky-ad
+sololevelingmangafree.com##.popup-container
+! >>> url=https://a.magsrv.com/ad-provider.js
+! ... source=https://www.sololevelingmangafree.com/manga/solo-leveling-chapter-90/index.html
+! ... type=script
+||magsrv.com^
+! >>> url=https://www.sololevelingmangafree.com/donation/donation_popup.js
+! ... source=https://www.sololevelingmangafree.com/manga/solo-leveling-chapter-90/index.html
+! ... type=script
+||sololevelingmangafree.com/donation/donation_popup.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1234
+! >>> url=https://bhliga.com/public/js/dublocker.js?dev=c33d3
+! ... source=https://bhliga.com/
+! ... type=script
+||bhliga.com/public/js/dublocker.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1232
+my-angers.info#@#amp-auto-ads
+
+! https://github.com/ghostery/broken-page-reports/issues/1236
+redensarten-index.de#@##bnnr_u_suchfeld
