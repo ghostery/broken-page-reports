@@ -1336,3 +1336,6 @@ sololevelingmangafree.com##.popup-container
 ! ... source=https://bhliga.com/
 ! ... type=script
 ||bhliga.com/public/js/dublocker.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1232
+my-angers.info#@#amp-auto-ads
