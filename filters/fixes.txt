@@ -1339,3 +1339,6 @@ sololevelingmangafree.com##.popup-container
 
 ! https://github.com/ghostery/broken-page-reports/issues/1232
 my-angers.info#@#amp-auto-ads
+
+! https://github.com/ghostery/broken-page-reports/issues/1236
+redensarten-index.de#@##bnnr_u_suchfeld
