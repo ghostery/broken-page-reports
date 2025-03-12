@@ -1348,3 +1348,6 @@ redensarten-index.de#@##bnnr_u_suchfeld
 ! ... source=https://www.aspi.org.au/
 ! ... type=image
 @@||ad-aspi.s3.ap-southeast-2.amazonaws.com^$image,domain=aspi.org.au
+
+! https://github.com/ghostery/broken-page-reports/issues/1212
+economictimes.indiatimes.com###topAd
