@@ -1342,3 +1342,9 @@ my-angers.info#@#amp-auto-ads
 
 ! https://github.com/ghostery/broken-page-reports/issues/1236
 redensarten-index.de#@##bnnr_u_suchfeld
+
+! https://github.com/ghostery/broken-page-reports/issues/1246
+! >>> url=https://ad-aspi.s3.ap-southeast-2.amazonaws.com/2024-12/2024-12-05%2015_40_13-Australia%20and%20South%20Korea_%20leveraging%20the%20strategic%20potential%20of%20cooperation%20in%20banner%201.png?VersionId=WQtyLbGdN7iDHmb3FktIL.slapqJfpBG
+! ... source=https://www.aspi.org.au/
+! ... type=image
+@@||ad-aspi.s3.ap-southeast-2.amazonaws.com^$image,domain=aspi.org.au
