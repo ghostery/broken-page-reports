@@ -407,3 +407,6 @@ fable.com##.csm-cookie-consent
 
 ! https://github.com/ghostery/broken-page-reports/issues/1233
 beterbed.be##.overlay.cookie-consent__overlay.is-visible
+
+! https://github.com/ghostery/broken-page-reports/issues/1251
+alza.hu##.cookies-info
