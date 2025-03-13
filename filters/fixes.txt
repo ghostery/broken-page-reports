@@ -1352,3 +1352,8 @@ redensarten-index.de#@##bnnr_u_suchfeld
 
 ! https://github.com/ghostery/broken-page-reports/issues/1212
 economictimes.indiatimes.com###topAd
+
+! https://github.com/ghostery/broken-page-reports/issues/1026
+! refs https://github.com/uBlockOrigin/uAssets/issues/13659
+@@||sndcdn.com/assets/*.js^$script,replace=/\{[a-z]\(\d+\)\.shouldBlockScrubbing\(\)\?([a-z])\(window\.document\)/{false?\$1(window.document)/
+@@||sndcdn.com/assets/*.js^$script,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
