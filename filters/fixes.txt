@@ -1355,5 +1355,11 @@ economictimes.indiatimes.com###topAd
 
 ! https://github.com/ghostery/broken-page-reports/issues/1026
 ! refs https://github.com/uBlockOrigin/uAssets/issues/13659
+! >>> url=https://a-v2.sndcdn.com/assets/50-2cc8f090.js
+! ... source=https://soundcloud.com/kodiahr/juice-wrld-legends-dnb-remix
+! ... type=script
 @@||sndcdn.com/assets/*.js^$script,replace=/\{[a-z]\(\d+\)\.shouldBlockScrubbing\(\)\?([a-z])\(window\.document\)/{false?\$1(window.document)/
+! >>> url=https://a-v2.sndcdn.com/assets/50-2cc8f090.js
+! ... source=https://soundcloud.com/kodiahr/juice-wrld-legends-dnb-remix
+! ... type=script
 @@||sndcdn.com/assets/*.js^$script,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
