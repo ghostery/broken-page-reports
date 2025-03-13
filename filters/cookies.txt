@@ -308,9 +308,8 @@ ohga.it##.gdpr-modal
 combi.de##.modal--cookie-notice.open
 
 ! https://github.com/ghostery/broken-page-reports/issues/1051
-!#if env_firefox
+! https://github.com/ghostery/broken-page-reports/issues/1252
 bestbuy.ca###onetrust-consent-sdk
-!#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1053
 coastcapitalsavings.com##div.cookies-disclaimer

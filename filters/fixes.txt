@@ -879,12 +879,13 @@ titantv.com##+js(set, googletag, {})
 @@||signin-ui.costcotravel.com/sso/prod/ui/BuildDefinition/common/analytics.js^$domain=signin.costco.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/751
+! https://github.com/ghostery/broken-page-reports/issues/1252
 ! autoconsent is unable to handle this website due to the tracker script in the buttons
 ! this filter should be removed after the implementation of the redirect filter
 ! >>> url=https://cdn.cookielaw.org/scripttemplates/202406.1.0/otBannerSdk.js
 ! ... source=https://www.realsimple.com/
 ! ... type=script
-||cdn.cookielaw.org^$important,domain=realsimple.com
+||cdn.cookielaw.org^$important,domain=realsimple.com|bestbuy.ca
 realsimple.com###onetrust-consent-sdk
 realsimple.com##html:style(overflow-y: auto !important)
 
