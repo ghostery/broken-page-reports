@@ -409,3 +409,8 @@ beterbed.be##.overlay.cookie-consent__overlay.is-visible
 
 ! https://github.com/ghostery/broken-page-reports/issues/1251
 alza.hu##.cookies-info
+
+! https://github.com/ghostery/broken-page-reports/issues/1260
+!#if env_safari && env_mobile
+flickr.com##+js(trusted-set-cookie, ccc, %7B%22needsConsent%22%3A0%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D)
+!#endif
