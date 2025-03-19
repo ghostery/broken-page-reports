@@ -1382,3 +1382,9 @@ sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1269
 mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1225
+! >>> url=https://html-load.com/loader.min.js
+! ... source=https://www.buzzfeed.com/
+! ... type=script
+||html-load.com^$domain=buzzfeed.com
