@@ -119,3 +119,19 @@
 ! ... source=https://player.pl/seriale-online,1/detektywi-odcinki,8199614/odcinek-161,S01E161,11139579
 ! ... type=image
 ||pix2.services.tvn.pl^
+
+! https://github.com/ghostery/broken-page-reports/issues/1264
+! >>> url=https://subdomain.4672cf576d.com/adscript.js
+! ... source=https://www.xmegadrive.com/
+! ... type=script
+||4672cf576d.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1262
+! >>> url=https://rrellcpurhyjne.xyz/
+! ... source=https://ebook-hunter.org/
+! ... type=script
+||rrellcpurhyjne.xyz^
+! >>> url=https://wuftaustee.net/
+! ... source=https://ebook-hunter.org/
+! ... type=script
+||wuftaustee.net^

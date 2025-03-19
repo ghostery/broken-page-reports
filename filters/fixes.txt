@@ -1363,3 +1363,10 @@ economictimes.indiatimes.com###topAd
 ! ... source=https://soundcloud.com/kodiahr/juice-wrld-legends-dnb-remix
 ! ... type=script
 @@||sndcdn.com/assets/*.js^$script,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
+
+! https://github.com/ghostery/broken-page-reports/issues/1265
+streamruby.com##+js(nostif, , 1000)
+
+! https://github.com/ghostery/broken-page-reports/issues/1263
+wp.pl#@#+js(trusted-set-cookie, WPdp, z7cARUkLWdBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGxSJxVPWFETWA1SVhUOCBVZSxtBF0NBQARPWEMQWA1STQNTTg9TSw9UQwZaBxtBLmdBQExBGVxBQAZPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGw+WBtBHEdBQAZPWFoRWA1SVhUODhVZSRtBDkRBQAZUTgdXQgdSQgBaSw4eVhU0KnpBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGxSJxVPWFETWA1SVhUOCBVZSxtBF0NBQARPWEMQWA1STQNTTg9TSw9UQwZaVhUWGxVZS0oe, , , domain, wp.pl)
+wp.pl#@#+js(trusted-set-cookie, WPtcs2, CQNYlAAQNYlAABIACDPLBeFgAAAAAAAAAB5YAAAAAAAA.YAAAAAAAAAAA, , , domain, wp.pl)
