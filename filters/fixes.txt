@@ -1376,3 +1376,6 @@ civitai.com##div:has(>div>a[href="/pricing"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1258
 tv2.no##[class^="ad"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1259
+sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
