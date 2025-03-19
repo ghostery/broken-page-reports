@@ -1370,3 +1370,6 @@ streamruby.com##+js(nostif, , 1000)
 ! https://github.com/ghostery/broken-page-reports/issues/1263
 wp.pl#@#+js(trusted-set-cookie, WPdp, z7cARUkLWdBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGxSJxVPWFETWA1SVhUOCBVZSxtBF0NBQARPWEMQWA1STQNTTg9TSw9UQwZaBxtBLmdBQExBGVxBQAZPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGw+WBtBHEdBQAZPWFoRWA1SVhUODhVZSRtBDkRBQAZUTgdXQgdSQgBaSw4eVhU0KnpBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGxSJxVPWFETWA1SVhUOCBVZSxtBF0NBQARPWEMQWA1STQNTTg9TSw9UQwZaVhUWGxVZS0oe, , , domain, wp.pl)
 wp.pl#@#+js(trusted-set-cookie, WPtcs2, CQNYlAAQNYlAABIACDPLBeFgAAAAAAAAAB5YAAAAAAAA.YAAAAAAAAAAA, , , domain, wp.pl)
+
+! https://github.com/ghostery/broken-page-reports/issues/1257
+civitai.com##div:has(>div>a[href="/pricing"])
