@@ -1379,3 +1379,6 @@ tv2.no##[class^="ad"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1259
 sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1269
+mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
