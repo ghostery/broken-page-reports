@@ -1363,3 +1363,6 @@ economictimes.indiatimes.com###topAd
 ! ... source=https://soundcloud.com/kodiahr/juice-wrld-legends-dnb-remix
 ! ... type=script
 @@||sndcdn.com/assets/*.js^$script,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
+
+! https://github.com/ghostery/broken-page-reports/issues/1265
+streamruby.com##+js(nostif, , 1000)
