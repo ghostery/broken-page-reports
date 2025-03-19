@@ -22,3 +22,6 @@ repubblica.it##gdwc-video-component
 
 ! https://github.com/ghostery/broken-page-reports/issues/1218
 wcostream.tv##+js(aopr, Notification.requestPermission)
+
+! https://github.com/ghostery/broken-page-reports/issues/1268
+mrcrayfish.com##+js(nano-stb, /.?/, *, 0.01)

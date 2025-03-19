@@ -1370,3 +1370,21 @@ streamruby.com##+js(nostif, , 1000)
 ! https://github.com/ghostery/broken-page-reports/issues/1263
 wp.pl#@#+js(trusted-set-cookie, WPdp, z7cARUkLWdBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGxSJxVPWFETWA1SVhUOCBVZSxtBF0NBQARPWEMQWA1STQNTTg9TSw9UQwZaBxtBLmdBQExBGVxBQAZPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGw+WBtBHEdBQAZPWFoRWA1SVhUODhVZSRtBDkRBQAZUTgdXQgdSQgBaSw4eVhU0KnpBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhUACUcKHhVZWGxSJxVPWFETWA1SVhUOCBVZSxtBF0NBQARPWEMQWA1STQNTTg9TSw9UQwZaVhUWGxVZS0oe, , , domain, wp.pl)
 wp.pl#@#+js(trusted-set-cookie, WPtcs2, CQNYlAAQNYlAABIACDPLBeFgAAAAAAAAAB5YAAAAAAAA.YAAAAAAAAAAA, , , domain, wp.pl)
+
+! https://github.com/ghostery/broken-page-reports/issues/1257
+civitai.com##div:has(>div>a[href="/pricing"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1258
+tv2.no##[class^="ad"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1259
+sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1269
+mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1225
+! >>> url=https://html-load.com/loader.min.js
+! ... source=https://www.buzzfeed.com/
+! ... type=script
+||html-load.com^$domain=buzzfeed.com
