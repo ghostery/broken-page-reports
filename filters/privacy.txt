@@ -111,7 +111,3 @@
 ! ... source=https://ebook-hunter.org/
 ! ... type=script
 ||rrellcpurhyjne.xyz^
-! >>> url=https://wuftaustee.net/
-! ... source=https://ebook-hunter.org/
-! ... type=script
-||wuftaustee.net^
