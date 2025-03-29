@@ -81,10 +81,6 @@
 ! ... source=https://flixbaba.com/tv/1429/attack-on-titan/season/1?e=1&p=1
 ! ... type=script
 ||cdn.vidsrc.stream/disable-devtool
-! >>> url=https://www.clarity.ms/tag/plmvvqrxwc
-! ... source=https://flixbaba.com/tv/1429/attack-on-titan/season/1?e=1&p=1
-! ... type=script
-||clarity.ms^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1220
 ! >>> url=https://nt.sorosehottie.com/rsqn6y5DN4n/BqXXR
