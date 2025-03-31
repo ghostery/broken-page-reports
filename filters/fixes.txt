@@ -367,10 +367,6 @@ portal.zentrale-pruefstelle-praevention.de##.el-drawer__wrapper
 ! https://github.com/ghostery/broken-page-reports/issues/328
 www.pistonheads.com###leaderBoard
 
-! Unbreak Bing scrolling if the consent dialog is hidden
-! https://github.com/ghostery/broken-page-reports/issues/331
-bing.com##html:style(overflow: auto !important;)
-
 ! Unbreak bankenverband.de (https://github.com/ghostery/broken-page-reports/issues/280)
 ! With this fix, the page will no longer be blank. There will be a cookie dialog, which
 ! Never Consent will not be able to deal with though.
@@ -379,10 +375,6 @@ bankenverband.de#@##cookiebot
 ! Unbreak stap.opleiding.nl
 ! https://github.com/ghostery/broken-page-reports/issues/276
 stap.opleiding.nl###cookiebotwrapper:style(display: none !important)
-
-! Unbreak ns.nl
-! https://github.com/ghostery/broken-page-reports/issues/279
-ns.nl##html:style(overflow: auto !important;)
 
 ! Unbreak csu-landtag.de
 ! https://github.com/ghostery/broken-page-reports/issues/337
@@ -396,7 +388,6 @@ united-internet.de##.page-overlay
 ! Unbreak www.bayernportal.de/
 ! https://github.com/ghostery/broken-page-reports/issues/343
 bayernportal.de##.bg-modal-overlay
-bayernportal.de##html:style(overflow: auto !important;)
 
 ! Unbreak roofingmegastore.co.uk
 ! https://github.com/ghostery/broken-page-reports/issues/344
@@ -525,6 +516,12 @@ routerdefaults.org##html[style*="overflow"]:style(overflow: auto;)
 ! https://github.com/ghostery/broken-page-reports/issues/762
 ! https://github.com/ghostery/broken-page-reports/issues/1282
 shop.mooji.org,firstinarchitecture.co.uk,regenwald-schuetzen.org,wifiwien.at,wifi.at,wifi-ooe.at,wifisalzburg.at,wifikaernten.at,correctiv.org,fnacspectacles.com,consentmanager.net,illy.com,frankfurt-school.de,20min.ch,propertynews.pl,wp.pl,tekna.no,verbundvolksbank-owl.de,actiage.es,strato.de,medimops.de,elektroniknet.de##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/279
+! https://github.com/ghostery/broken-page-reports/issues/331
+! https://github.com/ghostery/broken-page-reports/issues/343
+! https://github.com/ghostery/broken-page-reports/issues/762
+ns.nl,bing.com,wp.pl,bayernportal.de##html:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/203
 readly.com#@#.DialogHandlerContainer
