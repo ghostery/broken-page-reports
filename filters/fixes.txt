@@ -523,7 +523,8 @@ routerdefaults.org##html[style*="overflow"]:style(overflow: auto;)
 ! https://github.com/ghostery/broken-page-reports/issues/749
 ! https://github.com/ghostery/broken-page-reports/issues/750
 ! https://github.com/ghostery/broken-page-reports/issues/762
-firstinarchitecture.co.uk,regenwald-schuetzen.org,wifiwien.at,wifi.at,wifi-ooe.at,wifisalzburg.at,wifikaernten.at,correctiv.org,fnacspectacles.com,consentmanager.net,illy.com,frankfurt-school.de,20min.ch,propertynews.pl,wp.pl,tekna.no,verbundvolksbank-owl.de,actiage.es,strato.de,medimops.de,elektroniknet.de##body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/1282
+shop.mooji.org,firstinarchitecture.co.uk,regenwald-schuetzen.org,wifiwien.at,wifi.at,wifi-ooe.at,wifisalzburg.at,wifikaernten.at,correctiv.org,fnacspectacles.com,consentmanager.net,illy.com,frankfurt-school.de,20min.ch,propertynews.pl,wp.pl,tekna.no,verbundvolksbank-owl.de,actiage.es,strato.de,medimops.de,elektroniknet.de##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/203
 readly.com#@#.DialogHandlerContainer
