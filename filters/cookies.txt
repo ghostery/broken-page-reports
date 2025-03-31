@@ -420,3 +420,6 @@ bjootify.com##+js(trusted-set-cookie, CookieConsentStatus, Allow)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1287
 incogni.com##aside[class^="CookieConsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1283
+kinoz.net###cookie-banner

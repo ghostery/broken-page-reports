@@ -1030,7 +1030,8 @@ spiegel.de##[data-advertisement]
 repubblica.it###adv-TopLeft
 
 ! https://github.com/ghostery/broken-page-reports/issues/988
-benq.eu##body[style*="overflow"]:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/1283
+kinoz.net,benq.eu##body[style*="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/983
 sellpy.se#@#.bERasM
