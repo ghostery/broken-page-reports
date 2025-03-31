@@ -670,14 +670,10 @@ www.hema.com#@#body,html:style(overflow: auto !important; position: initial !imp
 ! https://github.com/ghostery/broken-page-reports/issues/327
 vr.gama.tech#@#cookie-policy
 
-! https://github.com/ghostery/broken-page-reports/issues/322
-tekna.no##body:style(overflow: auto !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/420
 voba-rhein-erft-koeln.de#@#div.cookie-consent
 
 ! https://github.com/ghostery/broken-page-reports/issues/426
-propertynews.pl##body:style(overflow: auto !important)
 propertynews.pl#@#.cmpwrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/306

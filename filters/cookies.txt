@@ -10,7 +10,6 @@ fnac.com##.consent-notice
 nsg.com##.sitecookiepolicy
 
 ! https://github.com/ghostery/broken-page-reports/issues/154
-verbundvolksbank-owl.de##body:style(overflow: auto !important)
 verbundvolksbank-owl.de##body:style(position: inherit !important)
 verbundvolksbank-owl.de##div#lightbox--cookie-consent
 verbundvolksbank-owl.de##div.lightbox__content
@@ -26,7 +25,6 @@ fanpage.it###cp-gdpr-choices
 ! https://github.com/ghostery/broken-page-reports/issues/335
 actiage.es###overbox3
 actiage.es##.capaFondoCookies
-actiage.es##body:style(overflow: auto !important;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/52
 insider.com##body.cm-dialog-open>div.osano-cm-window
@@ -53,7 +51,6 @@ hetzner.com##.modal-backdrop
 corporatefinanceinstitute.com###iubenda-cs-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/274
-strato.de##body:style(overflow: auto !important)
 strato.de###cookie_initial_modal
 strato.de##.modal-backdrop
 
@@ -117,11 +114,9 @@ oeaw.ac.at###cookieman-modal
 ! https://github.com/ghostery/broken-page-reports/issues/548
 elektroniknet.de###cmpbox
 elektroniknet.de###cmpbox2
-elektroniknet.de##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/571
 medimops.de###cmpwrapper
-medimops.de##body[style^="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/589
 ! For future autoconsent compatibility, use befundpost.at#@##privacyConsent
@@ -211,7 +206,6 @@ wideroe.no##.cookie-modal-wrapper
 wp.pl##body > .advertisement +div[class]:not([id])
 wp.pl##body > *:style(filter: inherit !important)
 wp.pl##html:style(overflow: auto !important)
-wp.pl##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/775
 ! The cookie modal is not rendered even if the modal was unblock by `sklavenitis.gr#@#.nvcookies-outer`.
@@ -226,7 +220,6 @@ sklavenitis.gr###required-cc
 ! https://github.com/ghostery/broken-page-reports/issues/803
 onmeda.de###cmpbox
 onmeda.de###cmpbox2
-onmeda.de##body[style*="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/195
 elfa.se##.cookie-modal
