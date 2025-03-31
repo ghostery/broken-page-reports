@@ -417,3 +417,6 @@ flickr.com##+js(trusted-set-cookie, ccc, %7B%22needsConsent%22%3A0%2C%22managed%
 
 ! https://github.com/ghostery/broken-page-reports/issues/1249
 bjootify.com##+js(trusted-set-cookie, CookieConsentStatus, Allow)
+
+! https://github.com/ghostery/broken-page-reports/issues/1287
+incogni.com##aside[class^="CookieConsent"]
