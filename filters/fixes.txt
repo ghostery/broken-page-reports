@@ -1392,3 +1392,6 @@ mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
 ! https://github.com/ghostery/broken-page-reports/issues/1285
 schroders.com###tDrkDiv
 schroders.com##body.noscroll:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1284
+lauermannundweyer.de###cc-cookie-overlay
