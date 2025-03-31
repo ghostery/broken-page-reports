@@ -416,3 +416,6 @@ incogni.com##aside[class^="CookieConsent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1283
 kinoz.net###cookie-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/1281
+vlada.gov.hr###gdc-container
