@@ -300,10 +300,6 @@ lepermislibre.fr,thetrainline.com,brico.be,praxis.nl#@#body,html:style(overflow:
 ! https://github.com/ghostery/broken-page-reports/issues/229
 opmaatzagen.nl#@#.bottom-0.fixed
 
-! Unbreak frankfurt-school.de
-! https://github.com/ghostery/broken-page-reports/issues/226
-frankfurt-school.de##body:style(overflow: auto !important;)
-
 ! Attempt at unbreaking computerbase.de
 ! (unclear if this will work, since "dialog" elements are special)
 ! Currently, we don't implement "dialog:remove()", which would be what community lists are doing.
@@ -351,7 +347,6 @@ scheersalon.nl,shavingpoint.com#@#.cookie-permission-container
 ! Unbreak https://www.firstinarchitecture.co.uk/
 ! https://github.com/ghostery/broken-page-reports/issues/270
 firstinarchitecture.co.uk##.cli-popupbar-overlay
-firstinarchitecture.co.uk##body:style(overflow: auto !important;)
 
 ! Unbreak https://theprotocol.it/
 ! https://github.com/ghostery/broken-page-reports/issues/300
@@ -372,17 +367,6 @@ portal.zentrale-pruefstelle-praevention.de##.el-drawer__wrapper
 ! https://github.com/ghostery/broken-page-reports/issues/328
 www.pistonheads.com###leaderBoard
 
-! Unbreak Bing scrolling if the consent dialog is hidden
-! https://github.com/ghostery/broken-page-reports/issues/331
-bing.com##html:style(overflow: auto !important;)
-
-! Unbreak regenwald-schuetzen.org (unable to scroll)
-! https://github.com/ghostery/broken-page-reports/issues/334
-! Update: site navigation was broken, but seem so work when the
-! "body" element is used instead of "html" (see
-! https://github.com/ghostery/broken-page-reports/issues/351)
-regenwald-schuetzen.org##body:style(overflow: auto !important;)
-
 ! Unbreak bankenverband.de (https://github.com/ghostery/broken-page-reports/issues/280)
 ! With this fix, the page will no longer be blank. There will be a cookie dialog, which
 ! Never Consent will not be able to deal with though.
@@ -391,10 +375,6 @@ bankenverband.de#@##cookiebot
 ! Unbreak stap.opleiding.nl
 ! https://github.com/ghostery/broken-page-reports/issues/276
 stap.opleiding.nl###cookiebotwrapper:style(display: none !important)
-
-! Unbreak ns.nl
-! https://github.com/ghostery/broken-page-reports/issues/279
-ns.nl##html:style(overflow: auto !important;)
 
 ! Unbreak csu-landtag.de
 ! https://github.com/ghostery/broken-page-reports/issues/337
@@ -408,7 +388,6 @@ united-internet.de##.page-overlay
 ! Unbreak www.bayernportal.de/
 ! https://github.com/ghostery/broken-page-reports/issues/343
 bayernportal.de##.bg-modal-overlay
-bayernportal.de##html:style(overflow: auto !important;)
 
 ! Unbreak roofingmegastore.co.uk
 ! https://github.com/ghostery/broken-page-reports/issues/344
@@ -509,8 +488,41 @@ sport-point-giessen.de##+js(aopw, tarteaucitron)
 ! https://github.com/ghostery/broken-page-reports/issues/288
 routerdefaults.org##html[style*="overflow"]:style(overflow: auto;)
 
+! https://github.com/ghostery/broken-page-reports/issues/154
+! https://github.com/ghostery/broken-page-reports/issues/226
+! https://github.com/ghostery/broken-page-reports/issues/270
+! https://github.com/ghostery/broken-page-reports/issues/274
+! https://github.com/ghostery/broken-page-reports/issues/320
+! https://github.com/ghostery/broken-page-reports/issues/322
+! https://github.com/ghostery/broken-page-reports/issues/334
+! https://github.com/ghostery/broken-page-reports/issues/335
+! https://github.com/ghostery/broken-page-reports/issues/351
 ! https://github.com/ghostery/broken-page-reports/issues/389
-20min.ch##body:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/426
+! https://github.com/ghostery/broken-page-reports/issues/431
+! https://github.com/ghostery/broken-page-reports/issues/446
+! https://github.com/ghostery/broken-page-reports/issues/548
+! https://github.com/ghostery/broken-page-reports/issues/550
+! https://github.com/ghostery/broken-page-reports/issues/571
+! https://github.com/ghostery/broken-page-reports/issues/742
+! https://github.com/ghostery/broken-page-reports/issues/741
+! https://github.com/ghostery/broken-page-reports/issues/740
+! https://github.com/ghostery/broken-page-reports/issues/745
+! https://github.com/ghostery/broken-page-reports/issues/746
+! https://github.com/ghostery/broken-page-reports/issues/747
+! https://github.com/ghostery/broken-page-reports/issues/748
+! https://github.com/ghostery/broken-page-reports/issues/749
+! https://github.com/ghostery/broken-page-reports/issues/750
+! https://github.com/ghostery/broken-page-reports/issues/762
+! https://github.com/ghostery/broken-page-reports/issues/1282
+shop.mooji.org,firstinarchitecture.co.uk,regenwald-schuetzen.org,wifiwien.at,wifi.at,wifi-ooe.at,wifisalzburg.at,wifikaernten.at,correctiv.org,fnacspectacles.com,consentmanager.net,illy.com,frankfurt-school.de,20min.ch,propertynews.pl,wp.pl,tekna.no,verbundvolksbank-owl.de,actiage.es,strato.de,medimops.de,elektroniknet.de##body:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/279
+! https://github.com/ghostery/broken-page-reports/issues/331
+! https://github.com/ghostery/broken-page-reports/issues/343
+! https://github.com/ghostery/broken-page-reports/issues/762
+! https://github.com/ghostery/broken-page-reports/issues/1279
+3suisses.fr,ns.nl,bing.com,wp.pl,bayernportal.de##html:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/203
 readly.com#@#.DialogHandlerContainer
@@ -534,9 +546,6 @@ transip.nl##html.html-with-one-modal body:style(overflow: auto !important)
 ! ... source=https://kontostand.at/
 @@||kontostand.at/WebportalAPK/js/cookie-banner.js$1p
 kontostand.at##body.cb-body-no-scroll:style(overflow: auto !important)
-
-! https://github.com/ghostery/broken-page-reports/issues/431
-correctiv.org##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/271
 diroots.com##.cli-modal-backdrop.cli-show
@@ -565,9 +574,6 @@ toyokeizai.net###tpModal.pi_modal
 toyokeizai.net###adexchange
 toyokeizai.net###trend-library
 toyokeizai.net###information
-
-! https://github.com/ghostery/broken-page-reports/issues/446
-consentmanager.net##body:style(overflow: auto !important;)
 
 ! https://github.com/ghostery/broken-page-reports/issues/444
 gate.gsi.de#@##gdpr_agree
@@ -633,9 +639,6 @@ consent.google.*#@#[data-p*="/consent.google."]
 
 ! https://github.com/ghostery/broken-page-reports/issues/532
 southeastasiapilot.com##.gdprmodal-open:style(overflow: auto !important)
-
-! https://github.com/ghostery/broken-page-reports/issues/550
-fnacspectacles.com##body:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/555
 check24-partnerprogramm.de#@#.modal
@@ -845,19 +848,6 @@ tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
 ! This needs to be handled by autoconsent later: mycompany-mycar.de#@#.kick-kcm-settings
 mycompany-mycar.de##.kick-kcm-overlay
 
-! https://github.com/ghostery/broken-page-reports/issues/742
-! https://github.com/ghostery/broken-page-reports/issues/741
-! https://github.com/ghostery/broken-page-reports/issues/740
-! https://github.com/ghostery/broken-page-reports/issues/745
-! https://github.com/ghostery/broken-page-reports/issues/746
-! https://github.com/ghostery/broken-page-reports/issues/747
-! https://github.com/ghostery/broken-page-reports/issues/748
-! https://github.com/ghostery/broken-page-reports/issues/749
-! https://github.com/ghostery/broken-page-reports/issues/750
-! autoconsent was injecting some styles that are not able to be disabled with user styles
-! further investigation required
-wifiwien.at,wifi.at,wifi-ooe.at,wifisalzburg.at,wifikaernten.at##body:style(overflow: auto !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/731
 harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
 harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
@@ -982,9 +972,6 @@ motorradonline.de,pravda.com.ua##iframe[src="about:blank"]
 ! https://github.com/ghostery/broken-page-reports/issues/290
 firstdirect.com##body.removeScrollEffect:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/320
-illy.com##body:style(overflow: auto !important)
-
 ! https://github.com/ghostery/broken-page-reports/issues/881
 ! https://github.com/ghostery/broken-page-reports/issues/905
 omni.se##[class^="TopPanoramaAd"]
@@ -1029,8 +1016,10 @@ spiegel.de##[data-advertisement]
 ! https://github.com/ghostery/broken-page-reports/issues/991
 repubblica.it###adv-TopLeft
 
+! https://github.com/ghostery/broken-page-reports/issues/803
 ! https://github.com/ghostery/broken-page-reports/issues/988
-benq.eu##body[style*="overflow"]:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/1283
+kinoz.net,benq.eu,onmeda.de##body[style*="overflow"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/983
 sellpy.se#@#.bERasM
@@ -1388,3 +1377,13 @@ mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
 ! ... source=https://www.buzzfeed.com/
 ! ... type=script
 ||html-load.com^$domain=buzzfeed.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1285
+schroders.com###tDrkDiv
+schroders.com##body.noscroll:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1284
+lauermannundweyer.de###cc-cookie-overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1280
+sidmouth.scottcinemas.co.uk##.cookie-attention

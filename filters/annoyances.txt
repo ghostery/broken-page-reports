@@ -25,3 +25,6 @@ wcostream.tv##+js(aopr, Notification.requestPermission)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1268
 mrcrayfish.com##+js(nano-stb, /.?/, *, 0.01)
+
+! https://github.com/ghostery/broken-page-reports/issues/1278
+sofascore.com##div[style*="height"]:has([id^="div-gpt-ad"])
