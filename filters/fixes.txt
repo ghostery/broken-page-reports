@@ -521,7 +521,8 @@ shop.mooji.org,firstinarchitecture.co.uk,regenwald-schuetzen.org,wifiwien.at,wif
 ! https://github.com/ghostery/broken-page-reports/issues/331
 ! https://github.com/ghostery/broken-page-reports/issues/343
 ! https://github.com/ghostery/broken-page-reports/issues/762
-ns.nl,bing.com,wp.pl,bayernportal.de##html:style(overflow: auto !important)
+! https://github.com/ghostery/broken-page-reports/issues/1279
+3suisses.fr,ns.nl,bing.com,wp.pl,bayernportal.de##html:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/203
 readly.com#@#.DialogHandlerContainer
