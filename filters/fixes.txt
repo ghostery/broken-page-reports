@@ -1388,3 +1388,7 @@ mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
 ! ... source=https://www.buzzfeed.com/
 ! ... type=script
 ||html-load.com^$domain=buzzfeed.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1285
+schroders.com###tDrkDiv
+schroders.com##body.noscroll:style(overflow: auto !important)
