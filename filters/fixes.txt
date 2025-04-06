@@ -1361,7 +1361,8 @@ wp.pl#@#+js(trusted-set-cookie, WPdp, z7cARUkLWdBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhU
 wp.pl#@#+js(trusted-set-cookie, WPtcs2, CQNYlAAQNYlAABIACDPLBeFgAAAAAAAAAB5YAAAAAAAA.YAAAAAAAAAAA, , , domain, wp.pl)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1257
-civitai.com##div:has(>div>a[href="/pricing"])
+civitai.com##div[id]+div:has(>div>a[href="/pricing"])
+civitai.com##div[class^="CosmeticWrapper_wrapper"]+div:has(>div>a[href="/pricing"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1258
 tv2.no##[class^="ad"]
@@ -1387,3 +1388,9 @@ lauermannundweyer.de###cc-cookie-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/1280
 sidmouth.scottcinemas.co.uk##.cookie-attention
+
+! https://github.com/ghostery/broken-page-reports/issues/1294
+dbschenker.com##+js(set-local-storage-item, cookie_usage_acknowledged_2, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/1295
+portfolio.hu##body>script+div[class^="_"]:has(div[class*="_left"]+div[class*="_right"])
