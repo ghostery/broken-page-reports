@@ -826,6 +826,7 @@ alma.be#@##cookiebanner-overlay
 ! >>> url=https://privacyportal-eu-cdn.onetrust.com/privacy-notice-scripts/css/v2/otnotice-core.css
 ! ... source=https://www.loreal.com/en/benelux/pages/group/privacy-policy-benelux-nl/
 ! ... type=css
+! ... match=false
 @@||onetrust.com/privacy-notice-scripts/css/v2^$3p,css
 ! >>> url=https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
 ! ... source=https://www.globalblue.com/en/refund-points-map
