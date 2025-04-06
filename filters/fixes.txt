@@ -1387,3 +1387,6 @@ lauermannundweyer.de###cc-cookie-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/1280
 sidmouth.scottcinemas.co.uk##.cookie-attention
+
+! https://github.com/ghostery/broken-page-reports/issues/1294
+dbschenker.com##+js(set-local-storage-item, cookie_usage_acknowledged_2, {})
