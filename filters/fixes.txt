@@ -1361,7 +1361,8 @@ wp.pl#@#+js(trusted-set-cookie, WPdp, z7cARUkLWdBQExBGVxBQAVPWFQQHF4HWA1BIWpBVhU
 wp.pl#@#+js(trusted-set-cookie, WPtcs2, CQNYlAAQNYlAABIACDPLBeFgAAAAAAAAAB5YAAAAAAAA.YAAAAAAAAAAA, , , domain, wp.pl)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1257
-civitai.com##div:has(>div>a[href="/pricing"])
+civitai.com##div[id]+div:has(>div>a[href="/pricing"])
+civitai.com##div[class^="CosmeticWrapper_wrapper"]+div:has(>div>a[href="/pricing"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1258
 tv2.no##[class^="ad"]
