@@ -233,18 +233,10 @@ new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 ! https://github.com/ghostery/broken-page-reports/issues/265
 ! https://github.com/ghostery/broken-page-reports/issues/761
 ! https://github.com/ghostery/broken-page-reports/issues/956
-! >>> url=https://gigkarma.com/a
+! >>> url=https://soulclicking.com/a
 ! ... source=https://usatoday.com/
 ! ... type=xhr
-||gigkarma.com^
-! >>> url=https://feedten.com/a
-! ... source=https://usatoday.com/
-! ... type=xhr
-||feedten.com^
-! >>> url=https://thrillasoft.com/a
-! ... source=https://usatoday.com/
-! ... type=xhr
-||thrillasoft.com^
+||soulclicking.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
