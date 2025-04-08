@@ -1401,3 +1401,7 @@ howtogeek.com#@#.adsninja-ad-zone
 howtogeek.com#@#.ad-current
 howtogeek.com#@#.ad-zone-container
 howtogeek.com#@#.ad-zone:not(.textads)
+
+! https://github.com/ghostery/broken-page-reports/issues/1302
+focus.de##+js(aopr, cp)
+focus.de##+js(aopr, gsinit)
