@@ -1405,3 +1405,9 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1302
 focus.de##+js(aopr, cp)
 focus.de##+js(aopr, gsinit)
+
+! https://github.com/ghostery/broken-page-reports/issues/1301
+! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
+! ... source=https://www.finanzen.net/
+! ... type=script
+*.png^$domain=finanzen.net,script
