@@ -1401,3 +1401,24 @@ howtogeek.com#@#.adsninja-ad-zone
 howtogeek.com#@#.ad-current
 howtogeek.com#@#.ad-zone-container
 howtogeek.com#@#.ad-zone:not(.textads)
+
+! https://github.com/ghostery/broken-page-reports/issues/1302
+! https://github.com/ghostery/broken-page-reports/issues/1301
+! https://github.com/ghostery/broken-page-reports/issues/1300
+! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
+! ... source=https://www.finanzen.net/
+! ... type=script
+*.png^$domain=n-tv.de|finanzen.net,script,subdocument
+! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
+! ... source=https://www.finanzen.net/
+! ... type=script
+*.jpg^$domain=n-tv.de|finanzen.net,script,subdocument
+focus.de##+js(aopr, cp)
+focus.de##+js(aopr, gsinit)
+n-tv.de##+js(aopr, embedAddefend)
+
+! https://github.com/ghostery/broken-page-reports/issues/1299
+! >>> url=https://buy.tinypass.com/checkout/template/cacheableShow?aid=77U9mvKhpu&templateId=OTTYX6REAP09&offerId=fakeOfferId&experienceId=EXYMG50U16GH&iframeId=offer_e53148da481996a42292-0&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template&url=https%3A%2F%2Fwww.blick.ch%2F
+! ... source=https://www.blick.ch
+! ... type=sub_frame
+||buy.tinypass.com/checkout/template/cacheableShow^$3p,frame
