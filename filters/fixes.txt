@@ -1420,5 +1420,5 @@ n-tv.de##+js(aopr, embedAddefend)
 ! https://github.com/ghostery/broken-page-reports/issues/1299
 ! >>> url=https://buy.tinypass.com/checkout/template/cacheableShow?aid=77U9mvKhpu&templateId=OTTYX6REAP09&offerId=fakeOfferId&experienceId=EXYMG50U16GH&iframeId=offer_e53148da481996a42292-0&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template&url=https%3A%2F%2Fwww.blick.ch%2F
 ! ... source=https://www.blick.ch
-! ... type=subframe
+! ... type=sub_frame
 ||buy.tinypass.com/checkout/template/cacheableShow^$3p,frame
