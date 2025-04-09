@@ -3,8 +3,11 @@ import { expect } from "jsr:@std/expect";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import dns from "node:dns/promises";
+import * as tldts from "npm:tldts";
 import { parse } from "../src/assert.ts";
 
+const VALIDATE_DNS = typeof Deno.env.get('VALIDATE_DNS') !== "undefined";
 const cwd = process.cwd();
 
 const doTest = (filePath: string) => {
@@ -18,7 +21,7 @@ const doTest = (filePath: string) => {
       continue;
     }
 
-    Deno.test(filter, () => {
+    Deno.test(filter, async () => {
       const parsed = parseFilter(filter);
 
       // Is a valid filter
@@ -37,6 +40,12 @@ const doTest = (filePath: string) => {
         expect((NetworkFilter.parse(filter)!).match(
           Request.fromRawDetails({ url, type, sourceUrl: source }),
         )).toBe(match);
+
+        if (VALIDATE_DNS === true && typeof url !== "undefined") {
+          const reply = await dns.lookup(tldts.parse(url)!.hostname!)
+            .catch(error => error);
+          expect(reply instanceof Error).toBe(false);
+        }
       }
     });
   }
