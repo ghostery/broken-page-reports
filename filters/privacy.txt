@@ -112,8 +112,8 @@
 ! ... type=script
 ||rrellcpurhyjne.xyz^
 
-! https://github.com/ghostery/broken-page-reports/issues/1277
-! >>> url=https://zygoticroud.shop/thRPFjI0rSrv5TNE/10879
-! ... source=https://vipleague.im/football/sky-sports-saturday-social-streaming-link-1
+! https://github.com/ghostery/broken-page-reports/issues/1305
+! >>> url=https://shovelrecalled.com/a
+! ... source=https://soaper.live/movie_zrYg3oagL1.html
 ! ... type=script
-||zygoticroud.shop^
+||shovelrecalled.com^
