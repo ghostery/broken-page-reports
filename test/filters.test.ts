@@ -7,7 +7,7 @@ import dns from "node:dns/promises";
 import * as tldts from "npm:tldts";
 import { parse } from "../src/assert.ts";
 
-const VALIDATE_DNS = typeof Deno.env.get('VALIDATE_DNS') !== "undefined";
+const VALIDATE_DNS = !!Deno.env.get('VALIDATE_DNS');
 const cwd = process.cwd();
 
 const doTest = (filePath: string) => {
