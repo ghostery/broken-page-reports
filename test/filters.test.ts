@@ -10,6 +10,15 @@ import { parse } from "../src/assert.ts";
 const VALIDATE_DNS = typeof Deno.env.get('VALIDATE_DNS') !== "undefined";
 const cwd = process.cwd();
 
+const hasDnsRecord = async (hostname: string) => {
+  for (const rr of ['A', 'AAAA', 'CNAME']) {
+    if (await dns.resolve(hostname, rr)) {
+      return;
+    }
+  }
+  throw new Error('RECORD_NOT_FOUND');
+}
+
 const doTest = (filePath: string) => {
   const content = readFileSync(path.join(cwd, filePath), "utf8");
 
@@ -42,9 +51,8 @@ const doTest = (filePath: string) => {
         )).toBe(match);
 
         if (VALIDATE_DNS === true && typeof url !== "undefined") {
-          const reply = await dns.lookup(tldts.parse(url)!.hostname!)
-            .catch(error => error);
-          expect(reply instanceof Error).toBe(false);
+          await expect(hasDnsRecord(tldts.parse(url)!.hostname!))
+            .resolves.not.toThrow();
         }
       }
     });
