@@ -19,7 +19,7 @@ const hasDnsRecord = async (hostname: string) => {
       return;
     }
   }
-  throw new Error("RECORD_NOT_FOUND");
+  throw new Error("RECORD_NOT_FOUND: " + hostname);
 };
 
 const doTest = (filePath: string) => {
