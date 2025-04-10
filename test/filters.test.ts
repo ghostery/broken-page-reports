@@ -7,7 +7,7 @@ import dns from "node:dns/promises";
 import * as tldts from "npm:tldts";
 import { parse } from "../src/assert.ts";
 
-const VALIDATE_DNS = typeof Deno.env.get('VALIDATE_DNS') !== "undefined";
+const VALIDATE_DNS = !!Deno.env.get('VALIDATE_DNS');
 const cwd = process.cwd();
 
 const hasDnsRecord = async (hostname: string) => {
@@ -50,7 +50,7 @@ const doTest = (filePath: string) => {
           Request.fromRawDetails({ url, type, sourceUrl: source }),
         )).toBe(match);
 
-        if (VALIDATE_DNS === true && typeof url !== "undefined") {
+        if (VALIDATE_DNS && url) {
           await expect(hasDnsRecord(tldts.parse(url)!.hostname!))
             .resolves.not.toThrow();
         }
