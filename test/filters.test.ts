@@ -41,7 +41,7 @@ const doTest = (filePath: string) => {
           Request.fromRawDetails({ url, type, sourceUrl: source }),
         )).toBe(match);
 
-        if (VALIDATE_DNS === true && typeof url !== "undefined") {
+        if (VALIDATE_DNS && url) {
           const reply = await dns.lookup(tldts.parse(url)!.hostname!)
             .catch(error => error);
           expect(reply instanceof Error).toBe(false);
