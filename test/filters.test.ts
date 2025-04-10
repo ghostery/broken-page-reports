@@ -12,7 +12,10 @@ const cwd = process.cwd();
 
 const hasDnsRecord = async (hostname: string) => {
   for (const rr of ["A", "AAAA", "CNAME"]) {
-    if (await dns.resolve(hostname, rr)) {
+    if (
+      await dns.resolve(hostname, rr)
+        .catch((_error) => false as const)
+    ) {
       return;
     }
   }
