@@ -7,17 +7,17 @@ import dns from "node:dns/promises";
 import * as tldts from "npm:tldts";
 import { parse } from "../src/assert.ts";
 
-const VALIDATE_DNS = !!Deno.env.get('VALIDATE_DNS');
+const VALIDATE_DNS = !!Deno.env.get("VALIDATE_DNS");
 const cwd = process.cwd();
 
 const hasDnsRecord = async (hostname: string) => {
-  for (const rr of ['A', 'AAAA', 'CNAME']) {
+  for (const rr of ["A", "AAAA", "CNAME"]) {
     if (await dns.resolve(hostname, rr)) {
       return;
     }
   }
-  throw new Error('RECORD_NOT_FOUND');
-}
+  throw new Error("RECORD_NOT_FOUND");
+};
 
 const doTest = (filePath: string) => {
   const content = readFileSync(path.join(cwd, filePath), "utf8");
