@@ -3,7 +3,7 @@
     "config:generate": "deno run --allow-net --allow-write ./src/config/generate.ts",
     "build": "deno run -R -W ./src/build.js",
     "lint": "deno fmt --check ./src ./test",
-    "tests": "deno test --allow-read",
+    "tests": "deno test --allow-read --allow-env",
     "tests:dns": "VALIDATE_DNS=1 deno test --allow-read --allow-env --allow-net"
   },
   "imports": {
