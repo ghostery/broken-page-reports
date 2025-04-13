@@ -260,7 +260,7 @@ shop.wolterskluwer.nl###udtDark
 clarisvirot.com##.axeptio_mount
 
 ! https://github.com/ghostery/broken-page-reports/issues/1002
-connect.airfrance.com##obp-cookie-consent
+connect.airfrance.com,connect.klm.com##obp-cookie-consent,[class*="obp-cookie-consent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1001
 ! only regards www-prefixed website
