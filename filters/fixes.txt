@@ -1431,3 +1431,6 @@ spiegel.de##[data-sara-component*="paywall"]
 ! ... source=https://www.channel5.com/show/jane-mcdonald-cruising-the-med
 ! ... type=script
 ||imasdk.googleapis.com^$redirect=noopjs,domain=channel5.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1324
+dn.se##b-a-d[slotname]
