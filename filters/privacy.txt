@@ -123,3 +123,9 @@
 ! ... source=https://totalsportek.pro/
 ! ... type=xhr
 ||gxiacapeptyos.club^
+
+! https://github.com/ghostery/broken-page-reports/issues/1325
+! >>> url=https://zz.medinaossal.com/fa2Y0gFuftYt/114415
+! ... source=https://fikper.com/lgggeSaZMT/[gimoaffz]HIPANGEL116.mp4.html
+! ... type=script
+||medinaossal.com^
