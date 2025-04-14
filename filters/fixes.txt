@@ -1434,3 +1434,6 @@ spiegel.de##[data-sara-component*="paywall"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1324
 dn.se##b-a-d[slotname]
+
+! https://github.com/ghostery/broken-page-reports/issues/1323
+censor.net##.right-sidebar
