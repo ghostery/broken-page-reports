@@ -129,3 +129,9 @@
 ! ... source=https://fikper.com/lgggeSaZMT/[gimoaffz]HIPANGEL116.mp4.html
 ! ... type=script
 ||medinaossal.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1321
+! >>> url=https://dr.sephiraasperly.com/rdPH6vySrWgse/120588
+! ... source=https://myasiantv9.ro/buried-hearts-2025-episode-12-eng-sub/
+! ... type=script
+||sephiraasperly.com^
