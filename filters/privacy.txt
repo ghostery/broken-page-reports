@@ -117,3 +117,9 @@
 ! ... source=https://soaper.live/movie_zrYg3oagL1.html
 ! ... type=script
 ||shovelrecalled.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1327
+! >>> url=https://gxiacapeptyos.club/a
+! ... source=https://totalsportek.pro/
+! ... type=xhr
+||gxiacapeptyos.club^
