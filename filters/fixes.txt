@@ -1425,3 +1425,15 @@ spiegel.de#@#+js(aopr, _sp_.mms.startMsg)
 spiegel.de##[data-advertisement]
 spiegel.de##img[src*="#"]
 spiegel.de##[data-sara-component*="paywall"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1326
+! >>> url=https://imasdk.googleapis.com/pal/sdkloader/pal.js
+! ... source=https://www.channel5.com/show/jane-mcdonald-cruising-the-med
+! ... type=script
+||imasdk.googleapis.com^$redirect=noopjs,domain=channel5.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1324
+dn.se##b-a-d[slotname]
+
+! https://github.com/ghostery/broken-page-reports/issues/1323
+censor.net##.right-sidebar
