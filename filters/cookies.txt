@@ -413,3 +413,6 @@ vlada.gov.hr###gdc-container
 
 ! https://github.com/ghostery/broken-page-reports/issues/1341
 baritoday.it##+js(set, _iub, undefined)
+
+! https://github.com/ghostery/broken-page-reports/issues/1339
+casio.co.uk##+js(set-cookie, cookieConsentGranted, 1)
