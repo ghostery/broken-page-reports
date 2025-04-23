@@ -410,3 +410,6 @@ kinoz.net###cookie-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/1281
 vlada.gov.hr###gdc-container
+
+! https://github.com/ghostery/broken-page-reports/issues/1341
+baritoday.it##+js(set, _iub, undefined)
