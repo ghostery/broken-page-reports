@@ -1447,3 +1447,7 @@ censor.net##.right-sidebar
 ! ... source=https://vidmoly.to/embed-w30zn7r2wr3i.html
 ! ... type=xhr
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=empty,domain=vidmoly.to
+
+! https://github.com/ghostery/broken-page-reports/issues/1340
+multimediastore.ch#@#.cookiepolicy
+multimediastore.ch###divHeaderWrapper.cookiepolicy:style(top: 0 !important)
