@@ -1437,3 +1437,13 @@ dn.se##b-a-d[slotname]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1323
 censor.net##.right-sidebar
+
+! https://github.com/ghostery/broken-page-reports/issues/1342
+! >>> url=https://www.google.com/recpatcha/api2/userverify
+! ... source=https://v6.voiranime.com/anime/uchi-no-ko-no-tame-naraba-ore-wa-moshikashitara-maou-mo-taoseru-kamo-shirenai/uchi-no-ko-no-tame-naraba-ore-wa-moshikashitara-maou-mo-taoseru-kamo-shirenai-03-vostfr/
+! ... type=xhr
+@@$third-party,xmlhttprequest,script,domain=voiranime.com|vidmoly.to
+! >>> url=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+! ... source=https://vidmoly.to/embed-w30zn7r2wr3i.html
+! ... type=xhr
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=empty,domain=vidmoly.to
