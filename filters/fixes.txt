@@ -1451,3 +1451,9 @@ censor.net##.right-sidebar
 ! https://github.com/ghostery/broken-page-reports/issues/1340
 multimediastore.ch#@#.cookiepolicy
 multimediastore.ch###divHeaderWrapper.cookiepolicy:style(top: 0 !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1336
+! >>> url=https://browser.sentry-cdn.com/6.19.7/bundle.min.js
+! ... source=https://secure.pocketguard.com/app/
+! ... type=script
+@@||browser.sentry-cdn.com^$script,domain=pocketguard.com
