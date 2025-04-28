@@ -419,3 +419,7 @@ casio.co.uk##+js(set-cookie, cookieConsentGranted, 1)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1337
 daxenfeuer.de###cookieConsent
+
+! https://github.com/ghostery/broken-page-reports/issues/1352
+xiaomishop.hu###overlay_cookie_alert
+xiaomishop.hu###overlay_cookie_alert~#exposeMaskOverlay
