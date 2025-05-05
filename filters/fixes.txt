@@ -1468,3 +1468,9 @@ patek.com##.modal_mask.cookies
 
 ! https://github.com/ghostery/broken-page-reports/issues/1361
 wdio.com#@#.ad-ticker
+
+! https://github.com/ghostery/broken-page-reports/issues/1255
+! >>> url=https://cdn.segment.com/v1/projects/7zuWjsidjfODsk4c0CQG7adKcb1uE4Ih/settings
+! ... source=https://matrixkeyboards.com/collections/all-active-products/products/rubberized-gaming-keycaps-black
+! ... type=script
+@@||segment.com^
