@@ -1461,3 +1461,7 @@ multimediastore.ch###divHeaderWrapper.cookiepolicy:style(top: 0 !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1367
 hawaii-guide.com#@#.ad-divider
+
+! https://github.com/ghostery/broken-page-reports/issues/1363
+patek.com#@#.cookies
+patek.com##.modal_mask.cookies
