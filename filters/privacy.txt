@@ -141,3 +141,9 @@
 ! ... source=https://shopr.tv/watch-tv/watch-the-walking-dead-world-beyond-movies-free-hd-on-hurawatch-63587.5479438
 ! ... type=script
 ||zauphozaucou.net^
+
+! https://github.com/ghostery/broken-page-reports/issues/1364
+! >>> url=https://rndskittytor.com/400/4787861
+! ... source=https://www.moviekids.tv/
+! ... type=script
+||rndskittytor.com^
