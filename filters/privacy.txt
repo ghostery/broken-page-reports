@@ -147,3 +147,9 @@
 ! ... source=https://www.moviekids.tv/
 ! ... type=script
 ||rndskittytor.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1362
+! >>> url=https://rqaq.rmervvomrobza.top/kqwjmyyowlybr/wevraz?d=0
+! ... source=https://flixhq.to/home
+! ... type=script
+||rmervvomrobza.top^
