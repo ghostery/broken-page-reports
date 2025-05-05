@@ -1398,14 +1398,15 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1301
 ! https://github.com/ghostery/broken-page-reports/issues/1300
 ! https://github.com/ghostery/broken-page-reports/issues/893
+! https://github.com/ghostery/broken-page-reports/issues/1369
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-*.png^$domain=n-tv.de|finanzen.net|spiegel.de,script,subdocument
+*.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de,script,subdocument
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-*.jpg^$domain=n-tv.de|finanzen.net|spiegel.de,script,subdocument
+*.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de,script,subdocument
 focus.de##+js(aopr, cp)
 focus.de##+js(aopr, gsinit)
 n-tv.de##+js(aopr, embedAddefend)
@@ -1457,3 +1458,13 @@ multimediastore.ch###divHeaderWrapper.cookiepolicy:style(top: 0 !important)
 ! ... source=https://secure.pocketguard.com/app/
 ! ... type=script
 @@||browser.sentry-cdn.com^$script,domain=pocketguard.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1367
+hawaii-guide.com#@#.ad-divider
+
+! https://github.com/ghostery/broken-page-reports/issues/1363
+patek.com#@#.cookies
+patek.com##.modal_mask.cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/1361
+wdio.com#@#.ad-ticker
