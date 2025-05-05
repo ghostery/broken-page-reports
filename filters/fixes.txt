@@ -1465,3 +1465,6 @@ hawaii-guide.com#@#.ad-divider
 ! https://github.com/ghostery/broken-page-reports/issues/1363
 patek.com#@#.cookies
 patek.com##.modal_mask.cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/1361
+wdio.com#@#.ad-ticker
