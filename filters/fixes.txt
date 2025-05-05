@@ -1458,3 +1458,6 @@ multimediastore.ch###divHeaderWrapper.cookiepolicy:style(top: 0 !important)
 ! ... source=https://secure.pocketguard.com/app/
 ! ... type=script
 @@||browser.sentry-cdn.com^$script,domain=pocketguard.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1367
+hawaii-guide.com#@#.ad-divider
