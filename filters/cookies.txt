@@ -429,3 +429,13 @@ xiaomishop.hu###overlay_cookie_alert~#exposeMaskOverlay
 ! ... source=https://shop.wienerlinien.at/
 ! ... type=script
 ||cdn1.legalweb.io^$domain=shop.wienerlinien.at
+
+! https://github.com/ghostery/broken-page-reports/issues/1292
+! >>> url=https://cmp.computerbild.de/unified/wrapperMessagingWithoutDetection.js
+! ... source=https://www.computerbild.de/
+! ... type=script
+||cmp.computerbild.de^
+! >>> url=https://www.computerbild.de/assets/cmp-adb.js
+! ... source=https://www.computerbild.de/
+! ... type=script
+||computerbild.de/assets/cmp-adb.js^
