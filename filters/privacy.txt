@@ -153,3 +153,9 @@
 ! ... source=https://flixhq.to/home
 ! ... type=script
 ||rmervvomrobza.top^
+
+! https://github.com/ghostery/broken-page-reports/issues/1308
+! >>> url=https://www.megaplay.buzz/lib/devtools-detector_v1.5.js
+! ... source=https://aniwave.lv/watch/assassination-classroom-un7xo/ep-10
+! ... type=script
+||megaplay.buzz/lib/devtools-detector_v1.5.js^
