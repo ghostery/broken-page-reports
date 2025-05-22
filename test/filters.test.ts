@@ -3,9 +3,24 @@ import { expect } from "jsr:@std/expect";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import dns from "node:dns/promises";
+import * as tldts from "npm:tldts";
 import { parse } from "../src/assert.ts";
 
+const VALIDATE_DNS = !!Deno.env.get("VALIDATE_DNS");
 const cwd = process.cwd();
+
+const hasDnsRecord = async (hostname: string) => {
+  for (const rr of ["A", "AAAA", "CNAME"]) {
+    if (
+      await dns.resolve(hostname, rr)
+        .catch((_error) => false as const)
+    ) {
+      return;
+    }
+  }
+  throw new Error("RECORD_NOT_FOUND: " + hostname);
+};
 
 const doTest = (filePath: string) => {
   const content = readFileSync(path.join(cwd, filePath), "utf8");
@@ -18,7 +33,7 @@ const doTest = (filePath: string) => {
       continue;
     }
 
-    Deno.test(filter, () => {
+    Deno.test(filter, async () => {
       const parsed = parseFilter(filter);
 
       // Is a valid filter
@@ -37,6 +52,11 @@ const doTest = (filePath: string) => {
         expect((NetworkFilter.parse(filter)!).match(
           Request.fromRawDetails({ url, type, sourceUrl: source }),
         )).toBe(match);
+
+        if (VALIDATE_DNS && url) {
+          await expect(hasDnsRecord(tldts.parse(url)!.hostname!))
+            .resolves.not.toThrow();
+        }
       }
     });
   }
