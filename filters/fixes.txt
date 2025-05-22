@@ -56,11 +56,6 @@ abcbourse.com##+js(aopw, doc)
 ! ... type=document
 ||9to5mac.com^$csp=script-src 'self' 'unsafe-inline' *.ytimg.com *.youtube.com *.google.com *.disqus.com *.disquscdn.com
 
-! Spiegel deployed a new wall which cannot be closed with the following rule.
-! uBlock Origin maintainers will probably find a better fix eventually but in the
-! meanwhile, this exception seems to do the trick.
-spiegel.de#@#+js(aopr, _sp_.mms.startMsg)
-
 ! Fix breakage of https://reklama1.su
 ! The following filter from Easylist breaks reklama1.su so we mark it as
 ! badfilter and create a new one which should only apply when requests are
@@ -1010,9 +1005,6 @@ chemist-4-u.com#@#.inset-0.fixed
 bunjang.co.kr##[class^="Productsstyle__RelatedProductsWrapper"]
 bunjang.co.kr##[class^="ProductExternalAdsstyle__Cotainer"]
 
-! https://github.com/ghostery/broken-page-reports/issues/893
-spiegel.de##[data-advertisement]
-
 ! https://github.com/ghostery/broken-page-reports/issues/991
 repubblica.it###adv-TopLeft
 
@@ -1405,14 +1397,16 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1302
 ! https://github.com/ghostery/broken-page-reports/issues/1301
 ! https://github.com/ghostery/broken-page-reports/issues/1300
+! https://github.com/ghostery/broken-page-reports/issues/893
+! https://github.com/ghostery/broken-page-reports/issues/1369
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-*.png^$domain=n-tv.de|finanzen.net,script,subdocument
+*.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de,script,subdocument
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-*.jpg^$domain=n-tv.de|finanzen.net,script,subdocument
+*.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de,script,subdocument
 focus.de##+js(aopr, cp)
 focus.de##+js(aopr, gsinit)
 n-tv.de##+js(aopr, embedAddefend)
@@ -1422,3 +1416,61 @@ n-tv.de##+js(aopr, embedAddefend)
 ! ... source=https://www.blick.ch
 ! ... type=sub_frame
 ||buy.tinypass.com/checkout/template/cacheableShow^$3p,frame
+
+! https://github.com/ghostery/broken-page-reports/issues/893
+! NOTE: The below comment is old and probably oudated.
+! Spiegel deployed a new wall which cannot be closed with the following rule.
+! uBlock Origin maintainers will probably find a better fix eventually but in the
+! meanwhile, this exception seems to do the trick.
+spiegel.de#@#+js(aopr, _sp_.mms.startMsg)
+spiegel.de##[data-advertisement]
+spiegel.de##img[src*="#"]
+spiegel.de##[data-sara-component*="paywall"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1326
+! >>> url=https://imasdk.googleapis.com/pal/sdkloader/pal.js
+! ... source=https://www.channel5.com/show/jane-mcdonald-cruising-the-med
+! ... type=script
+||imasdk.googleapis.com^$redirect=noopjs,domain=channel5.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1324
+dn.se##b-a-d[slotname]
+
+! https://github.com/ghostery/broken-page-reports/issues/1323
+censor.net##.right-sidebar
+
+! https://github.com/ghostery/broken-page-reports/issues/1342
+! >>> url=https://www.google.com/recpatcha/api2/userverify
+! ... source=https://v6.voiranime.com/anime/uchi-no-ko-no-tame-naraba-ore-wa-moshikashitara-maou-mo-taoseru-kamo-shirenai/uchi-no-ko-no-tame-naraba-ore-wa-moshikashitara-maou-mo-taoseru-kamo-shirenai-03-vostfr/
+! ... type=xhr
+@@$third-party,xmlhttprequest,script,domain=voiranime.com|vidmoly.to
+! >>> url=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+! ... source=https://vidmoly.to/embed-w30zn7r2wr3i.html
+! ... type=xhr
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=empty,domain=vidmoly.to
+
+! https://github.com/ghostery/broken-page-reports/issues/1340
+multimediastore.ch#@#.cookiepolicy
+multimediastore.ch###divHeaderWrapper.cookiepolicy:style(top: 0 !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1336
+! >>> url=https://browser.sentry-cdn.com/6.19.7/bundle.min.js
+! ... source=https://secure.pocketguard.com/app/
+! ... type=script
+@@||browser.sentry-cdn.com^$script,domain=pocketguard.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1367
+hawaii-guide.com#@#.ad-divider
+
+! https://github.com/ghostery/broken-page-reports/issues/1363
+patek.com#@#.cookies
+patek.com##.modal_mask.cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/1361
+wdio.com#@#.ad-ticker
+
+! https://github.com/ghostery/broken-page-reports/issues/1255
+! >>> url=https://cdn.segment.com/v1/projects/7zuWjsidjfODsk4c0CQG7adKcb1uE4Ih/settings
+! ... source=https://matrixkeyboards.com/collections/all-active-products/products/rubberized-gaming-keycaps-black
+! ... type=script
+@@||segment.com^

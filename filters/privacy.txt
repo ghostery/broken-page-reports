@@ -112,8 +112,38 @@
 ! ... type=script
 ||rrellcpurhyjne.xyz^
 
-! https://github.com/ghostery/broken-page-reports/issues/1277
-! >>> url=https://zygoticroud.shop/thRPFjI0rSrv5TNE/10879
-! ... source=https://vipleague.im/football/sky-sports-saturday-social-streaming-link-1
+! https://github.com/ghostery/broken-page-reports/issues/1305
+! >>> url=https://shovelrecalled.com/a
+! ... source=https://soaper.live/movie_zrYg3oagL1.html
 ! ... type=script
-||zygoticroud.shop^
+||shovelrecalled.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1327
+! >>> url=https://gxiacapeptyos.club/a
+! ... source=https://totalsportek.pro/
+! ... type=xhr
+||gxiacapeptyos.club^
+
+! https://github.com/ghostery/broken-page-reports/issues/1325
+! >>> url=https://zz.medinaossal.com/fa2Y0gFuftYt/114415
+! ... source=https://fikper.com/lgggeSaZMT/[gimoaffz]HIPANGEL116.mp4.html
+! ... type=script
+||medinaossal.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1321
+! >>> url=https://dr.sephiraasperly.com/rdPH6vySrWgse/120588
+! ... source=https://myasiantv9.ro/buried-hearts-2025-episode-12-eng-sub/
+! ... type=script
+||sephiraasperly.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1353
+! >>> url=https://zauphozaucou.net/
+! ... source=https://shopr.tv/watch-tv/watch-the-walking-dead-world-beyond-movies-free-hd-on-hurawatch-63587.5479438
+! ... type=script
+||zauphozaucou.net^
+
+! https://github.com/ghostery/broken-page-reports/issues/1308
+! >>> url=https://www.megaplay.buzz/lib/devtools-detector_v1.5.js
+! ... source=https://aniwave.lv/watch/assassination-classroom-un7xo/ep-10
+! ... type=script
+||megaplay.buzz/lib/devtools-detector_v1.5.js^

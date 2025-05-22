@@ -260,7 +260,7 @@ shop.wolterskluwer.nl###udtDark
 clarisvirot.com##.axeptio_mount
 
 ! https://github.com/ghostery/broken-page-reports/issues/1002
-connect.airfrance.com##obp-cookie-consent
+connect.airfrance.com,connect.klm.com##obp-cookie-consent,[class*="obp-cookie-consent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1001
 ! only regards www-prefixed website
@@ -410,3 +410,36 @@ kinoz.net###cookie-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/1281
 vlada.gov.hr###gdc-container
+
+! https://github.com/ghostery/broken-page-reports/issues/1341
+baritoday.it##+js(set, _iub, undefined)
+
+! https://github.com/ghostery/broken-page-reports/issues/1339
+casio.co.uk##+js(set-cookie, cookieConsentGranted, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1337
+daxenfeuer.de###cookieConsent
+
+! https://github.com/ghostery/broken-page-reports/issues/1352
+xiaomishop.hu###overlay_cookie_alert
+xiaomishop.hu###overlay_cookie_alert~#exposeMaskOverlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1368
+! >>> url=https://cdn1.legalweb.io/7ab28375-6b55-4bfc-b178-c79519f12c71.js
+! ... source=https://shop.wienerlinien.at/
+! ... type=script
+||cdn1.legalweb.io^$domain=shop.wienerlinien.at
+
+! https://github.com/ghostery/broken-page-reports/issues/1292
+! >>> url=https://cmp.computerbild.de/unified/wrapperMessagingWithoutDetection.js
+! ... source=https://www.computerbild.de/
+! ... type=script
+||cmp.computerbild.de^
+! >>> url=https://www.computerbild.de/assets/cmp-adb.js
+! ... source=https://www.computerbild.de/
+! ... type=script
+||computerbild.de/assets/cmp-adb.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1357
+alpenverein-muenchen-oberland.de##.globalMessageLayer:has(~#myMessageBox .cookiesmanager)
+alpenverein-muenchen-oberland.de##.messageBox:has(.cookiesmanager)
