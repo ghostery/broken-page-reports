@@ -382,9 +382,6 @@ techdirt.com###eu-cookie-law
 ! ... type=script
 ||consorsbank.de/web-analytics/v.18.0.2/tag-managment-system/retail/privacy_v2_6.js^
 
-! https://github.com/ghostery/broken-page-reports/issues/1204
-meta.com##div[class]:has(div>div>div[tabindex]>div[style*="--secondary-button-background: rgba(255, 255, 255, 0.2)"])
-
 ! https://github.com/ghostery/broken-page-reports/issues/1215
 fable.com##.csm-cookie-consent
 
