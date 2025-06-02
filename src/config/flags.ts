@@ -16,7 +16,7 @@ const flags: Config["flags"] = {
         platform: ["chromium"],
       },
     },
-  ]
+  ],
 };
 
 export default flags;
