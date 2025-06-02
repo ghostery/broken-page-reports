@@ -446,3 +446,6 @@ alpenverein-muenchen-oberland.de##.messageBox:has(.cookiesmanager)
 ! ... source=https://www.ba-computer.at/displays-projektoren.html
 ! ... type=script
 cookie$domain=ba-computer.at
+
+! https://github.com/ghostery/broken-page-reports/issues/1413
+onlineshop.haribo.com##+js(trusted-set-cookie, cc_cookie, '{"level":["necessary"]}')
