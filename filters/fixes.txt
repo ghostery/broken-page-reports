@@ -847,9 +847,6 @@ mycompany-mycar.de##.kick-kcm-overlay
 harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
 harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/488
-mlive.com##div:not([class]):not([id])>div[class]
-
 ! https://github.com/ghostery/broken-page-reports/issues/753
 titantv.com##+js(set, googletag, {})
 
