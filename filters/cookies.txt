@@ -440,3 +440,12 @@ xiaomishop.hu###overlay_cookie_alert~#exposeMaskOverlay
 ! https://github.com/ghostery/broken-page-reports/issues/1357
 alpenverein-muenchen-oberland.de##.globalMessageLayer:has(~#myMessageBox .cookiesmanager)
 alpenverein-muenchen-oberland.de##.messageBox:has(.cookiesmanager)
+
+! https://github.com/ghostery/broken-page-reports/issues/1414
+! >>> url=https://www.ba-computer.at/static/version1745274358/frontend/Awag/awag_child_theme/de_DE/mage/cookies.min.js
+! ... source=https://www.ba-computer.at/displays-projektoren.html
+! ... type=script
+cookie$domain=ba-computer.at
+
+! https://github.com/ghostery/broken-page-reports/issues/1413
+onlineshop.haribo.com##+js(trusted-set-cookie, cc_cookie, '{"level":["necessary"]}')

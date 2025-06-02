@@ -847,9 +847,6 @@ mycompany-mycar.de##.kick-kcm-overlay
 harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
 harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/488
-mlive.com##div:not([class]):not([id])>div[class]
-
 ! https://github.com/ghostery/broken-page-reports/issues/753
 titantv.com##+js(set, googletag, {})
 
@@ -1474,3 +1471,24 @@ wdio.com#@#.ad-ticker
 ! ... source=https://matrixkeyboards.com/collections/all-active-products/products/rubberized-gaming-keycaps-black
 ! ... type=script
 @@||segment.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1406
+! >>> url=https://0.as.slashdot.org/
+! ... source=https://slashdot.org/
+! ... type=script
+||as.slashdot.org^$domain=slashdot.org
+! >>> url=https://0.html-load.com/
+! ... source=https://slashdot.org/
+! ... type=script
+||html-load.com^$domain=slashdot.org
+! >>> url=https://0.content-loader.com/
+! ... source=https://slashdot.org/
+! ... type=script
+||content-loader.com^$domain=slashdot.org
+! >>> url=https://0.error-report.com/
+! ... source=https://slashdot.org/
+! ... type=script
+||error-report.com^$domain=slashdot.org
+slashdot.org##+js(trusted-suppress-native-method, alert, 'html-load.com', prevent)
+slashdot.org##+js(trusted-suppress-native-method, atob, 'YWRibG9ja2', prevent)
+slashdot.org##+js(nosiif, clearInterval)

@@ -10,21 +10,17 @@ ghostery.com##.ds-footer-copyrights
 ! https://github.com/ghostery/broken-page-reports/issues/1180
 ! https://github.com/ghostery/broken-page-reports/issues/1184
 ! https://github.com/ghostery/broken-page-reports/issues/1188
-motscroises.fr,slashdot.org,winfuture.de##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
-motscroises.fr,slashdot.org,winfuture.de##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
+motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
+motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
-slashdot.org,motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-slashdot.org,winfuture.de##+js(trusted-suppress-native-method, alert, '"html-load.com"', abort)
-slashdot.org,winfuture.de##+js(aopr, HTMLStyleElement.prototype.remove)
-slashdot.org,winfuture.de##+js(set, asload, noopFunc)
+motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+winfuture.de##+js(trusted-suppress-native-method, alert, '"html-load.com"', abort)
+winfuture.de##+js(aopr, HTMLStyleElement.prototype.remove)
+winfuture.de##+js(set, asload, noopFunc)
 tvtv.us##+js(aopr, eval)
-! >>> url=https://as.slashdot.org/loader.min.js
-! ... source=https://slashdot.org/
-! ... type=script
-||as.slashdot.org^$script
 !#if env_safari
 onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
