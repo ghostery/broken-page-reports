@@ -1495,3 +1495,7 @@ slashdot.org##+js(nosiif, clearInterval)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1419
 gazzetta.gr##.admanager-content
+
+! https://github.com/ghostery/broken-page-reports/issues/1418
+bigfooty.com##[id^="bf"]
+bigfooty.com##[class^="bf"]
