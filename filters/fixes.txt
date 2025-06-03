@@ -1492,3 +1492,6 @@ wdio.com#@#.ad-ticker
 slashdot.org##+js(trusted-suppress-native-method, alert, 'html-load.com', prevent)
 slashdot.org##+js(trusted-suppress-native-method, atob, 'YWRibG9ja2', prevent)
 slashdot.org##+js(nosiif, clearInterval)
+
+! https://github.com/ghostery/broken-page-reports/issues/1419
+gazzetta.gr##.admanager-content
