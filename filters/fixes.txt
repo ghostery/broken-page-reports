@@ -1500,3 +1500,6 @@ gazzetta.gr##.admanager-content
 ! https://github.com/ghostery/broken-page-reports/issues/1418
 bigfooty.com##[id^="bf"]
 bigfooty.com##[class^="bf"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1420
+audiotools.in##+js(set, adblock_validURL, noopFunc)
