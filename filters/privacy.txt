@@ -147,3 +147,29 @@
 ! ... source=https://aniwave.lv/watch/assassination-classroom-un7xo/ep-10
 ! ... type=script
 ||megaplay.buzz/lib/devtools-detector_v1.5.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1327
+! >>> url=https://velsirtohoosh.net/
+! ... source=https://totalsportek.pro/
+! ... type=script
+||velsirtohoosh.net^
+! >>> url=https://itrbprnmqy.com/
+! ... source=https://totalsportek.pro/
+! ... type=script
+||itrbprnmqy.com^
+! >>> url=https://sg.soriterestuff.com/
+! ... source=https://totalsportek.pro/
+! ... type=script
+||soriterestuff.com^
+! >>> url=https://kd.dipppyruiners.top/
+! ... source=https://totalsportek.pro/
+! ... type=script
+||dipppyruiners.top^
+! >>> url=https://jdbmfjwxahbphql.com/
+! ... source=https://totalsportek.pro/
+! ... type=script
+||jdbmfjwxahbphql.com^
+! >>> url=https://vendeanlinnaea.com/
+! ... source=https://totalsportek.pro/
+! ... type=script
+||vendeanlinnaea.com^
