@@ -173,3 +173,9 @@
 ! ... source=https://totalsportek.pro/
 ! ... type=script
 ||vendeanlinnaea.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1433
+! >>> url=https://www.samsung.com/chat/api/livechat/prompt/browse/event
+! ... source=https://www.samsung.com/us/support/contact/
+! ... type=xhr
+||samsung.com/chat/api/livechat/prompt/browse/event

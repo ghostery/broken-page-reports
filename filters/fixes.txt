@@ -1503,3 +1503,9 @@ bigfooty.com##[class^="bf"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1420
 audiotools.in##+js(set, adblock_validURL, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/1433
+! >>> url=https://tags.tiqcdn.com/utag/samsung/main/prod/utag.2427.js?utv=ut4.46.202502131350
+! ... source=https://www.samsung.com/us/support/contact/
+! ... type=script
+@@||tags.tiqcdn.com/utag/samsung^$domain=samsung.com
