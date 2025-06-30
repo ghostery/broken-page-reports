@@ -40,9 +40,7 @@ const parseFilter = (filter) => {
 
   return {
     header: filter.slice(0, versionLineEnd),
-    body: filter
-      .slice(versionLineEnd)
-      .replace(/^\n/gm, ""),
+    body: filter.slice(versionLineEnd).replace(/^\n/gm, ""),
   };
 };
 
