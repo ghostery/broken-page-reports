@@ -872,9 +872,6 @@ senderscore.org##+js(set, MktoForms2, {})
 senderscore.org##+js(set, MktoForms2.loadForm, trueFunc)
 senderscore.org##+js(set, MktoForms2.whenRendered, trueFunc)
 
-! https://github.com/ghostery/broken-page-reports/issues/814
-filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
-
 ! https://github.com/ghostery/broken-page-reports/issues/809
 ! >>> url=https://contact.keiseruniversity.edu/lp/48162/tracker
 ! ... source=https://contact.keiseruniversity.edu/48162/accountancy
