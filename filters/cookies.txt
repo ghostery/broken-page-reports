@@ -461,3 +461,7 @@ harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
 ! https://github.com/ghostery/broken-page-reports/issues/725
 mycompany-mycar.de##.kick-kcm-overlay
 mycompany-mycar.de##.kick-kcm-settings
+
+! https://github.com/ghostery/broken-page-reports/issues/1285
+schroders.com###tDrkDiv
+schroders.com###__next.noscroll:style(overflow: auto !important)
