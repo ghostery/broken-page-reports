@@ -1041,10 +1041,6 @@ roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
 ! https://github.com/ghostery/broken-page-reports/issues/1032
 frame.work##html[style^="overflow: hidden"]:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/1078
-manhuatop.com##+js(nostif, log, 500)
-manhuatop.com##+js(aopr, console.log)
-
 ! https://github.com/ghostery/broken-page-reports/issues/798
 ! https://github.com/duckduckgo/autoconsent/blob/849df11d326c75e8b903c55e0fe6c811feee2c7c/rules/autoconsent/tealium.json#L9
 barmer.de##body.body-no-scroll:style(overflow: auto !important)
