@@ -968,9 +968,6 @@ canonrumors.com###sn_gg_ad_wrapper
 download.megaup.net##a[id][href^="https://download.megaup.net/"][target="_blank"]:style(width: 1px !important; height: 1px !important; display: block !important;)
 !#endif
 
-! https://github.com/ghostery/broken-page-reports/issues/998
-1337x.to##+js(aeld, click, , elements, a[id])
-
 ! https://github.com/ghostery/broken-page-reports/issues/995
 ! >>> url=https://5d3e9.v.fwmrm.net/ad/g/1
 ! ... source=https://embed.viaplay.com/
