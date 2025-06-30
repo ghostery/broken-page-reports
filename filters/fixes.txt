@@ -1019,8 +1019,8 @@ wnd.com##.code-block:not(.code-block-14)
 ! ... type=script
 ||regardviolas.shop^$redirect=empty
 dood.sh##+js(trusted-supress-native-method, document.getElementsByClassName, '"adsbox"', abort)
-pinayflix.gg,dood.sh##+js(set, console.clear, noopFunc)
-pinayflix.gg,dood.sh##+js(nostif, console.clear)
+dood.sh##+js(set, console.clear, noopFunc)
+dood.sh##+js(nostif, console.clear)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1046
 ! >>> url=https://sitecore.marcelgruber.ca/_next/data/PIgARt31fCENzU_Isgwin/posts/onetrust-gtm-tag-custom-cookie-settings-button.json?slug=onetrust-gtm-tag-custom-cookie-settings-button

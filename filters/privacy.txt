@@ -127,3 +127,17 @@
 ! ... source=https://houcedqscszcu.space/628cdafbd?IBFGnbbvJ8gxE4h2mMPLmAOh=redacted
 ! ... type=xhr
 ||houcedqscszcu.space^
+
+! https://github.com/ghostery/broken-page-reports/issues/1048 nsfw
+! >>> url=https://gkaarwpa.com/a
+! ... source=https://pinayflix.art/
+! ... type=xhr
+||gkaarwpa.com^
+! >>> url=https://faqlikbid.com/a
+! ... source=https://pinayflix.art/
+! ... type=xhr
+||faqlikbid.com^
+! >>> url=https://rmmjy.rrbzvmklrzwov.top/a
+! ... source=https://pinayflix.art/
+! ... type=script
+||rrbzvmklrzwov.top^
