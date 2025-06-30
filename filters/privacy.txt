@@ -123,10 +123,6 @@
 ||samsung.com/chat/api/livechat/prompt/browse/event
 
 ! https://github.com/ghostery/broken-page-reports/issues/949
-! >>> url=https://uvoashaurgeeph.com/
-! ... source=https://sflix.to/movie/free-how-to-train-your-dragon-hd-126679
-! ... type=xhr
-||uvoashaurgeeph.com^
 ! >>> url=https://hophoorgoo.net/
 ! ... source=https://sflix.to/movie/free-how-to-train-your-dragon-hd-126679
 ! ... type=xhr
