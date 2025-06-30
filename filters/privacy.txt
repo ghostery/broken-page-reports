@@ -52,12 +52,6 @@
 ! ... type=script
 ||solopornoitaliani.it^
 
-! https://github.com/ghostery/broken-page-reports/issues/811
-! >>> url=https://organicextentbounds.com/fru4tzyj?key=e4e35376293887bedf0e498a186c2e16
-! ... source=https://vidmoly.to/embed-m09sop18m5or.html
-! ... type=script
-||organicextentbounds.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1096
 ! >>> url=https://api-sr.amplitude.com/sessions/v2/track?deviceId=
 ! ... source=https://app.amplitude.com/login/ORG_ID
