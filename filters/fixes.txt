@@ -1207,10 +1207,8 @@ swingkitchen.com##html,body:style(overflow: initial !important; overflow-x: init
 ! https://github.com/ghostery/broken-page-reports/issues/1235
 sololevelingmangafree.com###sticky-ad
 sololevelingmangafree.com##.popup-container
-! >>> url=https://a.magsrv.com/ad-provider.js
-! ... source=https://www.sololevelingmangafree.com/manga/solo-leveling-chapter-90/index.html
-! ... type=script
-||magsrv.com^
+sololevelingmangafree.com##.ad-div-1
+sololevelingmangafree.com##.ad-div-2
 ! >>> url=https://www.sololevelingmangafree.com/donation/donation_popup.js
 ! ... source=https://www.sololevelingmangafree.com/manga/solo-leveling-chapter-90/index.html
 ! ... type=script
