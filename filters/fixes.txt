@@ -1258,6 +1258,7 @@ sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1269
 mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
+mobilarena.hu##div[class][style]:has(>img[style]+a[style][href][target="_blank"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1225
 ! >>> url=https://html-load.com/loader.min.js
