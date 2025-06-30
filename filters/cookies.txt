@@ -457,3 +457,7 @@ att.com##+js(trusted-set-local-storage-item, attpc-opt-spt-safe-check, '{"c":[{"
 harmonogramy.dsw.edu.pl###cookieConsentModal
 harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
 harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/725
+mycompany-mycar.de##.kick-kcm-overlay
+mycompany-mycar.de##.kick-kcm-settings
