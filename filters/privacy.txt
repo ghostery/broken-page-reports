@@ -107,10 +107,6 @@
 ||sephiraasperly.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1327
-! >>> url=https://velsirtohoosh.net/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||velsirtohoosh.net^
 ! >>> url=https://itrbprnmqy.com/
 ! ... source=https://totalsportek.pro/
 ! ... type=script
