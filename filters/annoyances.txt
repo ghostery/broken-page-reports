@@ -13,9 +13,6 @@ kansascity.com,miamiherald.com##.ab-in-app-message.ab-slideup
 ! https://github.com/ghostery/broken-page-reports/issues/892
 titantv.com###vertad
 
-! https://github.com/uBlockOrigin/uAssets/issues/26299
-substack.com#@#+js(trusted-set-cookie, intro_popup_last_hidden_at, $currentDate$, , , reload, 1)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1008
 repubblica.it##gdwc-video-component
 
