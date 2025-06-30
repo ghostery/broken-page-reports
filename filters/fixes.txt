@@ -1018,10 +1018,6 @@ wnd.com##.code-block:not(.code-block-14)
 ! ... source=https://pinayflix.gg/
 ! ... type=script
 ||regardviolas.shop^$redirect=empty
-! >>> url=https://blearspellaea.shop/a
-! ... source=https://pinayflix.gg/
-! ... type=script
-||blearspellaea.shop^$redirect=empty
 dood.sh##+js(trusted-supress-native-method, document.getElementsByClassName, '"adsbox"', abort)
 pinayflix.gg,dood.sh##+js(set, console.clear, noopFunc)
 pinayflix.gg,dood.sh##+js(nostif, console.clear)
