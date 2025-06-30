@@ -13,9 +13,6 @@ kansascity.com,miamiherald.com##.ab-in-app-message.ab-slideup
 ! https://github.com/ghostery/broken-page-reports/issues/892
 titantv.com###vertad
 
-! https://github.com/ghostery/broken-page-reports/issues/1008
-repubblica.it##gdwc-video-component
-
 ! https://github.com/ghostery/broken-page-reports/issues/1218
 wcostream.tv##+js(aopr, Notification.requestPermission)
 
