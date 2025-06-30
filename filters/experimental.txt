@@ -10,6 +10,7 @@ ghostery.com##.ds-footer-copyrights
 ! https://github.com/ghostery/broken-page-reports/issues/1180
 ! https://github.com/ghostery/broken-page-reports/issues/1184
 ! https://github.com/ghostery/broken-page-reports/issues/1188
+! https://github.com/ghostery/broken-page-reports/issues/1150
 motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
 motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
@@ -21,6 +22,7 @@ winfuture.de##+js(trusted-suppress-native-method, alert, '"html-load.com"', abor
 winfuture.de##+js(aopr, HTMLStyleElement.prototype.remove)
 winfuture.de##+js(set, asload, noopFunc)
 tvtv.us##+js(aopr, eval)
+winfuture.de##+js(aopr, atob)
 !#if env_safari
 onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
