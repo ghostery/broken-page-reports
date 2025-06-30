@@ -1009,12 +1009,6 @@ filen.io#@#.z-50
 utwente.nl#@#+js(trusted-set-cookie, utwente__avgconsent, {"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}, , , domain, utwente.nl)
 utwente.nl##+js(set, utwenteCookies._consent, true)
 
-! https://github.com/ghostery/broken-page-reports/issues/1079
-! >>> url=https://www.applovin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2
-! ... source=https://www.applovin.com/
-! ... type=stylesheet
-@@||applovin.com^$1p
-
 ! https://github.com/ghostery/broken-page-reports/issues/1081
 wnd.com#@#.code-block
 wnd.com##.code-block:not(.code-block-14)
