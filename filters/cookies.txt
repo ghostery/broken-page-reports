@@ -452,3 +452,8 @@ onlineshop.haribo.com##+js(trusted-set-cookie, cc_cookie, '{"level":["necessary"
 
 ! https://github.com/ghostery/broken-page-reports/issues/1431
 att.com##+js(trusted-set-local-storage-item, attpc-opt-spt-safe-check, '{"c":[{"type":"m","value":"n"},{"type":"n","value":"y"}],"consent":"d","gpc":"n"}#$currentISODate$')
+
+! https://github.com/ghostery/broken-page-reports/issues/731
+harmonogramy.dsw.edu.pl###cookieConsentModal
+harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
+harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
