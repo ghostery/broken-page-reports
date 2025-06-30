@@ -106,12 +106,6 @@
 ! ... type=script
 ||sephiraasperly.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1308
-! >>> url=https://www.megaplay.buzz/lib/devtools-detector_v1.5.js
-! ... source=https://aniwave.lv/watch/assassination-classroom-un7xo/ep-10
-! ... type=script
-||megaplay.buzz/lib/devtools-detector_v1.5.js^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1327
 ! >>> url=https://velsirtohoosh.net/
 ! ... source=https://totalsportek.pro/
