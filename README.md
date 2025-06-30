@@ -34,9 +34,8 @@ Often, screenshots are great to communicate what breaks on a page.
 It is best to keep the reports here limited to concrete examples where an individual websites breaks.
 If you instead found a general problem or bug in Ghostery, please let us know through, for instance:
 
-* Open a ticket on https://github.com/ghostery/ghostery-extension/
-* Through our website: https://www.ghostery.com/support
-* Write us at support@ghostery
+- Open a ticket on https://github.com/ghostery/ghostery-extension/
+- Through our website: https://www.ghostery.com/support
+- Write us at support@ghostery
 
 Thank you for helping us understand what we need to fix to make Ghostery better!
-

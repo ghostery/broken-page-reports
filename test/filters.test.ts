@@ -12,10 +12,7 @@ const cwd = process.cwd();
 
 const hasDnsRecord = async (hostname: string) => {
   for (const rr of ["A", "AAAA", "CNAME"]) {
-    if (
-      await dns.resolve(hostname, rr)
-        .catch((_error) => false as const)
-    ) {
+    if (await dns.resolve(hostname, rr).catch((_error) => false as const)) {
       return;
     }
   }
@@ -49,13 +46,16 @@ const doTest = (filePath: string) => {
 
       for (const { url, type, source, match } of assertions) {
         // Passes with network filter
-        expect((NetworkFilter.parse(filter)!).match(
-          Request.fromRawDetails({ url, type, sourceUrl: source }),
-        )).toBe(match);
+        expect(
+          NetworkFilter.parse(filter)!.match(
+            Request.fromRawDetails({ url, type, sourceUrl: source }),
+          ),
+        ).toBe(match);
 
         if (VALIDATE_DNS && url) {
-          await expect(hasDnsRecord(tldts.parse(url)!.hostname!))
-            .resolves.not.toThrow();
+          await expect(
+            hasDnsRecord(tldts.parse(url)!.hostname!),
+          ).resolves.not.toThrow();
         }
       }
     });
