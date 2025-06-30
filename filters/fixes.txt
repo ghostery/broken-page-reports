@@ -1057,10 +1057,6 @@ twitch.tv##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-m
 ! ... type=script
 ||twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js^
 
-! https://github.com/ghostery/broken-page-reports/issues/1074
-! Sponsored search results includes keyword highlights
-bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1090
 ! https://github.com/yous/YousList/issues/584
 acmicpc.net##.main-slider-ad
