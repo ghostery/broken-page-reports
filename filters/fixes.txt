@@ -1120,12 +1120,6 @@ www.yahoo.com##div:has(>div.mb-4[id]>div+style)
 ! ... type=script
 ||ams.cdn.arkadiumhosted.com/advertisement/video/4.0/video-ads.js^$domain=dictionary.com
 
-! https://github.com/ghostery/broken-page-reports/issues/1149
-! >>> url=https://imasdk.googleapis.com/js/sdkloader/ima3.js
-! ... source=https://alphamediaplayer.com/kxl
-! ... type=script
-||imasdk.googleapis.com/js/sdkloader/ima3.js^$redirect=noopjs,domain=alphamediaplayer.com
-
 ! https://github.com/ghostery/broken-page-reports/issues/1173
 ! Used $important since the combination of allowlist and redirect rule was not supported
 ! >>> url=https://www.googletagmanager.com/gtag/js?id=G-LNMM5ECEZE
