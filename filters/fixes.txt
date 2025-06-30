@@ -605,9 +605,6 @@ mlive.com##div[class]>style+div
 ! https://github.com/ghostery/broken-page-reports/issues/402
 united-domains.de##+js(nosiif, cookieLayerDecoy)
 
-! https://github.com/ghostery/broken-page-reports/issues/493
-thestate.com##.ca-pcu-inline[data-pcu-render-at-]
-
 ! https://github.com/ghostery/broken-page-reports/issues/492
 myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
 
