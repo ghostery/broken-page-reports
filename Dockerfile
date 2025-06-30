@@ -1,9 +1,9 @@
 FROM debian:12.8
 
-COPY --from=denoland/deno:bin-2.1.4 /deno /usr/local/bin/deno
+COPY --from=denoland/deno:bin-2.3.7 /deno /usr/local/bin/deno
 RUN mkdir -p /.cache/deno && chmod a+rw -R /.cache/deno
 
-COPY --from=amazon/aws-cli:2.10.0 /usr/local/aws-cli/ /usr/local/aws-cli/
+COPY --from=amazon/aws-cli:2.27.45 /usr/local/aws-cli/ /usr/local/aws-cli/
 ENV PATH="/usr/local/aws-cli/v2/current/bin:${PATH}"
 
 RUN apt-get update && \
