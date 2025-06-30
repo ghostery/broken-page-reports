@@ -12,13 +12,6 @@ kansascity.com,miamiherald.com##.ab-in-app-message.ab-slideup
 ! https://github.com/ghostery/broken-page-reports/issues/849
 ! https://github.com/ghostery/broken-page-reports/issues/892
 titantv.com###vertad
-titantv.com##.sc-dNsUpz:style(width: 100% !important)
-
-! https://github.com/uBlockOrigin/uAssets/issues/26299
-substack.com#@#+js(trusted-set-cookie, intro_popup_last_hidden_at, $currentDate$, , , reload, 1)
-
-! https://github.com/ghostery/broken-page-reports/issues/1008
-repubblica.it##gdwc-video-component
 
 ! https://github.com/ghostery/broken-page-reports/issues/1218
 wcostream.tv##+js(aopr, Notification.requestPermission)

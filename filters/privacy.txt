@@ -52,12 +52,6 @@
 ! ... type=script
 ||solopornoitaliani.it^
 
-! https://github.com/ghostery/broken-page-reports/issues/811
-! >>> url=https://organicextentbounds.com/fru4tzyj?key=e4e35376293887bedf0e498a186c2e16
-! ... source=https://vidmoly.to/embed-m09sop18m5or.html
-! ... type=script
-||organicextentbounds.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1096
 ! >>> url=https://api-sr.amplitude.com/sessions/v2/track?deviceId=
 ! ... source=https://app.amplitude.com/login/ORG_ID
@@ -82,12 +76,6 @@
 ! ... type=script
 ||cdn.vidsrc.stream/disable-devtool
 
-! https://github.com/ghostery/broken-page-reports/issues/1220
-! >>> url=https://nt.sorosehottie.com/rsqn6y5DN4n/BqXXR
-! ... source=https://xprime.tv/
-! ... type=script
-||sorosehottie.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1219
 ! >>> url=https://hl.koumyscampana.com/rcoho54CFPkn9/aOkqJ
 ! ... source=https://www.bitcine.app/
@@ -100,29 +88,11 @@
 ! ... type=image
 ||pix2.services.tvn.pl^
 
-! https://github.com/ghostery/broken-page-reports/issues/1264
-! >>> url=https://subdomain.4672cf576d.com/adscript.js
-! ... source=https://www.xmegadrive.com/
-! ... type=script
-||4672cf576d.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1262
-! >>> url=https://rrellcpurhyjne.xyz/
-! ... source=https://ebook-hunter.org/
-! ... type=script
-||rrellcpurhyjne.xyz^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1305
 ! >>> url=https://shovelrecalled.com/a
 ! ... source=https://soaper.live/movie_zrYg3oagL1.html
 ! ... type=script
 ||shovelrecalled.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1327
-! >>> url=https://gxiacapeptyos.club/a
-! ... source=https://totalsportek.pro/
-! ... type=xhr
-||gxiacapeptyos.club^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1325
 ! >>> url=https://zz.medinaossal.com/fa2Y0gFuftYt/114415
@@ -136,31 +106,7 @@
 ! ... type=script
 ||sephiraasperly.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1353
-! >>> url=https://zauphozaucou.net/
-! ... source=https://shopr.tv/watch-tv/watch-the-walking-dead-world-beyond-movies-free-hd-on-hurawatch-63587.5479438
-! ... type=script
-||zauphozaucou.net^
-
-! https://github.com/ghostery/broken-page-reports/issues/1308
-! >>> url=https://www.megaplay.buzz/lib/devtools-detector_v1.5.js
-! ... source=https://aniwave.lv/watch/assassination-classroom-un7xo/ep-10
-! ... type=script
-||megaplay.buzz/lib/devtools-detector_v1.5.js^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1327
-! >>> url=https://velsirtohoosh.net/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||velsirtohoosh.net^
-! >>> url=https://itrbprnmqy.com/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||itrbprnmqy.com^
-! >>> url=https://sg.soriterestuff.com/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||soriterestuff.com^
 ! >>> url=https://kd.dipppyruiners.top/
 ! ... source=https://totalsportek.pro/
 ! ... type=script
@@ -169,10 +115,6 @@
 ! ... source=https://totalsportek.pro/
 ! ... type=script
 ||jdbmfjwxahbphql.com^
-! >>> url=https://vendeanlinnaea.com/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||vendeanlinnaea.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1433
 ! >>> url=https://www.samsung.com/chat/api/livechat/prompt/browse/event
@@ -180,16 +122,32 @@
 ! ... type=xhr
 ||samsung.com/chat/api/livechat/prompt/browse/event
 
-! https://github.com/ghostery/broken-page-reports/issues/949
-! >>> url=https://iomcddioa.com/
-! ... source=https://sflix.to/movie/free-how-to-train-your-dragon-hd-126679
+! https://github.com/ghostery/broken-page-reports/issues/1386
+! >>> url=https://houcedqscszcu.space/628cdafbd?IBFGnbbvJ8gxE4h2mMPLmAOh=redacted
+! ... source=https://www.1337x.to/torrent/6432094/Drop-2025-1080p-BluRay-x265-10bit-EAC3-7-1-Ghost-QxR/
 ! ... type=xhr
-||iomcddioa.com^
-! >>> url=https://uvoashaurgeeph.com/
-! ... source=https://sflix.to/movie/free-how-to-train-your-dragon-hd-126679
+||houcedqscszcu.space^
+
+! https://github.com/ghostery/broken-page-reports/issues/1048 nsfw
+! >>> url=https://gkaarwpa.com/a
+! ... source=https://pinayflix.art/
 ! ... type=xhr
-||uvoashaurgeeph.com^
-! >>> url=https://hophoorgoo.net/
-! ... source=https://sflix.to/movie/free-how-to-train-your-dragon-hd-126679
+||gkaarwpa.com^
+! >>> url=https://faqlikbid.com/a
+! ... source=https://pinayflix.art/
 ! ... type=xhr
-||hophoorgoo.net^
+||faqlikbid.com^
+! >>> url=https://rmmjy.rrbzvmklrzwov.top/a
+! ... source=https://pinayflix.art/
+! ... type=script
+||rrbzvmklrzwov.top^
+
+! https://github.com/ghostery/broken-page-reports/issues/1078
+! >>> url=https://oy.beyliksyowler.com/sng3zSYGaFEI/117077
+! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
+! ... type=script
+||beyliksyowler.com^
+! >>> url=https://pe.cuinageaquilid.com/roqgUzVYgoHkaQnJ/84894
+! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
+! ... type=script
+||cuinageaquilid.com^

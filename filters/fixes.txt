@@ -605,15 +605,6 @@ mlive.com##div[class]>style+div
 ! https://github.com/ghostery/broken-page-reports/issues/402
 united-domains.de##+js(nosiif, cookieLayerDecoy)
 
-! https://github.com/ghostery/broken-page-reports/issues/491
-usnews.com##+js(set, __googlefc, false)
-
-! https://github.com/ghostery/broken-page-reports/issues/493
-thestate.com##.ca-pcu-inline[data-pcu-render-at-]
-
-! https://github.com/ghostery/broken-page-reports/issues/492
-myheraldreview.com###blox-message-incompatible[data-message="blox ad blocker"]
-
 ! https://github.com/ghostery/broken-page-reports/issues/497
 ! >>> url=https://www.theglobeandmail.com/pf/api/v3/content/fetch/dsw-pencil?query=%7B%22campaignCode%22%3A%22digital%22%2C%22env%22%3A%22production%22%7D&d=487&_website=tgam
 ! ... source=https://www.theglobeandmail.com/
@@ -807,13 +798,6 @@ ybtour.co.kr##+js(set, wcs, {})
 ! https://github.com/ghostery/broken-page-reports/issues/699
 instapundit.com#@#.ad-space:not(.textads):not(.adbox)
 
-! https://github.com/ghostery/broken-page-reports/issues/670
-! https://github.com/ghostery/broken-page-reports/issues/720
-newser.com##nav[role="navigation"]>ul:style(max-height: 49px !important)
-newser.com###divEntireNav:style(height: 49px !important)
-newser.com#@#+js(aost, Math, onerror)
-newser.com#@#+js(aeld, load, Object)
-
 ! https://github.com/ghostery/broken-page-reports/issues/705
 ! Regional filters are not working on Ghostery Browser Extension v10
 ! Imports for the most popular websites
@@ -825,9 +809,6 @@ naver.com##[class^="Layout-module__banner_area_"][target]
 ! ... type=script
 @@||a0.awsstatic.com/libra/*/vendor/web-vitals.attribution.iife.js
 
-! https://github.com/ghostery/broken-page-reports/issues/710
-waldnet.nl##a#klikbareLink
-
 ! https://github.com/ghostery/broken-page-reports/issues/711
 tescobank.com###ensPrivacyBlock
 tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
@@ -837,18 +818,6 @@ tescobank.com##body[style*="overflow: hidden"]:style(overflow: auto !important)
 ! ... source=about:blank
 ! ... type=main_frame
 @@||exacttarget.com^$document,subdocument
-
-! https://github.com/ghostery/broken-page-reports/issues/725
-! The cookie consent is available but blocked.
-! This needs to be handled by autoconsent later: mycompany-mycar.de#@#.kick-kcm-settings
-mycompany-mycar.de##.kick-kcm-overlay
-
-! https://github.com/ghostery/broken-page-reports/issues/731
-harmonogramy.dsw.edu.pl###cookieConsentModal ~ .modal-backdrop.show
-harmonogramy.dsw.edu.pl##body.modal-open:style(overflow: auto !important)
-
-! https://github.com/ghostery/broken-page-reports/issues/753
-titantv.com##+js(set, googletag, {})
 
 ! https://github.com/ghostery/broken-page-reports/issues/754
 ! >>> url=https://signin-ui.costcotravel.com/sso/prod/ui/BuildDefinition/common/ga.js
@@ -871,9 +840,6 @@ titantv.com##+js(set, googletag, {})
 realsimple.com###onetrust-consent-sdk
 realsimple.com##html:style(overflow-y: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/669
-cbsnews.com##style+div:not([id]):not([class])>div[class]
-
 ! https://github.com/ghostery/broken-page-reports/issues/768
 ! >>> url=https://www.charities.pa.gov/vendor/analytics/appinsights.js?v=202462013214
 ! ... source=https://www.charities.pa.gov/#/page/default
@@ -890,18 +856,6 @@ cbsnews.com##style+div:not([id]):not([class])>div[class]
 senderscore.org##+js(set, MktoForms2, {})
 senderscore.org##+js(set, MktoForms2.loadForm, trueFunc)
 senderscore.org##+js(set, MktoForms2.whenRendered, trueFunc)
-
-! https://github.com/ghostery/broken-page-reports/issues/815
-! Add the following filter after redirect fully fixed:
-! ||d3hxtvexlru8r9.cloudfront.net$xhr,redirect=32x32.png,domain=kijk.nl
-kijk.nl#@#body > img[id].pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.ad-text.adSense.adBlock.adContent.adBanner
-kijk.nl#@#.adContent
-kijk.nl#@#.adBlock
-kijk.nl#@#.adSense
-kijk.nl#@#.ad-text
-
-! https://github.com/ghostery/broken-page-reports/issues/814
-filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/809
 ! >>> url=https://contact.keiseruniversity.edu/lp/48162/tracker
@@ -921,11 +875,6 @@ filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/819
 webcatalog-free.circle.ms###map-ads
-
-! https://github.com/ghostery/broken-page-reports/issues/760
-! https://github.com/ghostery/broken-page-reports/issues/830
-ecom.wixapps.net#@#+js(set, Sentry, {})
-ecom.wixapps.net#@#+js(set, Sentry.init, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/796
 geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
@@ -987,13 +936,8 @@ bankerandtradesman.com##article:style(display: block !important)
 ! https://github.com/ghostery/broken-page-reports/issues/924
 nytimes.com#@##complianceOverlay
 
-! https://github.com/ghostery/broken-page-reports/issues/953
-speedtest.net##+js(set, window.pbjs, {})
-speedtest.net##+js(set, window.pbjs.que, [])
-
 ! https://github.com/ghostery/broken-page-reports/issues/952
-! https://github.com/ghostery/broken-page-reports/issues/957
-clicrbs.com.br,drakecomic.org##+js(aeld, click, a)
+clicrbs.com.br##+js(aeld, click, a)
 
 ! https://github.com/ghostery/broken-page-reports/issues/963
 chemist-4-u.com#@#.inset-0.fixed
@@ -1010,10 +954,6 @@ repubblica.it###adv-TopLeft
 ! https://github.com/ghostery/broken-page-reports/issues/1283
 kinoz.net,benq.eu,onmeda.de##body[style*="overflow"]:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/983
-sellpy.se#@#.bERasM
-sellpy.se#@#.gUbXEK
-
 ! https://github.com/ghostery/broken-page-reports/issues/981
 !#if env_mobile
 ! >>> url=https://live.primis.tech/
@@ -1027,9 +967,6 @@ canonrumors.com###sn_gg_ad_wrapper
 !#if !env_firefox
 download.megaup.net##a[id][href^="https://download.megaup.net/"][target="_blank"]:style(width: 1px !important; height: 1px !important; display: block !important;)
 !#endif
-
-! https://github.com/ghostery/broken-page-reports/issues/998
-1337x.to##+js(aeld, click, , elements, a[id])
 
 ! https://github.com/ghostery/broken-page-reports/issues/995
 ! >>> url=https://5d3e9.v.fwmrm.net/ad/g/1
@@ -1072,12 +1009,6 @@ filen.io#@#.z-50
 utwente.nl#@#+js(trusted-set-cookie, utwente__avgconsent, {"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}, , , domain, utwente.nl)
 utwente.nl##+js(set, utwenteCookies._consent, true)
 
-! https://github.com/ghostery/broken-page-reports/issues/1079
-! >>> url=https://www.applovin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2
-! ... source=https://www.applovin.com/
-! ... type=stylesheet
-@@||applovin.com^$1p
-
 ! https://github.com/ghostery/broken-page-reports/issues/1081
 wnd.com#@#.code-block
 wnd.com##.code-block:not(.code-block-14)
@@ -1087,13 +1018,9 @@ wnd.com##.code-block:not(.code-block-14)
 ! ... source=https://pinayflix.gg/
 ! ... type=script
 ||regardviolas.shop^$redirect=empty
-! >>> url=https://blearspellaea.shop/a
-! ... source=https://pinayflix.gg/
-! ... type=script
-||blearspellaea.shop^$redirect=empty
 dood.sh##+js(trusted-supress-native-method, document.getElementsByClassName, '"adsbox"', abort)
-pinayflix.gg,dood.sh##+js(set, console.clear, noopFunc)
-pinayflix.gg,dood.sh##+js(nostif, console.clear)
+dood.sh##+js(set, console.clear, noopFunc)
+dood.sh##+js(nostif, console.clear)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1046
 ! >>> url=https://sitecore.marcelgruber.ca/_next/data/PIgARt31fCENzU_Isgwin/posts/onetrust-gtm-tag-custom-cookie-settings-button.json?slug=onetrust-gtm-tag-custom-cookie-settings-button
@@ -1114,10 +1041,6 @@ roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
 ! https://github.com/ghostery/broken-page-reports/issues/1032
 frame.work##html[style^="overflow: hidden"]:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/1078
-manhuatop.com##+js(nostif, log, 500)
-manhuatop.com##+js(aopr, console.log)
-
 ! https://github.com/ghostery/broken-page-reports/issues/798
 ! https://github.com/duckduckgo/autoconsent/blob/849df11d326c75e8b903c55e0fe6c811feee2c7c/rules/autoconsent/tealium.json#L9
 barmer.de##body.body-no-scroll:style(overflow: auto !important)
@@ -1133,10 +1056,6 @@ twitch.tv##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-m
 ! ... source=https://www.twitch.tv/
 ! ... type=script
 ||twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js^
-
-! https://github.com/ghostery/broken-page-reports/issues/1074
-! Sponsored search results includes keyword highlights
-bing.com##li.b_algo:has(div[role="contentinfo"]>p>strong)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1090
 ! https://github.com/yous/YousList/issues/584
@@ -1200,16 +1119,6 @@ www.yahoo.com##div:has(>div.mb-4[id]>div+style)
 ! ... source=https://www.dictionary.com/e/crossword/
 ! ... type=script
 ||ams.cdn.arkadiumhosted.com/advertisement/video/4.0/video-ads.js^$domain=dictionary.com
-
-! https://github.com/ghostery/broken-page-reports/issues/1149
-! >>> url=https://htlbid.com/v3/alphamediausa.com/opscobid.js
-! ... source=https://alphamediaplayer.com/kxl
-! ... type=script
-||htlbid.com/v3/alphamediausa.com/opscobid.js^$redirect=noopjs,domain=alphamediaplayer.com
-! >>> url=https://imasdk.googleapis.com/js/sdkloader/ima3.js
-! ... source=https://alphamediaplayer.com/kxl
-! ... type=script
-||imasdk.googleapis.com/js/sdkloader/ima3.js^$redirect=noopjs,domain=alphamediaplayer.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/1173
 ! Used $important since the combination of allowlist and redirect rule was not supported
@@ -1298,10 +1207,8 @@ swingkitchen.com##html,body:style(overflow: initial !important; overflow-x: init
 ! https://github.com/ghostery/broken-page-reports/issues/1235
 sololevelingmangafree.com###sticky-ad
 sololevelingmangafree.com##.popup-container
-! >>> url=https://a.magsrv.com/ad-provider.js
-! ... source=https://www.sololevelingmangafree.com/manga/solo-leveling-chapter-90/index.html
-! ... type=script
-||magsrv.com^
+sololevelingmangafree.com##.ad-div-1
+sololevelingmangafree.com##.ad-div-2
 ! >>> url=https://www.sololevelingmangafree.com/donation/donation_popup.js
 ! ... source=https://www.sololevelingmangafree.com/manga/solo-leveling-chapter-90/index.html
 ! ... type=script
@@ -1339,9 +1246,6 @@ economictimes.indiatimes.com###topAd
 ! ... type=script
 @@||sndcdn.com/assets/*.js^$script,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
 
-! https://github.com/ghostery/broken-page-reports/issues/1265
-streamruby.com##+js(nostif, , 1000)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1257
 civitai.com##div[id]+div:has(>div>a[href="/pricing"])
 civitai.com##div[class^="CosmeticWrapper_wrapper"]+div:has(>div>a[href="/pricing"])
@@ -1354,19 +1258,7 @@ sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1269
 mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
-
-! https://github.com/ghostery/broken-page-reports/issues/1225
-! >>> url=https://html-load.com/loader.min.js
-! ... source=https://www.buzzfeed.com/
-! ... type=script
-||html-load.com^$domain=buzzfeed.com
-
-! https://github.com/ghostery/broken-page-reports/issues/1285
-schroders.com###tDrkDiv
-schroders.com##body.noscroll:style(overflow: auto !important)
-
-! https://github.com/ghostery/broken-page-reports/issues/1284
-lauermannundweyer.de###cc-cookie-overlay
+mobilarena.hu##div[class][style]:has(>img[style]+a[style][href][target="_blank"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1280
 sidmouth.scottcinemas.co.uk##.cookie-attention
@@ -1389,6 +1281,8 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1300
 ! https://github.com/ghostery/broken-page-reports/issues/893
 ! https://github.com/ghostery/broken-page-reports/issues/1369
+finanzen.net##.page-layout__ad-header-top
+finanzen.net##.page-content__ad
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
 ! ... source=https://www.finanzen.net/
 ! ... type=script
