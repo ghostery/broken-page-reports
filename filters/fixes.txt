@@ -1246,9 +1246,6 @@ economictimes.indiatimes.com###topAd
 ! ... type=script
 @@||sndcdn.com/assets/*.js^$script,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
 
-! https://github.com/ghostery/broken-page-reports/issues/1265
-streamruby.com##+js(nostif, , 1000)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1257
 civitai.com##div[id]+div:has(>div>a[href="/pricing"])
 civitai.com##div[class^="CosmeticWrapper_wrapper"]+div:has(>div>a[href="/pricing"])
