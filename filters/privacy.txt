@@ -76,12 +76,6 @@
 ! ... type=script
 ||cdn.vidsrc.stream/disable-devtool
 
-! https://github.com/ghostery/broken-page-reports/issues/1220
-! >>> url=https://nt.sorosehottie.com/rsqn6y5DN4n/BqXXR
-! ... source=https://xprime.tv/
-! ... type=script
-||sorosehottie.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1219
 ! >>> url=https://hl.koumyscampana.com/rcoho54CFPkn9/aOkqJ
 ! ... source=https://www.bitcine.app/
