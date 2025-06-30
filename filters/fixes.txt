@@ -1281,6 +1281,8 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1300
 ! https://github.com/ghostery/broken-page-reports/issues/893
 ! https://github.com/ghostery/broken-page-reports/issues/1369
+finanzen.net##.page-layout__ad-header-top
+finanzen.net##.page-content__ad
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
 ! ... source=https://www.finanzen.net/
 ! ... type=script
