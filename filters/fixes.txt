@@ -954,10 +954,6 @@ repubblica.it###adv-TopLeft
 ! https://github.com/ghostery/broken-page-reports/issues/1283
 kinoz.net,benq.eu,onmeda.de##body[style*="overflow"]:style(overflow: auto !important)
 
-! https://github.com/ghostery/broken-page-reports/issues/983
-sellpy.se#@#.bERasM
-sellpy.se#@#.gUbXEK
-
 ! https://github.com/ghostery/broken-page-reports/issues/981
 !#if env_mobile
 ! >>> url=https://live.primis.tech/
