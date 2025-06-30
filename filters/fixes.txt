@@ -872,15 +872,6 @@ senderscore.org##+js(set, MktoForms2, {})
 senderscore.org##+js(set, MktoForms2.loadForm, trueFunc)
 senderscore.org##+js(set, MktoForms2.whenRendered, trueFunc)
 
-! https://github.com/ghostery/broken-page-reports/issues/815
-! Add the following filter after redirect fully fixed:
-! ||d3hxtvexlru8r9.cloudfront.net$xhr,redirect=32x32.png,domain=kijk.nl
-kijk.nl#@#body > img[id].pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.ad-text.adSense.adBlock.adContent.adBanner
-kijk.nl#@#.adContent
-kijk.nl#@#.adBlock
-kijk.nl#@#.adSense
-kijk.nl#@#.ad-text
-
 ! https://github.com/ghostery/broken-page-reports/issues/814
 filmweb.pl##+js(aopr, HTMLElement.prototype.offsetParent)
 
