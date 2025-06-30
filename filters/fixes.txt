@@ -1260,12 +1260,6 @@ sps.ed.ac.uk##body[style*="overflow: hidden"]:style(overflow: auto !important)
 mobilarena.hu##div:has(>div[onclick*="muvelet/hozzaferes/kapcsolodas.php"])
 mobilarena.hu##div[class][style]:has(>img[style]+a[style][href][target="_blank"])
 
-! https://github.com/ghostery/broken-page-reports/issues/1225
-! >>> url=https://html-load.com/loader.min.js
-! ... source=https://www.buzzfeed.com/
-! ... type=script
-||html-load.com^$domain=buzzfeed.com
-
 ! https://github.com/ghostery/broken-page-reports/issues/1285
 schroders.com###tDrkDiv
 schroders.com##body.noscroll:style(overflow: auto !important)
