@@ -88,12 +88,6 @@
 ! ... type=image
 ||pix2.services.tvn.pl^
 
-! https://github.com/ghostery/broken-page-reports/issues/1262
-! >>> url=https://rrellcpurhyjne.xyz/
-! ... source=https://ebook-hunter.org/
-! ... type=script
-||rrellcpurhyjne.xyz^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1305
 ! >>> url=https://shovelrecalled.com/a
 ! ... source=https://soaper.live/movie_zrYg3oagL1.html
