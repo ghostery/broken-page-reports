@@ -876,11 +876,6 @@ senderscore.org##+js(set, MktoForms2.whenRendered, trueFunc)
 ! https://github.com/ghostery/broken-page-reports/issues/819
 webcatalog-free.circle.ms###map-ads
 
-! https://github.com/ghostery/broken-page-reports/issues/760
-! https://github.com/ghostery/broken-page-reports/issues/830
-ecom.wixapps.net#@#+js(set, Sentry, {})
-ecom.wixapps.net#@#+js(set, Sentry.init, noopFunc)
-
 ! https://github.com/ghostery/broken-page-reports/issues/796
 geenstijl.nl##body[style="overflow: hidden;"]:style(overflow: auto !important)
 
