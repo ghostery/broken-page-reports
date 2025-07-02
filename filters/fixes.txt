@@ -115,6 +115,12 @@ abcbourse.com##+js(aopw, doc)
 ! ... type=xhr
 @@||twitter.com/1.1/jot/client_event.json
 
+! Wix logo tool
+! >>> url=https://browser.sentry-cdn.com/5.4.3/bundle.min.js
+! ... source=https://manage.wix.com
+! ... type=script
+@@||sentry-cdn.com$domain=manage.wix.com
+
 ! >>> url=https://github.com/whotracksme/event-log/pull/24/partials/merging
 ! ... source=https://github.com/whotracksme/event-log/
 ! ... type=xhr
