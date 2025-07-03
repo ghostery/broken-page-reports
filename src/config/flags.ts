@@ -3,7 +3,7 @@ import { Config } from "./types.ts";
 const flags: Config["flags"] = {
   "firefox-content-script-scriptlets": [
     {
-      percentage: 50,
+      percentage: 100,
       filter: {
         platform: ["firefox"],
       },
@@ -11,7 +11,7 @@ const flags: Config["flags"] = {
   ],
   "chromium-inject-cosmetics-on-response-started": [
     {
-      percentage: 10,
+      percentage: 50,
       filter: {
         platform: ["chromium"],
       },
