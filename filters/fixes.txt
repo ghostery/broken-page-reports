@@ -1402,3 +1402,6 @@ audiotools.in##+js(set, adblock_validURL, noopFunc)
 ! ... source=https://www.samsung.com/us/support/contact/
 ! ... type=script
 @@||tags.tiqcdn.com/utag/samsung^$domain=samsung.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1425
+dailywire.com##.homepage-articles-ad-wrapper
