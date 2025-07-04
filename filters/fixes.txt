@@ -1405,3 +1405,9 @@ audiotools.in##+js(set, adblock_validURL, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1425
 dailywire.com##.homepage-articles-ad-wrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/1465
+! >>> url=https://img1.wsimg.com/signals/js/plugins/scc-web-vitals/scc-web-vitals.min.js
+! ... source=https://www.godaddy.com/help/contact-us
+! ... type=script
+@@||img1.wsimg.com^$script,image,document,domain=godaddy.com
