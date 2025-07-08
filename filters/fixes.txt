@@ -1411,3 +1411,6 @@ dailywire.com##.homepage-articles-ad-wrapper
 ! ... source=https://www.godaddy.com/help/contact-us
 ! ... type=script
 @@||img1.wsimg.com^$script,image,document,domain=godaddy.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1469
+watson.ch##+js(set, watson.isPreview, true)
