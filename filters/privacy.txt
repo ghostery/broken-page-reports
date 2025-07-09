@@ -151,3 +151,9 @@
 ! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
 ! ... type=script
 ||cuinageaquilid.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1477
+! >>> url=https://ojpnkbxxdkoytrd.com/
+! ... source=https://oii.la/Q3htOQYS7f
+! ... type=xhr
+||ojpnkbxxdkoytrd.com^
