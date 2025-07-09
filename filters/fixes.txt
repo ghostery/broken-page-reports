@@ -1417,3 +1417,6 @@ watson.ch##+js(set, watson.isPreview, true)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1463
 threads.com#@#+js(trusted-set-cookie, cb, '{"version":"1","date":"2029_07_03","third_party_consent":"withdrawn","categories":{},"integration_controls":{}}', , ,reload, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1386
+1337x.to###beeadbedc

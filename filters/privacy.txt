@@ -157,3 +157,9 @@
 ! ... source=https://oii.la/Q3htOQYS7f
 ! ... type=xhr
 ||ojpnkbxxdkoytrd.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1386
+! >>> url=https://fvahbwnlcqvaf.site/
+! ... source=https://1337x.to/
+! ... type=xhr
+||fvahbwnlcqvaf.site^
