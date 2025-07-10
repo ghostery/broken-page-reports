@@ -1420,3 +1420,9 @@ threads.com#@#+js(trusted-set-cookie, cb, '{"version":"1","date":"2029_07_03","t
 
 ! https://github.com/ghostery/broken-page-reports/issues/1386
 1337x.to###beeadbedc
+
+! https://github.com/ghostery/broken-page-reports/issues/1482
+! >>> url=https://strmup.to/assets/js/new100.js?v=2
+! ... source=https://strmup.to/8OykZmLwBHK5l
+! ... type=script
+||strmup.to/assets/js/new100.js^
