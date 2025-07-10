@@ -163,3 +163,7 @@
 ! ... source=https://1337x.to/
 ! ... type=xhr
 ||fvahbwnlcqvaf.site^
+! >>> url=https://ddmwicctsqjhc.website/
+! ... source=https://1337x.to/
+! ... type=xhr
+||ddmwicctsqjhc.website^
