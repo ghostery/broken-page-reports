@@ -1426,3 +1426,6 @@ threads.com#@#+js(trusted-set-cookie, cb, '{"version":"1","date":"2029_07_03","t
 ! ... source=https://strmup.to/8OykZmLwBHK5l
 ! ... type=script
 ||strmup.to/assets/js/new100.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1506
+av1encodes.com##+js(aopw, HTMLScriptElement.prototype.src)
