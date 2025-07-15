@@ -107,10 +107,6 @@
 ||sephiraasperly.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1327
-! >>> url=https://kd.dipppyruiners.top/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||dipppyruiners.top^
 ! >>> url=https://jdbmfjwxahbphql.com/
 ! ... source=https://totalsportek.pro/
 ! ... type=script
@@ -122,48 +118,20 @@
 ! ... type=xhr
 ||samsung.com/chat/api/livechat/prompt/browse/event
 
-! https://github.com/ghostery/broken-page-reports/issues/1386
-! >>> url=https://houcedqscszcu.space/628cdafbd?IBFGnbbvJ8gxE4h2mMPLmAOh=redacted
-! ... source=https://www.1337x.to/torrent/6432094/Drop-2025-1080p-BluRay-x265-10bit-EAC3-7-1-Ghost-QxR/
+! https://github.com/ghostery/broken-page-reports/issues/1476
+! >>> url=https://urazin.bitwisejoom.click/
+! ... source=https://therarbg.com/
 ! ... type=xhr
-||houcedqscszcu.space^
-
-! https://github.com/ghostery/broken-page-reports/issues/1048 nsfw
-! >>> url=https://gkaarwpa.com/a
-! ... source=https://pinayflix.art/
+||bitwisejoom.click^
+! >>> url=https://fandoms.askrpte.qpon/
+! ... source=https://therarbg.com/
 ! ... type=xhr
-||gkaarwpa.com^
-! >>> url=https://faqlikbid.com/a
-! ... source=https://pinayflix.art/
+||askrpte.qpon^
+! >>> url=https://lushingrehinge.rest/
+! ... source=https://therarbg.com/
 ! ... type=xhr
-||faqlikbid.com^
-! >>> url=https://rmmjy.rrbzvmklrzwov.top/a
-! ... source=https://pinayflix.art/
-! ... type=script
-||rrbzvmklrzwov.top^
-
-! https://github.com/ghostery/broken-page-reports/issues/1078
-! >>> url=https://oy.beyliksyowler.com/sng3zSYGaFEI/117077
-! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
-! ... type=script
-||beyliksyowler.com^
-! >>> url=https://pe.cuinageaquilid.com/roqgUzVYgoHkaQnJ/84894
-! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
-! ... type=script
-||cuinageaquilid.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1477
-! >>> url=https://ojpnkbxxdkoytrd.com/
-! ... source=https://oii.la/Q3htOQYS7f
+||lushingrehinge.rest^
+! >>> url=https://pt.msourcecargo.com/
+! ... source=https://therarbg.com/
 ! ... type=xhr
-||ojpnkbxxdkoytrd.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1386
-! >>> url=https://fvahbwnlcqvaf.site/
-! ... source=https://1337x.to/
-! ... type=xhr
-||fvahbwnlcqvaf.site^
-! >>> url=https://ddmwicctsqjhc.website/
-! ... source=https://1337x.to/
-! ... type=xhr
-||ddmwicctsqjhc.website^
+||msourcecargo.com^

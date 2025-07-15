@@ -1429,3 +1429,13 @@ threads.com#@#+js(trusted-set-cookie, cb, '{"version":"1","date":"2029_07_03","t
 
 ! https://github.com/ghostery/broken-page-reports/issues/1506
 av1encodes.com##+js(aopw, HTMLScriptElement.prototype.src)
+
+! https://github.com/ghostery/broken-page-reports/issues/1497
+! >>> url=https://synonyme.woxikon.de/
+! ... source=https://synonyme.woxikon.de/
+! ... type=main_frame
+||synonyme.woxikon.de$replace=/<script [^\>]+ src="[^"]+\/loader\.min\.js" [^\>]+><\/script>//g
+! >>> url=https://synonyme.woxikon.de/
+! ... source=https://synonyme.woxikon.de/
+! ... type=main_frame
+||synonyme.woxikon.de$replace=/=atob\([a-zA-Z]\(\d+\)\);confirm//g
