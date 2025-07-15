@@ -128,20 +128,6 @@
 ! ... type=xhr
 ||houcedqscszcu.space^
 
-! https://github.com/ghostery/broken-page-reports/issues/1048 nsfw
-! >>> url=https://gkaarwpa.com/a
-! ... source=https://pinayflix.art/
-! ... type=xhr
-||gkaarwpa.com^
-! >>> url=https://faqlikbid.com/a
-! ... source=https://pinayflix.art/
-! ... type=xhr
-||faqlikbid.com^
-! >>> url=https://rmmjy.rrbzvmklrzwov.top/a
-! ... source=https://pinayflix.art/
-! ... type=script
-||rrbzvmklrzwov.top^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1476
 ! >>> url=https://urazin.bitwisejoom.click/
 ! ... source=https://therarbg.com/
