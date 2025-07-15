@@ -158,16 +158,6 @@
 ! ... type=xhr
 ||ojpnkbxxdkoytrd.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1386
-! >>> url=https://fvahbwnlcqvaf.site/
-! ... source=https://1337x.to/
-! ... type=xhr
-||fvahbwnlcqvaf.site^
-! >>> url=https://ddmwicctsqjhc.website/
-! ... source=https://1337x.to/
-! ... type=xhr
-||ddmwicctsqjhc.website^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1476
 ! >>> url=https://urazin.bitwisejoom.click/
 ! ... source=https://therarbg.com/
