@@ -167,3 +167,21 @@
 ! ... source=https://1337x.to/
 ! ... type=xhr
 ||ddmwicctsqjhc.website^
+
+! https://github.com/ghostery/broken-page-reports/issues/1476
+! >>> url=https://urazin.bitwisejoom.click/
+! ... source=https://therarbg.com/
+! ... type=xhr
+||bitwisejoom.click^
+! >>> url=https://fandoms.askrpte.qpon/
+! ... source=https://therarbg.com/
+! ... type=xhr
+||askrpte.qpon^
+! >>> url=https://lushingrehinge.rest/
+! ... source=https://therarbg.com/
+! ... type=xhr
+||lushingrehinge.rest^
+! >>> url=https://pt.msourcecargo.com/
+! ... source=https://therarbg.com/
+! ... type=xhr
+||msourcecargo.com^
