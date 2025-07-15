@@ -152,12 +152,6 @@
 ! ... type=script
 ||cuinageaquilid.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1477
-! >>> url=https://ojpnkbxxdkoytrd.com/
-! ... source=https://oii.la/Q3htOQYS7f
-! ... type=xhr
-||ojpnkbxxdkoytrd.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1476
 ! >>> url=https://urazin.bitwisejoom.click/
 ! ... source=https://therarbg.com/
