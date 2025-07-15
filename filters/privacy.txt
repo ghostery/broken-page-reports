@@ -122,12 +122,6 @@
 ! ... type=xhr
 ||samsung.com/chat/api/livechat/prompt/browse/event
 
-! https://github.com/ghostery/broken-page-reports/issues/1386
-! >>> url=https://houcedqscszcu.space/628cdafbd?IBFGnbbvJ8gxE4h2mMPLmAOh=redacted
-! ... source=https://www.1337x.to/torrent/6432094/Drop-2025-1080p-BluRay-x265-10bit-EAC3-7-1-Ghost-QxR/
-! ... type=xhr
-||houcedqscszcu.space^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1476
 ! >>> url=https://urazin.bitwisejoom.click/
 ! ... source=https://therarbg.com/
