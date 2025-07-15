@@ -142,16 +142,6 @@
 ! ... type=script
 ||rrbzvmklrzwov.top^
 
-! https://github.com/ghostery/broken-page-reports/issues/1078
-! >>> url=https://oy.beyliksyowler.com/sng3zSYGaFEI/117077
-! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
-! ... type=script
-||beyliksyowler.com^
-! >>> url=https://pe.cuinageaquilid.com/roqgUzVYgoHkaQnJ/84894
-! ... source=https://manhuatop.org/manhua/the-blood-princess-and-the-knight/chapter-351/
-! ... type=script
-||cuinageaquilid.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1476
 ! >>> url=https://urazin.bitwisejoom.click/
 ! ... source=https://therarbg.com/
