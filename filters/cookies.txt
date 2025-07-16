@@ -473,3 +473,7 @@ napedy-bram.pl##+js(trusted-set-cookie, cc_cookie, '{"categories":["necessary"],
 partsinmotion.co.uk#@##cookie-consent-window
 partsinmotion.co.uk##+js(trusted-click-element, #decline-all-submit, 500)
 partsinmotion.co.uk##+js(trusted-set-cookie, cookie_consent, '{"essential":true,"uid":"0"}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1493
+joyn.de##cmp-banner
+joyn.de##+js(trusted-set-local-storage-item, cmp_features, '{"logging":false}')
