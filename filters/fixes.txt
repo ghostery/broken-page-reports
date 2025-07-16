@@ -1432,3 +1432,9 @@ av1encodes.com##+js(aopw, HTMLScriptElement.prototype.src)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1509
 rus.delfi.ee##.ad-block-layer
+
+! https://github.com/ghostery/broken-page-reports/issues/1496
+! >>> url=https://cdn.c360a.salesforce.com/beacon/c360a/6aad75c2-88e9-4d15-b5a2-5b6a7863bf58/scripts/c360a.min.js
+! ... source=https://www.sobeys.com/flyer
+! ... type=script
+@@||cdn.c360a.salesforce.com^$domain=sobeys.com
