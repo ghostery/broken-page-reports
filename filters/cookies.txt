@@ -465,3 +465,6 @@ mycompany-mycar.de##.kick-kcm-settings
 ! https://github.com/ghostery/broken-page-reports/issues/1285
 schroders.com###tDrkDiv
 schroders.com###__next.noscroll:style(overflow: auto !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1511
+napedy-bram.pl##+js(trusted-set-cookie, cc_cookie, '{"categories":["necessary"],"revision":0,"data":null,"consentTimestamp":"$currentISODate$","consentId":"46760063-54d5-4698-9342-176cd47a7bee","services":{"necessary":[],"functionality":[],"analytics":[],"marketing":[]},"lastConsentTimestamp":"$currentISODate$","expirationTime":$now$}')
