@@ -1439,3 +1439,6 @@ av1encodes.com##+js(aopw, HTMLScriptElement.prototype.src)
 ! ... source=https://synonyme.woxikon.de/
 ! ... type=main_frame
 ||synonyme.woxikon.de$replace=/=atob\([a-zA-Z]\(\d+\)\);confirm//g
+
+! https://github.com/ghostery/broken-page-reports/issues/1509
+rus.delfi.ee##.ad-block-layer
