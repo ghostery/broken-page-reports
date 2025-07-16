@@ -1307,16 +1307,6 @@ n-tv.de##+js(aopr, embedAddefend)
 ! ... type=sub_frame
 ||buy.tinypass.com/checkout/template/cacheableShow^$3p,frame
 
-! https://github.com/ghostery/broken-page-reports/issues/893
-! NOTE: The below comment is old and probably oudated.
-! Spiegel deployed a new wall which cannot be closed with the following rule.
-! uBlock Origin maintainers will probably find a better fix eventually but in the
-! meanwhile, this exception seems to do the trick.
-spiegel.de#@#+js(aopr, _sp_.mms.startMsg)
-spiegel.de##[data-advertisement]
-spiegel.de##img[src*="#"]
-spiegel.de##[data-sara-component*="paywall"]
-
 ! https://github.com/ghostery/broken-page-reports/issues/1326
 ! >>> url=https://imasdk.googleapis.com/pal/sdkloader/pal.js
 ! ... source=https://www.channel5.com/show/jane-mcdonald-cruising-the-med
