@@ -1453,7 +1453,7 @@ rus.delfi.ee##.ad-block-layer
 ! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
-||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro
+||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot
 ! >>> url=https://madurird.com/tag.min.js
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
