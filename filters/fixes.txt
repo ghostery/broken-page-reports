@@ -620,12 +620,6 @@ united-domains.de##+js(nosiif, cookieLayerDecoy)
 ! https://github.com/ghostery/broken-page-reports/issues/502
 dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 
-! Admiral
-! >>> url=https://whimsicalcanyon.com/bundles/9e159fa762/a4762666f05f1c0d1b8c44d62a443494.js
-! ... source=https://www.pocket-lint.com/
-! ... type=script
-@@whimsicalcanyon.com/bundles$3p,script
-
 ! Fix google consent - https://github.com/ghostery/broken-page-reports/issues/538
 consent.google.*#@#[data-p*="/consent.google."]
 
