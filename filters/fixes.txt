@@ -620,12 +620,6 @@ united-domains.de##+js(nosiif, cookieLayerDecoy)
 ! https://github.com/ghostery/broken-page-reports/issues/502
 dcshoes-belgium.be##.ui-dialog.cookie-popup + div.ui-widget-overlay
 
-! Admiral
-! >>> url=https://whimsicalcanyon.com/bundles/9e159fa762/a4762666f05f1c0d1b8c44d62a443494.js
-! ... source=https://www.pocket-lint.com/
-! ... type=script
-@@whimsicalcanyon.com/bundles$3p,script
-
 ! Fix google consent - https://github.com/ghostery/broken-page-reports/issues/538
 consent.google.*#@#[data-p*="/consent.google."]
 
@@ -1438,3 +1432,32 @@ rus.delfi.ee##.ad-block-layer
 ! ... source=https://www.sobeys.com/flyer
 ! ... type=script
 @@||cdn.c360a.salesforce.com^$domain=sobeys.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1468
+! >>> url=https://w3vn.cuevana.pro/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=xhr
+||cuevana.pro^$1p,xhr
+! >>> url=https://fexqutgc.com/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=xhr
+||fexqutgc.com^
+! >>> url=https://hirdourdauftie.com/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=script
+||hirdourdauftie.com^
+! >>> url=https://phoongaulsoocma.net/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=script
+||phoongaulsoocma.net^
+! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
+! ... source=https://player.cuevana.bot/
+! ... type=script
+||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot
+! >>> url=https://madurird.com/tag.min.js
+! ... source=https://player.cuevana.bot/
+! ... type=script
+||madurird.com^
+cuevana.pro##+js(nano-stb)
+cuevana.pro##+js(nano-sib)
+cuevana.pro##div[style*="z-index: 2147483647"]
