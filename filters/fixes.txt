@@ -1432,3 +1432,32 @@ rus.delfi.ee##.ad-block-layer
 ! ... source=https://www.sobeys.com/flyer
 ! ... type=script
 @@||cdn.c360a.salesforce.com^$domain=sobeys.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1468
+! >>> url=https://w3vn.cuevana.pro/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=xhr
+||cuevana.pro^$1p,xhr
+! >>> url=https://fexqutgc.com/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=xhr
+||fexqutgc.com^
+! >>> url=https://hirdourdauftie.com/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=script
+||hirdourdauftie.com^
+! >>> url=https://phoongaulsoocma.net/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=script
+||phoongaulsoocma.net^
+! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
+! ... source=https://player.cuevana.bot/
+! ... type=script
+||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro
+! >>> url=https://madurird.com/tag.min.js
+! ... source=https://player.cuevana.bot/
+! ... type=script
+||madurird.com^
+cuevana.pro##+js(nano-stb)
+cuevana.pro##+js(nano-sib)
+cuevana.pro##div[style*="z-index: 2147483647"]
