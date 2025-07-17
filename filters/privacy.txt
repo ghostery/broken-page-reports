@@ -141,3 +141,9 @@
 ! ... source=https://www.news.com.au/
 ! ... type=xhr
 ||scenicchicago.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1487
+! >>> url=https://ag.dns-finder.com/meta/dns
+! ... source=https://slashdot.org/popular
+! ... type=xhr
+||dns-finder.com^
