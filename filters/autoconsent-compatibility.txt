@@ -578,6 +578,11 @@ corona-in-zahlen.de#@#.cookiealert
 ! ... type=xhr
 @@||cookieinformation.com/*/*.js
 
+! >>> url=https://policy.app.cookieinformation.com/uc.js
+! ... source=https://www.dm-jobs.com/Germany/content/klingt-nach-dir/?locale=de_DE
+! ... type=script
+@@||cookieinformation.com^$3p
+
 ! https://github.com/ghostery/broken-page-reports/issues/71
 kerastase.fr#@#.cookie-label
 
