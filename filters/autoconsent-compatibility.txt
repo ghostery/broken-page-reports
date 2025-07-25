@@ -121,6 +121,16 @@
 ! ... type=script
 @@/eu_cookie_compliance.js$script
 
+! https://github.com/duckduckgo/autoconsent/blob/main/rules/autoconsent/borlabs.json
+! >>> url=https://www.zqp.de/wp-content/plugins/borlabs-cookie/assets/images/cb-maps.png
+! ... source=https://www.zqp.de/beratung-pflege/
+! ... type=image
+@@/wp-content/cache/borlabs-cookie/*
+! >>> https://www.zqp.de/wp-content/cache/borlabs-cookie/borlabs-cookie_1_de.css?ver=2.3-89
+! ... source=https://www.zqp.de/beratung-pflege/
+! ... type=stylesheet
+@@/wp-content/plugins/borlabs-cookie/*
+
 ! adblocker-filters#767: paypal.com
 #@#.gdprCookieBanner_container
 #@##gdprCookieBanner
