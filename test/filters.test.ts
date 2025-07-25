@@ -50,6 +50,7 @@ const doTest = (filePath: string) => {
           NetworkFilter.parse(filter)!.match(
             Request.fromRawDetails({ url, type, sourceUrl: source }),
           ),
+          `filter "${filter}" should match url "${url}" with type "${type}" at "${source}"`,
         ).toBe(match);
 
         if (VALIDATE_DNS && url) {
