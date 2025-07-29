@@ -17,6 +17,11 @@ const flags: Config["flags"] = {
       },
     },
   ],
+  "extended-selectors": [
+    {
+      percentage: 10,
+    },
+  ],
 };
 
 export default flags;
