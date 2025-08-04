@@ -1461,3 +1461,7 @@ rus.delfi.ee##.ad-block-layer
 cuevana.pro##+js(nano-stb)
 cuevana.pro##+js(nano-sib)
 cuevana.pro##div[style*="z-index: 2147483647"]
+
+! https://github.com/ghostery/broken-page-reports/issues/893
+spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
+spiegel.de##[data-advertisement]
