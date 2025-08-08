@@ -11,6 +11,7 @@ body:
         - 🚫 Ads visible
         - ✅ Consent popup
         - ⏯️ Frozen website
+        - 🔒 Detected
         - Others
 
   - type: textarea
