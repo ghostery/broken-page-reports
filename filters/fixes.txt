@@ -1465,3 +1465,12 @@ cuevana.pro##div[style*="z-index: 2147483647"]
 ! https://github.com/ghostery/broken-page-reports/issues/893
 spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
 spiegel.de##[data-advertisement]
+
+! https://github.com/ghostery/broken-page-reports/issues/1535
+t-online.de##[data-testid^="CommercialSDI"]
+t-online.de##[data-component^="CommercialSDI"]
+t-online.de##div:has(>[data-external-tb-split="Seeding.ArticleFeed"])
+t-online.de##div:has(>[data-external-tb-split="Seeding.ArticleFeed"])+div
+
+! https://github.com/ghostery/broken-page-reports/issues/1390
+tpi.li##+js(aopr, XMLHttpRequest.prototype.onerror)

@@ -147,3 +147,13 @@
 ! ... source=https://slashdot.org/popular
 ! ... type=xhr
 ||dns-finder.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1390
+! >>> url=https://kouphoudoagraup.com/
+! ... source=https://tpi.li/Qa6o7gE6
+! ... type=xhr
+||kouphoudoagraup.com^
+! >>> url=https://oywusyjg.com/
+! ... source=https://tpi.li/Qa6o7gE6
+! ... type=xhr
+||oywusyjg.com^
