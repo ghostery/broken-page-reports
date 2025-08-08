@@ -8,26 +8,10 @@ body:
       label: What's happening?
       multiple: true
       options:
-        - ⛔️ type/ad-blocking
-        - Advertisement is visible
-        - Advertisement leftovers are visible
-        - Parts of the website fail to render
-        - Parts of the website do not function properly (incl. interactions)
-        - The website refreshes or navigates infinitely
-        - ⚠️ type/ad-wall
-        - Website asks ad-blocker uninstallment or disablement
-        - Website detects ad-blocker
-        - 🕸️ type/annoyance
-        - Annoying elements are visible
-        - ❌ never-consent/unsupported
-        - Consent popup is visible
-        - Consent popup is randomly handled
-        - 🛠️ never-consent/broken
-        - Page is dimmed or unresponsive (incl. scrolling and text selection)
-        - Consent popup is partially handled
-        - None of the above
-    validations:
-      required: true
+        - 🚫 Ads visible
+        - ✅ Consent popup
+        - ⏯️ Frozen website
+        - Others
 
   - type: textarea
     attributes:
@@ -35,7 +19,7 @@ body:
       description: |
         Please provide the URL(s) where the issue occurs, as this information is essential for us to identify and resolve the problem.
       placeholder: |
-        https://domain.tld
+        https://domain.tld/
       render: yaml
     validations:
       required: true
@@ -79,27 +63,6 @@ body:
         If you're unable to determine the version but believe you have the latest one, you can find the most recent version at https://github.com/ghostery/ghostery-extension/releases/latest.
 
   - type: dropdown
-    id: platforms
-    attributes:
-      label: Platform(s)
-      description: |
-        If you do not select an option from the dropdown below, we will assume the issue occurs across all platforms.
-      multiple: true
-      options:
-        - Windows
-        - Android
-        - macOS
-        - iOS and iPadOS
-        - Linux
-        - Other
-
-  - type: input
-    attributes:
-      label: Platform version
-      description: |
-        Please, also specify the operating system name if you selected "Other" in the dropdown above.
-
-  - type: dropdown
     id: browsers
     attributes:
       label: Browser(s)
@@ -107,12 +70,13 @@ body:
         If you do not select an option from the dropdown below, we will assume the issue occurs across all browsers.
       multiple: true
       options:
-        - Ghostery Private Browser
-        - Firefox (incl. variants)
-        - Chrome (incl. Chromium variants)
-        - Safari
-        - Microsoft Edge
+        - Firefox
+        - Android Firefox
+        - Chromium
+        - iOS and iPadOS Safari
+        - macOS Safari
         - Opera
+        - Brave
         - Other
 
   - type: input
@@ -155,12 +119,3 @@ body:
       options:
         - label: I confirm that this issue does not contain any personal information and understand that Ghostery is not responsible for the issue content.
           required: true
-
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: Additional checks
-      description: |
-        The checkboxes below will help us better categorize and attribute this issue.
-      options:
-        - label: '**IMPORTANT** Please check this box if your submission contains any adult or NSFW content. Additionally, prefix the issue title with "[NSFW]" to alert others that the content may be sensitive.'
