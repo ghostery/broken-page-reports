@@ -157,3 +157,7 @@
 ! ... source=https://tpi.li/Qa6o7gE6
 ! ... type=xhr
 ||oywusyjg.com^
+! >>> url=https://11ssq.com/
+! ... source=https://tpi.li/Qa6o7gE6
+! ... type=xhr
+||11ssq.com^

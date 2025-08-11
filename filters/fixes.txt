@@ -1351,6 +1351,7 @@ wdio.com#@#.ad-ticker
 
 ! https://github.com/ghostery/broken-page-reports/issues/1406
 ! https://github.com/ghostery/broken-page-reports/issues/942
+! https://github.com/ghostery/broken-page-reports/issues/1445
 ! >>> url=https://0.as.slashdot.org/
 ! ... source=https://slashdot.org/
 ! ... type=script
@@ -1367,9 +1368,10 @@ wdio.com#@#.ad-ticker
 ! ... source=https://slashdot.org/
 ! ... type=script
 ||error-report.com^$domain=slashdot.org|picrew.me
-slashdot.org,picrew.me##+js(trusted-suppress-native-method, alert, 'html-load.com', prevent)
-slashdot.org,picrew.me##+js(trusted-suppress-native-method, atob, 'YWRibG9ja2', prevent)
-slashdot.org,picrew.me##+js(nosiif, clearInterval)
+slashdot.org,picrew.me##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
+slashdot.org,picrew.me##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
+slashdot.org,picrew.me##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
+slashdot.org,picrew.me##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1419
 gazzetta.gr##.admanager-content
@@ -1474,3 +1476,25 @@ t-online.de##div:has(>[data-external-tb-split="Seeding.ArticleFeed"])+div
 
 ! https://github.com/ghostery/broken-page-reports/issues/1390
 tpi.li##+js(aopr, XMLHttpRequest.prototype.onerror)
+
+! https://github.com/ghostery/broken-page-reports/issues/1540
+sourceforge.net###main-nav-badge-link
+
+! https://github.com/ghostery/broken-page-reports/issues/1529
+winfuture.de###cmpwrapper
+winfuture.de##body[style="overflow: hidden;"]:style(overflow: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1047
+! https://github.com/ghostery/broken-page-reports/issues/1188
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
+! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
+! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
+motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
+motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+tvtv.us##+js(aopr, eval)
+!#if env_safari
+onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+!#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/1119
+namu.wiki##div>div:not([class*=" "]):has(>table>tbody>tr>td a[href^="#s"]>span>img[src^="data:image/svg+xml"])
