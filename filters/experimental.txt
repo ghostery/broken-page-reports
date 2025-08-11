@@ -5,28 +5,4 @@
 !#if env_experimental
 ! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com
 ghostery.com##.ds-footer-copyrights
-
-! https://github.com/ghostery/broken-page-reports/issues/1047
-! https://github.com/ghostery/broken-page-reports/issues/1180
-! https://github.com/ghostery/broken-page-reports/issues/1184
-! https://github.com/ghostery/broken-page-reports/issues/1188
-! https://github.com/ghostery/broken-page-reports/issues/1150
-motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, confirm, '"애드블록"', abort)
-motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, confirm, '"adblocker"', abort)
-! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
-! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
-! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
-motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
-motscroises.fr,winfuture.de##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-winfuture.de##+js(trusted-suppress-native-method, alert, '"html-load.com"', abort)
-winfuture.de##+js(aopr, HTMLStyleElement.prototype.remove)
-winfuture.de##+js(set, asload, noopFunc)
-tvtv.us##+js(aopr, eval)
-winfuture.de##+js(aopr, atob)
-!#if env_safari
-onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-!#endif
-
-! https://github.com/ghostery/broken-page-reports/issues/1119
-namu.wiki##div>div:not([class*=" "]):has(>table>tbody>tr>td a[href^="#s"]>span>img[src^="data:image/svg+xml"])
 !#endif
