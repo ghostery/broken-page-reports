@@ -1503,3 +1503,21 @@ namu.wiki##div>div:not([class*=" "]):has(>table>tbody>tr>td a[href^="#s"]>span>i
 ! Partly reverts this change: https://github.com/uBlockOrigin/uAssets/commit/83329909cb867f59b4706e0108ab329653392555
 www.youtube.com#@#+js(trusted-replace-outbound-text, JSON.stringify, "params":", "params":"yAEB, condition, /("contentPlaybackContext":{".*\,"params":"|"params":".*"contentPlaybackContext":{")/)
 www.youtube.com#@#+js(trusted-replace-outbound-text, JSON.stringify, "contentCheckOk":false, "params":"yAEB"\,"contentCheckOk":false, condition, /^(?=.*"contentPlaybackContext":{")(?!.*"params":").*$/)
+
+! https://github.com/ghostery/broken-page-reports/issues/1570
+nytimes.com##div[class^="Ad-module_adContainer"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1568
+wallstreet-online.de###dban1
+wallstreet-online.de##+js(set, noAdBlockAds, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1567
+! >>> url=https://www.leboncoin.fr/assets/adblock-detection/advertising-detection.js
+! ... source=https://www.leboncoin.fr/
+! ... type=script
+||leboncoin.fr/assets/adblock-detection/advertising-detection.js^
+leboncoin.fr##+js(aopw, __sa_aHR0cHM6Ly93d3cubGVib25jb2luLmZyLw==)
+
+! https://github.com/ghostery/broken-page-reports/issues/1564
+audiotools.blog##body[class*="disable-scroll"]:style(overflow: auto !important)
+audiotools.blog##div[id][style^="background-color: rgb(0, 0, 0)"]
