@@ -1498,3 +1498,8 @@ onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1119
 namu.wiki##div>div:not([class*=" "]):has(>table>tbody>tr>td a[href^="#s"]>span>img[src^="data:image/svg+xml"])
+
+! Potential fix for YouTube (https://www.reddit.com/r/Ghostery/comments/1mo97f8/this_happens_when_adblocker_is_on/)
+! Partly reverts this change: https://github.com/uBlockOrigin/uAssets/commit/83329909cb867f59b4706e0108ab329653392555
+www.youtube.com#@#+js(trusted-replace-outbound-text, JSON.stringify, "params":", "params":"yAEB, condition, /("contentPlaybackContext":{".*\,"params":"|"params":".*"contentPlaybackContext":{")/)
+www.youtube.com#@#+js(trusted-replace-outbound-text, JSON.stringify, "contentCheckOk":false, "params":"yAEB"\,"contentCheckOk":false, condition, /^(?=.*"contentPlaybackContext":{")(?!.*"params":").*$/)
