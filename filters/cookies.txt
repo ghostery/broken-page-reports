@@ -477,3 +477,16 @@ partsinmotion.co.uk##+js(trusted-set-cookie, cookie_consent, '{"essential":true,
 ! https://github.com/ghostery/broken-page-reports/issues/1493
 joyn.de##cmp-banner
 joyn.de##+js(trusted-set-local-storage-item, cmp_features, '{"logging":false}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1572
+pluralsight.com##+js(trusted-set-cookie, tcm, '{"purposes":{"AlwaysBlock":"Auto","SaleOfInfo":"Auto","Analytics":false,"Advertising":false,"Functional":false},"timestamp":"$currentISODate$","confirmed":true,"prompted":false,"updated":true}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1569
+solid.jobs##+js(trusted-set-cookie, cookieconsent_status, dismiss)
+
+! https://github.com/ghostery/broken-page-reports/issues/1566
+sportano.pl##+js(trusted-set-cookie, cookieDataLayer, '{"niezbedne":{"isEssential":1,"code":"niezbedne","name":"Niezb%u0119dne","isChecked":true,"children":[]},"analiza":{"isEssential":0,"code":"analiza","name":"Analiza%20i%20funkcjonalno%u015B%u0107","isChecked":false,"children":[{"isEssential":0,"code":"google analytics","name":"Google%20Analytics%20%28GA%29","isChecked":false},{"isEssential":0,"code":"hotjar","name":"Hotjar","isChecked":false}]},"marketing":{"isEssential":0,"code":"marketing","name":"Marketing","isChecked":false,"children":[{"isEssential":0,"code":"facebook","name":"Facebook","isChecked":false},{"isEssential":0,"code":"synerise","name":"Synerise","isChecked":false},{"isEssential":0,"code":"circlewise","name":"Circlewise","isChecked":false},{"isEssential":0,"code":"wppl","name":"Wirtualna%20Polska%20-%20PL","isChecked":false},{"isEssential":0,"code":"rtb_house","name":"RTB%20House","isChecked":false},{"isEssential":0,"code":"criteo","name":"Criteo","isChecked":false},{"isEssential":0,"code":"tradedoubler","name":"Tradedoubler","isChecked":false},{"isEssential":0,"code":"googleads","name":"Google%20Ads","isChecked":false},{"isEssential":0,"code":"uxtweak","name":"UX%20Tweak","isChecked":false}]}}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1565
+gansel-rechtsanwaelte.de##+js(set-cookie, cnp_consent, true)
+gansel-rechtsanwaelte.de##+js(trusted-set-cookie, cnp_prefs, '["necessary"]')

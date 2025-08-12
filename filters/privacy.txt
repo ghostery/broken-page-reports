@@ -161,3 +161,9 @@
 ! ... source=https://tpi.li/Qa6o7gE6
 ! ... type=xhr
 ||11ssq.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1571
+! >>> url=https://njjwnbdoifqgg.space/
+! ... source=https://1337x.to/torrent/6458491/South-Park-S27E02-1080p-x265-ELiTE/
+! ... type=script
+||njjwnbdoifqgg.space^
