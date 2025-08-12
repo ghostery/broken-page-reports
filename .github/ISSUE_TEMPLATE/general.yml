@@ -1,6 +1,5 @@
 name: Report a broken page
 description: Use this form to report any issues with a webpage, including instances where ads are not blocked or parts of the website fail to render or function properly.
-labels: ["reproduction/required"]
 body:
   - type: dropdown
     id: type
@@ -9,9 +8,10 @@ body:
       multiple: true
       options:
         - 🚫 Ads visible
-        - ✅ Consent popup
-        - ⏯️ Frozen website
-        - 🔒 Detected
+        - 💬 Content unavailable
+        - ✅ Consent
+        - ⏯️ Website frozen
+        - 🔒 Extension detected
         - Others
 
   - type: textarea
@@ -24,44 +24,6 @@ body:
       render: yaml
     validations:
       required: true
-
-  - type: textarea
-    attributes:
-      label: Description
-      description: |
-        A concise description of what you're experiencing and how to reproduce.
-    validations:
-
-  - type: textarea
-    attributes:
-      label: Other extensions used with Ghostery
-      description: |
-        Please list any other browser extensions you are using alongside Ghostery.
-        While we will do our best to identify the issue, certain complex interactions across multiple browser extensions may require further investigation.
-      render: yaml
-
-  - type: textarea
-    attributes:
-      label: Screenshot(s)
-      description: |
-        Screenshots provide valuable insights for our team in identifying the exact issue. If possible, kindly include a screenshot to assist in our investigation.
-        Please note that any files uploaded to GitHub are publicly accessible without requiring permission or authentication: see https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files
-      value: |
-        <!-- PUT YOUR SCREENSHOTS INSIDE OF SUMMARY -->
-        <details>
-        <summary>Screenshot(s)</summary>
-
-        </details>
-
-  - type: input
-    attributes:
-      label: Version
-      description: |
-        Which version of our product are you currently using?
-        If the issue affects multiple versions, please specify the most recent version where the problem occurs or the range of affected versions.
-        Please open the extension popup from your browser, then click the menu button (three horizontal lines) in the top-right corner to access the "Privacy Protection" settings.
-        You can find the extension version at the bottom of the page.
-        If you're unable to determine the version but believe you have the latest one, you can find the most recent version at https://github.com/ghostery/ghostery-extension/releases/latest.
 
   - type: dropdown
     id: browsers
@@ -80,35 +42,28 @@ body:
         - Brave
         - Other
 
-  - type: input
-    attributes:
-      label: Browser version(s)
-      description: |
-        Although it's uncommon, issues may arise with specific combination of browser and operating system.
-        Please, also specify the browser name if you selected "Other" in the dropdown above.
-
-  - type: input
-    attributes:
-      label: Geolocation
-      description: |
-        We kindly request that you provide an approximate location of your internet connection, as some services may restrict our access based on location.
-        We don't need a precise location—just the name of your country or continent will suffice.
-
   - type: textarea
     attributes:
-      label: Regional filters
-      description: |
-        If you have any regional filters enabled, please list them here.
-        If no filters are specified, we will assume all regional filters are enabled and proceed accordingly.
-      render: yaml
+      label: Description
+      value: |
+        <!-- IN CASE behaviour listing cannot describe the exact symptom -->
+        <!-- OR you have additional details such as custom filters -->
+        <!-- OR you have changed factory defaults (e.g. disablement of anti-tracking) -->
+        <!-- PUT DESCRIPTION AFTER THIS LINE ⬇️ -->
 
-  - type: textarea
-    attributes:
-      label: Custom filters
-      description: |
-        If you have any custom filters applied, please list them here.
-        If you have custom filters applied that are not listed, we may have difficulty reproducing the problem.
-      render: adblock
+        <!-- PUT DESCRIPTION BEFORE THIS LINE ⬆️ -->
+
+        ### Reproduction steps
+
+        1. Open the website
+
+        ### Screenshots
+
+        <details>
+        <!-- PUT YOUR SCREENSHOTS AFTER THIS LINE ⬇️ -->
+
+        <!-- PUT YOUR SCREENSHOTS BEFORE THIS LINE ⬆️ -->
+        </details>
 
   - type: checkboxes
     attributes:
