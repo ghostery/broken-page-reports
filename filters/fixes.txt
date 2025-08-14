@@ -1575,7 +1575,7 @@ ranzijn.nl#@#.bottom-0.fixed
 @@||global.ketchcdn.com/web/v3/subscriptions/mag_global/get^$domain=whiteclaw.com
 ! >>> url=https://global.ketchcdn.com/web/v2/assetsv1/orgs/mag_global/1717189623805/test/icon-exit.svg
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
-! ... type=script
+! ... type=image
 @@||global.ketchcdn.com/web/v2/assetsv1^$image
 ! >>> url=https://global.ketchcdn.com/gvl/eu/vendor-list.json
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
