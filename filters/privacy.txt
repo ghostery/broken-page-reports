@@ -167,3 +167,32 @@
 ! ... source=https://1337x.to/torrent/6458491/South-Park-S27E02-1080p-x265-ELiTE/
 ! ... type=script
 ||njjwnbdoifqgg.space^
+
+! https://github.com/ghostery/broken-page-reports/issues/1579
+kicker.de##+js(aopr, ovTrackingConfig)
+
+! https://github.com/ghostery/broken-page-reports/issues/1578
+! >>> url=https://api.mypurecloud.de/api/v2/journey/deployments/DEPLOYMENT_ID_HERE/customers/255d24bc-ff6c-4c08-9fcd-d4218e714244/ping?sessionId=UUIDV4_HERE&t=TS_HERE&dl=PAGE_URL_HERE&dt=PAGE_TITLE_HERE
+! ... source=https://www.nespresso.com/us/en/vertuo-coffee-pods
+! ... type=xhr
+||api.mypurecloud.de/*/ping^
+! >>> url=https://servertag.nespresso.com/bq-onetrust?timestamp=TS_HERE&status=pending&device=Web&browser=firefox&userAgent=UA_HERE&consentCategories=C0001,C0002,C0004&uid=UUIDV4_HERE&siteCode=US-B2C-PROD&URL=&gaID=
+! ... source=https://www.nespresso.com/us/en/vertuo-coffee-pods
+! ... type=xhr
+||servertag.nespresso.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1559
+! >>> url=https://pclnfjugvr.com/
+! ... source=https://mapple.tv/watch/tv/2-1/93405-squid-game
+! ... type=script
+||pclnfjugvr.com^
+! >>> url=https://uwauftorge.net/
+! ... source=https://mapple.tv/watch/tv/2-1/93405-squid-game
+! ... type=script
+||uwauftorge.net^
+
+! https://github.com/ghostery/broken-page-reports/issues/1556
+! >>> url=https://openreplay.justbetter.nl/ingest/v1/web/start
+! ... source=https://www.ranzijn.nl/winkels
+! ... type=xhr
+||openreplay.justbetter.nl/ingest^

@@ -1393,10 +1393,11 @@ audiotools.in##+js(set, adblock_validURL, noopFunc)
 dailywire.com##.homepage-articles-ad-wrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/1465
+! https://github.com/ghostery/broken-page-reports/issues/1554
 ! >>> url=https://img1.wsimg.com/signals/js/plugins/scc-web-vitals/scc-web-vitals.min.js
 ! ... source=https://www.godaddy.com/help/contact-us
 ! ... type=script
-@@||img1.wsimg.com^$script,image,document,domain=godaddy.com
+@@||img1.wsimg.com^$script,image,css,document
 
 ! https://github.com/ghostery/broken-page-reports/issues/1469
 watson.ch##+js(set, watson.isPreview, true)
@@ -1516,3 +1517,76 @@ leboncoin.fr##+js(aopw, __sa_aHR0cHM6Ly93d3cubGVib25jb2luLmZyLw==)
 ! https://github.com/ghostery/broken-page-reports/issues/1564
 audiotools.blog##body[class*="disable-scroll"]:style(overflow: auto !important)
 audiotools.blog##div[id][style^="background-color: rgb(0, 0, 0)"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1579
+! >>> url=https://vates.kicker.de/image/1893b7639d5602db192d72089c260d66cb48c8bf6/jcwr25iqTIQhtppvxpqsjzp4i2wzr7bytq1.jpg
+! ... source=https://www.kicker.de/
+! ... type=main_frame
+||vates.kicker.de/image^$document,frame
+
+! https://github.com/ghostery/broken-page-reports/issues/1578
+! >>> url=https://cdn.optimizely.com/js/0
+! ... source=https://www.nespresso.com/us/en/vertuo-coffee-pods
+! ... type=script
+@@||cdn.optimizely.com^$script,domain=nespresso.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1577
+webmd.com#@#.fixed-ads
+
+! https://github.com/ghostery/broken-page-reports/issues/1558
+! >>> url=https://static.spdate.com/smartmobile/login_smartmobile-e2f53667a4.min.css?v=5
+! ... source=https://spdate.com/
+! ... type=css
+@@||static.spdate.com^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1557
+! >>> url=https://foe.scoredb.io/Home/NoCdNext/
+! ... source=https://foe.scoredb.io/US19
+! ... type=sub_frame
+||foe.scoredb.io/Home/NoCdNext^
+
+! https://github.com/ghostery/broken-page-reports/issues/1556
+ranzijn.nl#@#.bottom-0.fixed
+
+! https://github.com/ghostery/broken-page-reports/issues/1555
+! >>> url=https://cdn.ketchjs.com/lanyard/v2/lanyard.js
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||cdn.ketchjs.com/lanyard^$domain=whiteclaw.com
+! >>> url=https://global.ketchcdn.com/web/v2/config/mag_global/whiteclaw_us/boot.js
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||global.ketchcdn.com/web/v2/config/mag_global/whiteclaw_us^$domain=whiteclaw.com
+! >>> url=https://global.ketchcdn.com/web/v3/config/mag_global/whiteclaw_us/all/us_general/en-US/config.json?hash=x
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||global.ketchcdn.com/web/v3/config/mag_global/whiteclaw_us^$domain=whiteclaw.com
+! >>> url=https://global.ketchcdn.com/web/v3/ip
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=xhr
+@@||global.ketchcdn.com/web/v3/ip^$domain=whiteclaw.com
+! >>> url=https://global.ketchcdn.com/web/v3/consent/mag_global/get
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||global.ketchcdn.com/web/v3/consent/mag_global/get^$domain=whiteclaw.com
+! >>> url=https://global.ketchcdn.com/web/v3/subscriptions/mag_global/get
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||global.ketchcdn.com/web/v3/subscriptions/mag_global/get^$domain=whiteclaw.com
+! >>> url=https://global.ketchcdn.com/web/v2/assetsv1/orgs/mag_global/1717189623805/test/icon-exit.svg
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||global.ketchcdn.com/web/v2/assetsv1^$image
+! >>> url=https://global.ketchcdn.com/gvl/eu/vendor-list.json
+! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
+! ... type=script
+@@||global.ketchcdn.com/gvl/eu/vendor-list.json^$script
+
+! https://github.com/ghostery/broken-page-reports/issues/1550
+altium.com#@#.b-privacy-policy
+
+! https://github.com/ghostery/broken-page-reports/issues/1549
+! >>> url=https://chat.kuki.ai/js/cm-cookie-banner-1b345cd8aaaf81a18c8a.js
+! ... source=https://chat.kuki.ai/createaccount
+! ... type=script
+@@-cookie-banner-$script,domain=kuki.ai

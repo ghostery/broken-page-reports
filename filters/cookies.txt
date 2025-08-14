@@ -490,3 +490,32 @@ sportano.pl##+js(trusted-set-cookie, cookieDataLayer, '{"niezbedne":{"isEssentia
 ! https://github.com/ghostery/broken-page-reports/issues/1565
 gansel-rechtsanwaelte.de##+js(set-cookie, cnp_consent, true)
 gansel-rechtsanwaelte.de##+js(trusted-set-cookie, cnp_prefs, '["necessary"]')
+
+! https://github.com/ghostery/broken-page-reports/issues/1563
+theislandcinema.com##+js(trusted-set-cookie, a1wcc, NECESSARY)
+
+! https://github.com/ghostery/broken-page-reports/issues/1562
+healthandher.com##+js(trusted-set-cookie, _consentik_cookie, '[{"categoriesSelected":[],"visitorId":"0","consentOn":"$currentISODate$","expires":"$currentISODate$"}]')
+
+! https://github.com/ghostery/broken-page-reports/issues/1561
+12zeemijlen.nl##+js(trusted-set-cookie, cookie-preference, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1560
+ercomer.pl##+js(trusted-set-local-storage-item, user_consents, '[]')
+
+! https://github.com/ghostery/broken-page-reports/issues/1557
+foe.scoredb.io##[aria-describedby="cookieconsent:desc"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1556
+ranzijn.nl##+js(trusted-set-local-storage-item, cookie-consent, saved)
+ranzijn.nl##+js(trusted-set-local-storage-item, ad_personalization, denied)
+ranzijn.nl##+js(trusted-set-local-storage-item, ad_storage, denied)
+ranzijn.nl##+js(trusted-set-local-storage-item, ad_user_data, denied)
+ranzijn.nl##+js(trusted-set-local-storage-item, analytics_storage, denied)
+ranzijn.nl##+js(trusted-set-local-storage-item, functional_storage, granted)
+ranzijn.nl##+js(trusted-set-local-storage-item, personalization_storage, granted)
+ranzijn.nl##+js(trusted-set-local-storage-item, security_storage, granted)
+
+! https://github.com/ghostery/broken-page-reports/issues/1548
+monzatoday.it###iubenda-cs-banner:style(display: none !important)
+monzatoday.it##.o-wrapper.iub--active:style(user-select: initial !important; cursor: initial !important; pointer-events: initial !important)
