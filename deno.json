@@ -7,8 +7,8 @@
     "tests:dns": "VALIDATE_DNS=1 deno test --allow-read --allow-env --allow-net"
   },
   "imports": {
-    "@std/path": "jsr:@std/path@^1.1.0",
+    "@std/path": "jsr:@std/path@^1.1.2",
     "octokit": "npm:octokit@^5.0.3",
-    "tldts": "npm:tldts@^7.0.9"
+    "tldts": "npm:tldts@^7.0.11"
   }
 }

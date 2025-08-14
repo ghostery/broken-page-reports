@@ -3,33 +3,39 @@
   "specifiers": {
     "jsr:@std/assert@^1.0.10": "1.0.10",
     "jsr:@std/expect@*": "1.0.11",
+    "jsr:@std/internal@^1.0.10": "1.0.10",
     "jsr:@std/internal@^1.0.5": "1.0.5",
-    "jsr:@std/path@^1.1.0": "1.1.0",
+    "jsr:@std/path@^1.1.2": "1.1.2",
     "npm:@ghostery/adblocker@*": "2.3.1",
     "npm:@types/node@*": "22.10.5",
     "npm:octokit@^5.0.3": "5.0.3_@octokit+core@7.0.2",
-    "npm:tldts@*": "7.0.9",
-    "npm:tldts@^7.0.9": "7.0.9"
+    "npm:tldts@^7.0.11": "7.0.11"
   },
   "jsr": {
     "@std/assert@1.0.10": {
       "integrity": "59b5cbac5bd55459a19045d95cc7c2ff787b4f8527c0dd195078ff6f9481fbb3",
       "dependencies": [
-        "jsr:@std/internal"
+        "jsr:@std/internal@^1.0.5"
       ]
     },
     "@std/expect@1.0.11": {
       "integrity": "5aa5d5cf891e9a3249e45ea770de15189e5a2faee2122ee5746b10d1c310a19b",
       "dependencies": [
         "jsr:@std/assert",
-        "jsr:@std/internal"
+        "jsr:@std/internal@^1.0.5"
       ]
     },
     "@std/internal@1.0.5": {
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     },
-    "@std/path@1.1.0": {
-      "integrity": "ddc94f8e3c275627281cbc23341df6b8bcc874d70374f75fec2533521e3d6886"
+    "@std/internal@1.0.10": {
+      "integrity": "e3be62ce42cab0e177c27698e5d9800122f67b766a0bea6ca4867886cbde8cf7"
+    },
+    "@std/path@1.1.2": {
+      "integrity": "c0b13b97dfe06546d5e16bf3966b1cadf92e1cc83e56ba5476ad8b498d9e3038",
+      "dependencies": [
+        "jsr:@std/internal@^1.0.10"
+      ]
     }
   },
   "npm": {
@@ -307,8 +313,8 @@
     "tldts-core@6.1.86": {
       "integrity": "sha512-Je6p7pkk+KMzMv2XXKmAE3McmolOQFdxkKw0R8EYNr7sELW46JqnNeTX8ybPiQgvg1ymCoF8LXs5fzFaZvJPTA=="
     },
-    "tldts-core@7.0.9": {
-      "integrity": "sha512-/FGY1+CryHsxF9SFiPZlMOcwQsfABkAvOJO5VEKE8TNifVEqgMF7+UVXHGhm1z4gPUfvVS/EYcwhiRU3vUa1ag=="
+    "tldts-core@7.0.11": {
+      "integrity": "sha512-65eeOpBwWBabh0XqT+zB0vEllq/V3XcrF2fhgMXWWFfNw1yxEjeYg9Vv/B/UNozd0CTR/TohO1ubfn6O6mBW3w=="
     },
     "tldts-experimental@6.1.71": {
       "integrity": "sha512-78lfP/3fRJ3HoCT5JSLOLj5ElHiWCAyglYNzjkFqBO7ykLZYst2u2jM1igSHWV0J2GFfOplApeDsfTF+XACrlA==",
@@ -316,10 +322,10 @@
         "tldts-core@6.1.86"
       ]
     },
-    "tldts@7.0.9": {
-      "integrity": "sha512-/nFtBeNs9nAKIAZE1i3ssOAroci8UqRldFVw5H6RCsNZw7NzDr+Yc3Ek7Tm8XSQKMzw7NSyRSszNxCM0ENsUbg==",
+    "tldts@7.0.11": {
+      "integrity": "sha512-7k7JV/LZpGhFUu2t+YDaMZ1wdPPRNpaCYNQ0NQbSLY3Rbgy+XbCdkXyqRiS9TLXiYAsrv0yiA0OvnxmgRFCdNA==",
       "dependencies": [
-        "tldts-core@7.0.9"
+        "tldts-core@7.0.11"
       ],
       "bin": true
     },
@@ -338,9 +344,9 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@std/path@^1.1.0",
+      "jsr:@std/path@^1.1.2",
       "npm:octokit@^5.0.3",
-      "npm:tldts@^7.0.9"
+      "npm:tldts@^7.0.11"
     ]
   }
 }
