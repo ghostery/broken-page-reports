@@ -196,3 +196,33 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... source=https://www.ranzijn.nl/winkels
 ! ... type=xhr
 ||openreplay.justbetter.nl/ingest^
+
+! https://github.com/ghostery/broken-page-reports/issues/1593
+! >>> url=https://yjobvvnlkgfl.com/
+! ... source=https://premiumporn.org/
+! ... type=xhr
+||yjobvvnlkgfl.com^
+! >>> url=https://tapsilsoukraw.com/
+! ... source=https://premiumporn.org/
+! ... type=xhr
+||tapsilsoukraw.com^
+! >>> url=https://hollow-mess.com/
+! ... source=https://premiumporn.org/
+! ... type=xhr
+||hollow-mess.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1590
+! >>> url=https://silent-basis.pro/
+! ... source=https://sizetube.com/
+! ... type=script
+||silent-basis.pro^
+
+! https://github.com/ghostery/broken-page-reports/issues/1589
+! >>> url=https://t1.p2pplay.pro/api/v1/log?t=
+! ... source=https://tokuzl.net/kamen-rider-v3.html?ep=2
+! ... type=xhr
+||t1.p2pplay.pro/api/v1/log^
+! >>> url=https://t1.p2pplay.pro/api/v1/player?t=
+! ... source=https://tokuzl.net/kamen-rider-v3.html?ep=2
+! ... type=xhr
+||t1.p2pplay.pro/api/v1/player^$xhr
