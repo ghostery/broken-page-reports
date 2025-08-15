@@ -519,3 +519,9 @@ ranzijn.nl##+js(trusted-set-local-storage-item, security_storage, granted)
 ! https://github.com/ghostery/broken-page-reports/issues/1548
 monzatoday.it###iubenda-cs-banner:style(display: none !important)
 monzatoday.it##.o-wrapper.iub--active:style(user-select: initial !important; cursor: initial !important; pointer-events: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1591
+investmentweek.com###js-cookie-consent-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/1587
+hovertravel.co.uk##[aria-label="cookieconsent"]

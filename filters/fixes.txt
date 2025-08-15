@@ -1590,3 +1590,13 @@ altium.com#@#.b-privacy-policy
 ! ... source=https://chat.kuki.ai/createaccount
 ! ... type=script
 @@-cookie-banner-$script,domain=kuki.ai
+
+! https://github.com/ghostery/broken-page-reports/issues/1593
+l455o.com##+js(nostif, /^/)
+
+! https://github.com/ghostery/broken-page-reports/issues/1592
+oasiscoral.com.au##body:style(display: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1590
+sizetube.com##[style*="z-index: 99999"]
+sizetube.com##body:style(overflow: initial !important)
