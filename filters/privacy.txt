@@ -210,6 +210,14 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... source=https://premiumporn.org/
 ! ... type=xhr
 ||hollow-mess.com^
+! >>> url=https://piptaucmie.com/
+! ... source=https://premiumporn.org/
+! ... type=xhr
+||piptaucmie.com^
+! >>> url=https://ticdmgrd.com/
+! ... source=https://premiumporn.org/
+! ... type=xhr
+||ticdmgrd.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1590
 ! >>> url=https://silent-basis.pro/
