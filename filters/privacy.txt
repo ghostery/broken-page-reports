@@ -234,3 +234,29 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... source=https://tokuzl.net/kamen-rider-v3.html?ep=2
 ! ... type=xhr
 ||t1.p2pplay.pro/api/v1/player^$xhr
+
+! https://github.com/ghostery/broken-page-reports/issues/1583
+! >>> url=https://d1pk6uu6wqrpce.cloudfront.net/
+! ... source=https://nflbox.me/nfl/nfl-network-stream
+! ... type=script
+||d1pk6uu6wqrpce.cloudfront.net^
+! >>> url=https://cy.bossedmarlier.help/
+! ... source=https://nflbox.me/nfl/nfl-network-stream
+! ... type=xhr
+||bossedmarlier.help^
+! >>> url=https://coastalcations.cyou/
+! ... source=https://nflbox.me/nfl/nfl-network-stream
+! ... type=xhr
+||coastalcations.cyou^
+! >>> url=https://swoqxitffjvon.online/
+! ... source=https://nflbox.me/nfl/nfl-network-stream
+! ... type=xhr
+||swoqxitffjvon.online^
+! >>> url=https://ntofinaukncec.org/
+! ... source=https://nflbox.me/nfl/nfl-network-stream
+! ... type=xhr
+||ntofinaukncec.org^
+! >>> url=https://updeckdagos.help/
+! ... source=https://nflbox.me/nfl/nfl-network-stream
+! ... type=xhr
+||updeckdagos.help^

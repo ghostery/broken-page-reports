@@ -1604,3 +1604,7 @@ sizetube.com##body:style(overflow: initial !important)
 ! https://github.com/ghostery/broken-page-reports/issues/1595
 linux-magazin.de##+js(nostif, /^/, 5000)
 linux-magazin.de##div:has(>img[src]:not([class]):not([srcset]):not([class]))
+
+! https://github.com/ghostery/broken-page-reports/issues/1583
+nflbox.me###dontfoid
+nflbox.me##iframe~div[id]:has(>div>div[id]>a[href="javascript:;"])
