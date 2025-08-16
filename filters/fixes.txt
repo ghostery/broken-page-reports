@@ -1600,3 +1600,7 @@ oasiscoral.com.au##body:style(display: initial !important)
 ! https://github.com/ghostery/broken-page-reports/issues/1590
 sizetube.com##[style*="z-index: 99999"]
 sizetube.com##body:style(overflow: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1595
+linux-magazin.de##+js(nostif, /^/, 5000)
+linux-magazin.de##div:has(>img[src]:not([class]):not([srcset]):not([class]))
