@@ -260,3 +260,46 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... source=https://nflbox.me/nfl/nfl-network-stream
 ! ... type=xhr
 ||updeckdagos.help^
+
+! https://github.com/ghostery/broken-page-reports/issues/1603
+! >>> url=https://distant-structure.pro/
+! ... source=https://abysscdn.com/
+! ... type=script
+||distant-structure.pro^
+! >>> url=https://grimy-bicycle.com/
+! ... source=https://abysscdn.com/
+! ... type=script
+||grimy-bicycle.com^
+! >>> url=https://om.avocetriches.com/
+! ... source=https://abysscdn.com/
+! ... type=script
+||avocetriches.com^
+! >>> url=https://wss.morphify.net/
+! ... source=https://abysscdn.com/
+! ... type=web_socket
+||wss.morphify.net^$3p
+! >>> url=https://pixel.morphify.net/
+! ... source=https://abysscdn.com/
+! ... type=image
+||pixel.morphify.net^$3p,image
+! >>> url=https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/0.0.0/dist.min.js
+! ... source=https://abysscdn.com/
+! ... type=script
+||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script,domain=watchmmafull.com|abysscdn.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1601
+waz.de##+js(set-cookie, __adblocker, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1600
+! >>> url=https://phoohacmoosh.com/
+! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
+! ... type=script
+||phoohacmoosh.com^
+! >>> url=https://dauzorouwo.net/
+! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
+! ... type=script
+||dauzorouwo.net^
+! >>> url=https://lmsukdmymagqfb.com/
+! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
+! ... type=script
+||lmsukdmymagqfb.com^

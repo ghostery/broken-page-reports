@@ -525,3 +525,11 @@ investmentweek.com###js-cookie-consent-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/1587
 hovertravel.co.uk##[aria-label="cookieconsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1604
+genesiscinema.co.uk#@##cookieBar
+genesiscinema.co.uk##+js(trusted-set-cookie, a1wcc, NECESSARY)
+
+! https://github.com/ghostery/broken-page-reports/issues/1601
+waz.de##+js(trusted-set-cookie, __cmpconsentx42174, CQWYH9gQWYH9gAfCuFDEB4FsAP_gAEPgAAYgKPABpC5NTWFAODBxAMMAKIAU18ADIAAAAAABASABQBMAsAQE0CEgIASAACACAQIAoBQBAABAAAAAAEAAAAAEIAAkAAAAAAAIIABAAAEBQgAAAAAAAAAAAAAAAAAIEAQAkACAQUKEQEBAiIAgAEAAAAAAAIABAAMAAAAgQAAAAAIEAAAAAAIAAIIBAAECARAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAEEdoGQACwAKgAXAA4ACAAEgAKgAZAA0ACYAFwAMQAbwA_ACEAENAIgAiQBNADKAHIAO4AfYA_QCEAEUAIsAR0AkQBJQCxAFzAMUAcQA9oB_QEXgJEATEAmQBNIC8wGSAMsAaaA4sB4oEIQIZgQ5AjsAA)
+waz.de##+js(trusted-set-cookie, __cmpcccx42174, aCQWZxZPgAsCBoPTxGrgXiymTUyrUwAxCaCWSxGBBhZAYhpMhpMZS1DBMTQMIEwjAPJCDAAFopkiWEUq0KoTSgo0ihMkATKRQ0SQGALKillIK0KgWA)

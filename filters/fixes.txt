@@ -1352,6 +1352,7 @@ wdio.com#@#.ad-ticker
 ! https://github.com/ghostery/broken-page-reports/issues/1406
 ! https://github.com/ghostery/broken-page-reports/issues/942
 ! https://github.com/ghostery/broken-page-reports/issues/1445
+! https://github.com/ghostery/broken-page-reports/issues/1605
 ! >>> url=https://0.as.slashdot.org/
 ! ... source=https://slashdot.org/
 ! ... type=script
@@ -1368,10 +1369,10 @@ wdio.com#@#.ad-ticker
 ! ... source=https://slashdot.org/
 ! ... type=script
 ||error-report.com^$domain=slashdot.org|picrew.me
-slashdot.org,picrew.me##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
-slashdot.org,picrew.me##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
-slashdot.org,picrew.me##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
-slashdot.org,picrew.me##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
+slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
+slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
+slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
+slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1419
 gazzetta.gr##.admanager-content
@@ -1492,7 +1493,6 @@ winfuture.de##body[style="overflow: hidden;"]:style(overflow: initial !important
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-tvtv.us##+js(aopr, eval)
 !#if env_safari
 onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
@@ -1608,3 +1608,10 @@ linux-magazin.de##div:has(>img[src]:not([class]):not([srcset]):not([class]))
 ! https://github.com/ghostery/broken-page-reports/issues/1583
 nflbox.me###dontfoid
 nflbox.me##iframe~div[id]:has(>div>div[id]>a[href="javascript:;"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1603
+abysscdn.com###overlay
+abysscdn.com##+js(aopr, fuckAdBlock)
+
+! https://github.com/ghostery/broken-page-reports/issues/1600
+sflix2.to##div[style*="2147483647"]:empty
