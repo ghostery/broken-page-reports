@@ -899,3 +899,6 @@ theislandcinema.com#@##cookieBar
 
 ! https://github.com/ghostery/broken-page-reports/issues/1560
 ercomer.pl#@#.consents
+
+! https://github.com/ghostery/broken-page-reports/issues/1607
+tise-master.eu#@#.website-cookies
