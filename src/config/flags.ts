@@ -24,7 +24,7 @@ const flags: Config["flags"] = {
   ],
   "dynamic-dnr-fixes": [
     {
-      percentage: 20,
+      percentage: 50,
     },
   ],
 };
