@@ -19,12 +19,12 @@ const flags: Config["flags"] = {
   ],
   "extended-selectors": [
     {
-      percentage: 10,
+      percentage: 50,
     },
   ],
   "dynamic-dnr-fixes": [
     {
-      percentage: 20,
+      percentage: 50,
     },
   ],
 };
