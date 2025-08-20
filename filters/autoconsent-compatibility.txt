@@ -902,3 +902,17 @@ ercomer.pl#@#.consents
 
 ! https://github.com/ghostery/broken-page-reports/issues/1607
 tise-master.eu#@#.website-cookies
+
+! https://github.com/ghostery/broken-page-reports/issues/188
+! https://github.com/ghostery/broken-page-reports/issues/716
+! https://github.com/ghostery/broken-page-reports/issues/684
+! https://github.com/ghostery/broken-page-reports/issues/151
+! https://github.com/ghostery/broken-page-reports/issues/172
+! https://github.com/ghostery/broken-page-reports/issues/1127
+! https://github.com/ghostery/broken-page-reports/issues/1243
+! https://github.com/ghostery/broken-page-reports/issues/1348
+! >>> url=https://cmp.aftenposten.no/unified/wrapperMessagingWithoutDetection.js
+! ... source=https://www.aftenposten.no/meninger/leder/i/0V7Pv6/trump-innfoerer-toll-et-hevntokt-mot-verden
+! ... type=script
+@@/wrappermessagingwithoutdetection.js$domain=heise.de|handelsblatt.com|aftenposten.no
+#@#div[id^="sp_message_container_"]
