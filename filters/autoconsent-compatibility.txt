@@ -916,3 +916,6 @@ tise-master.eu#@#.website-cookies
 ! ... type=script
 @@/wrappermessagingwithoutdetection.js$domain=heise.de|handelsblatt.com|aftenposten.no
 #@#div[id^="sp_message_container_"]
+
+! https://github.com/ghostery/broken-page-reports/issues/812
+psp.eu#@#div.cookies-fixed
