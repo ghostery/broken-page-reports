@@ -1615,3 +1615,12 @@ mivalyo.com##div[style*="2147483647"]:empty
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]
 wtov9.com##div[id^="primis-mid-story-ad"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1618
+! >>> url=https://www.etsy.com/include/tags.js
+! ... source=https://github.com/ghostery/broken-page-reports/issues/1618
+! ... type=script
+@@||etsy.com/include/tags.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1616
+akakce.com##.topBanner[rel^="sponsored"]
