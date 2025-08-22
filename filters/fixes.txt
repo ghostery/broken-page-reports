@@ -1591,7 +1591,6 @@ linux-magazin.de##+js(nostif, /^/, 5000)
 linux-magazin.de##div:has(>img[src]:not([class]):not([srcset]):not([class]))
 
 ! https://github.com/ghostery/broken-page-reports/issues/1583
-nflbox.me###dontfoid
 nflbox.me##iframe~div[id]:has(>div>div[id]>a[href="javascript:;"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1603
@@ -1624,3 +1623,9 @@ wtov9.com##div[id^="primis-mid-story-ad"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1616
 akakce.com##.topBanner[rel^="sponsored"]
+
+! https://github.com/ghostery/broken-page-reports/issues/867
+! >>> url=https://68s8.com/5/5769966
+! ... source=https://goku.sx/watch-movie/watch-fall-for-me-130720/1583326
+! ... type=xhr
+||68s8.com^

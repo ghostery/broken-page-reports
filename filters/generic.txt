@@ -1,0 +1,11 @@
+[Adblock Plus 2.0]
+! Title: @Ghostery — generic
+! Expires: 1 day
+! Version: {{version}}
+
+! https://github.com/ghostery/broken-page-reports/issues/1583
+! https://github.com/ghostery/broken-page-reports/issues/1620
+! Recent changes on aggresive websites include a div element with an id of `dontfoid`
+! Remove immediate in case it became problematic
+! refs https://publicwww.com/websites/%22id%3D%5C%22dontfoid%5C%22%22/
+###dontfoid
