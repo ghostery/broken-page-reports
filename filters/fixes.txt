@@ -1629,3 +1629,13 @@ akakce.com##.topBanner[rel^="sponsored"]
 ! ... source=https://goku.sx/watch-movie/watch-fall-for-me-130720/1583326
 ! ... type=xhr
 ||68s8.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1625
+! >>> url=https://dumitru.extole.io/core.js
+! ... source=https://dumitru.extole.io/
+! ... type=script
+@@||extole.io/core.js^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1623
+polybuzz.ai#@#.sidebar-ad:not(.adsbygoogle)
+polybuzz.ai##.sidebar-ad:not(.adsbygoogle):not(.content)
