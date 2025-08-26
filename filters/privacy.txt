@@ -309,3 +309,17 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://1337x.to/torrent/6458491/South-Park-S27E02-1080p-x265-ELiTE/
 ! ... type=script
 ||qskrbykjjatuk.store^
+
+! https://github.com/ghostery/broken-page-reports/issues/1640
+! >>> url=https://glartaidroo.net/
+! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
+! ... type=script
+||glartaidroo.net^
+! >>> url=https://cxntlehhliamcna.com/
+! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
+! ... type=script
+||cxntlehhliamcna.com^
+! >>> url=https://jijrafocr.com/
+! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
+! ... type=script
+||jijrafocr.com^

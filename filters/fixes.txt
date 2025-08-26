@@ -1639,3 +1639,28 @@ akakce.com##.topBanner[rel^="sponsored"]
 ! https://github.com/ghostery/broken-page-reports/issues/1623
 polybuzz.ai#@#.sidebar-ad:not(.adsbygoogle)
 polybuzz.ai##.sidebar-ad:not(.adsbygoogle):not(.content)
+
+! https://github.com/ghostery/broken-page-reports/issues/1636
+meteoeradar.it#@#.active
+
+! https://github.com/ghostery/broken-page-reports/issues/1310
+! https://github.com/uBlockOrigin/uAssets/issues/12635
+telegraph.co.uk#@#+js(set, _satellite, {})
+telegraph.co.uk#@#+js(set, _satellite.getVisitorId, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/1638
+!#if env_safari
+#@#div[data-ad-targeting]
+!#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/1637
+! >>> url=https://fwmrm.net/ad
+! ... source=https://www.france.tv/films/films-drame/7103684-entre-les-vagues.html
+! ... type=xhr
+||fwmrm.net^$redirect=empty,domain=france.tv
+
+! https://github.com/ghostery/broken-page-reports/issues/1640
+faselhds.life##[data-cl-overlay]
+faselhds.life##[style*="2147483647"]
+faselhds.life##.overlay
+faselhds.life##+js(nostif, /^/, 299)
