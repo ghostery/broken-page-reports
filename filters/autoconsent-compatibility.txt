@@ -921,3 +921,12 @@ tise-master.eu#@#.website-cookies
 
 ! https://github.com/ghostery/broken-page-reports/issues/812
 psp.eu#@#div.cookies-fixed
+
+! https://github.com/ghostery/broken-page-reports/issues/1636
+! >>> url=https://cmp.wetteronline.de/
+! ... source=https://www.meteoeradar.it/pagina-meteo/cumiana/8993084
+! ... type=script
+@@||cmp.wetteronline.de^
+
+! https://github.com/ghostery/broken-page-reports/issues/1639
+immoprentice.de#@#div.cookiebanner
