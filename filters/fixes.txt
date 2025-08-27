@@ -1350,7 +1350,7 @@ wdio.com#@#.ad-ticker
 ! ... source=https://slashdot.org/
 ! ... type=script
 ||content-loader.com^$domain=slashdot.org|picrew.me
-! >>> url=https://0.error-report.com/
+! >>> url=https://error-report.com/
 ! ... source=https://slashdot.org/
 ! ... type=script
 ||error-report.com^$domain=slashdot.org|picrew.me
@@ -1427,18 +1427,6 @@ rus.delfi.ee##.ad-block-layer
 ! ... source=https://w3vn.cuevana.pro/
 ! ... type=xhr
 ||cuevana.pro^$1p,xhr
-! >>> url=https://fexqutgc.com/
-! ... source=https://w3vn.cuevana.pro/
-! ... type=xhr
-||fexqutgc.com^
-! >>> url=https://hirdourdauftie.com/
-! ... source=https://w3vn.cuevana.pro/
-! ... type=script
-||hirdourdauftie.com^
-! >>> url=https://phoongaulsoocma.net/
-! ... source=https://w3vn.cuevana.pro/
-! ... type=script
-||phoongaulsoocma.net^
 ! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
@@ -1664,3 +1652,15 @@ faselhds.life##[data-cl-overlay]
 faselhds.life##[style*="2147483647"]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
+
+! https://github.com/ghostery/broken-page-reports/issues/1643
+! >>> url=https://portal.cityspark.com/v1/events/LiveLoveLasCruces
+! ... source=https://livelovelascruces.com/events/#/
+! ... type=script
+@@||portal.cityspark.com^$domain=livelovelascruces.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1642
+! >>> url=https://www.usopen.org/relatedcontent/rest/v2/uso_v1/en/tag?tags=wta319280&startDate=2025-01-01&count=200&omitSubTypes=single_shot&omitSubTypes=onsite_articles&omitSubTypes=photo
+! ... source=https://www.usopen.org/en_US/players/overview/jasmine-paolini/wta319280.html
+! ... type=script
+@@/(?:\/fp\/tags\.js)|(?:\/tag\?tags=)|(?:\/tags\.js\?org_id=)/
