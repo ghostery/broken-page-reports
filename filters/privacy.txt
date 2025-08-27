@@ -260,3 +260,9 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://www.wawacity.diy/?p=film&id=51362-destination-finale-bloodlines
 ! ... type=script
 ||stw.wawacity.diy^
+
+! https://github.com/ghostery/broken-page-reports/issues/1644
+! >>> url=https://cozigplpxpcih.site/
+! ... source=https://www.wawacity.diy/?p=film&id=51215-mr-wolff-2
+! ... type=script
+||cozigplpxpcih.site^
