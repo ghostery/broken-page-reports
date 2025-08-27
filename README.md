@@ -12,8 +12,6 @@ also uses, but sometimes breakage needs manual fixing from our side.
 
 Yes, please do! But maybe there is already an existing ticket that you can find by searching
 through our [issues here](https://github.com/ghostery/broken-page-reports/issues)?
-[This board](https://github.com/orgs/ghostery/projects/24/views/1) also provides an
-overview of our open issues and about their individual state.
 
 If you can find an existing one, feel free to vote on (by giving thumbs up), so we
 can better understand in which order we should fix them.
