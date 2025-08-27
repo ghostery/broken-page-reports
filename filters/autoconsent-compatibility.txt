@@ -44,12 +44,6 @@
 ! ... type=xhr
 @@||consentmanager.net^$3p
 
-! adblocker-filters#767: conversant.ts
-! >>> url=https://cdn.conversant.mgr.consensu.org/gdpr/cmp/gdpr-cmp-stub.js
-! ... source=https://www.irishcentral.com/
-! ... type=xhr
-@@||consensu.org/gdpr/$3p
-
 ! adblocker-filters#767: gov-uk.json
 #@##global-cookie-message
 ! >>> url=https://consentcdn.cookiebot.com/sdk/bc-v4.min.html
@@ -84,10 +78,6 @@
 ! Note: on forbes.com, the banner might take a few second to show up. If it
 ! is then prevented from loading, only a non-interactive overlay is left, which
 ! renders the page unusable.
-! >>> url=https://trustarc.mgr.consensu.org/asset/cmpcookie.v2.html
-! ... source=https://www.forbes.com
-! ... type=frame
-@@||trustarc.mgr.consensu.org
 #@##truste-consent-track
 ! Show TrustArc Cookie Preference link on oracle.com (https://github.com/ghostery/broken-page-reports/issues/806)
 #@##teconsent
@@ -271,10 +261,6 @@ johnlewis.com#@##pecr-cookie-banner-wrapper
 #@#.osano-cm-window
 
 ! adblocker-filters#767: quantcast.json
-! >>> url=https://quantcast.mgr.consensu.org/choice/uer8ZPXHG8WDU/www.cyclingnews.com/choice.js
-! ... source=https://www.cyclingnews.com/
-! ... type=script
-@@||quantcast.mgr.consensu.org^$3p
 ! >>> url=https://script.wikia.nocookie.net/fandom-ae-assets/tracking-opt-in/v9.4.1/tracking-opt-in.min.js
 ! ... source=https://www.fandom.com/
 ! ... type=script
@@ -504,17 +490,6 @@ yubico.com#@#.wt-cli-cookie-bar-container
 ! ... type=script
 @@||snigelweb.com^$3p
 #@#.snigel-cmp-framework
-
-! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/quantcast.spec.ts)
-! https://github.com/ghostery/broken-page-reports/issues/64
-! https://github.com/ghostery/broken-page-reports/issues/63
-! https://github.com/ghostery/broken-page-reports/issues/62
-! https://github.com/ghostery/broken-page-reports/issues/61
-! https://github.com/ghostery/broken-page-reports/issues/60
-! >>> url=https://quantcast.mgr.consensu.org/tcfv2/google-atp-list.json
-! ... source=https://www.gamesradar.com/uk/
-! ... type=script
-@@||quantcast.mgr.consensu.org^$3p
 
 ! (test pages https://github.com/duckduckgo/autoconsent/blob/main/tests/sirdata.spec.ts)
 ! https://github.com/ghostery/broken-page-reports/issues/58

@@ -106,12 +106,6 @@
 ! ... type=script
 ||sephiraasperly.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1327
-! >>> url=https://jdbmfjwxahbphql.com/
-! ... source=https://totalsportek.pro/
-! ... type=script
-||jdbmfjwxahbphql.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1433
 ! >>> url=https://www.samsung.com/chat/api/livechat/prompt/browse/event
 ! ... source=https://www.samsung.com/us/support/contact/
@@ -119,14 +113,6 @@
 ||samsung.com/chat/api/livechat/prompt/browse/event
 
 ! https://github.com/ghostery/broken-page-reports/issues/1476
-! >>> url=https://urazin.bitwisejoom.click/
-! ... source=https://therarbg.com/
-! ... type=xhr
-||bitwisejoom.click^
-! >>> url=https://fandoms.askrpte.qpon/
-! ... source=https://therarbg.com/
-! ... type=xhr
-||askrpte.qpon^
 ! >>> url=https://lushingrehinge.rest/
 ! ... source=https://therarbg.com/
 ! ... type=xhr
@@ -149,24 +135,10 @@
 ||dns-finder.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1390
-! >>> url=https://kouphoudoagraup.com/
-! ... source=https://tpi.li/Qa6o7gE6
-! ... type=xhr
-||kouphoudoagraup.com^
-! >>> url=https://oywusyjg.com/
-! ... source=https://tpi.li/Qa6o7gE6
-! ... type=xhr
-||oywusyjg.com^
 ! >>> url=https://11ssq.com/
 ! ... source=https://tpi.li/Qa6o7gE6
 ! ... type=xhr
 ||11ssq.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1571
-! >>> url=https://njjwnbdoifqgg.space/
-! ... source=https://1337x.to/torrent/6458491/South-Park-S27E02-1080p-x265-ELiTE/
-! ... type=script
-||njjwnbdoifqgg.space^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1579
 kicker.de##+js(aopr, ovTrackingConfig)
@@ -181,16 +153,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=xhr
 ||servertag.nespresso.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1559
-! >>> url=https://pclnfjugvr.com/
-! ... source=https://mapple.tv/watch/tv/2-1/93405-squid-game
-! ... type=script
-||pclnfjugvr.com^
-! >>> url=https://uwauftorge.net/
-! ... source=https://mapple.tv/watch/tv/2-1/93405-squid-game
-! ... type=script
-||uwauftorge.net^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1556
 ! >>> url=https://openreplay.justbetter.nl/ingest/v1/web/start
 ! ... source=https://www.ranzijn.nl/winkels
@@ -198,32 +160,10 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ||openreplay.justbetter.nl/ingest^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1593
-! >>> url=https://yjobvvnlkgfl.com/
-! ... source=https://premiumporn.org/
-! ... type=xhr
-||yjobvvnlkgfl.com^
-! >>> url=https://tapsilsoukraw.com/
-! ... source=https://premiumporn.org/
-! ... type=xhr
-||tapsilsoukraw.com^
 ! >>> url=https://hollow-mess.com/
 ! ... source=https://premiumporn.org/
 ! ... type=xhr
 ||hollow-mess.com^
-! >>> url=https://piptaucmie.com/
-! ... source=https://premiumporn.org/
-! ... type=xhr
-||piptaucmie.com^
-! >>> url=https://ticdmgrd.com/
-! ... source=https://premiumporn.org/
-! ... type=xhr
-||ticdmgrd.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1590
-! >>> url=https://silent-basis.pro/
-! ... source=https://sizetube.com/
-! ... type=script
-||silent-basis.pro^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1589
 ! >>> url=https://t1.p2pplay.pro/api/v1/log?t=
@@ -262,10 +202,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ||updeckdagos.help^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1603
-! >>> url=https://distant-structure.pro/
-! ... source=https://abysscdn.com/
-! ... type=script
-||distant-structure.pro^
 ! >>> url=https://grimy-bicycle.com/
 ! ... source=https://abysscdn.com/
 ! ... type=script
@@ -291,18 +227,10 @@ kicker.de##+js(aopr, ovTrackingConfig)
 waz.de##+js(set-cookie, __adblocker, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1600
-! >>> url=https://phoohacmoosh.com/
-! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
-! ... type=script
-||phoohacmoosh.com^
 ! >>> url=https://dauzorouwo.net/
 ! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
 ! ... type=script
 ||dauzorouwo.net^
-! >>> url=https://lmsukdmymagqfb.com/
-! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
-! ... type=script
-||lmsukdmymagqfb.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1620
 ! >>> url=https://qskrbykjjatuk.store/27
@@ -315,11 +243,20 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
 ! ... type=script
 ||glartaidroo.net^
-! >>> url=https://cxntlehhliamcna.com/
-! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
-! ... type=script
-||cxntlehhliamcna.com^
 ! >>> url=https://jijrafocr.com/
 ! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
 ! ... type=script
 ||jijrafocr.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1645
+! >>> url=https://nssndendnoeyc.store/
+! ... source=https://nepu.to/show/jujutsu-kaisen-2020-135839/season/2/episode/14
+! ... type=script
+||nssndendnoeyc.store^
+
+! https://github.com/ghostery/broken-page-reports/issues/1644
+! ALERT: Matomo - free/libre analytics platform
+! >>> url=https://stw.wawacity.diy/5nr4su.js
+! ... source=https://www.wawacity.diy/?p=film&id=51362-destination-finale-bloodlines
+! ... type=script
+||stw.wawacity.diy^
