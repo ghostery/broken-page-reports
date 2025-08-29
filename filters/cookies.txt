@@ -534,4 +534,4 @@ leximancer.com##+js(trusted-set-cookie, leximancer-consent-2021-08-09-A-essentia
 ulanzi.de##+js(trusted-set-cookie, consentstatus, denied)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1660
-eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essential":1,"basic":0,"advanced":0,"marketing":0},"version":3,"expire":"Sat, 29 Aug 2026 07:53:43 GMT"}})
+eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essential":1,"basic":0,"advanced":0,"marketing":0},"version":3,"expire":"$currentDate$"}})
