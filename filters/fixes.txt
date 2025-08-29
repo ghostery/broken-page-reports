@@ -42,20 +42,6 @@ abcbourse.com##+js(aopw, doc)
 ! ... type=image
 @@||o0bc.com$domain=boston.com
 
-! https://github.com/cliqz-oss/adblocker/issues/455
-! Issue is the first filter aggressively prevents any inline script from
-! running. This prevents infi-scroll from working. Once fixed, some first-party
-! ads are shown (served from 9to5mac.com). They can be hidden with a simple
-! cosmetic filter.
-! >>> url=https://9to5mac.com/
-! ... source=https://9to5mac.com/
-! ... type=document
-@@||9to5mac.com^$csp=script-src 'self' *.ytimg.com *.youtube.com *.google.com *.disqus.com *.disquscdn.com
-! >>> url=https://9to5mac.com/
-! ... source=https://9to5mac.com/
-! ... type=document
-||9to5mac.com^$csp=script-src 'self' 'unsafe-inline' *.ytimg.com *.youtube.com *.google.com *.disqus.com *.disquscdn.com
-
 ! Fix breakage of https://reklama1.su
 ! The following filter from Easylist breaks reklama1.su so we mark it as
 ! badfilter and create a new one which should only apply when requests are
