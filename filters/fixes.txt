@@ -1653,3 +1653,20 @@ faselhds.life##+js(nostif, /^/, 299)
 namu.wiki#@#:xpath(//article/h1[not(./small)]/following-sibling::div[1]/following-sibling::div//div[count(*)>1][not(ancestor::div[count(*)>1]/ancestor::article)]/div[1])
 namu.wiki#@#:xpath(//div/h1[not(./small)]/following-sibling::div[1]/following-sibling::div//div[count(*)>1][not(ancestor::div[count(*)>1]/ancestor::div[./h1[not(./small)]])]/div[1])
 namu.wiki##div[style]:has(>div>div>span+span>span:empty):has(>div~div:not([style]):not([class])>table>tbody>tr>td>div>div>a>span>img[data-src])
+
+! https://github.com/ghostery/broken-page-reports/issues/1656
+! >>> url=https://eatweeds.kit.com/1c471b8a8d/index.js
+! ... source=https://www.plantguides.net/doac-herb-hour/
+! ... type=script
+@@||eatweeds.kit.com^$script,domain=plantguides.net
+
+! https://github.com/ghostery/broken-page-reports/issues/1655
+leboncoin.fr##[id^="img_"]
+! >>> url=ws://dbloader.leboncoin.info/ws
+! ... source=https://www.leboncoin.fr/ad/consoles/3047323768
+! ... type=websocket
+||dbloader.leboncoin.info^$script,websocket
+! >>> url=storage.googleapis.com/lbcdb/adv.js
+! ... source=https://www.leboncoin.fr/ad/consoles/3047323768
+! ... type=script
+||storage.googleapis.com/lbcdb^$domain=leboncoin.fr
