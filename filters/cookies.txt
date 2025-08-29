@@ -526,3 +526,12 @@ waz.de##+js(trusted-set-cookie, __cmpcccx42174, aCQWZxZPgAsCBoPTxGrgXiymTUyrUwAx
 
 ! https://github.com/ghostery/broken-page-reports/issues/812
 psp.eu##+js(trusted-set-cookie, COOKIE_NOTICE, group_necessary)
+
+! https://github.com/ghostery/broken-page-reports/issues/1659
+leximancer.com##+js(trusted-set-cookie, leximancer-consent-2021-08-09-A-essential, true)
+
+! https://github.com/ghostery/broken-page-reports/issues/1658
+ulanzi.de##+js(trusted-set-cookie, consentstatus, denied)
+
+! https://github.com/ghostery/broken-page-reports/issues/1660
+eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essential":1,"basic":0,"advanced":0,"marketing":0},"version":3,"expire":"Sat, 29 Aug 2026 07:53:43 GMT"}})

@@ -1470,9 +1470,6 @@ motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/
 onlinegdb.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
 
-! https://github.com/ghostery/broken-page-reports/issues/1119
-namu.wiki##div>div:not([class*=" "]):has(>table>tbody>tr>td a[href^="#s"]>span>img[src^="data:image/svg+xml"])
-
 ! https://github.com/ghostery/broken-page-reports/issues/1570
 nytimes.com##div[class^="Ad-module_adContainer"]
 
@@ -1664,3 +1661,9 @@ faselhds.life##+js(nostif, /^/, 299)
 ! ... source=https://www.usopen.org/en_US/players/overview/jasmine-paolini/wta319280.html
 ! ... type=script
 @@/(?:\/fp\/tags\.js)|(?:\/tag\?tags=)|(?:\/tags\.js\?org_id=)/
+
+! https://github.com/ghostery/broken-page-reports/issues/1119
+! https://github.com/ghostery/broken-page-reports/issues/1657
+namu.wiki#@#:xpath(//article/h1[not(./small)]/following-sibling::div[1]/following-sibling::div//div[count(*)>1][not(ancestor::div[count(*)>1]/ancestor::article)]/div[1])
+namu.wiki#@#:xpath(//div/h1[not(./small)]/following-sibling::div[1]/following-sibling::div//div[count(*)>1][not(ancestor::div[count(*)>1]/ancestor::div[./h1[not(./small)]])]/div[1])
+namu.wiki##div[style]:has(>div>div>span+span>span:empty):has(>div~div:not([style]):not([class])>table>tbody>tr>td>div>div>a>span>img[data-src])
