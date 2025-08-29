@@ -535,3 +535,10 @@ ulanzi.de##+js(trusted-set-cookie, consentstatus, denied)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1660
 eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essential":1,"basic":0,"advanced":0,"marketing":0},"version":3,"expire":"Sat, 29 Aug 2026 07:53:43 GMT"}})
+
+! https://github.com/ghostery/broken-page-reports/issues/1654
+! >>> url=https://sdk.privacy-center.org/7b02b7c5-542b-4e58-be72-3b656a0c4bbe/loader.js?target=www.lamontagne.fr
+! ... source=https://www.lamontagne.fr/
+! ... type=script
+||sdk.privacy-center.org^$domain=lamontagne.fr
+lamontagne.fr##div[style=""]:has(svg.cf-icon-adblocker)
