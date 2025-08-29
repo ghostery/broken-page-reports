@@ -1670,3 +1670,7 @@ leboncoin.fr##[id^="img_"]
 ! ... source=https://www.leboncoin.fr/ad/consoles/3047323768
 ! ... type=script
 ||storage.googleapis.com/lbcdb^$domain=leboncoin.fr
+
+! https://github.com/ghostery/broken-page-reports/issues/1653
+livemint.com##div[class^="adBlockerPopup"]
+livemint.com##body[style="overflow: hidden;"]:style(overflow: initial !important)
