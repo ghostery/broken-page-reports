@@ -276,3 +276,51 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://www.leboncoin.fr/c/_mode_/p-13?shippable=1
 ! ... type=script
 ||leboncoin.fr/libertix/libertix.min.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1672
+! >>> url=player.lecta.io/lecta-player/js/vast-client.min.js
+! ... source=https://www.kicker.de/last-minute-deal-perfekt-bayern-leiht-jackson-aus-1142893/artikel#
+! ... type=script
+||player.lecta.io/lecta-player/js/vast-client.min.js^
+! >>> url=https://btldr.net/tag?w=5134825939271680&upapi=true
+! ... source=https://www.kicker.de/last-minute-deal-perfekt-bayern-leiht-jackson-aus-1142893/artikel#
+! ... type=script
+||btldr.net^$3p
+! >>> url=https://vates.kicker.de/image/b5c6835556163483f6649c8d804c7e96e63497d78/nd84yiz9IEDhrcfvzphe7qpx8zvnq6b9kw3.jpg
+! ... source=https://www.kicker.de/last-minute-deal-perfekt-bayern-leiht-jackson-aus-1142893/artikel#
+! ... type=image
+||vates.kicker.de^
+
+! https://github.com/ghostery/broken-page-reports/issues/1669
+! >>> url=https://www.kupujemprodajem.com/api/web/v1/banners/show-track
+! ... source=https://www.kupujemprodajem.com/
+! ... type=xhr
+||kupujemprodajem.com/api/web/v1/banners/show-track^
+
+! https://github.com/ghostery/broken-page-reports/issues/1630
+! >>> url=https://rmuancaxpzuj.com/
+! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
+! ... type=script
+||rmuancaxpzuj.com^
+! >>> url=https://ancvipba.com/cubzpa/lukja
+! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
+! ... type=script
+||ancvipba.com^
+! >>> url=https://sq.lastingdiketo.com/t1yManL498EYzai/126819
+! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
+! ... type=script
+||lastingdiketo.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1631
+! >>> url=https://sheekroakse.com/wrr
+! ... source=https://jkanime.net/psycho-pass/1/
+! ... type=xhr
+||sheekroakse.com^
+! >>> url=https://ii4d.com/
+! ... source=https://jkanime.net/psycho-pass/1/
+! ... type=script
+||ii4d.com^
+! >>> url=https://aphciaosmxnd.com/
+! ... source=https://jkanime.net/psycho-pass/1/
+! ... type=script
+||aphciaosmxnd.com^

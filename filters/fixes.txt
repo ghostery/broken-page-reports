@@ -1687,3 +1687,29 @@ leboncoin.fr##+js(json-prune, aduUnitConfigs)
 ! ... source=https://www.leboncoin.fr/c/_mode_/p-9?shippable=1
 ! ... type=script
 @@||dd.leboncoin.fr/tags.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1671
+readallcomics.com##body > div[id][class]:has(.adblock_title)
+
+! https://github.com/ghostery/broken-page-reports/issues/1670
+n1info.rs##.ad-loading-placeholder
+
+! https://github.com/ghostery/broken-page-reports/issues/1669
+kupujemprodajem.com##div:not([id]):not([class]):has(> a[rel="nofollow"][target="_blank"][href] > img)
+
+! https://github.com/ghostery/broken-page-reports/issues/1630
+! >>> url=https://www.mangakakalot.gg/images/bns/common/ads_flying_desk.gif
+! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
+! ... type=image
+||mangakakalot.gg/images/bns/common/ads_flying
+mangakakalot.gg##[class^="fly-ads-"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1632
+! >>> url=https://hentairead.com/wp-content/cache/min/1/js/jads.js
+! ... source=https://hentairead.com/artist/mogiki-hayami/page/2/
+! ... type=script
+||hentairead.com/wp-content/cache/min/1/js/jads.js^
+hentairead.com###popupBannerModal
+
+! https://github.com/ghostery/broken-page-reports/issues/1631
+jkanime.net##div[style*="2147483647"]

@@ -542,3 +542,21 @@ eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essen
 ! ... type=script
 ||sdk.privacy-center.org^$domain=lamontagne.fr
 lamontagne.fr##div[style=""]:has(svg.cf-icon-adblocker)
+
+! https://github.com/ghostery/broken-page-reports/issues/1674
+t-online.de##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
+t-online.de##[id^="sp_message_container"]:has(> iframe[src^="https://consent.t-online.de/index.html"][src*="preload_message=true"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1673
+n26.com#@#+js(trusted-click-element, button[id="onetrust-reject-all-handler"], '', 1500)
+n26.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentISODate$)
+n26.com##+js(trusted-set-cookie, OptanonConsent, "isGpcEnabled=1&datestamp=$currentDate$&version=202502.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&consentId=00000000-0000-0000-0000-000000000000&AwaitingReconsent=false")
+
+! https://github.com/ghostery/broken-page-reports/issues/1672
+kicker.de##+js(trusted-set-cookie, __adblocker, false)
+kicker.de##+js(trusted-set-cookie, kickerQM, 00000000-0000-0000-0000-000000000000)
+kicker.de###kick__pur__layer
+
+! https://github.com/ghostery/broken-page-reports/issues/769
+hornbach.de##+js(trusted-set-cookie, cookiesEnabled, $now$)
+hornbach.de##+js(trusted-set-local-storage-item, uc_cross_domain_data_liId1wrVS, '[{"action":"onDenyAllServices","consentId":"","settingsVersion":"99.50.296","status":false,"templateId":"87JYasXPF","timestamp":"$now$","updatedBy":"explicit"}]')
