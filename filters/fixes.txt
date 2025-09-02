@@ -1587,6 +1587,7 @@ wtov9.com##div[class^="index-module_advertisement"]
 wtov9.com##div[id^="primis-mid-story-ad"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1618
+! refs https://datadome.co/products/datadome-captcha/
 ! >>> url=https://www.etsy.com/include/tags.js
 ! ... source=https://github.com/ghostery/broken-page-reports/issues/1618
 ! ... type=script
@@ -1674,3 +1675,15 @@ leboncoin.fr##[id^="img_"]
 ! https://github.com/ghostery/broken-page-reports/issues/1653
 livemint.com##div[class^="adBlockerPopup"]
 livemint.com##body[style="overflow: hidden;"]:style(overflow: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1675
+leboncoin.fr##div:has(>[data-test-id="advertising-placeholder"])
+leboncoin.fr##[data-test-id^="advertising-"]
+leboncoin.fr##li[style^="grid-area:"][style*="advertising-"]
+leboncoin.fr##+js(json-prune, active_placeholders.[].ad_categories)
+leboncoin.fr##+js(json-prune, aduUnitConfigs)
+! refs https://datadome.co/products/datadome-captcha/
+! >>> url=https://dd.leboncoin.fr/tags.js
+! ... source=https://www.leboncoin.fr/c/_mode_/p-9?shippable=1
+! ... type=script
+@@||dd.leboncoin.fr/tags.js^
