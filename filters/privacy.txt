@@ -266,3 +266,13 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://www.wawacity.diy/?p=film&id=51215-mr-wolff-2
 ! ... type=script
 ||cozigplpxpcih.site^
+
+! https://github.com/ghostery/broken-page-reports/issues/1675
+! >>> url=https://www.leboncoin.fr/piano-analytics/pa.js
+! ... source=https://www.leboncoin.fr/c/_mode_/p-9?shippable=1
+! ... type=script
+||leboncoin.fr/piano-analytics^
+! >>> url=https://www.leboncoin.fr/libertix/libertix.min.js
+! ... source=https://www.leboncoin.fr/c/_mode_/p-13?shippable=1
+! ... type=script
+||leboncoin.fr/libertix/libertix.min.js^
