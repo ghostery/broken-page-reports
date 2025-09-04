@@ -905,3 +905,10 @@ psp.eu#@#div.cookies-fixed
 
 ! https://github.com/ghostery/broken-page-reports/issues/1639
 immoprentice.de#@#div.cookiebanner
+
+! https://github.com/ghostery/broken-page-reports/issues/1695
+shop.baltrade.eu#@##cookiePolicyBar
+shop.baltrade.eu#@##cookiesPanel
+
+! https://github.com/ghostery/broken-page-reports/issues/1697
+waa-ultra.com#@#.amgdprcookie-bar-template

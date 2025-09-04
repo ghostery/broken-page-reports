@@ -1569,9 +1569,9 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1600
-sflix2.to##div[style*="2147483647"]:empty
-
 ! https://github.com/ghostery/broken-page-reports/issues/1608
+! https://github.com/ghostery/broken-page-reports/issues/1696
+! https://github.com/ghostery/broken-page-reports/issues/1631
 ! >>> url=https://embed69.org/vast-player-v4.js
 ! ... source=https://mivalyo.com/a
 ! ... type=script
@@ -1580,7 +1580,7 @@ sflix2.to##div[style*="2147483647"]:empty
 ! ... source=https://mivalyo.com/a
 ! ... type=xhr
 ||mivalyo.com/ad^
-mivalyo.com##div[style*="2147483647"]:empty
+sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro##div[style*="2147483647"]:empty
 
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]
@@ -1711,5 +1711,32 @@ mangakakalot.gg##[class^="fly-ads-"]
 ||hentairead.com/wp-content/cache/min/1/js/jads.js^
 hentairead.com###popupBannerModal
 
-! https://github.com/ghostery/broken-page-reports/issues/1631
-jkanime.net##div[style*="2147483647"]
+! https://github.com/ghostery/broken-page-reports/issues/1694
+dailywire.com##.homepage-ad-container.visible
+
+! https://github.com/ghostery/broken-page-reports/issues/1692
+finanznachrichten.de##+js(trusted-suppress-native-method, atob, '"c2V0VGltZW91dA"', abort)
+
+! https://github.com/ghostery/broken-page-reports/issues/1532
+! >>> url=https://platform.pubadx.one/
+! ... source=https://www.wcostream.tv/the-mask-season-1-episode-15-split-personality
+! ... type=script
+||platform.pubadx.one^$redirect=noopjs,domain=wcostream.tv|wcostream.com
+wcostream.com##+js(aopr, console.warn)
+wcostream.com##.image-container:style(display: initial !important; opacity: 1 !important)
+wcostream.com##.image-container-2
+
+! https://github.com/ghostery/broken-page-reports/issues/1477
+oii.la##div[style*="z-index: 2147483647"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1690
+dartsstreams.com##+js(set, siteConfig.buttonAdUri, 0)
+dartsstreams.com##+js(set, siteConfig.buttonad, {})
+dartsstreams.com##+js(nano-stb, /.?/, 1000)
+dartsstreams.com##+js(no-fetch-if, adsbygoogle.js)
+
+! https://github.com/ghostery/broken-page-reports/issues/1688
+! >>> url=https://pagead2.googlesyndication.com/
+! ... source=https://cuttlinks.com/UjAjz6Dcrg
+! ... type=script
+||pagead2.googlesyndication.com^$redirect=noopjs,domain=cuttlinks.com
