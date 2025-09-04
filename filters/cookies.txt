@@ -566,3 +566,15 @@ latintimes.com##+js(trusted-set-local-storage-item, sddan:cmp, '{"tc":"CQXHgMAQX
 latintimes.com##+js(trusted-set-local-storage-item, sddan:cmp:stc, CQXHgMAQXHgMABcAKBENB6FgAAAAAEPgAAYgJnwAATPgUgALAAqABcADgAHgAQAAqABlADQANQAjgBMACgAFUANAAfAA_ACOAE4AK0AaIA5ABzgDugH4AfsBBwEIAIwAR0A0QBtAD2gIQAQ6Ap8BUoCsgFsALzAZIAy4CCYEbwAA.IJnoB5C5cDSFhoCpmIJoEAARUgFgAQgAgBgJAAwAASJLAcAwEhCAAAAAAIAAAABAAAABAIAAFCABAAAAAIAAAIAAAAAQQIAACAAAAAAAAAAAAAAAAAgggEQAAAAAEAgQAgAAAAAIAQJAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAAAAAgAgAAAAAAAAAAIAlAIAAAIAAAAAAAAAAAIA)
 latintimes.com##+js(trusted-set-local-storage-item, sddan:cmp:stc:ts, $now$)
 latintimes.com##+js(trusted-set-cookie, euconsent-v2, CQXHgMAQXHgMABcAKBENB6FgAAAAAEPgAAYgJnwAATPgUgALAAqABcADgAHgAQAAqABlADQANQAjgBMACgAFUANAAfAA_ACOAE4AK0AaIA5ABzgDugH4AfsBBwEIAIwAR0A0QBtAD2gIQAQ6Ap8BUoCsgFsALzAZIAy4CCYEbwAA.IJnoB5C5cDSFhoCpmIJoEAARUgFgAQgAgBgJAAwAASJLAcAwEhCAAAAAAIAAAABAAAABAIAAFCABAAAAAIAAAIAAAAAQQIAACAAAAAAAAAAAAAAAAAgggEQAAAAAEAgQAgAAAAAIAQJAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAAAAAgAgAAAAAAAAAAIAlAIAAAIAAAAAAAAAAAIA.yC5DVww.4AsgAACmAAAKYAIACAAQAAAAAAAA)
+
+! https://github.com/ghostery/broken-page-reports/issues/1695
+shop.baltrade.eu##+js(set-cookie, privacyPreferencesConfirmed, true)
+shop.baltrade.eu##+js(set-cookie, privacyPreferencesAdPersonalization, false)
+shop.baltrade.eu##+js(set-cookie, privacyPreferencesAdUserData, false)
+shop.baltrade.eu##+js(set-cookie, privacyPreferencesAnalytics, false)
+shop.baltrade.eu##+js(set-cookie, privacyPreferencesMarketing, false)
+shop.baltrade.eu##+js(set-cookie, privacyPreferencesFunctions, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1697
+waa-ultra.com##+js(trusted-set-cookie, amcookie_allowed, 1)
+waa-ultra.com##+js(trusted-set-cookie, amcookie_disallowed, "recently_viewed_product,recently_viewed_product_previous,recently_compared_product,recently_compared_product_previous,_ga,_gid,_gat,_fbp,_fbc")

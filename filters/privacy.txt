@@ -324,3 +324,69 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://jkanime.net/psycho-pass/1/
 ! ... type=script
 ||aphciaosmxnd.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1661
+! >>> url=https://fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:136-0309170-5043932:TQM8A17VG4NSX8WHHQ7Z$uedata=s:%2Frd%2Fuedata%3Fld%26v%3D0.320575.0%26id%3DTQM8A17VG4NSX8WHHQ7Z%26sc0%3Daui%3Asw%3Appft%3Acallback_ricb%26bb0%3D35%26pc0%3D325%26ld0%3D325%26t0%3D1756996662606%26sc1%3Dportal-bb%26pc1%3D0%26ld1%3D0%26t1%3D1756996662410%26sc2%3DcsmCELLSframework%26bb2%3D684%26pc2%3D684%26ld2%3D684%26t2%3D1756996662965%26sc3%3DcsmCELLSpdm%26bb3%3D684%26pc3%3D691%26ld3%3D691%26t3%3D1756996662972%26sc4%3DcsmCELLSvpm%26bb4%3D691%26pc4%3D691%26ld4%3D691%26t4%3D1756996662972%26sc5%3DcsmCELLSfem%26bb5%3D691%26pc5%3D691%26ld5%3D691%26t5%3D1756996662972%26sc6%3Due_sushi_v1%26bb6%3D691%26pc6%3D692%26ld6%3D692%26t6%3D1756996662973%26ctb%3D1:3628
+! ... source=https://www.amazon.com/gp/video/detail/B0CJP9FJDC/ref=atv_sr_fle_c_sr6eee57_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0CJPBFFCJ&qid=1756449266010
+! ... type=image
+||fls-*.amazon.com^$image
+
+! https://github.com/ghostery/broken-page-reports/issues/1696
+! >>> url=https://punogchdnwcrri.com/
+! ... source=https://fastflix.top/tvshows/gachiakuta/
+! ... type=script
+||punogchdnwcrri.com^
+! >>> url=https://crjhktxtsqbwp.com/
+! ... source=https://fastflix.top/tvshows/gachiakuta/
+! ... type=script
+||crjhktxtsqbwp.com^
+! >>> url=https://shoasautchais.com/
+! ... source=https://fastflix.top/tvshows/gachiakuta/
+! ... type=script
+||shoasautchais.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1693
+! >>> url=https://sulcatechoush.click/gd/29352
+! ... source=https://www6.f2movies.to/home
+! ... type=xhr
+||sulcatechoush.click^
+! >>> url=https://yt.vennershackos.com/
+! ... source=https://www6.f2movies.to/home
+! ... type=xhr
+||vennershackos.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1477
+! >>> url=https://tyytcouxeg.com/
+! ... source=https://oii.la/Q3htOQYS7f
+! ... type=script
+||tyytcouxeg.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1690
+! >>> url=https://au.mars1st.baby?utm_data=cGdlPXNjaGVkdWxlJmxhbmc9ZW4mZG9tPWRzJnJlZj0mdGV4dD0mZ2NhdD1MaXZlK0RhcnRzJmg9MQ%3D%3D
+! ... source=https://dartsstreams.com/live-darts-streams
+! ... type=image
+||mars1st.baby^
+! >>> url=https://paralesounds.shop/rWvgY12vykFO/11862
+! ... source=https://dartsstreams.com/live-darts-streams
+! ... type=script
+||paralesounds.shop^
+! >>> url=https://eeksbeforebutheh.org/
+! ... source=https://dartsstreams.com/live-darts-streams
+! ... type=script
+||eeksbeforebutheh.org^
+! >>> url=https://cv.bentsdiorism.com/
+! ... source=https://dartsstreams.com/pdc-world-championship/sky-sports-darts-stream
+! ... type=script
+||bentsdiorism.com^
+! >>> url=https://ifaqirpgjntoc.site/2g
+! ... source=https://dartsstreams.com/pdc-world-championship/sky-sports-darts-stream
+! ... type=script
+||ifaqirpgjntoc.site^
+! >>> url=https://catholicncesisp.com/RnR0NGtpSxdHVgkxOQU
+! ... source=https://dartsstreams.com/sky-sports-darts-live/pdc-world-championship/stream-2
+! ... type=script
+||catholicncesisp.com^
+! >>> url=https://jhfjslomqzfte.site/k0o5m5l
+! ... source=https://dartsstreams.com/sky-sports-darts-live/pdc-world-championship/stream-2
+! ... type=script
+||jhfjslomqzfte.site^
