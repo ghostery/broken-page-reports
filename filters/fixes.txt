@@ -1324,6 +1324,7 @@ wdio.com#@#.ad-ticker
 ! https://github.com/ghostery/broken-page-reports/issues/942
 ! https://github.com/ghostery/broken-page-reports/issues/1445
 ! https://github.com/ghostery/broken-page-reports/issues/1605
+! https://github.com/ghostery/broken-page-reports/issues/1540
 ! >>> url=https://0.as.slashdot.org/
 ! ... source=https://slashdot.org/
 ! ... type=script
@@ -1339,11 +1340,23 @@ wdio.com#@#.ad-ticker
 ! >>> url=https://error-report.com/
 ! ... source=https://slashdot.org/
 ! ... type=script
-||error-report.com^$domain=slashdot.org|picrew.me
-slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
-slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
-slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
-slashdot.org,picrew.me,tvtv.us##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
+||error-report.com^$domain=slashdot.org|picrew.me|sourceforge.net
+! >>> url=https://0.as.sourceforge.net/
+! ... source=https://sourceforge.net/projects/analyseplugin/
+! ... type=script
+||as.sourceforge.net^
+! >>> url=https://ads-2479q.iionads.com/hb
+! ... source=https://sourceforge.net/projects/analyseplugin/
+! ... type=script
+||iionads.com^
+! >>> url=https://prebid.loopmertb.com/
+! ... source=https://sourceforge.net/projects/analyseplugin/
+! ... type=script
+||loopmertb.com^
+slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
+slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
+slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
+slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1419
 gazzetta.gr##.admanager-content
@@ -1572,6 +1585,8 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1608
 ! https://github.com/ghostery/broken-page-reports/issues/1696
 ! https://github.com/ghostery/broken-page-reports/issues/1631
+! https://github.com/ghostery/broken-page-reports/issues/947
+! https://github.com/ghostery/broken-page-reports/issues/1538
 ! >>> url=https://embed69.org/vast-player-v4.js
 ! ... source=https://mivalyo.com/a
 ! ... type=script
@@ -1580,7 +1595,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://mivalyo.com/a
 ! ... type=xhr
 ||mivalyo.com/ad^
-sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro##div[style*="2147483647"]:empty
+sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw##div[style*="2147483647"]:empty
 
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]
@@ -1717,14 +1732,14 @@ dailywire.com##.homepage-ad-container.visible
 ! https://github.com/ghostery/broken-page-reports/issues/1692
 finanznachrichten.de##+js(trusted-suppress-native-method, atob, '"c2V0VGltZW91dA"', abort)
 
+! https://github.com/ghostery/broken-page-reports/issues/1218
 ! https://github.com/ghostery/broken-page-reports/issues/1532
+! https://github.com/ghostery/broken-page-reports/issues/1679
+! https://github.com/ghostery/broken-page-reports/issues/1531
 ! >>> url=https://platform.pubadx.one/
 ! ... source=https://www.wcostream.tv/the-mask-season-1-episode-15-split-personality
 ! ... type=script
-||platform.pubadx.one^$redirect=noopjs,domain=wcostream.tv|wcostream.com
-wcostream.com##+js(aopr, console.warn)
-wcostream.com##.image-container:style(display: initial !important; opacity: 1 !important)
-wcostream.com##.image-container-2
+||platform.pubadx.one^$redirect=noopjs,domain=wcostream.tv|wcostream.com|wco.tv|wcoflix.tv
 
 ! https://github.com/ghostery/broken-page-reports/issues/1477
 oii.la##div[style*="z-index: 2147483647"]
@@ -1736,7 +1751,33 @@ dartsstreams.com##+js(nano-stb, /.?/, 1000)
 dartsstreams.com##+js(no-fetch-if, adsbygoogle.js)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1688
+! https://github.com/ghostery/broken-page-reports/issues/1383
 ! >>> url=https://pagead2.googlesyndication.com/
 ! ... source=https://cuttlinks.com/UjAjz6Dcrg
 ! ... type=script
-||pagead2.googlesyndication.com^$redirect=noopjs,domain=cuttlinks.com
+||pagead2.googlesyndication.com^$redirect=noopjs,domain=cuttlinks.com|arkadium.com
+
+! https://github.com/ghostery/broken-page-reports/issues/1686
+calottery.com#@#.notification.cookie
+
+! https://github.com/ghostery/broken-page-reports/issues/1683
+wallstreet-online.de##+js(trusted-suppress-native-method, document.createElement, '"IMG"', abort)
+
+! https://github.com/ghostery/broken-page-reports/issues/1680
+! >>> url=https://readcomiconline.li/Ads/bidmob300b.aspx
+! ... source=https://readcomiconline.li/Comic/The-Power-Fantasy/Issue-10?id=239895
+! ... type=sub_frame
+||readcomiconline.li/Ads/bidmob300b.aspx^$frame
+
+! https://github.com/ghostery/broken-page-reports/issues/933
+g1.globo.com##.bastian-feed-item[data-type="advertise"]
+
+! https://github.com/ghostery/broken-page-reports/issues/969
+! refs https://datadome.co/products/datadome-captcha/
+! >>> url=https://js.datadome.co/tags.js
+! ... source=https://www.surfer.com/news/swatch-nines-surf-event-2024-waco
+! ... type=script
+@@||js.datadome.co/tags.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1385
+amazon.com#@#.AdHolder

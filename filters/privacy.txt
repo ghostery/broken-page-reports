@@ -112,16 +112,6 @@
 ! ... type=xhr
 ||samsung.com/chat/api/livechat/prompt/browse/event
 
-! https://github.com/ghostery/broken-page-reports/issues/1476
-! >>> url=https://lushingrehinge.rest/
-! ... source=https://therarbg.com/
-! ... type=xhr
-||lushingrehinge.rest^
-! >>> url=https://pt.msourcecargo.com/
-! ... source=https://therarbg.com/
-! ... type=xhr
-||msourcecargo.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1513
 ! >>> url=https://scenicchicago.com/
 ! ... source=https://www.news.com.au/
@@ -133,12 +123,6 @@
 ! ... source=https://slashdot.org/popular
 ! ... type=xhr
 ||dns-finder.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1390
-! >>> url=https://11ssq.com/
-! ... source=https://tpi.li/Qa6o7gE6
-! ... type=xhr
-||11ssq.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1579
 kicker.de##+js(aopr, ovTrackingConfig)
@@ -159,12 +143,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=xhr
 ||openreplay.justbetter.nl/ingest^
 
-! https://github.com/ghostery/broken-page-reports/issues/1593
-! >>> url=https://hollow-mess.com/
-! ... source=https://premiumporn.org/
-! ... type=xhr
-||hollow-mess.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1589
 ! >>> url=https://t1.p2pplay.pro/api/v1/log?t=
 ! ... source=https://tokuzl.net/kamen-rider-v3.html?ep=2
@@ -175,41 +153,11 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=xhr
 ||t1.p2pplay.pro/api/v1/player^$xhr
 
-! https://github.com/ghostery/broken-page-reports/issues/1583
-! >>> url=https://d1pk6uu6wqrpce.cloudfront.net/
-! ... source=https://nflbox.me/nfl/nfl-network-stream
-! ... type=script
-||d1pk6uu6wqrpce.cloudfront.net^
-! >>> url=https://cy.bossedmarlier.help/
-! ... source=https://nflbox.me/nfl/nfl-network-stream
-! ... type=xhr
-||bossedmarlier.help^
-! >>> url=https://coastalcations.cyou/
-! ... source=https://nflbox.me/nfl/nfl-network-stream
-! ... type=xhr
-||coastalcations.cyou^
-! >>> url=https://swoqxitffjvon.online/
-! ... source=https://nflbox.me/nfl/nfl-network-stream
-! ... type=xhr
-||swoqxitffjvon.online^
-! >>> url=https://ntofinaukncec.org/
-! ... source=https://nflbox.me/nfl/nfl-network-stream
-! ... type=xhr
-||ntofinaukncec.org^
-! >>> url=https://updeckdagos.help/
-! ... source=https://nflbox.me/nfl/nfl-network-stream
-! ... type=xhr
-||updeckdagos.help^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1603
 ! >>> url=https://grimy-bicycle.com/
 ! ... source=https://abysscdn.com/
 ! ... type=script
 ||grimy-bicycle.com^
-! >>> url=https://om.avocetriches.com/
-! ... source=https://abysscdn.com/
-! ... type=script
-||avocetriches.com^
 ! >>> url=https://wss.morphify.net/
 ! ... source=https://abysscdn.com/
 ! ... type=web_socket
@@ -223,9 +171,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=script
 ||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script,domain=watchmmafull.com|abysscdn.com
 
-! https://github.com/ghostery/broken-page-reports/issues/1601
-waz.de##+js(set-cookie, __adblocker, false)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1600
 ! >>> url=https://dauzorouwo.net/
 ! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
@@ -237,22 +182,6 @@ waz.de##+js(set-cookie, __adblocker, false)
 ! ... source=https://1337x.to/torrent/6458491/South-Park-S27E02-1080p-x265-ELiTE/
 ! ... type=script
 ||qskrbykjjatuk.store^
-
-! https://github.com/ghostery/broken-page-reports/issues/1640
-! >>> url=https://glartaidroo.net/
-! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
-! ... type=script
-||glartaidroo.net^
-! >>> url=https://jijrafocr.com/
-! ... source=https://www.faselhds.life/movies/1-%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-catch-me-if-you-can-2002-1-vt
-! ... type=script
-||jijrafocr.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1645
-! >>> url=https://nssndendnoeyc.store/
-! ... source=https://nepu.to/show/jujutsu-kaisen-2020-135839/season/2/episode/14
-! ... type=script
-||nssndendnoeyc.store^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1644
 ! ALERT: Matomo - free/libre analytics platform
@@ -298,32 +227,10 @@ waz.de##+js(set-cookie, __adblocker, false)
 ||kupujemprodajem.com/api/web/v1/banners/show-track^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1630
-! >>> url=https://rmuancaxpzuj.com/
-! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
-! ... type=script
-||rmuancaxpzuj.com^
-! >>> url=https://ancvipba.com/cubzpa/lukja
-! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
-! ... type=script
-||ancvipba.com^
 ! >>> url=https://sq.lastingdiketo.com/t1yManL498EYzai/126819
 ! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
 ! ... type=script
 ||lastingdiketo.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1631
-! >>> url=https://sheekroakse.com/wrr
-! ... source=https://jkanime.net/psycho-pass/1/
-! ... type=xhr
-||sheekroakse.com^
-! >>> url=https://ii4d.com/
-! ... source=https://jkanime.net/psycho-pass/1/
-! ... type=script
-||ii4d.com^
-! >>> url=https://aphciaosmxnd.com/
-! ... source=https://jkanime.net/psycho-pass/1/
-! ... type=script
-||aphciaosmxnd.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1661
 ! >>> url=https://fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:136-0309170-5043932:TQM8A17VG4NSX8WHHQ7Z$uedata=s:%2Frd%2Fuedata%3Fld%26v%3D0.320575.0%26id%3DTQM8A17VG4NSX8WHHQ7Z%26sc0%3Daui%3Asw%3Appft%3Acallback_ricb%26bb0%3D35%26pc0%3D325%26ld0%3D325%26t0%3D1756996662606%26sc1%3Dportal-bb%26pc1%3D0%26ld1%3D0%26t1%3D1756996662410%26sc2%3DcsmCELLSframework%26bb2%3D684%26pc2%3D684%26ld2%3D684%26t2%3D1756996662965%26sc3%3DcsmCELLSpdm%26bb3%3D684%26pc3%3D691%26ld3%3D691%26t3%3D1756996662972%26sc4%3DcsmCELLSvpm%26bb4%3D691%26pc4%3D691%26ld4%3D691%26t4%3D1756996662972%26sc5%3DcsmCELLSfem%26bb5%3D691%26pc5%3D691%26ld5%3D691%26t5%3D1756996662972%26sc6%3Due_sushi_v1%26bb6%3D691%26pc6%3D692%26ld6%3D692%26t6%3D1756996662973%26ctb%3D1:3628
@@ -332,61 +239,68 @@ waz.de##+js(set-cookie, __adblocker, false)
 ||fls-*.amazon.com^$image
 
 ! https://github.com/ghostery/broken-page-reports/issues/1696
-! >>> url=https://punogchdnwcrri.com/
-! ... source=https://fastflix.top/tvshows/gachiakuta/
-! ... type=script
-||punogchdnwcrri.com^
 ! >>> url=https://crjhktxtsqbwp.com/
 ! ... source=https://fastflix.top/tvshows/gachiakuta/
 ! ... type=script
 ||crjhktxtsqbwp.com^
-! >>> url=https://shoasautchais.com/
-! ... source=https://fastflix.top/tvshows/gachiakuta/
-! ... type=script
-||shoasautchais.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1693
-! >>> url=https://sulcatechoush.click/gd/29352
-! ... source=https://www6.f2movies.to/home
-! ... type=xhr
-||sulcatechoush.click^
-! >>> url=https://yt.vennershackos.com/
-! ... source=https://www6.f2movies.to/home
-! ... type=xhr
-||vennershackos.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1477
-! >>> url=https://tyytcouxeg.com/
-! ... source=https://oii.la/Q3htOQYS7f
-! ... type=script
-||tyytcouxeg.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1690
 ! >>> url=https://au.mars1st.baby?utm_data=cGdlPXNjaGVkdWxlJmxhbmc9ZW4mZG9tPWRzJnJlZj0mdGV4dD0mZ2NhdD1MaXZlK0RhcnRzJmg9MQ%3D%3D
 ! ... source=https://dartsstreams.com/live-darts-streams
 ! ... type=image
 ||mars1st.baby^
-! >>> url=https://paralesounds.shop/rWvgY12vykFO/11862
-! ... source=https://dartsstreams.com/live-darts-streams
-! ... type=script
-||paralesounds.shop^
 ! >>> url=https://eeksbeforebutheh.org/
 ! ... source=https://dartsstreams.com/live-darts-streams
 ! ... type=script
 ||eeksbeforebutheh.org^
-! >>> url=https://cv.bentsdiorism.com/
-! ... source=https://dartsstreams.com/pdc-world-championship/sky-sports-darts-stream
+
+! https://github.com/ghostery/broken-page-reports/issues/1057
+! >>> url=https://www.iconmediapixel-ipv4.com/
+! ... source=https://www.aarp.org/
+! ... type=xhr
+||iconmediapixel-ipv4.com^
+! >>> url=https://s3.amazonaws.com/icontracker/icontracker.js
+! ... source=https://www.aarp.org/
 ! ... type=script
-||bentsdiorism.com^
-! >>> url=https://ifaqirpgjntoc.site/2g
-! ... source=https://dartsstreams.com/pdc-world-championship/sky-sports-darts-stream
+||s3.amazonaws.com/icontracker
+! >>> url=https://ucm-us.verint-cdn.com/files/sites/aarp-org/live/sdk.js
+! ... source=https://www.aarp.org/
 ! ... type=script
-||ifaqirpgjntoc.site^
-! >>> url=https://catholicncesisp.com/RnR0NGtpSxdHVgkxOQU
-! ... source=https://dartsstreams.com/sky-sports-darts-live/pdc-world-championship/stream-2
+||ucm-us.verint-cdn.com/files/sites/aarp-org$domain=aarp.org
+! >>> url=https://log.bc.aarp.org/api/v1/sendLogs
+! ... source=https://www.aarp.org/
+! ... type=xhr
+||log.bc.aarp.org/api/v1/sendLogs^
+! >>> url=https://wup.bc.aarp.org/v3.1/Xm1Ao2A0i6w
+! ... source=https://secure.aarp.org/applications/user/login?response_type=code&client_id=0oa3rtsa6ahTQReOG2p7&redirect_uri=https://www.aarp.org/aarp/auth/callback&scope=bui+bmi+openid&state=https://www.aarp.org/
+! ... type=xhr
+||wup.bc.aarp.org^
+
+! https://github.com/ghostery/broken-page-reports/issues/1443
+! >>> url=https://app.usercentrics.eu/session/1px.png?settingsId=
+! ... source=https://www.wetter.com/wetterkarten/regenradar/
+! ... type=image
+||app.usercentrics.eu/session/1px.png^$image,important
+! >>> url=https://uct.service.usercentrics.eu/uct
+! ... source=https://www.wetter.com/wetterkarten/regenradar/
+! ... type=image
+||uct.service.usercentrics.eu/uct^$image,important
+
+! https://github.com/ghostery/broken-page-reports/issues/931
+! >>> url=https://a.omappapi.com/app/js/api.min.js
+! ... source=https://www.resilio.com/sync/register/
 ! ... type=script
-||catholicncesisp.com^
-! >>> url=https://jhfjslomqzfte.site/k0o5m5l
-! ... source=https://dartsstreams.com/sky-sports-darts-live/pdc-world-championship/stream-2
+||omappapi.com^$3p
+
+! https://github.com/ghostery/broken-page-reports/issues/950
+walmart.ca##+js(trusted-set-cookie, adblocked, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1538
+! >>> url=https://baqxrclw.com/
+! ... source=https://bflix.pw/home
 ! ... type=script
-||jhfjslomqzfte.site^
+||baqxrclw.com^
+! >>> url=https://mouthiwhewha.net/
+! ... source=https://bflix.pw/home
+! ... type=script
+||mouthiwhewha.net^

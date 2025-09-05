@@ -552,9 +552,9 @@ n26.com#@#+js(trusted-click-element, button[id="onetrust-reject-all-handler"], '
 n26.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentISODate$)
 n26.com##+js(trusted-set-cookie, OptanonConsent, "isGpcEnabled=1&datestamp=$currentDate$&version=202502.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&consentId=00000000-0000-0000-0000-000000000000&AwaitingReconsent=false")
 
+! https://github.com/ghostery/broken-page-reports/issues/1601
 ! https://github.com/ghostery/broken-page-reports/issues/1672
-kicker.de##+js(trusted-set-cookie, __adblocker, false)
-kicker.de##+js(trusted-set-cookie, kickerQM, 00000000-0000-0000-0000-000000000000)
+kicker.de,waz.de##+js(trusted-set-cookie, __adblocker, false)
 kicker.de###kick__pur__layer
 
 ! https://github.com/ghostery/broken-page-reports/issues/769
@@ -578,3 +578,37 @@ shop.baltrade.eu##+js(set-cookie, privacyPreferencesFunctions, false)
 ! https://github.com/ghostery/broken-page-reports/issues/1697
 waa-ultra.com##+js(trusted-set-cookie, amcookie_allowed, 1)
 waa-ultra.com##+js(trusted-set-cookie, amcookie_disallowed, "recently_viewed_product,recently_viewed_product_previous,recently_compared_product,recently_compared_product_previous,_ga,_gid,_gat,_fbp,_fbc")
+
+! https://github.com/ghostery/broken-page-reports/issues/1684
+koelner-philharmonie.de##+js(trusted-set-cookie, cookie_consent_settings, '{"googleTagManager":false}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1682
+temu.com##+js(trusted-set-cookie, privacy_setting_detail, '%7B%22firstPAds%22%3A0%2C%22adj%22%3A0%2C%22fbsAnlys%22%3A0%2C%22fbEvt%22%3A0%2C%22ggAds%22%3A0%2C%22fbAds%22%3A0%2C%22ttAds%22%3A0%2C%22scAds%22%3A0%2C%22ptAds%22%3A0%2C%22bgAds%22%3A0%2C%22tblAds%22%3A0%2C%22obAds%22%3A0%2C%22vgAds%22%3A0%2C%22idAds%22%3A0%2C%22opAds%22%3A0%2C%22stAds%22%3A0%2C%22pmAds%22%3A0%2C%22xads%22%3A0%2C%22adsChoice%22%3A%22000000000000000000000000000000%22%7D')
+
+! https://github.com/ghostery/broken-page-reports/issues/1681
+wayfair.ca##+js(trusted-set-cookie, user_cookie_prefs, 'NECESSARY,ADMINISTRATIVE')
+
+! https://github.com/ghostery/broken-page-reports/issues/937
+webshop.staatstheater-darmstadt.de##+js(trusted-set-cookie, cookieBannerConfirmed, 0)
+webshop.staatstheater-darmstadt.de##+js(trusted-click-element, #cookie-reject, , 500)
+
+! https://github.com/ghostery/broken-page-reports/issues/945
+orteil.dashnet.org##+js(trusted-set-cookie, cookieconsent_dismissed, yes)
+
+! https://github.com/ghostery/broken-page-reports/issues/950
+walmart.ca##+js(trusted-set-local-storage-item, enableCookieBanner, false)
+walmart.ca##section[role="banner"]:has(> footer > div > button[role="link"] + button[aria-label="close button"]:not(+ *))
+
+! https://github.com/ghostery/broken-page-reports/issues/857
+visaton.de##+js(trusted-set-cookie, cookie-agreed-categories, '["mandatory"]')
+visaton.de##+js(trusted-set-cookie, cookie-agreed, 2)
+
+! https://github.com/ghostery/broken-page-reports/issues/851
+mediapart.fr##+js(trusted-set-cookie, cc, '{"disagreement":["ad","visit"],"creation":$now$,"update":$now$}')
+mediapart.fr##+js(trusted-set-cookie, mdpt_cc, '{"disagreement":["ad","content","visit"],"creation":$now$,"update":$now$}')
+
+! https://github.com/ghostery/broken-page-reports/issues/967
+icabanken.se##+js(trusted-set-cookie, user_consent, 111)
+
+! https://github.com/ghostery/broken-page-reports/issues/1546
+adidas.de##+js(trusted-set-cookie, notice_preferences, '[0]')

@@ -912,3 +912,13 @@ shop.baltrade.eu#@##cookiesPanel
 
 ! https://github.com/ghostery/broken-page-reports/issues/1697
 waa-ultra.com#@#.amgdprcookie-bar-template
+
+! https://github.com/ghostery/broken-page-reports/issues/1684
+koelner-philharmonie.de#@#.modal-mask
+
+! https://github.com/ghostery/broken-page-reports/issues/1443
+! >>> url=https://cs3.wettercomassets.com/wcomv5/assets/wcom-cmp.c9f83acd.js
+! ... source=https://www.wetter.com/wetterkarten/regenradar/
+! ... type=script
+@@||wettercomassets.com/wcomv5/assets/wcom-cmp$script
+wetter.com#@##cmp-style-reset
