@@ -14,7 +14,10 @@ kansascity.com,miamiherald.com##.ab-in-app-message.ab-slideup
 titantv.com###vertad
 
 ! https://github.com/ghostery/broken-page-reports/issues/1218
-wcostream.tv##+js(aopr, Notification.requestPermission)
+! https://github.com/ghostery/broken-page-reports/issues/1532
+! https://github.com/ghostery/broken-page-reports/issues/1679
+! https://github.com/ghostery/broken-page-reports/issues/1531
+wcostream.tv,wcostream.com,wco.tv,wcoflix.tv##+js(aopr, Notification.requestPermission)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1268
 mrcrayfish.com##+js(nano-stb, /.?/, *, 0.01)
