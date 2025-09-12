@@ -1798,3 +1798,9 @@ dizipal1052.com##[class*="ad"]
 ! Lack of support: `:remove-class`
 ! refs https://github.com/gorhill/ublock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg
 accuweather.com##+js(nano-stb, ads-not-loaded, 3000)
+
+! https://github.com/ghostery/broken-page-reports/issues/1727
+! >>> url=https://image.stern.de/A
+! ... source=https://www.stern.de/politik/ausland/russlands-medien---wahnsinn--kiew-hat-polen-angegriffen--36048390.html
+! ... type=sub_frame
+||image.stern.de^$~image
