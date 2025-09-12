@@ -922,3 +922,9 @@ koelner-philharmonie.de#@#.modal-mask
 ! ... type=script
 @@||wettercomassets.com/wcomv5/assets/wcom-cmp$script
 wetter.com#@##cmp-style-reset
+
+! https://github.com/ghostery/broken-page-reports/issues/1724
+exrgame.com#@#.popupCookie
+
+! https://github.com/ghostery/broken-page-reports/issues/1721
+bodensee-koenigssee-radweg.de#@#.CookieBar
