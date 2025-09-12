@@ -612,3 +612,9 @@ icabanken.se##+js(trusted-set-cookie, user_consent, 111)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1546
 adidas.de##+js(trusted-set-cookie, notice_preferences, '[0]')
+
+! https://github.com/ghostery/broken-page-reports/issues/1724
+exrgame.com##+js(trusted-set-cookie, exr_cookie_consent, 2)
+
+! https://github.com/ghostery/broken-page-reports/issues/1721
+bodensee-koenigssee-radweg.de##+js(trusted-set-cookie, cookie-consent, declined)

@@ -1421,23 +1421,6 @@ rus.delfi.ee##.ad-block-layer
 ! ... type=script
 @@||cdn.c360a.salesforce.com^$domain=sobeys.com
 
-! https://github.com/ghostery/broken-page-reports/issues/1468
-! >>> url=https://w3vn.cuevana.pro/
-! ... source=https://w3vn.cuevana.pro/
-! ... type=xhr
-||cuevana.pro^$1p,xhr
-! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
-! ... source=https://player.cuevana.bot/
-! ... type=script
-||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot
-! >>> url=https://madurird.com/tag.min.js
-! ... source=https://player.cuevana.bot/
-! ... type=script
-||madurird.com^
-cuevana.pro##+js(nano-stb)
-cuevana.pro##+js(nano-sib)
-cuevana.pro##div[style*="z-index: 2147483647"]
-
 ! https://github.com/ghostery/broken-page-reports/issues/893
 spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
 spiegel.de##[data-advertisement]
@@ -1587,6 +1570,22 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1631
 ! https://github.com/ghostery/broken-page-reports/issues/947
 ! https://github.com/ghostery/broken-page-reports/issues/1538
+! https://github.com/ghostery/broken-page-reports/issues/1640
+! https://github.com/ghostery/broken-page-reports/issues/1477
+! https://github.com/ghostery/broken-page-reports/issues/1468
+! https://github.com/ghostery/broken-page-reports/issues/1716
+! >>> url=https://w3vn.cuevana.pro/
+! ... source=https://w3vn.cuevana.pro/
+! ... type=xhr
+||cuevana.pro^$1p,xhr
+! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
+! ... source=https://player.cuevana.bot/
+! ... type=script
+||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot
+! >>> url=https://madurird.com/tag.min.js
+! ... source=https://player.cuevana.bot/
+! ... type=script
+||madurird.com^
 ! >>> url=https://embed69.org/vast-player-v4.js
 ! ... source=https://mivalyo.com/a
 ! ... type=script
@@ -1595,7 +1594,12 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://mivalyo.com/a
 ! ... type=xhr
 ||mivalyo.com/ad^
-sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw##div[style*="2147483647"]:empty
+sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to##div[style*="z-index:"][style*="2147483647"]
+faselhds.life##[data-cl-overlay]
+faselhds.life##.overlay
+faselhds.life##+js(nostif, /^/, 299)
+cuevana.pro##+js(nano-stb)
+cuevana.pro##+js(nano-sib)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]
@@ -1645,12 +1649,6 @@ telegraph.co.uk#@#+js(set, _satellite.getVisitorId, noopFunc)
 ! ... source=https://www.france.tv/films/films-drame/7103684-entre-les-vagues.html
 ! ... type=xhr
 ||fwmrm.net^$redirect=empty,domain=france.tv
-
-! https://github.com/ghostery/broken-page-reports/issues/1640
-faselhds.life##[data-cl-overlay]
-faselhds.life##[style*="2147483647"]
-faselhds.life##.overlay
-faselhds.life##+js(nostif, /^/, 299)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1643
 ! >>> url=https://portal.cityspark.com/v1/events/LiveLoveLasCruces
@@ -1741,9 +1739,6 @@ finanznachrichten.de##+js(trusted-suppress-native-method, atob, '"c2V0VGltZW91dA
 ! ... type=script
 ||platform.pubadx.one^$redirect=noopjs,domain=wcostream.tv|wcostream.com|wco.tv|wcoflix.tv
 
-! https://github.com/ghostery/broken-page-reports/issues/1477
-oii.la##div[style*="z-index: 2147483647"]
-
 ! https://github.com/ghostery/broken-page-reports/issues/1690
 dartsstreams.com##+js(set, siteConfig.buttonAdUri, 0)
 dartsstreams.com##+js(set, siteConfig.buttonad, {})
@@ -1781,3 +1776,20 @@ g1.globo.com##.bastian-feed-item[data-type="advertise"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1385
 amazon.com#@#.AdHolder
+
+! https://github.com/ghostery/broken-page-reports/issues/1723
+speisekarte.de##div[id^="sk_"]
+speisekarte.de###banner-under-nav
+
+! https://github.com/ghostery/broken-page-reports/issues/1720
+dizipal1052.com##[class*="ad"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1717
+! >>> url=https://app-lon10.marketo.com/js/forms2/js/forms2.js
+! ... source=https://de.insight.com/de_DE/content-and-resources/subscription.html
+! ... type=script
+@@||marketo.com/js/forms2$script,css
+! >>> url=https://app-lon10.marketo.com/index.php/form/getForm?munchkinId=420-FAJ-420&form=1103&url=https://de.insight.com/de_DE/content-and-resources/subscription.html&callback=jQuery37104288095418246033_1757661482465&_=1757661482466
+! ... source=https://de.insight.com/de_DE/content-and-resources/subscription.html
+! ... type=xhr
+@@||marketo.com/index.php/form
