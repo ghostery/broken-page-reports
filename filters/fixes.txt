@@ -1793,3 +1793,8 @@ dizipal1052.com##[class*="ad"]
 ! ... source=https://de.insight.com/de_DE/content-and-resources/subscription.html
 ! ... type=xhr
 @@||marketo.com/index.php/form
+
+! https://github.com/ghostery/broken-page-reports/issues/1709
+! Lack of support: `:remove-class`
+! refs https://github.com/gorhill/ublock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg
+accuweather.com##+js(nano-stb, ads-not-loaded, 3000)
