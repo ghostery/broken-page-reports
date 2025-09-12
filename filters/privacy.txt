@@ -318,3 +318,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://hianime.to/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148
 ! ... type=script
 ||ouvkmptqfk.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1727
+! >>> url=https://euw2.production.ai.zephr.com/www.stern.de/SiteScript.js
+! ... source=https://www.stern.de/politik/ausland/russlands-medien---wahnsinn--kiew-hat-polen-angegriffen--36048390.html
+! ... type=script
+||zephr.com^$3p
