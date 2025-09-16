@@ -324,3 +324,39 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://www.stern.de/politik/ausland/russlands-medien---wahnsinn--kiew-hat-polen-angegriffen--36048390.html
 ! ... type=script
 ||zephr.com^$3p
+
+! https://github.com/ghostery/broken-page-reports/issues/1736
+! >>> url=https://player.bfi.org.uk/ajax/datalayer?
+! ... source=https://player.bfi.org.uk/subscription/film/watch-im-still-here-2024-online
+! ... type=xhr
+||player.bfi.org.uk/ajax/datalayer^
+
+! https://github.com/ghostery/broken-page-reports/issues/1734
+! >>> url=https://www.bespokepost.com/api/current_user/experiment_trackings
+! ... source=https://www.bespokepost.com/store/brands/line-of-trade
+! ... type=xhr
+||bespokepost.com/api/current_user/experiment_trackings^
+
+! https://github.com/ghostery/broken-page-reports/issues/1472
+! >>> url=https://msmedia.morningstar.com/mstar/count/
+! ... source=https://www.morningstar.com/
+! ... type=xhr
+||msmedia.morningstar.com/mstar/count^
+! >>> url=https://msmedia.morningstar.com/mstar/lserver/tserver/
+! ... source=https://www.morningstar.com/
+! ... type=xhr
+||msmedia.morningstar.com/mstar/lserver/tserver^
+! >>> url=https://www.morningstar.com/api/v1/analytics
+! ... source=https://www.morningstar.com/
+! ... type=xhr
+||morningstar.com/api/v1/analytics^
+
+! https://github.com/ghostery/broken-page-reports/issues/1706
+! >>> url=https://dtyurebaioecr.com/
+! ... source=https://dorawatch.net/
+! ... type=script
+||dtyurebaioecr.com^
+! >>> url=https://ptaicamtourset.com/
+! ... source=https://dorawatch.net/
+! ... type=script
+||ptaicamtourset.com^

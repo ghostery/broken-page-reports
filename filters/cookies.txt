@@ -618,3 +618,9 @@ exrgame.com##+js(trusted-set-cookie, exr_cookie_consent, 2)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1721
 bodensee-koenigssee-radweg.de##+js(trusted-set-cookie, cookie-consent, declined)
+
+! https://github.com/ghostery/broken-page-reports/issues/1707
+! >>> url=https://rackforstorage.com/
+! ... source=https://www.arrse.co.uk/community/threads/veterans-oyster-card.314061/page-3
+! ... type=script
+||rackforstorage.com^
