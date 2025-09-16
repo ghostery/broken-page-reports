@@ -1820,3 +1820,6 @@ medicalstudyzone.com###mdpDeblocker-css:remove()
 ! ... source=https://www.morningstar.com/
 ! ... type=xhr
 ||morningstar.com/api/v2/stores/dynamic-ctas^
+
+! https://github.com/ghostery/broken-page-reports/issues/1458
+jo.444.hu##div:has(> #ap-site-header-top)
