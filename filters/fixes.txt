@@ -1020,9 +1020,8 @@ barmer.de##body.body-no-scroll:style(overflow: auto !important)
 vidmoly.to##.custom-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/941
-!#if !env_firefox
-twitch.tv##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-maf-ad|X-TTV-MAF-AD)/ghostery/i')
-!#endif
+! https://github.com/ghostery/broken-page-reports/issues/1710
+! problematic: ##+js(trusted-replace-argument, JSON.parse, 0, 'repl:/(midroll|twitch-maf-ad|X-TTV-MAF-AD)/ghostery/i')
 ! >>> url=https://www.twitch.tv/r/ts/rs/tq-forensics/adforensics_csmcollection.js?bid=x
 ! ... source=https://www.twitch.tv/
 ! ... type=script
@@ -1501,30 +1500,31 @@ webmd.com#@#.fixed-ads
 ranzijn.nl#@#.bottom-0.fixed
 
 ! https://github.com/ghostery/broken-page-reports/issues/1555
+! https://github.com/ghostery/broken-page-reports/issues/1734
 ! >>> url=https://cdn.ketchjs.com/lanyard/v2/lanyard.js
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=script
-@@||cdn.ketchjs.com/lanyard^$domain=whiteclaw.com
+@@||cdn.ketchjs.com/lanyard^$domain=whiteclaw.com|bespokepost.com
 ! >>> url=https://global.ketchcdn.com/web/v2/config/mag_global/whiteclaw_us/boot.js
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=script
-@@||global.ketchcdn.com/web/v2/config/mag_global/whiteclaw_us^$domain=whiteclaw.com
+@@||global.ketchcdn.com/web/v2/config^$domain=whiteclaw.com|bespokepost.com
 ! >>> url=https://global.ketchcdn.com/web/v3/config/mag_global/whiteclaw_us/all/us_general/en-US/config.json?hash=x
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=script
-@@||global.ketchcdn.com/web/v3/config/mag_global/whiteclaw_us^$domain=whiteclaw.com
+@@||global.ketchcdn.com/web/v3/config^$domain=whiteclaw.com|bespokepost.com
 ! >>> url=https://global.ketchcdn.com/web/v3/ip
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=xhr
-@@||global.ketchcdn.com/web/v3/ip^$domain=whiteclaw.com
+@@||global.ketchcdn.com/web/v3/ip^$domain=whiteclaw.com|bespokepost.com
 ! >>> url=https://global.ketchcdn.com/web/v3/consent/mag_global/get
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=script
-@@||global.ketchcdn.com/web/v3/consent/mag_global/get^$domain=whiteclaw.com
+@@||global.ketchcdn.com/web/v3/consent^$domain=whiteclaw.com|bespokepost.com
 ! >>> url=https://global.ketchcdn.com/web/v3/subscriptions/mag_global/get
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=script
-@@||global.ketchcdn.com/web/v3/subscriptions/mag_global/get^$domain=whiteclaw.com
+@@||global.ketchcdn.com/web/v3/subscriptions^$domain=whiteclaw.com|bespokepost.com
 ! >>> url=https://global.ketchcdn.com/web/v2/assetsv1/orgs/mag_global/1717189623805/test/icon-exit.svg
 ! ... source=https://www.whiteclaw.com/unsubscribe?lid=&u=
 ! ... type=image
@@ -1574,6 +1574,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1477
 ! https://github.com/ghostery/broken-page-reports/issues/1468
 ! https://github.com/ghostery/broken-page-reports/issues/1716
+! https://github.com/ghostery/broken-page-reports/issues/1706
 ! >>> url=https://w3vn.cuevana.pro/
 ! ... source=https://w3vn.cuevana.pro/
 ! ... type=xhr
@@ -1594,7 +1595,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://mivalyo.com/a
 ! ... type=xhr
 ||mivalyo.com/ad^
-sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to##div[style*="z-index:"][style*="2147483647"]
+sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net##div[style*="z-index:"][style*="2147483647"]
 faselhds.life##[data-cl-overlay]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
@@ -1782,7 +1783,7 @@ speisekarte.de##div[id^="sk_"]
 speisekarte.de###banner-under-nav
 
 ! https://github.com/ghostery/broken-page-reports/issues/1720
-dizipal1052.com##[class*="ad"]
+dizipal1052.com,dizipal1053.com##[class*="ad"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1717
 ! >>> url=https://app-lon10.marketo.com/js/forms2/js/forms2.js
@@ -1804,3 +1805,18 @@ accuweather.com##+js(nano-stb, ads-not-loaded, 3000)
 ! ... source=https://www.stern.de/politik/ausland/russlands-medien---wahnsinn--kiew-hat-polen-angegriffen--36048390.html
 ! ... type=sub_frame
 ||image.stern.de^$~image
+
+! https://github.com/ghostery/broken-page-reports/issues/1736
+player.bfi.org.uk##+js(set, Sentry, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/1735
+medicalstudyzone.com##.mdpDeblocker-blackout
+medicalstudyzone.com##.mdpDeblocker-wrapper
+medicalstudyzone.com##.mdpDeblocker-css:remove()
+medicalstudyzone.com###mdpDeblocker-css:remove()
+
+! https://github.com/ghostery/broken-page-reports/issues/1472
+! >>> url=https://www.morningstar.com/api/v2/stores/dynamic-ctas
+! ... source=https://www.morningstar.com/
+! ... type=xhr
+||morningstar.com/api/v2/stores/dynamic-ctas^
