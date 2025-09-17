@@ -360,3 +360,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://dorawatch.net/
 ! ... type=script
 ||ptaicamtourset.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1704
+! >>> url=https://nh.potagerimsonic.com/
+! ... source=https://nepu.to/
+! ... type=xhr
+||potagerimsonic.com^
