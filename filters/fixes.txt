@@ -1575,6 +1575,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1468
 ! https://github.com/ghostery/broken-page-reports/issues/1716
 ! https://github.com/ghostery/broken-page-reports/issues/1706
+! https://github.com/ghostery/broken-page-reports/issues/1704
 ! >>> url=https://w3vn.cuevana.pro/
 ! ... source=https://w3vn.cuevana.pro/
 ! ... type=xhr
@@ -1582,7 +1583,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
-||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot
+||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot|nepu.to
 ! >>> url=https://madurird.com/tag.min.js
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
@@ -1646,10 +1647,11 @@ telegraph.co.uk#@#+js(set, _satellite.getVisitorId, noopFunc)
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1637
+! https://github.com/ghostery/broken-page-reports/issues/1739
 ! >>> url=https://fwmrm.net/ad
 ! ... source=https://www.france.tv/films/films-drame/7103684-entre-les-vagues.html
 ! ... type=xhr
-||fwmrm.net^$redirect=empty,domain=france.tv
+||fwmrm.net^$redirect=noopjs,domain=france.tv
 
 ! https://github.com/ghostery/broken-page-reports/issues/1643
 ! >>> url=https://portal.cityspark.com/v1/events/LiveLoveLasCruces
@@ -1823,3 +1825,16 @@ medicalstudyzone.com###mdpDeblocker-css:remove()
 
 ! https://github.com/ghostery/broken-page-reports/issues/1458
 jo.444.hu##div:has(> #ap-site-header-top)
+
+! https://github.com/ghostery/broken-page-reports/issues/1745
+puzzle-galaxies.com##div:has(> .ad-options)
+
+! https://github.com/ghostery/broken-page-reports/issues/1743
+lequipe.fr##+js(set, window.$nuxt.$store.state.isAdsBlocked, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1741
+! https://github.com/ghostery/broken-page-reports/issues/1740
+! >>> url=https://yastatic.net/react/17.0.2/react-with-dom-and-polyfills.min.js
+! ... source=https://passport.yandex.ru/auth?origin=dzen&retpath=https%3A%2F%2Foauth.yandex.ru%2Fauthorize%3Fclient_id%3D09327016a9ec4d5683c1a73b7c04875c%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdzen.ru%252Fapi%252Fauth%252Fweb%252Flogin-yandex-id%253Fretpath%253Dhttps%25253A%25252F%25252Fdzen.ru%25253Fauth%25253Dlogin%252526yredirect%25253Dtrue%252526clid%25253D1400%252526oauth%25253Dtrue%252526auth_provider%25253Dyandex&backpath=https%3A%2F%2Fdzen.ru
+! ... type=script
+@@||yastatic.net^$domain=passport.yandex.ru|yandex.com
