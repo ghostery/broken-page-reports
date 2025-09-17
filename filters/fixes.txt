@@ -1421,8 +1421,11 @@ rus.delfi.ee##.ad-block-layer
 @@||cdn.c360a.salesforce.com^$domain=sobeys.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/893
+! https://github.com/ghostery/broken-page-reports/issues/1747
 spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
+spiegel.de##div[id]:has(> img[src*="#"])
 spiegel.de##[data-advertisement]
+spiegel.de##+js(trusted-suppress-native-method, atob, c2V0VGltZW91dA==, prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1535
 t-online.de##[data-testid^="CommercialSDI"]
