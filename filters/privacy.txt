@@ -366,3 +366,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://nepu.to/
 ! ... type=xhr
 ||potagerimsonic.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1761
+! >>> url=https://imgsct.cookiebot.com/1.gif?
+! ... source=https://universo.pt/cartao/aderir-cartao/
+! ... type=image
+||imgsct.cookiebot.com/1.gif^$important
