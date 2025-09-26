@@ -1580,6 +1580,8 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1716
 ! https://github.com/ghostery/broken-page-reports/issues/1706
 ! https://github.com/ghostery/broken-page-reports/issues/1704
+! https://github.com/ghostery/broken-page-reports/issues/1794
+! https://github.com/ghostery/broken-page-reports/issues/1792
 ! >>> url=https://w3vn.cuevana.pro/
 ! ... source=https://w3vn.cuevana.pro/
 ! ... type=xhr
@@ -1600,12 +1602,19 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://mivalyo.com/a
 ! ... type=xhr
 ||mivalyo.com/ad^
-sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net##div[style*="z-index:"][style*="2147483647"]
+! >>> url=https://sflix.to/ajax/verify
+! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
+! ... type=xhr
+||sflix.to/ajax/verify^
+sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com##div[style*="z-index:"][style*="2147483647"]
 faselhds.life##[data-cl-overlay]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
 cuevana.pro##+js(nano-stb)
 cuevana.pro##+js(nano-sib)
+sflix.to###modalshare
+sflix.to##.modal-backdrop.show
+sflix.to##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]
@@ -1891,3 +1900,23 @@ lequipe.fr##+js(set, window.$nuxt.$store.state.isAdsBlocked, false)
 ! This allows user to manually skip the ads
 southpark.cc.com##+js(json-prune, cuepoints)
 southpark.cc.com##+js(set, vtg, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/1790
+! https://github.com/ghostery/broken-page-reports/issues/1787
+! >>> url=https://trade.bluefin.io/assets/index-De2ctZ9f.js
+! ... source=https://trade.bluefin.io/pro/BTC-PERP
+! ... type=script
+@@||trade.bluefin.io^$1p
+@@||app.tradersage.ai^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1789
+joyn.de#@#cmp-banner
+
+! https://github.com/ghostery/broken-page-reports/issues/1788
+! >>> url=https://play.yousee.dk/nielsen.js
+! ... source=https://play.yousee.dk/login
+! ... type=script
+@@||play.yousee.dk/nielsen.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1782
+dlhd.dad##div[style*="z-index:"][style*="300000"]

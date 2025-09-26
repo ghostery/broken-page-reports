@@ -372,3 +372,81 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://universo.pt/cartao/aderir-cartao/
 ! ... type=image
 ||imgsct.cookiebot.com/1.gif^$important
+
+! https://github.com/ghostery/broken-page-reports/issues/1793
+! >>> url=https://ardsultwirfe.com/
+! ... source=https://s.to/serie/stream/the-walking-dead/staffel-2/episode-1
+! ... type=script
+||ardsultwirfe.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1791
+! >>> url=https://qapbnragruepxr.com/
+! ... source=https://9animetv.to/watch/naruto-677?ep=12352
+! ... type=script
+||qapbnragruepxr.com^
+! >>> url=https://hithoathookra.com/
+! ... source=https://9animetv.to/watch/naruto-677?ep=12352
+! ... type=script
+||hithoathookra.com^
+! >>> url=https://wedeb.com/
+! ... source=https://9animetv.to/watch/naruto-677?ep=12352
+! ... type=script
+||wedeb.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1782
+! >>> url=https://nfzpctgo.com/
+! ... source=https://dlhd.dad/watch.php?id=123
+! ... type=script
+||nfzpctgo.com^
+! >>> url=https://tmtawsytrt.com/
+! ... source=https://dlhd.dad/watch.php?id=123
+! ... type=script
+||tmtawsytrt.com^
+! >>> url=https://aoglfrntimnre.space/
+! ... source=https://dlhd.dad/watch.php?id=123
+! ... type=script
+||aoglfrntimnre.space^
+! >>> url=https://dcrmnggecuww.com/
+! ... source=https://dlhd.dad/watch.php?id=123
+! ... type=script
+||dcrmnggecuww.com^
+! >>> url=https://dfycjpouu.com/
+! ... source=https://dlhd.dad/watch.php?id=123
+! ... type=script
+||dfycjpouu.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1778
+! >>> url=https://api.eu.experiences.engageplatform.com/api/trace/d/record?
+! ... source=https://www.motorcyclenews.com/news/2025/january/bimota-tera-update/
+! ... type=xhr
+||api.eu.experiences.engageplatform.com/api/trace^
+! >>> url=https://fontserif.com/
+! ... source=https://www.motorcyclenews.com/news/2025/january/bimota-tera-update/
+! ... type=script
+||fontserif.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1773
+! >>> url=https://atamarvtcznxj.website/
+! ... source=https://thepibay.site/torrent/80623976/Tenorshare_4uKey_For_Android_V4.3.3.5_Final___Keygen
+! ... type=script
+||atamarvtcznxj.website^
+
+! https://github.com/ghostery/broken-page-reports/issues/1772
+! >>> url=https://tutmenkopis.cfd/
+! ... source=https://www.viprow.nu/
+! ... type=script
+||tutmenkopis.cfd^
+! >>> url=https://aoglfrntimnre.space/
+! ... source=https://www.viprow.nu/sports-wwe-online
+! ... type=script
+||aoglfrntimnre.space^
+
+! https://github.com/ghostery/broken-page-reports/issues/1771
+! >>> url=https://jhjgytufwxw.com/
+! ... source=https://1hd.sh/series/avatar-the-last-airbender-20898/3-1/
+! ... type=script
+||jhjgytufwxw.com^
+! >>> url=https://vauwhoocoa.com/
+! ... source=https://1hd.sh/series/avatar-the-last-airbender-20898/3-1/
+! ... type=script
+||vauwhoocoa.com^

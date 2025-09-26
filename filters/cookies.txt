@@ -624,3 +624,16 @@ bodensee-koenigssee-radweg.de##+js(trusted-set-cookie, cookie-consent, declined)
 ! ... source=https://www.arrse.co.uk/community/threads/veterans-oyster-card.314061/page-3
 ! ... type=script
 ||rackforstorage.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1795
+messewieselburg.at#@#.consent_manager-background
+messewieselburg.at##+js(trusted-click-element, .consent_manager-save-selection.consent_manager-close)
+
+! https://github.com/ghostery/broken-page-reports/issues/1779
+crtm.es##+js(trusted-set-cookie, cookiesAccepted, 1)
+crtm.es##+js(trusted-set-cookie, crtmcookiesCAnaliticas, 0)
+crtm.es##+js(trusted-set-cookie, crtmcookiesCPersonalizacion, 0)
+crtm.es##+js(trusted-set-cookie, crtmcookiesProtDatos, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1775
+viasaletravel.hu##.mhcookie-show
