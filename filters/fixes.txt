@@ -1907,6 +1907,9 @@ southpark.cc.com##+js(set, vtg, {})
 ! ... source=https://trade.bluefin.io/pro/BTC-PERP
 ! ... type=script
 @@||trade.bluefin.io^$1p
+! >>> url=https://app.tradersage.ai/a.js
+! ... source=https://app.tradersage.ai/
+! ... type=script
 @@||app.tradersage.ai^$1p
 
 ! https://github.com/ghostery/broken-page-reports/issues/1789
