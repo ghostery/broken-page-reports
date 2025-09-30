@@ -1289,10 +1289,15 @@ censor.net##.right-sidebar
 ! ... source=https://v6.voiranime.com/anime/uchi-no-ko-no-tame-naraba-ore-wa-moshikashitara-maou-mo-taoseru-kamo-shirenai/uchi-no-ko-no-tame-naraba-ore-wa-moshikashitara-maou-mo-taoseru-kamo-shirenai-03-vostfr/
 ! ... type=xhr
 @@$third-party,xmlhttprequest,script,domain=voiranime.com|vidmoly.to
-! >>> url=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-! ... source=https://vidmoly.to/embed-w30zn7r2wr3i.html
-! ... type=xhr
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=empty,domain=vidmoly.to
+
+! https://github.com/ghostery/broken-page-reports/issues/1342
+! https://github.com/ghostery/broken-page-reports/issues/1688
+! https://github.com/ghostery/broken-page-reports/issues/1383
+! https://github.com/ghostery/broken-page-reports/issues/1803
+! >>> url=https://pagead2.googlesyndication.com/
+! ... source=https://cuttlinks.com/UjAjz6Dcrg
+! ... type=script
+||pagead2.googlesyndication.com^$redirect=googlesyndication_adsbygoogle.js,domain=cuttlinks.com|arkadium.com|vidmoly.to|transfap.to
 
 ! https://github.com/ghostery/broken-page-reports/issues/1340
 multimediastore.ch#@#.cookiepolicy
@@ -1426,7 +1431,6 @@ rus.delfi.ee##.ad-block-layer
 spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
 spiegel.de##div[id]:has(> img[src*="#"])
 spiegel.de##[data-advertisement]
-spiegel.de##+js(trusted-suppress-native-method, atob, c2V0VGltZW91dA==, prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1535
 t-online.de##[data-testid^="CommercialSDI"]
@@ -1582,6 +1586,9 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1704
 ! https://github.com/ghostery/broken-page-reports/issues/1794
 ! https://github.com/ghostery/broken-page-reports/issues/1792
+! https://github.com/ghostery/broken-page-reports/issues/1805
+! https://github.com/ghostery/broken-page-reports/issues/1804
+! https://github.com/ghostery/broken-page-reports/issues/1799
 ! >>> url=https://w3vn.cuevana.pro/
 ! ... source=https://w3vn.cuevana.pro/
 ! ... type=xhr
@@ -1606,7 +1613,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
 ! ... type=xhr
 ||sflix.to/ajax/verify^
-sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com##div[style*="z-index:"][style*="2147483647"]
+dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com##div[style*="z-index:"][style*="2147483647"]
 faselhds.life##[data-cl-overlay]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
@@ -1615,6 +1622,35 @@ cuevana.pro##+js(nano-sib)
 sflix.to###modalshare
 sflix.to##.modal-backdrop.show
 sflix.to##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', prevent)
+streamwish.to#@#+js(abort-on-property-read, __Y)
+! >>> url=https://streamwish.to/main.js?
+! ... source=https://streamwish.to/
+! ... type=script
+@@||streamwish.to/main.js^
+! >>> url=https://hgplaycdn.com/player/jw8/provider.hlsjs.js?
+! ... source=https://hgplaycdn.com/
+! ... type=script
+@@||hgplaycdn.com^
+! >>> url=https://auvexiug.com/player/jw8/provider.hlsjs.js?
+! ... source=https://auvexiug.com/
+! ... type=script
+@@||auvexiug.com^
+! >>> url=https://yuguaab.com/player/jw8/provider.hlsjs.js?
+! ... source=https://yuguaab.com/
+! ... type=script
+@@||yuguaab.com^
+! >>> url=https://habetar.com/player/jw8/provider.hlsjs.js?
+! ... source=https://habetar.com/
+! ... type=script
+@@||habetar.com^
+! >>> url=https://guxhag.com/player/jw8/provider.hlsjs.js?
+! ... source=https://guxhag.com/
+! ... type=script
+@@||guxhag.com^
+! >>> url=https://xenolyzb.com/player/jw8/provider.hlsjs.js?
+! ... source=https://xenolyzb.com/
+! ... type=script
+@@||xenolyzb.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]
@@ -1760,13 +1796,6 @@ dartsstreams.com##+js(set, siteConfig.buttonAdUri, 0)
 dartsstreams.com##+js(set, siteConfig.buttonad, {})
 dartsstreams.com##+js(nano-stb, /.?/, 1000)
 dartsstreams.com##+js(no-fetch-if, adsbygoogle.js)
-
-! https://github.com/ghostery/broken-page-reports/issues/1688
-! https://github.com/ghostery/broken-page-reports/issues/1383
-! >>> url=https://pagead2.googlesyndication.com/
-! ... source=https://cuttlinks.com/UjAjz6Dcrg
-! ... type=script
-||pagead2.googlesyndication.com^$redirect=noopjs,domain=cuttlinks.com|arkadium.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/1686
 calottery.com#@#.notification.cookie
@@ -1923,3 +1952,6 @@ joyn.de#@#cmp-banner
 
 ! https://github.com/ghostery/broken-page-reports/issues/1782
 dlhd.dad##div[style*="z-index:"][style*="300000"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1798
+dailysportscar.com##.ad-wrap
