@@ -1955,3 +1955,7 @@ dlhd.dad##div[style*="z-index:"][style*="300000"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1798
 dailysportscar.com##.ad-wrap
+
+! https://github.com/ghostery/broken-page-reports/issues/1769
+n-tv.de##.sparwelt-neu
+n-tv.de###lotto-1
