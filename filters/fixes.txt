@@ -1626,7 +1626,7 @@ streamwish.to#@#+js(abort-on-property-read, __Y)
 ! >>> url=https://streamwish.to/main.js?
 ! ... source=https://streamwish.to/
 ! ... type=script
-@@||streamwish.to/main.js^$3p
+@@||streamwish.to/main.js^
 ! >>> url=https://hgplaycdn.com/player/jw8/provider.hlsjs.js?
 ! ... source=https://hgplaycdn.com/
 ! ... type=script
