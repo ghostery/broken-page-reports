@@ -1984,3 +1984,7 @@ n-tv.de###lotto-1
 
 ! https://github.com/ghostery/broken-page-reports/issues/1814
 coolblue.nl#@#.modal-box
+
+! https://github.com/ghostery/broken-page-reports/issues/1810
+certification.kananinirav.com##.adp-underlay
+certification.kananinirav.com##.adp
