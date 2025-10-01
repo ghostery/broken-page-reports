@@ -1252,19 +1252,41 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1300
 ! https://github.com/ghostery/broken-page-reports/issues/893
 ! https://github.com/ghostery/broken-page-reports/issues/1369
+! https://github.com/ghostery/broken-page-reports/issues/1819
+! https://github.com/ghostery/broken-page-reports/issues/1747
+! https://github.com/ghostery/broken-page-reports/issues/1750
 finanzen.net##.page-layout__ad-header-top
 finanzen.net##.page-content__ad
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-*.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de,script,subdocument
+.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de,script,subdocument
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-*.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de,script,subdocument
+.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de,script,subdocument
+! >>> url=https://www.gut-erklaert.de/image/yhCzQeWoSMWUu0WZTdfeb7G5XXIYEjtTHZdp7tcug2bE/bwoDk16r7w7TJO5IhxNpHOYOEBsCg6ewvEPOYknV3bxIilGGD5IIBe.gif
+! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
+! ... type=sub_frame
+.gif^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de,script,subdocument
+! >>> url=https://www.gut-erklaert.de/image/DuJoHtMQZg4WjtjPU0QXH3l14mg40zxOoGUhPxklTZr1/nSCPpF2tVfgHlVECfOXjmt9KvxPeQl5yrSBEIHL9hUESKLiCHWOizf.gif
+! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
+! ... type=image
+||gut-erklaert.de/image/*/*.gif^
+! >>> url=https://www.tagesspiegel.de/images/bahn-improve-lack-ghost-celebrate-sailor-maurer-none-pils-wabble-herr-valve-rally-english-abzug-ttlXIhw01YFo/15224762/2-format2.png
+! ... source=https://www.tagesspiegel.de/
+! ... type=image
+||tagesspiegel.de/images/*/*format*.png^
+! >>> url=https://www.tagesspiegel.de/images/bahn-improve-lack-ghost-celebrate-sailor-maurer-none-pils-wabble-herr-valve-rally-english-abzug-ttlXIhw01YFo/15224762/2-format2.jpg
+! ... source=https://www.tagesspiegel.de/
+! ... type=image
+||tagesspiegel.de/images/*/*format*.jpg^
 focus.de##+js(aopr, cp)
 focus.de##+js(aopr, gsinit)
 n-tv.de##+js(aopr, embedAddefend)
+spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
+spiegel.de##div[id]:has(> img[src*="#"])
+spiegel.de##[data-advertisement]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1299
 ! >>> url=https://buy.tinypass.com/checkout/template/cacheableShow?aid=77U9mvKhpu&templateId=OTTYX6REAP09&offerId=fakeOfferId&experienceId=EXYMG50U16GH&iframeId=offer_e53148da481996a42292-0&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template&url=https%3A%2F%2Fwww.blick.ch%2F
@@ -1425,12 +1447,6 @@ rus.delfi.ee##.ad-block-layer
 ! ... source=https://www.sobeys.com/flyer
 ! ... type=script
 @@||cdn.c360a.salesforce.com^$domain=sobeys.com
-
-! https://github.com/ghostery/broken-page-reports/issues/893
-! https://github.com/ghostery/broken-page-reports/issues/1747
-spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
-spiegel.de##div[id]:has(> img[src*="#"])
-spiegel.de##[data-advertisement]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1535
 t-online.de##[data-testid^="CommercialSDI"]
@@ -1959,3 +1975,12 @@ dailysportscar.com##.ad-wrap
 ! https://github.com/ghostery/broken-page-reports/issues/1769
 n-tv.de##.sparwelt-neu
 n-tv.de###lotto-1
+
+! https://github.com/ghostery/broken-page-reports/issues/1815
+! >>> url=https://www.17track.net/cmp-init.js
+! ... source=https://www.17track.net/en
+! ... type=script
+@@||17track.net/cmp-init.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1814
+coolblue.nl#@#.modal-box
