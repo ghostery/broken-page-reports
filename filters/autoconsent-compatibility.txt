@@ -928,3 +928,12 @@ exrgame.com#@#.popupCookie
 
 ! https://github.com/ghostery/broken-page-reports/issues/1721
 bodensee-koenigssee-radweg.de#@#.CookieBar
+
+! https://github.com/ghostery/broken-page-reports/issues/1820
+! https://github.com/uBlockOrigin/uAssets/blob/b74b5c9b387e4a55290985e8f78780ab7170d858/filters/annoyances-cookies.txt#L1457-L1460
+automoto.it,ansa.it,cdt.ch,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,macitynet.it,moto.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,skuola.net,spaziogames.it,today.it,tuttoandroid.net,tuttotech.net#@##iubenda-cs-banner:style(visibility: hidden !important; opacity: 0 !important;)
+automoto.it,ansa.it,cdt.ch,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,macitynet.it,moto.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,skuola.net,spaziogames.it,today.it,tuttoandroid.net,tuttotech.net#@#html:style(overflow: auto !important;)
+
+! https://github.com/ghostery/broken-page-reports/issues/1817
+! https://github.com/uBlockOrigin/uAssets/blob/4d335ddbeb2ff376e640bb25c6e9db957eabd1ba/filters/annoyances-cookies.txt#L703
+bt.dk#@#+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:false%2Cstatistics:true%2Cmarketing:true}, 1year)
