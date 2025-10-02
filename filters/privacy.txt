@@ -457,12 +457,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=script
 ||tagalodrome.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1805
-! >>> url=https://p16-tiktok-ads-sg.tiktokcdn.com/obj/ad-site-i18n-sg/RANDOM_REF
-! ... source=https://auvexiug.com/
-! ... type=script
-ads*.tiktokcdn.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1799
 ! >>> url=https://dima-toon.com/
 ! ... source=https://dima-toon.com/
