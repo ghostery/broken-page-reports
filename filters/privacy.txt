@@ -361,12 +361,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=xhr
 ||potagerimsonic.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1761
-! >>> url=https://imgsct.cookiebot.com/1.gif?
-! ... source=https://universo.pt/cartao/aderir-cartao/
-! ... type=image
-||imgsct.cookiebot.com/1.gif^$important
-
 ! https://github.com/ghostery/broken-page-reports/issues/1793
 ! >>> url=https://ardsultwirfe.com/
 ! ... source=https://s.to/serie/stream/the-walking-dead/staffel-2/episode-1
