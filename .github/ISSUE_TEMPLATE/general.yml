@@ -9,7 +9,7 @@ body:
       options:
         - 🚫 Ads visible
         - 💬 Content unavailable
-        - ✅ Consent
+        - ✅ Consent issues
         - ⏯️ Website frozen
         - 🔒 Extension detected
         - Others
@@ -30,6 +30,7 @@ body:
     attributes:
       label: Browser(s)
       description: |
+        It's helpful to prioritise testing on Chromium based browsers to debug complicated cases.
         If you do not select an option from the dropdown below, we will assume the issue occurs across all browsers.
       multiple: true
       options:
