@@ -637,3 +637,12 @@ crtm.es##+js(trusted-set-cookie, crtmcookiesProtDatos, 1)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1775
 viasaletravel.hu##.mhcookie-show
+
+! https://github.com/ghostery/broken-page-reports/issues/1832
+jdav-nrw.de##+js(trusted-set-cookie, EU_OPTIN, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1831
+vleesch.nl##div.cookieconsent + .overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1830
+bax-shop.fr##[name="cookiebanner"]
