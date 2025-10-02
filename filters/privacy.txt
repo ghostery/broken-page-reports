@@ -444,3 +444,35 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://dima-toon.com/
 ! ... type=xhr
 ||dima-toon.com^$1p,xhr
+
+! https://github.com/ghostery/broken-page-reports/issues/1829
+! >>> url=https://tmstr2.shadowlandschronicles.com/rt_ping.php
+! ... source=https://cloudnestra.com/
+! ... type=xhr
+||tmstr2.shadowlandschronicles.com/rt_ping.php
+
+! https://github.com/ghostery/broken-page-reports/issues/1825
+! >>> url=https://brwsrfrm.com/pixel?ch=2
+! ... source=https://www.chip.de/tests
+! ... type=image
+||brwsrfrm.com/pixel^
+
+! https://github.com/ghostery/broken-page-reports/issues/1824
+! >>> url=https://qa.sashingdermoid.com/rN6PbLE9WcZcjxkA/48172
+! ... source=https://readcomiconline.li/Comic/Moon-Knight-Fist-of-Khonshu-2024/Issue-12#1
+! ... type=script
+||sashingdermoid.com^
+! >>> url=https://pupilkang.top/rN6PbLE9WcZcjxkA/48172
+! ... source=https://readcomiconline.li/Comic/Moon-Knight-Fist-of-Khonshu-2024/Issue-12#1
+! ... type=script
+||pupilkang.top^
+
+! https://github.com/ghostery/broken-page-reports/issues/1823
+! >>> url=https://phaukugaucmo.net/
+! ... source=https://oii.la/bt8Q
+! ... type=xhr
+||phaukugaucmo.net^
+! >>> url=https://shisyajdtqigix.com/
+! ... source=https://oii.la/bt8Q
+! ... type=xhr
+||shisyajdtqigix.com^

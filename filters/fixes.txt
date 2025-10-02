@@ -1255,20 +1255,21 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1819
 ! https://github.com/ghostery/broken-page-reports/issues/1747
 ! https://github.com/ghostery/broken-page-reports/issues/1750
+! https://github.com/ghostery/broken-page-reports/issues/1825
 finanzen.net##.page-layout__ad-header-top
 finanzen.net##.page-content__ad
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de,script,subdocument
+.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
 ! ... source=https://www.finanzen.net/
 ! ... type=script
-.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de,script,subdocument
+.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
 ! >>> url=https://www.gut-erklaert.de/image/yhCzQeWoSMWUu0WZTdfeb7G5XXIYEjtTHZdp7tcug2bE/bwoDk16r7w7TJO5IhxNpHOYOEBsCg6ewvEPOYknV3bxIilGGD5IIBe.gif
 ! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
 ! ... type=sub_frame
-.gif^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de,script,subdocument
+.gif^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
 ! >>> url=https://www.gut-erklaert.de/image/DuJoHtMQZg4WjtjPU0QXH3l14mg40zxOoGUhPxklTZr1/nSCPpF2tVfgHlVECfOXjmt9KvxPeQl5yrSBEIHL9hUESKLiCHWOizf.gif
 ! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
 ! ... type=image
@@ -1287,6 +1288,7 @@ n-tv.de##+js(aopr, embedAddefend)
 spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
 spiegel.de##div[id]:has(> img[src*="#"])
 spiegel.de##[data-advertisement]
+chip.de##div > img[src]:not([data-src])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1299
 ! >>> url=https://buy.tinypass.com/checkout/template/cacheableShow?aid=77U9mvKhpu&templateId=OTTYX6REAP09&offerId=fakeOfferId&experienceId=EXYMG50U16GH&iframeId=offer_e53148da481996a42292-0&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template&url=https%3A%2F%2Fwww.blick.ch%2F
@@ -1988,3 +1990,16 @@ coolblue.nl#@#.modal-box
 ! https://github.com/ghostery/broken-page-reports/issues/1810
 certification.kananinirav.com##.adp-underlay
 certification.kananinirav.com##.adp
+
+! https://github.com/ghostery/broken-page-reports/issues/1833
+androidpolice.com##dialog.adblock
+
+! https://github.com/ghostery/broken-page-reports/issues/1824
+! >>> url=https://readcomiconline.li/Ads/pub300a.aspx
+! ... source=https://readcomiconline.li/Comic/Moon-Knight-Fist-of-Khonshu-2024/Issue-12#1
+! ... type=sub_frame
+||readcomiconline.li/Ads/pub300a.aspx^
+
+! https://github.com/ghostery/broken-page-reports/issues/1823
+oii.la##.box-main:has(.banner.banner-captcha)
+oii.la###adb_detected
