@@ -2003,3 +2003,12 @@ androidpolice.com##dialog.adblock
 ! https://github.com/ghostery/broken-page-reports/issues/1823
 oii.la##.box-main:has(.banner.banner-captcha)
 oii.la###adb_detected
+
+! https://github.com/ghostery/broken-page-reports/issues/1766
+zonaaps.com###antiAdblockOverlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1809
+! >>> url=https://minabibliotek.se/combo/?browserId=firefox&minifierType=js&languageId=sv_SE&t=1758626272491&/o/js/resolved-module/react-provider$mini-create-react-context@0.4.1/dist/cjs/index.js&/o/js/resolved-module/react-provider$isarray@0.0.1/index.js&/o/js/resolved-module/react-provider$path-to-regexp@1.9.0/index.js&/o/js/resolved-module/react-provider$react-is@16.13.1/cjs/react-is.development.js&/o/js/resolved-module/react-provider$react-is@16.13.1/index.js&/o/js/resolved-module/react-provider$hoist-non-react-statics@3.3.2/dist/hoist-non-react-statics.cjs.js&/o/js/resolved-module/react-provider$react-router@5.2.1/cjs/react-router.js&/o/js/resolved-module/react-provider$react-router@5.2.1/index.js&/o/js/resolved-module/react-provider$react-router-dom@5.2.1/cjs/react-router-dom.js&/o/js/resolved-module/react-provider$react-router-dom@5.2.1/index.js&/o/js/resolved-module/react-provider$property-expr@2.0.6/index.js&/o/js/resolved-module/react-provider$tiny-case@1.0.3/index.js&/o/js/resolved-module/react-provider$toposort@2.0.2/index.js&/o/js/resolved-module/react-provider$yup@1.6.1/index.js&/o/js/resolved-module/@react-provider$arena/lib-arena-core@5.9.0/dist/cjs/index.js&/o/js/resolved-module/react-provider$lodash@4.17.21/lodash.js&/o/js/resolved-module/@react-provider$arena/lib-arena-archive@5.9.0/dist/cjs/index.js&/o/js/resolved-module/@react-provider$arena/lib-federated-search@5.9.0/dist/cjs/index.js&/o/js/resolved-module/@react-provider$arena/lib-theme@5.9.0/dist/cjs/index.js&/o/js/resolved-module/react-provider$react-ga4@2.1.0/dist/gtag.js&/o/js/resolved-module/react-provider$react-ga4@2.1.0/dist/format.js&/o/js/resolved-module/react-provider$react-ga4@2.1.0/dist/ga4.js&/o/js/resolved-module/react-provider$react-ga4@2.1.0/dist/index.js&/o/js/resolved-module/@react-provider$arena/lib-analytics@5.9.0/dist/cjs/index.js&/o/js/resolved-module/federated-search-input-portlet$autosuggest-highlight@3.3.4/match/index.js
+! ... source=https://minabibliotek.se/web/arena#/
+! ... type=script
+@@/(?:\/frontend\-gtag\.js)|(?:\/frontend\-gtag\.min\.js)|(?:\/gtag\.js)|(?:\/gtag\.min\.js)|(?:\/gtag\/js\?)/$domain=minabibliotek.se
