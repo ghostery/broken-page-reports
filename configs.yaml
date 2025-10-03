@@ -1,0 +1,44 @@
+- domain: bax-shop.fr
+  ref: 1730
+  actions:
+    - disable-autoconsent
+- domain: theguardian.com
+  ref: 1713
+  actions:
+    - disable-autoconsent
+- domain: dofe.org
+  ref: 1777
+  actions:
+    - disable-autoconsent
+- domain: cotswoldoutdoor.com
+  ref: 1551
+  actions:
+    - disable-autoconsent
+- domain: supersaas.com
+  ref: 1733
+  actions:
+    - disable-autoconsent
+- domain: bax-shop.nl
+  ref: 1722
+  actions:
+    - disable-autoconsent
+- domain: informacion.es
+  ref: 1025
+  actions:
+    - disable-autoconsent
+- domain: immobilies.com
+  ref: 1028
+  actions:
+    - disable-autoconsent
+- domain: dm-jobs.com
+  ref: 1518
+  actions:
+    - disable-autoconsent
+- domain: assurancevie.com
+  ref: 1498
+  actions:
+    - disable-autoconsent
+- domain: open.spotify.com
+  ref: 461
+  actions:
+    - assist
