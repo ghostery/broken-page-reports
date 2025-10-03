@@ -646,3 +646,7 @@ vleesch.nl##div.cookieconsent + .overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/1830
 bax-shop.fr##[name="cookiebanner"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1763
+icagruppen.se##+js(trusted-set-cookie, Consent_Necessary, True)
+icagruppen.se##+js(trusted-set-cookie, Consent_Funktionella, False)
