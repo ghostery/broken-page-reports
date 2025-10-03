@@ -94,29 +94,11 @@
 ! ... type=script
 ||shovelrecalled.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1325
-! >>> url=https://zz.medinaossal.com/fa2Y0gFuftYt/114415
-! ... source=https://fikper.com/lgggeSaZMT/[gimoaffz]HIPANGEL116.mp4.html
-! ... type=script
-||medinaossal.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1321
-! >>> url=https://dr.sephiraasperly.com/rdPH6vySrWgse/120588
-! ... source=https://myasiantv9.ro/buried-hearts-2025-episode-12-eng-sub/
-! ... type=script
-||sephiraasperly.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1433
 ! >>> url=https://www.samsung.com/chat/api/livechat/prompt/browse/event
 ! ... source=https://www.samsung.com/us/support/contact/
 ! ... type=xhr
 ||samsung.com/chat/api/livechat/prompt/browse/event
-
-! https://github.com/ghostery/broken-page-reports/issues/1513
-! >>> url=https://scenicchicago.com/
-! ... source=https://www.news.com.au/
-! ... type=xhr
-||scenicchicago.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1487
 ! >>> url=https://ag.dns-finder.com/meta/dns
@@ -171,30 +153,12 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=script
 ||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script,domain=watchmmafull.com|abysscdn.com
 
-! https://github.com/ghostery/broken-page-reports/issues/1600
-! >>> url=https://dauzorouwo.net/
-! ... source=https://sflix2.to/tv/free-avatar-the-last-airbender-hd-38893
-! ... type=script
-||dauzorouwo.net^
-
-! https://github.com/ghostery/broken-page-reports/issues/1620
-! >>> url=https://qskrbykjjatuk.store/27
-! ... source=https://1337x.to/torrent/6458491/South-Park-S27E02-1080p-x265-ELiTE/
-! ... type=script
-||qskrbykjjatuk.store^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1644
 ! ALERT: Matomo - free/libre analytics platform
 ! >>> url=https://stw.wawacity.diy/5nr4su.js
 ! ... source=https://www.wawacity.diy/?p=film&id=51362-destination-finale-bloodlines
 ! ... type=script
 ||stw.wawacity.diy^
-
-! https://github.com/ghostery/broken-page-reports/issues/1644
-! >>> url=https://cozigplpxpcih.site/
-! ... source=https://www.wawacity.diy/?p=film&id=51215-mr-wolff-2
-! ... type=script
-||cozigplpxpcih.site^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1675
 ! >>> url=https://www.leboncoin.fr/piano-analytics/pa.js
@@ -225,18 +189,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... source=https://www.kupujemprodajem.com/
 ! ... type=xhr
 ||kupujemprodajem.com/api/web/v1/banners/show-track^
-
-! https://github.com/ghostery/broken-page-reports/issues/1630
-! >>> url=https://sq.lastingdiketo.com/t1yManL498EYzai/126819
-! ... source=https://www.mangakakalot.gg/manga/dungeon-no-osananajimi/chapter-46
-! ... type=script
-||lastingdiketo.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1696
-! >>> url=https://crjhktxtsqbwp.com/
-! ... source=https://fastflix.top/tvshows/gachiakuta/
-! ... type=script
-||crjhktxtsqbwp.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1690
 ! >>> url=https://au.mars1st.baby?utm_data=cGdlPXNjaGVkdWxlJmxhbmc9ZW4mZG9tPWRzJnJlZj0mdGV4dD0mZ2NhdD1MaXZlK0RhcnRzJmg9MQ%3D%3D
@@ -289,30 +241,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! https://github.com/ghostery/broken-page-reports/issues/950
 walmart.ca##+js(trusted-set-cookie, adblocked, false)
 
-! https://github.com/ghostery/broken-page-reports/issues/1538
-! >>> url=https://baqxrclw.com/
-! ... source=https://bflix.pw/home
-! ... type=script
-||baqxrclw.com^
-! >>> url=https://mouthiwhewha.net/
-! ... source=https://bflix.pw/home
-! ... type=script
-||mouthiwhewha.net^
-
-! https://github.com/ghostery/broken-page-reports/issues/1716
-! >>> url=https://cothagoogy.com/
-! ... source=https://hianime.to/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148
-! ... type=script
-||cothagoogy.com^
-! >>> url=https://lpe99.com/
-! ... source=https://hianime.to/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148
-! ... type=script
-||lpe99.com^
-! >>> url=https://ouvkmptqfk.com/
-! ... source=https://hianime.to/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148
-! ... type=script
-||ouvkmptqfk.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1736
 ! >>> url=https://player.bfi.org.uk/ajax/datalayer?
 ! ... source=https://player.bfi.org.uk/subscription/film/watch-im-still-here-2024-online
@@ -339,63 +267,11 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=xhr
 ||morningstar.com/api/v1/analytics^
 
-! https://github.com/ghostery/broken-page-reports/issues/1706
-! >>> url=https://dtyurebaioecr.com/
-! ... source=https://dorawatch.net/
-! ... type=script
-||dtyurebaioecr.com^
-! >>> url=https://ptaicamtourset.com/
-! ... source=https://dorawatch.net/
-! ... type=script
-||ptaicamtourset.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1704
-! >>> url=https://nh.potagerimsonic.com/
-! ... source=https://nepu.to/
-! ... type=xhr
-||potagerimsonic.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1793
-! >>> url=https://ardsultwirfe.com/
-! ... source=https://s.to/serie/stream/the-walking-dead/staffel-2/episode-1
-! ... type=script
-||ardsultwirfe.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1791
-! >>> url=https://qapbnragruepxr.com/
-! ... source=https://9animetv.to/watch/naruto-677?ep=12352
-! ... type=script
-||qapbnragruepxr.com^
-! >>> url=https://hithoathookra.com/
-! ... source=https://9animetv.to/watch/naruto-677?ep=12352
-! ... type=script
-||hithoathookra.com^
 ! >>> url=https://wedeb.com/
 ! ... source=https://9animetv.to/watch/naruto-677?ep=12352
 ! ... type=script
 ||wedeb.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1782
-! >>> url=https://nfzpctgo.com/
-! ... source=https://dlhd.dad/watch.php?id=123
-! ... type=script
-||nfzpctgo.com^
-! >>> url=https://tmtawsytrt.com/
-! ... source=https://dlhd.dad/watch.php?id=123
-! ... type=script
-||tmtawsytrt.com^
-! >>> url=https://aoglfrntimnre.space/
-! ... source=https://dlhd.dad/watch.php?id=123
-! ... type=script
-||aoglfrntimnre.space^
-! >>> url=https://dcrmnggecuww.com/
-! ... source=https://dlhd.dad/watch.php?id=123
-! ... type=script
-||dcrmnggecuww.com^
-! >>> url=https://dfycjpouu.com/
-! ... source=https://dlhd.dad/watch.php?id=123
-! ... type=script
-||dfycjpouu.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1778
 ! >>> url=https://api.eu.experiences.engageplatform.com/api/trace/d/record?
@@ -406,32 +282,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://www.motorcyclenews.com/news/2025/january/bimota-tera-update/
 ! ... type=script
 ||fontserif.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/1773
-! >>> url=https://atamarvtcznxj.website/
-! ... source=https://thepibay.site/torrent/80623976/Tenorshare_4uKey_For_Android_V4.3.3.5_Final___Keygen
-! ... type=script
-||atamarvtcznxj.website^
-
-! https://github.com/ghostery/broken-page-reports/issues/1772
-! >>> url=https://tutmenkopis.cfd/
-! ... source=https://www.viprow.nu/
-! ... type=script
-||tutmenkopis.cfd^
-! >>> url=https://aoglfrntimnre.space/
-! ... source=https://www.viprow.nu/sports-wwe-online
-! ... type=script
-||aoglfrntimnre.space^
-
-! https://github.com/ghostery/broken-page-reports/issues/1771
-! >>> url=https://jhjgytufwxw.com/
-! ... source=https://1hd.sh/series/avatar-the-last-airbender-20898/3-1/
-! ... type=script
-||jhjgytufwxw.com^
-! >>> url=https://vauwhoocoa.com/
-! ... source=https://1hd.sh/series/avatar-the-last-airbender-20898/3-1/
-! ... type=script
-||vauwhoocoa.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1806
 ! >>> url=https://tagalodrome.com/
@@ -450,29 +300,3 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://cloudnestra.com/
 ! ... type=xhr
 ||tmstr2.shadowlandschronicles.com/rt_ping.php
-
-! https://github.com/ghostery/broken-page-reports/issues/1825
-! >>> url=https://brwsrfrm.com/pixel?ch=2
-! ... source=https://www.chip.de/tests
-! ... type=image
-||brwsrfrm.com/pixel^
-
-! https://github.com/ghostery/broken-page-reports/issues/1824
-! >>> url=https://qa.sashingdermoid.com/rN6PbLE9WcZcjxkA/48172
-! ... source=https://readcomiconline.li/Comic/Moon-Knight-Fist-of-Khonshu-2024/Issue-12#1
-! ... type=script
-||sashingdermoid.com^
-! >>> url=https://pupilkang.top/rN6PbLE9WcZcjxkA/48172
-! ... source=https://readcomiconline.li/Comic/Moon-Knight-Fist-of-Khonshu-2024/Issue-12#1
-! ... type=script
-||pupilkang.top^
-
-! https://github.com/ghostery/broken-page-reports/issues/1823
-! >>> url=https://phaukugaucmo.net/
-! ... source=https://oii.la/bt8Q
-! ... type=xhr
-||phaukugaucmo.net^
-! >>> url=https://shisyajdtqigix.com/
-! ... source=https://oii.la/bt8Q
-! ... type=xhr
-||shisyajdtqigix.com^
