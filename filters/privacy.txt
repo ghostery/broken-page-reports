@@ -300,3 +300,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://cloudnestra.com/
 ! ... type=xhr
 ||tmstr2.shadowlandschronicles.com/rt_ping.php
+
+! https://github.com/ghostery/broken-page-reports/issues/1716
+! >>> url=https://pponixtkecj.com/
+! ... source=https://hianime.to/watch/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148?ep=88415
+! ... type=xhr
+||pponixtkecj.com^
