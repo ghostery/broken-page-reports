@@ -1256,6 +1256,7 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1747
 ! https://github.com/ghostery/broken-page-reports/issues/1750
 ! https://github.com/ghostery/broken-page-reports/issues/1825
+! https://github.com/ghostery/broken-page-reports/issues/1841
 finanzen.net##.page-layout__ad-header-top
 finanzen.net##.page-content__ad
 ! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
@@ -1285,8 +1286,8 @@ finanzen.net##.page-content__ad
 focus.de##+js(aopr, cp)
 focus.de##+js(aopr, gsinit)
 n-tv.de##+js(aopr, embedAddefend)
-spiegel.de##div[class]:has(>img:not([data-image-el="img"]))
-spiegel.de##div[id]:has(> img[src*="#"])
+spiegel.de##div[class]:has(>img:not([data-image-el="img"]):not([data-src]))
+spiegel.de##div[id]:has(> img[src*="#"]:not([data-src]))
 spiegel.de##[data-advertisement]
 chip.de##div > img[src]:not([data-src])
 
@@ -1318,10 +1319,15 @@ censor.net##.right-sidebar
 ! https://github.com/ghostery/broken-page-reports/issues/1688
 ! https://github.com/ghostery/broken-page-reports/issues/1383
 ! https://github.com/ghostery/broken-page-reports/issues/1803
+! https://github.com/ghostery/broken-page-reports/issues/1752
 ! >>> url=https://pagead2.googlesyndication.com/
 ! ... source=https://cuttlinks.com/UjAjz6Dcrg
 ! ... type=script
-||pagead2.googlesyndication.com^$redirect=googlesyndication_adsbygoogle.js,domain=cuttlinks.com|arkadium.com|vidmoly.to|transfap.to
+||pagead2.googlesyndication.com^$redirect=googlesyndication_adsbygoogle.js,domain=cuttlinks.com|arkadium.com|vidmoly.to|transfap.to|zone.msn.com
+! >>> url=https://securepubads.g.doubleclick.net/tag/js/gpt.js
+! ... source=https://zone.msn.com/en/games/mssolitairecollection
+! ... type=script
+||securepubads.g.doubleclick.net/tag/js/gpt.js^$redirect=noopjs,domain=zone.msn.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/1340
 multimediastore.ch#@#.cookiepolicy
@@ -2012,3 +2018,19 @@ zonaaps.com###antiAdblockOverlay
 ! ... source=https://minabibliotek.se/web/arena#/
 ! ... type=script
 @@/(?:\/frontend\-gtag\.js)|(?:\/frontend\-gtag\.min\.js)|(?:\/gtag\.js)|(?:\/gtag\.min\.js)|(?:\/gtag\/js\?)/$domain=minabibliotek.se
+
+! https://github.com/ghostery/broken-page-reports/issues/1716
+hianime.to##div > a[target="_blank"]:has(img:empty)
+
+! https://github.com/ghostery/broken-page-reports/issues/1767
+sbt.com.br##+js(set, google, {})
+sbt.com.br##+js(set, google.ima, true)
+
+! https://github.com/ghostery/broken-page-reports/issues/560
+! >>> url=https://atc.studybreakmedia.com/modules/abb/abb-v0.js
+! ... source=https://www.citationmachine.net/apa
+! ... type=script
+||atc.studybreakmedia.com/modules/abb^
+
+! https://github.com/ghostery/broken-page-reports/issues/1752
+zone.msn.com##+js(trusted-set, Object.prototype.DETECTED, "NOT_DETECTED")

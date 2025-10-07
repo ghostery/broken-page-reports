@@ -650,3 +650,6 @@ bax-shop.fr##[name="cookiebanner"]
 ! https://github.com/ghostery/broken-page-reports/issues/1763
 icagruppen.se##+js(trusted-set-cookie, Consent_Necessary, True)
 icagruppen.se##+js(trusted-set-cookie, Consent_Funktionella, False)
+
+! https://github.com/ghostery/broken-page-reports/issues/1756
+lekarna.cz##+js(trusted-set-local-storage-item, consents, '{"system":1,"tracking":0,"marketing":0}')
