@@ -306,3 +306,15 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://hianime.to/watch/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148?ep=88415
 ! ... type=xhr
 ||pponixtkecj.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1847
+! >>> url=https://djs.dsuaieuscx.lol/
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||dsuaieuscx.lol^
+
+! https://github.com/ghostery/broken-page-reports/issues/1848
+! >>> url=https://jwskmcdwbdocq.com/
+! ... source=https://hianime.to/watch/7-seeds-2nd-season-2738?ep=53615
+! ... type=xhr
+||jwskmcdwbdocq.com^
