@@ -2034,3 +2034,6 @@ sbt.com.br##+js(set, google.ima, true)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1752
 zone.msn.com##+js(trusted-set, Object.prototype.DETECTED, "NOT_DETECTED")
+
+! https://github.com/ghostery/broken-page-reports/issues/1117
+bauzaar.it##+js(aeld, click, , [\\@prevent\\.click*="mspGtm"])

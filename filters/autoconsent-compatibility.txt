@@ -937,3 +937,9 @@ automoto.it,ansa.it,cdt.ch,delladio.it,huffingtonpost.it,internazionale.it,lasta
 ! https://github.com/ghostery/broken-page-reports/issues/1817
 ! https://github.com/uBlockOrigin/uAssets/blob/4d335ddbeb2ff376e640bb25c6e9db957eabd1ba/filters/annoyances-cookies.txt#L703
 bt.dk#@#+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:false%2Cstatistics:true%2Cmarketing:true}, 1year)
+
+! https://github.com/ghostery/broken-page-reports/issues/1216
+! >>> url=https://cmp.inmobi.com/choice/JYWDqeLS64fbt/www.express.co.uk/choice.js?tag_version=V3
+! ... source=https://www.express.co.uk/news/uk/2021305/europe-could-steal-trumps-thunder
+! ... type=script
+@@||cmp.inmobi.com^
