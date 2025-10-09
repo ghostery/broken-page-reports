@@ -34,11 +34,14 @@ body:
         If you do not select an option from the dropdown below, we will assume the issue occurs across all browsers.
       multiple: true
       options:
-        - Firefox
-        - Android Firefox
         - Chromium
-        - iOS and iPadOS Safari
-        - macOS Safari
+        - Firefox
+        - Firefox Android
+        - Safari mobile
+        - Safari macOS
+        - Edge
+        - Edge iOS
+        - Edge Android
         - Opera
         - Brave
         - Other
