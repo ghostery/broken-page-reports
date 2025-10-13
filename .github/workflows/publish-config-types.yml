@@ -26,17 +26,19 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
+      - name: Setup npm authentication
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Bump version and publish
         run: |
           npm version patch --no-git-tag-version
 
           NEW_VERSION=$(node -p "require('./package.json').version")
 
-          npm publish
+          npm publish --access public
 
           # Commit and push the version bump
           git add package.json
           git commit -m "chore: bump @ghostery/config-types to v${NEW_VERSION}"
           git push
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
