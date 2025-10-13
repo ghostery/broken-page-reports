@@ -21,16 +21,25 @@ jobs:
       - run: deno run test
       - run: deno run build
 
-      - name: Configure Git
+      - name: Generate a github token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.ADBLOCKERBOT_APP_ID }}
+          private-key: ${{ secrets.ADBLOCKERBOT_PRIVATE_KEY }}
+
+      - name: Configure Git with App identity
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "Ghostery Adblocker Bot"
+          git config user.email "ghostery-adblocker-bot@users.noreply.github.com"
 
       - name: Setup npm authentication
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Bump version and publish
+        env:
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
           npm version patch --no-git-tag-version
 
@@ -40,5 +49,7 @@ jobs:
 
           # Commit and push the version bump
           git add package.json
-          git commit -m "chore: bump @ghostery/config-types to v${NEW_VERSION}"
-          git push
+          git commit -m "chore: bump @ghostery/config-types to v${NEW_VERSION} [skip ci]"
+
+          # Push using the App token
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
