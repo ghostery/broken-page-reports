@@ -10,9 +10,11 @@ export const ACTIONS = [
   "pause-assistant",
 ] as const;
 
+export const PLATFORM_FIREFOX = "firefox";
+
 export const PLATFORMS = [
   "chromium",
-  "firefox",
+  PLATFORM_FIREFOX,
   "safari",
 ] as const;
 
