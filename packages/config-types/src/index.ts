@@ -1,20 +1,20 @@
 export const ACTIONS = [
-  "disable-autoconsent",
   "disable-antitracking-modification",
+  "disable-autoconsent",
   "pause-assistant",
 ] as const;
 
 export const PLATFORMS = [
+  "chromium",
   "firefox",
   "safari",
-  "chromium",
 ] as const;
 
 export const FLAGS = [
-  "firefox-content-script-scriptlets",
   "chromium-inject-cosmetics-on-response-started",
-  "extended-selectors",
   "dynamic-dnr-fixes",
+  "extended-selectors",
+  "firefox-content-script-scriptlets",
   "pause-assistant",
 ] as const;
 
