@@ -32,3 +32,4 @@ jobs:
       - uses: jdx/mise-action@v2
       - run: deno install
       - run: deno run test
+      - run: deno run build

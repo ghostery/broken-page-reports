@@ -1,16 +1,16 @@
-export const actions = [
+export const ACTIONS = [
   "disable-autoconsent",
   "disable-antitracking-modification",
   "pause-assistant",
 ] as const;
 
-export const platforms = [
+export const PLATFORMS = [
   "firefox",
   "safari",
   "chromium",
 ] as const;
 
-export const flags = [
+export const FLAGS = [
   "firefox-content-script-scriptlets",
   "chromium-inject-cosmetics-on-response-started",
   "extended-selectors",
@@ -18,11 +18,11 @@ export const flags = [
   "pause-assistant",
 ] as const;
 
-export type Platform = typeof platforms[number];
+export type Platform = typeof PLATFORMS[number];
 
-export type Action = typeof actions[number];
+export type Action = typeof ACTIONS[number];
 
-export type Flag = typeof flags[number];
+export type Flag = typeof FLAGS[number];
 
 interface Filter {
   platform?: Platform[];
@@ -45,13 +45,13 @@ export interface Config {
 }
 
 export function isPlatform(platform: string): platform is Platform {
-  return (platforms as readonly string[]).includes(platform);
+  return (PLATFORMS as readonly string[]).includes(platform);
 }
 
 export function isAction(action: string): action is Action {
-  return (actions as readonly string[]).includes(action);
+  return (ACTIONS as readonly string[]).includes(action);
 }
 
 export function isFlag(flag: string): flag is Flag {
-  return (flags as readonly string[]).includes(flag);
+  return (FLAGS as readonly string[]).includes(flag);
 }
