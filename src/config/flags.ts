@@ -27,6 +27,11 @@ const flags: Config["flags"] = {
       percentage: 100,
     },
   ],
+  "pause-assistant": [
+    {
+      percentage: 10,
+    },
+  ],
 };
 
 export default flags;
