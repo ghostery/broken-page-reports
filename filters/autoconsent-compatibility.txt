@@ -943,3 +943,6 @@ bt.dk#@#+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:fal
 ! ... source=https://www.express.co.uk/news/uk/2021305/europe-could-steal-trumps-thunder
 ! ... type=script
 @@||cmp.inmobi.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1852
+chrono24.sg#@#dialog.gdpr-layer

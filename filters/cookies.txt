@@ -653,3 +653,9 @@ icagruppen.se##+js(trusted-set-cookie, Consent_Funktionella, False)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1756
 lekarna.cz##+js(trusted-set-local-storage-item, consents, '{"system":1,"tracking":0,"marketing":0}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1852
+chrono24.sg##+js(trusted-set-cookie, c24-consent, AAEAJwEiAABA)
+
+! https://github.com/ghostery/broken-page-reports/issues/990
+skandia.se##+js(trusted-set-cookie, SK_CONSENT, '{%22hasAccepted%22:true%2C%22necessary%22:true%2C%22functional%22:false%2C%22statistics%22:false}')
