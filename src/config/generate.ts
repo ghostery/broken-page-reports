@@ -2,7 +2,13 @@ import { Octokit } from "npm:octokit";
 import { parse } from "npm:tldts";
 import * as path from "jsr:@std/path";
 
-import { Action, Config, isAction, isPlatform, Platform } from "@ghostery/config-types";
+import {
+  Action,
+  Config,
+  isAction,
+  isPlatform,
+  Platform,
+} from "@ghostery/config-types";
 import flags from "./flags.ts";
 
 const config: Config = {
