@@ -318,3 +318,13 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://hianime.to/watch/7-seeds-2nd-season-2738?ep=53615
 ! ... type=xhr
 ||jwskmcdwbdocq.com^
+! >>> url=https://xmedupodvdci.com/
+! ... source=https://hianime.to/watch/7-seeds-2nd-season-2738?ep=53615
+! ... type=xhr
+||xmedupodvdci.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1853
+! >>> url=https://lazypecan.com/
+! ... source=https://www.lse.co.uk/
+! ... type=script
+||lazypecan.com^

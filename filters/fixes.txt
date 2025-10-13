@@ -2037,3 +2037,12 @@ zone.msn.com##+js(trusted-set, Object.prototype.DETECTED, "NOT_DETECTED")
 
 ! https://github.com/ghostery/broken-page-reports/issues/1117
 bauzaar.it##+js(aeld, click, , [\\@prevent\\.click*="mspGtm"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1851
+luciferdonghua.in##.video-content > div[style*="absolute"][id]
+
+! https://github.com/ghostery/broken-page-reports/issues/1528
+exhentai-igneous-generator.pages.dev#@##cookie-form
+
+! https://github.com/ghostery/broken-page-reports/issues/1452
+fr.tommy.com#@#.ReactModal__Overlay
