@@ -1,33 +1,42 @@
-import { Config } from "./types.ts";
+import { Config } from "@ghostery/config-types";
+import {
+  FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS,
+  FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
+  FLAG_EXTENDED_SELECTORS,
+  FLAG_DYNAMIC_DNR_FIXES,
+  FLAG_PAUSE_ASSISTANT,
+  PLATFORM_FIREFOX,
+  PLATFORM_CHROMIUM,
+} from "@ghostery/config-types";
 
 const flags: Config["flags"] = {
-  "firefox-content-script-scriptlets": [
+  [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
     {
       percentage: 100,
       filter: {
-        platform: ["firefox"],
+        platform: [PLATFORM_FIREFOX],
       },
     },
   ],
-  "chromium-inject-cosmetics-on-response-started": [
+  [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
     {
       percentage: 50,
       filter: {
-        platform: ["chromium"],
+        platform: [PLATFORM_CHROMIUM],
       },
     },
   ],
-  "extended-selectors": [
+  [FLAG_EXTENDED_SELECTORS]: [
     {
       percentage: 100,
     },
   ],
-  "dynamic-dnr-fixes": [
+  [FLAG_DYNAMIC_DNR_FIXES]: [
     {
       percentage: 100,
     },
   ],
-  "pause-assistant": [
+  [FLAG_PAUSE_ASSISTANT]: [
     {
       percentage: 10,
     },

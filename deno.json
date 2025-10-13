@@ -1,4 +1,5 @@
 {
+  "unstable": ["sloppy-imports"],
   "tasks": {
     "config:generate": "deno run --allow-net --allow-write ./src/config/generate.ts",
     "build": "deno run -R -W ./src/build.js",
@@ -7,6 +8,7 @@
     "tests:dns": "VALIDATE_DNS=1 deno test --allow-read --allow-env --allow-net"
   },
   "imports": {
+    "@ghostery/config-types": "./packages/config-types/src/index.ts",
     "@std/path": "jsr:@std/path@^1.1.2",
     "octokit": "npm:octokit@^5.0.3",
     "tldts": "npm:tldts@^7.0.11"
