@@ -11,11 +11,12 @@ export const ACTIONS = [
 ] as const;
 
 export const PLATFORM_FIREFOX = "firefox";
+export const PLATFORM_SAFARI = "safari";
 
 export const PLATFORMS = [
   "chromium",
   PLATFORM_FIREFOX,
-  "safari",
+  PLATFORM_SAFARI,
 ] as const;
 
 export const FLAGS = [

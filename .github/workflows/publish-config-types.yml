@@ -14,19 +14,22 @@ jobs:
       run:
         working-directory: ./packages/config-types
     steps:
-      - uses: actions/checkout@v4
-      - uses: jdx/mise-action@v2
-
-      - run: deno install
-      - run: deno run test
-      - run: deno run build
-
       - name: Generate a github token
         id: generate-token
         uses: actions/create-github-app-token@v1
         with:
           app-id: ${{ secrets.ADBLOCKERBOT_APP_ID }}
           private-key: ${{ secrets.ADBLOCKERBOT_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - uses: jdx/mise-action@v2
+
+      - run: deno install
+      - run: deno run test
+      - run: deno run build
 
       - name: Configure Git with App identity
         run: |
@@ -38,8 +41,6 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Bump version and publish
-        env:
-          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
           npm version patch --no-git-tag-version
 
@@ -51,5 +52,5 @@ jobs:
           git add package.json
           git commit -m "chore: bump @ghostery/config-types to v${NEW_VERSION} [skip ci]"
 
-          # Push using the App token
-          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
+          # Push directly to main (already authenticated via checkout)
+          git push origin main
