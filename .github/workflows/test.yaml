@@ -21,3 +21,14 @@ jobs:
       - run: deno run lint
       - run: deno run tests
       - run: deno run build
+  test-config-types:
+    runs-on: ubuntu-latest
+    name: Test Config types
+    defaults:
+      run:
+        working-directory: ./packages/config-types
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - run: deno install
+      - run: deno run test

@@ -1,0 +1,49 @@
+{
+  "name": "@ghostery/config-types",
+  "version": "0.0.1",
+  "description": "Shared TypeScript types for Ghostery configuration",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "deno check src/index.ts",
+    "build": "tshy"
+  },
+  "devDependencies": {
+    "tshy": "^1.0.0"
+  },
+  "tshy": {
+    "exports": {
+      ".": "./src/index.ts"
+    }
+  },
+  "keywords": [
+    "ghostery",
+    "types",
+    "typescript",
+    "config"
+  ],
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "source": "./src/index.ts",
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "source": "./src/index.ts",
+        "types": "./dist/commonjs/index.d.ts",
+        "default": "./dist/commonjs/index.js"
+      }
+    }
+  },
+  "main": "./dist/commonjs/index.js",
+  "types": "./dist/commonjs/index.d.ts",
+  "type": "module",
+  "module": "./dist/esm/index.js"
+}
