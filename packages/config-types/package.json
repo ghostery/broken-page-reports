@@ -1,6 +1,6 @@
 {
-  "name": "@ghostery/config-types",
-  "version": "0.0.5",
+  "name": "@ghostery/config",
+  "version": "0.0.1",
   "description": "Shared TypeScript types for Ghostery configuration",
   "files": [
     "dist"
