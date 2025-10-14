@@ -2046,3 +2046,9 @@ exhentai-igneous-generator.pages.dev#@##cookie-form
 
 ! https://github.com/ghostery/broken-page-reports/issues/1452
 fr.tommy.com#@#.ReactModal__Overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1865
+nerdist.com###ndab-modal
+
+! https://github.com/ghostery/broken-page-reports/issues/1847
+turbovidhls.com##+js(set, premium, 1)

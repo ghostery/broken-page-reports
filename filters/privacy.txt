@@ -312,6 +312,10 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://supjav.com/377549.html?asgtbndr=1
 ! ... type=script
 ||dsuaieuscx.lol^
+! >>> url=https://nsl.ruidhs.cfd/j2e4yL3.js
+! ... source=https://supjav.com/377258.html
+! ... type=script
+||ruidhs.cfd^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1848
 ! >>> url=https://jwskmcdwbdocq.com/
