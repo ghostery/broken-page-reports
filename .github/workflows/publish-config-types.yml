@@ -27,9 +27,9 @@ jobs:
 
       - uses: jdx/mise-action@v2
 
-      - run: deno install
-      - run: deno run test
-      - run: deno run build
+      - run: npm ci
+      - run: npm run test
+      - run: npm run build
 
       - name: Configure Git with App identity
         run: |
