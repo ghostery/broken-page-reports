@@ -38,7 +38,7 @@ const flags: Config["flags"] = {
   ],
   [FLAG_PAUSE_ASSISTANT]: [
     {
-      percentage: 10,
+      percentage: 0,
     },
   ],
 };
