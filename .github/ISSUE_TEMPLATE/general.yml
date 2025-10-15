@@ -28,7 +28,7 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: Browser(s)
+      label: Found on browser(s)
       description: |
         It's helpful to prioritise testing on Chromium based browsers to debug complicated cases.
         If you do not select an option from the dropdown below, we will assume the issue occurs across all browsers.
