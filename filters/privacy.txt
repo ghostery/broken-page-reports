@@ -316,6 +316,18 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://supjav.com/377258.html
 ! ... type=script
 ||ruidhs.cfd^
+! >>> url=https://supjav.com/fyh-api.php?
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||supjav.com/fyh-api.php^
+! >>> url=https://tombsmanship.click/
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||tombsmanship.click^
+! >>> url=https://video.dmmjp.cc/
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||video.dmmjp.cc^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1848
 ! >>> url=https://jwskmcdwbdocq.com/
@@ -332,3 +344,53 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://www.lse.co.uk/
 ! ... type=script
 ||lazypecan.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1876
+! >>> url=https://tmstr2.shadowlandschronicles.com/rt_ping.php
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||shadowlandschronicles.com^
+! >>> url=https://symboldense.com/
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||symboldense.com^
+! >>> url=https://gywwzmejfzkrs.site/
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||gywwzmejfzkrs.site^
+! >>> url=https://huskymeloid.qpon/
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||huskymeloid.qpon^
+! >>> url=https://tracker.novage.com.ua/
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||tracker.novage.com.ua^
+! >>> url=https://tracker.openwebtorrent.com/
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||tracker.openwebtorrent.com^
+! >>> url=https://unfancyvergers.cfd/
+! ... source=https://5movies.store/wooflix/
+! ... type=xhr
+||unfancyvergers.cfd^
+
+! https://github.com/ghostery/broken-page-reports/issues/1874
+! >>> url=https://psogoodsihal.com/
+! ... source=https://hianime.to/is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon-iv-17501
+! ... type=xhr
+||psogoodsihal.com^
+! >>> url=https://oyqcqlehhfb.com/
+! ... source=https://hianime.to/is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon-iv-17501
+! ... type=xhr
+||oyqcqlehhfb.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1877
+! >>> url=https://gridgames.app/api/analytics/count
+! ... source=https://gridgames.app/
+! ... type=xhr
+||gridgames.app/api/analytics^
+! >>> url=https://gridgames.app/report-errors.js
+! ... source=https://gridgames.app/
+! ... type=xhr
+||gridgames.app/report-errors.js^
