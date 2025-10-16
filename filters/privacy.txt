@@ -394,3 +394,45 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://gridgames.app/
 ! ... type=xhr
 ||gridgames.app/report-errors.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1891
+! >>> url=https://piqwpyoxm.com/
+! ... source=https://aniworld.to/anime/stream/rent-a-girlfriend/staffel-2/episode-4
+! ... type=xhr
+||piqwpyoxm.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1888
+! >>> url=https://ow.scoutsdregs.com/
+! ... source=https://cc5w.series24.cc/ver-serie-online/csi-las-vegas-2x19/
+! ... type=script
+||scoutsdregs.com^
+! >>> url=https://nn.matzothdiane.com/
+! ... source=https://cc5w.series24.cc/ver-serie-online/csi-las-vegas-2x19/
+! ... type=script
+||matzothdiane.com^
+! >>> url=https://crieycuber.com/
+! ... source=https://cc5w.series24.cc/ver-serie-online/csi-las-vegas-2x19/
+! ... type=script
+||crieycuber.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1887
+! >>> url=https://sa.nhanweigh.com/
+! ... source=https://cc5w.series24.cc/ver-serie-online/csi-las-vegas-2x19/
+! ... type=script
+||sa.nhanweigh.com^
+! >>> url=https://yx.taiverturena.com/
+! ... source=https://cc5w.series24.cc/ver-serie-online/csi-las-vegas-2x19/
+! ... type=script
+||taiverturena.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/1884
+! >>> url=https://watchseries.bar/assets/js/min/report.js
+! ... source=https://watchseries.bar/home
+! ... type=script
+||watchseries.bar/assets/js/min/report.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1883
+! >>> url=https://wn4wztsx.xyz/
+! ... source=https://sextb.net/sb6xyfslu
+! ... type=script
+||wn4wztsx.xyz^
