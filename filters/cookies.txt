@@ -350,11 +350,12 @@ swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essenti
 
 ! https://github.com/ghostery/broken-page-reports/issues/1172
 ! https://github.com/ghostery/broken-page-reports/issues/1168
+! https://github.com/ghostery/broken-page-reports/issues/1886
 ! fixes infinite reload caused by autoconsent by force blocking the cmp
 ! >>> url=https://web.cmp.usercentrics.eu/ui/loader.js
 ! ... source=https://snyk.io/articles/open-source-security/software-composition-analysis-sca/
 ! ... type=script
-||usercentrics.eu^$domain=snyk.io|app.spendesk.com,important
+||usercentrics.eu^$domain=snyk.io|app.spendesk.com|notebooksbilliger.de,important
 
 ! https://github.com/ghostery/broken-page-reports/issues/1192
 reflecta.network##.cookies-js
@@ -659,3 +660,7 @@ chrono24.sg##+js(trusted-set-cookie, c24-consent, AAEAJwEiAABA)
 
 ! https://github.com/ghostery/broken-page-reports/issues/990
 skandia.se##+js(trusted-set-cookie, SK_CONSENT, '{%22hasAccepted%22:true%2C%22necessary%22:true%2C%22functional%22:false%2C%22statistics%22:false}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1892
+stokker.lv##+js(trusted-set-cookie, CookieConsent, 4)
+stokker.lv##+js(trusted-set-cookie, CookieConsentPolicy, '0:1')

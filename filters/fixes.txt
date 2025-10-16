@@ -2055,3 +2055,26 @@ turbovidhls.com##+js(set, premium, 1)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1875
 cuitonline.com###adBlockModalOverlay
+
+! https://github.com/ghostery/broken-page-reports/issues/1890
+! https://github.com/ghostery/broken-page-reports/issues/1880
+! >>> url=https://www.wp.pl/
+! ... source=https://www.money.pl/gospodarka/pierwsza-elektrownia-jadrowa-w-polsce-tusk-na-budowie-7211091384089568a.html
+! ... type=sub_frame
+||wp.pl$subdocument,domain=money.pl|kobieta.wp.pl
+money.pl,kobieta.wp.pl##+js(aopw, HTMLImageElement.prototype.src)
+
+! https://github.com/ghostery/broken-page-reports/issues/1889
+surfcam-sylt.de#@#.ad-iframe
+
+! https://github.com/ghostery/broken-page-reports/issues/1885
+allfaucet.xyz##+js(aopw, AdblockRegixFinder)
+
+! https://github.com/ghostery/broken-page-reports/issues/1883
+! >>> url=https://sextb.net/js/brs.js
+! ... source=https://sextb.net/sb6xyfslu
+! ... type=script
+||sextb.net/js/brs.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1882
+talksport.com##+js(aopr, GPT_SRC)
