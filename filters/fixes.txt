@@ -2052,3 +2052,6 @@ nerdist.com###ndab-modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/1847
 turbovidhls.com##+js(set, premium, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1875
+cuitonline.com###adBlockModalOverlay
