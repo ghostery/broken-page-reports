@@ -946,3 +946,9 @@ bt.dk#@#+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:fal
 
 ! https://github.com/ghostery/broken-page-reports/issues/1852
 chrono24.sg#@#dialog.gdpr-layer
+
+! https://github.com/ghostery/broken-page-reports/issues/1924
+virgo.hu#@#.popup-cookie:not(body)
+
+! https://github.com/ghostery/broken-page-reports/issues/1914
+horecaworld.nl#@#.CookiePopup
