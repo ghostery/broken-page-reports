@@ -190,16 +190,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=xhr
 ||kupujemprodajem.com/api/web/v1/banners/show-track^
 
-! https://github.com/ghostery/broken-page-reports/issues/1690
-! >>> url=https://au.mars1st.baby?utm_data=cGdlPXNjaGVkdWxlJmxhbmc9ZW4mZG9tPWRzJnJlZj0mdGV4dD0mZ2NhdD1MaXZlK0RhcnRzJmg9MQ%3D%3D
-! ... source=https://dartsstreams.com/live-darts-streams
-! ... type=image
-||mars1st.baby^
-! >>> url=https://eeksbeforebutheh.org/
-! ... source=https://dartsstreams.com/live-darts-streams
-! ... type=script
-||eeksbeforebutheh.org^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1057
 ! >>> url=https://www.iconmediapixel-ipv4.com/
 ! ... source=https://www.aarp.org/
@@ -230,7 +220,7 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! >>> url=https://uct.service.usercentrics.eu/uct
 ! ... source=https://www.wetter.com/wetterkarten/regenradar/
 ! ... type=image
-||uct.service.usercentrics.eu/uct^$image,important
+||uct.service.usercentrics.eu/uct^$image,redirect=2x2.png,important
 
 ! https://github.com/ghostery/broken-page-reports/issues/931
 ! >>> url=https://a.omappapi.com/app/js/api.min.js
@@ -374,3 +364,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://watchseries.bar/home
 ! ... type=script
 ||watchseries.bar/assets/js/min/report.js^
+
+! https://github.com/ghostery/broken-page-reports/issues/1955
+! >>> url=https://tvtropes.org/ajax/a_b_d.php
+! ... source=https://tvtropes.org/pmwiki/pmwiki.php/Main/TokyoRose
+! ... type=xhr
+||tvtropes.org/ajax/a_b_d.php^
