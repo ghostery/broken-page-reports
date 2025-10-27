@@ -1475,13 +1475,14 @@ winfuture.de##body[style="overflow: hidden;"]:style(overflow: initial !important
 ! https://github.com/ghostery/broken-page-reports/issues/1047
 ! https://github.com/ghostery/broken-page-reports/issues/1188
 ! https://github.com/ghostery/broken-page-reports/issues/1919
+! https://github.com/ghostery/broken-page-reports/issues/1953
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#if env_safari
-onlinegdb.com,newsinlevels.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+onlinegdb.com,newsinlevels.com,wetter.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
 !#endif
 
 ! https://github.com/ghostery/broken-page-reports/issues/1570
@@ -1627,34 +1628,49 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1920
 ! https://github.com/ghostery/broken-page-reports/issues/1915
 ! https://github.com/ghostery/broken-page-reports/issues/1912
-! >>> url=https://vjlldwyejw.com/
-! ... source=https://tmovie.tv/platforms
+! https://github.com/ghostery/broken-page-reports/issues/1690
+! https://github.com/ghostery/broken-page-reports/issues/1957
+! https://github.com/ghostery/broken-page-reports/issues/1939
+! >>> url=https://59h75t59mr4m.qlkwfp11222wifeenq.cfd/k8mq7TkoKxNo1TqL/RAMaq
+! ... source=https://cineb.gg/watch-movie/watch-the-lord-of-the-rings-the-fellowship-of-the-ring-free-19736.11246506
+! ... type=script
+||qlkwfp11222wifeenq.cfd^
+! >>> url=https://j52py7gjni.te7twtqywibjomx.rest/kvk4G959iUikMwLc7e9bc4E/RAMaq
+! ... source=https://cineb.gg/watch-movie/watch-the-lord-of-the-rings-the-fellowship-of-the-ring-free-19736.11246506
+! ... type=script
+||te7twtqywibjomx.rest^
+! >>> url=https://t4vie.cpcqqo9bogj43v.cfd/kYq24bE2mqX4PGJh535728/RAMaq
+! ... source=https://cineb.gg/watch-movie/watch-the-lord-of-the-rings-the-fellowship-of-the-ring-free-19736.11246506
+! ... type=script
+||cpcqqo9bogj43v.cfd^
+! >>> url=https://ro55l3e628zmo765.vwm4u4r5mhynh5iuh7.rest/kF8nBcX8XpO5hcikCqje6lIr3/RAMaq
+! ... source=https://cineb.gg/watch-movie/watch-the-lord-of-the-rings-the-fellowship-of-the-ring-free-19736.11246506
+! ... type=script
+||vwm4u4r5mhynh5iuh7.rest^
+! >>> url=https://stream.youxxjav.xyz/JIv8GQ9.js
+! ... source=https://stream.youxxjav.xyz/JIv8GQ9.js
+! ... type=script
+||youxxjav.xyz^
+! >>> url=https://beeswaxfreshly.click/r68ff999f5c6fb/85313
+! ... source=https://supjav.com/381106.html
+! ... type=script
+||beeswaxfreshly.click^
+! >>> url=https://ver02.sptvp.com/watch?videoID=A&userID=B
+! ... source=https://supjav.com/381106.html
 ! ... type=xhr
-||vjlldwyejw.com^
+||sptvp.com^$~image
+! >>> url=https://eeksbeforebutheh.org/
+! ... source=https://dartsstreams.com/live-darts-streams
+! ... type=script
+||eeksbeforebutheh.org^
 ! >>> url=https://awllcoafrl.com/
 ! ... source=https://bunkr.cr/a/apIYCvqY
 ! ... type=script
 ||awllcoafrl.com^
-! >>> url=https://pponixtkecj.com/
-! ... source=https://hianime.to/watch/donten-laughing-under-the-clouds-gaiden-chapter-1-one-year-after-the-battle-2148?ep=88415
-! ... type=xhr
-||pponixtkecj.com^
-! >>> url=https://jwskmcdwbdocq.com/
-! ... source=https://hianime.to/watch/7-seeds-2nd-season-2738?ep=53615
-! ... type=xhr
-||jwskmcdwbdocq.com^
 ! >>> url=https://xmedupodvdci.com/
 ! ... source=https://hianime.to/watch/7-seeds-2nd-season-2738?ep=53615
 ! ... type=xhr
 ||xmedupodvdci.com^
-! >>> url=https://psogoodsihal.com/
-! ... source=https://hianime.to/is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon-iv-17501
-! ... type=xhr
-||psogoodsihal.com^
-! >>> url=https://oyqcqlehhfb.com/
-! ... source=https://hianime.to/is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon-iv-17501
-! ... type=xhr
-||oyqcqlehhfb.com^
 ! >>> url=https://piqwpyoxm.com/
 ! ... source=https://aniworld.to/anime/stream/rent-a-girlfriend/staffel-2/episode-4
 ! ... type=xhr
@@ -1683,14 +1699,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://sextb.net/sb6xyfslu
 ! ... type=script
 ||wn4wztsx.xyz^
-! >>> url=https://fumbvxyisknrie.com/
-! ... source=https://myflixer.watch/home/
-! ... type=script
-||fumbvxyisknrie.com^
-! >>> url=https://stihaizaugnie.net/
-! ... source=https://myflixer.watch/home/
-! ... type=script
-||stihaizaugnie.net^
 ! >>> url=https://sagbutsmonaul.cfd/
 ! ... source=https://strikeout.im/english-championship/2/derby-county-vs-norwich-city-stream
 ! ... type=script
@@ -2137,7 +2145,9 @@ fr.tommy.com#@#.ReactModal__Overlay
 nerdist.com###ndab-modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/1847
+! https://github.com/ghostery/broken-page-reports/issues/1957
 turbovidhls.com##+js(set, premium, 1)
+turbovidhls.com##div[style*="absolute"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1875
 cuitonline.com###adBlockModalOverlay
@@ -2167,3 +2177,13 @@ talksport.com##+js(aopr, GPT_SRC)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1917
 friv.com##+js(set, chkvs, trueFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/1956
+! >>> url=https://logo.clearbit.com/espn.com
+! ... source=https://tv247us.live/tv-channels
+! ... type=image
+@@||logo.clearbit.com^$3p,image
+
+! https://github.com/ghostery/broken-page-reports/issues/1954
+washingtonpost.com##[class*="isHomepageTopLeaderboard-true"]
+washingtonpost.com##wp-ad-wrapper
