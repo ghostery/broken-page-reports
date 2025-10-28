@@ -1476,14 +1476,27 @@ winfuture.de##body[style="overflow: hidden;"]:style(overflow: initial !important
 ! https://github.com/ghostery/broken-page-reports/issues/1188
 ! https://github.com/ghostery/broken-page-reports/issues/1919
 ! https://github.com/ghostery/broken-page-reports/issues/1953
+! https://github.com/ghostery/broken-page-reports/issues/1949
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
-motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-!#if env_safari
-onlinegdb.com,newsinlevels.com,wetter.com##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-!#endif
+motscroises.fr,onlinegdb.com,newsinlevels.com,wetter.com,flagle.io##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
+flagle.io##+js(aopr, HTMLStyleElement.prototype.remove)
+flagle.io##+js(aopr, HTMLLinkElement.prototype.remove)
+flagle.io##+js(aopr, confirm)
+! >>> url=https://html-load.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||html-load.com^$domain=flagle.io
+! >>> url=https://content-loader.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||content-loader.com^$domain=flagle.io
+! >>> url=https://error-report.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||error-report.com^$domain=flagle.io
 
 ! https://github.com/ghostery/broken-page-reports/issues/1570
 nytimes.com##div[class^="Ad-module_adContainer"]
@@ -1631,6 +1644,66 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1690
 ! https://github.com/ghostery/broken-page-reports/issues/1957
 ! https://github.com/ghostery/broken-page-reports/issues/1939
+! https://github.com/ghostery/broken-page-reports/issues/1847
+! https://github.com/ghostery/broken-page-reports/issues/1969
+! https://github.com/ghostery/broken-page-reports/issues/1967
+! https://github.com/ghostery/broken-page-reports/issues/1966
+! https://github.com/ghostery/broken-page-reports/issues/1962
+! https://github.com/ghostery/broken-page-reports/issues/1961
+! https://github.com/ghostery/broken-page-reports/issues/1944
+! https://github.com/ghostery/broken-page-reports/issues/1943
+! >>> url=https://djs.dsuaieuscx.lol/
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||dsuaieuscx.lol^
+! >>> url=https://nsl.ruidhs.cfd/j2e4yL3.js
+! ... source=https://supjav.com/377258.html
+! ... type=script
+||ruidhs.cfd^
+! >>> url=https://tombsmanship.click/
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||tombsmanship.click^
+! >>> url=https://video.dmmjp.cc/
+! ... source=https://supjav.com/377549.html?asgtbndr=1
+! ... type=script
+||video.dmmjp.cc^
+! >>> url=https://cinema.dmmcom.cc/api/users/0?
+! ... source=https://supjav.com/381631.html
+! ... type=script
+||dmmcom.cc^
+! >>> url=https://bugaraarborea.click/r6900f5ec572f0/85313
+! ... source=https://supjav.com/381631.html
+! ... type=script
+||bugaraarborea.click^
+! >>> url=https://kq3.qvie2jqtezi86cu2xc3we5x5fyz.cfd/kf3EE2f881zq1f49/rXaWX
+! ... source=https://flixhq.to/tv/watch-tulsa-king-90169
+! ... type=script
+||qvie2jqtezi86cu2xc3we5x5fyz.cfd^
+! >>> url=https://imbutepierces.qpon/gd/114809?
+! ... source=https://flixhq.to/tv/watch-tulsa-king-90169
+! ... type=script
+||imbutepierces.qpon^
+! >>> url=https://yw.negliglesson.com/rAHVjGcsk3oHLK/121908
+! ... source=https://streamm4u.com.co/tv-series/the-count-of-monte-cristo-2024-y9cie
+! ... type=script
+||negliglesson.com^
+! >>> url=https://aj.favismanomie.com/s9FTwUD3Kb0ie57M/130935
+! ... source=https://live.totalsportek07.com/Kansas-City-Chiefs-vs-Washington-Commanders/52083
+! ... type=script
+||favismanomie.com^
+! >>> url=https://www.cxybjjfupzolx.com/P/lgrayscale.min.js
+! ... source=https://thepiratebay.party/search/AFRICA/1/99/500
+! ... type=script
+||cxybjjfupzolx.com^
+! >>> url=https://hcleehgffswrafw.com/
+! ... source=https://hianime.to/
+! ... type=xhr
+||hcleehgffswrafw.com^
+! >>> url=https://groshoapsock.net/
+! ... source=https://hianime.to/
+! ... type=xhr
+||groshoapsock.net^
 ! >>> url=https://59h75t59mr4m.qlkwfp11222wifeenq.cfd/k8mq7TkoKxNo1TqL/RAMaq
 ! ... source=https://cineb.gg/watch-movie/watch-the-lord-of-the-rings-the-fellowship-of-the-ring-free-19736.11246506
 ! ... type=script
@@ -2187,3 +2260,18 @@ friv.com##+js(set, chkvs, trueFunc)
 ! https://github.com/ghostery/broken-page-reports/issues/1954
 washingtonpost.com##[class*="isHomepageTopLeaderboard-true"]
 washingtonpost.com##wp-ad-wrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/1968
+myhentaigallery.com##center
+
+! https://github.com/ghostery/broken-page-reports/issues/1959
+! >>> url=https://edge.api.brightcove.com/playback/
+! ... source=https://github.com/ghostery/broken-page-reports/issues/1959
+! ... type=xhr
+@@||edge.api.brightcove.com/playback^
+
+! https://github.com/ghostery/broken-page-reports/issues/1947
+wallapop.com##div[class^="search-page_SearchPage__topSky"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1945
+news247.gr##[id^="agora-inread"]
