@@ -357,6 +357,10 @@ swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essenti
 ! ... type=script
 ||usercentrics.eu^$domain=snyk.io|app.spendesk.com|notebooksbilliger.de,important
 
+! https://github.com/ghostery/broken-page-reports/issues/1952
+! fixes autoconsent not working
+srf.ch###usercentrics-root
+
 ! https://github.com/ghostery/broken-page-reports/issues/1192
 reflecta.network##.cookies-js
 reflecta.network##.cookieNotice
@@ -670,3 +674,9 @@ virgo.hu##+js(trusted-set-local-storage-item, cookiePopupTimestamp, $now$)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1914
 horecaworld.nl##+js(trusted-set-local-storage-item, cookie_popup_horecaworld_nl, '{"data":true,"expiration":2592000,"createdAt":$now$}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1950
+istorepreowned.co.za##+js(trusted-set-cookie, user_allowed_save_cookie, '{"7":1}')
+
+! https://github.com/ghostery/broken-page-reports/issues/1946
+bijouterie-carles.com##+js(trusted-set-cookie, cookieConsent, !youtube=true!vimeo=true!gtm=false!publicite=false)

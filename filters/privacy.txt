@@ -292,26 +292,10 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ||tmstr2.shadowlandschronicles.com/rt_ping.php
 
 ! https://github.com/ghostery/broken-page-reports/issues/1847
-! >>> url=https://djs.dsuaieuscx.lol/
-! ... source=https://supjav.com/377549.html?asgtbndr=1
-! ... type=script
-||dsuaieuscx.lol^
-! >>> url=https://nsl.ruidhs.cfd/j2e4yL3.js
-! ... source=https://supjav.com/377258.html
-! ... type=script
-||ruidhs.cfd^
 ! >>> url=https://supjav.com/fyh-api.php?
 ! ... source=https://supjav.com/377549.html?asgtbndr=1
 ! ... type=script
 ||supjav.com/fyh-api.php^
-! >>> url=https://tombsmanship.click/
-! ... source=https://supjav.com/377549.html?asgtbndr=1
-! ... type=script
-||tombsmanship.click^
-! >>> url=https://video.dmmjp.cc/
-! ... source=https://supjav.com/377549.html?asgtbndr=1
-! ... type=script
-||video.dmmjp.cc^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1853
 ! >>> url=https://lazypecan.com/
