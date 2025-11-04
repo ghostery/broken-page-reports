@@ -20,7 +20,7 @@ const flags: Config["flags"] = {
   ],
   [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
     {
-      percentage: 50,
+      percentage: 0,
       filter: {
         platform: [PLATFORM_CHROMIUM],
       },
