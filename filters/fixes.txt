@@ -1487,7 +1487,7 @@ flagle.io,newatlas.com##+js(aopr, HTMLStyleElement.prototype.remove)
 flagle.io,newatlas.com##+js(aopr, HTMLLinkElement.prototype.remove)
 flagle.io,newatlas.com##+js(aopr, confirm)
 newatlas.com##+js(aopr, atob)
-! >>> url=url=https://evenpatroller.com/loader.min.js
+! >>> url=https://evenpatroller.com/loader.min.js
 ! ... source=https://flagle.io
 ! ... type=script
 ||evenpatroller.com^$domain=flagle.io|newatlas.com
