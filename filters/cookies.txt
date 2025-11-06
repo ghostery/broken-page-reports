@@ -357,10 +357,6 @@ swingkitchen.com##+js(trusted-set-cookie, borlabs-cookie, '{"consents":{"essenti
 ! ... type=script
 ||usercentrics.eu^$domain=snyk.io|app.spendesk.com|notebooksbilliger.de,important
 
-! https://github.com/ghostery/broken-page-reports/issues/1952
-! fixes autoconsent not working
-srf.ch###usercentrics-root
-
 ! https://github.com/ghostery/broken-page-reports/issues/1192
 reflecta.network##.cookies-js
 reflecta.network##.cookieNotice
@@ -680,3 +676,13 @@ istorepreowned.co.za##+js(trusted-set-cookie, user_allowed_save_cookie, '{"7":1}
 
 ! https://github.com/ghostery/broken-page-reports/issues/1946
 bijouterie-carles.com##+js(trusted-set-cookie, cookieConsent, !youtube=true!vimeo=true!gtm=false!publicite=false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1999
+oldmutual.co.za##+js(trusted-set-local-storage, displayCookiePopup, false)
+oldmutual.co.za##+js(trusted-set-local-storage, fs_cookie, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/1994
+enerad.pl##+js(trusted-set-cookie, cp-law-advertising, 0)
+enerad.pl##+js(trusted-set-cookie, cp-law-analytical, 0)
+enerad.pl##+js(trusted-set-cookie, cp-law-necessary, 1)
+enerad.pl##+js(trusted-set-cookie, pc-cookies-law, 1)

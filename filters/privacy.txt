@@ -354,3 +354,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://tvtropes.org/pmwiki/pmwiki.php/Main/TokyoRose
 ! ... type=xhr
 ||tvtropes.org/ajax/a_b_d.php^
+
+! https://github.com/ghostery/broken-page-reports/issues/1997
+! >>> url=https://data.srf.ch/292330999892453/wt?p=457,srf.web.srf.ch.play.tv.srfglobal.video.netanjahu---kriegsverbrecher-oder-politgenie....video,1,2560x1440,30,1,1762449228793,2,1529x1264,0&ct=VerticalScroll&la=en&ck1=2797&ck2=ClickEvent&ck3=VerticalScroll&ck41=Netanjahu – Kriegsverbrecher oder Politgenie? - SRFglobal&ck42=60&pu=https://www.srf.ch/play/tv/srfglobal/video/netanjahu---kriegsverbrecher-oder-politgenie?urn=urn:srf:video:fce1e024-0ddf-417e-8dda-126cb93c8f68
+! ... source=https://www.srf.ch/play/tv/srfglobal/video/netanjahu---kriegsverbrecher-oder-politgenie?urn=urn:srf:video:fce1e024-0ddf-417e-8dda-126cb93c8f68
+! ... type=xhr
+||data.srf.ch^$domain=srf.ch

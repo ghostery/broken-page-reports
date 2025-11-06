@@ -955,3 +955,6 @@ horecaworld.nl#@#.CookiePopup
 
 ! https://github.com/ghostery/broken-page-reports/issues/1965
 mightyskins.com#@#.notify-cookie
+
+! https://github.com/ghostery/broken-page-reports/issues/1994
+enerad.pl#@#.cookies-overlay

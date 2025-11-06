@@ -1477,26 +1477,32 @@ winfuture.de##body[style="overflow: hidden;"]:style(overflow: initial !important
 ! https://github.com/ghostery/broken-page-reports/issues/1919
 ! https://github.com/ghostery/broken-page-reports/issues/1953
 ! https://github.com/ghostery/broken-page-reports/issues/1949
+! https://github.com/ghostery/broken-page-reports/issues/1996
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
 motscroises.fr##+js(trusted-suppress-native-method, String.prototype.concat, '"/^css-load.com$/"|"undefined"', abort)
 motscroises.fr,onlinegdb.com,newsinlevels.com,wetter.com,flagle.io##+js(trusted-suppress-native-method, String.prototype.concat, '"/^html-load.com$/"|"undefined"', abort)
-flagle.io##+js(aopr, HTMLStyleElement.prototype.remove)
-flagle.io##+js(aopr, HTMLLinkElement.prototype.remove)
-flagle.io##+js(aopr, confirm)
+flagle.io,newatlas.com##+js(aopr, HTMLStyleElement.prototype.remove)
+flagle.io,newatlas.com##+js(aopr, HTMLLinkElement.prototype.remove)
+flagle.io,newatlas.com##+js(aopr, confirm)
+newatlas.com##+js(aopr, atob)
+! >>> url=url=https://evenpatroller.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||evenpatroller.com^$domain=flagle.io|newatlas.com
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flagle.io
 ! ... type=script
-||html-load.com^$domain=flagle.io
+||html-load.com^$domain=flagle.io|newatlas.com
 ! >>> url=https://content-loader.com/loader.min.js
 ! ... source=https://flagle.io
 ! ... type=script
-||content-loader.com^$domain=flagle.io
+||content-loader.com^$domain=flagle.io|newatlas.com
 ! >>> url=https://error-report.com/loader.min.js
 ! ... source=https://flagle.io
 ! ... type=script
-||error-report.com^$domain=flagle.io
+||error-report.com^$domain=flagle.io|newatlas.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/1570
 nytimes.com##div[class^="Ad-module_adContainer"]
@@ -1652,6 +1658,39 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1961
 ! https://github.com/ghostery/broken-page-reports/issues/1944
 ! https://github.com/ghostery/broken-page-reports/issues/1943
+! https://github.com/ghostery/broken-page-reports/issues/1998
+! https://github.com/ghostery/broken-page-reports/issues/1991
+! https://github.com/ghostery/broken-page-reports/issues/1989
+! https://github.com/ghostery/broken-page-reports/issues/1986
+! https://github.com/ghostery/broken-page-reports/issues/1983
+! >>> url=https://stw.tirexo.irish/bpcmqpmi
+! ... source=https://www.tirexo.irish/
+! ... type=script
+||stw.tirexo.irish^
+! >>> url=https://ytyeogriluczo.site/ad1
+! ... source=https://www.tirexo.irish/
+! ... type=script
+||ytyeogriluczo.site^
+! >>> url=https://bsyygmcmmkpqrs.com/
+! ... source=https://www3.animeflv.net/
+! ... type=xhr
+||bsyygmcmmkpqrs.com^
+! >>> url=https://khulaexpense.rest/
+! ... source=https://supjav.com/383206.html
+! ... type=script
+||khulaexpense.rest^
+! >>> url=https://4k.fanza18r.online/api/settings/322434
+! ... source=https://supjav.com/383206.html
+! ... type=script
+||fanza18r.online^
+! >>> url=https://jmgqvdhjfidwty.com/
+! ... source=https://sflix.ps/production/first-names-films
+! ... type=xhr
+||jmgqvdhjfidwty.com^
+! >>> url=https://tissoukrookrag.net/
+! ... source=https://sflix.ps/production/first-names-films
+! ... type=script
+||tissoukrookrag.net^
 ! >>> url=https://djs.dsuaieuscx.lol/
 ! ... source=https://supjav.com/377549.html?asgtbndr=1
 ! ... type=script
@@ -2219,8 +2258,11 @@ nerdist.com###ndab-modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/1847
 ! https://github.com/ghostery/broken-page-reports/issues/1957
+! https://github.com/ghostery/broken-page-reports/issues/1991
 turbovidhls.com##+js(set, premium, 1)
 turbovidhls.com##div[style*="absolute"]
+turbovidhls.com###pop1
+turbovidhls.com###pop
 
 ! https://github.com/ghostery/broken-page-reports/issues/1875
 cuitonline.com###adBlockModalOverlay
@@ -2275,3 +2317,38 @@ wallapop.com##div[class^="search-page_SearchPage__topSky"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/1945
 news247.gr##[id^="agora-inread"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2001
+! >>> url=https://venturestream.co.uk/wp-includes/css/dist/block-library/A.style.min.css,qver=6.8.3.pagespeed.cf.6w6iIy5A4f.css
+! ... source=https://venturestream.co.uk/work/
+! ... type=css
+@@||venturestream.co.uk^$1p
+
+! https://github.com/ghostery/broken-page-reports/issues/1995
+albertleatribune.com##[id*="-ad"]
+
+! https://github.com/ghostery/broken-page-reports/issues/1992
+cnn.gr##.main-area > .textlinks:has(a[rel^="sponsored"])
+
+! https://github.com/ghostery/broken-page-reports/issues/1990
+! >>> url=https://deputizepacifistwipe.com/solid.gif?z=
+! ... source=https://bunkr.cr/f/cTamaJrvUg2c0
+! ... type=xhr
+||deputizepacifistwipe.com^
+! >>> url=https://tufarhdweg.com/asgjakbw/aj?6y9rG=mP
+! ... source=https://bunkr.cr/f/cTamaJrvUg2c0
+! ... type=xhr
+||tufarhdweg.com^
+! >>> url=https://szubtepzaka.com/vw/mzeonr
+! ... source=https://bunkr.cr/f/cTamaJrvUg2c0
+! ... type=xhr
+||szubtepzaka.com^
+bunkr.cr##+js(set, aclib, {})
+bunkr.cr##+js(set, aclib.runBanner, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/1985
+! >>> url=https://www.lookmovie2.to/advertising/banner?bid=adv1&w=2560
+! ... source=https://www.lookmovie2.to/
+! ... type=xhr
+||lookmovie2.to/advertising^
+lookmovie2.to##.notifyjs-corner
