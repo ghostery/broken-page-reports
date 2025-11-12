@@ -203,8 +203,10 @@ aparts.pl###cookie-transparency-modal-main
 wideroe.no##.cookie-modal-wrapper
 
 ! https://github.com/ghostery/broken-page-reports/issues/762
+! https://github.com/ghostery/broken-page-reports/issues/2006
 wp.pl##body > .advertisement +div[class]:not([id])
 wp.pl##body > *:style(filter: inherit !important)
+wp.pl##div:has(> a[href]:not([class]):not([id]) > img[src]:not([height]))
 
 ! https://github.com/ghostery/broken-page-reports/issues/775
 ! The cookie modal is not rendered even if the modal was unblock by `sklavenitis.gr#@#.nvcookies-outer`.

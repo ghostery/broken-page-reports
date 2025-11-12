@@ -136,10 +136,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ||t1.p2pplay.pro/api/v1/player^$xhr
 
 ! https://github.com/ghostery/broken-page-reports/issues/1603
-! >>> url=https://grimy-bicycle.com/
-! ... source=https://abysscdn.com/
-! ... type=script
-||grimy-bicycle.com^
 ! >>> url=https://wss.morphify.net/
 ! ... source=https://abysscdn.com/
 ! ... type=web_socket
@@ -257,12 +253,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=xhr
 ||morningstar.com/api/v1/analytics^
 
-! https://github.com/ghostery/broken-page-reports/issues/1791
-! >>> url=https://wedeb.com/
-! ... source=https://9animetv.to/watch/naruto-677?ep=12352
-! ... type=script
-||wedeb.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1778
 ! >>> url=https://api.eu.experiences.engageplatform.com/api/trace/d/record?
 ! ... source=https://www.motorcyclenews.com/news/2025/january/bimota-tera-update/
@@ -312,14 +302,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://5movies.store/wooflix/
 ! ... type=xhr
 ||symboldense.com^
-! >>> url=https://gywwzmejfzkrs.site/
-! ... source=https://5movies.store/wooflix/
-! ... type=xhr
-||gywwzmejfzkrs.site^
-! >>> url=https://huskymeloid.qpon/
-! ... source=https://5movies.store/wooflix/
-! ... type=xhr
-||huskymeloid.qpon^
 ! >>> url=https://tracker.novage.com.ua/
 ! ... source=https://5movies.store/wooflix/
 ! ... type=xhr
@@ -328,10 +310,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://5movies.store/wooflix/
 ! ... type=xhr
 ||tracker.openwebtorrent.com^
-! >>> url=https://unfancyvergers.cfd/
-! ... source=https://5movies.store/wooflix/
-! ... type=xhr
-||unfancyvergers.cfd^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1877
 ! >>> url=https://gridgames.app/api/analytics/count
@@ -360,3 +338,23 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://www.srf.ch/play/tv/srfglobal/video/netanjahu---kriegsverbrecher-oder-politgenie?urn=urn:srf:video:fce1e024-0ddf-417e-8dda-126cb93c8f68
 ! ... type=xhr
 ||data.srf.ch^$domain=srf.ch
+
+! https://github.com/ghostery/broken-page-reports/issues/2013
+! >>> url=https://unpkg.com/detect-gpu@x/
+! ... source=https://christopheruntilpoint.com/
+! ... type=script
+||unpkg.com/detect-gpu$domain=christopheruntilpoint.com
+! >>> url=christopheruntilpoint.com/engine/x.js
+! ... source=https://christopheruntilpoint.com/
+! ... type=script
+||christopheruntilpoint.com/engine^
+! >>> url=christopheruntilpoint.com/build/x.js
+! ... source=https://christopheruntilpoint.com/
+! ... type=script
+||christopheruntilpoint.com/build^
+
+! https://github.com/ghostery/broken-page-reports/issues/1980
+! >>> url=https://readallcomics.com/wp-admin/admin-ajax.php
+! ... source=https://readallcomics.com/batman-robin-year-one-012-2025/
+! ... type=xhr
+||readallcomics.com/wp-admin
