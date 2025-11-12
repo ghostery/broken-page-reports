@@ -2331,18 +2331,6 @@ albertleatribune.com##[id*="-ad"]
 cnn.gr##.main-area > .textlinks:has(a[rel^="sponsored"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1990
-! >>> url=https://deputizepacifistwipe.com/solid.gif?z=
-! ... source=https://bunkr.cr/f/cTamaJrvUg2c0
-! ... type=xhr
-||deputizepacifistwipe.com^
-! >>> url=https://tufarhdweg.com/asgjakbw/aj?6y9rG=mP
-! ... source=https://bunkr.cr/f/cTamaJrvUg2c0
-! ... type=xhr
-||tufarhdweg.com^
-! >>> url=https://szubtepzaka.com/vw/mzeonr
-! ... source=https://bunkr.cr/f/cTamaJrvUg2c0
-! ... type=xhr
-||szubtepzaka.com^
 bunkr.cr##+js(set, aclib, {})
 bunkr.cr##+js(set, aclib.runBanner, noopFunc)
 
@@ -2352,3 +2340,17 @@ bunkr.cr##+js(set, aclib.runBanner, noopFunc)
 ! ... type=xhr
 ||lookmovie2.to/advertising^
 lookmovie2.to##.notifyjs-corner
+
+! https://github.com/ghostery/broken-page-reports/issues/2012
+! >>> url=https://cdn-ster-nl.akamaized.net/STERAD1234.mp4
+! ... source=https://nos.nl/artikel/2577675-mourinho-in-tranen-om-overlijden-oud-aanvoerder-costa-laten-we-voetbal-even-vergeten
+! ... type=media
+||cdn-ster-nl.akamaized.net/STERAD
+! >>> url=adcdn.ster.nl/script/nos.sport.voetbal.artikel.min.js
+! ... source=https://nos.nl/artikel/2577675-mourinho-in-tranen-om-overlijden-oud-aanvoerder-costa-laten-we-voetbal-even-vergeten
+! ... type=script
+||adcdn.ster.nl/script/nos.sport.voetbal.artikel.min.js^
+! >>> url=h3v9p8x2q1r7-agckaeh6g2ehcaes.westeurope-01.azurewebsites.net/vast?
+! ... source=https://nos.nl/artikel/2577675-mourinho-in-tranen-om-overlijden-oud-aanvoerder-costa-laten-we-voetbal-even-vergeten
+! ... type=xhr
+||h3v9p8x2q1r7-agckaeh6g2ehcaes.westeurope-01.azurewebsites.net^$redirect=noop-vast3.xml
