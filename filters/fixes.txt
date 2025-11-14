@@ -1355,44 +1355,6 @@ wdio.com#@#.ad-ticker
 ! ... type=script
 @@||segment.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1406
-! https://github.com/ghostery/broken-page-reports/issues/942
-! https://github.com/ghostery/broken-page-reports/issues/1445
-! https://github.com/ghostery/broken-page-reports/issues/1605
-! https://github.com/ghostery/broken-page-reports/issues/1540
-! >>> url=https://0.as.slashdot.org/
-! ... source=https://slashdot.org/
-! ... type=script
-||as.slashdot.org^$domain=slashdot.org|picrew.me
-! >>> url=https://0.html-load.com/
-! ... source=https://slashdot.org/
-! ... type=script
-||html-load.com^$domain=slashdot.org|picrew.me
-! >>> url=https://0.content-loader.com/
-! ... source=https://slashdot.org/
-! ... type=script
-||content-loader.com^$domain=slashdot.org|picrew.me
-! >>> url=https://error-report.com/
-! ... source=https://slashdot.org/
-! ... type=script
-||error-report.com^$domain=slashdot.org|picrew.me|sourceforge.net
-! >>> url=https://0.as.sourceforge.net/
-! ... source=https://sourceforge.net/projects/analyseplugin/
-! ... type=script
-||as.sourceforge.net^
-! >>> url=https://ads-2479q.iionads.com/hb
-! ... source=https://sourceforge.net/projects/analyseplugin/
-! ... type=script
-||iionads.com^
-! >>> url=https://prebid.loopmertb.com/
-! ... source=https://sourceforge.net/projects/analyseplugin/
-! ... type=script
-||loopmertb.com^
-slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
-slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
-slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
-slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1419
 gazzetta.gr##.admanager-content
 
@@ -1472,12 +1434,56 @@ sourceforge.net###main-nav-badge-link
 winfuture.de###cmpwrapper
 winfuture.de##body[style="overflow: hidden;"]:style(overflow: initial !important)
 
+! https://github.com/ghostery/broken-page-reports/issues/1406
+! https://github.com/ghostery/broken-page-reports/issues/942
+! https://github.com/ghostery/broken-page-reports/issues/1445
+! https://github.com/ghostery/broken-page-reports/issues/1605
+! https://github.com/ghostery/broken-page-reports/issues/1540
+! >>> url=https://ads-2479q.iionads.com/hb
+! ... source=https://sourceforge.net/projects/analyseplugin/
+! ... type=script
+||iionads.com^
+! >>> url=https://prebid.loopmertb.com/
+! ... source=https://sourceforge.net/projects/analyseplugin/
+! ... type=script
+||loopmertb.com^
+
 ! https://github.com/ghostery/broken-page-reports/issues/1047
 ! https://github.com/ghostery/broken-page-reports/issues/1188
 ! https://github.com/ghostery/broken-page-reports/issues/1919
 ! https://github.com/ghostery/broken-page-reports/issues/1953
 ! https://github.com/ghostery/broken-page-reports/issues/1949
 ! https://github.com/ghostery/broken-page-reports/issues/1996
+! https://github.com/ghostery/broken-page-reports/issues/1406
+! https://github.com/ghostery/broken-page-reports/issues/942
+! https://github.com/ghostery/broken-page-reports/issues/1445
+! https://github.com/ghostery/broken-page-reports/issues/1605
+! https://github.com/ghostery/broken-page-reports/issues/1540
+! https://github.com/ghostery/broken-page-reports/issues/2016
+! >>> url=https://evenpatroller.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||evenpatroller.com^$domain=flagle.io|newatlas.com|slashdot.org|picrew.me|weatherzone.com.au
+! >>> url=https://html-load.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||html-load.com^$domain=flagle.io|newatlas.com|slashdot.org|picrew.me|weatherzone.com.au
+! >>> url=https://content-loader.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||content-loader.com^$domain=flagle.io|newatlas.com|slashdot.org|picrew.me|weatherzone.com.au
+! >>> url=https://error-report.com/loader.min.js
+! ... source=https://flagle.io
+! ... type=script
+||error-report.com^$domain=flagle.io|newatlas.com|slashdot.org|picrew.me|sourceforge.net|weatherzone.com.au
+! >>> url=https://0.as.slashdot.org/
+! ... source=https://slashdot.org/
+! ... type=script
+||as.slashdot.org^
+! >>> url=https://0.as.sourceforge.net/
+! ... source=https://sourceforge.net/projects/analyseplugin/
+! ... type=script
+||as.sourceforge.net^
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#trusted-suppress-native-methodjs-
 ! https://github.com/gorhill/uBlock/blob/97d11c03c20bdc15877c342c404f179ca5c63ff6/assets/resources/scriptlets.js#L4872-L4875
 ! Potential behavioral difference on scriptlet arguments: '/x$/' will escape $ but '"/x$/"' won't
@@ -1487,22 +1493,10 @@ flagle.io,newatlas.com##+js(aopr, HTMLStyleElement.prototype.remove)
 flagle.io,newatlas.com##+js(aopr, HTMLLinkElement.prototype.remove)
 flagle.io,newatlas.com##+js(aopr, confirm)
 newatlas.com##+js(aopr, atob)
-! >>> url=https://evenpatroller.com/loader.min.js
-! ... source=https://flagle.io
-! ... type=script
-||evenpatroller.com^$domain=flagle.io|newatlas.com
-! >>> url=https://html-load.com/loader.min.js
-! ... source=https://flagle.io
-! ... type=script
-||html-load.com^$domain=flagle.io|newatlas.com
-! >>> url=https://content-loader.com/loader.min.js
-! ... source=https://flagle.io
-! ... type=script
-||content-loader.com^$domain=flagle.io|newatlas.com
-! >>> url=https://error-report.com/loader.min.js
-! ... source=https://flagle.io
-! ... type=script
-||error-report.com^$domain=flagle.io|newatlas.com
+weatherzone.com.au,slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, atob, '"VGhpcyBwYWdlIGNvdWxkIG5vdCBiZSBsb2Fk"', abort)
+weatherzone.com.au,slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, atob, '"YWRibG9ja2"', abort)
+weatherzone.com.au,slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, URL.prototype.constructor, '"error-report.com"', abort)
+weatherzone.com.au,slashdot.org,picrew.me,tvtv.us,sourceforge.net##+js(trusted-suppress-native-method, console.error, '"html-load.com"', abort)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1570
 nytimes.com##div[class^="Ad-module_adContainer"]
@@ -1663,6 +1657,8 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1989
 ! https://github.com/ghostery/broken-page-reports/issues/1986
 ! https://github.com/ghostery/broken-page-reports/issues/1983
+! https://github.com/ghostery/broken-page-reports/issues/2018
+! https://github.com/ghostery/broken-page-reports/issues/1937
 ! >>> url=https://stw.tirexo.irish/bpcmqpmi
 ! ... source=https://www.tirexo.irish/
 ! ... type=script
@@ -1842,8 +1838,8 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! >>> url=https://sflix.to/ajax/verify
 ! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
 ! ... type=xhr
-/ajax/verify^$domain=sflix.to|gomoviestv.to
-kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch##div[style*="z-index:"][style*="2147483647"]
+/ajax/verify^$domain=sflix.to|gomoviestv.to|himovies.sx
+snowcrows.com,kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch##div[style*="z-index:"][style*="2147483647"]
 faselhds.life##[data-cl-overlay]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
@@ -2354,3 +2350,6 @@ lookmovie2.to##.notifyjs-corner
 ! ... source=https://nos.nl/artikel/2577675-mourinho-in-tranen-om-overlijden-oud-aanvoerder-costa-laten-we-voetbal-even-vergeten
 ! ... type=xhr
 ||h3v9p8x2q1r7-agckaeh6g2ehcaes.westeurope-01.azurewebsites.net^$redirect=noop-vast3.xml
+
+! https://github.com/ghostery/broken-page-reports/issues/1978
+arcadepunks.com##+js(aopr, atob)
