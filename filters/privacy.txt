@@ -354,7 +354,12 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ||christopheruntilpoint.com/build^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1980
+! https://github.com/ghostery/broken-page-reports/issues/1978
 ! >>> url=https://readallcomics.com/wp-admin/admin-ajax.php
 ! ... source=https://readallcomics.com/batman-robin-year-one-012-2025/
 ! ... type=xhr
 ||readallcomics.com/wp-admin
+! >>> url=https://arcadepunks.com/wp-admin/admin-ajax.php
+! ... source=https://www.arcadepunks.com/category/raspberry-pi-images/raspberry-pi-5-retro-gaming-images/
+! ... type=xhr
+||arcadepunks.com/wp-admin

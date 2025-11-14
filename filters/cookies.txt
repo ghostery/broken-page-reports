@@ -688,3 +688,13 @@ enerad.pl##+js(trusted-set-cookie, cp-law-advertising, 0)
 enerad.pl##+js(trusted-set-cookie, cp-law-analytical, 0)
 enerad.pl##+js(trusted-set-cookie, cp-law-necessary, 1)
 enerad.pl##+js(trusted-set-cookie, pc-cookies-law, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/2017
+turunmurre.fi###cc--main
+
+! https://github.com/ghostery/broken-page-reports/issues/1981
+rtp.pt##.didomi-host
+
+! https://github.com/ghostery/broken-page-reports/issues/1936
+bdsmgirl.nl##.cookiebanner__background
+bdsmgirl.nl##body.no-scroll:style(overflow: initial !important; position: initial !important)
