@@ -698,3 +698,7 @@ rtp.pt##.didomi-host
 ! https://github.com/ghostery/broken-page-reports/issues/1936
 bdsmgirl.nl##.cookiebanner__background
 bdsmgirl.nl##body.no-scroll:style(overflow: initial !important; position: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/2039
+smartpress.by##+js(trusted-set-cookie, cookie_agree, '{"MAIN":true,"SYSTEM":false,"ANALITIKA":false}')
+smartpress.by##+js(trusted-set-cookie, cookie_agree_metric, false)
