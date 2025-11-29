@@ -1659,6 +1659,28 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1983
 ! https://github.com/ghostery/broken-page-reports/issues/2018
 ! https://github.com/ghostery/broken-page-reports/issues/1937
+! https://github.com/ghostery/broken-page-reports/issues/2042
+! https://github.com/ghostery/broken-page-reports/issues/2040
+! >>> url=https://dlsite123.online/
+! ... source=https://supjav.com/
+! ... type=xhr
+||dlsite123.online^
+! >>> url=https://coccousmating.qpon/
+! ... source=https://supjav.com/
+! ... type=xhr
+||coccousmating.qpon^
+! >>> url=https://ylgtncvp.com/
+! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
+! ... type=xhr
+||ylgtncvp.com^
+! >>> url=https://viglaumeedaivou.net/
+! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
+! ... type=xhr
+||viglaumeedaivou.net^
+! >>> url=https://wichoaltaisheel.net/
+! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
+! ... type=xhr
+||wichoaltaisheel.net^
 ! >>> url=https://stw.tirexo.irish/bpcmqpmi
 ! ... source=https://www.tirexo.irish/
 ! ... type=script
@@ -1822,7 +1844,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
-||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot|nepu.to
+||cdn.jsdelivr.net/npm/disable-devtool^$domain=cuevana.pro|cuevana.bot|nepu.to|megatuga.io
 ! >>> url=https://madurird.com/tag.min.js
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
@@ -2255,7 +2277,9 @@ nerdist.com###ndab-modal
 ! https://github.com/ghostery/broken-page-reports/issues/1847
 ! https://github.com/ghostery/broken-page-reports/issues/1957
 ! https://github.com/ghostery/broken-page-reports/issues/1991
+! https://github.com/ghostery/broken-page-reports/issues/2042
 turbovidhls.com##+js(set, premium, 1)
+turbovidhls.com##+js(set, open, noopFunc)
 turbovidhls.com##div[style*="absolute"]
 turbovidhls.com###pop1
 turbovidhls.com###pop
@@ -2353,3 +2377,13 @@ lookmovie2.to##.notifyjs-corner
 
 ! https://github.com/ghostery/broken-page-reports/issues/1978
 arcadepunks.com##+js(aopr, atob)
+
+! https://github.com/ghostery/broken-page-reports/issues/2046
+! >>> url=https://havenclick.com/www/delivery/asyncjs.php
+! ... source=https://hentaihaven.xxx/watch/reika-wa-karei-na-boku-no-joou-the-animation/episode-2/
+! ... type=script
+||havenclick.com/www/delivery/asyncjs.php^$redirect=noopjs
+hentaihaven.xxx#@#.adsbox
+
+! https://github.com/ghostery/broken-page-reports/issues/2045
+nytimes.com#@#+js(no-fetch-if, api.theathletic.com/graphql body:/PostEvent|PostImpressions/)

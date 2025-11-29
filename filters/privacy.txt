@@ -282,10 +282,15 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ||tmstr2.shadowlandschronicles.com/rt_ping.php
 
 ! https://github.com/ghostery/broken-page-reports/issues/1847
+! https://github.com/ghostery/broken-page-reports/issues/2042
 ! >>> url=https://supjav.com/fyh-api.php?
 ! ... source=https://supjav.com/377549.html?asgtbndr=1
 ! ... type=script
 ||supjav.com/fyh-api.php^
+! >>> url=https://supjav.com/wp-content/themes/supjav2/static/js/pcmload.js
+! ... source=https://supjav.com/
+! ... type=script
+||supjav.com/wp-content/themes/supjav2/static/js/pcmload.js^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1853
 ! >>> url=https://lazypecan.com/
@@ -355,11 +360,16 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1980
 ! https://github.com/ghostery/broken-page-reports/issues/1978
+! https://github.com/ghostery/broken-page-reports/issues/2040
 ! >>> url=https://readallcomics.com/wp-admin/admin-ajax.php
 ! ... source=https://readallcomics.com/batman-robin-year-one-012-2025/
 ! ... type=xhr
-||readallcomics.com/wp-admin
+||readallcomics.com/wp-admin^
 ! >>> url=https://arcadepunks.com/wp-admin/admin-ajax.php
 ! ... source=https://www.arcadepunks.com/category/raspberry-pi-images/raspberry-pi-5-retro-gaming-images/
 ! ... type=xhr
-||arcadepunks.com/wp-admin
+||arcadepunks.com/wp-admin^
+! >>> url=https://megatuga.io/wp-admin/admin-ajax.php?postviews_id=-1&action=postviews&_=-1
+! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
+! ... type=xhr
+||megatuga.io/wp-admin^

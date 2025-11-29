@@ -958,3 +958,6 @@ mightyskins.com#@#.notify-cookie
 
 ! https://github.com/ghostery/broken-page-reports/issues/1994
 enerad.pl#@#.cookies-overlay
+
+! https://github.com/ghostery/broken-page-reports/issues/2039
+smartpress.by#@#.cookie-notification-wrap
