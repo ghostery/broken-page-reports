@@ -231,15 +231,6 @@ memodo.nl##.datamints-ccm
 ! https://github.com/ghostery/broken-page-reports/issues/249
 new.nortic.se##+js(set-cookie, nortic-cookies-consent, true)
 
-! https://github.com/ghostery/broken-page-reports/issues/743
-! https://github.com/ghostery/broken-page-reports/issues/265
-! https://github.com/ghostery/broken-page-reports/issues/761
-! https://github.com/ghostery/broken-page-reports/issues/956
-! >>> url=https://soulclicking.com/a
-! ... source=https://usatoday.com/
-! ... type=xhr
-||soulclicking.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/264
 fxhome.com##[class^="style_cookiesContainer"]
 
