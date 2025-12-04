@@ -302,10 +302,11 @@ bestbuy.ca###onetrust-consent-sdk
 coastcapitalsavings.com##div.cookies-disclaimer
 
 ! https://github.com/ghostery/broken-page-reports/issues/1060
+! https://github.com/ghostery/broken-page-reports/issues/2037
 ! >>> url=https://sdk.privacy-center.org/sdk/326c6bd191c11b5e1333a693feb3a6027adc6492/modern/sdk.326c6bd191c11b5e1333a693feb3a6027adc6492.js
 ! ... source=https://cinema-series.orange.fr/series/toutes-les-actus/une-fille-m-a-tout-a-coup-traite-de-l-interprete-de-nellie-oleson-la-petite-maison-dans-la-prairie-etait-prise-a-partie-par-le-public-de-la-serie-CNT000002gSIq2.html
 ! ... type=script
-@@||sdk.privacy-center.org^$script,domain=orange.fr
+@@||sdk.privacy-center.org^$script,domain=orange.fr|tf1.fr
 ! >>> url=https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202408060909
 ! ... source=https://cinema-series.orange.fr/series/toutes-les-actus/une-fille-m-a-tout-a-coup-traite-de-l-interprete-de-nellie-oleson-la-petite-maison-dans-la-prairie-etait-prise-a-partie-par-le-public-de-la-serie-CNT000002gSIq2.html
 ! ... type=script
@@ -702,3 +703,6 @@ bdsmgirl.nl##body.no-scroll:style(overflow: initial !important; position: initia
 ! https://github.com/ghostery/broken-page-reports/issues/2039
 smartpress.by##+js(trusted-set-cookie, cookie_agree, '{"MAIN":true,"SYSTEM":false,"ANALITIKA":false}')
 smartpress.by##+js(trusted-set-cookie, cookie_agree_metric, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/2034
+filmaffinity.com##+js(trusted-set-cookie, addtl_consent, "1~")

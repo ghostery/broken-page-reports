@@ -1661,6 +1661,10 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1937
 ! https://github.com/ghostery/broken-page-reports/issues/2042
 ! https://github.com/ghostery/broken-page-reports/issues/2040
+! >>> url=https://photos.kiyonosaki.info/YJj9kg7.js
+! ... source=https://supjav.com/
+! ... type=xhr
+||kiyonosaki.info^
 ! >>> url=https://dlsite123.online/
 ! ... source=https://supjav.com/
 ! ... type=xhr
@@ -2387,3 +2391,14 @@ hentaihaven.xxx#@#.adsbox
 
 ! https://github.com/ghostery/broken-page-reports/issues/2045
 nytimes.com#@#+js(no-fetch-if, api.theathletic.com/graphql body:/PostEvent|PostImpressions/)
+
+! https://github.com/ghostery/broken-page-reports/issues/2043
+! >>> url=https://redecanaistv.bh/che
+! ... source=https://redecanaistv.bh/assistir-premiere-clubes-online-24-horas-ao-vivo_128696632.html
+! ... type=script
+||redecanaistv.bh/che^
+redecanaistv.bh##+js(aopw, DisableDevtool)
+redecanaistv.bh##+js(aopw, Swal)
+
+! https://github.com/ghostery/broken-page-reports/issues/2036
+smythstoys.com#@#div[role="dialog"]
