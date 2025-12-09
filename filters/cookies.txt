@@ -697,3 +697,6 @@ smartpress.by##+js(trusted-set-cookie, cookie_agree_metric, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2034
 filmaffinity.com##+js(trusted-set-cookie, addtl_consent, "1~")
+
+! https://github.com/ghostery/broken-page-reports/issues/2024
+comdirect.de##+js(trusted-set-cookie, cmp_consent, eyJjIjp7InN1cmYiOmZhbHNlLCJZdmRXbjdOSmciOmZhbHNlLCJJcml6b3dJWUwiOmZhbHNlLCJzbWFydGFkIjpmYWxzZSwiYWRvYmUiOmZhbHNlLCJPSzhRUFdRaEgiOmZhbHNlLCJ0dUFkTHZLT2MiOmZhbHNlLCJwZXJzQW5nYiI6ZmFsc2UsImNvbW11bml0eSI6ZmFsc2UsIm1JRUI5Y05LVyI6ZmFsc2V9LCJzdiI6IjMuMSIsImwiOiJkZSIsInJxIjpudWxsLCJpbnQiOm51bGwsImVyIjpudWxsLCJjaWQiOiJlNWY3MDYzNGY4MDE0ZTE1YWNmOTc2YWU2NWI2MGE5NyJ9)
