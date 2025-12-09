@@ -1657,6 +1657,28 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/1937
 ! https://github.com/ghostery/broken-page-reports/issues/2042
 ! https://github.com/ghostery/broken-page-reports/issues/2040
+! https://github.com/ghostery/broken-page-reports/issues/2028
+! >>> url=https://sxyprn.net/js/fad.json?v1
+! ... source=https://sxyprn.net/
+! ... type=script
+||sxyprn.net/js/fad.json^
+! >>> url=https://video.fc2plus.site/bMokW53.js
+! ... source=https://supjav.com/
+! ... type=script
+||fc2plus.site^
+! >>> url=https://dg.exciterintwine.rest/r69379fd5a6138/85313
+! ... source=https://supjav.com/
+! ... type=script
+||exciterintwine.rest^
+! >>> url=https://unpkg.com/detect-gpu
+! ... source=https://supjav.com/
+! ... type=script
+||unpkg.com/detect-gpu
+! The host below actually contributes to the video playback
+! >>> url=https://walterprettytheir.com/engine/update
+! ... source=https://voe.sx/
+! ... type=xhr
+||walterprettytheir.com/engine/update^
 ! >>> url=https://photos.kiyonosaki.info/YJj9kg7.js
 ! ... source=https://supjav.com/
 ! ... type=xhr
@@ -2318,3 +2340,13 @@ redecanaistv.bh##+js(aopw, Swal)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2036
 smythstoys.com#@#div[role="dialog"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2025
+slate.com##dialog.blocker-intercept
+
+! https://github.com/ghostery/broken-page-reports/issues/2023
+! >>> url=https://biz-cdn.varzesh3.com/banners/2025/00/00/00.jpg
+! ... source=https://www.varzesh3.com/
+! ... type=image
+||biz-cdn.varzesh3.com/banners^
+varzesh3.com##a[href*="biz.varzesh3.com"]:has(img[src*="biz-cdn.varzesh3.com/banners/"])
