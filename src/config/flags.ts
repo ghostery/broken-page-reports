@@ -4,7 +4,10 @@ import {
   FLAG_DYNAMIC_DNR_FIXES,
   FLAG_EXTENDED_SELECTORS,
   FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS,
+  FLAG_INJECTION_TARGET_DOCUMENT_ID,
+  FLAG_MODES,
   FLAG_PAUSE_ASSISTANT,
+  FLAG_REDIRECT_PROTECTION,
   PLATFORM_CHROMIUM,
   PLATFORM_FIREFOX,
 } from "@ghostery/config-types";
@@ -36,7 +39,22 @@ const flags: Config["flags"] = {
       percentage: 100,
     },
   ],
+  [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
+    {
+      percentage: 0,
+    },
+  ],
+  [FLAG_MODES]: [
+    {
+      percentage: 0,
+    },
+  ],
   [FLAG_PAUSE_ASSISTANT]: [
+    {
+      percentage: 0,
+    },
+  ],
+  [FLAG_REDIRECT_PROTECTION]: [
     {
       percentage: 0,
     },
