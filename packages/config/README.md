@@ -1,11 +1,11 @@
-# @ghostery/config-types
+# @ghostery/config
 
 Shared TypeScript types for Ghostery remote configuration.
 
 ## Installation
 
 ```bash
-npm install @ghostery/config-types
+npm install @ghostery/config
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install @ghostery/config-types
 ### In TypeScript/JavaScript projects:
 
 ```typescript
-import type { Config, Platform, Action, Flag } from '@ghostery/config-types';
-import { isPlatform, isAction, isFlag } from '@ghostery/config-types';
+import type { Config, Platform, Action, Flag } from '@ghostery/config';
+import { isPlatform, isAction, isFlag } from '@ghostery/config';
 
 // Use the types
 const config: Config = {

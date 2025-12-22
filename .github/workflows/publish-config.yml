@@ -1,18 +1,18 @@
-name: Publish @ghostery/config-types
+name: Publish @ghostery/config
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'packages/config-types/src/**'
+      - 'packages/config/src/**'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/config-types
+        working-directory: ./packages/config
     steps:
       - name: Generate a github token
         id: generate-token
@@ -49,8 +49,8 @@ jobs:
           npm publish --access public
 
           # Commit and push the version bump
-          git add package.json
-          git commit -m "chore: bump @ghostery/config-types to v${NEW_VERSION} [skip ci]"
+          git add package.json package-lock.json
+          git commit -m "chore: bump @ghostery/config to v${NEW_VERSION} [skip ci]"
 
           # Push directly to main (already authenticated via checkout)
           git push origin main
