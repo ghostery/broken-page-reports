@@ -8,7 +8,7 @@ import {
   isAction,
   isPlatform,
   Platform,
-} from "@ghostery/config-types";
+} from "@ghostery/config";
 import flags from "./flags.ts";
 
 const config: Config = {

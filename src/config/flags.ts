@@ -1,4 +1,4 @@
-import { Config } from "@ghostery/config-types";
+import { Config } from "@ghostery/config";
 import {
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
   FLAG_DYNAMIC_DNR_FIXES,
@@ -10,7 +10,7 @@ import {
   FLAG_REDIRECT_PROTECTION,
   PLATFORM_CHROMIUM,
   PLATFORM_FIREFOX,
-} from "@ghostery/config-types";
+} from "@ghostery/config";
 
 const flags: Config["flags"] = {
   [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
