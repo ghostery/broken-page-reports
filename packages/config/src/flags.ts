@@ -12,6 +12,8 @@ export const FLAG_INJECTION_TARGET_DOCUMENT_ID = "injection-target-document-id";
 export const FLAG_MODES = "modes";
 export const FLAG_PAUSE_ASSISTANT = "pause-assistant";
 export const FLAG_REDIRECT_PROTECTION = "redirect-protection";
+export const FLAG_ONBOARDING_SURVEY = "onboarding-survey";
+export const FLAG_NOTIFICATION_REVIEW = "notification-review";
 
 export const FLAGS = [
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
@@ -22,6 +24,8 @@ export const FLAGS = [
   FLAG_MODES,
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
+  FLAG_ONBOARDING_SURVEY,
+  FLAG_NOTIFICATION_REVIEW,
 ] as const;
 
 export type Flag = typeof FLAGS[number];

@@ -1,11 +1,13 @@
-import { Config } from "@ghostery/config";
 import {
+  Config,
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
   FLAG_DYNAMIC_DNR_FIXES,
   FLAG_EXTENDED_SELECTORS,
   FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS,
   FLAG_INJECTION_TARGET_DOCUMENT_ID,
   FLAG_MODES,
+  FLAG_NOTIFICATION_REVIEW,
+  FLAG_ONBOARDING_SURVEY,
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
   PLATFORM_CHROMIUM,
@@ -55,6 +57,16 @@ const flags: Config["flags"] = {
     },
   ],
   [FLAG_REDIRECT_PROTECTION]: [
+    {
+      percentage: 0,
+    },
+  ],
+  [FLAG_ONBOARDING_SURVEY]: [
+    {
+      percentage: 0,
+    },
+  ],
+  [FLAG_NOTIFICATION_REVIEW]: [
     {
       percentage: 0,
     },
