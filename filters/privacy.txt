@@ -373,3 +373,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
 ! ... type=xhr
 ||megatuga.io/wp-admin^
+
+! https://github.com/ghostery/broken-page-reports/issues/2063
+! >>> url=https://cza2.crazygames.com/event
+! ... source=https://www.crazygames.com/game/ascendant-hero
+! ... type=xhr
+||crazygames.com/event^$ping,xhr

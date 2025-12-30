@@ -2300,3 +2300,11 @@ slate.com##dialog.blocker-intercept
 ! ... type=image
 ||biz-cdn.varzesh3.com/banners^
 varzesh3.com##a[href*="biz.varzesh3.com"]:has(img[src*="biz-cdn.varzesh3.com/banners/"])
+
+! https://github.com/ghostery/broken-page-reports/issues/2063
+! >>> url=https://d1jnah55gjr3f2.cloudfront.net/bl-7324821-c1e4640e.js
+! ... source=https://www.crazygames.com/game/ascendant-hero
+! ... type=script
+||d1jnah55gjr3f2.cloudfront.net^
+crazygames.com##+js(set, CrazygamesAds, {})
+crazygames.com##+js(set, CrazygamesAds.hasAdblock, falseFunc)
