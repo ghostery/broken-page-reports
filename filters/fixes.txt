@@ -1608,6 +1608,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2042
 ! https://github.com/ghostery/broken-page-reports/issues/2040
 ! https://github.com/ghostery/broken-page-reports/issues/2028
+! https://github.com/ghostery/broken-page-reports/issues/2050
 ! >>> url=https://sxyprn.net/js/fad.json?v1
 ! ... source=https://sxyprn.net/
 ! ... type=script
@@ -1753,7 +1754,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
 ! ... type=xhr
 /ajax/verify^$domain=sflix.to|gomoviestv.to|himovies.sx
-snowcrows.com,kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch##div[style*="z-index:"][style*="2147483647"]
+tpi.li,snowcrows.com,kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch##div[style*="z-index:"][style*="2147483647"]
 faselhds.life##[data-cl-overlay]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
@@ -2123,8 +2124,9 @@ androidpolice.com##dialog.adblock
 ||readcomiconline.li/Ads/pub300a.aspx^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1823
-oii.la##.box-main:has(.banner.banner-captcha)
-oii.la###adb_detected
+! https://github.com/ghostery/broken-page-reports/issues/2050
+tpi.li,oii.la##.box-main:has(.banner.banner-captcha)
+tpi.li,oii.la###adb_detected
 
 ! https://github.com/ghostery/broken-page-reports/issues/1766
 zonaaps.com###antiAdblockOverlay
@@ -2308,3 +2310,6 @@ varzesh3.com##a[href*="biz.varzesh3.com"]:has(img[src*="biz-cdn.varzesh3.com/ban
 ||d1jnah55gjr3f2.cloudfront.net^
 crazygames.com##+js(set, CrazygamesAds, {})
 crazygames.com##+js(set, CrazygamesAds.hasAdblock, falseFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/2021
+linkvegastheme.com##.AdBlocker
