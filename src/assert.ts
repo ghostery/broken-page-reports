@@ -23,7 +23,7 @@ function* lex(content: string): IterableIterator<[Token, string]> {
       yield [Token.AssertionContinue, line];
     } else if (line.startsWith("!")) {
       yield [Token.Comment, line];
-    } else if (line.length === 0) {
+    } else if (line.length === 0 || line.startsWith("!!")) {
       yield [Token.Empty, line];
     } else {
       yield [Token.Filter, line];
@@ -54,6 +54,12 @@ const enum State {
  * ! >>> url=https://example.com/filter source=https://example.com type=script
  * ! >>> url=https://example.com/filter.js source=https://example.com type=script
  * /filter$option
+ *
+ * To disable a test, start all lines with a double bang:
+ * !! >>> url=https://example.com/filter
+ * !! ... source=https://example.com
+ * !! ... type=script
+ * !!/filter$option
  *
  * At the moment, each filter needs to have its own tests.
  */

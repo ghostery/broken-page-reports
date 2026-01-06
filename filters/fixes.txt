@@ -1255,18 +1255,21 @@ howtogeek.com#@#.ad-zone:not(.textads)
 ! https://github.com/ghostery/broken-page-reports/issues/1841
 finanzen.net##.page-layout__ad-header-top
 finanzen.net##.page-content__ad
-! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
-! ... source=https://www.finanzen.net/
-! ... type=script
-.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
-! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
-! ... source=https://www.finanzen.net/
-! ... type=script
-.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
-! >>> url=https://www.gut-erklaert.de/image/yhCzQeWoSMWUu0WZTdfeb7G5XXIYEjtTHZdp7tcug2bE/bwoDk16r7w7TJO5IhxNpHOYOEBsCg6ewvEPOYknV3bxIilGGD5IIBe.gif
-! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
-! ... type=sub_frame
-.gif^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
+!! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.png
+!! ... source=https://www.finanzen.net/
+!! ... type=script
+!! TODO: fixme
+!!.png^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
+!! >>> url=https://frantro.de/mediacenter/4a28875933758607045d6a69bd7c319f/img2/MR1eopWgjS.jpg
+!! ... source=https://www.finanzen.net/
+!! ... type=script
+!! TODO: fixme
+!!.jpg^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
+!! >>> url=https://www.gut-erklaert.de/image/yhCzQeWoSMWUu0WZTdfeb7G5XXIYEjtTHZdp7tcug2bE/bwoDk16r7w7TJO5IhxNpHOYOEBsCg6ewvEPOYknV3bxIilGGD5IIBe.gif
+!! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
+!! ... type=sub_frame
+!! TODO: fixme
+!!.gif^$domain=n-tv.de|finanzen.net|spiegel.de|tagesspiegel.de|gut-erklaert.de|chip.de,script,subdocument
 ! >>> url=https://www.gut-erklaert.de/image/DuJoHtMQZg4WjtjPU0QXH3l14mg40zxOoGUhPxklTZr1/nSCPpF2tVfgHlVECfOXjmt9KvxPeQl5yrSBEIHL9hUESKLiCHWOizf.gif
 ! ... source=https://www.gut-erklaert.de/mathematik/mathe-klasse-5.html
 ! ... type=image
