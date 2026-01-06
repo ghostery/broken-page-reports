@@ -2282,6 +2282,9 @@ hentaihaven.xxx#@#.adsbox
 ! https://github.com/ghostery/broken-page-reports/issues/2045
 nytimes.com#@#+js(no-fetch-if, api.theathletic.com/graphql body:/PostEvent|PostImpressions/)
 
+! https://github.com/ghostery/broken-page-reports/issues/2069
+nytimes.com,nytimes3xbfgragh.onion#@#:xpath(//div[starts-with(@id, "dfp-ad")]/../..)
+
 ! https://github.com/ghostery/broken-page-reports/issues/2043
 ! >>> url=https://redecanaistv.bh/che
 ! ... source=https://redecanaistv.bh/assistir-premiere-clubes-online-24-horas-ao-vivo_128696632.html
