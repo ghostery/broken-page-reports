@@ -3,6 +3,10 @@
 ! Version: {{version}}
 
 !#if env_experimental
-! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com
+! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com and blocks media type requests
 ghostery.com##.ds-footer-copyrights
+! >>> url=https://cdn.ghostery.com/website/wp-content/uploads/2019/10/08153211/ghostery_promo.mp4
+! ... source=https://ghostery.com
+! ... type=media
+||ghostery.com^$1p,media
 !#endif
