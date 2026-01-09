@@ -2,14 +2,6 @@
 ! Expires: 4 hours
 ! Version: {{version}}
 
-! The below are testing-only filters, these can be moved to under experimental preprocessor block once we support preprocessors for network filters
-! See https://github.com/ghostery/ghostery-extension for more details.
-localhost-d852b32d736737b18a1963a42210b8ba.testing.ghostery.com##h1
-! >>> url=http://localhost-d852b32d736737b18a1963a42210b8ba.testing.ghostery.com/iframe.html
-! ... source=http://localhost-d852b32d736737b18a1963a42210b8ba.testing.ghostery.com/
-! ... type=xhr
-||localhost-d852b32d736737b18a1963a42210b8ba.testing.ghostery.com/iframe.html^
-
 !#if env_experimental
 ! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com and blocks media type requests
 ghostery.com##.ds-footer-copyrights
