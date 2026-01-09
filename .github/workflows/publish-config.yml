@@ -8,13 +8,12 @@ on:
       - 'packages/config/src/**'
       - '.github/workflows/publish-config.yml'
 
-permissions:
-  contents: write
-  id-token: write
-
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     defaults:
       run:
         working-directory: ./packages/config
