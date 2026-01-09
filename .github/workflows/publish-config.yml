@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'packages/config/src/**'
+      - '.github/workflows/publish-config.yml'
 
 permissions:
   contents: write
@@ -31,8 +32,9 @@ jobs:
 
       - uses: jdx/mise-action@v2
 
-      - name: Configure npm registry
-        run: npm config set registry https://registry.npmjs.org/
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://registry.npmjs.org'
 
       - run: npm ci
       - run: npm run test
