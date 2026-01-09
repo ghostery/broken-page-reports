@@ -3,6 +3,6 @@
 ! Version: {{version}}
 
 !#if env_experimental
-! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com and blocks media type requests
+! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com
 ghostery.com##.ds-footer-copyrights
 !#endif
