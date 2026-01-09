@@ -2,11 +2,15 @@
 ! Expires: 4 hours
 ! Version: {{version}}
 
+! The below are testing-only filters, these can be moved to under experimental preprocessor block once we support preprocessors for network filters
+! See https://github.com/ghostery/ghostery-extension for more details.
+page.localhost###[ghostery="9ff7d853d801245fd40ecb7e880fa3a9a43a572f09c18827d63e5a0337f0e776"]
+! >>> url=http://page.localhost/ghostery/a2e174a903d7b78eac564c2a93236f64e222b7dd2646a44fcb5da9a9ccc7ec95
+! ... source=http://page.localhost/
+! ... type=xhr
+||page.localhost/ghostery/a2e174a903d7b78eac564c2a93236f64e222b7dd2646a44fcb5da9a9ccc7ec95^
+
 !#if env_experimental
 ! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com and blocks media type requests
 ghostery.com##.ds-footer-copyrights
-! >>> url=https://cdn.ghostery.com/website/wp-content/uploads/2019/10/08153211/ghostery_promo.mp4
-! ... source=https://ghostery.com
-! ... type=media
-||ghostery.com^$1p,media
 !#endif
