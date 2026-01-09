@@ -1,4 +1,4 @@
-// Copyright 2025 Ghostery GmbH
+// Copyright 2025-2026 Ghostery GmbH
 //
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file or at
