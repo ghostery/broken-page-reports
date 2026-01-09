@@ -20,18 +20,18 @@ jobs:
     steps:
       - name: Generate a github token
         id: generate-token
-        uses: actions/create-github-app-token@v1
+        uses: actions/create-github-app-token@v2
         with:
           app-id: ${{ secrets.ADBLOCKERBOT_APP_ID }}
           private-key: ${{ secrets.ADBLOCKERBOT_PRIVATE_KEY }}
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ steps.generate-token.outputs.token }}
 
-      - uses: jdx/mise-action@v2
+      - uses: jdx/mise-action@v3
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           registry-url: 'https://registry.npmjs.org'
 
