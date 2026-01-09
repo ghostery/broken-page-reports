@@ -7,6 +7,10 @@ on:
     paths:
       - 'packages/config/src/**'
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -27,6 +31,9 @@ jobs:
 
       - uses: jdx/mise-action@v2
 
+      - name: Configure npm registry
+        run: npm config set registry https://registry.npmjs.org/
+
       - run: npm ci
       - run: npm run test
       - run: npm run build
@@ -36,17 +43,13 @@ jobs:
           git config user.name "Ghostery Adblocker Bot"
           git config user.email "ghostery-adblocker-bot@users.noreply.github.com"
 
-      - name: Setup npm authentication
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       - name: Bump version and publish
         run: |
           npm version patch --no-git-tag-version
 
           NEW_VERSION=$(node -p "require('./package.json').version")
 
-          npm publish --access public
+          npm publish --provenance --access public
 
           # Commit and push the version bump
           git add package.json package-lock.json
