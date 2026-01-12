@@ -26,6 +26,11 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghostery/broken-page-reports",
+    "directory": "packages/config"
+  },
   "publishConfig": {
     "access": "public"
   },
