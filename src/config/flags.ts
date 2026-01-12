@@ -43,7 +43,7 @@ const flags: Config["flags"] = {
   ],
   [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
     {
-      percentage: 25,
+      percentage: 100,
     },
   ],
   [FLAG_MODES]: [
