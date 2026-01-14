@@ -2322,3 +2322,6 @@ linkvegastheme.com##.AdBlocker
 
 ! https://github.com/ghostery/broken-page-reports/issues/2090
 wetter.com##+js(set, wcomAdBlock, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/2089
+haxnode.net##body>div[id][class]:has(h4.adblock_title)
