@@ -2319,3 +2319,6 @@ crazygames.com##+js(set, CrazygamesAds.hasAdblock, falseFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2021
 linkvegastheme.com##.AdBlocker
+
+! https://github.com/ghostery/broken-page-reports/issues/2090
+wetter.com##+js(set, wcomAdBlock, noopFunc)
