@@ -6,12 +6,12 @@
 
 export const PLATFORM_CHROMIUM = "chromium";
 export const PLATFORM_FIREFOX = "firefox";
-export const PLATFORM_SAFARI = "safari";
+export const PLATFORM_WEBKIT = "webkit";
 
 export const PLATFORMS = [
   PLATFORM_CHROMIUM,
   PLATFORM_FIREFOX,
-  PLATFORM_SAFARI,
+  PLATFORM_WEBKIT,
 ] as const;
 
 export type Platform = typeof PLATFORMS[number];
