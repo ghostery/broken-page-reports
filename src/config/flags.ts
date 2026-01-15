@@ -10,7 +10,6 @@ import {
   FLAG_ONBOARDING_SURVEY,
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
-  PLATFORM_CHROMIUM,
   PLATFORM_FIREFOX,
 } from "@ghostery/config";
 
@@ -26,9 +25,6 @@ const flags: Config["flags"] = {
   [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
     {
       percentage: 100,
-      filter: {
-        platform: [PLATFORM_CHROMIUM],
-      },
     },
   ],
   [FLAG_EXTENDED_SELECTORS]: [
