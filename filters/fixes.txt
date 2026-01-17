@@ -2325,3 +2325,11 @@ wetter.com##+js(set, wcomAdBlock, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2089
 haxnode.net##body>div[id][class]:has(h4.adblock_title)
+
+! https://github.com/ghostery/broken-page-reports/issues/1487
+! >>> url=https://as.slashdot.org/loader.min.js
+! ... source=https://slashdot.org/
+! ... type=script
+||as.slashdot.org^
+slashdot.org##+js(set, asload, noopFunc)
+
