@@ -11,6 +11,7 @@ import {
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
   PLATFORM_FIREFOX,
+  FLAG_SUBFRAME_SCRIPTING,
 } from "@ghostery/config";
 
 const flags: Config["flags"] = {
@@ -67,6 +68,11 @@ const flags: Config["flags"] = {
       percentage: 0,
     },
   ],
+  [FLAG_SUBFRAME_SCRIPTING]: [
+    {
+      percentage: 0,
+    }
+  ]
 };
 
 export default flags;
