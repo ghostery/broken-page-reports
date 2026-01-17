@@ -2333,3 +2333,5 @@ haxnode.net##body>div[id][class]:has(h4.adblock_title)
 ||as.slashdot.org^
 slashdot.org##+js(set, asload, noopFunc)
 
+! https://github.com/ghostery/broken-page-reports/issues/2053
+newatlas.com##+js(set, window.addEventListener.bind, noopFunc)
