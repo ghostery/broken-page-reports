@@ -385,3 +385,7 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://s.to/
 ! ... type=image
 ||lauradaydo.com/engine/jwplayer/jwplayer6^$image
+! >>> url=https://lauradaydo.com/build/assets/27-SABxh.js
+! ... source=https://lauradaydo.com/e/g44ret23ogb4
+! ... type=script
+||lauradaydo.com/build/assets^$script,css
