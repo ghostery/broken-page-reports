@@ -1612,6 +1612,10 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2040
 ! https://github.com/ghostery/broken-page-reports/issues/2028
 ! https://github.com/ghostery/broken-page-reports/issues/2050
+! >>> url=https://otaku.otakusphere.online/sexH5g1.js
+! ... source=https://supjav.com/
+! ... type=script
+||otakusphere.online^
 ! >>> url=https://sxyprn.net/js/fad.json?v1
 ! ... source=https://sxyprn.net/
 ! ... type=script
