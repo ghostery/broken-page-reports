@@ -1612,6 +1612,15 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2040
 ! https://github.com/ghostery/broken-page-reports/issues/2028
 ! https://github.com/ghostery/broken-page-reports/issues/2050
+! https://github.com/ghostery/broken-page-reports/issues/2097
+! >>> url=https://tfgskelvojntao.com/
+! ... source=https://hianime.to/
+! ... type=xhr
+||tfgskelvojntao.com^
+! >>> url=https://boutomeeshaul.com/
+! ... source=https://hianime.to/
+! ... type=xhr
+||boutomeeshaul.com^
 ! >>> url=https://otaku.otakusphere.online/sexH5g1.js
 ! ... source=https://supjav.com/
 ! ... type=script
