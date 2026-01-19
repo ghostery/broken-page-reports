@@ -379,3 +379,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://www.crazygames.com/game/ascendant-hero
 ! ... type=xhr
 ||crazygames.com/event^$ping,xhr
+
+! https://github.com/ghostery/broken-page-reports/issues/1938
+! >>> url=https://lauradaydo.com/engine/jwplayer/jwplayer6/c4585c1c9c1a4486eb650df09e3a4657.gif
+! ... source=https://s.to/
+! ... type=image
+||lauradaydo.com/engine/jwplayer/jwplayer6^$image
