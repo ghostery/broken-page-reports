@@ -1613,6 +1613,11 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2028
 ! https://github.com/ghostery/broken-page-reports/issues/2050
 ! https://github.com/ghostery/broken-page-reports/issues/2097
+! https://github.com/ghostery/broken-page-reports/issues/1932
+! >>> url=https://jj.filtreyoking.com/sY9Bq0HKwZkSog/130235
+! ... source=https://hdtodayz.uk/watch-tv/watch-delhi-crime-movies-free-42159.5369668
+! ... type=script
+||filtreyoking.com^
 ! >>> url=https://tfgskelvojntao.com/
 ! ... source=https://hianime.to/
 ! ... type=xhr
