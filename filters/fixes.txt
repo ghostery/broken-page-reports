@@ -2339,3 +2339,6 @@ slashdot.org##+js(set, asload, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2053
 newatlas.com##+js(set, window.addEventListener.bind, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/1934
+noromax01.my.id###div[class*="Overlay"][style*="absolute"]
