@@ -389,3 +389,9 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://lauradaydo.com/e/g44ret23ogb4
 ! ... type=script
 ||lauradaydo.com/build/assets^$script,css
+
+! https://github.com/ghostery/broken-page-reports/issues/1935
+! >>> url=https://qt.dungingkylikes.com/rRUn3Fsw9TjdwiqJ/128935
+! ... source=https://multicanaishd.boats/
+! ... type=script
+||dungingkylikes.com^
