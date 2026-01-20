@@ -2356,3 +2356,6 @@ newatlas.com##+js(set, window.addEventListener.bind, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1934
 noromax01.my.id###div[class*="Overlay"][style*="absolute"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2101
+wp.pl##div:has(>img[role="presentation"]~script)
