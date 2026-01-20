@@ -704,3 +704,7 @@ comdirect.de##+js(trusted-set-cookie, cmp_consent, eyJjIjp7InN1cmYiOmZhbHNlLCJZd
 ! https://github.com/ghostery/broken-page-reports/issues/2058
 standaardboekhandel.be#@#.modal-backdrop
 standaardboekhandel.be#@#.modal
+
+! https://github.com/ghostery/broken-page-reports/issues/2100
+onet.pl##div.cmp-app_gdpr
+onet.pl##body.cmp:style(overflow: initial !important)
