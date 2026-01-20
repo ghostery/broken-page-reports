@@ -395,3 +395,12 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... source=https://multicanaishd.boats/
 ! ... type=script
 ||dungingkylikes.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/2100
+! >>> url=https://csr.onet.pl/1746213/me?domain=www.onet.pl&ver=1
+! ... source=https://www.onet.pl/informacje/onetwiadomosci/waldemar-zurek-reaguje-na-szokujacy-wyrok-sadu-pisze-o-bezprawiu/t7vc7ye,79cfc278
+! ... type=xhr
+||csr.onet.pl^
+onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
+onet.pl##+js(aopr, HTMLScriptElement.prototype.onload)
+onet.pl##+js(aopr, HTMLScriptElement.prototype.onerror)

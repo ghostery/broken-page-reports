@@ -961,3 +961,9 @@ enerad.pl#@#.cookies-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/2039
 smartpress.by#@#.cookie-notification-wrap
+
+! https://github.com/ghostery/broken-page-reports/issues/2100
+! >>> url=https://sgqcvfjvr.onet.pl/build/dlApi/dl.cmp.min.js?4&80a1220f6cd318d126c17f1179e2ad7e
+! ... source=https://www.onet.pl/informacje/onetwiadomosci/waldemar-zurek-reaguje-na-szokujacy-wyrok-sadu-pisze-o-bezprawiu/t7vc7ye,79cfc278
+! ... type=script
+@@/(?:\/dl\-web\-pixel\.js)|(?:\/dl\.cmp\.min\.js)/$domain=onet.pl
