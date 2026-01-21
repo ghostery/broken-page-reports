@@ -2359,3 +2359,14 @@ noromax01.my.id###div[class*="Overlay"][style*="absolute"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2101
 wp.pl##div:has(>img[role="presentation"]~script)
+
+! https://github.com/ghostery/broken-page-reports/issues/2088
+! >>> url=https://imasdk.googleapis.com/js/sdkloader/ima3.js
+! ... source=https://49ers.com/
+! ... type=script
+||imasdk.googleapis.com/js/sdkloader/ima3.js^$redirect=google-ima.js
+! >>> url=https://imasdk.googleapis.com/js/sdkloader/ima3_dai.js
+! ... source=https://49ers.com/
+! ... type=script
+||imasdk.googleapis.com/js/sdkloader/ima3_dai.js^$redirect=google-ima.js
+49ers.com##+js(trusted-replace-argument, String.prototype.includes, 0, repl:/googleads/google/)
