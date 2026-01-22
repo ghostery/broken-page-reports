@@ -708,3 +708,6 @@ standaardboekhandel.be#@#.modal
 ! https://github.com/ghostery/broken-page-reports/issues/2100
 onet.pl##div.cmp-app_gdpr
 onet.pl##body.cmp:style(overflow: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/2104
+consumentenbond.nl##div[data-test-consent-banner]
