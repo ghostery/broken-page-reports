@@ -967,3 +967,7 @@ smartpress.by#@#.cookie-notification-wrap
 ! ... source=https://www.onet.pl/informacje/onetwiadomosci/waldemar-zurek-reaguje-na-szokujacy-wyrok-sadu-pisze-o-bezprawiu/t7vc7ye,79cfc278
 ! ... type=script
 @@/(?:\/dl\-web\-pixel\.js)|(?:\/dl\.cmp\.min\.js)/$domain=onet.pl
+
+! https://github.com/ghostery/broken-page-reports/issues/2107
+sonnetsoftware.com#@##cookie-status-widget-holder
+sonnetsoftware.com#@#.cookie-widget-holder
