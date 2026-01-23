@@ -711,3 +711,6 @@ onet.pl##body.cmp:style(overflow: initial !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2104
 consumentenbond.nl##div[data-test-consent-banner]
+
+! https://github.com/ghostery/broken-page-reports/issues/2107
+sonnetsoftware.com##+js(trusted-set-local-storage-item, 'https://www.sonnetsoftware.com/support/doc_19.52', '{".cookies_status":false}')
