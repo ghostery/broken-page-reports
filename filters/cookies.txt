@@ -714,3 +714,6 @@ consumentenbond.nl##div[data-test-consent-banner]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2107
 sonnetsoftware.com##+js(trusted-set-local-storage-item, 'https://www.sonnetsoftware.com/support/doc_19.52', '{".cookies_status":false}')
+
+! https://github.com/ghostery/broken-page-reports/issues/2109
+lancecamper.com##.gdpr-settings
