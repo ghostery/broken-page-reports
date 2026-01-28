@@ -10,6 +10,7 @@ import {
   FLAG_ONBOARDING_SURVEY,
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
+  FLAG_SUBFRAME_SCRIPTING,
   PLATFORM_FIREFOX,
 } from "@ghostery/config";
 
@@ -63,6 +64,11 @@ const flags: Config["flags"] = {
     },
   ],
   [FLAG_NOTIFICATION_REVIEW]: [
+    {
+      percentage: 0,
+    },
+  ],
+  [FLAG_SUBFRAME_SCRIPTING]: [
     {
       percentage: 0,
     },
