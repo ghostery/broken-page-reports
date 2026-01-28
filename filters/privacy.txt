@@ -402,5 +402,3 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=xhr
 ||csr.onet.pl^
 onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
-onet.pl##+js(aopr, HTMLScriptElement.prototype.onload)
-onet.pl##+js(aopr, HTMLScriptElement.prototype.onerror)
