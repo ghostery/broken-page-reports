@@ -421,16 +421,6 @@ vr-immoprofis.de#@#div.cookie-consent
 ! ... type=script
 @@||piano.io^$3p
 
-! Fix https://github.com/ghostery/ghostery-extension/issues/1381
-! >>> url=https://app.panobi.com/api/v1/metrics/test
-! ... source=https://app.panobi.com
-! ... type=script
-@@/api/v1/metrics$1p
-! >>> url=https://app.test.com/api/v1/metrics/test
-! ... source=https://app.panobi.com
-! ... type=script
-/api/v1/metrics$3p
-
 ! Unbreak digitalroute.com
 ! https://github.com/ghostery/broken-page-reports/issues/384
 digitalroute.com###myModal
@@ -1614,18 +1604,15 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2050
 ! https://github.com/ghostery/broken-page-reports/issues/2097
 ! https://github.com/ghostery/broken-page-reports/issues/1932
+! https://github.com/ghostery/broken-page-reports/issues/2112
+! >>> url=https://mosnmavkefyo.com/
+! ... source=https://hianime.to/watch/jujutsu-kaisen-the-culling-game-part-1-20401?ep=162345
+! ... type=xhr
+||mosnmavkefyo.com^
 ! >>> url=https://jj.filtreyoking.com/sY9Bq0HKwZkSog/130235
 ! ... source=https://hdtodayz.uk/watch-tv/watch-delhi-crime-movies-free-42159.5369668
 ! ... type=script
 ||filtreyoking.com^
-! >>> url=https://tfgskelvojntao.com/
-! ... source=https://hianime.to/
-! ... type=xhr
-||tfgskelvojntao.com^
-! >>> url=https://boutomeeshaul.com/
-! ... source=https://hianime.to/
-! ... type=xhr
-||boutomeeshaul.com^
 ! >>> url=https://otaku.otakusphere.online/sexH5g1.js
 ! ... source=https://supjav.com/
 ! ... type=script
@@ -1638,10 +1625,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://supjav.com/
 ! ... type=script
 ||fc2plus.site^
-! >>> url=https://dg.exciterintwine.rest/r69379fd5a6138/85313
-! ... source=https://supjav.com/
-! ... type=script
-||exciterintwine.rest^
 ! >>> url=https://unpkg.com/detect-gpu
 ! ... source=https://supjav.com/
 ! ... type=script
@@ -1659,14 +1642,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://supjav.com/
 ! ... type=xhr
 ||coccousmating.qpon^
-! >>> url=https://viglaumeedaivou.net/
-! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
-! ... type=xhr
-||viglaumeedaivou.net^
-! >>> url=https://wichoaltaisheel.net/
-! ... source=https://megatuga.io/lua-vermelha-nova-geracao/
-! ... type=xhr
-||wichoaltaisheel.net^
 ! >>> url=https://stw.tirexo.irish/bpcmqpmi
 ! ... source=https://www.tirexo.irish/
 ! ... type=script
@@ -1675,18 +1650,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://www.tirexo.irish/
 ! ... type=script
 ||ytyeogriluczo.site^
-! >>> url=https://khulaexpense.rest/
-! ... source=https://supjav.com/383206.html
-! ... type=script
-||khulaexpense.rest^
-! >>> url=https://tombsmanship.click/
-! ... source=https://supjav.com/377549.html?asgtbndr=1
-! ... type=script
-||tombsmanship.click^
-! >>> url=https://bugaraarborea.click/r6900f5ec572f0/85313
-! ... source=https://supjav.com/381631.html
-! ... type=script
-||bugaraarborea.click^
 ! >>> url=https://imbutepierces.qpon/gd/114809?
 ! ... source=https://flixhq.to/tv/watch-tulsa-king-90169
 ! ... type=script
@@ -1695,10 +1658,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://stream.youxxjav.xyz/JIv8GQ9.js
 ! ... type=script
 ||youxxjav.xyz^
-! >>> url=https://beeswaxfreshly.click/r68ff999f5c6fb/85313
-! ... source=https://supjav.com/381106.html
-! ... type=script
-||beeswaxfreshly.click^
 ! >>> url=https://ver02.sptvp.com/watch?videoID=A&userID=B
 ! ... source=https://supjav.com/381106.html
 ! ... type=xhr
@@ -1743,10 +1702,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://sextb.net/sb6xyfslu
 ! ... type=script
 ||wn4wztsx.xyz^
-! >>> url=https://sagbutsmonaul.cfd/
-! ... source=https://strikeout.im/english-championship/2/derby-county-vs-norwich-city-stream
-! ... type=script
-||sagbutsmonaul.cfd^
 ! >>> url=https://vk.justspoisure.com/
 ! ... source=https://gomoviestv.to/movie/watch-the-night-clerk-gomovies-60498
 ! ... type=script
@@ -2228,12 +2183,6 @@ talksport.com##+js(aopr, GPT_SRC)
 ! https://github.com/ghostery/broken-page-reports/issues/1917
 friv.com##+js(set, chkvs, trueFunc)
 
-! https://github.com/ghostery/broken-page-reports/issues/1956
-! >>> url=https://logo.clearbit.com/espn.com
-! ... source=https://tv247us.live/tv-channels
-! ... type=image
-@@||logo.clearbit.com^$3p,image
-
 ! https://github.com/ghostery/broken-page-reports/issues/1954
 washingtonpost.com##[class*="isHomepageTopLeaderboard-true"]
 washingtonpost.com##wp-ad-wrapper
@@ -2370,3 +2319,14 @@ wp.pl##div:has(>img[role="presentation"]~script)
 ! ... type=script
 ||imasdk.googleapis.com/js/sdkloader/ima3_dai.js^$redirect=google-ima.js
 49ers.com##+js(trusted-replace-argument, String.prototype.includes, 0, repl:/googleads/google/)
+
+! https://github.com/ghostery/broken-page-reports/issues/2118
+!#if env_firefox
+! >>> url=https://picrew.me/
+! ... source=https://picrew.me/
+! ... type=main_frame
+||picrew.me^$document,replace=/<!-- AdShield -->\n<script .+<\/script>//gm
+!#endif
+
+! https://github.com/ghostery/broken-page-reports/issues/1979
+9now.com.au##+js(xml-prune, [breakType])
