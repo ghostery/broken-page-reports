@@ -119,12 +119,6 @@ kicker.de##+js(aopr, ovTrackingConfig)
 ! ... type=xhr
 ||servertag.nespresso.com^
 
-! https://github.com/ghostery/broken-page-reports/issues/1556
-! >>> url=https://openreplay.justbetter.nl/ingest/v1/web/start
-! ... source=https://www.ranzijn.nl/winkels
-! ... type=xhr
-||openreplay.justbetter.nl/ingest^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1589
 ! >>> url=https://t1.p2pplay.pro/api/v1/log?t=
 ! ... source=https://tokuzl.net/kamen-rider-v3.html?ep=2

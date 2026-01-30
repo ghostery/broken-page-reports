@@ -717,3 +717,6 @@ sonnetsoftware.com##+js(trusted-set-local-storage-item, 'https://www.sonnetsoftw
 
 ! https://github.com/ghostery/broken-page-reports/issues/2109
 lancecamper.com##.gdpr-settings
+
+! https://github.com/ghostery/broken-page-reports/issues/2117
+cdn.privacy-mgmt.com##+js(trusted-click-element, .sp_choice_type_ACCEPT_ALL, , 1000)
