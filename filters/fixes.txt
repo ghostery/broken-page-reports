@@ -2180,9 +2180,6 @@ allfaucet.xyz##+js(aopw, AdblockRegixFinder)
 ! https://github.com/ghostery/broken-page-reports/issues/1882
 talksport.com##+js(aopr, GPT_SRC)
 
-! https://github.com/ghostery/broken-page-reports/issues/1917
-friv.com##+js(set, chkvs, trueFunc)
-
 ! https://github.com/ghostery/broken-page-reports/issues/1954
 washingtonpost.com##[class*="isHomepageTopLeaderboard-true"]
 washingtonpost.com##wp-ad-wrapper
@@ -2330,3 +2327,10 @@ wp.pl##div:has(>img[role="presentation"]~script)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1979
 9now.com.au##+js(xml-prune, [breakType])
+
+! https://github.com/ghostery/broken-page-reports/issues/1917
+! >>> url=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+! ... source=https://friv.com/
+! ... type=script
+pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=googlesyndication_adsbygoogle.js,domain=friv.com
+friv.com##+js(set, chkvs, trueFunc)
