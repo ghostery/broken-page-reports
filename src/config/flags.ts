@@ -17,9 +17,6 @@ const flags: Config["flags"] = {
   [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
     {
       percentage: 100,
-      filter: {
-        platform: [PLATFORM_FIREFOX],
-      },
     },
   ],
   [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
