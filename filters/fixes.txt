@@ -2334,3 +2334,9 @@ wp.pl##div:has(>img[role="presentation"]~script)
 ! ... type=script
 pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=googlesyndication_adsbygoogle.js,domain=friv.com
 friv.com##+js(set, chkvs, trueFunc)
+
+! https://github.com/ghostery/broken-page-reports/2126
+! >>> url=http://localhost:8080/wp-content/plugins/elementor/assets/js/packages/mixpanel/mixpanel.min.js?ver=3.35.0
+! ... source=http://localhost:8080/wp-admin/post.php?post=7&action=elementor
+! ... type=script
+@@/wp-content/plugins/elementor/*/mixpanel
