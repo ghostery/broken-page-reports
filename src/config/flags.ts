@@ -60,7 +60,7 @@ const flags: Config["flags"] = {
   ],
   [FLAG_ONBOARDING_SURVEY]: [
     {
-      percentage: 0,
+      percentage: 20,
     },
   ],
   [FLAG_NOTIFICATION_REVIEW]: [
