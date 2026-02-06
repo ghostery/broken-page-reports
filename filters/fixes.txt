@@ -2340,3 +2340,6 @@ friv.com##+js(set, chkvs, trueFunc)
 ! ... source=http://localhost:8080/wp-admin/post.php?post=7&action=elementor
 ! ... type=script
 @@/wp-content/plugins/elementor/*/mixpanel
+
+! https://github.com/ghostery/broken-page-reports/issues/2125
+hach.de#@#.ad-active
