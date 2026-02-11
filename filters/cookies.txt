@@ -720,3 +720,6 @@ lancecamper.com##.gdpr-settings
 
 ! https://github.com/ghostery/broken-page-reports/issues/2117
 cdn.privacy-mgmt.com##+js(trusted-click-element, .sp_choice_type_ACCEPT_ALL, , 1000)
+
+! https://github.com/ghostery/broken-page-reports/issues/2132
+spusu.it##+js(trusted-set-cookie, acceptSpusuCookies, necessary)
