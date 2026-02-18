@@ -14,65 +14,41 @@ import {
   PLATFORM_FIREFOX,
 } from "@ghostery/config";
 
+// Active flags:
 const flags: Config["flags"] = {
-  [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
-    {
-      percentage: 100,
-      filter: {
-        platform: [PLATFORM_FIREFOX],
-      },
-    },
-  ],
   [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
-    {
-      percentage: 100,
-    },
-  ],
-  [FLAG_EXTENDED_SELECTORS]: [
-    {
-      percentage: 100,
-    },
-  ],
-  [FLAG_DYNAMIC_DNR_FIXES]: [
-    {
-      percentage: 100,
-    },
+    { percentage: 100 },
   ],
   [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
-    {
-      percentage: 100,
-    },
+    { percentage: 100 },
   ],
   [FLAG_MODES]: [
-    {
-      percentage: 0,
-    },
+    { percentage: 0 },
   ],
   [FLAG_PAUSE_ASSISTANT]: [
-    {
-      percentage: 0,
-    },
+    { percentage: 0 },
   ],
   [FLAG_REDIRECT_PROTECTION]: [
-    {
-      percentage: 0,
-    },
+    { percentage: 0 },
   ],
   [FLAG_ONBOARDING_SURVEY]: [
-    {
-      percentage: 20,
-    },
+    { percentage: 20 },
   ],
   [FLAG_NOTIFICATION_REVIEW]: [
-    {
-      percentage: 50,
-    },
+    { percentage: 50 },
   ],
   [FLAG_SUBFRAME_SCRIPTING]: [
-    {
-      percentage: 15,
-    },
+    { percentage: 15 },
   ],
 };
 
-export default flags;
+// Completed flags (removed from the codebase):
+const completedFlags: Config["flags"] = {
+  [FLAG_EXTENDED_SELECTORS]: [{ percentage: 100 }], // https://github.com/ghostery/ghostery-extension/pull/3024
+  [FLAG_DYNAMIC_DNR_FIXES]: [{ percentage: 100 }], // https://github.com/ghostery/ghostery-extension/pull/3025
+  [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [ // https://github.com/ghostery/ghostery-extension/pull/3051
+    { percentage: 100, filter: { platform: [PLATFORM_FIREFOX] } },
+  ],
+};
+
+export default { ...flags, ...completedFlags };
