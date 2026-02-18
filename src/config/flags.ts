@@ -14,7 +14,8 @@ import {
   PLATFORM_FIREFOX,
 } from "@ghostery/config";
 
-// Active flags:
+// ---- Active flags ----
+
 const flags: Config["flags"] = {
   [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
     { percentage: 100 },
@@ -42,11 +43,19 @@ const flags: Config["flags"] = {
   ],
 };
 
-// Completed flags (removed from the codebase):
+// ---- Completed flags (removed from the codebase) ----
+
 const completedFlags: Config["flags"] = {
-  [FLAG_EXTENDED_SELECTORS]: [{ percentage: 100 }], // https://github.com/ghostery/ghostery-extension/pull/3024
-  [FLAG_DYNAMIC_DNR_FIXES]: [{ percentage: 100 }], // https://github.com/ghostery/ghostery-extension/pull/3025
-  [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [ // https://github.com/ghostery/ghostery-extension/pull/3051
+  // https://github.com/ghostery/ghostery-extension/pull/3024
+  [FLAG_EXTENDED_SELECTORS]: [
+    { percentage: 100 },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3025
+  [FLAG_DYNAMIC_DNR_FIXES]: [
+    { percentage: 100 },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3051
+  [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
     { percentage: 100, filter: { platform: [PLATFORM_FIREFOX] } },
   ],
 };
