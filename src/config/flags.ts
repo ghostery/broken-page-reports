@@ -27,7 +27,7 @@ const flags: Config["flags"] = {
     { percentage: 0 },
   ],
   [FLAG_PAUSE_ASSISTANT]: [
-    { percentage: 0 },
+    { percentage: 100 },
   ],
   [FLAG_REDIRECT_PROTECTION]: [
     { percentage: 0 },
