@@ -2343,3 +2343,6 @@ friv.com##+js(set, chkvs, trueFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2125
 hach.de#@#.ad-active
+
+! https://github.com/ghostery/broken-page-reports/issues/2140
+krone.at##.gpt__placeholder
