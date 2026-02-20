@@ -1605,10 +1605,48 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2097
 ! https://github.com/ghostery/broken-page-reports/issues/1932
 ! https://github.com/ghostery/broken-page-reports/issues/2112
-! >>> url=https://mosnmavkefyo.com/
-! ... source=https://hianime.to/watch/jujutsu-kaisen-the-culling-game-part-1-20401?ep=162345
-! ... type=xhr
-||mosnmavkefyo.com^
+! https://github.com/ghostery/broken-page-reports/issues/2145
+! https://github.com/ghostery/broken-page-reports/issues/2136
+! >>> url=https://fbymmyfoq.com/
+! ... source=https://hianime.to/hells-paradise-season-2-20405
+! ... type=script
+||fbymmyfoq.com^
+! >>> url=https://sv.chiasmiraisers.com/r30w9De2cefo/70849
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||chiasmiraisers.com^
+! >>> url=https://rn.betingelampong.cyou/g292bf2404bb56/71405
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||betingelampong.cyou^
+! >>> url=https://gukahdbam.com/almaj/vpyz/pitxp
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||gukahdbam.com^
+! >>> url=https://tenncefkylyzed.com/ahelxeucxnwkvmvd?zVjYLBXg=3&knRZqSyD=4&MkpjVQqL=3881765&UpMAqIHo=&yXLzmkJG=3:1,0&jBDyZGvs=&poAjTcmi=https%3A%2F%2Fsiska.tv%2F&AHWpPxFV=2560,1440,2.85,7296,4104,1
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||tenncefkylyzed.com^
+! >>> url=https://ukentaspectsofc.org/azBHemtEDyQJViVcAQ44WFsCID0DBhQ7DwJmHw47KQIVGA4+BGEOAg8NdkhfWAV+Qk0bWSNHWk1DMxsfHkN6SU0CXiEVVgZfMgkOD18wFE0dDXZUWF8edExFXBYyR0ZZFjMKCgwNdlwbH0QrR1pcB3ZPUl4CdUtTXwc
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||ukentaspectsofc.org^
+! >>> url=https://zhfbhtnxnw.com/zbfdkijyuzrjfib?JByipIWA=3&gKUiYRxr=4&irLUIcyW=3881765&vqasJktP=&sGjoEpzK=3:1,0&CXQzrOoh=&mFNdMzrI=https%3A%2F%2Fsiska.tv%2F&XuVMrQZk=2560,1440,2.85,7296,4104,1
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||zhfbhtnxnw.com^
+! >>> url=https://myvidplay.com/dood?op=watch
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||myvidplay.com/dood^
+! >>> url=https://jsminifiedcdn.com/q66Vw4?return=js.client&videoID=217098&se_referrer=&default_keyword=Stella%20Luxx%20-%20Shy%20Redhead%20Stella%20Wants%20BBC%20%7C%20siska.tv&landing_url=siska.tv%2Fvideo.php&name=_XPdZTwXX4vHthrKj&host=https%3A%2F%2Fjsminifiedcdn.com%2Fq66Vw4
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||jsminifiedcdn.com^
+! >>> url=https://df6pt2obl092n.cloudfront.net/TWUdlMno6KAtURS0uAQ9La3NWB0NhYRVAHz96CEsMMCMVXhsgaQZdF38tFl0UKXoAa0IqMixdKjULQ0YAPXpcFBY4KQIPXDwpBg9LfyYBUEdtYRFCFTJ6FkYTOCkSRB8tPkNHG2QqCkgTNSsEF0gfcksCX2t3TV8bOi4LRhUqL0ABOHx1VVsULSIJF0hpKg-RRX2t3CkFfa3cdF0hpdlVtS2wYUhtfa3cEQgo1IhJXGDIuERdIH3JWBVRqcUAASnEsDUYXNWJXcV9rdwlbETxiVwIdPCQOXVN8dVVREisoCFdfawFUBk93d0sCVGliVwIJOCEEQBN8dSMHSW5pVgRcLHpIAA
+! ... source=https://siska.tv/video.php?videoID=217098
+! ... type=script
+||df6pt2obl092n.cloudfront.net^
 ! >>> url=https://jj.filtreyoking.com/sY9Bq0HKwZkSog/130235
 ! ... source=https://hdtodayz.uk/watch-tv/watch-delhi-crime-movies-free-42159.5369668
 ! ... type=script
@@ -1638,10 +1676,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://supjav.com/
 ! ... type=xhr
 ||kiyonosaki.info^
-! >>> url=https://coccousmating.qpon/
-! ... source=https://supjav.com/
-! ... type=xhr
-||coccousmating.qpon^
 ! >>> url=https://stw.tirexo.irish/bpcmqpmi
 ! ... source=https://www.tirexo.irish/
 ! ... type=script
@@ -1650,10 +1684,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://www.tirexo.irish/
 ! ... type=script
 ||ytyeogriluczo.site^
-! >>> url=https://imbutepierces.qpon/gd/114809?
-! ... source=https://flixhq.to/tv/watch-tulsa-king-90169
-! ... type=script
-||imbutepierces.qpon^
 ! >>> url=https://stream.youxxjav.xyz/JIv8GQ9.js
 ! ... source=https://stream.youxxjav.xyz/JIv8GQ9.js
 ! ... type=script
@@ -1706,10 +1736,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://gomoviestv.to/movie/watch-the-night-clerk-gomovies-60498
 ! ... type=script
 ||justspoisure.com^
-! >>> url=https://w3vn.cuevana.pro/
-! ... source=https://w3vn.cuevana.pro/
-! ... type=xhr
-||cuevana.pro^$1p,xhr
 ! >>> url=https://cdn.jsdelivr.net/npm/disable-devtool
 ! ... source=https://player.cuevana.bot/
 ! ... type=script
@@ -1722,15 +1748,11 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://mivalyo.com/a
 ! ... type=script
 ||embed69.org/vast-player-v4.js^
-! >>> url=https://mivalyo.com/ad?type=1
-! ... source=https://mivalyo.com/a
-! ... type=xhr
-||mivalyo.com/ad^
 ! >>> url=https://sflix.to/ajax/verify
 ! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
 ! ... type=xhr
 /ajax/verify^$domain=sflix.to|gomoviestv.to|himovies.sx
-tpi.li,snowcrows.com,kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch##div[style*="z-index:"][style*="2147483647"]
+tpi.li,snowcrows.com,kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch,myvidplay.com##div[style*="z-index:"][style*="2147483647"]
 faselhds.life##[data-cl-overlay]
 faselhds.life##.overlay
 faselhds.life##+js(nostif, /^/, 299)
@@ -1740,6 +1762,8 @@ sflix.to###modalshare
 sflix.to##.modal-backdrop.show
 sflix.to##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', prevent)
 streamwish.to#@#+js(abort-on-property-read, __Y)
+streamtape.com##.play-overlay
+streamtape.com##.plyr__ads
 ! >>> url=https://streamwish.to/main.js?
 ! ... source=https://streamwish.to/
 ! ... type=script
@@ -1748,26 +1772,6 @@ streamwish.to#@#+js(abort-on-property-read, __Y)
 ! ... source=https://hgplaycdn.com/
 ! ... type=script
 @@||hgplaycdn.com^
-! >>> url=https://auvexiug.com/player/jw8/provider.hlsjs.js?
-! ... source=https://auvexiug.com/
-! ... type=script
-@@||auvexiug.com^
-! >>> url=https://yuguaab.com/player/jw8/provider.hlsjs.js?
-! ... source=https://yuguaab.com/
-! ... type=script
-@@||yuguaab.com^
-! >>> url=https://habetar.com/player/jw8/provider.hlsjs.js?
-! ... source=https://habetar.com/
-! ... type=script
-@@||habetar.com^
-! >>> url=https://guxhag.com/player/jw8/provider.hlsjs.js?
-! ... source=https://guxhag.com/
-! ... type=script
-@@||guxhag.com^
-! >>> url=https://xenolyzb.com/player/jw8/provider.hlsjs.js?
-! ... source=https://xenolyzb.com/
-! ... type=script
-@@||xenolyzb.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1615
 wtov9.com##div[class^="index-module_advertisement"]

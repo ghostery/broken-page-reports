@@ -34,12 +34,6 @@
 ! ... type=sub_frame
 ||static.skandia.se/appdynamics/adrum
 
-! https://github.com/ghostery/broken-page-reports/issues/1063
-! >>> url=https://allthekingz.com/
-! ... source=about:blank
-! ... type=document
-||allthekingz.com^
-
 ! https://github.com/ghostery/broken-page-reports/issues/1078
 ! >>> url=https://popunderjs.com/
 ! ... source=about:blank
