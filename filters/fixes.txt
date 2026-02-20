@@ -2350,3 +2350,30 @@ hach.de#@#.ad-active
 
 ! https://github.com/ghostery/broken-page-reports/issues/2140
 krone.at##.gpt__placeholder
+
+! https://github.com/ghostery/broken-page-reports/issues/2135
+! >>> url=https://html-load.com/sdk.js
+! ... source=https://www.techbook.de/
+! ... type=script
+||html-load.com^$domain=techbook.de|petbook.de|fitbook.de
+! >>> url=https://www.asadcdn.com/adlib/pages/techbook.js
+! ... source=https://www.techbook.de/
+! ... type=script
+||asadcdn.com/adlib^$domain=techbook.de|petbook.de|fitbook.de
+! >>> url=https://d3vvsrb7xo34bg.cloudfront.net/sdk.js
+! ... source=https://www.techbook.de/
+! ... type=script
+||d3vvsrb7xo34bg.cloudfront.net^$domain=techbook.de|petbook.de|fitbook.de
+! >>> url=https://0.gym.fromsunny.com/
+! ... source=https://www.techbook.de/
+! ... type=script
+||fromsunny.com^$domain=techbook.de|petbook.de|fitbook.de
+! >>> url=https://0.content-loader.com/
+! ... source=https://www.techbook.de/
+! ... type=script
+||content-loader.com^$domain=techbook.de|petbook.de|fitbook.de
+! >>> url=https://error-report.com/
+! ... source=https://www.techbook.de/
+! ... type=script
+||error-report.com^$domain=techbook.de|petbook.de|fitbook.de
+techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '/data|onerror|onload/')
