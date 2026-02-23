@@ -725,3 +725,7 @@ cdn.privacy-mgmt.com##+js(trusted-click-element, .sp_choice_type_11, , 1000)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2132
 spusu.it##+js(trusted-set-cookie, acceptSpusuCookies, necessary)
+
+! https://github.com/ghostery/broken-page-reports/issues/2152
+welt.de##+js(trusted-set-cookie, consentDate, 2026-02-23T13:29:12.273Z)
+welt.de##+js(trusted-set-cookie, consentUUID, f7ffd06f-88d5-449d-b3d8-8feff75dd2ab_53)
