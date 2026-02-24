@@ -1,4 +1,5 @@
 import {
+  BROWSER_BRAVE,
   BROWSER_CHROME,
   Config,
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
@@ -26,6 +27,7 @@ const flags: Config["flags"] = {
   ],
   [FLAG_MODES]: [
     { percentage: 10, filter: { browser: BROWSER_CHROME, version: "10.5.30" } },
+    { percentage: 100, filter: { browser: BROWSER_BRAVE, version: "10.5.30" } },
   ],
   [FLAG_PAUSE_ASSISTANT]: [
     { percentage: 100 },
