@@ -1,4 +1,5 @@
 import {
+  BROWSER_CHROME,
   Config,
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
   FLAG_DYNAMIC_DNR_FIXES,
@@ -24,7 +25,7 @@ const flags: Config["flags"] = {
     { percentage: 100 },
   ],
   [FLAG_MODES]: [
-    { percentage: 0 },
+    { percentage: 10, filter: { browser: BROWSER_CHROME, version: "10.5.30" } },
   ],
   [FLAG_PAUSE_ASSISTANT]: [
     { percentage: 100 },
