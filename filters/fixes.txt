@@ -2377,3 +2377,10 @@ krone.at##.gpt__placeholder
 ! ... type=script
 ||error-report.com^$domain=techbook.de|petbook.de|fitbook.de
 techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '/data|onerror|onload/')
+
+! https://github.com/ghostery/broken-page-reports/issues/2127
+9gag.com##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
+9gag.com##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
+9gag.com##+js(nostif, _loadScript, 1000)
+9gag.com##+js(aopr, console.error)
+9gag.com##.viously.vsly-invisible-placement
