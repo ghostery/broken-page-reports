@@ -42,7 +42,7 @@ const flags: Config["flags"] = {
     { percentage: 60 },
   ],
   [FLAG_SUBFRAME_SCRIPTING]: [
-    { percentage: 15 },
+    { percentage: 50 },
   ],
 };
 
