@@ -33,7 +33,7 @@ const flags: Config["flags"] = {
     { percentage: 100 },
   ],
   [FLAG_REDIRECT_PROTECTION]: [
-    { percentage: 0 },
+    { percentage: 100 },
   ],
   [FLAG_ONBOARDING_SURVEY]: [
     { percentage: 20 },
