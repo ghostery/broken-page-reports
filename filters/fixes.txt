@@ -2384,3 +2384,13 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 9gag.com##+js(nostif, _loadScript, 1000)
 9gag.com##+js(aopr, console.error)
 9gag.com##.viously.vsly-invisible-placement
+
+! https://github.com/ghostery/broken-page-reports/issues/2161
+! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
+! ... source=https://www.sueddeutsche.de/
+! ... type=xhr
+||px.sueddeutsche.de^
+! >>> url=https://www.sueddeutsche.de/image/sz.1.5820522/1526x753
+! ... source=https://www.sueddeutsche.de/
+! ... type=script
+||sueddeutsche.de/image^$script
