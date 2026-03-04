@@ -1608,10 +1608,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! https://github.com/ghostery/broken-page-reports/issues/2145
 ! https://github.com/ghostery/broken-page-reports/issues/2136
 ! https://github.com/ghostery/broken-page-reports/issues/2165
-! >>> url=https://fbymmyfoq.com/
-! ... source=https://hianime.to/hells-paradise-season-2-20405
-! ... type=script
-||fbymmyfoq.com^
 ! >>> url=https://sv.chiasmiraisers.com/r30w9De2cefo/70849
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
@@ -1624,18 +1620,10 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
 ||gukahdbam.com^
-! >>> url=https://tenncefkylyzed.com/ahelxeucxnwkvmvd?zVjYLBXg=3&knRZqSyD=4&MkpjVQqL=3881765&UpMAqIHo=&yXLzmkJG=3:1,0&jBDyZGvs=&poAjTcmi=https%3A%2F%2Fsiska.tv%2F&AHWpPxFV=2560,1440,2.85,7296,4104,1
-! ... source=https://siska.tv/video.php?videoID=217098
-! ... type=script
-||tenncefkylyzed.com^
 ! >>> url=https://ukentaspectsofc.org/azBHemtEDyQJViVcAQ44WFsCID0DBhQ7DwJmHw47KQIVGA4+BGEOAg8NdkhfWAV+Qk0bWSNHWk1DMxsfHkN6SU0CXiEVVgZfMgkOD18wFE0dDXZUWF8edExFXBYyR0ZZFjMKCgwNdlwbH0QrR1pcB3ZPUl4CdUtTXwc
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
 ||ukentaspectsofc.org^
-! >>> url=https://zhfbhtnxnw.com/zbfdkijyuzrjfib?JByipIWA=3&gKUiYRxr=4&irLUIcyW=3881765&vqasJktP=&sGjoEpzK=3:1,0&CXQzrOoh=&mFNdMzrI=https%3A%2F%2Fsiska.tv%2F&XuVMrQZk=2560,1440,2.85,7296,4104,1
-! ... source=https://siska.tv/video.php?videoID=217098
-! ... type=script
-||zhfbhtnxnw.com^
 ! >>> url=https://myvidplay.com/dood?op=watch
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
@@ -1765,6 +1753,9 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://mapple.mov/
 ! ... type=xhr
 ||renderstreamshuttleanalytics.net^
+! >>> url=https://sflix.to/ajax/verify
+! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
+! ... type=xhr
 /ajax/verify^$domain=sflix.to|gomoviestv.to|himovies.sx
 mappletv.uk,vidfast.pro,tpi.li,snowcrows.com,kickass-anime.ru,dima-toon.com,pqham.com,streamwish.to,hgplaycdn.com,auvexiug.com,yuguaab.com,habetar.com,guxhag.com,xenolyzb.com,sflix.to,sflix2.to,mivalyo.com,fastflix.top,jkanime.net,cuevana.pro,supervideo.my,supervideo.cc,bflix.pw,faselhds.life,oii.la,hianime.to,dorawatch.net,dumbalag.com,myflixer.watch,myvidplay.com##div[style*="z-index:"][style*="2147483647"]
 vidlink.pro##div[style*="z-index:9999"]
