@@ -390,3 +390,15 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=xhr
 ||csr.onet.pl^
 onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/2166
+! >>> url=https://cp.essen-und-trinken.de/signal
+! ... source=https://www.essen-und-trinken.de/
+! ... type=xhr
+||cp.essen-und-trinken.de/signal^
+
+! https://github.com/ghostery/broken-page-reports/issues/2165
+! >>> url=https://users.videasy.net/api/track
+! ... source=https://player.videasy.net/
+! ... type=xhr
+||users.videasy.net/api/track^
