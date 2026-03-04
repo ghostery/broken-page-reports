@@ -2379,11 +2379,14 @@ krone.at##.gpt__placeholder
 techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '/data|onerror|onload/')
 
 ! https://github.com/ghostery/broken-page-reports/issues/2127
-9gag.com##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
-9gag.com##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
-9gag.com##+js(nostif, _loadScript, 1000)
+! https://github.com/ghostery/broken-page-reports/issues/2137
+9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
+9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
+9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
 9gag.com##+js(aopr, console.error)
 9gag.com##.viously.vsly-invisible-placement
+picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
+picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
