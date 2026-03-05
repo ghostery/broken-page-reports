@@ -539,7 +539,8 @@ eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essen
 lamontagne.fr##div[style=""]:has(svg.cf-icon-adblocker)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1674
-t-online.de##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
+! https://github.com/ghostery/broken-page-reports/issues/2164
+t-online.de,9gag.com##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
 t-online.de##[id^="sp_message_container"]:has(> iframe[src^="https://consent.t-online.de/index.html"][src*="preload_message=true"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1673
