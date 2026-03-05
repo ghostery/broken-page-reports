@@ -2393,6 +2393,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2137
 ! https://github.com/ghostery/broken-page-reports/issues/2173
 ! https://github.com/ghostery/broken-page-reports/issues/2174
+! https://github.com/ghostery/broken-page-reports/issues/2175
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2400,7 +2401,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=flatpanelshd.com|newsyou.info
+||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be
 9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
 9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
 9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
@@ -2413,6 +2414,8 @@ flatpanelshd.com##+js(aopr, as_retry)
 newsyou.info##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
 newsyou.info##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
 newsyou.info##+js(set, navigator.onLine, false)
+quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
