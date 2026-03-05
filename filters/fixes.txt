@@ -1999,7 +1999,12 @@ jo.444.hu##div:has(> #ap-site-header-top)
 puzzle-galaxies.com##div:has(> .ad-options)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1743
-lequipe.fr##+js(set, window.$nuxt.$store.state.isAdsBlocked, false)
+! https://github.com/ghostery/broken-page-reports/issues/2153
+! >>> url=https://www.lequipe.fr/commons/analytics.js?20260218
+! ... source=https://www.lequipe.fr/Rugby/Article/Emmanuel-meafou-un-bulldozer-face-a-l-italie-pendant-80-minutes-c-est-mon-meilleur-match-en-equipe-de-france/1654419
+! ... type=script
+||lequipe.fr/commons/analytics.js^
+lequipe.fr##html.no-scroll:style(overflow: auto !important)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1741
 ! https://github.com/ghostery/broken-page-reports/issues/1740

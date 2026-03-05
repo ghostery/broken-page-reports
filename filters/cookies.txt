@@ -539,7 +539,8 @@ eset.com##+js(trusted-set-cookie, eset_cookie-bar, {"home_eset":{"value":{"essen
 lamontagne.fr##div[style=""]:has(svg.cf-icon-adblocker)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1674
-t-online.de##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
+! https://github.com/ghostery/broken-page-reports/issues/2164
+t-online.de,9gag.com##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
 t-online.de##[id^="sp_message_container"]:has(> iframe[src^="https://consent.t-online.de/index.html"][src*="preload_message=true"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1673
@@ -735,3 +736,10 @@ aliorbank.pl##+js(trusted-click-element, div#eccm-shadow-host >>> button.eccmm-d
 
 ! https://github.com/ghostery/broken-page-reports/issues/2166
 baseendpoint.essen-und-trinken.de##+js(trusted-click-element, button.sp_choice_type_11)
+
+! https://github.com/ghostery/broken-page-reports/issues/2170
+faun.com##+js(trusted-click-element, input#external-media, 100)
+faun.com##+js(trusted-click-element, button#CookieBoxSaveButton, 150)
+
+! https://github.com/ghostery/broken-page-reports/issues/2171
+bertrandt.com##+js(trusted-click-element, button.ccm--decline-cookies)
