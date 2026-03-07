@@ -2394,6 +2394,10 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2173
 ! https://github.com/ghostery/broken-page-reports/issues/2174
 ! https://github.com/ghostery/broken-page-reports/issues/2175
+! https://github.com/ghostery/broken-page-reports/issues/2180
+! https://github.com/ghostery/broken-page-reports/issues/2179
+! https://github.com/ghostery/broken-page-reports/issues/2178
+! https://github.com/ghostery/broken-page-reports/issues/2177
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2401,7 +2405,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be
+||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com
 9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
 9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
 9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
@@ -2411,9 +2415,9 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-newsyou.info##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-newsyou.info##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-newsyou.info##+js(set, navigator.onLine, false)
+motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info##+js(set, navigator.onLine, false)
 quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
 quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
