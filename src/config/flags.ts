@@ -39,7 +39,7 @@ const flags: Config["flags"] = {
     { percentage: 20 },
   ],
   [FLAG_NOTIFICATION_REVIEW]: [
-    { percentage: 80 },
+    { percentage: 90 },
   ],
   [FLAG_SUBFRAME_SCRIPTING]: [
     { percentage: 50 },
