@@ -1550,64 +1550,43 @@ nflbox.me##iframe~div[id]:has(>div>div[id]>a[href="javascript:;"])
 abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
-! https://github.com/ghostery/broken-page-reports/issues/1600
-! https://github.com/ghostery/broken-page-reports/issues/1608
-! https://github.com/ghostery/broken-page-reports/issues/1696
-! https://github.com/ghostery/broken-page-reports/issues/1631
-! https://github.com/ghostery/broken-page-reports/issues/947
-! https://github.com/ghostery/broken-page-reports/issues/1538
-! https://github.com/ghostery/broken-page-reports/issues/1640
-! https://github.com/ghostery/broken-page-reports/issues/1477
-! https://github.com/ghostery/broken-page-reports/issues/1468
-! https://github.com/ghostery/broken-page-reports/issues/1716
-! https://github.com/ghostery/broken-page-reports/issues/1706
-! https://github.com/ghostery/broken-page-reports/issues/1704
-! https://github.com/ghostery/broken-page-reports/issues/1794
-! https://github.com/ghostery/broken-page-reports/issues/1792
-! https://github.com/ghostery/broken-page-reports/issues/1805
-! https://github.com/ghostery/broken-page-reports/issues/1804
-! https://github.com/ghostery/broken-page-reports/issues/1799
-! https://github.com/ghostery/broken-page-reports/issues/1883
-! https://github.com/ghostery/broken-page-reports/issues/1923
-! https://github.com/ghostery/broken-page-reports/issues/1887
-! https://github.com/ghostery/broken-page-reports/issues/1888
-! https://github.com/ghostery/broken-page-reports/issues/1891
-! https://github.com/ghostery/broken-page-reports/issues/1874
-! https://github.com/ghostery/broken-page-reports/issues/1848
-! https://github.com/ghostery/broken-page-reports/issues/1925
-! https://github.com/ghostery/broken-page-reports/issues/1716
-! https://github.com/ghostery/broken-page-reports/issues/1921
-! https://github.com/ghostery/broken-page-reports/issues/1920
-! https://github.com/ghostery/broken-page-reports/issues/1915
-! https://github.com/ghostery/broken-page-reports/issues/1912
-! https://github.com/ghostery/broken-page-reports/issues/1690
-! https://github.com/ghostery/broken-page-reports/issues/1957
-! https://github.com/ghostery/broken-page-reports/issues/1939
-! https://github.com/ghostery/broken-page-reports/issues/1847
-! https://github.com/ghostery/broken-page-reports/issues/1969
-! https://github.com/ghostery/broken-page-reports/issues/1967
-! https://github.com/ghostery/broken-page-reports/issues/1966
-! https://github.com/ghostery/broken-page-reports/issues/1962
-! https://github.com/ghostery/broken-page-reports/issues/1961
-! https://github.com/ghostery/broken-page-reports/issues/1944
-! https://github.com/ghostery/broken-page-reports/issues/1943
-! https://github.com/ghostery/broken-page-reports/issues/1998
-! https://github.com/ghostery/broken-page-reports/issues/1991
-! https://github.com/ghostery/broken-page-reports/issues/1989
-! https://github.com/ghostery/broken-page-reports/issues/1986
-! https://github.com/ghostery/broken-page-reports/issues/1983
-! https://github.com/ghostery/broken-page-reports/issues/2018
-! https://github.com/ghostery/broken-page-reports/issues/1937
-! https://github.com/ghostery/broken-page-reports/issues/2042
-! https://github.com/ghostery/broken-page-reports/issues/2040
-! https://github.com/ghostery/broken-page-reports/issues/2028
-! https://github.com/ghostery/broken-page-reports/issues/2050
-! https://github.com/ghostery/broken-page-reports/issues/2097
-! https://github.com/ghostery/broken-page-reports/issues/1932
-! https://github.com/ghostery/broken-page-reports/issues/2112
-! https://github.com/ghostery/broken-page-reports/issues/2145
-! https://github.com/ghostery/broken-page-reports/issues/2136
-! https://github.com/ghostery/broken-page-reports/issues/2165
+! Frequently updated ad domains
+! >>> url=https://360procedures.net/
+! ... source=about:blank
+! ... type=xhr
+||360procedures.net^
+! >>> url=https://dhoohbhuwaf.in/
+! ... source=about:blank
+! ... type=xhr
+||dhoohbhuwaf.in^
+! >>> url=https://tijgksets.com/
+! ... source=about:blank
+! ... type=xhr
+||tijgksets.com^
+! >>> url=https://musterunkirk.cyou/
+! ... source=about:blank
+! ... type=xhr
+||musterunkirk.cyou^
+! >>> url=https://bzlnrcsfrxjh.com/
+! ... source=about:blank
+! ... type=xhr
+||bzlnrcsfrxjh.com^
+! >>> url=https://orosrgkd.com/
+! ... source=about:blank
+! ... type=xhr
+||orosrgkd.com^
+! >>> url=https://firefang.xyz/
+! ... source=about:blank
+! ... type=xhr
+||firefang.xyz^
+! >>> url=https://grayedmellit.com/
+! ... source=about:blank
+! ... type=xhr
+||grayedmellit.com^
+! >>> url=https://tinkledtertium.com/
+! ... source=about:blank
+! ... type=xhr
+||tinkledtertium.com^
 ! >>> url=https://sv.chiasmiraisers.com/r30w9De2cefo/70849
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
@@ -2398,6 +2377,8 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2179
 ! https://github.com/ghostery/broken-page-reports/issues/2178
 ! https://github.com/ghostery/broken-page-reports/issues/2177
+! https://github.com/ghostery/broken-page-reports/issues/2194
+! https://github.com/ghostery/broken-page-reports/issues/2193
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2405,7 +2386,11 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com
+||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de
+! >>> url=https://widgets.outbrain.com/outbrain.js
+! ... source=https://www.welt.de/politik/deutschland/article69aedbcf28206c8e00ed46af/hertie-school-in-berlin-verhalten-sich-wie-auf-ihren-extremistischen-demos-in-kreuzberg.html
+! ... type=script
+||outbrain.com^$domain=welt.de
 9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
 9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
 9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
@@ -2415,9 +2400,9 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info##+js(set, navigator.onLine, false)
+motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
 quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
 quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
@@ -2433,3 +2418,18 @@ quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', p
 
 ! https://github.com/ghostery/broken-page-reports/issues/2165
 watchseries.bar##[id^="promo-banner"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2196
+! >>> url=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+! ... source=httpshttps://www.united.com/de/de/fly/mileageplus/mp-offers.html
+! ... type=script
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$redirect=googlesyndication_adsbygoogle.js
+
+! https://github.com/ghostery/broken-page-reports/issues/2197
+come-on.de##+js(trusted-suppress-native-method, document.querySelectorAll, '[data-id-lazyload-code], [data-id-lazyload-script]')
+
+! https://github.com/ghostery/broken-page-reports/issues/2198
+ib-game.jp##+js(set, userHealthCheck, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/2192
+wehype.app##+js(trusted-set-cookie, WehypeCreatorCookieSettings, 'eyJjb25zZW50R2l2ZW4iOnRydWUsImNhdGVnb3JpZXMiOnsiZXNzZW50aWFsIjp0cnVlLCJhbmFseXRpY3MiOmZhbHNlfX0=')
