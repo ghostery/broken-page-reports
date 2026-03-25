@@ -1,8 +1,0 @@
-! Title: @Ghostery — experimental
-! Expires: 4 hours
-! Version: {{version}}
-
-!#if env_experimental
-! Indicate experimental fitlers are enabled - hide copyrights notice on ghostery.com
-ghostery.com##.ds-footer-copyrights
-!#endif
