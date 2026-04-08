@@ -27,7 +27,7 @@ const flags: Config["flags"] = {
   ],
   [FLAG_MODES]: [
     { percentage: 100, filter: { browser: BROWSER_BRAVE, version: "10.5.30" } },
-    { percentage: 10, filter: { version: "10.5.30" } },
+    { percentage: 25, filter: { version: "10.5.30" } },
   ],
   [FLAG_PAUSE_ASSISTANT]: [
     { percentage: 100 },
