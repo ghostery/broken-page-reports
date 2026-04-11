@@ -402,3 +402,19 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://player.videasy.net/
 ! ... type=xhr
 ||users.videasy.net/api/track^
+
+! https://github.com/ghostery/broken-page-reports/issues/2207
+! >>> url=https://9kvu81ddh3.execute-api.us-east-2.amazonaws.com/
+! ... source=https://itavisen.no/
+! ... type=xhr
+||9kvu81ddh3.execute-api.us-east-2.amazonaws.com^
+! >>> url=https://log.itavisen.no/
+! ... source=https://itavisen.no/
+! ... type=xhr
+||log.itavisen.no^
+
+! https://github.com/ghostery/broken-page-reports/issues/2205
+! >>> url=https://app.lemlist.com/api/visitors
+! ... source=https://onetutor.ai/
+! ... type=xhr
+||lemlist.com^$3p

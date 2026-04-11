@@ -971,3 +971,9 @@ smartpress.by#@#.cookie-notification-wrap
 ! https://github.com/ghostery/broken-page-reports/issues/2107
 sonnetsoftware.com#@##cookie-status-widget-holder
 sonnetsoftware.com#@#.cookie-widget-holder
+
+! https://github.com/ghostery/broken-page-reports/issues/2205
+! >>> url=https://app.onetutor.ai/assets/privacy-consent-DBRj44QA.js
+! ... source=https://app.onetutor.ai/
+! ... type=script
+@@/privacy-consent-$script,domain=app.onetutor.ai

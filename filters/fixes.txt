@@ -1551,42 +1551,14 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
-! >>> url=https://360procedures.net/
-! ... source=about:blank
-! ... type=xhr
-||360procedures.net^
 ! >>> url=https://dhoohbhuwaf.in/
 ! ... source=about:blank
 ! ... type=xhr
 ||dhoohbhuwaf.in^
-! >>> url=https://tijgksets.com/
-! ... source=about:blank
-! ... type=xhr
-||tijgksets.com^
-! >>> url=https://musterunkirk.cyou/
-! ... source=about:blank
-! ... type=xhr
-||musterunkirk.cyou^
-! >>> url=https://bzlnrcsfrxjh.com/
-! ... source=about:blank
-! ... type=xhr
-||bzlnrcsfrxjh.com^
-! >>> url=https://orosrgkd.com/
-! ... source=about:blank
-! ... type=xhr
-||orosrgkd.com^
 ! >>> url=https://firefang.xyz/
 ! ... source=about:blank
 ! ... type=xhr
 ||firefang.xyz^
-! >>> url=https://grayedmellit.com/
-! ... source=about:blank
-! ... type=xhr
-||grayedmellit.com^
-! >>> url=https://tinkledtertium.com/
-! ... source=about:blank
-! ... type=xhr
-||tinkledtertium.com^
 ! >>> url=https://sv.chiasmiraisers.com/r30w9De2cefo/70849
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
@@ -1724,14 +1696,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://vidfast.pro/
 ! ... type=script
 ||urchinabodinggaggled.cfd^
-! >>> url=https://2q67.xeptixwmf9fojlopyeylxomn.cfd/kvcW1i4qlrr76ultW8/WJXAr
-! ... source=https://vidfast.pro/
-! ... type=script
-||xeptixwmf9fojlopyeylxomn.cfd^
-! >>> url=https://renderstreamshuttleanalytics.net/wrr
-! ... source=https://mapple.mov/
-! ... type=xhr
-||renderstreamshuttleanalytics.net^
 ! >>> url=https://sflix.to/ajax/verify
 ! ... source=https://sflix.to/watch-movie/free-night-of-the-reaper-hd-132928.12641707
 ! ... type=xhr
@@ -2382,6 +2346,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2187
 ! https://github.com/ghostery/broken-page-reports/issues/2186
 ! https://github.com/ghostery/broken-page-reports/issues/2185
+! https://github.com/ghostery/broken-page-reports/issues/2207
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2389,7 +2354,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org
+||html-load.com^$domain=itavisen.no|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org
 ! >>> url=https://widgets.outbrain.com/outbrain.js
 ! ... source=https://www.welt.de/politik/deutschland/article69aedbcf28206c8e00ed46af/hertie-school-in-berlin-verhalten-sich-wie-auf-ihren-extremistischen-demos-in-kreuzberg.html
 ! ... type=script
@@ -2403,11 +2368,11 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
-dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
-dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
+itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
+itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
