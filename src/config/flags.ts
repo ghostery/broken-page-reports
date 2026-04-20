@@ -19,20 +19,11 @@ import {
 // ---- Active flags ----
 
 const flags: Config["flags"] = {
-  [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
-    { percentage: 100 },
-  ],
-  [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
-    { percentage: 100 },
-  ],
   [FLAG_MODES]: [
     { percentage: 100, filter: { browser: BROWSER_BRAVE, version: "10.5.30" } },
     { percentage: 25, filter: { version: "10.5.30" } },
   ],
   [FLAG_PAUSE_ASSISTANT]: [
-    { percentage: 100 },
-  ],
-  [FLAG_REDIRECT_PROTECTION]: [
     { percentage: 100 },
   ],
   [FLAG_ONBOARDING_SURVEY]: [
@@ -60,6 +51,18 @@ const completedFlags: Config["flags"] = {
   // https://github.com/ghostery/ghostery-extension/pull/3051
   [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
     { percentage: 100, filter: { platform: [PLATFORM_FIREFOX] } },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3263
+  [FLAG_REDIRECT_PROTECTION]: [
+    { percentage: 100 },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3270
+  [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
+    { percentage: 100 },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3270
+  [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
+    { percentage: 100 },
   ],
 };
 

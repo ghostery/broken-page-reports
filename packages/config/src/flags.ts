@@ -6,21 +6,15 @@
 
 // ---- Active flags ----
 
-export const FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED = "chromium-inject-cosmetics-on-response-started";
-export const FLAG_INJECTION_TARGET_DOCUMENT_ID = "injection-target-document-id";
 export const FLAG_MODES = "modes";
 export const FLAG_PAUSE_ASSISTANT = "pause-assistant";
-export const FLAG_REDIRECT_PROTECTION = "redirect-protection";
 export const FLAG_ONBOARDING_SURVEY = "onboarding-survey";
 export const FLAG_NOTIFICATION_REVIEW = "notification-review";
 export const FLAG_SUBFRAME_SCRIPTING = "subframe-scripting";
 
 export const FLAGS = [
-  FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
-  FLAG_INJECTION_TARGET_DOCUMENT_ID,
   FLAG_MODES,
   FLAG_PAUSE_ASSISTANT,
-  FLAG_REDIRECT_PROTECTION,
   FLAG_ONBOARDING_SURVEY,
   FLAG_NOTIFICATION_REVIEW,
   FLAG_SUBFRAME_SCRIPTING,
@@ -28,14 +22,20 @@ export const FLAGS = [
 
 // ---- Completed flags ----
 
+export const FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED = "chromium-inject-cosmetics-on-response-started";
 export const FLAG_DYNAMIC_DNR_FIXES = "dynamic-dnr-fixes";
 export const FLAG_EXTENDED_SELECTORS = "extended-selectors";
 export const FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS = "firefox-content-script-scriptlets";
+export const FLAG_INJECTION_TARGET_DOCUMENT_ID = "injection-target-document-id";
+export const FLAG_REDIRECT_PROTECTION = "redirect-protection";
 
 const COMPLETED_FLAGS = [
+  FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
   FLAG_DYNAMIC_DNR_FIXES,
   FLAG_EXTENDED_SELECTORS,
   FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS,
+  FLAG_INJECTION_TARGET_DOCUMENT_ID,
+  FLAG_REDIRECT_PROTECTION,
 ] as const;
 
 // ---- Types and utility functions ----
