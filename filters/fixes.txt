@@ -2309,7 +2309,7 @@ krone.at##.gpt__placeholder
 ! >>> url=https://html-load.com/sdk.js
 ! ... source=https://www.techbook.de/
 ! ... type=script
-||html-load.com^$domain=techbook.de|petbook.de|fitbook.de
+||html-load.com^$domain=techbook.de|petbook.de|fitbook.de|notebookcheck.net
 ! >>> url=https://www.asadcdn.com/adlib/pages/techbook.js
 ! ... source=https://www.techbook.de/
 ! ... type=script
@@ -2347,6 +2347,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2186
 ! https://github.com/ghostery/broken-page-reports/issues/2185
 ! https://github.com/ghostery/broken-page-reports/issues/2207
+! https://github.com/ghostery/broken-page-reports/issues/2212
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2354,7 +2355,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=itavisen.no|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org
+||html-load.com^$domain=itavisen.no|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
 ! >>> url=https://widgets.outbrain.com/outbrain.js
 ! ... source=https://www.welt.de/politik/deutschland/article69aedbcf28206c8e00ed46af/hertie-school-in-berlin-verhalten-sich-wie-auf-ihren-extremistischen-demos-in-kreuzberg.html
 ! ... type=script
@@ -2368,11 +2369,11 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
-itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
-itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
+notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
+notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
