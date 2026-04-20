@@ -752,3 +752,11 @@ dictionary.cambridge.org##+js(trusted-set-cookie, OptanonConsent, 'isGpcEnabled=
 
 ! https://github.com/ghostery/broken-page-reports/issues/2138
 zone.msn.com###qc-cmp2-container
+
+! https://github.com/ghostery/broken-page-reports/issues/2211
+sanita.puglia.it##+js(trusted-set-cookie, COOKIE_SUPPORT, true)
+sanita.puglia.it##+js(trusted-set-cookie, cookie-agreed, agreed)
+sanita.puglia.it##+js(trusted-set-cookie, cookie-agreed-categories, '["technical"]')
+
+! https://github.com/ghostery/broken-page-reports/issues/2210
+meteo.it###rti-privacy-banner-id
