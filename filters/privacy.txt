@@ -418,3 +418,25 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://onetutor.ai/
 ! ... type=xhr
 ||lemlist.com^$3p
+
+! https://github.com/ghostery/broken-page-reports/issues/2216
+! >>> url=https://privacyportal-eu.onetrust.com/request/v1/privacyNotices/stats/views
+! ... source=https://www.lancome-usa.com/privacy-rights.html
+! ... type=xhr
+||onetrust.com/request/v1/privacyNotices/stats^$important
+! >>> url=https://d37l98t2r94go6.cloudfront.net/ZXZlbnRz
+! ... source=https://www.lancome-usa.com/
+! ... type=xhr
+||d37l98t2r94go6.cloudfront.net^
+! >>> url=https://1.1.1.1/dns-query
+! ... source=https://www.lancome-usa.com/
+! ... type=xhr
+||1.1.1.1/dns-query^$domain=lancome-usa.com
+! >>> url=https://www.lancome-usa.com/on/demandware.static/Sites-lancome-us-Site/-/en_US/v1776745970814/dist/js-rl/mixins/Analytics.js
+! ... source=https://www.lancome-usa.com/
+! ... type=script
+||lancome-usa.com/on/demandware.static/*/mixins/Analytics.js
+! >>> url=https://www.lancome-usa.com/on/demandware.static/Sites-lancome-us-Site/-/en_US/v1776745970814/dist/js-rl/components/analytics/ActiveData.js
+! ... source=https://www.lancome-usa.com/
+! ... type=script
+||lancome-usa.com/on/demandware.static/*/analytics^
