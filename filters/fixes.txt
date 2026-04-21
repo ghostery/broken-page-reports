@@ -2415,3 +2415,7 @@ tzdf199.vip##.infor_flow
 tzdf199.vip##.item-list:not(:has(a + a))
 tzdf199.vip##.left-button
 tzdf199.vip##.bottom-button
+
+! https://github.com/ghostery/broken-page-reports/issues/1902
+cybermania.ws##.fade-overlay
+cybermania.ws##body:style(overflow: initial !important)
