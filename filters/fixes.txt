@@ -2404,3 +2404,14 @@ ib-game.jp##+js(set, userHealthCheck, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2192
 wehype.app##+js(trusted-set-cookie, WehypeCreatorCookieSettings, 'eyJjb25zZW50R2l2ZW4iOnRydWUsImNhdGVnb3JpZXMiOnsiZXNzZW50aWFsIjp0cnVlLCJhbmFseXRpY3MiOmZhbHNlfX0=')
+
+! https://github.com/ghostery/broken-page-reports/issues/1910
+tzdf199.vip###new_url
+tzdf199.vip##[id^="tanchuang"]
+tzdf199.vip##.banner
+tzdf199.vip##.icon-list
+tzdf199.vip###top-float
+tzdf199.vip##.infor_flow
+tzdf199.vip##.item-list:not(:has(a + a))
+tzdf199.vip##.left-button
+tzdf199.vip##.bottom-button
