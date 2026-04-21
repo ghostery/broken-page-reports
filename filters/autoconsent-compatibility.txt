@@ -173,11 +173,18 @@
 #@##privacy-statement:not(.checkbox)
 #@##onetrust-consent-sdk
 #@#.onetrust-pc-dark-filter
+#@#.ot-sdk-show-settings
+#@#.optanon-show-settings
 ! https://github.com/ghostery/broken-page-reports/issues/763
+! https://github.com/ghostery/broken-page-reports/issues/2216
 ! >>> url=https://cdn.cookielaw.org/scripttemplates/202406.1.0/otBannerSdk.js
 ! ... source=https://www.thespruceeats.com/
 ! ... type=script
 @@||cdn.cookielaw.org/scripttemplates/*/otBannerSdk.js^
+! >>> url=https://cdn.cookielaw.org/scripttemplates/202601.1.0/otBannerSdk.js
+! ... source=https://www.lancome-usa.com/
+! ... type=script
+@@/otbannersdk.js
 
 ! adblocker-filters#767: met-office
 ! >>> url=https://www.metoffice.gov.uk/public/gdpr-consent/cookieControl-config.js
