@@ -2419,3 +2419,8 @@ tzdf199.vip##.bottom-button
 ! https://github.com/ghostery/broken-page-reports/issues/1902
 cybermania.ws##.fade-overlay
 cybermania.ws##body:style(overflow: initial !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/1903
+blick.ch##.tp-modal:has([allow="payment"])
+blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]) > .tp-backdrop
+blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]):style(overflow: initial !important)
