@@ -6,11 +6,13 @@
 
 export const ACTION_DISABLE_ANTITRACKING_MODIFICATION = "disable-antitracking-modification";
 export const ACTION_DISABLE_AUTOCONSENT = "disable-autoconsent";
+export const ACTION_DISABLE_GPC = "disable-gpc";
 export const ACTION_PAUSE_ASSISTANT = "pause-assistant";
 
 export const ACTIONS = [
   ACTION_DISABLE_ANTITRACKING_MODIFICATION,
   ACTION_DISABLE_AUTOCONSENT,
+  ACTION_DISABLE_GPC,
   ACTION_PAUSE_ASSISTANT,
 ] as const;
 
