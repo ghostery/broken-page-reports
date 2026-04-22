@@ -2355,7 +2355,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
+||html-load.com^$domain=itavisen.no|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|welt.de|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
 ! >>> url=https://widgets.outbrain.com/outbrain.js
 ! ... source=https://www.welt.de/politik/deutschland/article69aedbcf28206c8e00ed46af/hertie-school-in-berlin-verhalten-sich-wie-auf-ihren-extremistischen-demos-in-kreuzberg.html
 ! ... type=script
