@@ -2424,3 +2424,9 @@ cybermania.ws##body:style(overflow: initial !important)
 blick.ch##.tp-modal:has([allow="payment"])
 blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]) > .tp-backdrop
 blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]):style(overflow: initial !important)
+
+! Allow Brevo/Sendinblue email tracking links to resolve so newsletter redirects work
+! >>> url=https://r.sendibm1.com/mk/cl/f/sh/abc123/xyz
+! ... source=https://example.com/
+! ... type=document
+@@||sendibm1.com/mk/$document
