@@ -1856,10 +1856,13 @@ finanznachrichten.de##+js(trusted-suppress-native-method, atob, '"c2V0VGltZW91dA
 ! https://github.com/ghostery/broken-page-reports/issues/1532
 ! https://github.com/ghostery/broken-page-reports/issues/1679
 ! https://github.com/ghostery/broken-page-reports/issues/1531
+! https://github.com/ghostery/broken-page-reports/issues/2228
 ! >>> url=https://platform.pubadx.one/
 ! ... source=https://www.wcostream.tv/the-mask-season-1-episode-15-split-personality
 ! ... type=script
 ||platform.pubadx.one^$redirect=noopjs,domain=wcostream.tv|wcostream.com|wco.tv|wcoflix.tv
+embed.wcostream.com###__abd_hardblock:style(display: none)
+wcostream.tv##.anti-ad
 
 ! https://github.com/ghostery/broken-page-reports/issues/1690
 dartsstreams.com##+js(set, siteConfig.buttonAdUri, 0)
@@ -2348,6 +2351,8 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2185
 ! https://github.com/ghostery/broken-page-reports/issues/2207
 ! https://github.com/ghostery/broken-page-reports/issues/2212
+! https://github.com/ghostery/broken-page-reports/issues/2230
+! https://github.com/ghostery/broken-page-reports/issues/2224
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2369,13 +2374,11 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
-notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
-notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
-itavisen.no##+js(set, adshield, {})
-itavisen.no##+js(set, adshield.isAdBlockerDetected, falseFunc)
+modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp,welt.de##+js(set, navigator.onLine, false)
+modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+itavisen.no,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
@@ -2430,3 +2433,7 @@ blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]):style(overflow: in
 ! ... source=https://example.com/
 ! ... type=document
 @@||sendibm1.com/mk/$document
+
+https://github.com/ghostery/broken-page-reports/issues/2226
+delta.com##+js(set, TrackJS, {})
+delta.com##+js(set, TrackJS.install, noopFunc)
