@@ -1,28 +1,27 @@
-name: Test
+name: Test filters
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'filters/**'
   pull_request:
-    paths-ignore:
+    paths:
       - 'filters/**'
   workflow_dispatch:
 
 concurrency:
-  group: "test"
+  group: "test-filters"
   cancel-in-progress: false
 
 jobs:
-  test-config:
+  test:
     runs-on: ubuntu-latest
-    name: Test Config types
-    defaults:
-      run:
-        working-directory: ./packages/config
+    name: Test
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-      - run: npm ci
-      - run: npm run test
-      - run: npm run build
+      - run: deno run lint
+      - run: deno run tests
+      - run: deno run build
