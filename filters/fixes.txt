@@ -1554,7 +1554,7 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! >>> url=https://hl.assyriaupbuild.com/rLRBbeaQitnLt/128512
 ! ... source=https://jkanime.net/
 ! ... type=xhr
-||jkanime.net^
+||assyriaupbuild.com^
 ! >>> url=https://dhoohbhuwaf.in/
 ! ... source=about:blank
 ! ... type=xhr
