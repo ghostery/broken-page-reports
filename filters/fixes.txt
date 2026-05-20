@@ -2444,3 +2444,6 @@ blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]):style(overflow: in
 delta.com##+js(set, TrackJS, {})
 delta.com##+js(set, TrackJS.install, noopFunc)
 delta.com##+js(set, TrackJS.isInstalled, trueFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/2244
+deon3.net##content-top-in
