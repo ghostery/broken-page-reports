@@ -320,7 +320,7 @@ account.msi.com###ccc
 ! ... source=https://welt.de/
 ! ... type=script
 @@||consent.up.welt.de^
-consent.up.welt.de##+js(trusted-click-element, .sp_choice_type_11, 500)
+consent.up.welt.de##+js(trusted-click-element, .sp_choice_type_11, , 500)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1113
 krsystem.pl###cook_cover
@@ -456,7 +456,7 @@ napedy-bram.pl##+js(trusted-set-cookie, cc_cookie, '{"categories":["necessary"],
 
 ! https://github.com/ghostery/broken-page-reports/issues/1502
 partsinmotion.co.uk#@##cookie-consent-window
-partsinmotion.co.uk##+js(trusted-click-element, #decline-all-submit, 500)
+partsinmotion.co.uk##+js(trusted-click-element, #decline-all-submit, , 500)
 partsinmotion.co.uk##+js(trusted-set-cookie, cookie_consent, '{"essential":true,"uid":"0"}')
 
 ! https://github.com/ghostery/broken-page-reports/issues/1493
@@ -544,7 +544,7 @@ t-online.de,9gag.com##html.sp-message-open body:style(overflow: initial !importa
 t-online.de##[id^="sp_message_container"]:has(> iframe[src^="https://consent.t-online.de/index.html"][src*="preload_message=true"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1673
-n26.com#@#+js(trusted-click-element, button[id="onetrust-reject-all-handler"], '', 1500)
+n26.com#@#+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
 n26.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentISODate$)
 n26.com##+js(trusted-set-cookie, OptanonConsent, "isGpcEnabled=1&datestamp=$currentDate$&version=202502.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&consentId=00000000-0000-0000-0000-000000000000&AwaitingReconsent=false")
 
@@ -732,14 +732,14 @@ welt.de##+js(trusted-set-cookie, consentDate, 2026-02-23T13:29:12.273Z)
 welt.de##+js(trusted-set-cookie, consentUUID, f7ffd06f-88d5-449d-b3d8-8feff75dd2ab_53)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2167
-aliorbank.pl##+js(trusted-click-element, div#eccm-shadow-host >>> button.eccmm-deny-all-btn--footer, 50)
+aliorbank.pl##+js(trusted-click-element, div#eccm-shadow-host >>> button.eccmm-deny-all-btn--footer, , 50)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2166
 baseendpoint.essen-und-trinken.de##+js(trusted-click-element, button.sp_choice_type_11)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2170
-faun.com##+js(trusted-click-element, input#external-media, 100)
-faun.com##+js(trusted-click-element, button#CookieBoxSaveButton, 150)
+faun.com##+js(trusted-click-element, input#external-media, , 100)
+faun.com##+js(trusted-click-element, button#CookieBoxSaveButton, , 150)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2171
 bertrandt.com##+js(trusted-click-element, button.ccm--decline-cookies)
