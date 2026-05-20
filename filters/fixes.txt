@@ -1551,6 +1551,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://hl.assyriaupbuild.com/rLRBbeaQitnLt/128512
+! ... source=https://jkanime.net/
+! ... type=xhr
+||jkanime.net^
 ! >>> url=https://dhoohbhuwaf.in/
 ! ... source=about:blank
 ! ... type=xhr
