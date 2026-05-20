@@ -984,3 +984,6 @@ sonnetsoftware.com#@#.cookie-widget-holder
 ! ... source=https://app.onetutor.ai/
 ! ... type=script
 @@/privacy-consent-$script,domain=app.onetutor.ai
+
+! https://github.com/ghostery/broken-page-reports/issues/2241
+voelkner.de#@##js_84fa0b8c9d7da99d162659e11c5e4028_container
