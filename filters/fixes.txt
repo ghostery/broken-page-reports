@@ -2435,5 +2435,7 @@ blick.ch##body.tp-modal-open:has(.tp-modal [allow="payment"]):style(overflow: in
 @@||sendibm1.com/mk/$document
 
 ! https://github.com/ghostery/broken-page-reports/issues/2226
+! https://github.com/ghostery/broken-page-reports/issues/2242
 delta.com##+js(set, TrackJS, {})
 delta.com##+js(set, TrackJS.install, noopFunc)
+delta.com##+js(set, TrackJS.isInstalled, trueFunc)
