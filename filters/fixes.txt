@@ -2383,7 +2383,7 @@ itavisen.no,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyoke
 ! https://github.com/ghostery/broken-page-reports/issues/2272
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://welt.de/
-! ... type=script
+! ... type=xhr
 ||html-load.com^$document,subdocument,xhr,domain=welt.de
 ! >>> url=https://error-report.com/
 ! ... source=https://welt.de/
