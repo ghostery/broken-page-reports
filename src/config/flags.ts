@@ -20,9 +20,6 @@ const flags: Config["flags"] = {
   [FLAG_MODES]: [
     { percentage: 100, filter: { version: "10.5.30" } },
   ],
-  [FLAG_PAUSE_ASSISTANT]: [
-    { percentage: 100 },
-  ],
   [FLAG_ONBOARDING_SURVEY]: [
     { percentage: 20 },
   ],
@@ -59,6 +56,10 @@ const completedFlags: Config["flags"] = {
   ],
   // https://github.com/ghostery/ghostery-extension/pull/3270
   [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
+    { percentage: 100 },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3380
+  [FLAG_PAUSE_ASSISTANT]: [
     { percentage: 100 },
   ],
 };
