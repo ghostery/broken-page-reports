@@ -2458,3 +2458,6 @@ delta.com##+js(set, TrackJS.isInstalled, trueFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2244
 deon3.net##content-top-in
+
+! https://github.com/ghostery/broken-page-reports/issues/2270
+bondagevalley.cc##.pleasedoit
