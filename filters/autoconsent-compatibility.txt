@@ -185,6 +185,15 @@
 ! ... source=https://www.lancome-usa.com/
 ! ... type=script
 @@/otbannersdk.js
+! https://github.com/ghostery/broken-page-reports/issues/2271
+! >>> url=https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js
+! ... source=https://www.asda.com/groceries/search/sugar
+! ... type=script
+@@||onetrust.com/scripttemplates/otSDKStub.js^
+! >>> url=https://cdn-ukwest.onetrust.com/scripttemplates/202511.1.0/otTCF.js
+! ... source=https://www.asda.com/groceries/search/sugar
+! ... type=script
+@@||onetrust.com/scripttemplates/*/otTCF.js^
 
 ! adblocker-filters#767: met-office
 ! >>> url=https://www.metoffice.gov.uk/public/gdpr-consent/cookieControl-config.js
