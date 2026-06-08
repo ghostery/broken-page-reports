@@ -19,7 +19,7 @@ export type Version = `${number}.${number}.${number}`;
 
 interface Filter {
   platform?: Platform[];
-  browser?: Browser;
+  browser?: Browser[];
   version?: Version;
 }
 
