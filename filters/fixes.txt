@@ -547,10 +547,6 @@ ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
 ! https://github.com/ghostery/broken-page-reports/issues/457
 consent.youtube.com#@#[data-p*="/consent.youtube.com"]
 
-! Fix non-idempotent scriptlet breaking on double injection
-www.youtube.com#@#+js(trusted-json-edit-xhr-request, [?..userAgent=/adunit|channel|lactmilli|instream|eafg/]..referer=repl({"regex":"$"\,"replacement":"#reloadxhr"}), propsToMatch, /player?)
-www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent=/adunit|channel|lactmilli|instream|eafg/]..referer=repl({"regex":"(?:#reloadxhr)?$"\,"replacement":"#reloadxhr"}), propsToMatch, /player?)
-
 ! https://github.com/ghostery/broken-page-reports/issues/454
 vb-halle.de##body.no-scroll:style(overflow: auto !important; position: inherit !important;)
 vb-halle.de##body.no-scroll::before:style(overflow: auto !important;)
