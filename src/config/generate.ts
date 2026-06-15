@@ -16,7 +16,9 @@ const config: Config = {
   flags,
 };
 
-const octokit = new Octokit();
+const octokit = new Octokit({
+  retry: { retries: 6 },
+});
 
 const iterator = octokit.paginate.iterator(octokit.rest.issues.listForRepo, {
   owner: "ghostery",
