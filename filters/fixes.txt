@@ -2468,3 +2468,6 @@ bondagevalley.cc##.pleasedoit
 
 ! https://github.com/ghostery/broken-page-reports/issues/2268
 go.globo.com##.desktop-ad-on-resize
+
+! https://github.com/ghostery/broken-page-reports/issues/2322
+ceneo.pl#@#.ado-top-billboard
