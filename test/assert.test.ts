@@ -1,4 +1,4 @@
-import { type RequestType } from "npm:@ghostery/adblocker";
+import { type RequestType } from "@ghostery/adblocker";
 import { expect } from "jsr:@std/expect";
 import { type Assertion, parse } from "../src/assert.ts";
 
