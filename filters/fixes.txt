@@ -2471,3 +2471,10 @@ go.globo.com##.desktop-ad-on-resize
 
 ! https://github.com/ghostery/broken-page-reports/issues/2322
 ceneo.pl#@#.ado-top-billboard
+
+! Unblock Tawk chat widget
+! https://github.com/ghostery/broken-page-reports/issues/2331
+! >>> url=https://www.googletagmanager.com/gtm.js?id=GTM-WFTBJG
+! ... source=https://audit.verified-data.com/projects/1e6a513c-2741-41bd-a691-85bfebd87146/page-inspector
+! ... type=script
+@@||googletagmanager.com/gtm.js$domain=verified-data.com
