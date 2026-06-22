@@ -2478,3 +2478,8 @@ ceneo.pl#@#.ado-top-billboard
 ! ... source=https://audit.verified-data.com/projects/1e6a513c-2741-41bd-a691-85bfebd87146/page-inspector
 ! ... type=script
 @@||googletagmanager.com/gtm.js$domain=verified-data.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2345
+elaoffcial.com##+js(set, ai_adb_detected, noopFunc)
+elaoffcial.com##+js(set, ai_adb_detected_actions, noopFunc)
+elaoffcial.com##+js(set, ai_adb_active, false)
