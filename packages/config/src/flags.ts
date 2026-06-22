@@ -10,12 +10,14 @@ export const FLAG_MODES = "modes";
 export const FLAG_ONBOARDING_SURVEY = "onboarding-survey";
 export const FLAG_NOTIFICATION_REVIEW = "notification-review";
 export const FLAG_SUBFRAME_SCRIPTING = "subframe-scripting";
+export const FLAG_PANEL_NOTIFICATION_SURVEY = "panel-notification-survey";
 
 export const FLAGS = [
   FLAG_MODES,
   FLAG_ONBOARDING_SURVEY,
   FLAG_NOTIFICATION_REVIEW,
   FLAG_SUBFRAME_SCRIPTING,
+  FLAG_PANEL_NOTIFICATION_SURVEY,
 ] as const;
 
 // ---- Completed flags ----

@@ -8,6 +8,7 @@ import {
   FLAG_MODES,
   FLAG_NOTIFICATION_REVIEW,
   FLAG_ONBOARDING_SURVEY,
+  FLAG_PANEL_NOTIFICATION_SURVEY,
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
   FLAG_SUBFRAME_SCRIPTING,
@@ -27,6 +28,9 @@ const flags: Config["flags"] = {
     { percentage: 90 },
   ],
   [FLAG_SUBFRAME_SCRIPTING]: [
+    { percentage: 100 },
+  ],
+  [FLAG_PANEL_NOTIFICATION_SURVEY]: [
     { percentage: 100 },
   ],
 };
