@@ -996,3 +996,6 @@ sonnetsoftware.com#@#.cookie-widget-holder
 
 ! https://github.com/ghostery/broken-page-reports/issues/2241
 voelkner.de#@##js_84fa0b8c9d7da99d162659e11c5e4028_container
+
+! https://github.com/ghostery/broken-page-reports/issues/2348
+emudding.ro#@#.cookie-policy-overlay
