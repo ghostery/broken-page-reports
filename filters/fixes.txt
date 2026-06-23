@@ -2487,3 +2487,6 @@ ceneo.pl#@#.ado-top-billboard
 elaoffcial.com##+js(set, ai_adb_detected, noopFunc)
 elaoffcial.com##+js(set, ai_adb_detected_actions, noopFunc)
 elaoffcial.com##+js(set, ai_adb_active, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/2337
+pastedownload.com###fc-main-dialog:has(#aadb-allow)
