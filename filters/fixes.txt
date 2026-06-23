@@ -1559,6 +1559,10 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://balbums.st/
 ! ... type=script
 ||gcigziwma.in^
+! >>> url=https://floccus.arduretrowing.cyou/0/
+! ... source=about:blank
+! ... type=script
+||arduretrowing.cyou^
 ! >>> url=https://pq.grozetstraint.com/rpPizri2dl1vPn8GB/WWEeq
 ! ... source=https://voir-anime.to/anime/witch-hat-atelier/witch-hat-atelier-13-vostfr/
 ! ... type=script
@@ -2369,6 +2373,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2230
 ! https://github.com/ghostery/broken-page-reports/issues/2224
 ! https://github.com/ghostery/broken-page-reports/issues/2243
+! https://github.com/ghostery/broken-page-reports/issues/2334
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2386,10 +2391,10 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
+tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
 itavisen.no,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2272
@@ -2494,3 +2499,7 @@ elaoffcial.com##+js(set, ai_adb_active, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2337
 pastedownload.com###fc-main-dialog:has(#aadb-allow)
+
+! https://github.com/ghostery/broken-page-reports/issues/2338
+ctnewsjunkie.com##aside.widget-area
+ctnewsjunkie.com##.is-visible
