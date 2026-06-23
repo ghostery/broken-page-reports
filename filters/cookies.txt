@@ -774,3 +774,6 @@ kattun-stoffe.de###consent-manager
 
 ! https://github.com/ghostery/broken-page-reports/issues/2340
 rijstextiles.com###consent-window
+
+! https://github.com/ghostery/broken-page-reports/issues/2327
+doz.pl##cookie-wall
