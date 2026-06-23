@@ -2506,3 +2506,6 @@ ctnewsjunkie.com##.is-visible
 
 ! https://github.com/ghostery/broken-page-reports/issues/2326
 microsip.org###mc-adialog
+
+! https://github.com/ghostery/broken-page-reports/issues/2325
+salon24.pl##.idsl
