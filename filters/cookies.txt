@@ -768,3 +768,6 @@ voelkner.de##+js(trusted-click-element, button.js_button_84fa0b8c9d7da99d162659e
 
 ! https://github.com/ghostery/broken-page-reports/issues/2270
 bondagevalley.cc##[aria-label="cookieconsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2341
+kattun-stoffe.de###consent-manager
