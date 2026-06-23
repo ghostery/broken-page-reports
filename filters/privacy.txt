@@ -446,3 +446,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://voir-anime.to/anime/witch-hat-atelier/witch-hat-atelier-13-vostfr/
 ! ... type=xhr
 ||sw.vidmoly.me/v1/ping^
+
+! https://github.com/ghostery/broken-page-reports/issues/2328
+! >>> url=https://bob.tinyns.me/api/event
+! ... source=https://balbums.st/
+! ... type=script
+||bob.tinyns.me/api/event

@@ -1555,6 +1555,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://gcigziwma.in/ornqiwz/twifri
+! ... source=https://balbums.st/
+! ... type=script
+||gcigziwma.in^
 ! >>> url=https://floccus.arduretrowing.cyou/0/
 ! ... source=about:blank
 ! ... type=script
