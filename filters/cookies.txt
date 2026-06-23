@@ -771,3 +771,6 @@ bondagevalley.cc##[aria-label="cookieconsent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2341
 kattun-stoffe.de###consent-manager
+
+! https://github.com/ghostery/broken-page-reports/issues/2340
+rijstextiles.com###consent-window
