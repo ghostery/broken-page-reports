@@ -2503,3 +2503,6 @@ pastedownload.com###fc-main-dialog:has(#aadb-allow)
 ! https://github.com/ghostery/broken-page-reports/issues/2338
 ctnewsjunkie.com##aside.widget-area
 ctnewsjunkie.com##.is-visible
+
+! https://github.com/ghostery/broken-page-reports/issues/2326
+microsip.org###mc-adialog
