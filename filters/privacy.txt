@@ -440,3 +440,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://www.lancome-usa.com/
 ! ... type=script
 ||lancome-usa.com/on/demandware.static/*/analytics^
+
+! https://github.com/ghostery/broken-page-reports/issues/2349
+! >>> url=https://sw.vidmoly.me/v1/ping
+! ... source=https://voir-anime.to/anime/witch-hat-atelier/witch-hat-atelier-13-vostfr/
+! ... type=xhr
+||sw.vidmoly.me/v1/ping^

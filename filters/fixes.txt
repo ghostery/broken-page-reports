@@ -1555,6 +1555,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://pq.grozetstraint.com/rpPizri2dl1vPn8GB/WWEeq
+! ... source=https://voir-anime.to/anime/witch-hat-atelier/witch-hat-atelier-13-vostfr/
+! ... type=script
+||grozetstraint.com^
 ! >>> url=https://hl.assyriaupbuild.com/rLRBbeaQitnLt/128512
 ! ... source=https://jkanime.net/
 ! ... type=xhr
