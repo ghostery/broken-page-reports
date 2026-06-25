@@ -2510,3 +2510,7 @@ microsip.org###mc-adialog
 
 ! https://github.com/ghostery/broken-page-reports/issues/2325
 salon24.pl##.idsl
+
+! https://github.com/ghostery/broken-page-reports/issues/2320
+turf-fr.com##.akcelo-wrapper
+turf-fr.com###sticky-header
