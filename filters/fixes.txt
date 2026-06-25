@@ -1555,6 +1555,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://jwqc3.j5ebf952lvfob1pf3b.cfd/k6VG9cb4vqRewRp/reJAN
+! ... source=https://streamex.sh/watch/tv/33765?s=1&e=1&server=streamex
+! ... type=script
+||j5ebf952lvfob1pf3b.cfd^
 ! >>> url=https://gcigziwma.in/ornqiwz/twifri
 ! ... source=https://balbums.st/
 ! ... type=script
