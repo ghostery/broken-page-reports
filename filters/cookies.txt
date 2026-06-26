@@ -786,3 +786,6 @@ bathroomcity.co.uk###block-cookiesui
 
 ! https://github.com/ghostery/broken-page-reports/issues/2306
 careers.workflex.com##+js(trusted-set-cookie, _ttCookiePermissions, )
+
+! https://github.com/ghostery/broken-page-reports/issues/2299
+strichka.fun##+js(trusted-set-local-storage-item, strichka_cookie_consent, declined)
