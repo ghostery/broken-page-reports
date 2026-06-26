@@ -1541,6 +1541,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://ay.shoalsirate.shop/r6a3eae20dbac7/85313
+! ... source=https://supjav.com/
+! ... type=script
+||shoalsirate.shop^
 ! >>> url=https://jwqc3.j5ebf952lvfob1pf3b.cfd/k6VG9cb4vqRewRp/reJAN
 ! ... source=https://streamex.sh/watch/tv/33765?s=1&e=1&server=streamex
 ! ... type=script
