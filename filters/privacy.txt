@@ -64,12 +64,6 @@
 ! ... type=image
 ||esputnik.com.ua/repository/applications/commons/hidden.png^
 
-! https://github.com/ghostery/broken-page-reports/issues/1141
-! >>> url=https://cdn.vidsrc.stream/disable-devtool@0.3.6/disable-devtool.min.js#/misdir.js
-! ... source=https://flixbaba.com/tv/1429/attack-on-titan/season/1?e=1&p=1
-! ... type=script
-||cdn.vidsrc.stream/disable-devtool
-
 ! https://github.com/ghostery/broken-page-reports/issues/1219
 ! >>> url=https://hl.koumyscampana.com/rcoho54CFPkn9/aOkqJ
 ! ... source=https://www.bitcine.app/
@@ -263,12 +257,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ! ... type=xhr
 ||dima-toon.com^$1p,xhr
 
-! https://github.com/ghostery/broken-page-reports/issues/1829
-! >>> url=https://tmstr2.shadowlandschronicles.com/rt_ping.php
-! ... source=https://cloudnestra.com/
-! ... type=xhr
-||tmstr2.shadowlandschronicles.com/rt_ping.php
-
 ! https://github.com/ghostery/broken-page-reports/issues/1847
 ! https://github.com/ghostery/broken-page-reports/issues/2042
 ! >>> url=https://supjav.com/fyh-api.php?
@@ -287,10 +275,6 @@ walmart.ca##+js(trusted-set-cookie, adblocked, false)
 ||lazypecan.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/1876
-! >>> url=https://tmstr2.shadowlandschronicles.com/rt_ping.php
-! ... source=https://5movies.store/wooflix/
-! ... type=xhr
-||shadowlandschronicles.com^
 ! >>> url=https://symboldense.com/
 ! ... source=https://5movies.store/wooflix/
 ! ... type=xhr
