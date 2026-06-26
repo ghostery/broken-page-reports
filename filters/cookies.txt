@@ -780,3 +780,6 @@ doz.pl##cookie-wall
 
 ! https://github.com/ghostery/broken-page-reports/issues/2310
 aftenposten.no##[id^="sp_message_container"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2309
+bathroomcity.co.uk###block-cookiesui
