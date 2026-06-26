@@ -777,3 +777,6 @@ rijstextiles.com###consent-window
 
 ! https://github.com/ghostery/broken-page-reports/issues/2327
 doz.pl##cookie-wall
+
+! https://github.com/ghostery/broken-page-reports/issues/2310
+aftenposten.no##[id^="sp_message_container"]
