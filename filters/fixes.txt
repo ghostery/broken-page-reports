@@ -2518,3 +2518,6 @@ amazon.it##[class^="_c2Itd_container"]
 ! ... source=https://www.coingecko.com/en/coins/zcash
 ! ... type=script
 ||onetrust.com^$domain=coingecko.com,important
+
+! https://github.com/ghostery/broken-page-reports/issues/2303
+abendzeitung-muenchen.de##+js(aopw, ouitsa9cFlags)
