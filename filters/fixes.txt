@@ -567,9 +567,6 @@ modal-media.com##+js(set, tarteaucitron.init, trueFunc)
 ! ... type=xhr
 @@||cdn.optimizely.com/datafiles$domain=hm.com
 
-! https://github.com/ghostery/broken-page-reports/issues/483
-meeco.kr##+js(set, adsBlocked, noopFunc)
-
 ! https://github.com/ghostery/broken-page-reports/issues/488
 mlive.com##div[class]>style+div
 
@@ -763,11 +760,6 @@ ybtour.co.kr##+js(set, wcs, {})
 
 ! https://github.com/ghostery/broken-page-reports/issues/699
 instapundit.com#@#.ad-space:not(.textads):not(.adbox)
-
-! https://github.com/ghostery/broken-page-reports/issues/705
-! Regional filters are not working on Ghostery Browser Extension v10
-! Imports for the most popular websites
-naver.com##[class^="Layout-module__banner_area_"][target]
 
 ! https://github.com/ghostery/broken-page-reports/issues/707
 ! >>> url=https://a0.awsstatic.com/libra/1.0.582/vendor/web-vitals.attribution.iife.js
@@ -983,12 +975,6 @@ wnd.com##.code-block:not(.code-block-14)
 dood.sh##+js(trusted-supress-native-method, document.getElementsByClassName, '"adsbox"', abort)
 dood.sh##+js(set, console.clear, noopFunc)
 dood.sh##+js(nostif, console.clear)
-
-! https://github.com/ghostery/broken-page-reports/issues/1046
-! >>> url=https://sitecore.marcelgruber.ca/_next/data/PIgARt31fCENzU_Isgwin/posts/onetrust-gtm-tag-custom-cookie-settings-button.json?slug=onetrust-gtm-tag-custom-cookie-settings-button
-! ... source=https://sitecore.marcelgruber.ca/posts/onetrust-gtm-tag-custom-cookie-settings-button
-! ... type=xhr
-@@/onetrust
 
 ! https://github.com/ghostery/broken-page-reports/issues/968
 lk1.supremejav.com##+js(nosiif, clearInterval(intv))
@@ -1575,10 +1561,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://jkanime.net/
 ! ... type=xhr
 ||assyriaupbuild.com^
-! >>> url=https://dhoohbhuwaf.in/
-! ... source=about:blank
-! ... type=xhr
-||dhoohbhuwaf.in^
 ! >>> url=https://firefang.xyz/
 ! ... source=about:blank
 ! ... type=xhr
@@ -1587,10 +1569,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
 ||chiasmiraisers.com^
-! >>> url=https://rn.betingelampong.cyou/g292bf2404bb56/71405
-! ... source=https://siska.tv/video.php?videoID=217098
-! ... type=script
-||betingelampong.cyou^
 ! >>> url=https://gukahdbam.com/almaj/vpyz/pitxp
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
