@@ -2512,3 +2512,9 @@ turf-fr.com###sticky-header
 
 ! https://github.com/ghostery/broken-page-reports/issues/2305
 amazon.it##[class^="_c2Itd_container"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2308
+! >>> url=https://onetrust.com/
+! ... source=https://www.coingecko.com/en/coins/zcash
+! ... type=script
+||onetrust.com^$domain=coingecko.com,important
