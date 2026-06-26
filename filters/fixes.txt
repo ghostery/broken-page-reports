@@ -2527,3 +2527,6 @@ salon24.pl##.idsl
 ! https://github.com/ghostery/broken-page-reports/issues/2320
 turf-fr.com##.akcelo-wrapper
 turf-fr.com###sticky-header
+
+! https://github.com/ghostery/broken-page-reports/issues/2305
+amazon.it##[class^="_c2Itd_container"]
