@@ -783,3 +783,6 @@ aftenposten.no##[id^="sp_message_container"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2309
 bathroomcity.co.uk###block-cookiesui
+
+! https://github.com/ghostery/broken-page-reports/issues/2306
+careers.workflex.com##+js(trusted-set-cookie, _ttCookiePermissions, )
