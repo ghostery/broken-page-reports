@@ -2529,3 +2529,11 @@ amazon.it##[class^="_c2Itd_container"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2303
 abendzeitung-muenchen.de##+js(aopw, ouitsa9cFlags)
+
+! https://github.com/ghostery/broken-page-reports/issues/2287
+kijk.nl##+js(nostif, adError)
+kijk.nl##+js(no-xhr-if, /AdManager.js$/)
+! >>> url=https://mssl.fwmrm.net/libs/adm/7.5.0/AdManager.js
+! ... source=https://www.kijk.nl/programmas/het-blok/z5jOjloqsvx
+! ... type=script
+/AdManager.js^$domain=kijk.nl,to=fwmrm.net,redirect=noopjs
