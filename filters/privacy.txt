@@ -436,3 +436,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://balbums.st/
 ! ... type=script
 ||bob.tinyns.me/api/event
+
+! https://github.com/ghostery/broken-page-reports/issues/2296
+! >>> url=api-iam.intercom.io/messenger/web/ping
+! ... source=https://dovetail.com/roles/research/
+! ... type=script
+||api-iam.intercom.io/messenger/web/ping^
