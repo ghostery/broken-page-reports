@@ -2367,6 +2367,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2315
 ! https://github.com/ghostery/broken-page-reports/issues/2312
 ! https://github.com/ghostery/broken-page-reports/issues/2382
+! https://github.com/ghostery/broken-page-reports/issues/2290
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2374,7 +2375,11 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=meteovista.be|index.hr|willyweather.com.au|countrylife.co.uk|computerbild.de|blog.livedoor.jp|tomshardware.com|puttingmetogether.com|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
+||html-load.com^$domain=tvtv.us|meteovista.be|index.hr|willyweather.com.au|countrylife.co.uk|computerbild.de|blog.livedoor.jp|tomshardware.com|puttingmetogether.com|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
+! >>> url=https://blahwhoever.com/core.js
+! ... source=https://www.tvtv.us/mo/saint-joseph/64505/luUSA-OTA64505
+! ... type=script
+||blahwhoever.com^
 9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
 9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
 9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
@@ -2389,7 +2394,7 @@ blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsd
 blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
 blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de,blog.livedoor.jp,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
-index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
+tvtv.us,index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, Node.prototype.appendChild, '{"src":"html-load.com"}', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(ra, onload|onerror, script[src^="https://html-load.com/"], asap stay)
