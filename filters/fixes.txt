@@ -2368,6 +2368,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2312
 ! https://github.com/ghostery/broken-page-reports/issues/2382
 ! https://github.com/ghostery/broken-page-reports/issues/2290
+! https://github.com/ghostery/broken-page-reports/issues/2289
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
