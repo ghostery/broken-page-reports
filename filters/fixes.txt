@@ -2374,7 +2374,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=meteovista.be|index.hr|willyweather.com.au|countrylife.co.uk|computerbild.de|blog.livedoor.jp|tomshardware.com|puttingmetogether.com|itavisen.no|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
+||html-load.com^$domain=meteovista.be|index.hr|willyweather.com.au|countrylife.co.uk|computerbild.de|blog.livedoor.jp|tomshardware.com|puttingmetogether.com|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
 9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
 9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
 9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
