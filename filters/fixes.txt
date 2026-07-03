@@ -2370,6 +2370,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2290
 ! https://github.com/ghostery/broken-page-reports/issues/2289
 ! https://github.com/ghostery/broken-page-reports/issues/2288
+! https://github.com/ghostery/broken-page-reports/issues/2402
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2391,10 +2392,10 @@ picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
 flatpanelshd.com##+js(trusted-suppress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
-blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de,blog.livedoor.jp,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
 letsrv.com,noracooks.com,tvtv.us,index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
