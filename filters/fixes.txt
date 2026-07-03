@@ -1541,6 +1541,14 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://jn.lehrreiced.com/szXWewAurfGfASi/132312
+! ... source=https://cinebloom.cc/
+! ... type=script
+||lehrreiced.com^
+! >>> url=https://jg.yakdudism.com/rkq5g07dgfXP/124264
+! ... source=https://cinebloom.cc/
+! ... type=script
+||yakdudism.com^
 ! >>> url=https://ay.shoalsirate.shop/r6a3eae20dbac7/85313
 ! ... source=https://supjav.com/
 ! ... type=script
