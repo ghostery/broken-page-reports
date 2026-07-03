@@ -795,3 +795,6 @@ epayments.paypoint.com##[aria-label="cookieconsent"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2405
 wiki.gg##.mw-cookiewarning-container
+
+! https://github.com/ghostery/broken-page-reports/issues/2404
+freelancehub.pro##+js(set-cookie, cookie_consent, false)
