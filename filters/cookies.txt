@@ -792,3 +792,6 @@ strichka.fun##+js(trusted-set-local-storage-item, strichka_cookie_consent, decli
 
 ! https://github.com/ghostery/broken-page-reports/issues/2292
 epayments.paypoint.com##[aria-label="cookieconsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2405
+wiki.gg##.mw-cookiewarning-container
