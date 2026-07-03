@@ -2373,6 +2373,7 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2402
 ! https://github.com/ghostery/broken-page-reports/issues/2401
 ! https://github.com/ghostery/broken-page-reports/issues/2400
+! https://github.com/ghostery/broken-page-reports/issues/2409
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2397,7 +2398,7 @@ movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetog
 movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
 movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de,blog.livedoor.jp,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
-windowscentral.com,letsrv.com,noracooks.com,tvtv.us,index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
+cyclingweekly.com,windowscentral.com,letsrv.com,noracooks.com,tvtv.us,index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, Node.prototype.appendChild, '{"src":"html-load.com"}', prevent)
 index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(ra, onload|onerror, script[src^="https://html-load.com/"], asap stay)
