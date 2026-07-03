@@ -2417,6 +2417,12 @@ index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(ra, onload|o
 9gag.com##+js(trusted-prevent-fetch, /html-load\.com\/script\/.*9gag\.com\.js/, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
 9gag.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\/.*9gag\.com\.js/, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
 
+! https://github.com/ghostery/broken-page-reports/issues/2237
+! >>> url=https://fen.peryuck.com/ybar/mail.yahoo.com/_m
+! ... source=https://mail.yahoo.com/n/inbox/priority
+! ... type=script
+||peryuck.com^
+
 ! https://github.com/ghostery/broken-page-reports/issues/2272
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://welt.de/
