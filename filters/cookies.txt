@@ -807,3 +807,6 @@ oberstdorfer-musiksommer.de##+js(trusted-set-cookie, Consent, 0)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2440
 lotto.pl##+js(trusted-click-element, dialog div.actions div.action.primary.large > button, 500)
+
+! https://github.com/ghostery/broken-page-reports/issues/2439
+safetypro.nl##+js(trusted-set-local-storage-item, app_gdpr_consent, all)
