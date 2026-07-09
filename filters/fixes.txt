@@ -2563,3 +2563,6 @@ kijk.nl##+js(no-xhr-if, /AdManager.js$/)
 ! ... source=https://www.kijk.nl/programmas/het-blok/z5jOjloqsvx
 ! ... type=script
 /AdManager.js^$domain=kijk.nl,to=fwmrm.net,redirect=noopjs
+
+! https://github.com/ghostery/broken-page-reports/issues/2442
+weather.com##div:has(> .text-xxs.w-full.px-4.py-1.text-center.leading-4.text-gray-400+[data-testid]>[data-testid]:empty)
