@@ -801,3 +801,6 @@ freelancehub.pro##+js(set-cookie, cookie_consent, false)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2444
 cathaypacific.com###ot-pc-slim
+
+! https://github.com/ghostery/broken-page-reports/issues/2443
+oberstdorfer-musiksommer.de##+js(trusted-set-cookie, Consent, 0)
