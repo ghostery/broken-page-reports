@@ -1002,3 +1002,6 @@ emudding.ro#@#.cookie-policy-overlay
 
 ! https://github.com/ghostery/broken-page-reports/issues/2369
 auth.evolvsports.com#@#.privacy-policy-consent
+
+! https://github.com/ghostery/broken-page-reports/issues/2439
+safetypro.nl#@#.gdpr-consent
