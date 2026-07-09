@@ -1,4 +1,4 @@
-import { type RequestType } from "npm:@ghostery/adblocker";
+import { type RequestType } from "@ghostery/adblocker";
 
 export type Assertion = {
   match: boolean;

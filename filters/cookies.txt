@@ -540,7 +540,7 @@ lamontagne.fr##div[style=""]:has(svg.cf-icon-adblocker)
 
 ! https://github.com/ghostery/broken-page-reports/issues/1674
 ! https://github.com/ghostery/broken-page-reports/issues/2164
-t-online.de,9gag.com##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
+t-online.de##html.sp-message-open body:style(overflow: initial !important; position: initial !important; margin-top: initial !important)
 t-online.de##[id^="sp_message_container"]:has(> iframe[src^="https://consent.t-online.de/index.html"][src*="preload_message=true"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/1673
@@ -707,8 +707,10 @@ standaardboekhandel.be#@#.modal-backdrop
 standaardboekhandel.be#@#.modal
 
 ! https://github.com/ghostery/broken-page-reports/issues/2100
+! https://github.com/ghostery/broken-page-reports/issues/2294
 onet.pl##div.cmp-app_gdpr
 onet.pl##body.cmp:style(overflow: initial !important)
+onet.pl##+js(remove-class, cmp, body)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2104
 consumentenbond.nl##div[data-test-consent-banner]
@@ -766,3 +768,45 @@ voelkner.de##+js(trusted-click-element, button.js_button_84fa0b8c9d7da99d162659e
 
 ! https://github.com/ghostery/broken-page-reports/issues/2270
 bondagevalley.cc##[aria-label="cookieconsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2341
+kattun-stoffe.de###consent-manager
+
+! https://github.com/ghostery/broken-page-reports/issues/2340
+rijstextiles.com###consent-window
+
+! https://github.com/ghostery/broken-page-reports/issues/2327
+doz.pl##cookie-wall
+
+! https://github.com/ghostery/broken-page-reports/issues/2310
+aftenposten.no##[id^="sp_message_container"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2309
+bathroomcity.co.uk###block-cookiesui
+
+! https://github.com/ghostery/broken-page-reports/issues/2306
+careers.workflex.com##+js(trusted-set-cookie, _ttCookiePermissions, )
+
+! https://github.com/ghostery/broken-page-reports/issues/2299
+strichka.fun##+js(trusted-set-local-storage-item, strichka_cookie_consent, declined)
+
+! https://github.com/ghostery/broken-page-reports/issues/2292
+epayments.paypoint.com##[aria-label="cookieconsent"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2405
+wiki.gg##.mw-cookiewarning-container
+
+! https://github.com/ghostery/broken-page-reports/issues/2404
+freelancehub.pro##+js(set-cookie, cookie_consent, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/2444
+cathaypacific.com###ot-pc-slim
+
+! https://github.com/ghostery/broken-page-reports/issues/2443
+oberstdorfer-musiksommer.de##+js(trusted-set-cookie, Consent, 0)
+
+! https://github.com/ghostery/broken-page-reports/issues/2440
+lotto.pl##+js(trusted-click-element, dialog div.actions div.action.primary.large > button, 500)
+
+! https://github.com/ghostery/broken-page-reports/issues/2439
+safetypro.nl##+js(trusted-set-local-storage-item, app_gdpr_consent, all)

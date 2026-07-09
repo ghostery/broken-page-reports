@@ -1,4 +1,4 @@
-import { NetworkFilter, parseFilter, Request } from "npm:@ghostery/adblocker";
+import { NetworkFilter, parseFilter, Request } from "@ghostery/adblocker";
 import { expect } from "jsr:@std/expect";
 import { readFileSync } from "node:fs";
 import path from "node:path";

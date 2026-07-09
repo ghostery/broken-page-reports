@@ -547,10 +547,6 @@ ytstv.me##+js(aopw, HTMLScriptElement.prototype.onerror)
 ! https://github.com/ghostery/broken-page-reports/issues/457
 consent.youtube.com#@#[data-p*="/consent.youtube.com"]
 
-! Idempotent fix
-www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent\,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; "+t):e}\,o=["channel"\,"lactmilli"];let r=!1\,n=o;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e||!window.location.href.includes("/watch?"))return void(n=o);const a=e.getPlayerResponse?.()\,s=e.getProgressState?.()\,i=e.getStatsForNerds?.();if(s&&s.duration>0&&(s.loaded<s.duration||s.duration-s.current>1)||a?.videoDetails?.isLive){if(!i?.debug_info?.startsWith?.("SSAP\, AD")){const o=a.videoDetails?.videoId\,s=a.playerConfig?.playbackStartConfig?.startSeconds??0\,l=e.getPlayerStateObject?.()?.isBuffering\,c=JSON.stringify(a.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs);return void("UNPLAYABLE"===a?.playabilityStatus?.status&&!a?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel&&c?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&c?.includes?.("https://support.google.com/youtube/answer/3037019")?(n=n.slice(1)\,n.length>0?t(n[0]):t("")\,r=!1\,e.loadVideoById(o\,s)):0===n.length?(r=!1\,t("")):l&&"0.00 s"===i?.buffer_health_seconds&&"0x0"===i?.resolution&&r&&(t(n[0])\,r=!1\,e.loadVideoById(o\,s)))}s.duration>0&&e.seekTo?.(s.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}))\,window.Map.prototype.has=new Proxy(window.Map.prototype.has\,{apply:(e\,t\,o)=>{if("onSnackbarMessage"===o?.[0]&&!r){const a=document.getElementById("movie_player");if(!a)return Reflect.apply(e\,t\,o);const s=a.getStatsForNerds?.()\,i=a.getPlayerStateObject?.()?.isBuffering\,l=a.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;i&&"0.00 s"===s?.buffer_health_seconds&&"0x0"===s?.resolution&&n.length>0&&(l.includes("reloadxhr")&&(n=n.slice(1))\,r=!0)}return Reflect.apply(e\,t\,o)}});const a={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,a)})();(function serverContract(), sedCount, 1)
-www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), (()=>{const l=Symbol.unscopables;if(new Map().has(l)||ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType==="YOUTUBE_PREMIUM_LOGO"||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const c=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent\,i=r=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=r?c.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; "+r):c}\,d=["channel"\,"lactmilli"];let s=!1\,n=d;document.addEventListener("DOMContentLoaded"\,function(){const r=()=>{const o=document.getElementById("movie_player");if(!o||!window.location.href.includes("/watch?")){n=d;return}const t=o.getPlayerResponse?.()\,e=o.getProgressState?.()\,a=o.getStatsForNerds?.();if(!(e&&e.duration>0&&(e.loaded<e.duration||e.duration-e.current>1)||t?.videoDetails?.isLive))return;if(!a?.debug_info?.startsWith?.("SSAP\, AD")){const y=t.videoDetails?.videoId\,f=t.playerConfig?.playbackStartConfig?.startSeconds??0\,h=o.getPlayerStateObject?.()?.isBuffering\,b=JSON.stringify(t.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs);if(t?.playabilityStatus?.status==="UNPLAYABLE"&&!t?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel&&b?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&b?.includes?.("https://support.google.com/youtube/answer/3037019")){n=n.slice(1)\,n.length>0?i(n[0]):i("")\,s=!1\,o.loadVideoById(y\,f);return}if(n.length===0){s=!1\,i("");return}if(h&&a?.buffer_health_seconds==="0.00 s"&&a?.resolution==="0x0"&&s){i(n[0])\,s=!1\,o.loadVideoById(y\,f);return}return}e.duration>0&&o.seekTo?.(e.duration)};r()\,new MutationObserver(()=>{r()}).observe(document\,{childList:!0\,subtree:!0})})\,window.Map.prototype.has=new Proxy(window.Map.prototype.has\,{apply:(r\,o\,t)=>{if(t?.[0]===l)return!0;if(t?.[0]==="onSnackbarMessage"&&!s){const e=document.getElementById("movie_player");if(!e)return Reflect.apply(r\,o\,t);const a=e.getStatsForNerds?.()\,u=e.getPlayerStateObject?.()?.isBuffering\,p=e.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;u&&a?.buffer_health_seconds==="0.00 s"&&a?.resolution==="0x0"&&n.length>0&&(p.includes("reloadxhr")&&(n=n.slice(1))\,s=!0)}return Reflect.apply(r\,o\,t)}});const g={apply:(r\,o\,t)=>{const e=t[0];return typeof e=="function"&&e.toString().includes("onAbnormalityDetected")&&(t[0]=function(){})\,Reflect.apply(r\,o\,t)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,g)})();(function serverContract(), sedCount, 1)
-
 ! https://github.com/ghostery/broken-page-reports/issues/454
 vb-halle.de##body.no-scroll:style(overflow: auto !important; position: inherit !important;)
 vb-halle.de##body.no-scroll::before:style(overflow: auto !important;)
@@ -566,9 +562,6 @@ modal-media.com##+js(set, tarteaucitron.init, trueFunc)
 ! ... source=https://www2.hm.com/de_de/productpage.1087261001.html
 ! ... type=xhr
 @@||cdn.optimizely.com/datafiles$domain=hm.com
-
-! https://github.com/ghostery/broken-page-reports/issues/483
-meeco.kr##+js(set, adsBlocked, noopFunc)
 
 ! https://github.com/ghostery/broken-page-reports/issues/488
 mlive.com##div[class]>style+div
@@ -763,11 +756,6 @@ ybtour.co.kr##+js(set, wcs, {})
 
 ! https://github.com/ghostery/broken-page-reports/issues/699
 instapundit.com#@#.ad-space:not(.textads):not(.adbox)
-
-! https://github.com/ghostery/broken-page-reports/issues/705
-! Regional filters are not working on Ghostery Browser Extension v10
-! Imports for the most popular websites
-naver.com##[class^="Layout-module__banner_area_"][target]
 
 ! https://github.com/ghostery/broken-page-reports/issues/707
 ! >>> url=https://a0.awsstatic.com/libra/1.0.582/vendor/web-vitals.attribution.iife.js
@@ -983,12 +971,6 @@ wnd.com##.code-block:not(.code-block-14)
 dood.sh##+js(trusted-supress-native-method, document.getElementsByClassName, '"adsbox"', abort)
 dood.sh##+js(set, console.clear, noopFunc)
 dood.sh##+js(nostif, console.clear)
-
-! https://github.com/ghostery/broken-page-reports/issues/1046
-! >>> url=https://sitecore.marcelgruber.ca/_next/data/PIgARt31fCENzU_Isgwin/posts/onetrust-gtm-tag-custom-cookie-settings-button.json?slug=onetrust-gtm-tag-custom-cookie-settings-button
-! ... source=https://sitecore.marcelgruber.ca/posts/onetrust-gtm-tag-custom-cookie-settings-button
-! ... type=xhr
-@@/onetrust
 
 ! https://github.com/ghostery/broken-page-reports/issues/968
 lk1.supremejav.com##+js(nosiif, clearInterval(intv))
@@ -1555,14 +1537,46 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://peoplebrain.net/
+! ... source=https://gamebanana.com/mods/477979
+! ... type=script
+||peoplebrain.net^
+! >>> url=https://mimokrikodil.link/lib
+! ... source=https://luther-hdrezka.net/232-tvshows/4-season
+! ... type=script
+||mimokrikodil.link^
+! >>> url=https://jn.lehrreiced.com/szXWewAurfGfASi/132312
+! ... source=https://cinebloom.cc/
+! ... type=script
+||lehrreiced.com^
+! >>> url=https://jg.yakdudism.com/rkq5g07dgfXP/124264
+! ... source=https://cinebloom.cc/
+! ... type=script
+||yakdudism.com^
+! >>> url=https://ay.shoalsirate.shop/r6a3eae20dbac7/85313
+! ... source=https://supjav.com/
+! ... type=script
+||shoalsirate.shop^
+! >>> url=https://jwqc3.j5ebf952lvfob1pf3b.cfd/k6VG9cb4vqRewRp/reJAN
+! ... source=https://streamex.sh/watch/tv/33765?s=1&e=1&server=streamex
+! ... type=script
+||j5ebf952lvfob1pf3b.cfd^
+! >>> url=https://gcigziwma.in/ornqiwz/twifri
+! ... source=https://balbums.st/
+! ... type=script
+||gcigziwma.in^
+! >>> url=https://floccus.arduretrowing.cyou/0/
+! ... source=about:blank
+! ... type=script
+||arduretrowing.cyou^
+! >>> url=https://pq.grozetstraint.com/rpPizri2dl1vPn8GB/WWEeq
+! ... source=https://voir-anime.to/anime/witch-hat-atelier/witch-hat-atelier-13-vostfr/
+! ... type=script
+||grozetstraint.com^
 ! >>> url=https://hl.assyriaupbuild.com/rLRBbeaQitnLt/128512
 ! ... source=https://jkanime.net/
 ! ... type=xhr
 ||assyriaupbuild.com^
-! >>> url=https://dhoohbhuwaf.in/
-! ... source=about:blank
-! ... type=xhr
-||dhoohbhuwaf.in^
 ! >>> url=https://firefang.xyz/
 ! ... source=about:blank
 ! ... type=xhr
@@ -1571,10 +1585,6 @@ abysscdn.com##+js(aopr, fuckAdBlock)
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
 ||chiasmiraisers.com^
-! >>> url=https://rn.betingelampong.cyou/g292bf2404bb56/71405
-! ... source=https://siska.tv/video.php?videoID=217098
-! ... type=script
-||betingelampong.cyou^
 ! >>> url=https://gukahdbam.com/almaj/vpyz/pitxp
 ! ... source=https://siska.tv/video.php?videoID=217098
 ! ... type=script
@@ -2361,6 +2371,23 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! https://github.com/ghostery/broken-page-reports/issues/2230
 ! https://github.com/ghostery/broken-page-reports/issues/2224
 ! https://github.com/ghostery/broken-page-reports/issues/2243
+! https://github.com/ghostery/broken-page-reports/issues/2334
+! https://github.com/ghostery/broken-page-reports/issues/2321
+! https://github.com/ghostery/broken-page-reports/issues/2318
+! https://github.com/ghostery/broken-page-reports/issues/2317
+! https://github.com/ghostery/broken-page-reports/issues/2313
+! https://github.com/ghostery/broken-page-reports/issues/2315
+! https://github.com/ghostery/broken-page-reports/issues/2312
+! https://github.com/ghostery/broken-page-reports/issues/2382
+! https://github.com/ghostery/broken-page-reports/issues/2290
+! https://github.com/ghostery/broken-page-reports/issues/2289
+! https://github.com/ghostery/broken-page-reports/issues/2288
+! https://github.com/ghostery/broken-page-reports/issues/2402
+! https://github.com/ghostery/broken-page-reports/issues/2401
+! https://github.com/ghostery/broken-page-reports/issues/2400
+! https://github.com/ghostery/broken-page-reports/issues/2409
+! https://github.com/ghostery/broken-page-reports/issues/2437
+! https://github.com/ghostery/broken-page-reports/issues/2436
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
@@ -2368,21 +2395,37 @@ techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScrip
 ! >>> url=https://html-load.com/loader.min.js
 ! ... source=https://flatpanelshd.com/
 ! ... type=script
-||html-load.com^$domain=puttingmetogether.com|itavisen.no|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
-9gag.com,picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
-9gag.com,picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
-9gag.com,picrew.me##+js(nostif, _loadScript, 1000)
-9gag.com##+js(aopr, console.error)
-9gag.com##.viously.vsly-invisible-placement
+||html-load.com^$domain=windowscentral.com|letsrv.com|noracooks.com|tvtv.us|meteovista.be|index.hr|willyweather.com.au|countrylife.co.uk|computerbild.de|blog.livedoor.jp|tomshardware.com|puttingmetogether.com|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
+! >>> url=https://blahwhoever.com/core.js
+! ... source=https://www.tvtv.us/mo/saint-joseph/64505/luUSA-OTA64505
+! ... type=script
+||blahwhoever.com^
+picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
+picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
+picrew.me##+js(nostif, _loadScript, 1000)
 picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
 picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
-flatpanelshd.com##+js(trusted-supress-native-method, window.postMessage, '"as_req"')
+flatpanelshd.com##+js(trusted-suppress-native-method, window.postMessage, '"as_req"')
 flatpanelshd.com##+js(aopr, as_retry)
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
-puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,itavisen.no,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
-itavisen.no,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script>"', prevent)
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
+movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
+index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de,blog.livedoor.jp,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
+cyclingweekly.com,windowscentral.com,letsrv.com,noracooks.com,index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
+index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
+index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, Node.prototype.appendChild, '{"src":"html-load.com"}', prevent)
+index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(ra, onload|onerror, script[src^="https://html-load.com/"], asap stay)
+tvtv.us,tastesbetterfromscratch.com,9gag.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+tvtv.us,tastesbetterfromscratch.com,9gag.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+tvtv.us##ad-unit
+tvtv.us###siderail
+
+! https://github.com/ghostery/broken-page-reports/issues/2237
+! >>> url=https://fen.peryuck.com/ybar/mail.yahoo.com/_m
+! ... source=https://mail.yahoo.com/n/inbox/priority
+! ... type=script
+||peryuck.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/2272
 ! >>> url=https://html-load.com/loader.min.js
@@ -2468,3 +2511,64 @@ bondagevalley.cc##.pleasedoit
 
 ! https://github.com/ghostery/broken-page-reports/issues/2268
 go.globo.com##.desktop-ad-on-resize
+
+! https://github.com/ghostery/broken-page-reports/issues/2322
+ceneo.pl#@#.ado-top-billboard
+
+! Unblock Tawk chat widget
+! https://github.com/ghostery/broken-page-reports/issues/2331
+! >>> url=https://www.googletagmanager.com/gtm.js?id=GTM-WFTBJG
+! ... source=https://audit.verified-data.com/projects/1e6a513c-2741-41bd-a691-85bfebd87146/page-inspector
+! ... type=script
+@@||googletagmanager.com/gtm.js$domain=verified-data.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2345
+elaoffcial.com##+js(set, ai_adb_detected, noopFunc)
+elaoffcial.com##+js(set, ai_adb_detected_actions, noopFunc)
+elaoffcial.com##+js(set, ai_adb_active, false)
+
+! https://github.com/ghostery/broken-page-reports/issues/2337
+pastedownload.com###fc-main-dialog:has(#aadb-allow)
+
+! https://github.com/ghostery/broken-page-reports/issues/2338
+ctnewsjunkie.com##aside.widget-area
+ctnewsjunkie.com##.is-visible
+
+! https://github.com/ghostery/broken-page-reports/issues/2326
+microsip.org###mc-adialog
+
+! https://github.com/ghostery/broken-page-reports/issues/2325
+salon24.pl##.idsl
+
+! https://github.com/ghostery/broken-page-reports/issues/2320
+turf-fr.com##.akcelo-wrapper
+turf-fr.com###sticky-header
+
+! https://github.com/ghostery/broken-page-reports/issues/2305
+amazon.it##[class^="_c2Itd_container"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2308
+! >>> url=https://onetrust.com/
+! ... source=https://www.coingecko.com/en/coins/zcash
+! ... type=script
+||onetrust.com^$domain=coingecko.com,important
+
+! https://github.com/ghostery/broken-page-reports/issues/2303
+abendzeitung-muenchen.de##+js(aopw, ouitsa9cFlags)
+
+! https://github.com/ghostery/broken-page-reports/issues/2287
+kijk.nl##+js(nostif, adError)
+kijk.nl##+js(no-xhr-if, /AdManager.js$/)
+! >>> url=https://mssl.fwmrm.net/libs/adm/7.5.0/AdManager.js
+! ... source=https://www.kijk.nl/programmas/het-blok/z5jOjloqsvx
+! ... type=script
+/AdManager.js^$domain=kijk.nl,to=fwmrm.net,redirect=noopjs
+
+! https://github.com/ghostery/broken-page-reports/issues/2442
+weather.com##div:has(> .text-xxs.w-full.px-4.py-1.text-center.leading-4.text-gray-400+[data-testid]>[data-testid]:empty)
+
+! https://github.com/ghostery/broken-page-reports/issues/267
+! https://github.com/ghostery/ghostery-extension/issues/3473
+! https://github.com/uBlockOrigin/uAssets/commit/1d0529c5bcbe69dd0e3b180fae3671ea3d50965d
+www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), '(()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/,"$1; "+t):e},o=["adunit","lactmilli","channel","instream","eafg"];let r=!1,n=o;document.addEventListener("DOMContentLoaded",(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e||!window.location.href.includes("/watch?"))return void(n=o);const a=e.getPlayerResponse?.(),s=e.getProgressState?.(),i=e.getStatsForNerds?.();if(s&&s.duration>0&&(s.loaded<s.duration||s.duration-s.current>1)||a?.videoDetails?.isLive){if(!i?.debug_info?.startsWith?.("SSAP, AD")){const o=a.videoDetails?.videoId,s=a.playerConfig?.playbackStartConfig?.startSeconds??0,l=e.getPlayerStateObject?.()?.isBuffering,d=a.playabilityStatus?.errorScreen,c=JSON.stringify(d?.playerErrorMessageRenderer?.subreason?.runs||d?.playerInterstitialRenderer?.content?.interstitialViewModel?.description?.commandRuns);return void("UNPLAYABLE"===a?.playabilityStatus?.status&&!d?.playerErrorMessageRenderer?.playerCaptchaViewModel&&c?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&c?.includes?.("https://support.google.com/youtube/answer/3037019")?(n=n.slice(1),n.length>0?t(n[0]):t(""),r=!1,e.loadVideoById(o,s)):0===n.length?(r=!1,t("")):l&&"0.00 s"===i?.buffer_health_seconds&&"0x0"===i?.resolution&&r&&(t(n[0]),r=!1,e.loadVideoById(o,s)))}s.duration>0&&e.seekTo?.(s.duration)}};e(),new MutationObserver((()=>{e()})).observe(document,{childList:!0,subtree:!0})})),window.Map.prototype.has=new Proxy(window.Map.prototype.has,{apply:(e,t,o)=>{if("onSnackbarMessage"===o?.[0]&&!r){const e=document.getElementById("movie_player");if(!e)return;const t=e.getStatsForNerds?.(),o=e.getPlayerStateObject?.()?.isBuffering,a=e.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;o&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&n.length>0&&(a.includes("reloadxhr")&&(n=n.slice(1)),r=!0)}return Reflect.apply(e,t,o)}});const a={apply:(e,t,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){}),Reflect.apply(e,t,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,a)})();(function serverContract()', sedCount, 1)
+www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), '(()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/,"$1; "+t):e},o=["adunit","lactmilli","channel","instream","eafg"];let r=!1,n=o;document.addEventListener("DOMContentLoaded",(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e||!window.location.href.includes("/watch?"))return void(n=o);const a=e.getPlayerResponse?.(),s=e.getProgressState?.(),i=e.getStatsForNerds?.();if(s&&s.duration>0&&(s.loaded<s.duration||s.duration-s.current>1)||a?.videoDetails?.isLive){if(!i?.debug_info?.startsWith?.("SSAP, AD")){const o=a.videoDetails?.videoId,s=a.playerConfig?.playbackStartConfig?.startSeconds??0,l=e.getPlayerStateObject?.()?.isBuffering,d=a.playabilityStatus?.errorScreen,c=JSON.stringify(d?.playerErrorMessageRenderer?.subreason?.runs||d?.playerInterstitialRenderer);return void("UNPLAYABLE"===a?.playabilityStatus?.status&&!d?.playerErrorMessageRenderer?.playerCaptchaViewModel&&c?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&c?.includes?.("https://support.google.com/youtube/answer/3037019")?(n=n.slice(1),n.length>0?t(n[0]):t(""),r=!1,e.loadVideoById(o,s)):0===n.length?(r=!1,t("")):l&&"0.00 s"===i?.buffer_health_seconds&&"0x0"===i?.resolution&&r&&(t(n[0]),r=!1,e.loadVideoById(o,s)))}s.duration>0&&e.seekTo?.(s.duration)}};e(),new MutationObserver((()=>{e()})).observe(document,{childList:!0,subtree:!0})})),window.Map.prototype.has=new Proxy(window.Map.prototype.has,{apply:(e,t,o)=>{if("onSnackbarMessage"===o?.[0]&&!r){const e=document.getElementById("movie_player");if(!e)return;const t=e.getStatsForNerds?.(),o=e.getPlayerStateObject?.()?.isBuffering,a=e.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;o&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&n.length>0&&(a.includes("reloadxhr")&&(n=n.slice(1)),r=!0)}return Reflect.apply(e,t,o)}});const a={apply:(e,t,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){}),Reflect.apply(e,t,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,a)})();(function serverContract()', sedCount, 1)
