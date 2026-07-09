@@ -1541,6 +1541,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! Frequently updated ad domains
+! >>> url=https://peoplebrain.net/
+! ... source=https://gamebanana.com/mods/477979
+! ... type=script
+||peoplebrain.net^
 ! >>> url=https://mimokrikodil.link/lib
 ! ... source=https://luther-hdrezka.net/232-tvshows/4-season
 ! ... type=script
