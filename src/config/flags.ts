@@ -31,7 +31,7 @@ const flags: Config["flags"] = {
     { percentage: 100 },
   ],
   [FLAG_PANEL_NOTIFICATION_SURVEY]: [
-    { percentage: 100 },
+    { percentage: 0 },
   ],
 };
 
