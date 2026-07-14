@@ -1537,6 +1537,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! == frequently updated ad domains
+! >>> url=https://interdependentvaluable.com/
+! ... source=https://subnoche.online/
+! ... type=script
+||interdependentvaluable.com^
 ! >>> url=https://hawocvnu.com/
 ! ... source=https://fc2ppv.stream/upload/en/ygQx9llyCWcKM3C-ABF-367_s.jpg
 ! ... type=script
@@ -2525,3 +2529,8 @@ www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), '(()=>{if
 4up.pics,fc2ppv.stream##div[role="dialog"]:has(.aab-icon)
 4up.pics,fc2ppv.stream##+js(set, detectAdBlock, falseFunc)
 4up.pics,fc2ppv.stream##img:style(filter: none !important; -webkit-filter: none !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/2426
+subnoche.online##div:has([src*="steam-verde-adblock-detector"])
+subnoche.online##div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
+subnoche.online##.banner-promo-container
