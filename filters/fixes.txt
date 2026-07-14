@@ -2353,95 +2353,37 @@ krone.at##.gpt__placeholder
 ||error-report.com^$domain=techbook.de|petbook.de|fitbook.de
 techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '/data|onerror|onload/')
 
-! https://github.com/ghostery/broken-page-reports/issues/2127
-! https://github.com/ghostery/broken-page-reports/issues/2137
-! https://github.com/ghostery/broken-page-reports/issues/2173
-! https://github.com/ghostery/broken-page-reports/issues/2174
-! https://github.com/ghostery/broken-page-reports/issues/2175
-! https://github.com/ghostery/broken-page-reports/issues/2180
-! https://github.com/ghostery/broken-page-reports/issues/2179
-! https://github.com/ghostery/broken-page-reports/issues/2178
-! https://github.com/ghostery/broken-page-reports/issues/2177
-! https://github.com/ghostery/broken-page-reports/issues/2194
-! https://github.com/ghostery/broken-page-reports/issues/2187
-! https://github.com/ghostery/broken-page-reports/issues/2186
-! https://github.com/ghostery/broken-page-reports/issues/2185
-! https://github.com/ghostery/broken-page-reports/issues/2207
-! https://github.com/ghostery/broken-page-reports/issues/2212
-! https://github.com/ghostery/broken-page-reports/issues/2230
-! https://github.com/ghostery/broken-page-reports/issues/2224
-! https://github.com/ghostery/broken-page-reports/issues/2243
-! https://github.com/ghostery/broken-page-reports/issues/2334
-! https://github.com/ghostery/broken-page-reports/issues/2321
-! https://github.com/ghostery/broken-page-reports/issues/2318
-! https://github.com/ghostery/broken-page-reports/issues/2317
-! https://github.com/ghostery/broken-page-reports/issues/2313
-! https://github.com/ghostery/broken-page-reports/issues/2315
-! https://github.com/ghostery/broken-page-reports/issues/2312
-! https://github.com/ghostery/broken-page-reports/issues/2382
-! https://github.com/ghostery/broken-page-reports/issues/2290
-! https://github.com/ghostery/broken-page-reports/issues/2289
-! https://github.com/ghostery/broken-page-reports/issues/2288
-! https://github.com/ghostery/broken-page-reports/issues/2402
-! https://github.com/ghostery/broken-page-reports/issues/2401
-! https://github.com/ghostery/broken-page-reports/issues/2400
-! https://github.com/ghostery/broken-page-reports/issues/2409
-! https://github.com/ghostery/broken-page-reports/issues/2437
-! https://github.com/ghostery/broken-page-reports/issues/2436
+! == adshield
+! the higher version doesn't mean better solution
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
 ! ... type=xhr
 ||error-report.com^$3p
-! >>> url=https://html-load.com/loader.min.js
-! ... source=https://flatpanelshd.com/
-! ... type=script
-||html-load.com^$domain=windowscentral.com|letsrv.com|noracooks.com|tvtv.us|meteovista.be|index.hr|willyweather.com.au|countrylife.co.uk|computerbild.de|blog.livedoor.jp|tomshardware.com|puttingmetogether.com|flatpanelshd.com|newsyou.info|quefaire.be|cinetrafic.fr|laleggepertutti.it|statecollege.com|motorbikecatalog.com|newsweekjapan.jp|trafficnews.jp|toyokeizai.net|dictionary.cambridge.org|notebookcheck.net
-! >>> url=https://blahwhoever.com/core.js
-! ... source=https://www.tvtv.us/mo/saint-joseph/64505/luUSA-OTA64505
-! ... type=script
-||blahwhoever.com^
-picrew.me##div[class^="img_"]:has(> [class^="img_"]):style(z-index: -1; height: 0px !important; overflow: hidden !important)
-picrew.me##+js(trusted-suppress-native-method, btoa, '"cache_is_blocking_ads"')
-picrew.me##+js(nostif, _loadScript, 1000)
-picrew.me##+js(trusted-suppress-native-method, fetch, '"error-report"')
-picrew.me##+js(trusted-suppress-native-method, JSON.parse, '"html-load.com"')
-flatpanelshd.com##+js(trusted-suppress-native-method, window.postMessage, '"as_req"')
-flatpanelshd.com##+js(aopr, as_retry)
-movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"')
-movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-suppress-native-method, confirm, '"There was a problem loading the page"', prevent)
-movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, navigator.onLine, false)
-movie-locations.com,blog.livedoor.jp,tomshardware.com,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"', prevent)
-index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de,blog.livedoor.jp,modernmrsdarcy.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,quefaire.be##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
-cyclingweekly.com,windowscentral.com,letsrv.com,noracooks.com,index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"src"|"html-load.com"', prevent)
-index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, document.write, '"<script"', prevent)
-index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(trusted-suppress-native-method, Node.prototype.appendChild, '{"src":"html-load.com"}', prevent)
-index.hr,willyweather.com.au,countrylife.co.uk,computerbild.de##+js(ra, onload|onerror, script[src^="https://html-load.com/"], asap stay)
-tvtv.us,tastesbetterfromscratch.com,9gag.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
-tvtv.us,tastesbetterfromscratch.com,9gag.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+! -- q0226v0
+yahoo.com,techradar.com,motorbikecatalog.com,indianhealthyrecipes.com,bild.de,adrenaline.com.br,birdwatchinghq.com,warhammer40k.fandom.com,marvelrivals.fandom.com,cyclingweekly.com,hollywoodreporter.com,itavisen.no,geoguessr.com,whathifi.com,forgottenrealms.fandom.com,space.com,jamaicanfoodsandrecipes.com,indiewire.com,androidcentral.com,worldle.teuteuf.fr,farmersalmanac.com,tomshardware.com,picrew.me,welt.de,tvtv.us,tastesbetterfromscratch.com,9gag.com,index.hr,countrylife.co.uk,computerbild.de,movie-locations.com,blog.livedoor.jp,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+yahoo.com,techradar.com,motorbikecatalog.com,indianhealthyrecipes.com,bild.de,adrenaline.com.br,birdwatchinghq.com,warhammer40k.fandom.com,marvelrivals.fandom.com,cyclingweekly.com,hollywoodreporter.com,itavisen.no,geoguessr.com,whathifi.com,forgottenrealms.fandom.com,space.com,jamaicanfoodsandrecipes.com,indiewire.com,androidcentral.com,worldle.teuteuf.fr,farmersalmanac.com,tomshardware.com,picrew.me,welt.de,tvtv.us,tastesbetterfromscratch.com,9gag.com,index.hr,countrylife.co.uk,computerbild.de,movie-locations.com,blog.livedoor.jp,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+! * interrupt addons
+techradar.com,bild.de,cyclingweekly.com,hollywoodreporter.com,itavisen.no,forgottenrealms.fandom.com,space.com,indiewire.com,androidcentral.com,worldle.teuteuf.fr,farmersalmanac.com,tomshardware.com,picrew.me,welt.de,tvtv.us,tastesbetterfromscratch.com,9gag.com,index.hr,countrylife.co.uk,computerbild.de,movie-locations.com,blog.livedoor.jp,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(aopr, ascurrency)
+techradar.com,bild.de,cyclingweekly.com,hollywoodreporter.com,itavisen.no,forgottenrealms.fandom.com,space.com,indiewire.com,androidcentral.com,worldle.teuteuf.fr,farmersalmanac.com,tomshardware.com,picrew.me,welt.de,tvtv.us,tastesbetterfromscratch.com,9gag.com,index.hr,countrylife.co.uk,computerbild.de,movie-locations.com,blog.livedoor.jp,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(set, asadlibLoaded, true)
+techradar.com,bild.de,cyclingweekly.com,hollywoodreporter.com,itavisen.no,forgottenrealms.fandom.com,space.com,indiewire.com,androidcentral.com,worldle.teuteuf.fr,farmersalmanac.com,tomshardware.com,picrew.me,welt.de,tvtv.us,tastesbetterfromscratch.com,9gag.com,index.hr,countrylife.co.uk,computerbild.de,movie-locations.com,blog.livedoor.jp,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(json-prune, slotDefinitions)
+techradar.com,bild.de,cyclingweekly.com,hollywoodreporter.com,itavisen.no,forgottenrealms.fandom.com,space.com,indiewire.com,androidcentral.com,worldle.teuteuf.fr,farmersalmanac.com,tomshardware.com,picrew.me,welt.de,tvtv.us,tastesbetterfromscratch.com,9gag.com,index.hr,countrylife.co.uk,computerbild.de,movie-locations.com,blog.livedoor.jp,tomsguide.com,puttingmetogether.com,modernmrsdarcy.com,woodshopdiaries.com,notebookcheck.net,dictionary.cambridge.org,toyokeizai.net,trafficnews.jp,motorbikecatalog.com,statecollege.com,laleggepertutti.it,cinetrafic.fr,newsyou.info,newsweekjapan.jp##+js(json-prune, slots)
+! * interrupt site specific interactions
 tvtv.us##ad-unit
 tvtv.us###siderail
+welt.de##+js(aopr, OBR)
+! -- q0226v1
+yahoo.com,techradar.com,motorbikecatalog.com,bild.de,androidcentral.com,cinetrafic.fr,welt.de,willyweather.com,tomshardware.com##+js(trusted-rpfr, /<!doctype html>\s*<html\b[^>]*>[\s\S]*?<\/html>/gi, )
+! * interrupt safe frame mitigation
+yahoo.com,techradar.com,motorbikecatalog.com,bild.de,androidcentral.com,cinetrafic.fr,welt.de,willyweather.com,tomshardware.com##+js(nostif, parent.postMessage)
+! * interrupt further data loads
+yahoo.com,techradar.com,motorbikecatalog.com,bild.de,hollywoodreporter.com,androidcentral.com,cinetrafic.fr,welt.de,willyweather.com,tomshardware.com##+js(json-prune, ads)
+yahoo.com,techradar.com,motorbikecatalog.com,bild.de,hollywoodreporter.com,androidcentral.com,cinetrafic.fr,welt.de,willyweather.com,tomshardware.com##+js(json-prune, inventory)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2237
 ! >>> url=https://fen.peryuck.com/ybar/mail.yahoo.com/_m
 ! ... source=https://mail.yahoo.com/n/inbox/priority
 ! ... type=script
 ||peryuck.com^
-
-! https://github.com/ghostery/broken-page-reports/issues/2272
-! >>> url=https://html-load.com/loader.min.js
-! ... source=https://welt.de/
-! ... type=xhr
-||html-load.com^$document,subdocument,xhr,domain=welt.de
-! >>> url=https://error-report.com/
-! ... source=https://welt.de/
-! ... type=xhr
-||error-report.com^$document,subdocument,xhr,domain=welt.de
-welt.de##+js(set, confirm, trueFunc)
-welt.de##+js(no-fetch-if, /error-report\.com|report\.error-report\.com/)
-welt.de##+js(nosiif, /body\.remove|body\.innerHTML|t\.body/, 100)
-welt.de##iframe[src*="report.error-report.com"]
-welt.de##iframe[src*="error-report.com"]
-welt.de##iframe[style*="2147483647"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
