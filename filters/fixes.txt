@@ -2554,3 +2554,9 @@ subnoche.online##.banner-promo-container
 ||net77.cc/js/chor-mate.js^
 net77.cc##.adblock
 net77.cc##+js(aopr, detectByElement)
+
+! https://github.com/ghostery/broken-page-reports/issues/2490
+! >>> url=https://vx.inews.co.uk/checkout/offer/show
+! ... source=https://inews.co.uk/news/politics/burnham-leaves-room-migration-u-turn-4642419
+! ... type=sub_frame
+||vx.inews.co.uk^
