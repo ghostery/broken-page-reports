@@ -810,3 +810,6 @@ lotto.pl##+js(trusted-click-element, dialog div.actions div.action.primary.large
 
 ! https://github.com/ghostery/broken-page-reports/issues/2439
 safetypro.nl##+js(trusted-set-local-storage-item, app_gdpr_consent, all)
+
+! https://github.com/ghostery/broken-page-reports/issues/2494
+ltglink.lt##+js(trusted-set-cookie, turnit_gdpr_cookie_consent, '{"analytics":false}')
