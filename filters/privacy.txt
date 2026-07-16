@@ -464,3 +464,17 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://deadline.com/
 ! ... type=xhr
 ||deadline.com/wp-content/plugins/pmc-plugins/pmc-comscore/xml/comscore-pageview-candidate.xml^
+
+! https://github.com/ghostery/broken-page-reports/issues/2480
+! >>> url=https://mail.ru/api/v1/utils/xray/batch
+! ... source=https://mail.ru/
+! ... type=xhr
+||mail.ru/api/v1/utils/xray/batch^
+! >>> url=https://api.okcdn.ru/fb.do
+! ... source=https://mail.ru/
+! ... type=xhr
+||api.okcdn.ru^
+! >>> url=https://mail.ru/apic/a21
+! ... source=https://mail.ru/
+! ... type=xhr
+||mail.ru/apic^
