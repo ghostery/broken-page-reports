@@ -452,3 +452,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://www.tz.de/bayern/vor-der-haustuer-ausflug-zum-bayerischen-woerthsee-nahe-muenchen-urlaub-94388555.html
 ! ... type=xhr
 ||ippen.space^
+
+! https://github.com/ghostery/broken-page-reports/issues/2490
+! >>> url=https://webmssdk16-normal-no1a.tiktokw.eu/web/resource?eq=nxJBldsV5SPX2vvnz-V1V2IV4A77/8SBqPPVtxHdNMo3n66VdXOULoksmb5QATCkQtmDzJ9fP5YEKg3KwVXqPRNMCP0bV-qHYqtjK2Cp
+! ... source=https://inews.co.uk/news/politics/burnham-leaves-room-migration-u-turn-4642419
+! ... type=xhr
+||tiktokw.eu^
