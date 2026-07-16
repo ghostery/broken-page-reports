@@ -2528,3 +2528,9 @@ weather.com##div:has(> .text-xxs.w-full.px-4.py-1.text-center.leading-4.text-gra
 subnoche.online##div:has([src*="steam-verde-adblock-detector"])
 subnoche.online##div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
 subnoche.online##.banner-promo-container
+
+! https://github.com/ghostery/broken-page-reports/issues/2493
+! >>> url=https://tz.de/bilder/a.js
+! ... source=https://www.tz.de/bayern/vor-der-haustuer-ausflug-zum-bayerischen-woerthsee-nahe-muenchen-urlaub-94388555.html
+! ... type=script
+||tz.de/bilder^
