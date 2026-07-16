@@ -11,6 +11,7 @@ import {
   FLAG_PANEL_NOTIFICATION_SURVEY,
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
+  FLAG_DNR_SERP,
   FLAG_SUBFRAME_SCRIPTING,
   PLATFORM_FIREFOX,
 } from "@ghostery/config";
@@ -32,6 +33,9 @@ const flags: Config["flags"] = {
   ],
   [FLAG_PANEL_NOTIFICATION_SURVEY]: [
     { percentage: 0 },
+  ],
+  [FLAG_DNR_SERP]: [
+    { percentage: 100 },
   ],
 };
 
