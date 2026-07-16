@@ -1537,6 +1537,18 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! == frequently updated ad domains
+! >>> url=https://youhavequited.com/
+! ... source=https://net77.cc/
+! ... type=script
+||youhavequited.com^
+! >>> url=https://dc9xwpjprguup.cloudfront.net/
+! ... source=https://net77.cc/
+! ... type=script
+||dc9xwpjprguup.cloudfront.net^
+! >>> url=https://moonlighthathel.org/
+! ... source=https://net77.cc/
+! ... type=script
+||moonlighthathel.org^
 ! >>> url=https://interdependentvaluable.com/
 ! ... source=https://subnoche.online/
 ! ... type=script
@@ -2534,3 +2546,11 @@ subnoche.online##.banner-promo-container
 ! ... source=https://www.tz.de/bayern/vor-der-haustuer-ausflug-zum-bayerischen-woerthsee-nahe-muenchen-urlaub-94388555.html
 ! ... type=script
 ||tz.de/bilder^
+
+! https://github.com/ghostery/broken-page-reports/issues/2492
+! >>> url=https://net77.cc/js/chor-mate.js
+! ... source=https://net77.cc/
+! ... type=script
+||net77.cc/js/chor-mate.js^
+net77.cc##.adblock
+net77.cc##+js(aopr, detectByElement)
