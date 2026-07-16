@@ -458,3 +458,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://inews.co.uk/news/politics/burnham-leaves-room-migration-u-turn-4642419
 ! ... type=xhr
 ||tiktokw.eu^
+
+! https://github.com/ghostery/broken-page-reports/issues/2487
+! >>> url=https://deadline.com/wp-content/plugins/pmc-plugins/pmc-comscore/xml/comscore-pageview-candidate.xml
+! ... source=https://deadline.com/
+! ... type=xhr
+||deadline.com/wp-content/plugins/pmc-plugins/pmc-comscore/xml/comscore-pageview-candidate.xml^
