@@ -813,3 +813,7 @@ safetypro.nl##+js(trusted-set-local-storage-item, app_gdpr_consent, all)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2494
 ltglink.lt##+js(trusted-set-cookie, turnit_gdpr_cookie_consent, '{"analytics":false}')
+
+! https://github.com/ghostery/broken-page-reports/issues/2491
+umweltportal.baden-wuerttemberg.de##+js(trusted-set-cookie, COOKIE_SETTINGS_SAVED, true)
+umweltportal.baden-wuerttemberg.de##+js(trusted-set-cookie, ACCEPTED_COOKIES, ACCEPTED_COOKIES,COOKIE_SUPPORT,GUEST_LANGUAGE_ID,JSESSIONID,LFR_SESSION_STATE)
