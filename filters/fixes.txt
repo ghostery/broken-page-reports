@@ -2566,3 +2566,6 @@ net77.cc##+js(aopr, detectByElement)
 ! ... source=https://dragonage.fandom.com/wiki/Codex_entry:_Paragons_Known_and_Lesser_Known
 ! ... type=xhr
 ||services.fandom.com/adeng^
+
+! https://github.com/ghostery/broken-page-reports/issues/2479
+appdownloadhub.com##div:has(> ins.adsbygoogle)
