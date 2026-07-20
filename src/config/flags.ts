@@ -35,7 +35,7 @@ const flags: Config["flags"] = {
     { percentage: 0 },
   ],
   [FLAG_DNR_SERP]: [
-    { percentage: 100 },
+    { percentage: 0 },
   ],
 };
 
