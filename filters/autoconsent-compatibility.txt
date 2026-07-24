@@ -804,6 +804,7 @@ alma.be#@##cookiebanner-overlay
 ! https://github.com/ghostery/broken-page-reports/issues/841
 ! https://github.com/ghostery/broken-page-reports/issues/1065
 ! https://github.com/ghostery/broken-page-reports/issues/1193
+! https://github.com/ghostery/broken-page-reports/issues/2536
 ! -- Watchlist for OneTrust:
 ! * privacy-portal-mvwc-cdn.my.onetrust.com
 ! * privacyportaltrial-cdn.onetrust.com
@@ -814,6 +815,7 @@ alma.be#@##cookiebanner-overlay
 ! * privacyportal-uk-cdn.onetrust.com
 ! * privacyportal-in-cdn.onetrust.com
 ! * privacyportal-br-cdn.onetrust.com
+! * cdn-ukwest.onetrust.com
 ! -- refs https://cli.shodan.io/ `shodan domain onetrust.com`
 ! -- refs https://publicwww.com/websites/%22-cdn.onetrust.com%22
 ! >>> url=https://privacyportal-cdn.onetrust.com/79ba7c84-ebc2-4740-8d11-bf1cc4501e59/privacy-notices/dc0acc4b-90a8-44dc-b1ec-bd9b0d0068e1.json
@@ -838,6 +840,14 @@ alma.be#@##cookiebanner-overlay
 ! ... source=https://www.globalblue.com/en/refund-points-map
 ! ... type=xhr
 @@||geolocation.onetrust.com/cookieconsentpub/v1/geo/location^$3p,xhr
+! >>> url=https://cdn-ukwest.onetrust.com/scripttemplates/202411.2.0/assets/otCommonStyles.css
+! ... source=https://minasidor.qstar.se/
+! ... type=css
+@@||onetrust.com/scripttemplates/*/assets^$3p
+! >>> url=https://cdn-ukwest.onetrust.com/logos/static/ot_guard_logo.svg
+! ... source=https://minasidor.qstar.se/
+! ... type=image
+@@||onetrust.com/logos/static^$3p
 
 ! https://github.com/ghostery/broken-page-reports/issues/878
 ellisaromen.de#@#.cmpwrapper
