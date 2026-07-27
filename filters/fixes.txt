@@ -2569,3 +2569,9 @@ net77.cc##+js(aopr, detectByElement)
 
 ! https://github.com/ghostery/broken-page-reports/issues/2479
 appdownloadhub.com##div:has(> ins.adsbygoogle)
+
+! https://github.com/ghostery/broken-page-reports/issues/2534
+! >>> url=https://cdn.staticmoly.me/deskademeta.php?cv=6lwp0h4am0qy&d=470363&e=0
+! ... source=https://myfluneo.eu/anime/one-piece/saison-1/episode-1000
+! ... type=xhr
+cdn.staticmoly.me/deskademeta.php^
