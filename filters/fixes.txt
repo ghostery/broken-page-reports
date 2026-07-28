@@ -2374,6 +2374,14 @@ krone.at##.gpt__placeholder
 techbook.de,fitbook.de,petbook.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '/data|onerror|onload/')
 
 ! == adshield
+! >>> url=https://fen.peryuck.com/ybar/mail.yahoo.com/_m
+! ... source=https://mail.yahoo.com/n/inbox/priority
+! ... type=script
+||peryuck.com^
+! >>> url=https://upbeatbut.com/ybar/mail.yahoo.com/_t/
+! ... source=https://mail.yahoo.com/n/inbox/priority
+! ... type=script
+||upbeatbut.com^
 ! the higher version doesn't mean better solution
 ! >>> url=https://error-report.com/
 ! ... source=https://newsyou.info/
@@ -2398,12 +2406,6 @@ wielerflits.nl,yahoo.com,techradar.com,motorbikecatalog.com,bild.de,androidcentr
 ! * interrupt further data loads
 wielerflits.nl,yahoo.com,techradar.com,motorbikecatalog.com,bild.de,hollywoodreporter.com,androidcentral.com,cinetrafic.fr,welt.de,willyweather.com,tomshardware.com##+js(json-prune, ads)
 wielerflits.nl,yahoo.com,techradar.com,motorbikecatalog.com,bild.de,hollywoodreporter.com,androidcentral.com,cinetrafic.fr,welt.de,willyweather.com,tomshardware.com##+js(json-prune, inventory)
-
-! https://github.com/ghostery/broken-page-reports/issues/2237
-! >>> url=https://fen.peryuck.com/ybar/mail.yahoo.com/_m
-! ... source=https://mail.yahoo.com/n/inbox/priority
-! ... type=script
-||peryuck.com^
 
 ! https://github.com/ghostery/broken-page-reports/issues/2161
 ! >>> url=https://px.sueddeutsche.de/v3/teaser-recommendations
