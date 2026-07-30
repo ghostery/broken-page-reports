@@ -480,7 +480,12 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ||mail.ru/apic^
 
 ! https://github.com/ghostery/broken-page-reports/issues/2549
+! https://github.com/ghostery/broken-page-reports/issues/2564
 ! >>> url=https://s.yimg.com/nq/nr/assets/adblock/ad300.png
 ! ... source=https://mail.yahoo.com/n/inbox/priority
 ! ... type=image
 ||s.yimg.com/nq/nr/assets/adblock^
+! >>> url=https://difw.yahoo.com/mail/userengagement
+! ... source=https://mail.yahoo.com/n/inbox/priority
+! ... type=xhr
+||difw.yahoo.com/mail/userengagement^
