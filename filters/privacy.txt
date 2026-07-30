@@ -480,6 +480,7 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ||mail.ru/apic^
 
 ! https://github.com/ghostery/broken-page-reports/issues/2549
+! https://github.com/ghostery/broken-page-reports/issues/2564
 ! >>> url=https://s.yimg.com/nq/nr/assets/adblock/ad300.png
 ! ... source=https://mail.yahoo.com/n/inbox/priority
 ! ... type=image
@@ -488,11 +489,3 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://mail.yahoo.com/n/inbox/priority
 ! ... type=xhr
 ||difw.yahoo.com/mail/userengagement^
-! >>> url=https://s.yimg.com/nq/nv/img/valid_fRODHVhwEntIZWpNlU4seh9L79edJVD2RZYEaqBDY60_v1.png
-! ... source=https://mail.yahoo.com/n/inbox/priority
-! ... type=image
-||s.yimg.com/nq/nv/img^
-! >>> url=https://s.yimg.com/nq/nv/html/status_NsIMApfRFdB9nTk9uhk8xFAt08_hm8m9QjmR2g0Vl9Y_v1.html
-! ... source=https://mail.yahoo.com/n/inbox/priority
-! ... type=xhr
-||s.yimg.com/nq/nv/html^
