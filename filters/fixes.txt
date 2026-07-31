@@ -2544,10 +2544,15 @@ subnoche.online##div[style="opacity: 0; visibility: hidden; overflow: hidden; di
 subnoche.online##.banner-promo-container
 
 ! https://github.com/ghostery/broken-page-reports/issues/2493
+! https://github.com/ghostery/broken-page-reports/issues/2563
 ! >>> url=https://tz.de/bilder/a.js
 ! ... source=https://www.tz.de/bayern/vor-der-haustuer-ausflug-zum-bayerischen-woerthsee-nahe-muenchen-urlaub-94388555.html
 ! ... type=script
 ||tz.de/bilder^
+! >>> url=https://www.fnp.de/bilder/a.js
+! ... source=https://www.fnp.de/produktempfehlung/lidl-raeumt-auf-diese-alltagshelfer-gibt-es-jetzt-mit-bis-zu-74-prozent-rabatt-zr-94418578.html
+! ... type=script
+||fnp.de/bilder^
 
 ! https://github.com/ghostery/broken-page-reports/issues/2492
 ! >>> url=https://net77.cc/js/chor-mate.js
