@@ -820,3 +820,6 @@ umweltportal.baden-wuerttemberg.de##+js(trusted-set-cookie, ACCEPTED_COOKIES, AC
 
 ! https://github.com/ghostery/broken-page-reports/issues/2535
 adler-birgsau.de##+js(trusted-set-cookie, Consent, 0)
+
+! https://github.com/ghostery/broken-page-reports/issues/2562
+cambridgeskylights.co.uk##dialog[aria-label="How we use cookies"]
