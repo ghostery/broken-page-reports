@@ -2582,3 +2582,6 @@ appdownloadhub.com##div:has(> ins.adsbygoogle)
 ! ... source=https://myfluneo.eu/anime/one-piece/saison-1/episode-1000
 ! ... type=xhr
 cdn.staticmoly.me/deskademeta.php^
+
+! https://github.com/ghostery/broken-page-reports/issues/2560
+candyman.fr##div[id]:has(> div a[href="https://toolkitspro.com"])
