@@ -1537,6 +1537,10 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! == frequently updated ad domains
+! >>> url=https://sumugwdriwrsf.site/
+! ... source=https://extto.com/browse/
+! ... type=script
+||sumugwdriwrsf.site^
 ! >>> url=https://sgwscuhzsqgey.online/
 ! ... source=https://extto.com/browse/
 ! ... type=script
