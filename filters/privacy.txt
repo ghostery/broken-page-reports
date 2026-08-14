@@ -489,3 +489,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://mail.yahoo.com/n/inbox/priority
 ! ... type=xhr
 ||difw.yahoo.com/mail/userengagement^
+
+! https://github.com/ghostery/broken-page-reports/issues/2596
+! >>> url=https://ins.thecontentserver.com/00b629e2-e722-4417-a51f-4015ff62d1d7/9/insights.bin
+! ... source=https://www.huffpost.com/entry/pete-hegseth-poor-conditions-us-carrier_n_6a7de98ee4b08462b1478150
+! ... type=xhr
+||ins.thecontentserver.com^
