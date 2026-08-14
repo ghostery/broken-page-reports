@@ -826,3 +826,8 @@ cambridgeskylights.co.uk##dialog[aria-label="How we use cookies"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2606
 steam-one.com##+js(trusted-set-cookie, _pandectes_gdpr, eyJzdGF0dXMiOiJkZW55IiwidGltZXN0YW1wIjoxNzg2NzEzMDU0LCJwcmVmZXJlbmNlcyI6NywibWV0aG9kIjoiZXhwbGljaXQiLCJpZCI6IjZhN2YxM2RmYmM2MjBlNjRkNmQxMTdkZCIsImNvdW50cnkiOnsiY29kZSI6IlBMIiwic3RhdGUiOiIifSwidmVyc2lvbiI6IjUifQ==)
+
+! https://github.com/ghostery/broken-page-reports/issues/2610
+formlights.com##+js(trusted-set-cookie, amcookie_allowed, 1)
+formlights.com##+js(trusted-set-cookie, amcookie_disallowed, 'recently_viewed_product,recently_viewed_product_previous,recently_compared_product,recently_compared_product_previous,_fbp,__kla_id,_kx')
+formlights.com##+js(trusted-set-cookie, amcookie_policy_restriction, allowed)
