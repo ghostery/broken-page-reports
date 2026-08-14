@@ -1537,6 +1537,14 @@ abysscdn.com###overlay
 abysscdn.com##+js(aopr, fuckAdBlock)
 
 ! == frequently updated ad domains
+! >>> url=https://pw.lutealbeatae.com/
+! ... source=https://aether.bar/settings
+! ... type=script
+||lutealbeatae.com^
+! >>> url=https://ih.cosetssovkhoz.com/
+! ... source=https://aether.bar/settings
+! ... type=script
+||cosetssovkhoz.com^
 ! >>> url=https://youhavequited.com/
 ! ... source=https://net77.cc/
 ! ... type=script
