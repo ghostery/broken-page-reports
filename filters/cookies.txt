@@ -831,3 +831,6 @@ steam-one.com##+js(trusted-set-cookie, _pandectes_gdpr, eyJzdGF0dXMiOiJkZW55Iiwi
 formlights.com##+js(trusted-set-cookie, amcookie_allowed, 1)
 formlights.com##+js(trusted-set-cookie, amcookie_disallowed, 'recently_viewed_product,recently_viewed_product_previous,recently_compared_product,recently_compared_product_previous,_fbp,__kla_id,_kx')
 formlights.com##+js(trusted-set-cookie, amcookie_policy_restriction, allowed)
+
+! https://github.com/ghostery/broken-page-reports/issues/2594
+inet.se##+js(trusted-set-cookie, allow-marketing-cookies, 0)
