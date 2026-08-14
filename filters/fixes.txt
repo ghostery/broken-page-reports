@@ -2593,3 +2593,6 @@ cdn.staticmoly.me/deskademeta.php^
 
 ! https://github.com/ghostery/broken-page-reports/issues/2560
 candyman.fr##div[id]:has(> div a[href="https://toolkitspro.com"])
+
+! https://github.com/ghostery/broken-page-reports/issues/2593
+paradoxscans.com##+js(set, eval, noopFunc)
