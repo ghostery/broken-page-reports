@@ -495,3 +495,9 @@ onet.pl##+js(set, Object.prototype.pianoAdblockDetection, false)
 ! ... source=https://www.huffpost.com/entry/pete-hegseth-poor-conditions-us-carrier_n_6a7de98ee4b08462b1478150
 ! ... type=xhr
 ||ins.thecontentserver.com^
+
+! https://github.com/ghostery/broken-page-reports/issues/2595
+! >>> url=https://cdn.pendo.io/agent/static/d6c1d995-bc7e-4e53-77f1-2ea4ecbb9565/pendo.js
+! ... source=https://www.sciencedirect.com/science/article/abs/pii/S106852002400169X
+! ... type=script
+||cdn.pendo.io/agent^
