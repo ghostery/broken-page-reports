@@ -13,6 +13,7 @@ import {
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
   FLAG_SUBFRAME_SCRIPTING,
+  FLAG_WHATS_NEW,
   PLATFORM_FIREFOX,
 } from "@ghostery/config";
 
@@ -35,6 +36,9 @@ const flags: Config["flags"] = {
     { percentage: 0 },
   ],
   [FLAG_DNR_SERP]: [
+    { percentage: 0 },
+  ],
+  [FLAG_WHATS_NEW]: [
     { percentage: 0 },
   ],
 };

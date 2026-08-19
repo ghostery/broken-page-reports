@@ -12,6 +12,7 @@ export const FLAG_NOTIFICATION_REVIEW = "notification-review";
 export const FLAG_SUBFRAME_SCRIPTING = "subframe-scripting";
 export const FLAG_PANEL_NOTIFICATION_SURVEY = "panel-notification-survey";
 export const FLAG_DNR_SERP = "dnr-serp";
+export const FLAG_WHATS_NEW = "whats-new";
 
 export const FLAGS = [
   FLAG_MODES,
@@ -20,6 +21,7 @@ export const FLAGS = [
   FLAG_SUBFRAME_SCRIPTING,
   FLAG_PANEL_NOTIFICATION_SURVEY,
   FLAG_DNR_SERP,
+  FLAG_WHATS_NEW,
 ] as const;
 
 // ---- Completed flags ----
