@@ -2596,3 +2596,6 @@ candyman.fr##div[id]:has(> div a[href="https://toolkitspro.com"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/2593
 paradoxscans.com##+js(set, eval, noopFunc)
+
+! https://github.com/ghostery/broken-page-reports/issues/2669
+dailymotion.com###display_ads_desktop_300x250_atf_sticky_mpu_1
