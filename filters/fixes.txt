@@ -2640,7 +2640,5 @@ leaguesecretary.com##.layout-ad-rail
 sqltutorial.org##.entry-content > div:nth-of-type(2) > a
 
 ! https://github.com/ghostery/broken-page-reports/issues/2652
-! >>> url=https://onemileatatime.com/
-! ... source=https://onemileatatime.com/news/airplanes-second-flight-deck-barrier/
 onemileatatime.com##div:has(> .gpt-ad-ingrid)
 onemileatatime.com##.gpt-ad-incontent
