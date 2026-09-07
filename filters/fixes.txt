@@ -2601,18 +2601,46 @@ paradoxscans.com##+js(set, eval, noopFunc)
 dailymotion.com##[class*="WatchingDiscoveryDesktop__adSection"]
 
 ! https://github.com/ghostery/broken-page-reports/issues/2677
+! Domain-scoped exceptions: required to be unblocked in order to prevent adblocker detection.
+! >>> url=https://qd.admetricspro.com/js/leaguesecretary/layout-one-loader.js
+! ... source=https://www.leaguesecretary.com/bowling-centers/alaska/centers/2/1
+! ... type=script
 @@||qd.admetricspro.com/js/leaguesecretary/layout-one-loader.js$domain=leaguesecretary.com
+! >>> url=https://prebidads.revcatch.com/ads.js
+! ... source=https://www.leaguesecretary.com/bowling-centers/alaska/centers/2/1
+! ... type=script
 @@||prebidads.revcatch.com/ads.js$domain=leaguesecretary.com
+! >>> url=https://tpc.googlesyndication.com/simgad/16020764746327031843
+! ... source=https://www.leaguesecretary.com/bowling-centers/alaska/centers/2/1
+! ... type=image
 @@||tpc.googlesyndication.com/simgad/$domain=leaguesecretary.com
+! >>> url=https://www.google.com/ads/measurement/l?ebcid=efmk
+! ... source=https://www.leaguesecretary.com/bowling-centers/alaska/centers/2/1
+! ... type=image
 @@||www.google.com/ads/measurement/$domain=leaguesecretary.com
+
+! Detection dodge scriptlet - designed to fake the response for RevCatch detection mechanism.
 leaguesecretary.com##+js(trusted-prevent-fetch, /lane-blue/, ["impression_id"\,145197967])
+! Cosmetic filter to remove an empty ad-rail section.
 leaguesecretary.com##.layout-ad-rail
 
 ! https://github.com/ghostery/broken-page-reports/issues/2651
+! Adblocker detection symptoms are not confirmed: network filters are sufficient, no website breakage
+! detected. The following network filters successfully block ads on the page: no slots, no rotation,
+! smooth browsing experience across different pages.
+! >>> url=https://increaserev.com/ads/ob/tage/aaw.sqltutorial.js
+! ... source=https://www.sqltutorial.org/what-is-sql/
+! ... type=script
 ||increaserev.com/ads/$domain=sqltutorial.org
+! >>> url=https://increase-rev.cv1-ecf.workers.dev/d2gbkh6c.js
+! ... source=https://www.sqltutorial.org/what-is-sql/
+! ... type=script
 ||increase-rev.cv1-ecf.workers.dev/$domain=sqltutorial.org
+! Cosmetic annoyance:
 sqltutorial.org##.entry-content > div:nth-of-type(2) > a
 
 ! https://github.com/ghostery/broken-page-reports/issues/2652
+! >>> url=https://onemileatatime.com/
+! ... source=https://onemileatatime.com/news/airplanes-second-flight-deck-barrier/
 onemileatatime.com##div:has(> .gpt-ad-ingrid)
 onemileatatime.com##.gpt-ad-incontent
