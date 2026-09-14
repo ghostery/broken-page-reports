@@ -2642,3 +2642,31 @@ sqltutorial.org##.entry-content > div:nth-of-type(2) > a
 ! https://github.com/ghostery/broken-page-reports/issues/2652
 onemileatatime.com##div:has(> .gpt-ad-ingrid)
 onemileatatime.com##.gpt-ad-incontent
+
+! == adshield — new development, role.nicelyfrom.com relay:
+! https://github.com/ghostery/broken-page-reports/issues/2634
+! https://github.com/ghostery/broken-page-reports/issues/2648
+! https://github.com/ghostery/broken-page-reports/issues/2685
+! no relay hostname is stable: the destination is re-encoded with a build-time
+! cipher. cvj1vy7 is that cipher's "gampad" and is identical across publishers.
+! {} and not an empty body — the detector checks that the response parses, and an
+! empty body throws, which walls the page.
+acozykitchen.com,emilybites.com,farmersalmanac.com,sewcanshe.com##+js(trusted-prevent-fetch, cvj1vy7, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/2685
+! AdThrive_ family slots, decoded from ID.
+! So far, a stable across pattern across numerous websites.
+sewcanshe.com##[id^="harzsgqwhvymy7ygigflny0"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2648
+! AdThrive_ family slots, decoded from ID.
+! So far, a stable across pattern across numerous websites.
+emilybites.com##[id^="harzsgqwhvymy7ygigflny0"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2634
+! AdThrive_ family slots, decoded from ID.
+! So far, a stable across pattern across numerous websites.
+acozykitchen.com##[id^="harzsgqwhvymy7ygigflny0"]
+! Removes slickstream.com develpments - the requests are blocked
+! (most probably by EasyList), cosmetic filter removes an empty space.
+acozykitchen.com##.slick-inline-search-panel
