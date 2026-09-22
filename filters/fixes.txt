@@ -2683,3 +2683,6 @@ www.facebook.com##+js(trusted-replace-xhr-response, /\{"__typename":"AdsSideFeed
 ! The Marketplace:
 www.facebook.com##+js(jsonl-edit-xhr-response, .data[?!.node].cursor, propsToMatch, /api/graphql/)
 www.facebook.com##+js(jsonl-edit-xhr-response, .data.marketplace_home_feed.edges[?!.node].cursor, propsToMatch, /api/graphql/)
+
+! https://github.com/ghostery/broken-page-reports/issues/2692
+chatgpt.com##div[data-conversation-screenshot-content] > div.pointer-events-none.-mb-px.h-px.w-full.opacity-0 + div > span[style="height: 1px; width: 1px;"] + div[class*="_"]
