@@ -2729,7 +2729,7 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ! Symptoms: side ads are visible.
 ! >>> url=https://gpt.mail.yahoo.net/c/sandbox?client=novation&version=0.1&haq=1&cache=1
 ! ... source=https://mail.yahoo.com/n/folders/1
-! ... type=subdocument
+! ... type=sub_frame
 ||gpt.mail.yahoo.net^$subdocument,domain=mail.yahoo.com
 ! Leftover: wrapper of the blocked sandbox frame (Chrome error page). Id is base64
 ! of "gpt-iframe-<position>"; prefix Z3B0LWlmcmFtZS = "gpt-iframe-".
