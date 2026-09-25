@@ -2689,11 +2689,20 @@ chatgpt.com##div[data-conversation-screenshot-content] > div.pointer-events-none
 
 ! https://github.com/ghostery/broken-page-reports/issues/2629
 ! Symptoms: on-screen ads, redirectional ads.
+! >>> url=https://wo.azuredcalcar.com/rQKWOynJ6mZC/146765
+! ... source=https://animesuge.at/the-great-cleric-episode-8-english-subbed
+! ... type=script
 ||wo.azuredcalcar.com/$domain=animesuge.at
+! >>> url=https://s-img.adskeeper.com/g/27990031/200x200/-/aHR0cHM6Ly9jbC5pbWdob3N0cy5jb20vaW1naC9pbWFnZS9mZXRjaC9hcl8xOjEsY19maWxsLGVfc2hhcnBlbjoxMDAsZl9qcGcsZ19mYWNlczphdXRvLHFfYXV0bzpnb29kLHdfOTYwL2h0dHA6Ly9pbWdob3N0cy5jb20vdC85NTY3MDAvMzZlYjZhMzM2NjgyOGI1YjUyYmE5YmQyZWRhYTdkZDkuanBlZw.webp?v=1790169894-ttOYHe-Vy2o_RXFGkFYTnnX5KvDABFnFj2Cq6f5WlpM
+! ... source=https://animesuge.at/the-great-cleric-episode-8-english-subbed
+! ... type=image
 ||s-img.adskeeper.com/$domain=animesuge.at
 
 ! https://github.com/ghostery/broken-page-reports/issues/2694
-! Symptoms: bad auto-consent handling - page is dimmed and unresponsive.
+! Symptoms: bad auto-consent handling - page is dimmed and
+! >>> url=https://www.gebooth.com/api/v1/content/getCookiePopupNotificationData?_=1790174637165
+! ... source=https://www.gebooth.com/
+! ... type=xhr
 ||www.gebooth.com/api/v1/content/getCookiePopupNotificationData$xhr,domain=www.gebooth.com
 
 ! https://github.com/ghostery/broken-page-reports/issues/2632
