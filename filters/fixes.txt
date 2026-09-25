@@ -2686,3 +2686,60 @@ www.facebook.com##+js(jsonl-edit-xhr-response, .data.marketplace_home_feed.edges
 
 ! https://github.com/ghostery/broken-page-reports/issues/2692
 chatgpt.com##div[data-conversation-screenshot-content] > div.pointer-events-none.-mb-px.h-px.w-full.opacity-0 + div > span[style="height: 1px; width: 1px;"] + div[class*="_"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2629
+! Symptoms: on-screen ads, redirectional ads.
+! >>> url=https://wo.azuredcalcar.com/rQKWOynJ6mZC/146765
+! ... source=https://animesuge.at/the-great-cleric-episode-8-english-subbed
+! ... type=script
+||wo.azuredcalcar.com/$domain=animesuge.at
+! >>> url=https://s-img.adskeeper.com/g/27990031/200x200/-/aHR0cHM6Ly9jbC5pbWdob3N0cy5jb20vaW1naC9pbWFnZS9mZXRjaC9hcl8xOjEsY19maWxsLGVfc2hhcnBlbjoxMDAsZl9qcGcsZ19mYWNlczphdXRvLHFfYXV0bzpnb29kLHdfOTYwL2h0dHA6Ly9pbWdob3N0cy5jb20vdC85NTY3MDAvMzZlYjZhMzM2NjgyOGI1YjUyYmE5YmQyZWRhYTdkZDkuanBlZw.webp?v=1790169894-ttOYHe-Vy2o_RXFGkFYTnnX5KvDABFnFj2Cq6f5WlpM
+! ... source=https://animesuge.at/the-great-cleric-episode-8-english-subbed
+! ... type=image
+||s-img.adskeeper.com/$domain=animesuge.at
+
+! https://github.com/ghostery/broken-page-reports/issues/2694
+! Symptoms: bad auto-consent handling - page is dimmed and
+! >>> url=https://www.gebooth.com/api/v1/content/getCookiePopupNotificationData?_=1790174637165
+! ... source=https://www.gebooth.com/
+! ... type=xhr
+||www.gebooth.com/api/v1/content/getCookiePopupNotificationData$xhr,domain=www.gebooth.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2632
+! Symptoms: cookie popup isn't handled, ads leftovers.
+! Sourcepoint CMP (a02342.edp24.co.uk) is blocked by stock lists, then re-delivered
+! by the AdShield relay (*.stg.html-load.com / *.stg.content-loader.com). The relay
+! path carries the destination encoded; vw9k69yrny7196yrqsyr5b = a02342.edp24.co.uk,
+! identical across runs 1-3, both relay hosts and both session prefixes. Covers the
+! wrapper script, the gdpr-tcf bundle and the /wrapper/v2/messages XHR.
+! >>> url=https://0.stg.html-load.com/session/r46/stm/wfh/hna/www.edp24.co.uk/tyo/qwhvi331tyxywywvw9k69yrny7196yrqsyr5bywagv11ngywl9ywjnttvcnt...
+! ... source=https://www.edp24.co.uk/news/26570523.bus-crashed-ormesby-home-scrapped/
+! ... type=xhr
+vw9k69yrny7196yrqsyr5b$domain=edp24.co.uk
+! Ad residue. Every DFP slot is an empty <div id="DFP_*"></div> (no iframe/img in the
+! DOM); GPT, Criteo, Funding Choices and the relayed imgad are all network-blocked.
+! Class names are AdShield-renamed; decoded names in brackets.
+! top leaderboard wrapper [mar-leaderboard--top], plain attribute
+edp24.co.uk##[data-uses-js="dfp-top-ad-fixed"]
+! [mar-leaderboard--bottom]
+edp24.co.uk##.harzsgqwhvjvgyiznvy7ngmsvgy7yiyims33sj
+! [mar-block-ad]: in-article MPUs, Teads, premium/standard MPUs (6 on the article page)
+edp24.co.uk##.harzsgqwhvjvgyimzsqbyivy7
+! [most-read_ad-element]: the list item holding an MPU inside "Most read"
+edp24.co.uk##.harzsgqwhvjst3yignvy7y0vy7yinznjn73
+! [side-ad]: sidebar wrapper around DFP_on_scroll
+edp24.co.uk##.harzsgqwhvtfy7nyivy7
+
+! https://github.com/ghostery/broken-page-reports/issues/2631
+! Symptoms: after search for specific item, resutls start flickering.
+www.amazon.com##.s-main-slot > .s-result-item.AdHolder
+
+! https://github.com/ghostery/broken-page-reports/issues/2686
+! Symptoms: side ads are visible.
+! >>> url=https://gpt.mail.yahoo.net/c/sandbox?client=novation&version=0.1&haq=1&cache=1
+! ... source=https://mail.yahoo.com/n/folders/1
+! ... type=sub_frame
+||gpt.mail.yahoo.net^$subdocument,domain=mail.yahoo.com
+! Leftover: wrapper of the blocked sandbox frame (Chrome error page). Id is base64
+! of "gpt-iframe-<position>"; prefix Z3B0LWlmcmFtZS = "gpt-iframe-".
+mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
