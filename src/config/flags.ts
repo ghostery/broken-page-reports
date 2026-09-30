@@ -1,4 +1,5 @@
 import {
+  BROWSER_OPERA,
   Config,
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
   FLAG_DNR_SERP,
@@ -36,7 +37,7 @@ const flags: Config["flags"] = {
     { percentage: 0 },
   ],
   [FLAG_WHATS_NEW]: [
-    { percentage: 0 },
+    { percentage: 100, filter: { browser: [BROWSER_OPERA] } },
   ],
 };
 
