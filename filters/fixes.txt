@@ -2746,15 +2746,19 @@ mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/2698
 ! https://github.com/ghostery/ghostery-extension/issues/3672
-! Symptoms: youtube.com is extremely slow (Firefox ~12 fps, Chrome ~10-36 fps on watch pages).
-! Since https://github.com/uBlockOrigin/uAssets/commit/0e022a0d05 (quick-fixes.txt, 2026-09-29) YouTube has six
-! trusted-edit-inbound-object rules that proxy JSON.stringify and deep-clone every argument. Our scriptlets are
-! bundled with a private safeSelf each, so every hook captures the previous hook's proxy as its "native"
-! stringify: 6 stacked hooks = 2^6 = 64 native stringify+parse per call, on a page calling it >1000 times/s.
-! Cancelling these three rules leaves 3 hooks (8x instead of 64x) and restores ~70 fps on both browsers.
-! Kept: the first reload strategy ("channel"), lactMilliseconds and the "#reloadxhr" referer edit that drives
-! the rpnt strategy state machine. Lost: only the fallback strategies' specific edits (params=8AUB/YAHI,
-! adPlaybackContext). Remove once the extension shares scriptlet dependencies per injection.
+! These rules edit the /youtubei/v1/player request body when uBO's rpnt scriptlet puts a marker into the
+! userAgent (channel, lactmilli, instream, yahi). YouTube gzips the body before it sends it. The only other
+! cheap place to edit it is the string that goes through TextEncoder.prototype.encode (once per request).
+! Fix: cancel the four strategy-specific rules and make the same edits with trusted-replace-argument on
+! TextEncoder.prototype.encode. Keep the two other rules on JSON.stringify: lactMilliseconds needs the dynamic
+! value "${now}", and the "#reloadxhr" referer drives the rpnt state machine. Result: 2 hooks = 4x, not 64x.
+! The encode rules skip an edit instead of making a duplicate key or invalid JSON.
+www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="channel"].context.client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="lactmilli"]+={"params":"8AUB"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="yahi"]+={"params":"YAHI"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="instream"].playbackContext[?.contentPlaybackContext]+={"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}})
+www.youtube.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, repl:/"clientScreen":"[^"]*"/"clientScreen":"CHANNEL"/, condition, /^(?=[\s\S]*"attestationRequest")(?=[\s\S]*"clientName":"WEB")[\s\S]*"userAgent":"[^"]*; channel/)
+www.youtube.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, repl:/"clientName":"WEB"/"clientName":"WEB"\,"clientScreen":"CHANNEL"/, condition, /^(?![\s\S]*"clientScreen":)(?=[\s\S]*"attestationRequest")[\s\S]*"userAgent":"[^"]*; channel/)
+www.youtube.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, repl:/\}$/\,"params":"8AUB"}/, condition, /^(?=[\s\S]*"attestationRequest")[\s\S]*"userAgent":"[^"]*; lactmilli/)
+www.youtube.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, repl:/\}$/\,"params":"YAHI"}/, condition, /^(?=[\s\S]*"attestationRequest")[\s\S]*"userAgent":"[^"]*; yahi/)
+www.youtube.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, repl:/"playbackContext":\{(?=")/"playbackContext":{"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}\,/, condition, /^(?![\s\S]*"adPlaybackContext")(?=[\s\S]*"attestationRequest")[\s\S]*"userAgent":"[^"]*; instream/)
