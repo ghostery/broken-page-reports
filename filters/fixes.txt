@@ -2742,7 +2742,9 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ||gpt.mail.yahoo.net^$subdocument,domain=mail.yahoo.com
 ! Leftover: wrapper of the blocked sandbox frame (Chrome error page). Id is base64
 ! of "gpt-iframe-<position>"; prefix Z3B0LWlmcmFtZS = "gpt-iframe-".
-mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
+! UPDATE: seems to interfere with other views (e.g. unread, Starred, etc.) on the inbox page.
+! Picked up for further investigation.
+! mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/2698
 ! https://github.com/ghostery/ghostery-extension/issues/3672
