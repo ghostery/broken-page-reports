@@ -1,4 +1,5 @@
 import {
+  BROWSER_FIREFOX,
   BROWSER_OPERA,
   Config,
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
@@ -37,7 +38,7 @@ const flags: Config["flags"] = {
     { percentage: 0 },
   ],
   [FLAG_WHATS_NEW]: [
-    { percentage: 100, filter: { browser: [BROWSER_OPERA] } },
+    { percentage: 100, filter: { browser: [BROWSER_OPERA, BROWSER_FIREFOX] } },
   ],
 };
 
