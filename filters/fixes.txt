@@ -2745,18 +2745,3 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ! UPDATE: seems to interfere with other views (e.g. unread, Starred, etc.) on the inbox page.
 ! Picked up for further investigation.
 ! mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
-
-! https://github.com/ghostery/broken-page-reports/issues/2698
-! https://github.com/ghostery/ghostery-extension/issues/3672
-! Symptoms: youtube.com is extremely slow (Firefox ~12 fps, Chrome ~10-36 fps on watch pages).
-! Since https://github.com/uBlockOrigin/uAssets/commit/0e022a0d05 (quick-fixes.txt, 2026-09-29) YouTube has six
-! trusted-edit-inbound-object rules that proxy JSON.stringify and deep-clone every argument. Our scriptlets are
-! bundled with a private safeSelf each, so every hook captures the previous hook's proxy as its "native"
-! stringify: 6 stacked hooks = 2^6 = 64 native stringify+parse per call, on a page calling it >1000 times/s.
-! Cancelling these three rules leaves 3 hooks (8x instead of 64x) and restores ~70 fps on both browsers.
-! Kept: the first reload strategy ("channel"), lactMilliseconds and the "#reloadxhr" referer edit that drives
-! the rpnt strategy state machine. Lost: only the fallback strategies' specific edits (params=8AUB/YAHI,
-! adPlaybackContext). Remove once the extension shares scriptlet dependencies per injection.
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="lactmilli"]+={"params":"8AUB"})
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="yahi"]+={"params":"YAHI"})
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="instream"].playbackContext[?.contentPlaybackContext]+={"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}})
