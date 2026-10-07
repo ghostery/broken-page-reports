@@ -2748,3 +2748,85 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ! UPDATE: seems to interfere with other views (e.g. unread, Starred, etc.) on the inbox page.
 ! Picked up for further investigation.
 ! mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
+
+! https://github.com/ghostery/broken-page-reports/issues/2696
+! Nicely AdShield relay. Stem only, so the rotating prefix (jet, role, 0., 9.) and
+! suffix (modulo, from) do not matter. Chromium.
+! >>> url=https://jet.nicelymodulo.com/store/d39979bc.js
+! ... source=https://deadline.com/2026/09/david-ellison-trump-china-dinner-1237113399/
+! ... type=script
+||nicely$domain=deadline.com
+! Nicely AdShield relay moved: jet.nicelymodulo.com/store/ -> taro.sansyettusk.com/chunk/ (07.10.2026).
+! >>> url=https://taro.sansyettusk.com/chunk/f3df3971.js
+! ... source=https://deadline.com/2026/10/doctor-who-bids-revealed-jed-mercurio-bbc-scotland-1237147648/
+! ... type=script
+||sansyettusk.com^$domain=deadline.com
+
+! Narrower scope: the stem rule had no effect on Firefox. Blocks the bootstrap the page
+! requests directly; the loader never starts.
+! >>> url=https://jet.nicelymodulo.com/store/d39979bc.js
+! ... source=https://deadline.com/2026/09/david-ellison-trump-china-dinner-1237113399/
+! ... type=script
+||jet.nicelymodulo.com/store/$script,domain=deadline.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2708
+! *Nicely* AdShield relay. No /store/ bootstrap here; blocking /session/ breaks the page.
+! The argument intentionally matches nothing: wrapping `window.fetch` alone stops the relay
+! from serving ads (25.09.2026). Mechanism not confirmed, under investigation.
+goldderby.com##+js(trusted-prevent-fetch, vandorName, {})
+! Cookie consent block: matches original "cookielaw",
+! and obfuscated "qy77yrqssbfnzvayrsgc".
+! >>> url=https://cdn.cookielaw.org/
+! ... source=https://www.goldderby.com/reality-tv/2026/american-idol-season-25-judges-premiere-everything-to-know/
+! ... type=script
+||cdn.cookielaw.org$domain=goldderby.com
+qy77yrqssbfnzvayrsgc$domain=goldderby.com
+! Cosmetic clean-up
+goldderby.com##[data-component="ad-unit"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2709
+! AdShield: inline first-party bootstrap (script1 = html-load.com/app.js, script2 = inline
+! loader) relays the Sourcepoint CMP renamed, so autoconsent cannot dismiss it. The relay
+! host rotates (html-load.com -> evenyippee.com); empty the bootstrap so the loader never starts.
+windowscentral.com##+js(rmnt, script, nowprocket)
+! >>> url=https://html-load.com/app.js
+! ... source=https://www.windowscentral.com/
+! ... type=script
+||html-load.com^$domain=windowscentral.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2710
+! AdShield: the sdk.js tag's onerror clones it through a failover list (html-load,
+! fb.html-load, d3d4gnv047l844.cloudfront.net, content-loader, fb.content-loader);
+! blocking every host walls the page once the list runs out.
+! >>> url=https://html-load.com/sdk.js
+! ... source=https://en.pons.com/translate/german-english
+! ... type=script
+||html-load.com$domain=en.pons.com
+! The cloudfront hop 302s here; the host rotates, keep old ones when adding new.
+! >>> url=https://stg.rule.evenyippee.com/sdk.js
+! ... source=https://en.pons.com/translate/german-english
+! ... type=script
+||stg.rule.evenyippee.com$domain=en.pons.com
+! Strip on* handlers from the clone so the chain ends without reaching the wall.
+! Signature is split on "|" per argument, so the regex must not contain one.
+en.pons.com##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, /^on[a-z]+$/)
+
+https://github.com/ghostery/broken-page-reports/issues/2711
+! Stops the stuck consent banner from dimming the page.
+! >>> url=https://consent.cookiebot.com/uc.js
+! ... source=https://www.gowork.pl/opinie_czytaj,41982
+! ... type=script
+||cookiebot.com^$important,domain=gowork.pl
+! Blocks the banner images
+! >>> url=https://www.gowork.pl/media/cache/company_ads_banner_webp/uploads/company_ads_banner/a/5/6/a562cd98737f17a416ed2a6b050eae29.png
+! ... source=https://www.gowork.pl/opinie_czytaj,41982
+! ... type=image
+/company_ads_banner$image,domain=gowork.pl
+! Hides the label and link left behind by the image block
+! First-party "Materiał sponsorowany" slot, server-rendered; hides the label and link left after the image block.
+www.gowork.pl##div:has(> a[href*="/click-out/"][href*="utm_campaign=baner-profil"])
+! Google tag gateway: first-party path relaying GTM/gtag, Ads conversion and Floodlight.
+! >>> url=https://www.gowork.pl/5pdw/gs/ccm/collect?tid=DC-13294924&en=page_view
+! ... source=https://www.gowork.pl/opinie_czytaj,41982
+! ... type=xhr
+||www.gowork.pl/5pdw/$domain=gowork.pl
