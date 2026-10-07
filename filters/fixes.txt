@@ -2750,12 +2750,6 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ! mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
 
 ! https://github.com/ghostery/broken-page-reports/issues/2696
-! Nicely AdShield relay. Stem only, so the rotating prefix (jet, role, 0., 9.) and
-! suffix (modulo, from) do not matter. Chromium.
-! >>> url=https://jet.nicelymodulo.com/store/d39979bc.js
-! ... source=https://deadline.com/2026/09/david-ellison-trump-china-dinner-1237113399/
-! ... type=script
-||nicely$domain=deadline.com
 ! Nicely AdShield relay moved: jet.nicelymodulo.com/store/ -> taro.sansyettusk.com/chunk/ (07.10.2026).
 ! >>> url=https://taro.sansyettusk.com/chunk/f3df3971.js
 ! ... source=https://deadline.com/2026/10/doctor-who-bids-revealed-jed-mercurio-bbc-scotland-1237147648/
@@ -2780,6 +2774,9 @@ goldderby.com##+js(trusted-prevent-fetch, vandorName, {})
 ! ... source=https://www.goldderby.com/reality-tv/2026/american-idol-season-25-judges-premiere-everything-to-know/
 ! ... type=script
 ||cdn.cookielaw.org$domain=goldderby.com
+! >>> url=https://8.taro.sansyettusk.com/session/c2e/10e/n0b/www.goldderby.com/ijk/qwhvi331tyxywywqy77yrqssbfnzvayrsgcywtqgf133nj1zv3ntyws3y8ylyhy835myrutynvtyin43gvycyzyky2yz99qs7xfcy37y7n4yz99yzkymwyzykyl
+! ... source=https://www.goldderby.com/music/2026/drake-grammys-boycott-iceman-explainer/
+! ... type=script
 qy77yrqssbfnzvayrsgc$domain=goldderby.com
 ! Cosmetic clean-up
 goldderby.com##[data-component="ad-unit"]
@@ -2811,7 +2808,7 @@ windowscentral.com##+js(rmnt, script, nowprocket)
 ! Signature is split on "|" per argument, so the regex must not contain one.
 en.pons.com##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, /^on[a-z]+$/)
 
-https://github.com/ghostery/broken-page-reports/issues/2711
+! https://github.com/ghostery/broken-page-reports/issues/2711
 ! Stops the stuck consent banner from dimming the page.
 ! >>> url=https://consent.cookiebot.com/uc.js
 ! ... source=https://www.gowork.pl/opinie_czytaj,41982
