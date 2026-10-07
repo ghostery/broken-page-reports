@@ -2755,7 +2755,12 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ! ... source=https://deadline.com/2026/10/doctor-who-bids-revealed-jed-mercurio-bbc-scotland-1237147648/
 ! ... type=script
 ||sansyettusk.com^$domain=deadline.com
-
+! Nicely AdShield relay. Stem only, so the rotating prefix (jet, role, 0., 9.) and
+! suffix (modulo, from) do not matter.
+! >>> url=https://jet.nicelymodulo.com/store/d39979bc.js
+! ... source=https://deadline.com/2026/09/david-ellison-trump-china-dinner-1237113399/
+! ... type=script
+||nicely*.com^$domain=deadline.com
 ! Narrower scope: the stem rule had no effect on Firefox. Blocks the bootstrap the page
 ! requests directly; the loader never starts.
 ! >>> url=https://jet.nicelymodulo.com/store/d39979bc.js
@@ -2827,3 +2832,4 @@ www.gowork.pl##div:has(> a[href*="/click-out/"][href*="utm_campaign=baner-profil
 ! ... source=https://www.gowork.pl/opinie_czytaj,41982
 ! ... type=xhr
 ||www.gowork.pl/5pdw/$domain=gowork.pl
+
