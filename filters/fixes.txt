@@ -24,6 +24,15 @@ abcbourse.com##+js(aopw, doc)
 ! ... type=script
 @@||scorecardresearch.com/beacon.js$domain=dailymotion.com
 
+! https://github.com/ghostery/broken-page-reports/issues/2713
+! dailymotion.com: stock ima3.js -> google-ima.js redirect deadlocks Ad SDK Web (core.js waits for
+! LOADED, surrogate fires it only on start()). Blocking the Ad SDK takes the player's own
+! "continuing without ads" path.
+! >>> url=https://asw.dmcdn.net/2.0.0/core.js
+! ... source=https://www.dailymotion.com/video/xbka61q
+! ... type=script
+||asw.dmcdn.net^$domain=dailymotion.com
+
 ! This particular filter from RU list is very aggressive because it matches an
 ! URL containing '/teaser/' and only excludes a few domains. Let's just disable
 ! this rule for first-party requests.
@@ -2833,3 +2842,7 @@ www.gowork.pl##div:has(> a[href*="/click-out/"][href*="utm_campaign=baner-profil
 ! ... type=xhr
 ||www.gowork.pl/5pdw/$domain=gowork.pl
 
+! https://github.com/ghostery/broken-page-reports/issues/2714
+! xvideos.com: generic ###disclaimer-cookies hides the span autoconsent's detectPopup checks
+! (visible: .disclaimer-opened #disclaimer-cookies), so Never-Consent never clicks Reject.
+xvideos.com#@##disclaimer-cookies
