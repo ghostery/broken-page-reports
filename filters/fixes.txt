@@ -2877,3 +2877,13 @@ netflix.com##+js(json-prune, result.adverts, , !includeAdBlockingInfo)
 ! ... source=https://www.peacocktv.com/watch/playback/vod/_/4f3cb9bb-cf63-34ce-b68d-d5846987b607
 ! ... type=xhr
 /dai/pub/*requestVamAPI=$domain=peacocktv.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2718
+! cbsaustin.com
+! Found: Admiral anti-adblock bootstrap, inline in the Next.js payload (admiral-initializer). Its loader host
+! is blocked by the stock lists; on Firefox 158 the fallback er.js then loops on a defineProperty TypeError,
+! freezing the browser.
+! Why: the bootstrap is inline, so no request to block: empty it so Admiral never starts. Same rule uBO runs on
+! 13wham.com, komonews.com, wlos.com, wpgh53.com. Live: Firefox 158, macOS, US, 16.10.2026.
+cbsaustin.com##+js(rpnt, script, '/admiral-initializer\\",\\"children\\":\\"[^"]+\\"/', 'admiral-initializer\",\"children\":\"\"')
+
