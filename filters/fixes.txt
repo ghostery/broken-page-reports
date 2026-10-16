@@ -2846,3 +2846,34 @@ www.gowork.pl##div:has(> a[href*="/click-out/"][href*="utm_campaign=baner-profil
 ! xvideos.com: generic ###disclaimer-cookies hides the span autoconsent's detectPopup checks
 ! (visible: .disclaimer-opened #disclaimer-cookies), so Never-Consent never clicks Reject.
 xvideos.com#@##disclaimer-cookies
+
+https://github.com/ghostery/broken-page-reports/issues/2060
+! netflix.com
+! Found: ad data rides inside the encrypted manifest (result.adverts) from the content hosts, so nothing
+! can be blocked; the player probes for the stock prune (includeAdBlockingInfo) and reports ab:true.
+! Why: same prune, skipped only when the probe is the caller: ads stay stripped, the probe reads ab:false.
+! Live: Chrome, DE, 13.10.2026.
+netflix.com#@#+js(json-prune, result.adverts)
+netflix.com##+js(json-prune, result.adverts, , !includeAdBlockingInfo)
+
+https://github.com/ghostery/broken-page-reports/issues/919
+! hulu.com (Safari)
+! Found: Safari plays HLS natively, out of reach of the stock json-prune / xml-prune (built for DASH);
+! stitched ads are clear renditions under -MAIN/03/, content is encrypted under -MAIN/01/.
+! Why: blocking only /03/ drops the ad segments and never touches content. Live: Safari, US, pre-roll
+! and mid-roll, 15.10.2026.
+! >>> url=https://vod-hulu-ftc-na.media.dssott.com/dvt1=exp=1792159176~url=%2Fps01%2Fdisney%2Fb9ad5d78-90b4-4e74-a2b0-50eab5d177a6%2Fr%2F60b8d0c2-29a1-4233-8c11-0d2e3c49a00d%2F720b-MAIN%2F03~kid=k01~hmac=421267ed74f5aa768ad01b6a8a725d17467ed72bde9a77877aca714308fbc3cd/ps01/disney/b9ad5d78-90b4-4e74-a2b0-50eab5d177a6/r/60b8d0c2-29a1-4233-8c11-0d2e3c49a00d/720b-MAIN/03/H264_1_CMAF_1800K/8294e491-afa8-4595-92a1-632b9f4d0c67/map.mp4
+! ... source=https://www.hulu.com/watch/eb138082-5c40-4a8f-aa30-3fc66ef615fd
+! ... type=media
+||media.dssott.com/*-MAIN/03/$domain=hulu.com
+
+https://github.com/ghostery/broken-page-reports/issues/1510
+! peacocktv.com (Safari)
+! Found: AWS MediaTailor stitches the pre-roll server-side, opened by one session request; Safari's native
+! HLS player is out of reach of scriptlets.
+! Why: block the session, not segments: the player catches the failure and plays the unstitched stream.
+! No host anchor, the CDN rotates. Live: Safari, US, 15.10.2026.
+! >>> url=https://g003-vod-us-cmaf-prd-ns.prd.pck.netskrt.net/dai/pub/global/56W/nzt/GMO_00000001043950_01/kfs_gsp/PCK_1786407769091_6046_01/mpeg_cbcs/6b182afb-5f35-4559-a33b-bb800c45f24b/master_cmaf.m3u8?requestVamAPI=true&c3.ri=6ad0e4a4_Q1ZYMDg_0_TkVUU0tSVA_9623e5af1a47%3A0
+! ... source=https://www.peacocktv.com/watch/playback/vod/_/4f3cb9bb-cf63-34ce-b68d-d5846987b607
+! ... type=xhr
+/dai/pub/*requestVamAPI=$domain=peacocktv.com
