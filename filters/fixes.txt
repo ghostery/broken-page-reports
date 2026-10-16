@@ -2847,7 +2847,7 @@ www.gowork.pl##div:has(> a[href*="/click-out/"][href*="utm_campaign=baner-profil
 ! (visible: .disclaimer-opened #disclaimer-cookies), so Never-Consent never clicks Reject.
 xvideos.com#@##disclaimer-cookies
 
-https://github.com/ghostery/broken-page-reports/issues/2060
+! https://github.com/ghostery/broken-page-reports/issues/2060
 ! netflix.com
 ! Found: ad data rides inside the encrypted manifest (result.adverts) from the content hosts, so nothing
 ! can be blocked; the player probes for the stock prune (includeAdBlockingInfo) and reports ab:true.
@@ -2856,7 +2856,7 @@ https://github.com/ghostery/broken-page-reports/issues/2060
 netflix.com#@#+js(json-prune, result.adverts)
 netflix.com##+js(json-prune, result.adverts, , !includeAdBlockingInfo)
 
-https://github.com/ghostery/broken-page-reports/issues/919
+! https://github.com/ghostery/broken-page-reports/issues/919
 ! hulu.com (Safari)
 ! Found: Safari plays HLS natively, out of reach of the stock json-prune / xml-prune (built for DASH);
 ! stitched ads are clear renditions under -MAIN/03/, content is encrypted under -MAIN/01/.
@@ -2867,7 +2867,7 @@ https://github.com/ghostery/broken-page-reports/issues/919
 ! ... type=media
 ||media.dssott.com/*-MAIN/03/$domain=hulu.com
 
-https://github.com/ghostery/broken-page-reports/issues/1510
+! https://github.com/ghostery/broken-page-reports/issues/1510
 ! peacocktv.com (Safari)
 ! Found: AWS MediaTailor stitches the pre-roll server-side, opened by one session request; Safari's native
 ! HLS player is out of reach of scriptlets.
