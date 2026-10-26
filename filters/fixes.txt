@@ -2887,3 +2887,61 @@ netflix.com##+js(json-prune, result.adverts, , !includeAdBlockingInfo)
 ! 13wham.com, komonews.com, wlos.com, wpgh53.com. Live: Firefox 158, macOS, US, 16.10.2026.
 cbsaustin.com##+js(rpnt, script, '/admiral-initializer\\",\\"children\\":\\"[^"]+\\"/', 'admiral-initializer\",\"children\":\"\"')
 
+! https://github.com/ghostery/broken-page-reports/issues/2654
+! fandom.com
+! Found: AdShield relay. The page HTML carries <script nowprocket src=dish.cutletyet.com/hooks-runtime/...>;
+! it fetches /script/<site>.js and re-delivers blocked requests (OneTrust assets, adeng meters, gumgum,
+! crazyegg) through *.stg.dish.cutletyet.com, and renames OneTrust and ad-slot ids (onetrust-pc-sdk,
+! fandom-ad-slot-top_leaderboard), so autoconsent and the stock cosmetic rules no longer match.
+! Why: block the relay stem so the bootstrap never runs; the AdShield rules for fandom.com target
+! html-load.com / content-loader.com, not this host. The stem covers the rotating prefixes (dish, stg, 0.-9.).
+! Hosts rotate: add the next one beside this, keep this one. Live: Chrome 155, EU (PL) + US, 16.10.2026.
+! >>> url=https://dish.cutletyet.com/hooks-runtime/JUg-gy4Zy.js
+! ... source=https://infection-free-zone.fandom.com/wiki/Cheat_Commands
+! ... type=script
+||cutletyet.com^$domain=fandom.com
+
+! Found: the relay host and bootstrap path rotate within minutes (cutletyet.com, videovein.com, hencebright.com,
+! same day). The payload fetch stays /script/<site>.js?hash= on every host.
+! Why: a plain block of that fetch walls the page ("Failed to load website due to adblock: Failed to fetch
+! script"), so answer it instead, with the body fixes.txt uses for html-load.com/script/ on fandom.com.
+! Regex on the path, not the host. Live: Chrome 155, US, 16.10.2026 (with the cutletyet rule).
+fandom.com##+js(trusted-prevent-fetch, /\/script\/[^/]+\.fandom\.com\.js/, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+
+! https://github.com/ghostery/broken-page-reports/issues/1900
+! itv.com
+! Found: ITV's player gets its ad pod over a WebSocket (wss://vast.prd.mp.itv.com/s/v1/t). The stock rules only cover the HTTP route (xml-prune on /tserver) and answer the ad videos with a 0.1 s stub. The player counts each stubbed ad as failed and shows "Ad blocker detected" at the first break.
+! Why: with the socket blocked the player uses its own HTTP VAST route, where the stock xml-prune already empties the ads: no ad is requested, nothing fails, nothing is detected. Network block, no scriptlet; a replacement stub cannot work (the player checks media duration and width). Live: Chrome 155, UK IP, 19.10.2026.
+! >>> url=wss://vast.prd.mp.itv.com/s/v1/t
+! ... source=https://www.itv.com/watch/the-party/10a1766/10a1766a0001
+! ... type=websocket
+||vast.prd.mp.itv.com^$websocket,domain=itv.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2720
+! https://github.com/ghostery/broken-page-reports/issues/2263
+! sunkissedkitchen.com
+! amandacooksandstyles.com
+! Found: AdShield relay on a Raptive (AdThrive) site. When ads.adthrive.com/abd/abd.js is blocked, the inline
+! adblock-detection script loads html-load.com/bundle.js, which fetches /script/<site>.js?hash= and re-delivers
+! the Raptive/GPT/Prebid stack through *.html-load.com/session/<site>/ (renamed harzsgqwhv* slots).
+! Why: answer that fetch with the "loaded, not detected" body fixes.txt (q0226v0) uses for the same vendor on
+! stylebyemilyhenderson.com, dadcooksdinner.com, indianhealthyrecipes.com. Live: Chrome 155, US + EU, 26.10.2026,
+! several sub-pages.
+amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+
+! Found: Slickstream (search panel, film strip) reserves empty space (min-height 350 px / 72 px) for widgets
+! that never arrive: the stock lists block c.slickstream.com/app/<ver>/boot-loader.js.
+! Why: the request is already blocked, so only the placeholders are left: residue cleanup.
+! Live: Chrome 155, US + EU, 26.10.2026.
+amandacooksandstyles.com##.slick-inline-search-panel
+amandacooksandstyles.com,sunkissedkitchen.com##.slick-film-strip.cls-inserted
+amandacooksandstyles.com##.slick-on-page.cls-inserted
+
+! https://github.com/ghostery/broken-page-reports/issues/2721
+! www.apfeltalk.de
+! Found: XenForo 2.3 built-in cookie notice (notice--cookieAdvanced), server-rendered in the page HTML: no request
+! to block or answer. The site sets cookie prefix xf_1 (XF.config.cookie), so the consent cookie is xf_1consent.
+! Why: store the "reject optional cookies" answer ([]) and reload once, as annoyances-cookies.txt does for
+! technopat.net (xf_consent). Live: Chrome 155, DE, 26.10.2026.
+www.apfeltalk.de##+js(trusted-set-cookie, xf_1consent, %5B%5D, , , reload, 1)
