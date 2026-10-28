@@ -7,16 +7,6 @@ on:
     paths:
       - 'packages/config/src/**'
       - '.github/workflows/publish-config.yml'
-  workflow_dispatch:
-    inputs:
-      bump:
-        description: 'Part of the version to bump'
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
-        default: patch
 
 # One publish at a time, so two runs cannot pick the same version.
 concurrency:
@@ -25,8 +15,6 @@ concurrency:
 
 jobs:
   publish:
-    # workflow_dispatch can run on any branch. Publish only from main.
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -46,12 +34,10 @@ jobs:
       - run: npm run test
       - run: npm run build
 
-      - name: Publish the next version
-        env:
-          BUMP: ${{ inputs.bump || 'patch' }}
+      - name: Publish the next patch version
         run: |
           # npm is the source of truth for the version. CI does not write it back to git.
           LATEST=$(npm view @ghostery/config version)
           npm version "$LATEST" --no-git-tag-version --allow-same-version
-          npm version "$BUMP" --no-git-tag-version
+          npm version patch --no-git-tag-version
           npm publish --provenance --access public
