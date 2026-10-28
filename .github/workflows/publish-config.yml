@@ -8,6 +8,10 @@ on:
       - 'packages/config/src/**'
       - '.github/workflows/publish-config.yml'
 
+concurrency:
+  group: publish-config
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -28,6 +32,8 @@ jobs:
       - uses: actions/checkout@v6
         with:
           token: ${{ steps.generate-token.outputs.token }}
+          # Include version bumps pushed by earlier runs
+          ref: main
 
       - uses: actions/setup-node@v6
         with:
@@ -46,8 +52,13 @@ jobs:
       - name: Bump version and publish
         run: |
           npm version patch --no-git-tag-version
-
           NEW_VERSION=$(node -p "require('./package.json').version")
+
+          # A run that published but failed to push leaves package.json behind npm
+          while npm view "@ghostery/config@${NEW_VERSION}" version >/dev/null 2>&1; do
+            npm version patch --no-git-tag-version
+            NEW_VERSION=$(node -p "require('./package.json').version")
+          done
 
           npm publish --provenance --access public
 
@@ -56,4 +67,5 @@ jobs:
           git commit -m "chore: bump @ghostery/config to v${NEW_VERSION} [skip ci]"
 
           # Push directly to main (already authenticated via checkout)
+          git pull --rebase origin main
           git push origin main
