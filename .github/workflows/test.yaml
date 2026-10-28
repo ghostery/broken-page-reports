@@ -23,7 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-      - run: deno run lint
+      - run: npm ci
+        working-directory: ./
+      - run: npm run lint
+        working-directory: ./
+      - run: npm run typecheck
         working-directory: ./
       - run: npm ci
       - run: npm run test

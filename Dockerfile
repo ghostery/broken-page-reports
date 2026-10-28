@@ -1,7 +1,6 @@
-FROM debian:12.8
+FROM node:24.22.1-bookworm-slim
 
-COPY --from=denoland/deno:bin-2.3.7 /deno /usr/local/bin/deno
-RUN mkdir -p /.cache/deno && chmod a+rw -R /.cache/deno
+RUN mkdir -p /.npm && chmod a+rw -R /.npm
 
 COPY --from=amazon/aws-cli:2.27.45 /usr/local/aws-cli/ /usr/local/aws-cli/
 ENV PATH="/usr/local/aws-cli/v2/current/bin:${PATH}"

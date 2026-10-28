@@ -1,0 +1,25 @@
+{
+  "name": "broken-page-reports",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "config:generate": "node -C source ./src/config/generate.ts",
+    "build": "node ./src/build.js",
+    "lint": "prettier --check ./src ./test",
+    "typecheck": "tsc",
+    "test": "node --test test/*.test.ts",
+    "test:dns": "VALIDATE_DNS=1 node --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@ghostery/adblocker": "^2.18.1",
+    "@ghostery/config": "file:packages/config",
+    "octokit": "^5.0.5",
+    "tldts": "^7.4.9"
+  },
+  "devDependencies": {
+    "@std/expect": "npm:@jsr/std__expect@^1.0.20",
+    "@types/node": "^24.19.2",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2"
+  }
+}
