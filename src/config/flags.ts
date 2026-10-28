@@ -26,9 +26,6 @@ const flags: Config["flags"] = {
   [FLAG_NOTIFICATION_REVIEW]: [
     { percentage: 90 },
   ],
-  [FLAG_SUBFRAME_SCRIPTING]: [
-    { percentage: 100 },
-  ],
   [FLAG_PANEL_NOTIFICATION_SURVEY]: [
     { percentage: 0 },
   ],
@@ -73,6 +70,10 @@ const completedFlags: Config["flags"] = {
   ],
   // https://github.com/ghostery/ghostery-extension/pull/3619
   [FLAG_MODES]: [
+    { percentage: 100 },
+  ],
+  // https://github.com/ghostery/ghostery-extension/pull/3735
+  [FLAG_SUBFRAME_SCRIPTING]: [
     { percentage: 100 },
   ],
 };

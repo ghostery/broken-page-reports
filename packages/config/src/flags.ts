@@ -8,7 +8,6 @@
 
 export const FLAG_ONBOARDING_SURVEY = "onboarding-survey";
 export const FLAG_NOTIFICATION_REVIEW = "notification-review";
-export const FLAG_SUBFRAME_SCRIPTING = "subframe-scripting";
 export const FLAG_PANEL_NOTIFICATION_SURVEY = "panel-notification-survey";
 export const FLAG_DNR_SERP = "dnr-serp";
 export const FLAG_WHATS_NEW = "whats-new";
@@ -16,7 +15,6 @@ export const FLAG_WHATS_NEW = "whats-new";
 export const FLAGS = [
   FLAG_ONBOARDING_SURVEY,
   FLAG_NOTIFICATION_REVIEW,
-  FLAG_SUBFRAME_SCRIPTING,
   FLAG_PANEL_NOTIFICATION_SURVEY,
   FLAG_DNR_SERP,
   FLAG_WHATS_NEW,
@@ -32,6 +30,7 @@ export const FLAG_INJECTION_TARGET_DOCUMENT_ID = "injection-target-document-id";
 export const FLAG_PAUSE_ASSISTANT = "pause-assistant";
 export const FLAG_REDIRECT_PROTECTION = "redirect-protection";
 export const FLAG_MODES = "modes";
+export const FLAG_SUBFRAME_SCRIPTING = "subframe-scripting";
 
 const COMPLETED_FLAGS = [
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
@@ -42,6 +41,7 @@ const COMPLETED_FLAGS = [
   FLAG_PAUSE_ASSISTANT,
   FLAG_REDIRECT_PROTECTION,
   FLAG_MODES,
+  FLAG_SUBFRAME_SCRIPTING,
 ] as const;
 
 // ---- Types and utility functions ----
