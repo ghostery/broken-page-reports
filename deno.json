@@ -10,6 +10,7 @@
   "imports": {
     "@ghostery/adblocker": "npm:@ghostery/adblocker@^2.18.1",
     "@ghostery/config": "./packages/config/src/index.ts",
+    "@std/expect": "jsr:@std/expect@^1.0.20",
     "@std/path": "jsr:@std/path@^1.1.6",
     "octokit": "npm:octokit@^5.0.5",
     "tldts": "npm:tldts@^7.4.9"
