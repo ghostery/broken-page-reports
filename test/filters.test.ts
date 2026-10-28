@@ -4,10 +4,11 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import dns from "node:dns/promises";
+import { test } from "node:test";
 import * as tldts from "tldts";
 import { parse } from "../src/assert.ts";
 
-const VALIDATE_DNS = !!Deno.env.get("VALIDATE_DNS");
+const VALIDATE_DNS = !!process.env.VALIDATE_DNS;
 const cwd = process.cwd();
 
 const hasDnsRecord = async (hostname: string) => {
@@ -30,7 +31,7 @@ const doTest = (filePath: string) => {
       continue;
     }
 
-    Deno.test(filter, async () => {
+    test(filter, async () => {
       const parsed = parseFilter(filter);
 
       // Is a valid filter

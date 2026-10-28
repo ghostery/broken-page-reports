@@ -1,13 +1,15 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import * as path from "node:path";
+import process from "node:process";
 import { Octokit } from "octokit";
 import { parse } from "tldts";
-import * as path from "@std/path";
 
 import {
-  Action,
-  Config,
+  type Action,
+  type Config,
   isAction,
   isPlatform,
-  Platform,
+  type Platform,
 } from "@ghostery/config";
 import flags from "./flags.ts";
 
@@ -88,11 +90,11 @@ for await (const { data: issues } of iterator) {
   }
 }
 
-const configPath = path.join(import.meta.dirname!, "..", "..", "config");
-await Deno.mkdir(configPath, { recursive: true });
-await Deno.writeTextFile(
+const configPath = path.join(import.meta.dirname, "..", "..", "config");
+await mkdir(configPath, { recursive: true });
+await writeFile(
   path.join(configPath, "v1.json"),
   JSON.stringify(config, null, 2),
 );
 
-Deno.exit(0);
+process.exit(0);

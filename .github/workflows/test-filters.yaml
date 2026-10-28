@@ -22,5 +22,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-      - run: deno run tests
-      - run: deno run build
+      - run: npm ci
+      - run: npm test
+      - run: npm run build

@@ -7,13 +7,14 @@ export type Assertion = {
   url?: string;
 };
 
-const enum Token {
-  AssertionStart,
-  AssertionContinue,
-  Comment,
-  Filter,
-  Empty,
-}
+const Token = {
+  AssertionStart: 0,
+  AssertionContinue: 1,
+  Comment: 2,
+  Filter: 3,
+  Empty: 4,
+} as const;
+type Token = (typeof Token)[keyof typeof Token];
 
 function* lex(content: string): IterableIterator<[Token, string]> {
   for (const line of content.split(/[\n\r]/g).map((l) => l.trim())) {
@@ -31,10 +32,11 @@ function* lex(content: string): IterableIterator<[Token, string]> {
   }
 }
 
-const enum State {
-  Init,
-  Assertion,
-}
+const State = {
+  Init: 0,
+  Assertion: 1,
+} as const;
+type State = (typeof State)[keyof typeof State];
 
 /**
  * Given the content of a custom filters list, extract inline tests so that

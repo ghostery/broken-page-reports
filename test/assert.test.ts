@@ -1,5 +1,6 @@
 import { type RequestType } from "@ghostery/adblocker";
 import { expect } from "@std/expect";
+import { test } from "node:test";
 import { type Assertion, parse } from "../src/assert.ts";
 
 const check = (
@@ -9,11 +10,11 @@ const check = (
   expect([...parse(content)]).toStrictEqual(expected);
 };
 
-Deno.test("empty string", () => {
+test("empty string", () => {
   check("", []);
 });
 
-Deno.test("filter without assertion", () => {
+test("filter without assertion", () => {
   check("/ads/", [
     {
       filter: "/ads/",
@@ -22,7 +23,7 @@ Deno.test("filter without assertion", () => {
   ]);
 });
 
-Deno.test("multiple assertions for a filter", () => {
+test("multiple assertions for a filter", () => {
   check(
     `
 ! >>> url=https://example.com type=script source=https://source.com
@@ -51,7 +52,7 @@ Deno.test("multiple assertions for a filter", () => {
   );
 });
 
-Deno.test("parses compound assertion", () => {
+test("parses compound assertion", () => {
   check(
     `
 ! >>> url=https://example.com
@@ -76,7 +77,7 @@ Deno.test("parses compound assertion", () => {
   );
 });
 
-Deno.test("handle orphan assertion", () => {
+test("handle orphan assertion", () => {
   check("! >>> url=URL", [
     {
       filter: "",
@@ -90,7 +91,7 @@ Deno.test("handle orphan assertion", () => {
   ]);
 });
 
-Deno.test("handles complex case", () => {
+test("handles complex case", () => {
   check(
     `
 ! Some top-level comments

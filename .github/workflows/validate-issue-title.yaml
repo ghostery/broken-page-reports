@@ -18,10 +18,10 @@ jobs:
         env:
           NAME: ${{ github.event.issue.title }}
         run: |
-          deno install
+          npm ci
           {
             echo 'VALERR<<EOF'
-            echo "$(deno run --quiet './src/validate-issue-title.ts' "${NAME}" 2>&1 >/dev/null)"
+            echo "$(node './src/validate-issue-title.ts' "${NAME}" 2>&1 >/dev/null)"
             echo EOF
           } >> "$GITHUB_ENV"
       - name: In case of an invalid issue title, comment about the error and label the issue

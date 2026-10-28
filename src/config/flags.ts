@@ -1,5 +1,5 @@
 import {
-  Config,
+  type Config,
   FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED,
   FLAG_DNR_SERP,
   FLAG_DYNAMIC_DNR_FIXES,
@@ -19,63 +19,37 @@ import {
 
 // ---- Active flags ----
 
-const flags: Config["flags"] = {
-  [FLAG_ONBOARDING_SURVEY]: [
-    { percentage: 20 },
-  ],
-  [FLAG_NOTIFICATION_REVIEW]: [
-    { percentage: 90 },
-  ],
-  [FLAG_PANEL_NOTIFICATION_SURVEY]: [
-    { percentage: 0 },
-  ],
-  [FLAG_DNR_SERP]: [
-    { percentage: 0 },
-  ],
-  [FLAG_WHATS_NEW]: [
-    { percentage: 100 },
-  ],
-};
+const flags = {
+  [FLAG_ONBOARDING_SURVEY]: [{ percentage: 20 }],
+  [FLAG_NOTIFICATION_REVIEW]: [{ percentage: 90 }],
+  [FLAG_PANEL_NOTIFICATION_SURVEY]: [{ percentage: 0 }],
+  [FLAG_DNR_SERP]: [{ percentage: 0 }],
+  [FLAG_WHATS_NEW]: [{ percentage: 100 }],
+} satisfies Partial<Config["flags"]>;
 
 // ---- Completed flags (removed from the codebase) ----
 
-const completedFlags: Config["flags"] = {
+const completedFlags = {
   // https://github.com/ghostery/ghostery-extension/pull/3024
-  [FLAG_EXTENDED_SELECTORS]: [
-    { percentage: 100 },
-  ],
+  [FLAG_EXTENDED_SELECTORS]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3025
-  [FLAG_DYNAMIC_DNR_FIXES]: [
-    { percentage: 100 },
-  ],
+  [FLAG_DYNAMIC_DNR_FIXES]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3051
   [FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS]: [
     { percentage: 100, filter: { platform: [PLATFORM_FIREFOX] } },
   ],
   // https://github.com/ghostery/ghostery-extension/pull/3263
-  [FLAG_REDIRECT_PROTECTION]: [
-    { percentage: 100 },
-  ],
+  [FLAG_REDIRECT_PROTECTION]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3270
-  [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [
-    { percentage: 100 },
-  ],
+  [FLAG_CHROMIUM_INJECT_COSMETICS_ON_RESPONSE_STARTED]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3270
-  [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [
-    { percentage: 100 },
-  ],
+  [FLAG_INJECTION_TARGET_DOCUMENT_ID]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3380
-  [FLAG_PAUSE_ASSISTANT]: [
-    { percentage: 100 },
-  ],
+  [FLAG_PAUSE_ASSISTANT]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3619
-  [FLAG_MODES]: [
-    { percentage: 100 },
-  ],
+  [FLAG_MODES]: [{ percentage: 100 }],
   // https://github.com/ghostery/ghostery-extension/pull/3735
-  [FLAG_SUBFRAME_SCRIPTING]: [
-    { percentage: 100 },
-  ],
-};
+  [FLAG_SUBFRAME_SCRIPTING]: [{ percentage: 100 }],
+} satisfies Partial<Config["flags"]>;
 
-export default { ...flags, ...completedFlags };
+export default { ...flags, ...completedFlags } satisfies Config["flags"];
