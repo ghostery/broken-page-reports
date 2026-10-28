@@ -1,6 +1,6 @@
-import { Octokit } from "npm:octokit";
-import { parse } from "npm:tldts";
-import * as path from "jsr:@std/path";
+import { Octokit } from "octokit";
+import { parse } from "tldts";
+import * as path from "@std/path";
 
 import {
   Action,

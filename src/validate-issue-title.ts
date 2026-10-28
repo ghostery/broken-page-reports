@@ -1,5 +1,5 @@
 import * as process from "node:process";
-import { parse } from "npm:tldts";
+import { parse } from "tldts";
 
 // Convert decimal notation of ip address into 32 bit unsigned integer
 function addr(decimalNotation: string): number {

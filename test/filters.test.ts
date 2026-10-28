@@ -1,10 +1,10 @@
 import { NetworkFilter, parseFilter, Request } from "@ghostery/adblocker";
-import { expect } from "jsr:@std/expect";
+import { expect } from "@std/expect";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import dns from "node:dns/promises";
-import * as tldts from "npm:tldts";
+import * as tldts from "tldts";
 import { parse } from "../src/assert.ts";
 
 const VALIDATE_DNS = !!Deno.env.get("VALIDATE_DNS");
