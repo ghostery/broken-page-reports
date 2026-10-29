@@ -22,7 +22,7 @@ import {
 const flags = {
   [FLAG_ONBOARDING_SURVEY]: [{ percentage: 20 }],
   [FLAG_NOTIFICATION_REVIEW]: [{ percentage: 90 }],
-  [FLAG_PANEL_NOTIFICATION_SURVEY]: [{ percentage: 0 }],
+  [FLAG_PANEL_NOTIFICATION_SURVEY]: [{ percentage: 100 }],
   [FLAG_DNR_SERP]: [{ percentage: 0 }],
   [FLAG_WHATS_NEW]: [{ percentage: 100 }],
 } satisfies Partial<Config["flags"]>;
