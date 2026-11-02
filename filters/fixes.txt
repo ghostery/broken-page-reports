@@ -2696,6 +2696,16 @@ www.facebook.com##+js(jsonl-edit-xhr-response, ..node[?.__typename=="Marketplace
 www.facebook.com##+js(jsonl-edit-xhr-response, .data[?!.node].cursor, propsToMatch, /api/graphql/)
 www.facebook.com##+js(jsonl-edit-xhr-response, .data.marketplace_home_feed.edges[?!.node].cursor, propsToMatch, /api/graphql/)
 
+! 31.10.2026
+! macOS Safari holds on the previous iteration
+! Found: Meta now sends feed ads with a scrambled typename, "SposnoredDaat" (field alias qrz_ctx_seg, was th_dat_spo),
+! in first-load data-sjs and in /api/graphql/ feed responses. Env.q9k7m2x maps it back to SponsoredData only after
+! parsing (GHLTypenameRestore), so the stock ..node[?.*.__typename=="SponsoredData"] rules never match.
+! Why: same edits as the stock and fixes.txt rules, keyed on the scrambled name. json-edit covers first load (the
+! Env.v9k2mt7q gate is already off); jsonl needs jsonExtract ^(.*) on the CRLF lines. Live: Chrome/Firefox, Windows, 02.11.2026.
+www.facebook.com##+js(json-edit, ..node[?.*.__typename=="SposnoredDaat"])
+www.facebook.com##+js(jsonl-edit-xhr-response, ..node[?.*.__typename=="SposnoredDaat"], propsToMatch, /api/graphql/, jsonExtract, ^(.*))
+
 ! https://github.com/ghostery/broken-page-reports/issues/2692
 chatgpt.com##div[data-conversation-screenshot-content] > div.pointer-events-none.-mb-px.h-px.w-full.opacity-0 + div > span[style="height: 1px; width: 1px;"] + div[class*="_"]
 
@@ -2927,8 +2937,8 @@ fandom.com##+js(trusted-prevent-fetch, /\/script\/[^/]+\.fandom\.com\.js/, windo
 ! Why: answer that fetch with the "loaded, not detected" body fixes.txt (q0226v0) uses for the same vendor on
 ! stylebyemilyhenderson.com, dadcooksdinner.com, indianhealthyrecipes.com. Live: Chrome 155, US + EU, 26.10.2026,
 ! several sub-pages.
-amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
-amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+rpgbot.net,cornercoffeestore,amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+rpgbot.net,cornercoffeestore,amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
 
 ! Found: Slickstream (search panel, film strip) reserves empty space (min-height 350 px / 72 px) for widgets
 ! that never arrive: the stock lists block c.slickstream.com/app/<ver>/boot-loader.js.
@@ -2945,3 +2955,58 @@ amandacooksandstyles.com##.slick-on-page.cls-inserted
 ! Why: store the "reject optional cookies" answer ([]) and reload once, as annoyances-cookies.txt does for
 ! technopat.net (xf_consent). Live: Chrome 155, DE, 26.10.2026.
 www.apfeltalk.de##+js(trusted-set-cookie, xf_1consent, %5B%5D, , , reload, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/2736
+! www.fourfourtwo.com
+! Found: AdShield (html-load family) on the Future plc stack. A tag (data-sdk l/1.2.22) loads
+! html-load.com/themeBundle/; the inline loader beside it relays the ad stack and the Sourcepoint notice
+! through *.stg.html-load.com/session/ (renamed harzsgqwhv* classes, so autoconsent misses the notice).
+! Why: ports uBO filters-general.txt "Future PLC sites" rules, which are not in Ghostery's engine for this site.
+! The windowscentral.com anchor (rmnt nowprocket) misses here: nowprocket is an attribute, not in the script text.
+! ra stops the tag's onerror failover once its host is blocked. Live: Chrome 156, Windows, EU, 30.10.2026.
+fourfourtwo.com##+js(rmnt, script, '/html-load\.com|:\[?window,/')
+fourfourtwo.com##+js(ra, onerror, script[id][onerror], asap, quitAfter, 10)
+! >>> url=https://html-load.com/themeBundle/3vkz-J.js
+! ... source=https://www.fourfourtwo.com/football-quiz
+! ... type=script
+||html-load.com^$script,xhr,domain=fourfourtwo.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2735
+! www.essen-und-trinken.de
+! Found: AdDefend. A first-party script with a random name per load (reptilinindeed.js, dachsinflaxen.js), loaded by a
+! static <script async> at the end of <body>, re-inserts the ads as images relayed through
+! image.essen-und-trinken.de/oWB1dpKB/... and fires bait images (benelph.de).
+! Why: block the bootstrap, not the relayed images (same host as the real photos). Ports uBO
+! filters-general.txt and AdGuard German antiadblock.txt; uBO’s copy carries $strict1p, which
+! Ghostery drops as unsupported. Only this script matched the pattern in the capture. Live: Chrome, DE, 30.10.2026.
+! >>> url=https://www.essen-und-trinken.de/reptilinindeed.js
+! ... source=https://www.essen-und-trinken.de/
+! ... type=script
+/^https:\/\/www\.essen-und-trinken\.de\/[a-z]{10,18}\.js$/$script,1p,match-case,domain=essen-und-trinken.de
+
+! https://github.com/ghostery/broken-page-reports/issues/2734
+! www.cwtv.com
+! Found: Admiral anti-adblock. A second inline bootstrap, obfuscated ('%61dm%69%72%61l', decodeURI), loads
+! the rotating loader (crashbamboo.com) and carries its own "Disable Your Adblocker" wall. On detection the
+! site's measure.detected handler disposes the video player. uBO's cwtv.com rules (acs admiral, rmnt
+! admiral|-engaged, rmnt []).push(arguments)) match only the plain Admiral tag, not this script.
+! Why: the bootstrap is inline, so no request to block; blocking loader hosts only falls back to the
+! embedded wall. Remove the script so Admiral never starts. Same rule uBO runs on foxnews.com.
+! Live: Chrome 156, Windows, US, 30.10.2026.
+cwtv.com##+js(rmnt, script, __apNoHold)
+
+! https://github.com/ghostery/broken-page-reports/issues/2733
+! pahe.ink
+! Found: AntiAdBlock Core wall. An inline script loads its detector through a 5-URL onerror chain:
+! first-party proxy ttxba87r.pahe.ink, then four copies under pahe.ink/24b1333851/. That path also
+! serves the site's ad loaders (popunder + 728x90 banners from usherjusticefalling.com).
+! Why: block every link of the chain; one alone falls through to the next. The detector never runs,
+! so its bait checks never fire. uBO's ||antiadblockcore.com^ misses the first-party host. NOT TESTED LIVE.
+! >>> url=https://ttxba87r.pahe.ink/vendor.31f1a328dcd502a1.bundle.js
+! ... source=https://pahe.ink/tag/k-drama/
+! ... type=script
+||ttxba87r.pahe.ink^$domain=pahe.ink
+! >>> url=https://pahe.ink/24b1333851/1e51644f891ee76f-s?ver=1.4.3
+! ... source=https://pahe.ink/tag/k-drama/
+! ... type=script
+||pahe.ink/24b1333851/$script,domain=pahe.ink
