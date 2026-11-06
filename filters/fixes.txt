@@ -3010,3 +3010,90 @@ cwtv.com##+js(rmnt, script, __apNoHold)
 ! ... source=https://pahe.ink/tag/k-drama/
 ! ... type=script
 ||pahe.ink/24b1333851/$script,domain=pahe.ink
+
+! https://github.com/ghostery/broken-page-reports/issues/2740
+! intercelestial.com
+! Found: AntiAdBlock Core wall (v8.0.58-pahe, the pahe.ink family). A plain async <script> loads the
+! detector first-party from /i5db6a94bb00/bundle.<hash>.js, no failover chain; its baits and its
+! {"detected":true} beacon live under the same path.
+! Why: block the detector path; the bundle never runs, so no bait check, no beacon, no wall.
+! uBO and AdGuard rules for the site are in lists Ghostery does not load (AdGuard's hex-path regex
+! no longer matches). Live: Chrome, Firefox, EU, 2026-11-03.
+! >>> url=https://intercelestial.com/i5db6a94bb00/bundle.97d3fc0a6289ee03.js
+! ... source=https://intercelestial.com/
+! ... type=script
+||intercelestial.com/i5db6a94bb00/$domain=intercelestial.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2280
+! www.pornhub.com
+! Found: the full cookie banner adds .withOverlay to #cookieBanner, a transparent full-page layer (z-index 200)
+! that takes every hover and click until a choice is made. A generic cookie hide on #cookieBannerWrapper
+! hides the box with the buttons but not the layer: the page looks clean and does not react.
+! Why: un-hide the box so autoconsent's pornhub.com rule sees the banner and clicks accept_essential; the
+! site then drops the layer and stores consent=2. Hiding the layer instead would leave consent unset.
+! Live: Chrome 156, EU, 2026-11-04.
+pornhub.com#@##cookieBannerWrapper
+
+! https://github.com/ghostery/broken-page-reports/issues/2741
+! 7pass.de
+! www.joyn.ch
+! Found: joyn renders its own Usercentrics UI (<cmp-banner>, cmp-slim.mjs, TCF splash) in open shadow roots.
+! autoconsent has no rule for it (its Usercentrics rules look for #usercentrics-root), and the uBO click
+! and Ghostery cookie rules exist for joyn.de only.
+! Why: click the banner's own top-right "Ohne Auswahl fortfahren" (deny all but legitimate interest), so
+! a refusal is stored. Hiding cmp-banner was tried on joyn.de and withdrawn (constant loading); blocking
+! the CMP would leave no decision. when-visible: the dialog stays in the DOM after a choice (the banner only
+! gets display:none); the rule without it reloaded the page in a loop. 30000: the site loads its CMP late
+! (seen at 11 s); with the default 11 s wait the banner stayed until a reload.
+! Live: Chrome 156, Ghostery 10.6.11, EU, 05.11.2026.
+7pass.de,joyn.ch##+js(trusted-click-element, 'when-visible:cmp-banner >>> cmp-dialog >>> .dialog__topright cmp-link, 30000')
+
+! https://github.com/ghostery/broken-page-reports/issues/2742
+! trafficnews.jp
+! Found: empty Google Ad Manager slots (div-gpt-ad-*) keep their inline min-height 250-280px once GPT and
+! the fluct, adingo and gmossp tags are blocked. AdShield is already answered by fixes.txt (trusted-prevent-fetch).
+! Why: residue only, the ad requests are blocked. Named wrappers where the slot is the only content; the
+! side box with the site's own banners keeps them (only its slot hides). Live: Chrome, JP, 05.11.2026.
+trafficnews.jp##.ad-large-big
+trafficnews.jp##.box-ad-left
+trafficnews.jp##.box-wrap:has(> .box-left > [id^="div-gpt-ad-"])
+trafficnews.jp##.pc-side-ad-mrg:has(> .pc-side-ad > [id^="div-gpt-ad-"]:only-child)
+trafficnews.jp##[id^="div-gpt-ad-"]
+
+! https://github.com/ghostery/broken-page-reports/issues/2743
+! www.autotrustcyprus.com
+! Found: EasyList Cookie generic -cookie-law-popup. blocks the site's jquery-eu-cookie-law-popup.js. The inline jQuery
+! ready handler then throws (euCookieLawPopup is not a function) before it hides .pageLoading and builds
+! the booking form, so the page spins forever.
+! Why: no stock scriptlet can stub a jQuery plugin that must return an object with init(); EasyList excepts
+! the same file for pole-emploi.fr. No cookie popup shows after the exception.
+! Live: Edge, Ghostery 10.6.11, EU, 05.11.2026.
+! >>> url=https://www.autotrustcyprus.com/views/js/jquery-eu-cookie-law-popup.js
+! ... source=https://www.autotrustcyprus.com/
+! ... type=script
+@@||www.autotrustcyprus.com/views/js/jquery-eu-cookie-law-popup.js$script,domain=autotrustcyprus.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2744
+! montrealgazette.com
+! Found: AdShield bootstrap in the page head (<script nowprocket src="https://swim.deerbreeze.com/_Default-pages/…js">).
+! It relays blocked trackers and prebid through its own host (/session/…) and renames the page's ad
+! classes (pm-ad, pmd-ad-slot…), so stock cosmetics miss the empty slots.
+! Why: uBO's Postmedia rule (filters-general.txt) did not apply in Ghostery: the bootstrap loaded.
+! The regex follows the bootstrap across host rotation. The folder now rotates in mixed case
+! (jazz.cricketleaf.com/_vendors-polyfills/ -> swim.deerbreeze.com/_Default-pages/), which uBO's
+! lowercase-only Safari form misses under match-case: folder class widened to A-Z, and written once with +
+! (five copies of the wider class exceed Chrome's DNR regex memory limit). Live: Safari, Chrome, EU, 06.11.2026.
+! >>> url=https://swim.deerbreeze.com/_Default-pages/UQ6dH-7iF_.js
+! ... source=https://montrealgazette.com/
+! ... type=script
+/^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.com\/[-._~a-zA-Z0-9]+\/[-_a-zA-Z0-9][-_a-zA-Z0-9][-_a-zA-Z0-9][-_a-zA-Z0-9][-_a-zA-Z0-9][-_a-zA-Z0-9]?[-_a-zA-Z0-9]?[-_a-zA-Z0-9]?[-_a-zA-Z0-9]?[-_a-zA-Z0-9]?\.js$/$script,3p,match-case,domain=montrealgazette.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2744
+! montrealgazette.com
+! Found: Admiral, inline bootstrap (script#pmd-ads-admiral-js-before) loads zg0.js from a rotating host
+! (pedaldudes.com); it runs bid and detection requests and fetches a ModalEngage wall script.
+! Why: same rule as cwtv.com (fixes.txt). Admiral hosts rotate, the inline __apNoHold marker does not; uBO's
+! Postmedia rmnt (/window\.admiral|adblockerDisabled/) misses this obfuscated script.
+! Live: Safari, Chrome, EU, 06.11.2026, together with the AdShield rule (not tested alone).
+montrealgazette.com##+js(rmnt, script, __apNoHold)
+
