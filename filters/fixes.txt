@@ -3097,3 +3097,10 @@ trafficnews.jp##[id^="div-gpt-ad-"]
 ! Live: Safari, Chrome, EU, 06.11.2026, together with the AdShield rule (not tested alone).
 montrealgazette.com##+js(rmnt, script, __apNoHold)
 
+! www.kroger.com, www.fredmeyer.com
+! Found: with Distractions > Notification prompts on, trusted-override-element-method runs on every site; its
+! proxyApplyFn wraps Function.prototype.toString in a Proxy cloak, and Kroger's bot-check script overflows
+! the stack on it (RangeError). The bot check dies; store, sales and coupons never load.
+! Why: drop only the cloak on these sites, as uBO does on x.com; both Notification rules keep running.
+! Hostname rules match before generic ones, so this runs first. Live: Chrome, Ghostery 10.6.10, 03.11.2026.
+kroger.com,fredmeyer.com##+js(proxy-apply-config, {"skipToString":true})
