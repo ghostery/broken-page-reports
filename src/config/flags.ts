@@ -7,6 +7,7 @@ import {
   FLAG_FIREFOX_CONTENT_SCRIPT_SCRIPTLETS,
   FLAG_INJECTION_TARGET_DOCUMENT_ID,
   FLAG_MODES,
+  FLAG_NEVER_CONSENT_HEURISTICS,
   FLAG_NOTIFICATION_REVIEW,
   FLAG_ONBOARDING_SURVEY,
   FLAG_PANEL_NOTIFICATION_SURVEY,
@@ -25,6 +26,7 @@ const flags = {
   [FLAG_PANEL_NOTIFICATION_SURVEY]: [{ percentage: 100 }],
   [FLAG_DNR_SERP]: [{ percentage: 0 }],
   [FLAG_WHATS_NEW]: [{ percentage: 100 }],
+  [FLAG_NEVER_CONSENT_HEURISTICS]: [{ percentage: 0 }],
 } satisfies Partial<Config["flags"]>;
 
 // ---- Completed flags (removed from the codebase) ----

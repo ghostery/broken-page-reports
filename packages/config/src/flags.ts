@@ -11,6 +11,7 @@ export const FLAG_NOTIFICATION_REVIEW = "notification-review";
 export const FLAG_PANEL_NOTIFICATION_SURVEY = "panel-notification-survey";
 export const FLAG_DNR_SERP = "dnr-serp";
 export const FLAG_WHATS_NEW = "whats-new";
+export const FLAG_NEVER_CONSENT_HEURISTICS = "never-consent-heuristics";
 
 export const FLAGS = [
   FLAG_ONBOARDING_SURVEY,
@@ -18,6 +19,7 @@ export const FLAGS = [
   FLAG_PANEL_NOTIFICATION_SURVEY,
   FLAG_DNR_SERP,
   FLAG_WHATS_NEW,
+  FLAG_NEVER_CONSENT_HEURISTICS,
 ] as const;
 
 // ---- Completed flags ----
