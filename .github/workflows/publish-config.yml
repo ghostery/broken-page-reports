@@ -7,6 +7,7 @@ on:
     paths:
       - 'packages/config/src/**'
       - '.github/workflows/publish-config.yml'
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -55,5 +56,7 @@ jobs:
           git add package.json package-lock.json
           git commit -m "chore: bump @ghostery/config to v${NEW_VERSION} [skip ci]"
 
-          # Push directly to main (already authenticated via checkout)
+          # Push directly to main (already authenticated via checkout),
+          # rebased in case main moved while the package was published
+          git pull --rebase origin main
           git push origin main
