@@ -7,8 +7,6 @@ on:
     paths:
       - 'filters/**'
   pull_request:
-    paths:
-      - 'filters/**'
   workflow_dispatch:
 
 concurrency:
