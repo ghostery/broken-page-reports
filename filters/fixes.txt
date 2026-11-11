@@ -2768,6 +2768,53 @@ www.amazon.com##.s-main-slot > .s-result-item.AdHolder
 ! Picked up for further investigation.
 ! mail.yahoo.com##div:has(> div > div > iframe[id^="Z3B0LWlmcmFtZS"])
 
+! www.yahoo.com
+! Found: AdShield. Yahoo's own app bundle injects the loader from s.yimg.com/du/site/<random>.js; it fails
+! over to fresh relay hosts (athwartwhoafat.com, blocked by EasyList; maturequart.com, not) and relays
+! Taboola and Google ads with renamed img_ybfq* classes.
+! Why: block the loader folder, not the file: EasyList's s.yimg.com/du/site/pqhdvmrpsxksshgt.js already rotated
+! away. Also matched the article's loader (kmqabebtnszrpnbw.js) and sports.yahoo.com's. Live: Chrome, 2026-11-11.
+! >>> url=https://s.yimg.com/du/site/prddyyadcpnmcfay.js
+! ... source=https://www.yahoo.com/
+! ... type=script
+||s.yimg.com/du/site/$script,domain=yahoo.com
+! www.yahoo.com, fallback
+! Found: the AdShield bootstrap ships as a Next.js beforeInteractive script (id ad-shield-container). When the
+! loader is blocked, its watchdog fetches /safe.min.js from a host list (athwartwhoafat.com, ackzany.com, then
+! yahoo-homepage.html-load.com); if every host fails it shows confirm() and redirects to an error-report page.
+! Why: blocking html-load.com would trip that confirm/redirect; stopping the script never starts the chain.
+! uBO rule (filters-general.txt, not loaded by Ghostery), ported as-is; sports.yahoo.com ships the same script.
+! Live: Chrome, www.yahoo.com and sports.yahoo.com, 2026-11-11.
+www.yahoo.com,sports.yahoo.com##+js(prevent-innerHTML, script, /error-report|nowprocket/)
+
+! www.yahoo.com, residue (articles)
+! Found: with AdShield stopped, GPT and gtag are redirected by stock rules and prebid is blocked; every slot
+! keeps its grey "Advertisement" placeholder: top banner, right rail, in-body, below the article, sticky footers.
+! Why: named containers where the page has them (data-pw, data-bottom-sticky-ad); in-body and below-article
+! slots have only Tailwind classes, so they are matched by the slot shape (hidden id div + placeholder + style),
+! not by the placeholder colour (bg-secondary on one article, bg-accent/2 on another). Sports names its slot
+! wrappers (#sda-top, #sda-body, #sda-rr, #sda-btm...); in-body ads drop the "Advertisement" label loose
+! between paragraphs, so the label is hidden by itself, never through its parent (that is the article body).
+! The rail keeps its last child (.mt-auto), which holds the Terms/Privacy
+! footer. Live: Chrome, home page, news and sports articles, 2026-11-11.
+www.yahoo.com##[data-pw="top-center-ad"]
+www.yahoo.com##[data-pw="bottom-sticky-ad-spacer"]
+www.yahoo.com##[data-bottom-sticky-ad]
+www.yahoo.com##aside[data-pw="right-rail-ads"] > div > div:not(.mt-auto)
+www.yahoo.com,sports.yahoo.com##div.mb-4:has(> div > div[id] > div.hidden[id] + div + style)
+www.yahoo.com,sports.yahoo.com##div[id]:has(> div.hidden[id] + div + style)
+sports.yahoo.com##[id^="sda-"]
+sports.yahoo.com##.sda-placeholder-txt
+! www.yahoo.com, residue (Taboola card)
+! Found: the Taboola loader is blocked, so its list card keeps only the "Advertisement" label and an empty div.
+! Why: the li has no name of its own; its Tailwind variants name Taboola's .trc_rbox_container (written trc\_rbox\_
+! in the class), so match two plain fragments and avoid the backslash. Live: Chrome, 2026-11-11.
+www.yahoo.com##li[class*="trc"][class*="rbox"]
+! News articles: the in-article trending module ends with a Taboola card that never loads, a grey skeleton
+! (relative hidden) next to the empty mount (absolute inset-0 with an id), the same mount as the card above.
+! Matched by that pair; it occurs once per page. Live: Chrome, 2026-11-11.
+www.yahoo.com##div.relative.w-full:has(> div.relative.hidden + div.absolute.inset-0[id])
+
 ! https://github.com/ghostery/broken-page-reports/issues/2696
 ! Nicely AdShield relay moved: jet.nicelymodulo.com/store/ -> taro.sansyettusk.com/chunk/ (07.10.2026).
 ! >>> url=https://taro.sansyettusk.com/chunk/f3df3971.js
