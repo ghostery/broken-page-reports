@@ -3156,3 +3156,8 @@ kroger.com,fredmeyer.com##+js(proxy-apply-config, {"skipToString":true})
 ! Found: Site was completely blanked after entering.
 ! Why: Blocked by easylist_specific_hide.txt as part of "Abusive Adcompanies"
 juicyads.com#@#HTML
+
+! www.popads.net
+! Found: Site was completely blanked after entering.
+! Why: Blocked by easylist_specific_hide.txt as part of "Abusive Adcompanies"
+popads.net#@#HTML
