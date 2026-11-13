@@ -3151,3 +3151,8 @@ montrealgazette.com##+js(rmnt, script, __apNoHold)
 ! Why: drop only the cloak on these sites, as uBO does on x.com; both Notification rules keep running.
 ! Hostname rules match before generic ones, so this runs first. Live: Chrome, Ghostery 10.6.10, 03.11.2026.
 kroger.com,fredmeyer.com##+js(proxy-apply-config, {"skipToString":true})
+
+! www.juicyads.com
+! Found: Site was completely blanked after entering.
+! Why: Blocked by easylist_specific_hide.txt as part of "Abusive Adcompanies"
+juicyads.com#@#HTML
