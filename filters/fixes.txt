@@ -2976,16 +2976,18 @@ fandom.com##+js(trusted-prevent-fetch, /\/script\/[^/]+\.fandom\.com\.js/, windo
 
 ! https://github.com/ghostery/broken-page-reports/issues/2720
 ! https://github.com/ghostery/broken-page-reports/issues/2263
+! https://github.com/ghostery/broken-page-reports/issues/2759
 ! sunkissedkitchen.com
 ! amandacooksandstyles.com
+! britneybreaksbread.com
 ! Found: AdShield relay on a Raptive (AdThrive) site. When ads.adthrive.com/abd/abd.js is blocked, the inline
 ! adblock-detection script loads html-load.com/bundle.js, which fetches /script/<site>.js?hash= and re-delivers
 ! the Raptive/GPT/Prebid stack through *.html-load.com/session/<site>/ (renamed harzsgqwhv* slots).
 ! Why: answer that fetch with the "loaded, not detected" body fixes.txt (q0226v0) uses for the same vendor on
 ! stylebyemilyhenderson.com, dadcooksdinner.com, indianhealthyrecipes.com. Live: Chrome 155, US + EU, 26.10.2026,
 ! several sub-pages.
-rpgbot.net,cornercoffeestore.com,amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
-rpgbot.net,cornercoffeestore.com,amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+britneybreaksbread.com,rpgbot.net,cornercoffeestore.com,amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /html-load\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
+britneybreaksbread.com,rpgbot.net,cornercoffeestore.com,amandacooksandstyles.com,sunkissedkitchen.com##+js(trusted-prevent-fetch, /content-loader\.com\/script\//, window.adshield=window.adshield||{};window.adshield.loaded=true;window.adshield.isAdBlockerDetected=false;postMessage("r_"+document.currentScript.getAttribute("recovery")\,"*"))
 
 ! Found: Slickstream (search panel, film strip) reserves empty space (min-height 350 px / 72 px) for widgets
 ! that never arrive: the stock lists block c.slickstream.com/app/<ver>/boot-loader.js.
@@ -3161,3 +3163,54 @@ juicyads.com#@#HTML
 ! Found: Site was completely blanked after entering.
 ! Why: Blocked by easylist_specific_hide.txt as part of "Abusive Adcompanies"
 popads.net#@#HTML
+
+! https://github.com/ghostery/broken-page-reports/issues/2755
+! pogoda.interia.pl
+! Found: Interia's own ad server adc.interia.pl sends the slot and video-ad config (AdOcean, DFP, Prebid). The page HTML ships a grey "Interia REKLAMA" sitebranding placeholder (#sponsCont) that stays empty, and a body class adds a 150px top gap.
+! Why: block the config call first (port of AdGuard Polish ||adc.interia.pl^, a list Ghostery does not load). The placeholder is in the page HTML, so only a hide removes it; the gap is reset with :style on the body. The same body class keeps a translateY(150px) on the fixed header: it overlaps the page and clips the burger menu (a transformed ancestor contains its fixed panel), so the transform is reset too. Live: Firefox, PL, 2026-11-18.
+! >>> url=https://adc.interia.pl/adc/get?url=pogoda.interia.pl/
+! ... source=https://pogoda.interia.pl/
+! ... type=xhr
+||adc.interia.pl^$domain=pogoda.interia.pl
+pogoda.interia.pl###sponsCont
+pogoda.interia.pl##body[class*="body__ad-spons--"]:style(padding-top: 0 !important)
+pogoda.interia.pl##body[class*="body__ad-spons--"] .common-header:style(transform: none !important)
+
+! https://github.com/ghostery/broken-page-reports/issues/2756
+! www.lesvoyagesdujournal.com
+! Found: the site hides the iubenda banner with its own CSS (#ugo-hide-iubenda-native) and shows its own banner,
+! rendered on mount while localStorage ugo_cookie_consent is unset. autoconsent's iubenda rule needs a visible
+! .iubenda-cs-accept-btn, so it never acts.
+! Why: click the site's own "Refuser": it stores ugo_cookie_consent=refused, passes the refusal to iubenda and closes
+! the banner. Clicking the hidden iubenda reject button left the banner. No when-visible: the banner leaves the DOM
+! after a choice. Live: Chrome, Ghostery 10.6.12, EU, 18.11.2026.
+www.lesvoyagesdujournal.com##+js(trusted-click-element, .ugo-cookie-consent-wrapper .btn-refuse)
+
+! https://github.com/ghostery/broken-page-reports/issues/2758
+! www.collinsdictionary.com
+! Found: AdShield (html-load family). A Next.js chunk injects script#XOuKUTKrBx (html-load.com/lib.js, data-sdk l/1.1.31)
+! with onload/onerror handlers; it relays the Didomi notice (sdk.privacy-center.org, blocked direct), GPT, AdSense and
+! polarbyte through *.stg.html-load.com/session/. An inline companion reads the tag's onerror and runs it itself.
+! Why: block the loader host (port of uBO filters-general, which Ghostery does not load). The onerror text fails over to
+! fb.html-load.com, a cloudfront host and content-loader.com, then shows the error-report modal; trusted-replace-argument
+! blanks both handler texts (they name error-report.com) as they are set. No rmnt: a missing tag also opens the modal.
+! Live: Chrome 159, Ghostery 10.6.13, PL, 19.11.2026.
+collinsdictionary.com##+js(trusted-replace-argument, Element.prototype.setAttribute, 1, , condition, /error-report\.com/)
+! >>> url=https://html-load.com/lib.js
+! ... source=https://www.collinsdictionary.com/dictionary/english/prying-eyes
+! ... type=script
+||html-load.com^$domain=collinsdictionary.com
+
+! https://github.com/ghostery/broken-page-reports/issues/2760
+! dictionary.cambridge.org
+! Found: AdShield bootstrap in the page head (<script nowprocket data-sdk="wp-ls/di-…"
+! src="https://kick.pleasanttulip.com/bodiv/mexa/ropi/…js">). It relays GPT, AdSense and a renamed OneTrust
+! notice through *.stg.kick.pleasanttulip.com/session/ (harzsgqwhv* ids); direct Google requests are surrogated.
+! Why: block the bootstrap, not the relay. The regex follows host rotation (uBO's generic ://*/*/*/*.js| rule,
+! filters-general, not loaded by Ghostery). The failover and confirm() modal live in the loader, so it never runs.
+! Live: Chrome 158, Ghostery 10.6.13, PL, 20.11.2026.
+! >>> url=https://kick.pleasanttulip.com/bodiv/mexa/ropi/jii_Z9y-02495264.js
+! ... source=https://dictionary.cambridge.org/dictionary/english/self-maintenance
+! ... type=script
+/^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.[a-z][a-z][a-z]?[a-z]?\/[a-z]+\/[a-z]+\/[a-z]+\/[-_a-zA-Z0-9]+\.js$/$script,3p,match-case,domain=dictionary.cambridge.org
+
