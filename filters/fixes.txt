@@ -3214,3 +3214,48 @@ collinsdictionary.com##+js(trusted-replace-argument, Element.prototype.setAttrib
 ! ... type=script
 /^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.[a-z][a-z][a-z]?[a-z]?\/[a-z]+\/[a-z]+\/[a-z]+\/[-_a-zA-Z0-9]+\.js$/$script,3p,match-case,domain=dictionary.cambridge.org
 
+! https://github.com/ghostery/broken-page-reports/issues/2738
+! press.lv
+! Found: the site's own Next.js layout runs an adblock check: a bait div (#adblocker_bait.adsbox...) hidden by generic cosmetics, and a script bait /banners/ads.js?plv_probe= blocked as script while the same URL fetches 200. Either one opens the "Отключите блокировщик рекламы" gate.
+! Why: the check lives in the site's app bundle, so it cannot be blocked. The gate skips mounting when sessionStorage plv_abgate_pass is set (what its own "no blocker, continue" button writes). Bait and ads stay blocked. Live: Chrome, Ghostery 10.6.13, PL, 23.11.2026.
+press.lv##+js(set-session-storage-item, plv_abgate_pass, 1)
+
+! https://github.com/ghostery/broken-page-reports/issues/1523
+! www.news.com.au
+! Found: OnePlayer (video.js) builds its IMA ad request with l.omidAccessModeRules[OmidVerificationVendor.MOBIAN] = FULL.
+! Ghostery redirects ima3.js to its google-ima.js surrogate, whose AdsRequest has no omidAccessModeRules; player.js throws
+! "Cannot set properties of undefined" in the ad path and the video does not start.
+! Why: give the surrogate the missing object (uBO does the same on video.gazzetta.it, oggi.it); ima3.js stays redirected. Live: Chrome 158, PL, 2026-11-23.
+news.com.au##+js(set, Object.prototype.omidAccessModeRules, {})
+
+! https://github.com/ghostery/broken-page-reports/issues/2763
+! www.decantalo.de
+! Found: PrestaShop Cookies Plus. EasyList Cookie generics hide the box (###cookiesplus-modal-container,
+! ##.cookiesplus-center) but the dark #cookiesplus-overlay stays: page dimmed, consent never answered.
+! Why: un-hide the box so autoconsent's cookiesplus rule sees it and clicks reject; the site's close() then drops
+! the overlay and stores the cookiesplus cookie. Hiding the overlay instead would leave consent unset. Live: Chrome 158, PL, 2026-11-23.
+decantalo.de#@##cookiesplus-modal-container
+decantalo.de#@#.cookiesplus-center
+
+! https://github.com/ghostery/broken-page-reports/issues/1900
+! www.itv.com
+! Found: the Morpheus player draws one marker per ContentBreak from the magni playlist on the scrub bar (.fe-mrphs__adBreakMarkers).
+! The ads themselves are held: the WebSocket ad route is blocked, the stock xml-prune empties every /tserver VAST, no creative loads.
+! Why: residue only, requests confirmed blocked. uBO's itv.com##.seek-bar__ad targets the old player. Live: Chrome 158, GB, 2026-11-24.
+itv.com##.fe-mrphs__adBreakMarkers
+! Found: each break still runs: the player asks /tserver for every slot (8 per break), xml-prune empties them, the player
+! gives up and reloads the programme. The viewer sees ~2 s of black where the ads were. Breaks come from Playlist.ContentBreaks
+! in the magni playlist (XHR).
+! Why: empty ContentBreaks, so the player schedules no break at all: no VAST requests, no gap. [-] keeps the array (empty)
+! so the player does not meet an undefined. Live: Chrome 158, GB, 2026-11-24.
+itv.com##+js(json-prune-xhr-response, Playlist.ContentBreaks.[-].Actions, , propsToMatch, magni.itv.com/playlist)
+
+! https://github.com/ghostery/broken-page-reports/issues/1823
+! oii.la
+! Found: the shortener's decoy blog on its mirror domains (oii.la, clksz.com) loads its whole BootstrapMade template
+! (CSS, jQuery, Bootstrap, main.js, images) from clk.sh/blog/alias/assets/. uBO's ||clk.sh^$3p blocks all of it: page unstyled.
+! Why: allow only that template folder on the two mirrors; ||clk.sh^$3p keeps blocking clk.sh everywhere else. Live: Chrome 158, PL, 2026-11-24.
+! >>> url=https://clk.sh/blog/alias/assets/css/style.css
+! ... source=https://oii.la/
+! ... type=stylesheet
+@@||clk.sh/blog/alias/assets/$domain=oii.la|clksz.com
